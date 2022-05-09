@@ -1,0 +1,1953 @@
+[
+    {
+        "other_ids": [],
+        "amendment_date": null,
+        "keywords": [
+            "prostate stem cell antigen",
+            "BPX-601",
+            "AP1903",
+            "CAR-T",
+            "PSCA-CAR",
+            "castration-resistant prostate cancer",
+            "rimiducid",
+            "pancreatic cancer",
+            "PSCA",
+            "CRPC",
+            "mCRPC",
+            "PDAC"
+        ],
+        "dcp_id": null,
+        "interventional_model": "Single Group",
+        "lead_org": "Bellicum Pharmaceuticals",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 0,
+                    "description": "Metastatic pancreatic cancer with tumor progression within 6 months of the most recent anti-cancer treatment and documented positive tumor expression of PSCA, and prior treatment with first or second-line therapy; or,"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "Metastatic castration-resistant prostate cancer (mCRPC), with progressive disease per PCWG3 criteria during or following the direct prior line of therapy."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Measurable disease per RECIST v1.1 at baseline; subjects with mCRPC with bone only metastases must have measurable PSA."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 3,
+                    "description": "Age \u226518 years."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 4,
+                    "description": "Life expectancy > 12 weeks."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 5,
+                    "description": "ECOG 0-1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 6,
+                    "description": "Adequate organ function."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 7,
+                    "description": "Pancreatic cancer with islet cell neoplasms or symptomatic/untreated coagulopathy."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 8,
+                    "description": "Prostate cancer with unstable bone lesions or symptomatic/untreated coagulopathy, or history of > Grade 2 hematuria within the previous 6 months."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 9,
+                    "description": "Prior CAR T cell or other genetically-modified T cell therapy. Prior treatment with an immune-based therapy for the treatment of prostate cancer, including cancer vaccine therapies are allowable."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 10,
+                    "description": "Symptomatic, untreated, or actively progressing central nervous system metastases."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 11,
+                    "description": "Impaired cardiac function or clinically significant cardiac disease."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 12,
+                    "description": "Pregnant or breastfeeding."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 13,
+                    "description": "Participant requires chronic, systemic steroid therapy."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 14,
+                    "description": "Severe intercurrent infection."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 15,
+                    "description": "Known HIV positivity."
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "BOTH",
+                "accepts_healthy_volunteers": false,
+                "min_age": "18 Years",
+                "min_age_number": 18.0,
+                "min_age_in_years": 18.0
+            }
+        },
+        "completion_date_type_code": "ANTICIPATED",
+        "detail_description": "The goal of this study is to characterize the feasibility, safety, and clinical activity of\r\n      PSCA-specific CAR-T cells, BPX-601, administered with rimiducid to subjects with previously\r\n      treated, PSCA-positive advanced solid tumors (pancreatic or prostate). BPX-601 CAR-T cells\r\n      are genetically engineered to express a chimeric antigen receptor (CAR) to target the PSCA\r\n      antigen and a rimiducid-inducible signaling domain which functions as a molecular \"go-switch\"\r\n      to enhance activation and proliferation.\r\n\r\n      Phase 1: Cell dose escalation to identify the maximum dose of BPX-601 administered with\r\n      single or repeat doses of rimiducid (fixed dose of 0.4 mg/kg per infusion).\r\n\r\n      Phase 2: Indication-specific dose expansion to assess the safety, pharmacodynamics (including\r\n      BPX-601 persistence), and clinical activity at the recommended dose identified in Phase 1 in\r\n      various PSCA-expressing solid tumors.",
+        "official_title": "A Phase 1/2 Feasibility, Safety, and Activity Study of PSCA-Specific Chimeric Antigen Receptor Engineered T Cells (BPX-601) in Subjects With Previously Treated Advanced Solid Tumors",
+        "_phase_sort_order": 3,
+        "collaborators": [],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "From the time of BPX-601 cell infusion until confirmed disease progression or death due to any cause, the start of new anticancer therapy, or withdrawal, whichever comes first, as assessed for up to 5 years after the last subject has been enrolled",
+                "name": "Antitumor activity of BPX-601",
+                "description": "Percentage of subjects with objective response determined by the investigator according to the Response Evaluation Criteria in Solid Tumors (RECIST) v1.1 or the Prostate Cancer Working Group 3 (PCWG3) criteria",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "4 weeks after first rimiducid infusion (i.e., Day 35)",
+                "name": "Dose Limiting Toxicity",
+                "description": "Incidence of dose limiting toxicity",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "through Phase 1 completion, up to 5 years",
+                "name": "Maximum tolerated dose (MTD) and/or recommended phase 2 dose (RP2D)",
+                "description": "Identify the optimal dose of BPX-601 with rimiducid for Phase 2",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "up to 1 year after treatment",
+                "name": "Pharmacodynamics (PD) of BPX-601",
+                "description": "Change from baseline in pharmacodynamic blood biomarkers - markers of BPX-601 CAR-T cells",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "180 days after BPX-601 treatment up to 15 years",
+                "name": "Treatment emergent adverse events (AEs) and serious AEs (SAEs)",
+                "description": "Number of participants with adverse events (AEs) and serious AEs (SAEs) assessed for severity using NCI CTCAE v4.03",
+                "type_code": "PRIMARY"
+            }
+        ],
+        "phase": "I_II",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "TREATMENT",
+        "number_of_arms": 2,
+        "_study_protocol_type_sort_order": 0,
+        "nct_id": "NCT02744287",
+        "biomarkers": [
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C77140"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Expressed",
+                    "Expression Detected"
+                ],
+                "nci_thesaurus_concept_id": "C177692",
+                "name": "Expression Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C35682",
+                    "C77140"
+                ],
+                "parents": [
+                    "C35682"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PSCA",
+                    "Prostate Stem Cell Antigen Gene"
+                ],
+                "nci_thesaurus_concept_id": "C50892",
+                "name": "PSCA Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20194",
+                    "C16612"
+                ],
+                "parents": [
+                    "C20194"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "PRO232 Positive",
+                    "Prostate Stem Cell Antigen Positive"
+                ],
+                "nci_thesaurus_concept_id": "C159656",
+                "name": "PSCA Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C77140",
+                    "C3367",
+                    "C36292",
+                    "C50892",
+                    "C177692",
+                    "C35682",
+                    "C20194"
+                ],
+                "parents": [
+                    "C177692",
+                    "C50892"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20194",
+                "name": "Regulatory Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            }
+        ],
+        "classification_code": null,
+        "current_trial_status_date": "2016-11-01",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Malignant Solid Neoplasm",
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Neoplasm",
+                    "Advanced Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C129707",
+                "name": "Advanced Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C127155",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Castration-Resistant Prostate Carcinoma",
+                    "Castration-Resistant Prostate Carcinoma",
+                    "CRPC"
+                ],
+                "nci_thesaurus_concept_id": "C130234",
+                "name": "Castration-Resistant Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8946",
+                    "C167255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Exocrine Pancreatic Cancer AJCC v8",
+                    "Stage IV Exocrine Pancreatic Carcinoma AJCC v8",
+                    "Stage IV Pancreatic Cancer AJCC v8",
+                    "Stage IV"
+                ],
+                "nci_thesaurus_concept_id": "C134930",
+                "name": "Stage IV Pancreatic Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134909"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Prostate Carcinoma AJCC v8",
+                    "Stage IV Prostate Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C140173",
+                "name": "Stage IV Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140163"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Prostate Cancer AJCC v8",
+                    "Stage IVA Prostate Carcinoma AJCC v8",
+                    "IVA"
+                ],
+                "nci_thesaurus_concept_id": "C140174",
+                "name": "Stage IVA Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140173"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "IVB",
+                    "Stage IVB Prostate Carcinoma AJCC v8",
+                    "Stage IVB Prostate Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C140175",
+                "name": "Stage IVB Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140173"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156069",
+                "name": "Metastatic Pancreatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3850",
+                    "C155852",
+                    "C170458"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Carcinoma Metastatic",
+                    "Prostate Cancer Metastatic",
+                    "Metastatic Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C8946",
+                "name": "Metastatic Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C146893"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C9270",
+                "name": "Advanced Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Tumour",
+                    "Solid tumor, NOS",
+                    "Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Tumor",
+                    "Tumor, metastatic",
+                    "Neoplasm, metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Solid Neoplasm",
+                    "Metastatic Solid Tumor",
+                    "Metastatic Tumor",
+                    "Metastatic Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127155",
+                "name": "Metastatic Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C132146"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, secondary",
+                    "Secondary Tumor",
+                    "Tumor, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Malignancy",
+                    "Secondary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C36255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Refractory Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C7628",
+                "name": "Refractory Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Genitourinary Disorder",
+                    "Urogenital Disease"
+                ],
+                "nci_thesaurus_concept_id": "C156660",
+                "name": "Genitourinary System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C170458",
+                "name": "Metastatic Pancreatobiliary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C166418"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Pancreas Carcinoma",
+                    "Cancer of Pancreas",
+                    "Pancreatic cancer (excluding Islets), NOS",
+                    "Pancreas Cancer",
+                    "exocrine cancer",
+                    "Cancer of the Pancreas",
+                    "Pancreatic cancer (not Islets)",
+                    "Exocrine Pancreas Carcinoma",
+                    "Pancreatic Carcinoma",
+                    "Carcinoma of the Pancreas",
+                    "Carcinoma of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C3850",
+                "name": "Pancreatic Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C166418",
+                    "C7430"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8511",
+                "name": "Refractory Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C120186"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Malignant Genitourinary System Neoplasm",
+                    "Metastatic Genitourinary System Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C157774",
+                "name": "Metastatic Genitourinary Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C156484"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Genitourinary Neoplasm",
+                    "Genitourinary System Cancer",
+                    "Genitourinary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C156484",
+                "name": "Malignant Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of Prostate",
+                    "Prostate cancer, NOS",
+                    "Cancer of Prostate",
+                    "Prostate Carcinoma",
+                    "Carcinoma of the Prostate",
+                    "Cancer of the Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C4863",
+                "name": "Prostate Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C181196",
+                    "C7378"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C164141",
+                "name": "Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "resistant cancer",
+                    "Refractory Cancer",
+                    "clinical resistance"
+                ],
+                "nci_thesaurus_concept_id": "C120186",
+                "name": "Refractory Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C7628"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C181196",
+                "name": "Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C164141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Neoplasm of Prostate",
+                    "Malignant Tumor of the Prostate",
+                    "Malignant Neoplasm of the Prostate",
+                    "Malignant Prostate Tumor",
+                    "Malignant Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C7378",
+                "name": "Malignant Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C3343"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Male Reproductive System",
+                    "Male Reproductive System Disease"
+                ],
+                "nci_thesaurus_concept_id": "C27019",
+                "name": "Male Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Exocrine Pancreas Tumor",
+                    "Malignant Tumor of Exocrine Pancreas",
+                    "Malignant Neoplasm of the Exocrine Pancreas",
+                    "Malignant Neoplasm of Exocrine Pancreas",
+                    "Malignant Tumor of the Exocrine Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C7430",
+                "name": "Malignant Exocrine Pancreas Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4445",
+                    "C9005"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Gastrointestinal Carcinoma",
+                    "Metastatic Gastrointestinal System Cancer",
+                    "Metastatic Digestive System Carcinoma",
+                    "Metastatic Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C133839",
+                "name": "Metastatic Digestive System Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162255",
+                    "C3482",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of GI System",
+                    "Tumor of Digestive System",
+                    "Digestive Tumor",
+                    "GI Neoplasm",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Digestive System Tumor",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Neoplasm of Digestive System",
+                    "Tumor of the Digestive System",
+                    "Gastrointestinal System Tumor",
+                    "Gastrointestinal Neoplasm",
+                    "GI Tumor",
+                    "Tumor of Gastrointestinal System",
+                    "Gastrointestinal System Neoplasm",
+                    "Neoplasm of the GI System",
+                    "GI System Tumor",
+                    "GI System Neoplasm",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of the GI System",
+                    "Digestive Neoplasm",
+                    "Neoplasm of GI System"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of the Gastrointestinal System",
+                    "Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C96963",
+                "name": "Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of the Exocrine Pancreas",
+                    "Exocrine Pancreas Tumor",
+                    "Neoplasm of the Exocrine Pancreas",
+                    "Exocrine Pancreas Neoplasm",
+                    "Neoplasm of Exocrine Pancreas",
+                    "Tumor of Exocrine Pancreas",
+                    "Pancreatic Exocrine Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4445",
+                "name": "Pancreatic Exocrine Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Genital Disorders",
+                    "Reproductive System Disease",
+                    "Disorder of Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C4875",
+                "name": "Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Genitourinary Cancer",
+                    "Metastatic Genitourinary Carcinoma",
+                    "Metastatic Urogenital Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C146893",
+                "name": "Metastatic Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C164141",
+                    "C157774"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of the Male Reproductive System",
+                    "Malignant Male Reproductive System Tumor",
+                    "Male reprod. system cancer, NOS",
+                    "Malignant Neoplasm of the Male Reproductive System",
+                    "Malignant Tumor of Male Reproductive System",
+                    "Malignant Neoplasm of Male Reproductive System",
+                    "Male reproductive system cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C8561",
+                "name": "Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C36076"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor Morphology",
+                    "Tumor_Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162255",
+                "name": "Metastatic Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4890",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C155852",
+                "name": "Metastatic Malignant Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9005",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C26842",
+                "name": "Pancreatic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Neoplasm of the Pancreas",
+                    "Malignant Neoplasm of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C9005",
+                "name": "Malignant Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3305",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "Disorder of Digestive System",
+                    "stomach or intestinal disorder",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C167255",
+                "name": "Refractory Prostate Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C177149"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36310",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Disease"
+                ],
+                "nci_thesaurus_concept_id": "C26865",
+                "name": "Prostate Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of Male Reproductive System",
+                    "Tumor of the Male Reproductive System",
+                    "Neoplasm of Male Reproductive System",
+                    "Neoplasm of the Male Reproductive System",
+                    "Male Reproductive System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3054",
+                "name": "Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3674",
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156482",
+                "name": "Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm of the Prostate",
+                    "Neoplasm of Prostate",
+                    "Prostate Tumor",
+                    "Tumor of the Prostate",
+                    "Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C3343",
+                "name": "Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C26865"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36076",
+                "name": "Malignant Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C3674"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Pancreaticobiliary Carcinoma",
+                    "Pancreatobiliary Cancer",
+                    "Pancreaticobiliary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C166418",
+                "name": "Pancreatobiliary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C150534",
+                "name": "Refractory Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C120186"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C177149",
+                "name": "Refractory Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C181196",
+                    "C150534",
+                    "C8511"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial Carcinoma",
+                    "Malignant Epithelioma",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Epithelial tumor, malignant",
+                    "Epithelioma Malignant"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Gastrointestinal cancer, NOS",
+                    "Gastrointestinal System Cancer",
+                    "Malignant Digestive System Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Reproductive System Tumor",
+                    "Neoplasm of Reproductive System",
+                    "Reproductive Tumor",
+                    "Tumor of the Reproductive System",
+                    "Tumor of Reproductive System",
+                    "Neoplasm of the Reproductive System",
+                    "Reproductive Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C3674",
+                "name": "Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156482",
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Carcinoma by AJCC v8 Stage",
+                    "Tumor Stage (Pathologic)"
+                ],
+                "nci_thesaurus_concept_id": "C140163",
+                "name": "Prostate Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4863"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Exocrine Pancreatic Cancer by AJCC v8 Stage",
+                    "Exocrine Pancreatic Carcinoma by AJCC v8 Stage",
+                    "Tumor Stage (Pathological)"
+                ],
+                "nci_thesaurus_concept_id": "C134909",
+                "name": "Pancreatic Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C3850"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of Pancreas",
+                    "Tumor of the Pancreas",
+                    "Pancreas Neoplasm",
+                    "Neoplasm of the Pancreas",
+                    "Pancreas Tumor",
+                    "Pancreatic Tumor",
+                    "Neoplasm of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C3305",
+                "name": "Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26842",
+                    "C3052"
+                ]
+            }
+        ],
+        "_primary_purpose_sort_order": 0,
+        "protocol_id": "BP-012",
+        "active_sites_count": 7,
+        "lead_org_cancer_center": null,
+        "arms": [
+            {
+                "interventions": [],
+                "name": "Arm 1: Phase 1 Dose Escalation",
+                "description": "Participants with advanced pancreatic or prostate cancer will receive an intravenous infusion of BPX-601 followed by one or more intravenous infusions of rimiducid. Dose escalation of BPX-601 will continue until the recommended cell dose level is reached.",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Arm 2: Phase 2 Dose Expansion",
+                "description": "Participants with advanced pancreatic or prostate cancer will receive an intravenous infusion of BPX-601 at the recommended cell dose level followed by one or more intravenous infusions of rimiducid.",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Gene Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1962",
+                        "name": "Gene Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmaceutical Agent",
+                            "Drug",
+                            "Drug Substance",
+                            "Pharmacological Substance",
+                            "Pharmaceuticals",
+                            "Agent",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Chimeric-antigen Receptor T-lymphocytes",
+                            "Chimeric Antigen Receptor T-cells",
+                            "CAR-T Cells",
+                            "CAR-modified T-cells",
+                            "CAR T-cells",
+                            "CAR-T Cell",
+                            "CAR T Cells",
+                            "CAR T Cell"
+                        ],
+                        "nci_thesaurus_concept_id": "C137999",
+                        "name": "Chimeric Antigen Receptor T-Cell Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C154231"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biomodulators",
+                            "BRM",
+                            "Biological Response Modifier",
+                            "Immunomodulators",
+                            "Immune Regulators",
+                            "Immune Mediators",
+                            "Immunomodulating Agent",
+                            "Immunopotentiators",
+                            "Immune Modulators",
+                            "Immunotherapeutic Agent",
+                            "Immunotherapy Agent",
+                            "Immunomodulatory Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cell-based Gene Therapy Agent",
+                            "Genetically-altered Immune Cell",
+                            "Genetically-modified Immune Cell"
+                        ],
+                        "nci_thesaurus_concept_id": "C154231",
+                        "name": "Genetically-engineered Immune Cell",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1962",
+                            "C142078"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Immune Cell",
+                            "Antineoplastic Immune Cells"
+                        ],
+                        "nci_thesaurus_concept_id": "C129826",
+                        "name": "Antineoplastic Immune Cell",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C129821",
+                            "C142078",
+                            "C129820"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Autologous T-cells"
+                        ],
+                        "nci_thesaurus_concept_id": "C28681",
+                        "name": "Therapeutic Autologous Lymphocytes",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C142078"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Biological",
+                            "Anti-cancer Biological Agent",
+                            "Antineoplastic Biotherapeutic",
+                            "Anticancer Biological"
+                        ],
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biomodulators",
+                            "BRM",
+                            "Biological Response Modifier",
+                            "Immunomodulators",
+                            "Immune Regulators",
+                            "Immune Mediators",
+                            "Immunomodulating Agent",
+                            "Immunopotentiators",
+                            "Immune Modulators",
+                            "Immunotherapeutic Agent",
+                            "Immunotherapy Agent",
+                            "Immunomodulatory Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C82412",
+                        "name": "Rimiducid",
+                        "description": "A lipid-permeable tacrolimus analogue with homodimerizing activity. Dimerizer drug AP1903 homodimerizes an analogue of human protein FKBP12 (Fv) which contains a single acid substitution (Phe36Val) so that AP1903 binds to wild-type FKBP12 with 1000-fold lower affinity. This agent is used to homodimerize the Fv-containing drug-binding domains of genetically engineered receptors such as the iCD40 receptor of the autologous dendritic cell vaccine BP-GMAX-CD1, resulting in receptor activation.  Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Cancer Drug",
+                            "Tumor-Specific Treatment Agents",
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Antiproliferative Drugs",
+                            "Antineoplastic Drugs",
+                            "Antineoplastics",
+                            "Anti-Tumor Agents",
+                            "Anti-Cancer Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "ACT Agent",
+                            "Adoptive Cell Therapy Agent",
+                            "Adoptive Cellular Therapy Agent",
+                            "Adoptive Cell-based Agent",
+                            "Adoptive Cell Transfer Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C142078",
+                        "name": "Adoptive Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C128031",
+                        "name": "Autologous Prostate Stem Cell Antigen-specific CAR T Cells BPX-601",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C28681",
+                            "C137999",
+                            "C129826"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Biological Response Modifier",
+                            "Antineoplastic BRM",
+                            "Anti-cancer Immunotherapeutic",
+                            "Antineoplastic Immunotherapeutic"
+                        ],
+                        "nci_thesaurus_concept_id": "C129820",
+                        "name": "Antineoplastic Immunomodulating Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biopharmaceuticals",
+                            "Biologicals",
+                            "Biologics",
+                            "Biological Products",
+                            "Immunologics",
+                            "Immunologic, Immunochemical"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmaceutical Agent",
+                            "Drug",
+                            "Drug Substance",
+                            "Pharmacological Substance",
+                            "Pharmaceuticals",
+                            "Agent",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    }
+                ],
+                "name": "Arm not specified",
+                "description": null,
+                "type": null
+            }
+        ],
+        "study_model_code": null,
+        "nci_id": "NCI-2019-02615",
+        "why_study_stopped": null,
+        "brief_summary": "The purpose of this study is to evaluate the safety and activity of BPX-601 CAR-T cells in\r\n      participants with previously treated advanced solid tumors (pancreatic and prostate)\r\n      expressing high levels of prostate stem cell antigen (PSCA). Participants' T cells are\r\n      modified to recognize and target the PSCA tumor marker on cancer cells.",
+        "brief_title": "Safety and Activity Study of PSCA-Targeted CAR-T Cells (BPX-601) in Subjects With Selected Advanced Solid Tumors",
+        "status_history": [
+            {
+                "status_date": "2016-11-01T00:00:00",
+                "status": "ACTIVE"
+            }
+        ],
+        "study_population_description": null,
+        "sampling_method_code": null,
+        "minimum_target_accrual_number": 151,
+        "_current_trial_status_sort_order": 0,
+        "start_date": "2016-11-01",
+        "record_verification_date": "2021-04-01",
+        "ctep_id": null,
+        "current_trial_status": "Active",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": "Non-Randomized Trial"
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Multiple"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": null,
+        "study_source": "Industrial",
+        "completion_date": "2024-02-01",
+        "study_subtype_code": null,
+        "study_protocol_type": "Interventional"
+    }
+]

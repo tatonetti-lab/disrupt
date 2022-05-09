@@ -1,0 +1,984 @@
+[
+    {
+        "other_ids": [],
+        "amendment_date": null,
+        "keywords": [
+            "Primary Prostate Cancer",
+            "Diagnostic",
+            "Prostate Specific Membrane Antigen (PSMA)",
+            "Positron Emission Tomography (PET) Scan"
+        ],
+        "dcp_id": null,
+        "interventional_model": "Single Group",
+        "lead_org": "Blue Earth Diagnostics",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 0,
+                    "description": "Patient is male and aged >18 years old."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "Histologically confirmed adenocarcinoma of the prostate."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Patients electing to undergo Radical Prostatectomy (RP) with Pelvic lymph node dissection (PLND)."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 3,
+                    "description": "Patients who are planned to have an x-ray contrast agent or other PET radiotracer <24 hours prior to the PET scan."
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 4,
+                    "description": "Patients currently receiving, or with a prior history of, Androgen Deprivation Therapy (ADT)."
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "MALE",
+                "accepts_healthy_volunteers": false,
+                "min_age": "18 Years",
+                "min_age_number": 18.0,
+                "min_age_in_years": 18.0
+            }
+        },
+        "completion_date_type_code": "ACTUAL",
+        "detail_description": null,
+        "official_title": "A Prospective, Phase 3, Multi Center, Single-arm, Imaging Study Investigating the Safety and Diagnostic Performance of rhPSMA 7.3 (18F) Positron Emission Tomography (PET) Ligand in Men With Newly Diagnosed Prostate Cancer",
+        "_phase_sort_order": 0,
+        "collaborators": [
+            {
+                "name": "Parexel",
+                "functional_role": "LABORATORY"
+            }
+        ],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "90 days",
+                "name": "Inter-reader agreement of rhPSMA-7.3 (18F) scan interpretation by blinded independent readers.",
+                "description": "Kappa statistic for the agreement between blinded independent readers on the interpretation of rhPSMA-7.3 (18F) scans.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "90 days",
+                "name": "Intra-reader agreement of rhPSMA-7.3 (18F) scan interpretation by blinded independent readers.",
+                "description": "Kappa statistic for the agreement within blinded independent readers on the interpretation of rhPSMA-7.3 (18F) scans.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "90 days",
+                "name": "Number of participants with treatment-related adverse events as classified by MedDRA",
+                "description": "Safety will be assessed from data on the occurrence of one or more treatment-emergent Adverse Events from the time of intravenous administration of 18F-rhPSMA-7.3 throughout the study period.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "90 days",
+                "name": "Sensitivity of rhPSMA-7.3 (18F)",
+                "description": "Sensitivity of rhPSMA-7.3 (18F) PET for detecting pelvic Lymph Node (LN) metastases compared to surgical pathology on a patient level.\r\nAt least one positive pelvic LN (N1) on the PET scan and one positive LN (N1) as determined by histopathology (pN1) on the same side of the pelvis (Left or Right) will be counted a True Positive at the patient level.",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "90 days",
+                "name": "Specificity of rhPSMA-7.3 (18F)",
+                "description": "Specificity of rhPSMA-7.3 (18F) PET for detecting pelvic Lymph Node (LN) metastases compared to surgical pathology on a patient level.\r\nAt least one positive pelvic LN (N1) on the PET scan and one positive LN (N1) as determined by histopathology (pN1) on the same side of the pelvis (Left or Right) will be counted a True Positive at the patient level.",
+                "type_code": "PRIMARY"
+            }
+        ],
+        "phase": "III",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "DIAGNOSTIC",
+        "number_of_arms": 1,
+        "_study_protocol_type_sort_order": 0,
+        "nct_id": "NCT04186819",
+        "biomarkers": [],
+        "classification_code": null,
+        "current_trial_status_date": "2022-02-18",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C168684",
+                "name": "High Risk Prostate Carcinoma",
+                "type": [
+                    "finding"
+                ],
+                "parents": [
+                    "C36286"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C168685",
+                "name": "Very High Risk Prostate Carcinoma",
+                "type": [
+                    "finding"
+                ],
+                "parents": [
+                    "C36286"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Adenocarcinoma of the Prostate",
+                    "PRAD",
+                    "Adenocarcinoma of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C2919",
+                "name": "Prostate Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C48596",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of Male Reproductive System",
+                    "Tumor of the Male Reproductive System",
+                    "Neoplasm of Male Reproductive System",
+                    "Neoplasm of the Male Reproductive System",
+                    "Male Reproductive System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3054",
+                "name": "Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3674",
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial Carcinoma",
+                    "Malignant Epithelioma",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Epithelial tumor, malignant",
+                    "Epithelioma Malignant"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C8505"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Neoplasm of Prostate",
+                    "Malignant Tumor of the Prostate",
+                    "Malignant Neoplasm of the Prostate",
+                    "Malignant Prostate Tumor",
+                    "Malignant Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C7378",
+                "name": "Malignant Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C3343"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156482",
+                "name": "Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Carcinoma of Prostate",
+                    "Prostate cancer, NOS",
+                    "Cancer of Prostate",
+                    "Prostate Carcinoma",
+                    "Carcinoma of the Prostate",
+                    "Cancer of the Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C4863",
+                "name": "Prostate Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C181196",
+                    "C7378"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C181196",
+                "name": "Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C164141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Genitourinary Disorder",
+                    "Urogenital Disease"
+                ],
+                "nci_thesaurus_concept_id": "C156660",
+                "name": "Genitourinary System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "infiltrating cancer",
+                    "invasive cancer",
+                    "Infiltrating Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8505",
+                "name": "Invasive Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C164141",
+                "name": "Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disorder of Male Reproductive System",
+                    "Male Reproductive System Disease"
+                ],
+                "nci_thesaurus_concept_id": "C27019",
+                "name": "Male Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Reproductive System Tumor",
+                    "Neoplasm of Reproductive System",
+                    "Reproductive Tumor",
+                    "Tumor of the Reproductive System",
+                    "Tumor of Reproductive System",
+                    "Neoplasm of the Reproductive System",
+                    "Reproductive Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C3674",
+                "name": "Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156482",
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Invasive Prostate Carcinoma",
+                    "Infiltrating Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C48596",
+                "name": "Invasive Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9480",
+                    "C4863"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Tumor of the Male Reproductive System",
+                    "Malignant Male Reproductive System Tumor",
+                    "Male reprod. system cancer, NOS",
+                    "Malignant Neoplasm of the Male Reproductive System",
+                    "Malignant Tumor of Male Reproductive System",
+                    "Malignant Neoplasm of Male Reproductive System",
+                    "Male reproductive system cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C8561",
+                "name": "Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C36076"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Genitourinary Neoplasm",
+                    "Genitourinary System Cancer",
+                    "Genitourinary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C156484",
+                "name": "Malignant Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor Morphology",
+                    "Tumor_Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36076",
+                "name": "Malignant Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C3674"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm of the Prostate",
+                    "Neoplasm of Prostate",
+                    "Prostate Tumor",
+                    "Tumor of the Prostate",
+                    "Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C3343",
+                "name": "Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C26865"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Prostate Disease"
+                ],
+                "nci_thesaurus_concept_id": "C26865",
+                "name": "Prostate Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Genital Disorders",
+                    "Reproductive System Disease",
+                    "Disorder of Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C4875",
+                "name": "Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36278",
+                "name": "Finding by Site or System",
+                "type": [
+                    "finding"
+                ],
+                "parents": [
+                    "C3367"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unspecified Kidney or Urinary Problem",
+                    "URINARY SYSTEM"
+                ],
+                "nci_thesaurus_concept_id": "C36286",
+                "name": "Urinary System Finding",
+                "type": [
+                    "finding"
+                ],
+                "parents": [
+                    "C36278"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "type": [
+                    "finding"
+                ],
+                "parents": []
+            }
+        ],
+        "_primary_purpose_sort_order": 4,
+        "protocol_id": "BED-PSMA-301",
+        "active_sites_count": 3,
+        "lead_org_cancer_center": null,
+        "arms": [
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Technique",
+                            "Diagnostic Test",
+                            "Diagnostic Method"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "F-18-rhPSMA-7.3",
+                            "(18F)-rhPSMA-7.3",
+                            "Fluorine F 18 radiohybrid PSMA-7.3",
+                            "Fluorine-18 rhPSMA-7.3",
+                            "18FrhPSMA-7.3",
+                            "rhPSMA-7.3 (18F)",
+                            "18F-rhPSMA-7.3"
+                        ],
+                        "nci_thesaurus_concept_id": "C168738",
+                        "name": "Fluorine F 18 rhPSMA-7.3",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C2124"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Radio Conjugates"
+                        ],
+                        "nci_thesaurus_concept_id": "C2124",
+                        "name": "Radioconjugate",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1446"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Medical Imaging, Positron Emission Tomography",
+                            "Positron Emission Tomography Scan",
+                            "PET",
+                            "Positron-Emission Tomography",
+                            "PET Scan"
+                        ],
+                        "nci_thesaurus_concept_id": "C17007",
+                        "name": "Positron Emission Tomography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C17369"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
+                            "Agent",
+                            "Drug Substance",
+                            "Pharmacological Substance"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Radiopharmaceuticals",
+                            "Radiochemical",
+                            "Radioactive Pharmaceutical"
+                        ],
+                        "nci_thesaurus_concept_id": "C1446",
+                        "name": "Radiopharmaceutical Compound",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "CT",
+                            "CAT",
+                            "Computerized Axial Tomography",
+                            "CAT Scan",
+                            "Computerized Tomography"
+                        ],
+                        "nci_thesaurus_concept_id": "C17204",
+                        "name": "Computed Tomography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16502"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Imaging",
+                            "Diagnostic Imaging Technique",
+                            "Imaging Procedures",
+                            "Medical Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16502",
+                        "name": "Diagnostic Imaging",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C18020",
+                            "C17369"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention",
+                            "Intervention Strategies",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    }
+                ],
+                "name": "Arm not specified",
+                "description": null,
+                "type": null
+            },
+            {
+                "interventions": [],
+                "name": "Patients",
+                "description": "Single intravenous administration of rhPSMA-7.3 (18F) for PET Scan",
+                "type": "EXPERIMENTAL"
+            }
+        ],
+        "study_model_code": null,
+        "nci_id": "NCI-2020-00563",
+        "why_study_stopped": null,
+        "brief_summary": "A prospective, Phase 3, multi center, single-arm, imaging study investigating the safety and\r\n      diagnostic performance of Radio-hybrid Prostate Specific Membrane Antigen (rhPSMA) 7.3 (18F)\r\n      Positron Emission Tomography (PET) ligand in men with newly diagnosed prostate cancer.",
+        "brief_title": "Imaging Study to Investigate the Safety and Diagnostic Performance of rhPSMA 7.3 (18F) in Newly Diagnosed Prostate Cancer (LIGHTHOUSE)",
+        "status_history": [
+            {
+                "status_date": "2022-02-18T00:00:00.000003",
+                "status": "COMPLETE"
+            },
+            {
+                "status_date": "2021-03-08T00:00:00.000002",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
+                "status_date": "2020-02-12T00:00:00.000001",
+                "status": "ACTIVE"
+            },
+            {
+                "status_date": "2019-12-02T00:00:00",
+                "status": "IN_REVIEW"
+            }
+        ],
+        "study_population_description": null,
+        "sampling_method_code": null,
+        "minimum_target_accrual_number": 375,
+        "_current_trial_status_sort_order": 9,
+        "start_date": "2020-02-12",
+        "record_verification_date": "2022-03-01",
+        "ctep_id": null,
+        "current_trial_status": "Complete",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": "NA"
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Prostate"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": null,
+        "study_source": "Industrial",
+        "completion_date": "2022-02-18",
+        "study_subtype_code": null,
+        "study_protocol_type": "Interventional"
+    }
+]

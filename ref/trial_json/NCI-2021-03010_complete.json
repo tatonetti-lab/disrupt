@@ -1,0 +1,996 @@
+[
+    {
+        "other_ids": [],
+        "amendment_date": null,
+        "keywords": null,
+        "dcp_id": null,
+        "interventional_model": "SEQUENTIAL_ASSIGNMENT",
+        "lead_org": "BeiGene",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 0,
+                    "description": "Phase 1a (dose escalation): Participants with histologically or cytologically confirmed advanced, metastatic, and unresectable solid tumors who have previously received standard systemic therapy or for whom treatment is not available, not tolerated or refused, and who have not received prior therapy targeting HPK1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "At least 1 measurable lesion as defined per RECIST 1.1. The target lesion(s) selected have not been previously treated with local therapy or the target lesion(s) selected that are within the field of prior local therapy have subsequently progressed as defined by RECIST 1.1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Participants must be able to provide an archived formalin-fixed paraffin embedded (FFPE) tumor tissue sample (block or approximately 15 to 17 freshly unstained FFPE slides after the most recent line of therapy. If archival tissue is not available, fresh tumor biopsy is mandatory"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 3,
+                    "description": "Eastern Cooperative Oncology Group (ECOG) Performance Status \u2264 1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 4,
+                    "description": "Adequate organ function as indicated by the following laboratory values up to first dose of study drug: Hemoglobin\u2265 90 g/L, Absolute neutrophil count \u2265 1.5 x 109/L , Serum total bilirubin \u2264 1.5 x ULN (< 3 x ULN for participants with Gilbert syndrome ), AST and ALT\u2264 2.5 x ULN (\u22645 x ULNs for participants with hepatocellular carcinoma or liver metastases )"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 5,
+                    "description": "Active leptomeningeal disease or uncontrolled and untreated brain metastasis. Participants with equivocal findings or with confirmed brain metastases are eligible for enrollment provided that they are asymptomatic and radiologically stable without the need for corticosteroid treatment for at least 4 weeks prior to the first dose of study drug(s)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 6,
+                    "description": "Active autoimmune diseases or history of autoimmune diseases that may relapse, with the following exceptions:"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 7,
+                    "description": "Controlled Type 1 diabetes"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 8,
+                    "description": "Hypothyroidism (provided that it is managed with hormone-replacement therapy only)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 9,
+                    "description": "Controlled celiac disease"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 10,
+                    "description": "Skin diseases not requiring systemic treatment (eg, vitiligo, psoriasis, or alopecia)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 11,
+                    "description": "Any other disease that is not expected to recur in the absence of external triggering factors"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 12,
+                    "description": "Any active malignancy \u2264 2 years before the first dose of study drug(s) except for the specific cancer under investigation in this study and any locally recurring cancer that has been treated with curative intent (eg, resected basal or squamous cell skin cancer, superficial bladder cancer, or carcinoma in situ of the cervix or breast)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 13,
+                    "description": "Any condition that required systemic treatment with either corticosteroids (> 10 mg daily of prednisone or equivalent) or other immunosuppressive medication \u2264 14 days before the first dose of study drug(s), with the following exceptions:"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 14,
+                    "description": "Adrenal replacement steroid (dose \u2264 10 mg daily of prednisone or equivalent)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 15,
+                    "description": "Topical, ocular, intra-articular, intranasal, or inhalational corticosteroid with minimal systemic absorption"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 16,
+                    "description": "Short course (\u2264 7 days) of corticosteroid prescribed prophylactically (eg, for contrast dye allergy) or for the treatment of a nonautoimmune condition (eg, delayed-type hypersensitivity reaction caused by contact allergen)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 17,
+                    "description": "History of interstitial lung disease, noninfectious pneumonitis, or uncontrolled lung diseases including but not limited to pulmonary fibrosis, acute lung diseases, etc."
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "BOTH",
+                "accepts_healthy_volunteers": false,
+                "min_age": "18 Years",
+                "min_age_number": 18.0,
+                "min_age_in_years": 18.0
+            }
+        },
+        "completion_date_type_code": "ANTICIPATED",
+        "detail_description": null,
+        "official_title": "A Phase 1 Study Investigating the Safety, Tolerability, Pharmacokinetics, and Preliminary Antitumor Activity of HPK1 Inhibitor BGB-15025 Alone and in Combination With Anti-PD-1 Monoclonal Antibody Tislelizumab in Patients With Advanced Solid Tumors",
+        "_phase_sort_order": 4,
+        "collaborators": [],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Apparent clearance (CL/F) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Apparent volume of distribution (Vz/F) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Area under the concentration-time curve (AUC) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "Disease Control Rate (DCR) as assessed by the investigator",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "Duration Of Response (DOR) as assessed by the investigator",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Half-life of (t1/2) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Maximum observed plasma concentration (Cmax) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Minimum observed plasma concentration (Cmin) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "Number of Participants Experiencing Adverse Events (AEs)",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "Number of Participants Experiencing Serious Adverse Events (SAEs)",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "Overall Response Rate (ORR) as assessed by the investigator",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "RP2D of BGB-15025 in combination with tislelizumab",
+                "description": "The highest dose evaluated for which the estimated toxicity rate is closest to the target toxicity rate of 30%",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "RP2D of BGB-15025 monotherapy",
+                "description": "The highest dose evaluated for which the estimated toxicity rate is closest to the target toxicity rate of 30%",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 6 months",
+                "name": "The maximum tolerated dose (MTD) of BGB-15025",
+                "description": "The highest dose evaluated for which the estimated toxicity rate is closest to the target toxicity rate of 30%",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Predose up to 8 hours postdose",
+                "name": "Time to maximum plasma concentration (Tmax) of BGB-15025",
+                "description": null,
+                "type_code": "SECONDARY"
+            }
+        ],
+        "phase": "I",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "TREATMENT",
+        "number_of_arms": 2,
+        "_study_protocol_type_sort_order": 0,
+        "nct_id": "NCT04649385",
+        "biomarkers": [],
+        "classification_code": null,
+        "current_trial_status_date": "2021-03-04",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Solid Neoplasm",
+                    "Metastatic Solid Tumor",
+                    "Metastatic Tumor",
+                    "Metastatic Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127155",
+                "name": "Metastatic Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C132146"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Malignant Solid Neoplasm",
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Neoplasm",
+                    "Advanced Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C129707",
+                "name": "Advanced Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C127155",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C148036",
+                "name": "Unresectable Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27359",
+                    "C132146",
+                    "C127156"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Malignancy",
+                    "Secondary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C36255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Tumor",
+                    "Tumor, metastatic",
+                    "Neoplasm, metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, secondary",
+                    "Secondary Tumor",
+                    "Tumor, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Tumour",
+                    "Solid tumor, NOS",
+                    "Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C9270",
+                "name": "Advanced Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C27359",
+                "name": "Unresectable Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127156",
+                "name": "Unresectable Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292"
+                ]
+            }
+        ],
+        "_primary_purpose_sort_order": 0,
+        "protocol_id": "BGB-A317-15025-101",
+        "active_sites_count": 2,
+        "lead_org_cancer_center": null,
+        "arms": [
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Biological Agent",
+                            "Antineoplastic Biological",
+                            "Antineoplastic Biotherapeutic",
+                            "Anticancer Biological"
+                        ],
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "PD-1 Inhibitor",
+                            "PD-1-targeting Agent",
+                            "Programmed Cell Death Protein 1 Inhibitor",
+                            "Protein PD-1 Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C124946",
+                        "name": "PD1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C143250"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1404",
+                        "name": "Protein Kinase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-PD-1 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128037",
+                        "name": "Anti-PD1 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C124946",
+                            "C20401"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anaplastic Lymphoma Kinase Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C141136",
+                        "name": "ALK Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C1967"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2189",
+                        "name": "Signal Transduction Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C178833",
+                        "name": "Hpk1 Inhibitor BGB-15025",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C141136",
+                            "C129825"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-Cancer Agents",
+                            "Anti-Tumor Agents",
+                            "Antineoplastics",
+                            "Antiproliferative Agents",
+                            "Antineoplastic Drugs",
+                            "Anti-Tumor Drugs",
+                            "Cancer Drug",
+                            "Antiproliferative Drugs",
+                            "Tumor-Specific Treatment Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C143250",
+                        "name": "Immune Checkpoint Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C141144"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C141144",
+                        "name": "Immune Checkpoint Modulator",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Protein Inhibitor",
+                            "Antineoplastic Protein Antagonist"
+                        ],
+                        "nci_thesaurus_concept_id": "C129824",
+                        "name": "Antineoplastic Protein Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2189"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunomodulating Agent",
+                            "Immunotherapy Agent",
+                            "Immunomodulatory Agent",
+                            "Immune Regulators",
+                            "Immune Modulators",
+                            "BRM",
+                            "Immunotherapeutic Agent",
+                            "Immunopotentiators",
+                            "Immune Mediators",
+                            "Biomodulators",
+                            "Biological Response Modifier",
+                            "Immunomodulators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-Cancer Agents",
+                            "Anti-Tumor Agents",
+                            "Antineoplastics",
+                            "Antiproliferative Agents",
+                            "Antineoplastic Drugs",
+                            "Anti-Tumor Drugs",
+                            "Cancer Drug",
+                            "Antiproliferative Drugs",
+                            "Tumor-Specific Treatment Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biological Products",
+                            "Immunologics",
+                            "Immunologic, Immunochemical",
+                            "Biologicals",
+                            "Biologics",
+                            "Biopharmaceuticals"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anticancer Antibody",
+                            "Anti-cancer Antibody",
+                            "Antineoplastic Ab"
+                        ],
+                        "nci_thesaurus_concept_id": "C129822",
+                        "name": "Antineoplastic Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C129821"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Enzyme Inhibitor Agent",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacological Substance",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmacologic Agent",
+                            "Drug",
+                            "Agent",
+                            "Pharmaceutical Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C121775",
+                        "name": "Tislelizumab",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C128037",
+                            "C129822"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Monoclonal Antibody",
+                            "Monoclonal Antibodies"
+                        ],
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Enzyme Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C129825",
+                        "name": "Antineoplastic Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C129824",
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "PTK Inhibitors",
+                            "Protein Tyrosine Kinase Inhibitors",
+                            "TK Inhibitors"
+                        ],
+                        "nci_thesaurus_concept_id": "C1967",
+                        "name": "Tyrosine Kinase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1404"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacological Substance",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmacologic Agent",
+                            "Drug",
+                            "Agent",
+                            "Pharmaceutical Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    }
+                ],
+                "name": "Arm not specified",
+                "description": null,
+                "type": null
+            },
+            {
+                "interventions": [],
+                "name": "Phase 1a: Dose Escalation",
+                "description": "Part A: Participants will receive once daily of BGB-15025 monotherapy in sequential cohorts of approximately 5 increasing doses for up to 6 months\r\nPart B: Participants will receive once daily of BGB-15025 in sequential cohorts plus 200mg tislelizumab on day 1 of each 21-day cycle (combination therapy ) for up to 12 months",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Phase 1b: Dose Expansion",
+                "description": "Phase 1b dose expansion will begin based upon the recommended Phase 2 dose (RP2D) for BGB-15025 alone or in combination with tislelizumab as determined from Phase 1a",
+                "type": "EXPERIMENTAL"
+            }
+        ],
+        "study_model_code": null,
+        "nci_id": "NCI-2021-03010",
+        "why_study_stopped": null,
+        "brief_summary": "The primary objective of this study is to assess the safety and tolerability of BGB-15025\r\n      alone and in combination with tislelizumab; and to determine the maximum tolerated dose (MTD)\r\n      or maximum administered dose (MAD) and recommended Phase 2 doses (RP2D) of BGB-15025 alone\r\n      and in combination with tislelizumab in participants with advanced solid tumors.",
+        "brief_title": "BGB-15025 Alone and in Combination With Anti-PD-1 Monoclonal Antibody Tislelizumab in Participants With Advanced Solid Tumors",
+        "status_history": [
+            {
+                "status_date": "2021-03-04T00:00:00",
+                "status": "ACTIVE"
+            }
+        ],
+        "study_population_description": null,
+        "sampling_method_code": null,
+        "minimum_target_accrual_number": 240,
+        "_current_trial_status_sort_order": 0,
+        "start_date": "2021-03-04",
+        "record_verification_date": "2021-11-01",
+        "ctep_id": null,
+        "current_trial_status": "Active",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": "Non-Randomized Trial"
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Multiple"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": null,
+        "study_source": "Industrial",
+        "completion_date": "2024-08-01",
+        "study_subtype_code": null,
+        "study_protocol_type": "Interventional"
+    }
+]

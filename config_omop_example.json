@@ -1,0 +1,114 @@
+{
+    "diseases":{
+	"comment":"each disease site has several arrays of SQL queries. appointments, diagnoses, newpts, recurredpts, notes, and meds do not return anything and are [] arrays of simple strings. Final are named queries for pulling a) the list of identified patients (ptmatches), b) ALL notes + note text for those pts (notes) and c) ALL meds for those pts (meds)",
+	"breast":{
+	    "queries":
+	    {
+		"appointments": [
+
+		],
+		"diagnoses":[
+		    "drop table if exists ##breast_diag",
+		    "SELECT  person_id, min(condition_start_date) as condition_start_date, max(condition_end_date) as condition_end_date   into ##breast_diag FROM      concept a  LEFT JOIN     condition_occurrence b  ON      a.concept_id = b.condition_concept_id inner join     concept_ancestor c on a.concept_id = descendant_concept_id and ancestor_concept_id      in     ( 4112853 ) group by person_id ",
+		    "create index idx1 on #breast_diag (person_id)"
+		],
+		"newpts":[
+		    "drop table if exists ##cohort",
+		    "select  distinct cast('NEW' as varchar(100)) as match_type, person_id,  (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn into ##cohort from ##breast_diag a where condition_start_date>=dateadd(day,-90,getDate());"
+		],
+		"recurredpts":[
+		    "drop table if exists ##imagingreports",
+		    "select distinct a.* into #imagingreports  from note a inner join  #breast_diag b on a.person_id = b.person_id where note_type_concept_id = 0 and (note_title like 'MRI %' or note_title like 'CT %' or note_title like 'XR %' or NOTE_TITLE like 'PET%CT%' or note_title like 'MR %' or note_title like 'XRAY %' )",
+		    "create index idx1 on #imagingreports  (person_id)",
+		    "insert into #cohort select distinct 'PROGRESSED', person_id, (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn from ( select a.*, dense_rank() over (partition by person_id order by  note_datetime asc) as r2 from #imagingreports a where (note_text like '%progression%' or note_text like '%progression%' or note_text like '%progression%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%metast%' or note_text like '%metast%' or note_text like '%metast%') )a where note_datetime>=dateadd(day,-60,getDate()) and r2=1 "
+		],
+		"notes":[
+		    "drop table if exists ##notetext",
+		    "select a.person_id, note_id, note_date, match_type, note_text into ##notetext from ##cohort a inner join note b on a.person_id = b.person_id",
+		    "create index idx1 on ##notetext (person_id)",
+		    "create index idx2 on ##notetext (note_id)"
+		],
+		"meds":[
+		    "drop table if exists ##drugs",
+		    "select a.person_id, concept_code as rxnorm_code, concept_name,min(drug_era_start_date) as first_order_date, max(drug_era_end_date) as last_order_date,match_type into ##drugs from drug_era a inner  join concept b on drug_concept_id = b.concept_id inner join concept_ancestor c on b.concept_id = c.descendant_concept_id and ancestor_concept_id in (21601387,35807188) inner join ##cohort d on a.person_id = d.person_id  group by b.concept_name,a.person_id, a.drug_concept_id,concept_code,match_type,concept_name",
+		    "create index idx1 on ##drugs (person_id)"
+		],
+		"final":{
+		    "notes":"select * from ##notetext",
+		    "meds":"select * from  ##drugs",
+		    "ptmatches":"select match_type, a.person_id,  (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn, cast(birth_datetime as date) as birth_date from ##cohort a inner join person b on a.person_id = b.person_id"
+		}
+	    }
+	},
+	"liver":{
+	    "queries":
+	    {
+		"appointments": [
+
+		],
+		"diagnoses":[
+
+		],
+		"newpts":[
+
+		],
+		"recurredpts":[
+
+		],
+		"notes":[
+
+		],
+		"meds":[
+
+		],
+		"final":{
+		    "notes":"",
+		    "meds":"",
+		    "ptmatches":""
+		}
+
+	    }
+	},
+	"prostate":{
+	    "queries":
+	    {
+		"appointments": [
+
+		],
+		"diagnoses":[
+
+		],
+		"newpts":[
+
+		],
+		"recurredpts":[
+
+		],
+		"notes":[
+
+		],
+		"meds":[
+
+		],
+		"final":{
+		    "notes":"",
+		    "meds":"",
+		    "ptmatches":""
+		}
+
+	    }
+	}
+    },
+    "connectionprops":
+    {
+	"comment":"various connection string related settings for attaching to your SQL server database (currently the only one supported but as built could be made database-agnostic. Keeping jdbc driver as is, and the first part of the connection string. Jar path expects to be pointed at JTDS library (currently 1.3.1)",
+	"user":"",
+	"domain":"",
+	"jdbc_driver":"net.sourceforge.jtds.jdbc.Driver",
+	"jdbc_conn_string":"jdbc:jtds:sqlserver://{server}:{port}/{database};useLOBs=false",
+	"jar_path":""
+    },
+    "comment":"CTRP api key for pulling all trial metadata from CTRP, site specific",
+    "ctrp_api_key":"",
+    "JAVA_HOME":""
+}

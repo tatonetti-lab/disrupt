@@ -1,0 +1,3598 @@
+[
+    {
+        "other_ids": [
+            {
+                "name": "Study Protocol Other Identifier",
+                "value": "2018-000416-21"
+            }
+        ],
+        "amendment_date": null,
+        "keywords": [
+            "Antibodies",
+            "Antineoplastic Agents",
+            "Immunologic Factors",
+            "Nivolumab",
+            "Antibodies",
+            "Monoclonal",
+            "Physiological Effects of Drugs"
+        ],
+        "dcp_id": null,
+        "interventional_model": "Parallel",
+        "lead_org": "Bristol-Myers Squibb",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 0,
+                    "description": "Histologic or cytologic confirmation of a solid tumor that is advanced (metastatic, recurrent, and/or unresectable) with measurable disease and have at least 1 lesion accessible for biopsy"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "Eastern Cooperative Oncology Group Performance Status of 0 or 1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Some participants must have received, and then progressed, relapsed, or been intolerant to, at least 1 standard treatment regimen in the advanced or metastatic setting according to solid tumor histologies"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 3,
+                    "description": "Prior anti-cancer treatments such as chemotherapy, radiotherapy, or hormonal are permitted for some participants"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 4,
+                    "description": "Understand and sign an IRB/IEC-approved ICF prior to any study-specific evaluation"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 5,
+                    "description": "Willing and able to comply with all study procedures"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 6,
+                    "description": "Primary CNS malignancies, tumors with CNS metastases as the only site of disease or active brain metastases will be excluded"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 7,
+                    "description": "Other active malignancy requiring concurrent intervention"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 8,
+                    "description": "Prior organ allograft"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 9,
+                    "description": "Active, known, or suspected autoimmune disease"
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "BOTH",
+                "accepts_healthy_volunteers": false,
+                "min_age": "18 Years",
+                "min_age_number": 18.0,
+                "min_age_in_years": 18.0
+            }
+        },
+        "completion_date_type_code": "ANTICIPATED",
+        "detail_description": null,
+        "official_title": "A Phase 1/2 First-in-Human Study of BMS-986249 Alone and in Combination With Nivolumab in Advanced Solid Tumors",
+        "_phase_sort_order": 3,
+        "collaborators": [],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "Up to 2 years",
+                "name": "AUC(0-T) (Area under the serum concentration-time curve from time zero to time of last quantifiable concentration)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "AUC(TAU) (Area under the concentration-time curve in 1 dosing interval)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Average serum concentration over a dosing interval (AUC[TAU]/tau) at steady state (Css-avg)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Cmax (Maximum observed serum concentration)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Ctau (Observed concentration at the end of a dosing interval)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Ctrough (Trough observed concentrations)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Duration of response (DOR)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of Adverse Events (AEs)",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of Adverse Events (AEs) in Part 2 of Study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of AEs leading to discontinuation",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of AEs leading to discontinuation in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of AEs meeting protocol-defined dose-limiting toxicity (DLT) criteria",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Clinical Chemistry tests",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Clinical Chemistry tests in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Hematology tests",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Hematology tests in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Urinalysis tests",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of clinically significant changes in clinical laboratory results: Urinalysis tests in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Incidence of death",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Incidence of death in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of Serious Adverse Events (SAEs)",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Incidence of Serious Adverse Events (SAEs) in Part 2 of Study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Within 24 weeks",
+                "name": "Incidence of treatment-related Grade 3-5 AEs",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 2.5 years",
+                "name": "Objective Response Rate as assessed by investigator using Response Evaluation Criteria in Solid Tumors (RECIST) v1.1",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Objective Response Rate (ORR)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Progression-Free survival (PFS)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Ratio of an exposure measure at steady state to that after the first dose [exposure measure includes AUC[TAU] and Cmax (AI)]",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Terminal serum half-life if data permit (T-HALF)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 4 Years",
+                "name": "Time to Deterioration (TTD) in Part 2 of study",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 4 years",
+                "name": "Time to response (TTR)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Tmax (Time of maximum observed concentration)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to 2 years",
+                "name": "Total body clearance (CLT)",
+                "description": null,
+                "type_code": "SECONDARY"
+            }
+        ],
+        "phase": "I_II",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "TREATMENT",
+        "number_of_arms": 11,
+        "_study_protocol_type_sort_order": 0,
+        "nct_id": "NCT03369223",
+        "biomarkers": [
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER Alpha Status",
+                    "ER Status",
+                    "ER-Alpha Status",
+                    "ERA Status",
+                    "ESR Status",
+                    "ESR1 Status",
+                    "ESRA Status",
+                    "ESTRR Status",
+                    "Estrogen Receptor",
+                    "Estrogen Receptor 1 Status",
+                    "Estrogen Receptor Alpha Status",
+                    "NR3A1 Status",
+                    "Nuclear Receptor Subfamily 3 Group A Member 1 Status"
+                ],
+                "nci_thesaurus_concept_id": "C16150",
+                "name": "Estrogen Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C38349",
+                    "C54362",
+                    "C36292",
+                    "C20103",
+                    "C94299",
+                    "C77140",
+                    "C20709"
+                ],
+                "parents": [
+                    "C38349",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C21281"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PGR",
+                    "PR",
+                    "Progesterone Receptor Gene"
+                ],
+                "nci_thesaurus_concept_id": "C28656",
+                "name": "PGR Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103",
+                    "C20709"
+                ],
+                "parents": [
+                    "C20709"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Absent",
+                    "LOST",
+                    "Loss of Expression",
+                    "Negative",
+                    "Not Expressed"
+                ],
+                "nci_thesaurus_concept_id": "C165233",
+                "name": "Expression Negative",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C35681",
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C35681"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Negative"
+                ],
+                "nci_thesaurus_concept_id": "C35681",
+                "name": "Negative Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25872",
+                "name": "Kinase Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25870",
+                    "C16612",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C25871"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ER-Negative PR-Negative ERBB2-Negative",
+                    "ER-PR-HER2/neu-",
+                    "ER-negative PR-negative HER2/neu-negative",
+                    "ER/PR/HER2 Negative",
+                    "ESR1/PGR/ERBB2 Negative Finding",
+                    "Triple Negative Breast Cancer Finding",
+                    "Triple Negative Breast Cancer Result",
+                    "Triple-Negative Breast Cancer Result",
+                    "triple-negative breast cancer"
+                ],
+                "nci_thesaurus_concept_id": "C71428",
+                "name": "Triple-Negative Breast Cancer Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20103",
+                    "C94299",
+                    "C17756",
+                    "C25871",
+                    "C25872",
+                    "C36292",
+                    "C38349",
+                    "C20709",
+                    "C21281",
+                    "C77140",
+                    "C165233",
+                    "C28656",
+                    "C20420",
+                    "C20719",
+                    "C21295",
+                    "C25870",
+                    "C35681",
+                    "C16612",
+                    "C54362",
+                    "C3367"
+                ],
+                "parents": [
+                    "C165233",
+                    "C17756",
+                    "C28656",
+                    "C38349",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene, Transcription Factor"
+                ],
+                "nci_thesaurus_concept_id": "C20420",
+                "name": "Transcription Factor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C54362",
+                    "C16612"
+                ],
+                "parents": [
+                    "C54362"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25870",
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ER Alpha Negative",
+                    "ER Negative",
+                    "ER-",
+                    "ER-Alpha Negative",
+                    "ERA Negative",
+                    "ESR Negative",
+                    "ESR1 Negative",
+                    "ESRA Negative",
+                    "ESTRR Negative",
+                    "Estrogen Receptor 1 Negative",
+                    "Estrogen Receptor Alpha Negative",
+                    "NR3A1 Negative",
+                    "Negative",
+                    "Negative Estrogen Receptor",
+                    "Nuclear Receptor Subfamily 3 Group A Member 1 Negative"
+                ],
+                "nci_thesaurus_concept_id": "C15493",
+                "name": "Estrogen Receptor Negative",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20420",
+                    "C35681",
+                    "C36292",
+                    "C38349",
+                    "C20709",
+                    "C20103",
+                    "C94299",
+                    "C16612",
+                    "C77140",
+                    "C21295",
+                    "C54362",
+                    "C165233",
+                    "C3367",
+                    "C16150"
+                ],
+                "parents": [
+                    "C16150",
+                    "C165233",
+                    "C38349"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20719",
+                "name": "Receptor Tyrosine Kinase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C25870",
+                    "C25872",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C20103",
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER",
+                    "ESR1",
+                    "Estrogen Receptor 1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C38349",
+                "name": "ESR1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103",
+                    "C20709"
+                ],
+                "parents": [
+                    "C20709"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Negative",
+                    "PGR Negative",
+                    "PR Negative",
+                    "PR-"
+                ],
+                "nci_thesaurus_concept_id": "C15497",
+                "name": "Progesterone Receptor Negative",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20420",
+                    "C35681",
+                    "C36292",
+                    "C20709",
+                    "C20103",
+                    "C16612",
+                    "C94299",
+                    "C77140",
+                    "C21295",
+                    "C54362",
+                    "C16149",
+                    "C165233",
+                    "C3367",
+                    "C28656"
+                ],
+                "parents": [
+                    "C16149",
+                    "C165233",
+                    "C28656"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PgR Status",
+                    "Progesterone Receptor"
+                ],
+                "nci_thesaurus_concept_id": "C16149",
+                "name": "Progesterone Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20420",
+                    "C36292",
+                    "C16612",
+                    "C20709",
+                    "C20103",
+                    "C94299",
+                    "C21295",
+                    "C77140",
+                    "C54362",
+                    "C3367",
+                    "C28656"
+                ],
+                "parents": [
+                    "C28656",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ERBB2",
+                    "Erb-b2 Receptor Tyrosine Kinase 2 Gene",
+                    "HER2",
+                    "HER2/Neu",
+                    "NEU"
+                ],
+                "nci_thesaurus_concept_id": "C17756",
+                "name": "ERBB2 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20719",
+                    "C25870",
+                    "C25872",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C94299",
+                "name": "Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C77140"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C54362",
+                "name": "Transcription Regulation Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295"
+                ],
+                "parents": [
+                    "C21295"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ERBB2 Negative",
+                    "HER-2 Negative",
+                    "HER2 Negative"
+                ],
+                "nci_thesaurus_concept_id": "C68749",
+                "name": "HER2/Neu Negative",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C165233",
+                    "C16612",
+                    "C17756",
+                    "C3367",
+                    "C21295",
+                    "C35681",
+                    "C20719",
+                    "C25870",
+                    "C16152",
+                    "C36292",
+                    "C25872",
+                    "C94299",
+                    "C77140",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C16152",
+                    "C165233",
+                    "C17756"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20709",
+                "name": "Nuclear Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103"
+                ],
+                "parents": [
+                    "C20103",
+                    "C20420"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ERBB2 Status",
+                    "Her2/Neu Value"
+                ],
+                "nci_thesaurus_concept_id": "C16152",
+                "name": "HER2/Neu Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C16612",
+                    "C17756",
+                    "C21295",
+                    "C20719",
+                    "C25870",
+                    "C36292",
+                    "C25872",
+                    "C94299",
+                    "C77140",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C17756",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            }
+        ],
+        "classification_code": null,
+        "current_trial_status_date": "2017-12-05",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Recurrent Malignant Solid Neoplasm",
+                    "Recurrent Solid Neoplasm",
+                    "Relapsed Solid Tumor",
+                    "Recurrent Solid Tumor",
+                    "Relapsed Malignant Solid Neoplasm",
+                    "Relapsed Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127153",
+                "name": "Recurrent Malignant Solid Tumor",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C132146",
+                    "C4813"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Solid Neoplasm",
+                    "Metastatic Solid Tumor",
+                    "Metastatic Tumor",
+                    "Metastatic Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127155",
+                "name": "Metastatic Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C132146"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Malignant Solid Neoplasm",
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Neoplasm",
+                    "Advanced Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C129707",
+                "name": "Advanced Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C127155",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Castration-Resistant Prostate Carcinoma",
+                    "Castration-Resistant Prostate Carcinoma",
+                    "CRPC"
+                ],
+                "nci_thesaurus_concept_id": "C130234",
+                "name": "Castration-Resistant Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8946",
+                    "C167255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage III Liver Cell Carcinoma AJCC v8",
+                    "Stage III Hepatocellular Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134520",
+                "name": "Stage III Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7118",
+                    "C134515"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "IIIA",
+                    "Stage IIIA Hepatocellular Carcinoma AJCC v8",
+                    "Stage IIIA Liver Cell Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134521",
+                "name": "Stage IIIA Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134520"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "IIIB",
+                    "Stage IIIB Hepatocellular Carcinoma AJCC v8",
+                    "Stage IIIB Liver Cell Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134522",
+                "name": "Stage IIIB Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134520"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Liver Cell Carcinoma AJCC v8",
+                    "Stage IV Hepatocellular Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134523",
+                "name": "Stage IV Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134515",
+                    "C7121"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Hepatocellular Carcinoma AJCC v8",
+                    "IVA",
+                    "Stage IVA Liver Cell Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134524",
+                "name": "Stage IVA Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7122",
+                    "C134523"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVB Liver Cell Carcinoma AJCC v8",
+                    "IVB",
+                    "Stage IVB Hepatocellular Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134525",
+                "name": "Stage IVB Hepatocellular Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7123",
+                    "C134523"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage III Breast Cancer AJCC v8",
+                    "Anatomic Stage III Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139541",
+                "name": "Stage III Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139533"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8",
+                    "Anatomic Stage IIIA Breast Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139542",
+                "name": "Stage IIIA Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139541"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage IIIB Breast Cancer AJCC v8",
+                    "Anatomic Stage IIIB Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139543",
+                "name": "Stage IIIB Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139541"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage IIIC Breast Carcinoma AJCC v8",
+                    "Anatomic Stage IIIC Breast Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139544",
+                "name": "Stage IIIC Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139541"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage IV Breast Carcinoma AJCC v8",
+                    "Anatomic Stage IV Breast Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139545",
+                "name": "Stage IV Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139533"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prognostic Stage III Breast Carcinoma AJCC v8",
+                    "Prognostic Stage III Breast Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139582",
+                "name": "Stage III Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139554"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prognostic Stage IIIA Breast Cancer AJCC v8",
+                    "Prognostic Stage IIIA Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139583",
+                "name": "Stage IIIA Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139582"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prognostic Stage IIIB Breast Cancer AJCC v8",
+                    "Prognostic Stage IIIB Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139584",
+                "name": "Stage IIIB Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139582"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prognostic Stage IIIC Breast Carcinoma AJCC v8",
+                    "Prognostic Stage IIIC Breast Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139585",
+                "name": "Stage IIIC Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139582"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prognostic Stage IV Breast Cancer AJCC v8",
+                    "Prognostic Stage IV Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139587",
+                "name": "Stage IV Breast Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139554"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Prostate Carcinoma AJCC v8",
+                    "Stage IV Prostate Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C140173",
+                "name": "Stage IV Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140163"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Prostate Cancer AJCC v8",
+                    "Stage IVA Prostate Carcinoma AJCC v8",
+                    "IVA"
+                ],
+                "nci_thesaurus_concept_id": "C140174",
+                "name": "Stage IVA Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140173"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "IVB",
+                    "Stage IVB Prostate Carcinoma AJCC v8",
+                    "Stage IVB Prostate Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C140175",
+                "name": "Stage IVB Prostate Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C140173"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C148036",
+                "name": "Unresectable Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27359",
+                    "C132146",
+                    "C127156"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C148517",
+                "name": "Unresectable Melanoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27359",
+                    "C3224"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153348",
+                "name": "Metastatic Triple-Negative Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C165698",
+                    "C71732"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C165491",
+                "name": "Unresectable Triple-Negative Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C158752",
+                    "C71732"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C167336",
+                "name": "Advanced Hepatocellular Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C159556",
+                    "C154091",
+                    "C156746"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C175237",
+                "name": "Locally Advanced Triple-Negative Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C153348",
+                    "C165699"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Carcinoma Metastatic",
+                    "Prostate Cancer Metastatic",
+                    "Metastatic Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C8946",
+                "name": "Metastatic Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C146893"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, secondary",
+                    "Secondary Tumor",
+                    "Tumor, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Tumor",
+                    "Tumor, metastatic",
+                    "Neoplasm, metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C9270",
+                "name": "Advanced Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Tumour",
+                    "Solid tumor, NOS",
+                    "Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Malignancy",
+                    "Secondary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C36255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Male Reproductive System",
+                    "Male Reproductive System Disease"
+                ],
+                "nci_thesaurus_concept_id": "C27019",
+                "name": "Male Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Hepatic and Biliary Neoplasms",
+                    "Hepato-Biliary Neoplasm",
+                    "Liver and Biliary Neoplasm",
+                    "Hepato-Biliary Tumor",
+                    "Liver and Biliary System Neoplasm",
+                    "Hepatic, Biliary, and Gallbladder Neoplasms",
+                    "Hepatic and Biliary Tumors",
+                    "Hepatobiliary Tumors",
+                    "Hepatobiliary Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C8614",
+                "name": "Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3052",
+                    "C3959"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Hepatic and Intrahepatic Bile Duct Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7103",
+                "name": "Liver and Intrahepatic Bile Duct Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3196",
+                    "C8614"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153171",
+                "name": "Advanced Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C177149",
+                "name": "Refractory Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C181196",
+                    "C150534",
+                    "C8511"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial Carcinoma",
+                    "Malignant Epithelioma",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Epithelial tumor, malignant",
+                    "Epithelioma Malignant"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162255",
+                "name": "Metastatic Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4890",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C148130",
+                "name": "Locally Advanced Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8524",
+                    "C3482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Gastrointestinal cancer, NOS",
+                    "Gastrointestinal System Cancer",
+                    "Malignant Digestive System Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C170728",
+                "name": "Metastatic Malignant Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9335",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Carcinoma by AJCC v8 Stage",
+                    "Tumor Stage (Pathologic)"
+                ],
+                "nci_thesaurus_concept_id": "C140163",
+                "name": "Prostate Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4863"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Breast Tumor",
+                    "Malignant Tumor of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C9335",
+                "name": "Malignant Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2910",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of Male Reproductive System",
+                    "Tumor of the Male Reproductive System",
+                    "Neoplasm of Male Reproductive System",
+                    "Neoplasm of the Male Reproductive System",
+                    "Male Reproductive System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3054",
+                "name": "Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3674",
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm of Breast",
+                    "Neoplasm of the Breast",
+                    "Tumor of Breast",
+                    "Tumor of the Breast",
+                    "Breast Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C26709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C53553",
+                "name": "Breast Carcinoma by Gene Expression Profile",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C5214"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Melanoma",
+                    "Melanoma, NOS",
+                    "MELANOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C3224",
+                "name": "Melanoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7058",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Neoplasm of Prostate",
+                    "Malignant Tumor of the Prostate",
+                    "Malignant Neoplasm of the Prostate",
+                    "Malignant Prostate Tumor",
+                    "Malignant Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C7378",
+                "name": "Malignant Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C3343"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Genitourinary Disorder",
+                    "Urogenital Disease"
+                ],
+                "nci_thesaurus_concept_id": "C156660",
+                "name": "Genitourinary System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8511",
+                "name": "Refractory Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C120186"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Locally Advanced Cancer",
+                    "Locally advanced",
+                    "regional cancer",
+                    "Locally Metastatic Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8524",
+                "name": "Locally Advanced Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Refractory Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C7628",
+                "name": "Refractory Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139532",
+                "name": "Breast Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Genitourinary Neoplasm",
+                    "Genitourinary System Cancer",
+                    "Genitourinary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C156484",
+                "name": "Malignant Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma of the Breast",
+                    "Mammary adenocarcinoma",
+                    "Adenocarcinoma of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C5214",
+                "name": "Breast Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4872",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C159556",
+                "name": "Advanced Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C153171",
+                    "C4124"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C160920",
+                "name": "Locally Advanced Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C148130",
+                    "C153238"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Cancer of the Liver",
+                    "Liver Carcinoma",
+                    "Liver/hepatobiliary cancer",
+                    "Cancer of Liver",
+                    "Liver and hepatobiliary cancer, NOS",
+                    "Liver and Intrahepatic Biliary Tract Cancer",
+                    "Cancer of the Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Carcinoma",
+                    "Liver and Intrahepatic Bile Duct Cancer",
+                    "Cancer of Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Biliary Tract Carcinoma",
+                    "Biliary Tract Cancer",
+                    "Primary Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7927",
+                "name": "Liver Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C34803",
+                    "C7106",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153238",
+                "name": "Metastatic Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C170728",
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Liver and Biliary System Disorder",
+                    "Liver and Biliary Disease",
+                    "Liver and Biliary Disorder",
+                    "Liver Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3959",
+                "name": "Hepatobiliary Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm of the Prostate",
+                    "Neoplasm of Prostate",
+                    "Prostate Tumor",
+                    "Tumor of the Prostate",
+                    "Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C3343",
+                "name": "Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C26865"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Genitourinary Cancer",
+                    "Metastatic Genitourinary Carcinoma",
+                    "Metastatic Urogenital Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C146893",
+                "name": "Metastatic Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C164141",
+                    "C157774"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Liver Disorder",
+                    "Liver Disease",
+                    "Hepatic Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C3196",
+                "name": "Liver and Intrahepatic Bile Duct Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36076",
+                "name": "Malignant Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C3674"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C181196",
+                "name": "Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C164141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Gastrointestinal Carcinoma",
+                    "Metastatic Gastrointestinal System Cancer",
+                    "Metastatic Digestive System Carcinoma",
+                    "Metastatic Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C133839",
+                "name": "Metastatic Digestive System Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162255",
+                    "C3482",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7106",
+                "name": "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7103"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CARCINOMA, HEPATOCELLULAR, MALIGNANT",
+                    "Hepatocellular Carcinoma",
+                    "Carcinoma of the Liver Cells",
+                    "Liver Cell Carcinoma",
+                    "LIHC",
+                    "Carcinoma of Liver Cells",
+                    "HCC",
+                    "Hepatoma",
+                    "Primary Carcinoma of the Liver Cells",
+                    "Primary Carcinoma of Liver Cells",
+                    "Liver Cell Cancer (Hepatocellular Carcinoma)"
+                ],
+                "nci_thesaurus_concept_id": "C3099",
+                "name": "Hepatocellular Cancer",
+                "type": [
+                    "maintype",
+                    "subtype"
+                ],
+                "parents": [
+                    "C2852",
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156746",
+                "name": "Advanced Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C153171",
+                    "C175547"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C154091",
+                "name": "Metastatic Hepatocellular Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3099",
+                    "C154088",
+                    "C4124"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "resistant cancer",
+                    "Refractory Cancer",
+                    "clinical resistance"
+                ],
+                "nci_thesaurus_concept_id": "C120186",
+                "name": "Refractory Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C7628"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of Prostate",
+                    "Prostate cancer, NOS",
+                    "Cancer of Prostate",
+                    "Prostate Carcinoma",
+                    "Carcinoma of the Prostate",
+                    "Cancer of the Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C4863",
+                "name": "Prostate Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C181196",
+                    "C7378"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Liver and Biliary System Neoplasm",
+                    "Malignant Liver and Biliary Neoplasm",
+                    "Malignant Hepato-Biliary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8609",
+                "name": "Malignant Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4890",
+                    "C8614"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156482",
+                "name": "Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage III Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7118",
+                "name": "Stage III Liver Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7122",
+                "name": "Stage IVA Liver Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7121"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4124",
+                "name": "Metastatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Anatomic Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139533",
+                "name": "Breast Cancer by AJCC v8 Anatomic Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139532"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Genital Disorders",
+                    "Reproductive System Disease",
+                    "Disorder of Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C4875",
+                "name": "Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156660"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Prostate Disease"
+                ],
+                "nci_thesaurus_concept_id": "C26865",
+                "name": "Prostate Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Cancer by AJCC v8 Prognostic Stage Group",
+                    "Breast Carcinoma by AJCC v8 Prognostic Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139554",
+                "name": "Breast Cancer by AJCC v8 Prognostic Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139532"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C27359",
+                "name": "Unresectable Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Triple-Negative Breast Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C71732",
+                "name": "Triple-Negative Breast Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C53553"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Reproductive System Tumor",
+                    "Neoplasm of Reproductive System",
+                    "Reproductive Tumor",
+                    "Tumor of the Reproductive System",
+                    "Tumor of Reproductive System",
+                    "Neoplasm of the Reproductive System",
+                    "Reproductive Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C3674",
+                "name": "Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156482",
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor Morphology",
+                    "Tumor_Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C148124",
+                "name": "Unresectable Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C27359"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Primary Malignant Neoplasm of Liver"
+                ],
+                "nci_thesaurus_concept_id": "C34803",
+                "name": "Primary Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8609",
+                    "C7103"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "Disorder of Digestive System",
+                    "stomach or intestinal disorder",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Disease",
+                    "Breast Diseases"
+                ],
+                "nci_thesaurus_concept_id": "C26709",
+                "name": "Breast Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C165699",
+                "name": "Locally Advanced Breast Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C168978",
+                    "C165698",
+                    "C160920"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Recurrence",
+                    "Recurrent Cancer",
+                    "Recurrent Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4813",
+                "name": "Recurrent Malignant Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C9305",
+                    "C4798"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVB Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7123",
+                "name": "Stage IVB Liver Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7121"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127156",
+                "name": "Unresectable Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C150534",
+                "name": "Refractory Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8561",
+                    "C120186"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C158752",
+                "name": "Unresectable Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4872",
+                    "C148124"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C164141",
+                "name": "Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Mammary Carcinoma",
+                    "Carcinoma of Breast",
+                    "Carcinoma of the Breast",
+                    "Breast cancer, NOS",
+                    "Cancer of Breast",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C9335"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7058",
+                "name": "Melanocytic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36310",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C154088",
+                "name": "Metastatic Liver Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Recurrence",
+                    "Recurrent",
+                    "Recurrent Tumor",
+                    "Neoplasm Recurrence"
+                ],
+                "nci_thesaurus_concept_id": "C4798",
+                "name": "Recurrent Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Liver Cell Carcinoma by AJCC v8 Stage",
+                    "Tumor Stage (Pathologic)"
+                ],
+                "nci_thesaurus_concept_id": "C134515",
+                "name": "Hepatocellular Carcinoma by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C3099"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of the Gastrointestinal System",
+                    "Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C96963",
+                "name": "Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7121",
+                "name": "Stage IV Liver Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Malignant Genitourinary System Neoplasm",
+                    "Metastatic Genitourinary System Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C157774",
+                "name": "Metastatic Genitourinary Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C156484"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C167255",
+                "name": "Refractory Prostate Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C177149"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C165698",
+                "name": "Metastatic Breast Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4124",
+                    "C5214",
+                    "C153238"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of GI System",
+                    "Tumor of Digestive System",
+                    "Digestive Tumor",
+                    "GI Neoplasm",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Digestive System Tumor",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Neoplasm of Digestive System",
+                    "Tumor of the Digestive System",
+                    "Gastrointestinal System Tumor",
+                    "Gastrointestinal Neoplasm",
+                    "GI Tumor",
+                    "Tumor of Gastrointestinal System",
+                    "Gastrointestinal System Neoplasm",
+                    "Neoplasm of the GI System",
+                    "GI System Tumor",
+                    "GI System Neoplasm",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of the GI System",
+                    "Digestive Neoplasm",
+                    "Neoplasm of GI System"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C168978",
+                "name": "Locally Advanced Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C148130",
+                    "C4124"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C175547",
+                "name": "Advanced Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162255",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of the Male Reproductive System",
+                    "Malignant Male Reproductive System Tumor",
+                    "Male reprod. system cancer, NOS",
+                    "Malignant Neoplasm of the Male Reproductive System",
+                    "Malignant Tumor of Male Reproductive System",
+                    "Malignant Neoplasm of Male Reproductive System",
+                    "Male reproductive system cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C8561",
+                "name": "Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C36076"
+                ]
+            }
+        ],
+        "_primary_purpose_sort_order": 0,
+        "protocol_id": "CA030-001",
+        "active_sites_count": 5,
+        "lead_org_cancer_center": null,
+        "arms": [
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Biological Agent",
+                            "Anticancer Biological",
+                            "Antineoplastic Biotherapeutic",
+                            "Antineoplastic Biological"
+                        ],
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-CTLA4 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128036",
+                        "name": "Anti-CTLA-4 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C20401",
+                            "C141144",
+                            "C163758"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C146765",
+                        "name": "CTLA-4-directed Probody BMS-986249",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C129822",
+                            "C128036"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biologicals",
+                            "Biological Products",
+                            "Biologics",
+                            "Immunologics",
+                            "Biopharmaceuticals",
+                            "Immunologic, Immunochemical"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C143250",
+                        "name": "Immune Checkpoint Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C141144"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "PD-1 Inhibitor",
+                            "PD-1-targeting Agent",
+                            "Protein PD-1 Inhibitor",
+                            "Programmed Cell Death Protein 1 Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C124946",
+                        "name": "PD1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C143250"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Opdivo"
+                        ],
+                        "nci_thesaurus_concept_id": "C68814",
+                        "name": "Nivolumab",
+                        "description": "A fully human monoclonal antibody directed against  the  negative immunoregulatory human cell surface receptor PD-1 (programmed death-1 or programmed cell death-1/PCD-1) with immunopotentiation activity.  Nivolumab binds to and blocks the activation of PD-1, an Ig superfamily transmembrane protein, by its ligands PD-L1 and PD-L2, resulting in the activation of T-cells and cell-mediated  immune responses against tumor cells or pathogens. Activated PD-1 negatively regulates T-cell activation and effector function through the suppression of P13k/Akt pathway activation.  Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C128037",
+                            "C129822"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C141144",
+                        "name": "Immune Checkpoint Modulator",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antiproliferative Drugs",
+                            "Anti-Tumor Drugs",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Cancer Drug",
+                            "Antineoplastic Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Monoclonal Antibody",
+                            "Monoclonal Antibodies"
+                        ],
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-PD-1 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128037",
+                        "name": "Anti-PD1 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C124946",
+                            "C20401"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Antibody",
+                            "Antineoplastic Ab",
+                            "Anticancer Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C129822",
+                        "name": "Antineoplastic Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C129821"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immune Mediators",
+                            "Immunomodulatory Agent",
+                            "Biological Response Modifier",
+                            "BRM",
+                            "Immune Modulators",
+                            "Biomodulators",
+                            "Immunotherapeutic Agent",
+                            "Immunotherapy Agent",
+                            "Immunomodulators",
+                            "Immunomodulating Agent",
+                            "Immune Regulators",
+                            "Immunopotentiators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug",
+                            "Pharmaceuticals",
+                            "Drug Substance",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    }
+                ],
+                "name": "Arm not specified",
+                "description": null,
+                "type": null
+            },
+            {
+                "interventions": [],
+                "name": "Part 1A: BMS-986249",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 1B: BMS-986249 + nivolumab (nivo)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm A: BMS-986249 + nivo then nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma\r\nEnrollment is closed for this Arm",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm B: BMS-986249 + nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma\r\nEnrollment is closed for this Arm",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm C: BMS-986249 + nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm D: ipilimumab + nivo then nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm E: Nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma\r\nEnrollment is closed for this Arm",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2A Arm F: BMS-986249 + nivo",
+                "description": "Previously untreated unresectable stage III-IV melanoma",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2B Cohort 1: BMS-986249 + nivo",
+                "description": "Advanced hepatocellular carcinoma (HCC)",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2B Cohort 2: BMS-986249 + nivo",
+                "description": "Metastatic castration-resistant prostate cancer (CRPC)",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2B Cohort 3: BMS-986249 + nivo",
+                "description": "Unresectable locally advanced or metastatic triple-negative breast cancer (TNBC)",
+                "type": "EXPERIMENTAL"
+            }
+        ],
+        "study_model_code": null,
+        "nci_id": "NCI-2018-00164",
+        "why_study_stopped": null,
+        "brief_summary": "The purpose of this study is to determine whether BMS-986249 both by itself and in\r\n      combination with Nivolumab is safe and tolerable in the treatment of advanced solid tumors",
+        "brief_title": "An Investigational Immunotherapy Study of BMS-986249 Alone and in Combination With Nivolumab in Solid Cancers That Are Advanced or Have Spread",
+        "status_history": [
+            {
+                "status_date": "2017-12-05T00:00:00",
+                "status": "ACTIVE"
+            }
+        ],
+        "study_population_description": null,
+        "sampling_method_code": null,
+        "minimum_target_accrual_number": 425,
+        "_current_trial_status_sort_order": 0,
+        "start_date": "2017-12-06",
+        "record_verification_date": "2022-03-01",
+        "ctep_id": null,
+        "current_trial_status": "Active",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": "Randomized Controlled Trial"
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Multiple"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": null,
+        "study_source": "Industrial",
+        "completion_date": "2024-09-18",
+        "study_subtype_code": null,
+        "study_protocol_type": "Interventional"
+    }
+]

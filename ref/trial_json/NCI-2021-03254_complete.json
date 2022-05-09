@@ -1,0 +1,1442 @@
+[
+    {
+        "other_ids": [],
+        "amendment_date": null,
+        "keywords": null,
+        "dcp_id": null,
+        "interventional_model": null,
+        "lead_org": "Montefiore Medical Center-Weiler Hospital",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "Female gender"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Age >= 45"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 3,
+                    "description": "cT1-2N0, < 3.5cm invasive breast cancer, estrogen-receptor positive or ductal carcinoma in situ (DCIS) of breast, grade 1-2, mammographically detected, < 2.5 cm, estrogen-receptor positive"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 4,
+                    "description": "Suitable for breast conserving surgery"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 5,
+                    "description": "No contraindication to radiation"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 6,
+                    "description": "Mammogram within 6 months of planned procedure"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 7,
+                    "description": "Fitness for lumpectomy under general anesthesia"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 8,
+                    "description": "Planned to receive IORT"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 9,
+                    "description": "Known axillary lymph node positive breast cancer (negative biopsy not required)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 10,
+                    "description": "Multicentric cancer in the same breast as diagnosed by clinical examination, mammography, ultrasound, magnetic resonance imaging (MRI) or pathologic assessment, not amenable to excision with negative margins with a single lumpectomy"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 11,
+                    "description": "Patients known to have BRCA 1/2 gene"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 12,
+                    "description": "Patients undergoing neoadjuvant chemotherapy"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 13,
+                    "description": "Patients with a history of ipsilateral cancer and/or prior in-field radiation are eligible, as IORT would likely be less toxic than repeat whole or partial breast external beam radiation and can allow patients to avoid mastectomy who wish to do so"
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "FEMALE",
+                "accepts_healthy_volunteers": false,
+                "min_age": "45 Years",
+                "min_age_number": 45.0,
+                "min_age_in_years": 45.0
+            }
+        },
+        "completion_date_type_code": null,
+        "detail_description": "PRIMARY OBJECTIVE:\r\nI. To characterize outcomes after intraoperative single-fraction radiotherapy after breast conserving surgery, measured in terms of local and regional control.\r\n\r\nSECONDARY OBJECTIVES:\r\nI. To characterize patterns of ipsilateral in-breast failures.\r\nII. To measure rates and patterns of ipsilateral regional nodal failure.\r\nIII. To measure toxicity rates in terms of dermatitis and fibrosis.\r\n\r\nOUTLINE:\r\nPatients' medical records are reviewed.",
+        "official_title": "Intra-Operative Radiation Therapy (IORT) Using the IntraBeam System - A Registry Protocol",
+        "_phase_sort_order": 7,
+        "collaborators": [],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "Up to study completion",
+                "name": "Incidence density of local and regional recurrence rate",
+                "description": "The incidence density of local and regional recurrence rate will be estimated along with 95% exact confidence intervals.",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to study completion",
+                "name": "Incidence of adverse events",
+                "description": "Will be presented as frequency counts and percentages.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to study completion",
+                "name": "Ipsilateral in-breast failures",
+                "description": "Will be presented as frequency counts and percentages, and failure rates over time will be assessed using Cochran-Mantel Haenszel (or Mantel Cox) test.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to study completion",
+                "name": "Nodal failures",
+                "description": "Will be presented as frequency counts and percentages, and failure rates over time will be assessed using Cochran-Mantel Haenszel (or Mantel Cox) test.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to study completion",
+                "name": "Time to local and regional recurrence",
+                "description": "Will be estimated using Kaplan-Meier survival procedure along with 95% confidence interval",
+                "type_code": "PRIMARY"
+            }
+        ],
+        "phase": "NA",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "OTHER",
+        "number_of_arms": null,
+        "_study_protocol_type_sort_order": 1,
+        "nct_id": "NCT04994067",
+        "biomarkers": [
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER Alpha Status",
+                    "ER Status",
+                    "ER-Alpha Status",
+                    "ERA Status",
+                    "ESR Status",
+                    "ESR1 Status",
+                    "ESRA Status",
+                    "ESTRR Status",
+                    "Estrogen Receptor",
+                    "Estrogen Receptor 1 Status",
+                    "Estrogen Receptor Alpha Status",
+                    "NR3A1 Status",
+                    "Nuclear Receptor Subfamily 3 Group A Member 1 Status"
+                ],
+                "nci_thesaurus_concept_id": "C16150",
+                "name": "Estrogen Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C38349",
+                    "C54362",
+                    "C36292",
+                    "C20103",
+                    "C94299",
+                    "C77140",
+                    "C20709"
+                ],
+                "parents": [
+                    "C38349",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295"
+                ],
+                "parents": [
+                    "C21295"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ER Alpha Positive",
+                    "ER Positive",
+                    "ER+",
+                    "ER-Alpha Positive",
+                    "ERA Positive",
+                    "ESR Positive",
+                    "ESR1 Positive",
+                    "ESRA Positive",
+                    "ESTRR Positive",
+                    "Estrogen Receptor 1 Positive",
+                    "Estrogen Receptor Alpha Positive",
+                    "NR3A1 Positive",
+                    "Nuclear Receptor Subfamily 3 Group A Member 1 Positive",
+                    "Positive",
+                    "Positive Estrogen Receptor"
+                ],
+                "nci_thesaurus_concept_id": "C15492",
+                "name": "Estrogen Receptor Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C177692",
+                    "C16612",
+                    "C3367",
+                    "C28656",
+                    "C21295",
+                    "C16150",
+                    "C20420",
+                    "C38349",
+                    "C54362",
+                    "C35682",
+                    "C36292",
+                    "C20103",
+                    "C94299",
+                    "C77140",
+                    "C20709",
+                    "C101267"
+                ],
+                "parents": [
+                    "C101267",
+                    "C16150",
+                    "C38349"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C94299",
+                "name": "Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C77140"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C54362",
+                "name": "Transcription Regulation Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Expressed",
+                    "Expression Detected"
+                ],
+                "nci_thesaurus_concept_id": "C177692",
+                "name": "Expression Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C35682",
+                    "C77140"
+                ],
+                "parents": [
+                    "C35682"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PGR",
+                    "PR",
+                    "Progesterone Receptor Gene"
+                ],
+                "nci_thesaurus_concept_id": "C28656",
+                "name": "PGR Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103",
+                    "C20709"
+                ],
+                "parents": [
+                    "C20709"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER and/or PR +",
+                    "ER and/or PR Positive",
+                    "Estrogen Receptor and/or Progesterone Receptor Positive"
+                ],
+                "nci_thesaurus_concept_id": "C101267",
+                "name": "Hormone Receptor Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C177692",
+                    "C16612",
+                    "C3367",
+                    "C28656",
+                    "C21295",
+                    "C20420",
+                    "C38349",
+                    "C54362",
+                    "C36292",
+                    "C94299",
+                    "C77140",
+                    "C20103",
+                    "C20709",
+                    "C35682"
+                ],
+                "parents": [
+                    "C177692",
+                    "C28656",
+                    "C38349",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene, Transcription Factor"
+                ],
+                "nci_thesaurus_concept_id": "C20420",
+                "name": "Transcription Factor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C54362",
+                    "C16612"
+                ],
+                "parents": [
+                    "C54362"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER",
+                    "ESR1",
+                    "Estrogen Receptor 1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C38349",
+                "name": "ESR1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103",
+                    "C20709"
+                ],
+                "parents": [
+                    "C20709"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20709",
+                "name": "Nuclear Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20420",
+                    "C54362",
+                    "C20103"
+                ],
+                "parents": [
+                    "C20103",
+                    "C20420"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C77140"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            }
+        ],
+        "classification_code": null,
+        "current_trial_status_date": "2018-08-16",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Ductal Carcinoma In Situ, NOS",
+                    "Non-Invasive Ductal Carcinoma of the Breast",
+                    "Non-Infiltrating Ductal Breast Adenocarcinoma",
+                    "Non-Invasive Ductal Adenocarcinoma of Breast",
+                    "Non-Invasive Ductal Breast Carcinoma",
+                    "Non-Infiltrating Intraductal Adenocarcinoma",
+                    "Non-Invasive Intraductal Adenocarcinoma of the Breast",
+                    "Non-Infiltrating Ductal Carcinoma of the Breast",
+                    "Ductal Carcinoma In Situ",
+                    "Intraductal Breast Carcinoma",
+                    "Intraductal Carcinoma of the Breast",
+                    "Non-Invasive Ductal Breast Adenocarcinoma",
+                    "Non-Invasive Intraductal Adenocarcinoma of Breast",
+                    "Non-Infiltrating Ductal Carcinoma of Breast",
+                    "Non-Infiltrating Ductal Adenocarcinoma of Breast",
+                    "Intraductal Carcinoma",
+                    "Non-Infiltrating Intraductal Adenocarcinoma of Breast",
+                    "Breast Ductal Carcinoma In Situ",
+                    "Breast Ductal Carcinoma In Situ, Not Otherwise Specified",
+                    "Intraductal Carcinoma of Breast",
+                    "DCIS, NOS",
+                    "Non-Infiltrating Intraductal Breast Adenocarcinoma",
+                    "Non-Invasive Intraductal Breast Adenocarcinoma",
+                    "Non-Invasive Ductal Adenocarcinoma of the Breast",
+                    "Non-Infiltrating Intraductal Adenocarcinoma of the Breast",
+                    "Non-Invasive Ductal Carcinoma of Breast",
+                    "Non-Infiltrating Ductal Breast Carcinoma",
+                    "Ductal Breast Carcinoma In Situ",
+                    "Ductal Carcinoma In Situ of Breast",
+                    "Ductal Carcinoma In Situ of the Breast",
+                    "DCIS",
+                    "Non-Infiltrating Ductal Adenocarcinoma of the Breast",
+                    "Non-Infiltrating Intraductal Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2924",
+                "name": "Ductal Carcinoma In Situ (DCIS)",
+                "type": [
+                    "stage",
+                    "grade",
+                    "subtype"
+                ],
+                "parents": [
+                    "C6877",
+                    "C3641",
+                    "C4017",
+                    "C27942",
+                    "C139534"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Invasive Carcinoma of Breast",
+                    "Invasive Carcinoma of the Breast",
+                    "Infiltrating Breast Carcinoma",
+                    "Invasive Mammary Carcinoma",
+                    "Infiltrating Carcinoma of the Breast",
+                    "Invasive Breast Carcinoma",
+                    "infiltrating breast cancer",
+                    "Infiltrating Carcinoma of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C9245",
+                "name": "Invasive Breast Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4872",
+                    "C9480"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Breast Tumor",
+                    "Malignant Tumor of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C9335",
+                "name": "Malignant Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2910",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm of Breast",
+                    "Neoplasm of the Breast",
+                    "Tumor of Breast",
+                    "Tumor of the Breast",
+                    "Breast Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C26709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C8505"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "infiltrating cancer",
+                    "invasive cancer",
+                    "Infiltrating Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8505",
+                "name": "Invasive Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Breast Disease",
+                    "Breast Diseases"
+                ],
+                "nci_thesaurus_concept_id": "C26709",
+                "name": "Breast Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial Carcinoma",
+                    "Malignant Epithelioma",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Epithelial tumor, malignant",
+                    "Epithelioma Malignant"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor Morphology",
+                    "Tumor_Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Mammary Carcinoma",
+                    "Carcinoma of Breast",
+                    "Carcinoma of the Breast",
+                    "Breast cancer, NOS",
+                    "Cancer of Breast",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C9335"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7662",
+                "name": "High Grade Glandular Intraepithelial Neoplasia",
+                "type": [
+                    "grade"
+                ],
+                "parents": [
+                    "C7348",
+                    "C27269"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139532",
+                "name": "Breast Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelial Dysplasia",
+                    "Intraepithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8366",
+                "name": "Intraepithelial Neoplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3341",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v7 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C91230",
+                "name": "Breast Cancer by AJCC v7 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Ductal Intraepithelial Neoplasia",
+                    "Intraductal Proliferative Lesion",
+                    "Mammary Intraepithelial Neoplasia, Ductal Type",
+                    "DIN",
+                    "Intraductal Proliferative Lesion of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C27942",
+                "name": "Breast Intraductal Proliferative Lesion",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36083"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma of the Breast",
+                    "Mammary adenocarcinoma",
+                    "Adenocarcinoma of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C5214",
+                "name": "Breast Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4872",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Intraductal Breast Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C36083",
+                "name": "Breast Intraductal  Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2910"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Anatomic Stage 0 Breast Cancer AJCC v8",
+                    "Anatomic Stage 0 Breast Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C139534",
+                "name": "Stage 0 Breast Cancer",
+                "type": [
+                    "stage",
+                    "grade"
+                ],
+                "parents": [
+                    "C2917",
+                    "C139533"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7348",
+                "name": "High Grade Intraepithelial Neoplasia",
+                "type": [
+                    "grade"
+                ],
+                "parents": [
+                    "C8366"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C27269",
+                "name": "Glandular Cell Intraepithelial Neoplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8366",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular intraepithelial neoplasia, grade III"
+                ],
+                "nci_thesaurus_concept_id": "C6877",
+                "name": "Grade III Glandular Intraepithelial Neoplasia",
+                "type": [
+                    "stage",
+                    "grade",
+                    "subtype"
+                ],
+                "parents": [
+                    "C4123",
+                    "C7662"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Cancer Related Condition",
+                    "Oncologic Complications",
+                    "Cancer-Related Problem or Condition",
+                    "problem/condition, cancer related",
+                    "cancer related problem/condition",
+                    "problem/condition, cancer-related"
+                ],
+                "nci_thesaurus_concept_id": "C8278",
+                "name": "Cancer-Related Condition",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma in situ",
+                    "Breast Cancer in situ",
+                    "Stage 0 Carcinoma of the Breast",
+                    "In situ Breast Cancer",
+                    "Non-Invasive Breast Carcinoma",
+                    "stage 0 breast carcinoma in situ",
+                    "Stage 0 Breast Cancer AJCC v7",
+                    "Carcinoma in situ of Breast",
+                    "Stage 0 Breast Cancer AJCC v6",
+                    "Stage 0 Carcinoma of Breast",
+                    "Carcinoma in situ of the Breast",
+                    "Non-Infiltrating Carcinoma of Breast",
+                    "Stage 0 Breast Cancer AJCC v6 and v7",
+                    "Non-Infiltrating Carcinoma of the Breast",
+                    "Non-Invasive Carcinoma of Breast",
+                    "Stage 0 Breast Carcinoma",
+                    "Breast Cancer Stage 0",
+                    "Non-Infiltrating Breast Carcinoma",
+                    "Non-Invasive Carcinoma of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C3641",
+                "name": "Stage 0 Breast Cancer",
+                "type": [
+                    "stage",
+                    "grade"
+                ],
+                "parents": [
+                    "C2917",
+                    "C91230",
+                    "C90513"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CARCINOMA, IN SITU, MALIGNANT",
+                    "Epithelial Tumor, In situ, Malignant",
+                    "Preinvasive",
+                    "CIS",
+                    "Non-invasive Carcinoma",
+                    "Preinvasive Cancer",
+                    "Intraepithelial Carcinoma",
+                    "stage 0 disease"
+                ],
+                "nci_thesaurus_concept_id": "C2917",
+                "name": "Carcinoma In Situ",
+                "type": [
+                    "stage",
+                    "grade",
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C3341"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma in situ, NOS",
+                    "AIS"
+                ],
+                "nci_thesaurus_concept_id": "C4123",
+                "name": "Adenocarcinoma In Situ",
+                "type": [
+                    "stage",
+                    "grade",
+                    "subtype"
+                ],
+                "parents": [
+                    "C2917",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v6 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C90513",
+                "name": "Breast Cancer by AJCC v6 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Premalignant State",
+                    "Premalignant Condition",
+                    "Precancerous State"
+                ],
+                "nci_thesaurus_concept_id": "C3341",
+                "name": "Precancerous Condition",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8278"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Anatomic Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139533",
+                "name": "Breast Cancer by AJCC v8 Anatomic Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139532"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Ductal Carcinoma of the Breast",
+                    "Ductal Carcinoma of Breast",
+                    "Duct Carcinoma",
+                    "Ductal Carcinoma",
+                    "Ductal Adenocarcinoma",
+                    "Duct Adenocarcinoma",
+                    "Breast Ductal Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C4017",
+                "name": "Ductal Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C5214"
+                ]
+            }
+        ],
+        "_primary_purpose_sort_order": 7,
+        "protocol_id": "2018-9409",
+        "active_sites_count": 1,
+        "lead_org_cancer_center": "Albert Einstein Cancer Center",
+        "arms": [
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C42729",
+                        "name": "Review",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25404"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C170821",
+                        "name": "Electronic Health Record Review",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C42729"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Generic Action"
+                        ],
+                        "nci_thesaurus_concept_id": "C25404",
+                        "name": "Action",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    }
+                ],
+                "name": "Observational (medical record review)",
+                "description": "Patients' medical records are reviewed.",
+                "type": null
+            }
+        ],
+        "study_model_code": "COHORT",
+        "nci_id": "NCI-2021-03254",
+        "why_study_stopped": null,
+        "brief_summary": "This study tracks the results of intraoperative radiation therapy (IORT) using the IntraBeam system in patients with early stage breast cancer. The goal of this study is to be sure that IORT is as good as external beam radiation at preventing tumors from growing back in the breast after surgery.",
+        "brief_title": "Characterizing Outcomes after Intra-Operative Radiation Therapy Using the IntraBeam System in Patients with Early Stage Breast Cancer",
+        "status_history": [
+            {
+                "status_date": "2018-08-16T00:00:00.000002",
+                "status": "ACTIVE"
+            },
+            {
+                "status_date": "2018-08-16T00:00:00.000001",
+                "status": "APPROVED"
+            },
+            {
+                "status_date": "2018-08-02T00:00:00",
+                "status": "IN_REVIEW"
+            }
+        ],
+        "study_population_description": "Patients planned for lumpectomy with or without sentinel node biopsy for early stage breast cancer",
+        "sampling_method_code": "NON_PROBABILITY_SAMPLE",
+        "minimum_target_accrual_number": 250,
+        "_current_trial_status_sort_order": 0,
+        "start_date": "2018-08-16",
+        "record_verification_date": "2022-02-15",
+        "ctep_id": null,
+        "current_trial_status": "Active",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": null
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Breast"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": "Jana Lauren Fox",
+        "study_source": "Institutional",
+        "completion_date": null,
+        "study_subtype_code": "OBSERVATIONAL",
+        "study_protocol_type": "Non-interventional"
+    }
+]

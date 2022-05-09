@@ -1,0 +1,4699 @@
+[
+    {
+        "other_ids": [],
+        "amendment_date": null,
+        "keywords": [
+            "neoantigen cancer vaccine",
+            "shared neoantigen",
+            "GRT-C903",
+            "GRT-R904",
+            "immunotherapy",
+            "PD-1",
+            "CTLA-4",
+            "nivolumab",
+            "ipilimumab"
+        ],
+        "dcp_id": null,
+        "interventional_model": "SEQUENTIAL_ASSIGNMENT",
+        "lead_org": "Gritstone Oncology, Inc.",
+        "eligibility": {
+            "unstructured": [
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 0,
+                    "description": "Provide a signed and dated informed consent form prior to initiation of study-specific procedures."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 1,
+                    "description": "Patients with the indicated advanced or metastatic solid tumor as follows:"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 2,
+                    "description": "Microsatellite-stable colorectal cancer (MSS-CRC) who are currently receiving systemic treatment with a fluoropyrimidine and oxaliplatin and/or irinotecan that may include a VEGF or EGFR targeting therapy as their 1L therapy for metastatic disease OR who have experienced disease progression following treatment with a fluoropyrimidine, oxaliplatin, and irinotecan that may include a VEGF or EGFR targeting therapy and have not received additional lines of systemic therapy in the metastatic setting."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 3,
+                    "description": "Non-small cell lung cancer (NSCLC) who are currently receiving systemic treatment with an anti-PD-(L)1 antibody in combination with cytotoxic, platinum-based chemotherapy OR who have experienced disease progression following treatment with an anti-PD-(L)1 antibody in combination with cytotoxic, platinum-based chemotherapy (or anti-PD-(L)1 alone if patient refuses platinum-based chemotherapy), and have not received additional lines of systemic therapy in the metastatic setting."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 4,
+                    "description": "Pancreatic ductal adenocarcinoma (PDA) who are currently receiving systemic cytotoxic chemotherapy as their 1L therapy for metastatic disease OR who have experienced disease progression on 1L systemic cytotoxic chemotherapy and have received no more than 1 prior line of therapy in the metastatic setting."
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 5,
+                    "description": "Any solid tumor histology where the patient has experienced disease progression with all available therapies known to confer clinical benefit"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 6,
+                    "description": "Patient's tumor possesses one of the mutations listed below, and is determined to express a HLA allele for antigen presentation of the identified tumor mutation: BRAF_G466V // CTNNB1_S37F // CTNNB1_S45F // CTNNB1_S45P // CTNNB1_T41A // ERBB2_Y772_A775dup // KRAS_G12C or NRAS_G12C // KRAS_G12D or NRAS_G12D // KRAS_G12V // KRAS_G13D // KRAS_Q61H or NRAS_Q61H // KRAS_Q61K or NRAS_Q61K // KRAS_Q61L or NRAS_Q61L // KRAS_Q61R or NRAS_Q61R // TP53_K132E // TP53_K132N // TP53_R213L // TP53_R249M // TP53_S127Y"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 7,
+                    "description": "ECOG Performance Status 0 or 1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 8,
+                    "description": "Measurable disease according to RECIST v1.1"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 9,
+                    "description": "Adequate organ function, as measured by laboratory values (criteria listed in protocol)"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 10,
+                    "description": "Tumors with genetic characteristics as follows:"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 11,
+                    "description": "For NSCLC, patients with a known genetic driver alteration in EGFR, ALK, ROS1, RET, or TRK"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 12,
+                    "description": "Patients with known MSI-high disease based on institutional standard"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 13,
+                    "description": "Known exposure to chimpanzee adenovirus or any history of anaphylaxis in reaction to a vaccination"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 14,
+                    "description": "Bleeding disorder (eg., factor deficiency, coagulopathy) or history of significant bruising or bleeding following IM injections or blood draws"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 15,
+                    "description": "History of allogenic/solid organ transplant"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 16,
+                    "description": "Active, known, or suspected autoimmune disease"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 17,
+                    "description": "Active tuberculosis or recent (<2 week) clinically significant infection, or evidence of active hepatitis B or hepatitis C"
+                },
+                {
+                    "inclusion_indicator": false,
+                    "display_order": 18,
+                    "description": "Known history of positive test for human immunodeficiency (HIV) or known acquired immunodeficiency syndrome (AIDS)"
+                }
+            ],
+            "structured": {
+                "max_age": "999 Years",
+                "max_age_number": 999.0,
+                "min_age_unit": "Years",
+                "max_age_unit": "Years",
+                "max_age_in_years": 999.0,
+                "gender": "BOTH",
+                "accepts_healthy_volunteers": false,
+                "min_age": "18 Years",
+                "min_age_number": 18.0,
+                "min_age_in_years": 18.0
+            }
+        },
+        "completion_date_type_code": "ANTICIPATED",
+        "detail_description": "Tumors harboring non-synonymous deoxyribonucleic acid (DNA) mutations can present peptides\n      containing these mutations as non-self antigens in the context of HLA on the tumor cell\n      surface. A fraction of mutated peptides result in neoantigens capable of generating T-cell\n      responses that exclusively target tumor cells. Some of these tumor-specific neoantigens are\n      known or expected to be common across a subset of patients and are called shared neoantigens.\n      This study aims to target shared neoantigens using a heterologous prime/boost therapeutic\n      vaccine approach (GRT-C903 first followed by GRT-R904) in combination with checkpoint\n      blockade to stimulate an immune response. This study will explore the safety and early\n      clinical activity of this neoantigen-based immunotherapy intended to induce T-cell responses\n      specific for the shared neoantigens contained within the therapeutic vaccine. Phase 1 will\n      test multiple doses and combinations with checkpoint blockade and Phase 2 will test for early\n      signs of clinical activity using a vaccine regimen based on Phase 1 data.",
+        "official_title": "A Phase 1/2 Study of GRT-C903/GRT-R904, a Vaccine Targeting Shared Neoantigens, in Combination With Immune Checkpoint Blockade for Patients With Advanced Solid Tumors",
+        "_phase_sort_order": 3,
+        "collaborators": [
+            {
+                "name": "Bristol-Myers Squibb",
+                "functional_role": "LABORATORY"
+            }
+        ],
+        "associated_studies": [],
+        "outcome_measures": [
+            {
+                "timeframe": "Initiation of study treatment until disease progression (up to approximately 27 months)",
+                "name": "Clinical benefit rate (CBR) using RECIST v1.1",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Initiation of study treatment until disease progression (up to approximately 27 months)",
+                "name": "Duration of response (DOR) using RECIST v1.1",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to approximately 6 months",
+                "name": "Identify the recommended Phase 2 dose (RP2D) of GRT-C903 and GRT-R904",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Initiation of study treatment through 100 days post-last dose (up to approximately 27 months)",
+                "name": "Incidence of adverse events (AEs), serious adverse events (SAEs), and dose limiting toxicities (DLTs)",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Baseline to end of treatment (up to approximately 12 months)",
+                "name": "Measure the immune response to the neoantigens encoded by GRT-C903 and GRT-R904",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Initiation of study treatment until disease progression (up to approximately 27 months)",
+                "name": "Objective Response Rate (ORR) in Phase 1 using RECIST v1.1",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Initiation of study treatment until disease progression (up to approximately 27 months)",
+                "name": "Objective Response Rate (ORR) in Phase 2 using RECIST v1.1",
+                "description": null,
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Up to approximately 4 years",
+                "name": "Overall survival (OS)",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Up to approximately 4 years",
+                "name": "Progression-free survival (PFS)",
+                "description": null,
+                "type_code": "SECONDARY"
+            }
+        ],
+        "phase": "I_II",
+        "central_contact": {
+            "phone": null,
+            "name": null,
+            "type": null,
+            "email": null
+        },
+        "primary_purpose": "TREATMENT",
+        "number_of_arms": 2,
+        "_study_protocol_type_sort_order": 0,
+        "nct_id": "NCT03953235",
+        "biomarkers": [
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene, Signaling Factor",
+                    "Signaling Gene"
+                ],
+                "nci_thesaurus_concept_id": "C20921",
+                "name": "Signaling Pathway Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C21281"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase KRas Gln61Xxx",
+                    "GTPase KRas Q61X",
+                    "K-Ras 2 Q61X",
+                    "KRAS Codon 61 Mutation",
+                    "KRAS Gln61Xxx",
+                    "KRAS NP_004976.2:p.Gln61Xxx",
+                    "KRAS Q61 Mutation",
+                    "KRAS Q61X",
+                    "KRAS p.Gln61Xxx",
+                    "KRAS p.Q61X",
+                    "Ki-Ras Q61X",
+                    "NP_004976.2:p.Gln61Xxx",
+                    "NP_004976.2:p.Q61X",
+                    "Specific codon 61 mutation not stated",
+                    "c-K-ras Q61X"
+                ],
+                "nci_thesaurus_concept_id": "C107478",
+                "name": "KRAS NP_004976.2:p.Q61X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25784",
+                    "C16612",
+                    "C20921",
+                    "C18437",
+                    "C3910",
+                    "C98362",
+                    "C25786",
+                    "C25785",
+                    "C97926",
+                    "C97928",
+                    "C177784",
+                    "C17060"
+                ],
+                "parents": [
+                    "C25785",
+                    "C98362"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "AA_MUTATION",
+                    "Gene Product Sequence Variant",
+                    "amino acid change",
+                    "amino_acid_change"
+                ],
+                "nci_thesaurus_concept_id": "C97928",
+                "name": "Gene Product Sequence Variation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C97926",
+                    "C3910"
+                ],
+                "parents": [
+                    "C97926"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Antigen NY-CO-13 S127Y",
+                    "Antigen NY-CO-13 Ser127Tyr",
+                    "Cellular Tumor Antigen p53 S127Y",
+                    "Cellular Tumor Antigen p53 Ser127Tyr",
+                    "NP_000537.3:p.S127Y",
+                    "NP_000537.3:p.Ser127Tyr",
+                    "TP53 NP_000537.3:p.Ser127Tyr",
+                    "TP53 S127Y",
+                    "TP53 S127Y Mutation",
+                    "TP53 Ser127Tyr",
+                    "TP53 p.S127Y",
+                    "TP53 p.Ser127Tyr",
+                    "Transformation-Related Protein 53 S127Y",
+                    "Transformation-Related Protein 53 Ser127Tyr",
+                    "Tumor Protein p53 S127Y",
+                    "Tumor Protein p53 Ser127Tyr",
+                    "Tumor Suppressor p53 S127Y",
+                    "Tumor Suppressor p53 Ser127Tyr"
+                ],
+                "nci_thesaurus_concept_id": "C174152",
+                "name": "TP53 NP_000537.3:p.S127Y",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C146884",
+                    "C20917",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C17359",
+                    "C3910"
+                ],
+                "parents": [
+                    "C146884",
+                    "C17359"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Beta Catenin S45F",
+                    "Beta Catenin Ser45Phe",
+                    "Beta-Catenin S45F",
+                    "Beta-Catenin Ser45Phe",
+                    "CTNNB S45F",
+                    "CTNNB Ser45Phe",
+                    "CTNNB1 NP_001895.1:p.Ser45Phe",
+                    "CTNNB1 S45F",
+                    "CTNNB1 S45F Mutation",
+                    "CTNNB1 Ser45Phe",
+                    "CTNNB1 p.S45F",
+                    "CTNNB1 p.Ser45Phe",
+                    "Cadherin-Associated Protein, Beta S45F",
+                    "Cadherin-Associated Protein, Beta Ser45Phe",
+                    "Catenin Beta-1 S45F",
+                    "Catenin Beta-1 Ser45Phe",
+                    "Catenin, Beta-1 S45F",
+                    "Catenin, Beta-1 Ser45Phe",
+                    "NP_001895.1:p.S45F",
+                    "NP_001895.1:p.Ser45Phe"
+                ],
+                "nci_thesaurus_concept_id": "C174161",
+                "name": "CTNNB1 NP_001895.1:p.S45F",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20987",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C20921",
+                    "C164279",
+                    "C3910"
+                ],
+                "parents": [
+                    "C164279",
+                    "C20987"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Serine/Threonine-Protein Kinase B-raf Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C98307",
+                "name": "BRAF Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25873",
+                    "C3910",
+                    "C18363",
+                    "C25870",
+                    "C97926",
+                    "C25872",
+                    "C25871",
+                    "C21281",
+                    "C97928"
+                ],
+                "parents": [
+                    "C18363",
+                    "C97928"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Antigen NY-CO-13 K132E",
+                    "Antigen NY-CO-13 Lys132Glu",
+                    "Cellular Tumor Antigen p53 K132E",
+                    "Cellular Tumor Antigen p53 Lys132Glu",
+                    "NP_000537.3:p.K132E",
+                    "NP_000537.3:p.Lys132Glu",
+                    "TP53 K132E",
+                    "TP53 K132E Mutation",
+                    "TP53 Lys132Glu",
+                    "TP53 NP_000537.3:p.Lys132Glu",
+                    "TP53 p.K132E",
+                    "TP53 p.Lys132Glu",
+                    "Transformation-Related Protein 53 K132E",
+                    "Transformation-Related Protein 53 Lys132Glu",
+                    "Tumor Protein p53 K132E",
+                    "Tumor Protein p53 Lys132Glu",
+                    "Tumor Suppressor p53 K132E",
+                    "Tumor Suppressor p53 Lys132Glu"
+                ],
+                "nci_thesaurus_concept_id": "C174157",
+                "name": "TP53 NP_000537.3:p.K132E",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C146884",
+                    "C20917",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C17359",
+                    "C3910"
+                ],
+                "parents": [
+                    "C146884",
+                    "C17359"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "RAS Family Variant",
+                    "RAS Protein Variant",
+                    "RAS Variant"
+                ],
+                "nci_thesaurus_concept_id": "C177784",
+                "name": "RAS Family Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C16612",
+                    "C97928",
+                    "C17060",
+                    "C97926",
+                    "C3910",
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C25786"
+                ],
+                "parents": [
+                    "C17060",
+                    "C25785",
+                    "C25786",
+                    "C97928"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25872",
+                "name": "Kinase Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25870",
+                    "C16612",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C25871"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "exclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "G12D Mutated KRAS",
+                    "GTPase KRas G12D",
+                    "GTPase KRas Gly12Asp",
+                    "K-Ras 2 G12D",
+                    "K-Ras 2 Gly12Asp",
+                    "KRAS G12D",
+                    "KRAS Gly12Asp",
+                    "KRAS NP_004976.2:p.Gly12Asp",
+                    "KRAS p.G12D",
+                    "KRAS p.Gly12Asp",
+                    "Ki-Ras G12D",
+                    "Ki-Ras Gly12Asp",
+                    "NP_004976.2:p.G12D",
+                    "NP_004976.2:p.Gly12Asp",
+                    "c-K-ras G12D",
+                    "c-K-ras Gly12Asp"
+                ],
+                "nci_thesaurus_concept_id": "C98369",
+                "name": "KRAS NP_004976.2:p.G12D",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C20921",
+                    "C25786",
+                    "C17060",
+                    "C3910",
+                    "C25785",
+                    "C97926",
+                    "C18437",
+                    "C98362",
+                    "C25784",
+                    "C117180",
+                    "C177784",
+                    "C97928"
+                ],
+                "parents": [
+                    "C117180",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "K-ras gene",
+                    "KRAS",
+                    "KRas Proto-Oncogene, GTPase Gene"
+                ],
+                "nci_thesaurus_concept_id": "C25785",
+                "name": "KRAS Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25784"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "STK",
+                    "Serine/Threonine Kinase Gene",
+                    "Serine/Threonine-Protein Kinase Gene"
+                ],
+                "nci_thesaurus_concept_id": "C25873",
+                "name": "Serine/Threonine Protein Kinase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25870",
+                    "C25872",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas G12V",
+                    "GTPase KRas Gly12Val",
+                    "K-Ras 2 G12V",
+                    "K-Ras 2 Gly12Val",
+                    "KRAS G12V",
+                    "KRAS Gly12Val",
+                    "KRAS NP_004976.2:p.Gly12Val",
+                    "KRAS p.G12V",
+                    "KRAS p.Gly12Val",
+                    "Ki-Ras G12V",
+                    "Ki-Ras Gly12Val",
+                    "NP_004976.2:p.G12V",
+                    "NP_004976.2:p.Gly12Val",
+                    "c-K-ras G12V",
+                    "c-K-ras Gly12Val"
+                ],
+                "nci_thesaurus_concept_id": "C98391",
+                "name": "KRAS NP_004976.2:p.G12V",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C177784",
+                    "C17060",
+                    "C25786",
+                    "C3910",
+                    "C16612",
+                    "C97926",
+                    "C25785",
+                    "C98362",
+                    "C97928",
+                    "C18437",
+                    "C20921",
+                    "C117180",
+                    "C25784"
+                ],
+                "parents": [
+                    "C117180",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "P53",
+                    "TP53",
+                    "Tumor Protein P53 (Li-Fraumeni Syndrome) Gene"
+                ],
+                "nci_thesaurus_concept_id": "C17359",
+                "name": "TP53 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C20917"
+                ],
+                "parents": [
+                    "C20917"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Antigen NY-CO-13 K132N",
+                    "Antigen NY-CO-13 Lys132Asn",
+                    "Cellular Tumor Antigen p53 K132N",
+                    "Cellular Tumor Antigen p53 Lys132Asn",
+                    "NP_000537.3:p.K132N",
+                    "NP_000537.3:p.Lys132Asn",
+                    "TP53 K132N",
+                    "TP53 K132N Mutation",
+                    "TP53 Lys132Asn",
+                    "TP53 NP_000537.3:p.Lys132Asn",
+                    "TP53 p.K132N",
+                    "TP53 p.Lys132Asn",
+                    "Transformation-Related Protein 53 K132N",
+                    "Transformation-Related Protein 53 Lys132Asn",
+                    "Tumor Protein p53 K132N",
+                    "Tumor Protein p53 Lys132Asn",
+                    "Tumor Suppressor p53 K132N",
+                    "Tumor Suppressor p53 Lys132Asn"
+                ],
+                "nci_thesaurus_concept_id": "C169079",
+                "name": "TP53 NP_000537.3:p.K132N",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C146884",
+                    "C20917",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C17359",
+                    "C3910"
+                ],
+                "parents": [
+                    "C146884",
+                    "C17359"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas G12C",
+                    "GTPase NRas Gly12Cys",
+                    "NP_002515.1:p.G12C",
+                    "NP_002515.1:p.Gly12Cys",
+                    "NRAS G12C",
+                    "NRAS Gly12Cys",
+                    "NRAS NP_002515.1:p.Gly12Cys",
+                    "NRAS p.G12C",
+                    "NRAS p.Gly12Cys",
+                    "Transforming Protein N-Ras G12C",
+                    "Transforming Protein N-Ras Gly12Cys"
+                ],
+                "nci_thesaurus_concept_id": "C155669",
+                "name": "NRAS NP_002515.1:p.G12C",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C16612",
+                    "C107483",
+                    "C18437",
+                    "C20921",
+                    "C98439",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107483",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "B-Raf Proto-Oncogene, Serine/Threonine Kinase Gene",
+                    "BRAF"
+                ],
+                "nci_thesaurus_concept_id": "C18363",
+                "name": "BRAF Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25873",
+                    "C25870",
+                    "C25872",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C25873"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Antigen NY-CO-13 Arg213Leu",
+                    "Antigen NY-CO-13 R213L",
+                    "Cellular Tumor Antigen p53 Arg213Leu",
+                    "Cellular Tumor Antigen p53 R213L",
+                    "NP_000537.3:p.Arg213Leu",
+                    "NP_000537.3:p.R213L",
+                    "TP53 Arg213Leu",
+                    "TP53 NP_000537.3:p.Arg213Leu",
+                    "TP53 R213L",
+                    "TP53 p.Arg213Leu",
+                    "TP53 p.R213L",
+                    "Transformation-Related Protein 53 Arg213Leu",
+                    "Transformation-Related Protein 53 R213L",
+                    "Tumor Protein p53 Arg213Leu",
+                    "Tumor Protein p53 R213L",
+                    "Tumor Suppressor p53 Arg213Leu",
+                    "Tumor Suppressor p53 R213L"
+                ],
+                "nci_thesaurus_concept_id": "C146888",
+                "name": "TP53 NP_000537.3:p.R213L",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C146884",
+                    "C20917",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C17359",
+                    "C3910"
+                ],
+                "parents": [
+                    "C146884",
+                    "C17359"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25870",
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Beta Catenin T41A",
+                    "Beta Catenin Thr41Ala",
+                    "Beta-Catenin T41A",
+                    "Beta-Catenin Thr41Ala",
+                    "CTNNB T41A",
+                    "CTNNB Thr41Ala",
+                    "CTNNB1 NP_001091679.1:p.Thr41Ala",
+                    "CTNNB1 T41A",
+                    "CTNNB1 T41A Mutation",
+                    "CTNNB1 Thr41Ala",
+                    "CTNNB1 p.T41A",
+                    "CTNNB1 p.Thr41Ala",
+                    "Cadherin-Associated Protein, Beta T41A",
+                    "Cadherin-Associated Protein, Beta Thr41Ala",
+                    "Catenin Beta-1 T41A",
+                    "Catenin Beta-1 Thr41Ala",
+                    "Catenin, Beta-1 T41A",
+                    "Catenin, Beta-1 Thr41Ala",
+                    "NP_001091679.1:p.T41A",
+                    "NP_001091679.1:p.Thr41Ala"
+                ],
+                "nci_thesaurus_concept_id": "C164281",
+                "name": "CTNNB1 NP_001091679.1:p.T41A",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20987",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C20921",
+                    "C164279",
+                    "C3910"
+                ],
+                "parents": [
+                    "C164279",
+                    "C20987"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ERBB2 774_775insAYVM insertion mutation",
+                    "ERBB2 A775_G776insYVMA",
+                    "ERBB2 NP_004439.2:p.Ala775_Gly776insTyrValMetAla",
+                    "ERBB2 NP_004439.2:p.Tyr772_Ala775dup",
+                    "ERBB2 NP_004439.2:p.Y772_A775dup",
+                    "ERBB2 Tyr772_Ala775dup",
+                    "ERBB2 Y772 A775dup",
+                    "ERBB2 Y772_A775dup",
+                    "ERBB2 p.A775_G776insYVMA",
+                    "ERBB2 p.E770delinsEAYVM",
+                    "ERBB2 p.M774insAYVM",
+                    "ERBB2 p.Tyr772_Ala775dup",
+                    "ERBB2 p.Y772_A775dup",
+                    "NP_004439.2:p.Ala775_Gly776insTyrValMetAla",
+                    "NP_004439.2:p.E770delinsEAYVM",
+                    "NP_004439.2:p.M774insAYVM",
+                    "Proto-Oncogene Neu A775_G776insYVMA",
+                    "Receptor Tyrosine-Protein Kinase erbB-2 A775_G776insYVMA",
+                    "Tyrosine Kinase-Type Cell Surface Receptor HER2 A775_G776insYVMA"
+                ],
+                "nci_thesaurus_concept_id": "C98359",
+                "name": "ERBB2 NP_004439.2:p.A775_G776insYVMA",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C17756",
+                    "C25871",
+                    "C97926",
+                    "C21281",
+                    "C20103",
+                    "C97928",
+                    "C21295",
+                    "C20719",
+                    "C98358",
+                    "C16612",
+                    "C25872",
+                    "C25870",
+                    "C3910"
+                ],
+                "parents": [
+                    "C17756",
+                    "C98358"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase KRas G13X",
+                    "GTPase KRas Gly13Xxx",
+                    "K-Ras 2 G13X",
+                    "KRAS Codon 13 Mutation",
+                    "KRAS G13 Mutation",
+                    "KRAS G13X",
+                    "KRAS Gly13Xxx",
+                    "KRAS NP_004976.2:p.Gly13Xxx",
+                    "KRAS p.G13X",
+                    "KRAS p.Gly13Xxx",
+                    "Ki-Ras G13X",
+                    "NP_004976.2:p.G13X",
+                    "NP_004976.2:p.Gly13Xxx",
+                    "Specific codon 13 mutation not stated",
+                    "c-K-ras G13X"
+                ],
+                "nci_thesaurus_concept_id": "C117177",
+                "name": "KRAS NP_004976.2:p.G13X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C177784",
+                    "C17060",
+                    "C25786",
+                    "C3910",
+                    "C16612",
+                    "C97926",
+                    "C25785",
+                    "C98362",
+                    "C97928",
+                    "C18437",
+                    "C20921",
+                    "C25784"
+                ],
+                "parents": [
+                    "C25785",
+                    "C98362"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase NRas Q61X",
+                    "NP_002515.1:p.Gln61Xxx",
+                    "NP_002515.1:p.Q61X",
+                    "NRAS Gln61Xxx",
+                    "NRAS NP_002515.1:p.Gln61Xxx",
+                    "NRAS Q61 Mutation",
+                    "NRAS Q61X",
+                    "NRAS p.Gln61Xxx",
+                    "NRAS p.Q61X",
+                    "Transforming Protein N-Ras Q61X"
+                ],
+                "nci_thesaurus_concept_id": "C107485",
+                "name": "NRAS NP_002515.1:p.Q61X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25784",
+                    "C16612",
+                    "C20921",
+                    "C18437",
+                    "C3910",
+                    "C25786",
+                    "C98439",
+                    "C25785",
+                    "C97926",
+                    "C97928",
+                    "C177784",
+                    "C17060"
+                ],
+                "parents": [
+                    "C25786",
+                    "C98439"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "NRAS",
+                    "Neuroblastoma RAS Viral Oncogene Homolog Gene"
+                ],
+                "nci_thesaurus_concept_id": "C25786",
+                "name": "NRAS Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25784"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ras gene family"
+                ],
+                "nci_thesaurus_concept_id": "C25784",
+                "name": "RAS Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C18437",
+                    "C16612"
+                ],
+                "parents": [
+                    "C18437"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Beta Catenin S45P",
+                    "Beta Catenin Ser45Pro",
+                    "Beta-Catenin S45P",
+                    "Beta-Catenin Ser45Pro",
+                    "CTNNB S45P",
+                    "CTNNB Ser45Pro",
+                    "CTNNB1 NP_001895.1:p.Ser45Pro",
+                    "CTNNB1 S45P",
+                    "CTNNB1 S45P Mutation",
+                    "CTNNB1 Ser45Pro",
+                    "CTNNB1 p.S45P",
+                    "CTNNB1 p.Ser45Pro",
+                    "Cadherin-Associated Protein, Beta S45P",
+                    "Cadherin-Associated Protein, Beta Ser45Pro",
+                    "Catenin Beta-1 S45P",
+                    "Catenin Beta-1 Ser45Pro",
+                    "Catenin, Beta-1 S45P",
+                    "Catenin, Beta-1 Ser45Pro",
+                    "NP_001895.1:p.S45P",
+                    "NP_001895.1:p.Ser45Pro"
+                ],
+                "nci_thesaurus_concept_id": "C174154",
+                "name": "CTNNB1 NP_001895.1:p.S45P",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20987",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C20921",
+                    "C164279",
+                    "C3910"
+                ],
+                "parents": [
+                    "C164279",
+                    "C20987"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas Gln61Arg",
+                    "GTPase NRas Q61R",
+                    "NP_002515.1:p.Gln61Arg",
+                    "NP_002515.1:p.Q61R",
+                    "NRAS Gln61Arg",
+                    "NRAS NP_002515.1:p.Gln61Arg",
+                    "NRAS Q61R",
+                    "NRAS p.Gln61Arg",
+                    "NRAS p.Q61R",
+                    "Transforming Protein N-Ras Gln61Arg",
+                    "Transforming Protein N-Ras Q61R"
+                ],
+                "nci_thesaurus_concept_id": "C98456",
+                "name": "NRAS NP_002515.1:p.Q61R",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C16612",
+                    "C107485",
+                    "C18437",
+                    "C20921",
+                    "C98439",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107485",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20719",
+                "name": "Receptor Tyrosine Kinase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C25870",
+                    "C25872",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C20103",
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene, G-Protein"
+                ],
+                "nci_thesaurus_concept_id": "C18437",
+                "name": "G Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C16612"
+                ],
+                "parents": [
+                    "C20921"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas G13D",
+                    "GTPase KRas Gly13Asp",
+                    "K-Ras 2 G13D",
+                    "KRAS G13D",
+                    "KRAS Gly13Asp",
+                    "KRAS NP_004976.2:p.Gly13Asp",
+                    "KRAS p.G13D",
+                    "KRAS p.Gly13Asp",
+                    "Ki-Ras G13D",
+                    "NP_004976.2:p.Gly13Asp",
+                    "c-K-ras G13D"
+                ],
+                "nci_thesaurus_concept_id": "C98403",
+                "name": "KRAS NP_004976.2:p.G13D",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C177784",
+                    "C17060",
+                    "C25786",
+                    "C3910",
+                    "C16612",
+                    "C97926",
+                    "C25785",
+                    "C98362",
+                    "C97928",
+                    "C18437",
+                    "C20921",
+                    "C25784",
+                    "C117177"
+                ],
+                "parents": [
+                    "C117177",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal, Gene, or Protein Abnormality",
+                    "Cytogenetic or Molecular Genetic Abnormality",
+                    "Genetic Abnormality",
+                    "MOLECULAR_ABNORMALITY",
+                    "Molecular Alteration"
+                ],
+                "nci_thesaurus_concept_id": "C3910",
+                "name": "Molecular Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Beta Catenin S37F",
+                    "Beta Catenin Ser37Phe",
+                    "Beta-Catenin S37F",
+                    "Beta-Catenin Ser37Phe",
+                    "CTNNB S37F",
+                    "CTNNB Ser37Phe",
+                    "CTNNB1 NP_001895.1:p.Ser37Phe",
+                    "CTNNB1 S37F",
+                    "CTNNB1 S37F Mutation",
+                    "CTNNB1 Ser37Phe",
+                    "CTNNB1 p.S37F",
+                    "CTNNB1 p.Ser37Phe",
+                    "Cadherin-Associated Protein, Beta S37F",
+                    "Cadherin-Associated Protein, Beta Ser37Phe",
+                    "Catenin Beta-1 S37F",
+                    "Catenin Beta-1 Ser37Phe",
+                    "Catenin, Beta-1 S37F",
+                    "Catenin, Beta-1 Ser37Phe",
+                    "NP_001895.1:p.S37F",
+                    "NP_001895.1:p.Ser37Phe"
+                ],
+                "nci_thesaurus_concept_id": "C174163",
+                "name": "CTNNB1 NP_001895.1:p.S37F",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20987",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C20921",
+                    "C164279",
+                    "C3910"
+                ],
+                "parents": [
+                    "C164279",
+                    "C20987"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase KRas G12X",
+                    "GTPase KRas Gly12Xxx",
+                    "K-Ras 2 G12X",
+                    "KRAS Codon 12 Mutation",
+                    "KRAS G12 Mutation",
+                    "KRAS G12X",
+                    "KRAS Gly12Xxx",
+                    "KRAS NP_004976.2:p.Gly12Xxx",
+                    "KRAS p.G12X",
+                    "KRAS p.Gly12Xxx",
+                    "Ki-Ras G12X",
+                    "NP_004976.2:p.G12X",
+                    "NP_004976.2:p.Gly12Xxx",
+                    "Specific codon 12 mutation not stated",
+                    "c-K-ras G12X"
+                ],
+                "nci_thesaurus_concept_id": "C117180",
+                "name": "KRAS NP_004976.2:p.G12X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C16612",
+                    "C177784",
+                    "C97928",
+                    "C17060",
+                    "C97926",
+                    "C98362",
+                    "C3910",
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C25786"
+                ],
+                "parents": [
+                    "C25785",
+                    "C98362"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "exclusion",
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas G12D",
+                    "GTPase NRas Gly12Asp",
+                    "NP_002515.1:p.G12D",
+                    "NP_002515.1:p.Gly12Asp",
+                    "NRAS G12D",
+                    "NRAS Gly12Asp",
+                    "NRAS NP_002515.1:p.Gly12Asp",
+                    "NRAS p.G12D",
+                    "NRAS p.Gly12Asp",
+                    "Transforming Protein N-Ras G12D",
+                    "Transforming Protein N-Ras Gly12Asp"
+                ],
+                "nci_thesaurus_concept_id": "C155671",
+                "name": "NRAS NP_002515.1:p.G12D",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25786",
+                    "C20921",
+                    "C17060",
+                    "C3910",
+                    "C25785",
+                    "C97926",
+                    "C107483",
+                    "C18437",
+                    "C98439",
+                    "C25784",
+                    "C177784",
+                    "C97928"
+                ],
+                "parents": [
+                    "C107483",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Antigen NY-CO-13 Arg249Met",
+                    "Antigen NY-CO-13 R249M",
+                    "Cellular Tumor Antigen p53 Arg249Met",
+                    "Cellular Tumor Antigen p53 R249M",
+                    "NP_000537.3:p.Arg249Met",
+                    "NP_000537.3:p.R249M",
+                    "TP53 Arg249Met",
+                    "TP53 NP_000537.3:p.Arg249Met",
+                    "TP53 R249M",
+                    "TP53 R249M Mutation",
+                    "TP53 p.Arg249Met",
+                    "TP53 p.R249M",
+                    "Transformation-Related Protein 53 Arg249Met",
+                    "Transformation-Related Protein 53 R249M",
+                    "Tumor Protein p53 Arg249Met",
+                    "Tumor Protein p53 R249M",
+                    "Tumor Suppressor p53 Arg249Met",
+                    "Tumor Suppressor p53 R249M"
+                ],
+                "nci_thesaurus_concept_id": "C174156",
+                "name": "TP53 NP_000537.3:p.R249M",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C146884",
+                    "C20917",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C17359",
+                    "C3910"
+                ],
+                "parents": [
+                    "C146884",
+                    "C17359"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase NRas Protein Variant",
+                    "Transforming Protein N-Ras Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C98439",
+                "name": "NRAS Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25786",
+                    "C20921",
+                    "C17060",
+                    "C3910",
+                    "C25785",
+                    "C97926",
+                    "C18437",
+                    "C25784",
+                    "C177784",
+                    "C97928"
+                ],
+                "parents": [
+                    "C177784",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ERBB2",
+                    "Erb-b2 Receptor Tyrosine Kinase 2 Gene",
+                    "HER2",
+                    "HER2/Neu",
+                    "NEU"
+                ],
+                "nci_thesaurus_concept_id": "C17756",
+                "name": "ERBB2 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295",
+                    "C20719",
+                    "C25870",
+                    "C25872",
+                    "C20103",
+                    "C21281",
+                    "C25871"
+                ],
+                "parents": [
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "H-ras gene",
+                    "HRAS",
+                    "HRas Proto-Oncogene, GTPase Gene"
+                ],
+                "nci_thesaurus_concept_id": "C17060",
+                "name": "HRAS Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25784"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas Gln61Arg",
+                    "GTPase KRas Q61R",
+                    "K-Ras 2 Q61R",
+                    "KRAS Gln61Arg",
+                    "KRAS NP_004976.2:p.Gln61Arg",
+                    "KRAS Q61R",
+                    "KRAS p.Gln61Arg",
+                    "KRAS p.Q61R",
+                    "Ki-Ras Q61R",
+                    "NP_004976.2:p.Gln61Arg",
+                    "NP_004976.2:p.Q61R",
+                    "c-K-ras Q61R"
+                ],
+                "nci_thesaurus_concept_id": "C98437",
+                "name": "KRAS NP_004976.2:p.Q61R",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C107478",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C98362",
+                    "C16612",
+                    "C18437",
+                    "C20921",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107478",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas Gln61Leu",
+                    "GTPase NRas Q61L",
+                    "NP_002515.1:p.Gln61Leu",
+                    "NP_002515.1:p.Q61L",
+                    "NRAS Gln61Leu",
+                    "NRAS NP_002515.1:p.Gln61Leu",
+                    "NRAS Q61L",
+                    "NRAS p.Gln61Leu",
+                    "NRAS p.Q61L",
+                    "Transforming Protein N-Ras Gln61Leu",
+                    "Transforming Protein N-Ras Q61L"
+                ],
+                "nci_thesaurus_concept_id": "C98449",
+                "name": "NRAS NP_002515.1:p.Q61L",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C16612",
+                    "C107485",
+                    "C18437",
+                    "C20921",
+                    "C98439",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107485",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas Gln61Leu",
+                    "GTPase KRas Q61L",
+                    "K-Ras 2 Q61L",
+                    "KRAS Gln61Leu",
+                    "KRAS NP_004976.2:p.Gln61Leu",
+                    "KRAS Q61L",
+                    "KRAS p.Gln61Leu",
+                    "KRAS p.Q61L",
+                    "Ki-Ras Q61L",
+                    "NP_004976.2:p.Gln61Leu",
+                    "NP_004976.2:p.Q61L",
+                    "c-K-ras Q61L"
+                ],
+                "nci_thesaurus_concept_id": "C98433",
+                "name": "KRAS NP_004976.2:p.Q61L",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C107478",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C98362",
+                    "C16612",
+                    "C18437",
+                    "C20921",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107478",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "eligibility_criteria": "exclusion",
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "MSI Stable",
+                    "MSS",
+                    "Stable"
+                ],
+                "nci_thesaurus_concept_id": "C131459",
+                "name": "Microsatellite Stable",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "exclusion",
+                "ancestors": [
+                    "C3367",
+                    "C103223",
+                    "C77140",
+                    "C36292"
+                ],
+                "parents": [
+                    "C103223"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas G12C",
+                    "K-Ras 2 G12C",
+                    "KRAS G12C",
+                    "KRAS G12C Mutation",
+                    "KRAS Gly12Cys",
+                    "KRAS NP_004976.2:p.Gly12Cys",
+                    "KRAS p.G12C",
+                    "KRAS p.Gly12Cys",
+                    "Ki-Ras G12C",
+                    "NP_004976.2:p.Gly12Cys",
+                    "c-K-ras G12C"
+                ],
+                "nci_thesaurus_concept_id": "C98365",
+                "name": "KRAS NP_004976.2:p.G12C",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C16612",
+                    "C177784",
+                    "C97928",
+                    "C17060",
+                    "C97926",
+                    "C98362",
+                    "C3910",
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C25786",
+                    "C117180"
+                ],
+                "parents": [
+                    "C117180",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20917",
+                "name": "Cell Cycle Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "VARIANT_TYPE",
+                    "molecular consequence",
+                    "molecular_consequence"
+                ],
+                "nci_thesaurus_concept_id": "C97926",
+                "name": "Molecular Sequence Variation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C3910"
+                ],
+                "parents": [
+                    "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase NRas G12X",
+                    "NP_002515.1:p.G12X",
+                    "NP_002515.1:p.Gly12Xxx",
+                    "NRAS G12 Mutation",
+                    "NRAS G12X",
+                    "NRAS Gly12Xxx",
+                    "NRAS NP_002515.1:p.Gly12Xxx",
+                    "NRAS p.G12X",
+                    "NRAS p.Gly12Xxx",
+                    "Transforming Protein N-Ras G12X"
+                ],
+                "nci_thesaurus_concept_id": "C107483",
+                "name": "NRAS NP_002515.1:p.G12X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25786",
+                    "C20921",
+                    "C17060",
+                    "C3910",
+                    "C25785",
+                    "C97926",
+                    "C98439",
+                    "C18437",
+                    "C25784",
+                    "C177784",
+                    "C97928"
+                ],
+                "parents": [
+                    "C25786",
+                    "C98439"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GTPase KRas Protein Variant",
+                    "K-Ras 2 Protein Variant",
+                    "Ki-Ras Protein Variant",
+                    "c-K-ras Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C98362",
+                "name": "KRAS Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C16612",
+                    "C177784",
+                    "C97928",
+                    "C17060",
+                    "C97926",
+                    "C3910",
+                    "C20921",
+                    "C25784",
+                    "C18437",
+                    "C25786"
+                ],
+                "parents": [
+                    "C177784",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C21295"
+                ],
+                "parents": [
+                    "C21295"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene Neu Protein Variant",
+                    "Receptor Tyrosine-Protein Kinase erbB-2 Protein Variant",
+                    "Tyrosine Kinase-Type Cell Surface Receptor HER2 Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C98358",
+                "name": "ERBB2 Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612",
+                    "C25870",
+                    "C20103",
+                    "C17756",
+                    "C97928",
+                    "C97926",
+                    "C3910",
+                    "C25872",
+                    "C25871",
+                    "C20719",
+                    "C21295",
+                    "C21281"
+                ],
+                "parents": [
+                    "C17756",
+                    "C97928"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas Gln61His",
+                    "GTPase NRas Q61H",
+                    "NP_002515.1:p.Gln61His",
+                    "NP_002515.1:p.Q61H",
+                    "NRAS Gln61His",
+                    "NRAS NP_002515.1:p.Gln61His",
+                    "NRAS Q61H",
+                    "NRAS p.Gln61His",
+                    "NRAS p.Q61H",
+                    "Transforming Protein N-Ras Gln61His",
+                    "Transforming Protein N-Ras Q61H"
+                ],
+                "nci_thesaurus_concept_id": "C98442",
+                "name": "NRAS NP_002515.1:p.Q61H",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C16612",
+                    "C107485",
+                    "C18437",
+                    "C20921",
+                    "C98439",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107485",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C103223",
+                "name": "Genetic Finding",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "eligibility_criteria": "exclusion",
+                "ancestors": [
+                    "C3367",
+                    "C36292",
+                    "C77140"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Beta Catenin Protein Variant",
+                    "Beta-Catenin Protein Variant",
+                    "CTNNB Protein Variant",
+                    "Cadherin-Associated Protein, Beta Protein Variant",
+                    "Catenin Beta-1 Protein Variant",
+                    "Catenin, Beta-1 Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C164279",
+                "name": "CTNNB1 Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20987",
+                    "C97926",
+                    "C97928",
+                    "C16612",
+                    "C20921",
+                    "C3910"
+                ],
+                "parents": [
+                    "C20987",
+                    "C97928"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Antigen NY-CO-13 Protein Variant",
+                    "Cellular Tumor Antigen p53 Protein Variant",
+                    "Transformation-Related Protein 53 Protein Variant",
+                    "Tumor Protein p53 Protein Variant",
+                    "Tumor Suppressor p53 Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C146884",
+                "name": "TP53 Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20917",
+                    "C3910",
+                    "C16612",
+                    "C97926",
+                    "C97928",
+                    "C17359"
+                ],
+                "parents": [
+                    "C17359",
+                    "C97928"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "CTNNB1",
+                    "Catenin Beta 1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C20987",
+                "name": "CTNNB1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C20921",
+                    "C16612"
+                ],
+                "parents": [
+                    "C20921"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "BRAF G466V",
+                    "BRAF Gly466Val",
+                    "BRAF NP_004324.2:p.Gly466Val",
+                    "BRAF p.G466V",
+                    "BRAF p.Gly466Val",
+                    "NP_004324.2:p.Gly466Val",
+                    "Serine/Threonine-Protein Kinase B-raf G466V",
+                    "Serine/Threonine-Protein Kinase B-raf Gly466Val"
+                ],
+                "nci_thesaurus_concept_id": "C98314",
+                "name": "BRAF NP_004324.2:p.G466V",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C18363",
+                    "C25871",
+                    "C25873",
+                    "C97926",
+                    "C21281",
+                    "C97928",
+                    "C16612",
+                    "C25872",
+                    "C25870",
+                    "C98307",
+                    "C3910"
+                ],
+                "parents": [
+                    "C18363",
+                    "C98307"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas Gln61Lys",
+                    "GTPase KRas Q61K",
+                    "K-Ras 2 Q61K",
+                    "KRAS Gln61Lys",
+                    "KRAS NP_004976.2:p.Gln61Lys",
+                    "KRAS Q61K",
+                    "KRAS p.Gln61Lys",
+                    "KRAS p.Q61K",
+                    "Ki-Ras Q61K",
+                    "NP_004976.2:p.Gln61Lys",
+                    "NP_004976.2:p.Q61K",
+                    "c-K-ras Q61K"
+                ],
+                "nci_thesaurus_concept_id": "C98429",
+                "name": "KRAS NP_004976.2:p.Q61K",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C107478",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C98362",
+                    "C16612",
+                    "C18437",
+                    "C20921",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107478",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase KRas Gln61His",
+                    "GTPase KRas Q61H",
+                    "K-Ras 2 Q61H",
+                    "KRAS Gln61His",
+                    "KRAS NP_004976.2:p.Gln61His",
+                    "KRAS Q61H",
+                    "KRAS p.Gln61His",
+                    "KRAS p.Q61H",
+                    "Ki-Ras Q61H",
+                    "NP_004976.2:p.Gln61His",
+                    "NP_004976.2:p.Q61H",
+                    "c-K-ras Q61H"
+                ],
+                "nci_thesaurus_concept_id": "C98426",
+                "name": "KRAS NP_004976.2:p.Q61H",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C107478",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C98362",
+                    "C16612",
+                    "C18437",
+                    "C20921",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107478",
+                    "C25785"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "GTPase NRas Gln61Lys",
+                    "GTPase NRas Q61K",
+                    "NP_002515.1:p.Gln61Lys",
+                    "NP_002515.1:p.Q61K",
+                    "NRAS Gln61Lys",
+                    "NRAS NP_002515.1:p.Gln61Lys",
+                    "NRAS Q61K",
+                    "NRAS p.Gln61Lys",
+                    "NRAS p.Q61K",
+                    "Transforming Protein N-Ras Gln61Lys",
+                    "Transforming Protein N-Ras Q61K"
+                ],
+                "nci_thesaurus_concept_id": "C98445",
+                "name": "NRAS NP_002515.1:p.Q61K",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "eligibility_criteria": "inclusion",
+                "ancestors": [
+                    "C25785",
+                    "C97926",
+                    "C17060",
+                    "C25786",
+                    "C97928",
+                    "C25784",
+                    "C177784",
+                    "C16612",
+                    "C107485",
+                    "C18437",
+                    "C20921",
+                    "C98439",
+                    "C3910"
+                ],
+                "parents": [
+                    "C107485",
+                    "C25786"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            }
+        ],
+        "classification_code": null,
+        "current_trial_status_date": "2019-07-18",
+        "diseases": [
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Solid Neoplasm",
+                    "Metastatic Solid Tumor",
+                    "Metastatic Tumor",
+                    "Metastatic Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127155",
+                "name": "Metastatic Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C132146"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Malignant Solid Neoplasm",
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Neoplasm",
+                    "Advanced Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C129707",
+                "name": "Advanced Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C127155",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage III Colorectal Cancer AJCC v8",
+                    "Stage III Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134191",
+                "name": "Stage III Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134180"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIA Colorectal Carcinoma AJCC v8",
+                    "Stage IIIA Colorectal Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134192",
+                "name": "Stage IIIA Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134191"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIB Colorectal Cancer AJCC v8",
+                    "Stage IIIB Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134193",
+                "name": "Stage IIIB Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134191"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIC Colorectal Cancer AJCC v8",
+                    "Stage IIIC Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134194",
+                "name": "Stage IIIC Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134191"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Colorectal Cancer AJCC v8",
+                    "Stage IV Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134195",
+                "name": "Stage IV Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134180"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Colorectal Cancer AJCC v8",
+                    "Stage IVA Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134196",
+                "name": "Stage IVA Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134195"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVB Colorectal Cancer AJCC v8",
+                    "Stage IVB Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134197",
+                "name": "Stage IVB Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134195"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVC Colorectal Cancer AJCC v8",
+                    "Stage IVC Colorectal Carcinoma AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134198",
+                "name": "Stage IVC Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134195"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage II Pancreatic Cancer AJCC v8",
+                    "Stage II Exocrine Pancreatic Carcinoma AJCC v8",
+                    "Stage II Exocrine Pancreatic Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134921",
+                "name": "Stage II Pancreatic Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134909"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage III",
+                    "Stage III Exocrine Pancreatic Carcinoma AJCC v8",
+                    "Stage III Pancreatic Cancer AJCC v8",
+                    "Stage III Exocrine Pancreatic Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C134928",
+                "name": "Stage III Pancreatic Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134909"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Exocrine Pancreatic Cancer AJCC v8",
+                    "Stage IV Exocrine Pancreatic Carcinoma AJCC v8",
+                    "Stage IV Pancreatic Cancer AJCC v8",
+                    "Stage IV"
+                ],
+                "nci_thesaurus_concept_id": "C134930",
+                "name": "Stage IV Pancreatic Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C134909"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage III",
+                    "Stage III Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136478",
+                "name": "Stage III Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136467"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIA",
+                    "Stage IIIA Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136479",
+                "name": "Stage IIIA Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136478"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIB",
+                    "Stage IIIB Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136480",
+                "name": "Stage IIIB Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136478"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IIIC Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136481",
+                "name": "Stage IIIC Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136478"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IV Lung Cancer AJCC v8",
+                    "Stage IV"
+                ],
+                "nci_thesaurus_concept_id": "C136482",
+                "name": "Stage IV Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136467"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVA Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136483",
+                "name": "Stage IVA Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Stage IVB Lung Cancer AJCC v8"
+                ],
+                "nci_thesaurus_concept_id": "C136484",
+                "name": "Stage IVB Lung Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C136482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Microsatellite Stable Colorectal Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C142867",
+                "name": "Metastatic Microsatellite Stable Colorectal Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C173324",
+                    "C156096"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Advanced Microsatellite Stable Colorectal Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C142868",
+                "name": "Advanced Microsatellite Stable Colorectal Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C142867",
+                    "C162475"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156094",
+                "name": "Metastatic Lung Non-Small Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2926",
+                    "C165537",
+                    "C153202"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C158960",
+                "name": "Metastatic Pancreatic Ductal Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8933",
+                    "C9120"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162158",
+                "name": "Advanced Lung Non-Small Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156094",
+                    "C153203"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C164214",
+                "name": "Advanced Pancreatic Ductal Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C158960",
+                    "C162153"
+                ]
+            },
+            {
+                "inclusion_indicator": "TRIAL",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Shared Neoantigen-Positive Malignant Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C165546",
+                "name": "Shared Neoantigen-Positive Malignant Solid Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C165542"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, secondary",
+                    "Secondary Tumor",
+                    "Tumor, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasms, NOS",
+                    "Neoplasia",
+                    "Tumor, NOS",
+                    "Neoplastic Growth",
+                    "Neoplasm",
+                    "Neoplastic Disease",
+                    "tumor",
+                    "Neoplasm, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Malignant Growth",
+                    "Tumor, malignant, NOS",
+                    "Malignant Tumor",
+                    "Malignancy",
+                    "CA",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Tumor",
+                    "Tumor, metastatic",
+                    "Neoplasm, metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Advanced Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C9270",
+                "name": "Advanced Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Tumour",
+                    "Solid tumor, NOS",
+                    "Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Malignancy",
+                    "Secondary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C36255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease type",
+                    "Disease or Disorder",
+                    "Diagnosis",
+                    "disease_term",
+                    "condition",
+                    "disease_type",
+                    "Diseases",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "Disorders",
+                    "Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Thoracic Tumor",
+                    "Neoplasm of Thorax",
+                    "Tumor of Thorax",
+                    "Neoplasm of the Thorax",
+                    "Tumor of the Thorax"
+                ],
+                "nci_thesaurus_concept_id": "C3406",
+                "name": "Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C35742"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of the Lung",
+                    "Malignant Neoplasm of Lung",
+                    "Malignant Lung Tumor",
+                    "Malignant Neoplasm of the Lung",
+                    "Malignant Tumor of Lung"
+                ],
+                "nci_thesaurus_concept_id": "C7377",
+                "name": "Malignant Lung Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3576",
+                    "C3200",
+                    "C4571"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Respiratory and Thoracic Disease",
+                    "Respiratory, Thoracic, and Mediastinal Disease",
+                    "Respiratory, Thoracic, and Mediastinal Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C27669",
+                "name": "Respiratory and Thoracic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Lung Carcinoma",
+                    "Cancer of the Lung",
+                    "Carcinoma of the Lung",
+                    "Lung Cancer (all types)",
+                    "Lung cancer, NOS",
+                    "Carcinoma of Lung",
+                    "Cancer of Lung"
+                ],
+                "nci_thesaurus_concept_id": "C4878",
+                "name": "Lung Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7377"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153171",
+                "name": "Advanced Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial Carcinoma",
+                    "Malignant Epithelioma",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Epithelial tumor, malignant",
+                    "Epithelioma Malignant"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156096",
+                "name": "Metastatic Colorectal Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C162780",
+                    "C2955"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162255",
+                "name": "Metastatic Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4890",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Gastrointestinal cancer, NOS",
+                    "Gastrointestinal System Cancer",
+                    "Malignant Digestive System Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Colorectal Carcinoma by AJCC v8 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C134180",
+                "name": "Colorectal Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C2955"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of Pancreas",
+                    "Tumor of the Pancreas",
+                    "Pancreas Neoplasm",
+                    "Neoplasm of the Pancreas",
+                    "Pancreas Tumor",
+                    "Pancreatic Tumor",
+                    "Neoplasm of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C3305",
+                "name": "Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26842",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C176863",
+                "name": "Advanced Malignant Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9270",
+                    "C176862"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C65151",
+                "name": "Non-Small Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162153",
+                "name": "Advanced Pancreatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C165452",
+                    "C8933",
+                    "C159556"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of the Exocrine Pancreas",
+                    "Exocrine Pancreas Tumor",
+                    "Neoplasm of the Exocrine Pancreas",
+                    "Exocrine Pancreas Neoplasm",
+                    "Neoplasm of Exocrine Pancreas",
+                    "Tumor of Exocrine Pancreas",
+                    "Pancreatic Exocrine Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4445",
+                "name": "Pancreatic Exocrine Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Exocrine Pancreas Tumor",
+                    "Malignant Tumor of Exocrine Pancreas",
+                    "Malignant Neoplasm of the Exocrine Pancreas",
+                    "Malignant Neoplasm of Exocrine Pancreas",
+                    "Malignant Tumor of the Exocrine Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C7430",
+                "name": "Malignant Exocrine Pancreas Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4445",
+                    "C9005"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C170458",
+                "name": "Metastatic Pancreatobiliary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C166418"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor Stage (Pathological)"
+                ],
+                "nci_thesaurus_concept_id": "C136467",
+                "name": "Lung Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4878"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of Large Bowel",
+                    "Malignant Colorectal Tumor",
+                    "Malignant Neoplasm of the Large Intestine",
+                    "Malignant Neoplasm of the Large Bowel",
+                    "Malignant Tumor of the Large Intestine",
+                    "Malignant Neoplasm of Large Intestine",
+                    "Malignant Large Intestine Tumor",
+                    "Malignant Tumor of Large Intestine",
+                    "Malignant Large Intestine Neoplasm",
+                    "Malignant Tumor of the Large Bowel",
+                    "Malignant Neoplasm of Large Bowel",
+                    "Malignant Large Bowel Tumor",
+                    "Malignant Large Bowel Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4978",
+                "name": "Malignant Colorectal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2956",
+                    "C4572"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Large Intestine Tumor",
+                    "Neoplasm of Large Bowel",
+                    "Colorectal Tumor",
+                    "Neoplasm of the Large Bowel",
+                    "Tumor of Large Bowel",
+                    "Large Intestinal Neoplasm",
+                    "Large Bowel Neoplasm",
+                    "Large Intestine Neoplasm",
+                    "Large Bowel Tumor",
+                    "Tumor of the Large Bowel"
+                ],
+                "nci_thesaurus_concept_id": "C2956",
+                "name": "Colorectal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Neoplasm of Thorax",
+                    "Malignant Tumor of Thorax",
+                    "Malignant Neoplasm of the Thorax",
+                    "Malignant Tumor of the Thorax",
+                    "Malignant Thoracic Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3576",
+                "name": "Malignant Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3406",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153203",
+                "name": "Advanced Lung Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C176863",
+                    "C153171",
+                    "C153202"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unspecified Respiratory Problem",
+                    "Respiratory Disorder",
+                    "Disorder of Respiratory System"
+                ],
+                "nci_thesaurus_concept_id": "C26871",
+                "name": "Respiratory System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27669"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C159556",
+                "name": "Advanced Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C153171",
+                    "C4124"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C26842",
+                "name": "Pancreatic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoantigen-Positive Malignant Solid Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C165542",
+                "name": "Neoantigen-Positive Malignant Solid Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C132146"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Pancreas Carcinoma",
+                    "Cancer of Pancreas",
+                    "Pancreatic cancer (excluding Islets), NOS",
+                    "Pancreas Cancer",
+                    "exocrine cancer",
+                    "Cancer of the Pancreas",
+                    "Pancreatic cancer (not Islets)",
+                    "Exocrine Pancreas Carcinoma",
+                    "Pancreatic Carcinoma",
+                    "Carcinoma of the Pancreas",
+                    "Carcinoma of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C3850",
+                "name": "Pancreatic Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C166418",
+                    "C7430"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm of Lung",
+                    "Tumor of the Lung",
+                    "Tumor of Lung",
+                    "Lung Tumor",
+                    "Lung Neoplasms",
+                    "Neoplasm of the Lung"
+                ],
+                "nci_thesaurus_concept_id": "C3200",
+                "name": "Lung Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3406",
+                    "C3355",
+                    "C3198"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Lung",
+                    "Pulmonary Disease",
+                    "Pulmonary Diseases",
+                    "Pulmonary Disorders",
+                    "Lung Disorders",
+                    "Pulmonary Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C3198",
+                "name": "Lung Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26871",
+                    "C35742"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Intestinal Tumors",
+                    "Tumor of Intestines",
+                    "Intestinal Tumor",
+                    "Tumor of the Intestines",
+                    "Intestinal Neoplasms",
+                    "Neoplasm of Intestines",
+                    "Neoplasm of the Intestines"
+                ],
+                "nci_thesaurus_concept_id": "C3141",
+                "name": "Intestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3052",
+                    "C26801"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Gastrointestinal Carcinoma",
+                    "Metastatic Gastrointestinal System Cancer",
+                    "Metastatic Digestive System Carcinoma",
+                    "Metastatic Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C133839",
+                "name": "Metastatic Digestive System Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162255",
+                    "C3482",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Pancreaticobiliary Carcinoma",
+                    "Pancreatobiliary Cancer",
+                    "Pancreaticobiliary Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C166418",
+                "name": "Pancreatobiliary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C176862",
+                "name": "Metastatic Malignant Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3576",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Neoplasm of the Pancreas",
+                    "Malignant Neoplasm of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C9005",
+                "name": "Malignant Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3305",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162780",
+                "name": "Metastatic Malignant Colorectal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4978",
+                    "C162255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Respiratory Tract Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4571",
+                "name": "Malignant Respiratory System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3355"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C26801",
+                "name": "Intestinal Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Colorectal cancer, NOS",
+                    "Carcinoma of Large Intestine",
+                    "Cancer of Large Bowel",
+                    "CRC",
+                    "Colorectal Cancer",
+                    "Cancer of Large Intestine",
+                    "Carcinoma of Large Bowel",
+                    "Carcinoma of the Large Bowel",
+                    "Large Bowel Cancer",
+                    "Large Intestine Cancer",
+                    "Large Intestine Carcinoma",
+                    "Carcinoma of the Large Intestine",
+                    "Large Bowel Carcinoma",
+                    "Cancer of the Large Bowel",
+                    "Cancer of the Large Intestine",
+                    "Colorectal Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2955",
+                "name": "Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C4978",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156746",
+                "name": "Advanced Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C133839",
+                    "C153171",
+                    "C175547"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C171330",
+                "name": "Advanced Pancreatobiliary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C170458",
+                    "C156746"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C173324",
+                "name": "Microsatellite Stable Colorectal Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2955"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153202",
+                "name": "Metastatic Lung Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C4878",
+                    "C176862"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156069",
+                "name": "Metastatic Pancreatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3850",
+                    "C155852",
+                    "C170458"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C155852",
+                "name": "Metastatic Malignant Pancreatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9005",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Ductal Adenocarcinoma of Pancreas",
+                    "Pancreatic Infiltrating Duct Carcinoma, NOS",
+                    "PDAC",
+                    "Ductal Adenocarcinoma of the Pancreas",
+                    "Pancreatic Infiltrating Duct Carcinoma, Not Otherwise Specified",
+                    "Pancreas Ductal Adenocarcinoma",
+                    "PDA",
+                    "Pancreatic Tubular Adenocarcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C9120",
+                "name": "Pancreatic Ductal Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8294"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma - pancreas",
+                    "Pancreas Adenocarcinoma",
+                    "Adenocarcinoma of the Pancreas",
+                    "Adenocarcinoma of Pancreas"
+                ],
+                "nci_thesaurus_concept_id": "C8294",
+                "name": "Pancreatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3850",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Intestinal Neoplasms, Malignant",
+                    "Intestinal Tumors, Malignant",
+                    "Malignant Intestinal Tumor",
+                    "Malignant Intestine Tumor",
+                    "Malignant Neoplasm of Intestine",
+                    "Cancer of the Intestine",
+                    "Malignant Neoplasm of the Intestine",
+                    "Intestinal Cancer",
+                    "Cancer of Intestine",
+                    "Malignant Intestinal Neoplasms",
+                    "Malignant Tumor of Intestine",
+                    "Bowel Cancer",
+                    "Malignant Tumor of the Intestine",
+                    "Malignant Intestinal Tumors",
+                    "Malignant Intestine Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C4572",
+                "name": "Malignant Intestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4890",
+                    "C3141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4124",
+                "name": "Metastatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162475",
+                "name": "Advanced Colorectal Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156096",
+                    "C156746"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C165452",
+                "name": "Advanced Pancreatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156069",
+                    "C171330"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor Morphology",
+                    "Tumor_Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Thoracic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C35742",
+                "name": "Thoracic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27669"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "Disorder of Digestive System",
+                    "stomach or intestinal disorder",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36310",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Exocrine Pancreatic Cancer by AJCC v8 Stage",
+                    "Exocrine Pancreatic Carcinoma by AJCC v8 Stage",
+                    "Tumor Stage (Pathological)"
+                ],
+                "nci_thesaurus_concept_id": "C134909",
+                "name": "Pancreatic Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C3850"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of the Gastrointestinal System",
+                    "Gastrointestinal System Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C96963",
+                "name": "Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Non Small Cell Lung Cancer NOS",
+                    "Lung Non-Small Cell Carcinoma",
+                    "Non-small cell lung cancer, NOS",
+                    "Non-Small Cell Carcinoma of the Lung",
+                    "Non-Small Cell Cancer of Lung",
+                    "Non-Small Cell Cancer of the Lung",
+                    "Non-Small Cell Lung Carcinoma",
+                    "NSCLC - Non-Small Cell Lung Cancer",
+                    "Non-Small Cell Carcinoma of Lung",
+                    "NSCLC"
+                ],
+                "nci_thesaurus_concept_id": "C2926",
+                "name": "Non-Small Cell Lung Cancer",
+                "type": [
+                    "maintype",
+                    "subtype"
+                ],
+                "parents": [
+                    "C65151",
+                    "C4878"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C165537",
+                "name": "Metastatic Non-Small Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C65151",
+                    "C3482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of GI System",
+                    "Tumor of Digestive System",
+                    "Digestive Tumor",
+                    "GI Neoplasm",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Digestive System Tumor",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Neoplasm of Digestive System",
+                    "Tumor of the Digestive System",
+                    "Gastrointestinal System Tumor",
+                    "Gastrointestinal Neoplasm",
+                    "GI Tumor",
+                    "Tumor of Gastrointestinal System",
+                    "Gastrointestinal System Neoplasm",
+                    "Neoplasm of the GI System",
+                    "GI System Tumor",
+                    "GI System Neoplasm",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of the GI System",
+                    "Digestive Neoplasm",
+                    "Neoplasm of GI System"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C175547",
+                "name": "Advanced Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162255",
+                    "C9270"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Respiratory Tract Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C3355",
+                "name": "Respiratory System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C26871"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8933",
+                "name": "Metastatic Pancreatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156069",
+                    "C8294",
+                    "C4124"
+                ]
+            }
+        ],
+        "_primary_purpose_sort_order": 0,
+        "protocol_id": "GO-005",
+        "active_sites_count": 9,
+        "lead_org_cancer_center": null,
+        "arms": [
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Yervoy"
+                        ],
+                        "nci_thesaurus_concept_id": "C2654",
+                        "name": "Ipilimumab",
+                        "description": "A monoclonal antibody directed against cytotoxic T-lymphocyte-associated antigen-4 (CTLA4), an antigen that is expressed on activated T-cells and exhibits affinity for B7 co-stimulatory molecules. By binding CTLA4, ipilimumab enhances T-cell activation and blocks B7-1 and B7-2 T-cell co-stimulatory pathways. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C129822",
+                            "C128036"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Biological Agent",
+                            "Anticancer Biological",
+                            "Antineoplastic Biotherapeutic",
+                            "Antineoplastic Biological"
+                        ],
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-CTLA4 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128036",
+                        "name": "Anti-CTLA-4 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C20401",
+                            "C141144",
+                            "C163758"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C143250",
+                        "name": "Immune Checkpoint Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C141144"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C141144",
+                        "name": "Immune Checkpoint Modulator",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antiproliferative Drugs",
+                            "Anti-Tumor Drugs",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Cancer Drug",
+                            "Antineoplastic Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Monoclonal Antibody",
+                            "Monoclonal Antibodies"
+                        ],
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C165514",
+                        "name": "Neoantigen-based Therapeutic Cancer Vaccine GRT-C903",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C1663"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug",
+                            "Pharmaceuticals",
+                            "Drug Substance",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C165515",
+                        "name": "Neoantigen-based Therapeutic Cancer Vaccine GRT-R904",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C1663"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Vaccine"
+                        ],
+                        "nci_thesaurus_concept_id": "C923",
+                        "name": "Vaccine Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C307",
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-PD-1 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128037",
+                        "name": "Anti-PD1 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C124946",
+                            "C20401"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biologicals",
+                            "Biological Products",
+                            "Biologics",
+                            "Immunologics",
+                            "Biopharmaceuticals",
+                            "Immunologic, Immunochemical"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "PD-1 Inhibitor",
+                            "PD-1-targeting Agent",
+                            "Protein PD-1 Inhibitor",
+                            "Programmed Cell Death Protein 1 Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C124946",
+                        "name": "PD1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C143250"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Antibody",
+                            "Antineoplastic Ab",
+                            "Anticancer Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C129822",
+                        "name": "Antineoplastic Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C129821"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cancer Vaccine",
+                            "Neoplasm Vaccine",
+                            "Tumor Vaccine"
+                        ],
+                        "nci_thesaurus_concept_id": "C1663",
+                        "name": "Antineoplastic Vaccine",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C923"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immune Mediators",
+                            "Immunomodulatory Agent",
+                            "Biological Response Modifier",
+                            "BRM",
+                            "Immune Modulators",
+                            "Biomodulators",
+                            "Immunotherapeutic Agent",
+                            "Immunotherapy Agent",
+                            "Immunomodulators",
+                            "Immunomodulating Agent",
+                            "Immune Regulators",
+                            "Immunopotentiators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Opdivo"
+                        ],
+                        "nci_thesaurus_concept_id": "C68814",
+                        "name": "Nivolumab",
+                        "description": "A fully human monoclonal antibody directed against  the  negative immunoregulatory human cell surface receptor PD-1 (programmed death-1 or programmed cell death-1/PCD-1) with immunopotentiation activity.  Nivolumab binds to and blocks the activation of PD-1, an Ig superfamily transmembrane protein, by its ligands PD-L1 and PD-L2, resulting in the activation of T-cells and cell-mediated  immune responses against tumor cells or pathogens. Activated PD-1 negatively regulates T-cell activation and effector function through the suppression of P13k/Akt pathway activation.  Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C128037",
+                            "C129822"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    }
+                ],
+                "name": "Arm not specified",
+                "description": null,
+                "type": null
+            },
+            {
+                "interventions": [],
+                "name": "Phase 1",
+                "description": "GRT-C903\nGRT-R904\nnivolumab\nipilimumab",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Phase 2",
+                "description": "GRT-C903\nGRT-R904\nnivolumab\nipilimumab",
+                "type": "EXPERIMENTAL"
+            }
+        ],
+        "study_model_code": null,
+        "nci_id": "NCI-2019-07164",
+        "why_study_stopped": null,
+        "brief_summary": "The purpose of this study is to evaluate the dose, safety, immunogenicity and early clinical\n      activity of GRT-C903 and GRT-R904, a neoantigen-based therapeutic cancer vaccine, in\n      combination with immune checkpoint blockade, in patients with advanced or metastatic\n      non-small cell lung cancer, microsatellite stable colorectal cancer, pancreatic cancer, and\n      shared neoantigen-positive tumors.",
+        "brief_title": "A Study of a Personalized Cancer Vaccine Targeting Shared Neoantigens",
+        "status_history": [
+            {
+                "status_date": "2019-07-18T00:00:00",
+                "status": "ACTIVE"
+            }
+        ],
+        "study_population_description": null,
+        "sampling_method_code": null,
+        "minimum_target_accrual_number": 144,
+        "_current_trial_status_sort_order": 0,
+        "start_date": "2019-07-18",
+        "record_verification_date": "2020-09-01",
+        "ctep_id": null,
+        "current_trial_status": "Active",
+        "study_model_other_text": null,
+        "masking": {
+            "role_caregiver": null,
+            "masking": null,
+            "role_investigator": null,
+            "role_outcome_assessor": null,
+            "role_subject": null,
+            "allocation_code": "Non-Randomized Trial"
+        },
+        "acronym": null,
+        "nci_funded": "Indirect",
+        "anatomic_sites": [
+            "Multiple"
+        ],
+        "ccr_id": null,
+        "start_date_type_code": "ACTUAL",
+        "principal_investigator": null,
+        "study_source": "Industrial",
+        "completion_date": "2023-12-01",
+        "study_subtype_code": null,
+        "study_protocol_type": "Interventional"
+    }
+]
