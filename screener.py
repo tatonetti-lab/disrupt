@@ -113,7 +113,7 @@ def main():
         # jTDS Connection string.
         connection_url = config['connectionprops']['jdbc_conn_string']
 
-        password = getpass('Please enter NYP password for Jupiter: ')
+        password = getpass('Please enter database password: ')
 
         # jTDS Connection properties.
         # Some additional connection properties you may want to use
