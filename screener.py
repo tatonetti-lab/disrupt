@@ -96,7 +96,14 @@ liver_n = ['N0','N1','NX']
 liver_m = ['M0','M1']
 
 
-def breast_note_parse(results):
+def breast_note_parse(sql,cursor):
+        print(' starting pull of notes matching pattern from temp table')
+        print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+        print(";")
+        print("")
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        count=0
         staging_matches = defaultdict(lambda: defaultdict(set))
         for pat_id,note_id, date_of_service,match_type,note_text in results:
 
@@ -318,13 +325,21 @@ def breast_process(staging_matches):
                         )
         return newpts
         
-def liver_note_parse(note):
+def liver_note_parse(sql,cursor):
+        print(' starting pull of notes matching pattern from temp table')
+        print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+        print(";")
+        print("")
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        count=0
+
         staging_matches = defaultdict(lambda: defaultdict(set))
         for pat_id,note_id, date_of_service,match_type,note_text in results:
 
                 count=count+1
                 m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
-                #print("match type 1 - non-pretty staging")
+                
                 loose_t = ""
                 loose_n = ""
                 loose_m = ""
@@ -336,6 +351,8 @@ def liver_note_parse(note):
                 found = False
 
                 if m is not None:
+                        print(note_id)
+                        print(m)
                         for match in m:
                                 #print(match)
                                 loose_t = match[0]
@@ -356,6 +373,8 @@ def liver_note_parse(note):
                 m=re.search('.*AJCC ([0-9]{1,2}[a-z][a-z]) Edition.+?(Clinical|Pathologic): (Stage \w+ \(.*?\) )',str(note_text))
                 #print("match type 3 - pretty staging + receptor status")
                 if m is not None:
+                        print(note_id)
+                        print(m)
                         ajcc = m.group(1)
                         path_or_clin = m.group(2)
                         staging = m.group(3)
@@ -424,10 +443,16 @@ def liver_note_parse(note):
                                 if oncotype_match != '':
                                         staging_matches[(pat_id, note_id)]['ONCO'].add(oncotype_match)
         return staging_matches
-        
-def prostate_note_parse(note):
+
+def liver_process(staging_matches):
         pass
-        
+
+def prostate_note_parse(sql,cursor):
+        pass
+
+def prostate_process(staging_matches):
+        pass
+
 
 def main():
         parser= argparse.ArgumentParser()
@@ -436,6 +461,7 @@ def main():
         args = parser.parse_args()
         config = json.loads(open(args.config).read())
 
+        
         java_home = os.environ.setdefault("JAVA_HOME",config['JAVA_HOME'])
 
         disease = args.disease
@@ -478,6 +504,8 @@ def main():
         print(today.strftime("%Y/%m/%d %H:%M:%S"))
         for sql in config['diseases'][disease]['queries']['appointments']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("done")
         today = datetime.today()
@@ -486,6 +514,8 @@ def main():
         print("diagnoses")
         for sql in config['diseases'][disease]['queries']['diagnoses']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("Done")
         today = datetime.today()
@@ -494,6 +524,8 @@ def main():
         print('creating cohort table, initial patients first')
         for sql in config['diseases'][disease]['queries']['newpts']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("Done")
         today = datetime.today()
@@ -502,6 +534,8 @@ def main():
         print("finding progressive disease pts")
         for sql in config['diseases'][disease]['queries']['recurredpts']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("Done")
         today = datetime.today()
@@ -510,6 +544,8 @@ def main():
         print("notes")
         for sql in config['diseases'][disease]['queries']['notes']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("Done")
         today = datetime.today()
@@ -518,22 +554,28 @@ def main():
         print("meds")
         for sql in config['diseases'][disease]['queries']['meds']:
                 print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
                 cursor.execute(sql)
         print("Done")
         today = datetime.today()
         print(today.strftime("%Y/%m/%d %H:%M:%S"))
 
         sql = config['diseases'][disease]['queries']['final']['notes']
-        print(' starting pull of notes matching pattern from temp table')
-        cursor.execute(sql)
-        results = cursor.fetchall()
-        count=0
 
         #note: add switch statement for disease param
-        staging_matches = breast_note_parse(results)
-        newpts = breast_process(staging_matches)
-
-
+        if disease == 'breast':
+                staging_matches = breast_note_parse(sql,cursor)
+                newpts = breast_process(staging_matches)
+        elif disease == 'prostate':
+                staging_matches = prostate_note_parse(sql,cursor)
+                newpts = prostate_process(staging_matches)                
+        elif disease == 'liver':
+                staging_matches = liver_note_parse(sql,cursor)
+                newpts = liver_process(staging_matches)
+        else:
+                print("UNKNOWN DISEASE SELECTION! WILL DIE SOON!")
+                
         print("done!")
         today = datetime.today()
         print(today.strftime("%Y/%m/%d %H:%M:%S"))
