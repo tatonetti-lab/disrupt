@@ -13,6 +13,14 @@ breast_t = ['TX','T0','Tis','T1','T2','T3','T4']
 breast_n = ['NX','N0','N1mi','N1a','N1b','N1','N2a','N2b','N2','N3a','N3b','N3c','N3']
 breast_m = ['M0(i+)','M0','M1']
 
+prostate_t = ['T1a','T1b','T1c','T1','T2a','T2b','T2c','T2','T3a','T3b','T3','T4']
+prostate_n = ['NX','N0','N1']
+prostate_m = ['MX','M0','M1a','M1b','M1c','M1d','M1']
+
+liver_t = ['T0','T1a','T1b','T1','T2','T3','T4','TX']
+liver_n = ['N0','N1','NX']
+liver_m = ['M0','M1']
+
 driver_name = "net.sourceforge.jtds.jdbc.Driver"
 
 # jTDS Connection string.
