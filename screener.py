@@ -67,7 +67,7 @@ add a switch as to whether to re-populate the tables or not.
 
 """
 
-import pyodbc
+#import pyodbc
 from getpass import getpass
 import jaydebeapi
 import sys
@@ -80,6 +80,9 @@ import json
 import argparse
 import sqlparse
 import os
+import pymssql, cx_Oracle, pandas as pd
+import tqdm
+
 
 sqlite = sqlite3.connect('disrupt.db')
 
@@ -96,108 +99,17 @@ liver_n = ['N0','N1','NX']
 liver_m = ['M0','M1']
 
 
-def main():
-        parser= argparse.ArgumentParser()
-        parser.add_argument("--config",type=str,required=True,help="Please specify a path to the config file")
-        args = parser.parse_args()
-        config = json.loads(open(args.config).read())
-        
-        java_home = os.environ.setdefault("JAVA_HOME",config['JAVA_HOME'])
-        
-
-        #try:
-        # jTDS Driver.
-        driver_name = config['connectionprops']['jdbc_driver']
-        
-
-        # jTDS Connection string.
-        connection_url = config['connectionprops']['jdbc_conn_string']
-
-        password = getpass('Please enter NYP password for Jupiter: ')
-        
-        # jTDS Connection properties.
-        # Some additional connection properties you may want to use
-        # "domain": "<domain>"
-        # "ssl": "require"
-        # "useNTLMv2": "true"
-        # See the FAQ for details http://jtds.sourceforge.net/faq.html
-        connection_properties = {
-            "user": config['connectionprops']['user'],
-            "password": password,
-            "DOMAIN":config['connectionprops']['domain']
-            
-        }
-
-        # Path to jTDS Jar
-        jar_path = config['connectionprops']['jar_path']
-
-        # Establish connection.
-        connection = jaydebeapi.connect(driver_name, connection_url, connection_properties, jar_path)
-        cursor = connection.cursor()
-
-
-
-        #todo - move this into a single loop of ['diseases']['breast']['queries']
-        print("appointments")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-        for sql in config['diseases']['breast']['queries']['appointments']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-
-        print("diagnoses")
-        for sql in config['diseases']['breast']['queries']['diagnoses']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("Done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-
-        print('creating cohort table, initial patients first')
-        for sql in config['diseases']['breast']['queries']['newpts']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("Done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-
-        print("finding progressive disease pts")
-        for sql in config['diseases']['breast']['queries']['recurredpts']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("Done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-
-        print("notes")
-        for sql in config['diseases']['breast']['queries']['notes']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("Done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-        
-        print("meds")
-        for sql in config['diseases']['breast']['queries']['meds']:
-                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
-                cursor.execute(sql)
-        print("Done")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
-
-        sql = config['diseases']['breast']['queries']['final']['notes']
+def breast_note_parse(sql,cursor):
         print(' starting pull of notes matching pattern from temp table')
+        print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+        print(";")
+        print("")
         cursor.execute(sql)
         results = cursor.fetchall()
         count=0
-        newpts = list()
         staging_matches = defaultdict(lambda: defaultdict(set))
-
         for pat_id,note_id, date_of_service,match_type,note_text in results:
-    
+
                 count=count+1
                 m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
                 #print("match type 1 - non-pretty staging")
@@ -208,9 +120,9 @@ def main():
                 pr = ""
                 her2 = ""
                 overallstage = ""
-                
+
                 found = False
-                
+
                 if m is not None:
                         for match in m:
                                 #print(match)
@@ -223,12 +135,12 @@ def main():
                                 if loose_n != '':
                                         staging_matches[(pat_id,note_id)]['N'].add(loose_n)
 
-                                if loose_m != '':            
+                                if loose_m != '':
                                         staging_matches[(pat_id, note_id)]['M'].add(loose_m)
 
-                                        
-                                found = True
-                m = re.findall('([/ \(](HER2|ER|PR)[ \-+]([PpNn]\w*)*)',str(note_text))        
+
+                                        found = True
+                m = re.findall('([/ \(](HER2|ER|PR)[ \-+]([PpNn]\w*)*)',str(note_text))
                 #print("match type 2 - non-pretty receptors")
                 if m is not None:
                         found = True
@@ -253,7 +165,7 @@ def main():
                                                 er = 'ER+'
                                         elif '-' in match[0].lower():
                                                 er = 'ER-'
-                        
+
                                 elif match[1] == 'PR':
                                         if 'neg' in match[0].lower():
                                                 pr = 'PR-'
@@ -270,7 +182,7 @@ def main():
                                 if(pr != ''):
                                         staging_matches[(pat_id, note_id)]['PR'].add(pr)
 
-                                                
+
 
                 m=re.search('.*AJCC ([0-9]{1,2}[a-z][a-z]) Edition.+?(Clinical|Pathologic): (Stage \w+ \(.*?\) )',str(note_text))
                 #print("match type 3 - pretty staging + receptor status")
@@ -282,7 +194,7 @@ def main():
                         closeparen = staging.rfind(')')
                         overallstage = staging[0:(openparen-1)];
                         staging_str = staging[(openparen+1):closeparen]
-        
+
                         t_match = ""
                         n_match = ""
                         m_match = ""
@@ -291,7 +203,7 @@ def main():
                         her2_match = ""
                         oncotype_match = ""
                         g_match = ""
-        
+
                         for item_u in staging_str.split(","):
                                 item=item_u.strip(" ")
                                 #print(item.strip(" "))
@@ -342,10 +254,10 @@ def main():
                                         staging_matches[(pat_id, note_id)]['G'].add(g_match)
                                 if oncotype_match != '':
                                         staging_matches[(pat_id, note_id)]['ONCO'].add(oncotype_match)
+        return staging_matches
 
-        print("done!")
-        today = datetime.today()
-        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+def breast_process(staging_matches):
+        newpts = list()
         for (pat_id, note_id),matches in staging_matches.items():
                 for k in ('T','N','M','HER2','ER','PR','G','ONCO','STAGE'):
                         if len(matches[k]) == 0:
@@ -414,12 +326,300 @@ def main():
                                         "STAGE":STAGE
                                 }
                         )
-                        
-
-        cursor.execute(config['diseases']['breast']['queries']['final']['meds'])
+        return newpts
         
+def liver_note_parse(sql,cursor):
+        print(' starting pull of notes matching pattern from temp table')
+        print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+        print(";")
+        print("")
+        cursor.execute(sql)
         results = cursor.fetchall()
+        count=0
+
+        staging_matches = defaultdict(lambda: defaultdict(set))
+        for pat_id,note_id, date_of_service,match_type,note_text in results:
+
+                count=count+1
+                m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
+                
+                loose_t = ""
+                loose_n = ""
+                loose_m = ""
+                er = ""
+                pr = ""
+                her2 = ""
+                overallstage = ""
+
+                found = False
+
+                if m is not None:
+                        print(note_id)
+                        print(m)
+                        for match in m:
+                                #print(match)
+                                loose_t = match[0]
+                                loose_n = match[3]
+                                loose_m = match[5]
+                                if loose_t != '':
+                                        staging_matches[(pat_id,note_id)]['T'].add(loose_t)
+
+                                if loose_n != '':
+                                        staging_matches[(pat_id,note_id)]['N'].add(loose_n)
+
+                                if loose_m != '':
+                                        staging_matches[(pat_id, note_id)]['M'].add(loose_m)
+
+
+                                        found = True
+
+                m=re.search('.*AJCC ([0-9]{1,2}[a-z][a-z]) Edition.+?(Clinical|Pathologic): (Stage \w+ \(.*?\) )',str(note_text))
+                #print("match type 3 - pretty staging + receptor status")
+                if m is not None:
+                        print(note_id)
+                        print(m)
+                        ajcc = m.group(1)
+                        path_or_clin = m.group(2)
+                        staging = m.group(3)
+                        openparen = staging.index('(')
+                        closeparen = staging.rfind(')')
+                        overallstage = staging[0:(openparen-1)];
+                        staging_str = staging[(openparen+1):closeparen]
+
+                        t_match = ""
+                        n_match = ""
+                        m_match = ""
+                        er_match = ""
+                        pr_match = ""
+                        her2_match = ""
+                        oncotype_match = ""
+                        g_match = ""
+
+                        for item_u in staging_str.split(","):
+                                item=item_u.strip(" ")
+                                #print(item.strip(" "))
+                                found = False
+                                for matchterm in breast_t:
+                                        if item.find(matchterm) != -1:
+                                                t_match=item
+                                                found = True
+                                for matchterm in breast_n:
+                                        if item.find(matchterm) != -1:
+                                                n_match = item
+                                                found = True
+                                for matchterm in breast_m:
+                                        if item.find(matchterm) != -1:
+                                                m_match = item
+                                                found=True
+                                if found == False:
+                                        if item.find('HER2') != -1:
+                                                her2_match = item
+                                                found = True
+                                        elif item.find("Onco") != -1:
+                                                oncotype_match = item
+                                                found = True
+                                        elif item.find("ER") != -1:
+                                                er_match = item
+                                                found = True
+                                        elif item.find("PR") != -1:
+                                                pr_match = item
+                                                found = True
+                                        elif item.find("G") != -1:
+                                                g_match = item
+                                                found = True
+                                if overallstage != '':
+                                        staging_matches[(pat_id, note_id)]['STAGE'].add(overallstage)
+                                if t_match != '':
+                                        staging_matches[(pat_id, note_id)]['T'].add(t_match)
+                                if n_match != '':
+                                        staging_matches[(pat_id, note_id)]['N'].add(n_match)
+                                if m_match != '':
+                                        staging_matches[(pat_id, note_id)]['M'].add(m_match)
+                                if her2_match != '':
+                                        staging_matches[(pat_id, note_id)]['HER2'].add(her2_match)
+                                if er_match != '':
+                                        staging_matches[(pat_id, note_id)]['ER'].add(er_match)
+                                if pr_match != '':
+                                        staging_matches[(pat_id, note_id)]['PR'].add(pr_match)
+                                if g_match != '':
+                                        staging_matches[(pat_id, note_id)]['G'].add(g_match)
+                                if oncotype_match != '':
+                                        staging_matches[(pat_id, note_id)]['ONCO'].add(oncotype_match)
+        return staging_matches
+
+def liver_process(staging_matches):
+        pass
+
+def prostate_note_parse(sql,cursor):
+        pass
+
+def prostate_process(staging_matches):
+        pass
+
+
+def main():
+        parser= argparse.ArgumentParser()
+        parser.add_argument("--config",type=str,required=True,help="Please specify a path to the config file")
+        parser.add_argument("--disease",type=str, required=True,help="Please specify a diseae site (breast/liver/prostate)")
+        args = parser.parse_args()
+        config = json.loads(open(args.config).read())
+
         
+        java_home = os.environ.setdefault("JAVA_HOME",config['JAVA_HOME'])
+
+        disease = args.disease
+
+        #try:
+        # jTDS Driver.
+        driver_name = config['connectionprops']['jdbc_driver']
+
+
+        # jTDS Connection string.
+        connection_url = config['connectionprops']['jdbc_conn_string']
+
+        #password = getpass('Please enter database password: ')
+
+        # jTDS Connection properties.
+        # Some additional connection properties you may want to use
+        # "domain": "<domain>"
+        # "ssl": "require"
+        # "useNTLMv2": "true"
+        # See the FAQ for details http://jtds.sourceforge.net/faq.html
+        connection_properties = {
+            "user": config['connectionprops']['user'],
+            #"password": password,
+            "DOMAIN":config['connectionprops']['domain']
+
+        }
+
+        # Path to jTDS Jar
+        jar_path = config['connectionprops']['jar_path']
+
+        # Establish connection.
+        connection = jaydebeapi.connect(driver_name, connection_url, connection_properties, jar_path)
+        cursor = connection.cursor()
+
+        # Connection to Clarity
+        lib_dir = os.path.join(os.environ.get("HOME"), "lib")
+        cx_Oracle.init_oracle_client(lib_dir=lib_dir)
+        
+        dsn = cx_Oracle.makedsn(
+                host = config['clarity']['host'],
+                port = config['clarity']['port'],
+                service_name = config['clarity']['servicename']
+        )
+
+        conn = cx_Oracle.connect(
+                user=config['clarity']['username'],
+                password=config['clarity']['password'],
+                dsn = dsn 
+        )
+
+        c = conn.cursor()
+
+
+        #todo - move this into a single loop of ['diseases']['breast']['queries']
+        print("appointments")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+        for sql in config['diseases'][disease]['queries']['appointments']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                c.execute(sql)
+        print("done") 
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        results = c.fetchall()
+
+        cursor.execute("USE OMOP")
+        cursor.execute("drop table if exists ##pat_ids_temp")
+        cursor.execute("CREATE TABLE ##pat_ids_temp (pat_id varchar(100))")
+        pat_ids = []
+        print(len(results))
+        for row in tqdm.tqdm(results):
+                for field in row:
+                        cursor.execute("INSERT INTO ##pat_ids_temp (pat_id) VALUES ('%s')"%field)
+        print("done") 
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+        
+
+        print("diagnoses")
+        for sql in config['diseases'][disease]['queries']['diagnoses']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                cursor.execute(sql)
+        print("Done")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        print('creating cohort table, initial patients first')
+        for sql in config['diseases'][disease]['queries']['newpts']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                cursor.execute(sql)
+        print("Done")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        print("finding progressive disease pts")
+        for sql in config['diseases'][disease]['queries']['recurredpts']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                cursor.execute(sql)
+        print("Done")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        print("notes")
+        for sql in config['diseases'][disease]['queries']['notes']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                cursor.execute(sql)
+        print("Done")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        print("meds")
+        for sql in config['diseases'][disease]['queries']['meds']:
+                print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+                print(";")
+                print("")
+                cursor.execute(sql)
+        print("Done")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        sql = config['diseases'][disease]['queries']['final']['notes']
+
+        #note: add switch statement for disease param
+        if disease == 'breast':
+                staging_matches = breast_note_parse(sql,cursor)
+                newpts = breast_process(staging_matches)
+        elif disease == 'prostate':
+                staging_matches = prostate_note_parse(sql,cursor)
+                newpts = prostate_process(staging_matches)                
+        elif disease == 'liver':
+                staging_matches = liver_note_parse(sql,cursor)
+                newpts = liver_process(staging_matches)
+        else:
+                print("UNKNOWN DISEASE SELECTION! WILL DIE SOON!")
+                
+        print("done!")
+        today = datetime.today()
+        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+        cursor.execute(config['diseases'][disease]['queries']['final']['meds'])
+
+        results = cursor.fetchall()
+        print(results[:10])
+
         newpt_meds = dict()
         for pat_id, rxnorm_code, drug_name, first_order_date, last_order_date,match_type in results:
                 drug_name = drug_name.replace("'","")
@@ -429,33 +629,34 @@ def main():
                         "match_type":match_type
                 }
 
-        sql = config['diseases']['breast']['queries']['final']['ptmatches']
+        sql = config['diseases'][disease]['queries']['final']['ptmatches']
         cursor.execute(sql)
         results = cursor.fetchall()
         pks = dict()
         sqlite_cursor = sqlite.cursor()
         print("processing results into sqlite")
         for match_type, pat_id, mrn, dob in results:
-                sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
+                #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
+                sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':disease,'pat_id': pat_id, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
                 pks[pat_id] = sqlite_cursor.lastrowid
 
         for pt in newpts:
-                sqlite_cursor.execute (f"insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values ({pks[pt['PAT_ID']]},'{pt['STAGE']}','{pt['T']}','{pt['N']}','{pt['M']}')")
-                sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','HER2','{pt['HER2']}')")
-                sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','ER','{pt['ER']}')")
-                sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','PR','{pt['PR']}')")
-                sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','G','{pt['G']}')")
-                sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','ONCO','{pt['ONCO']}')")
+                #sqlite_cursor.execute (f"insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values ({pks[pt['PAT_ID']]},'{pt['STAGE']}','{pt['T']}','{pt['N']}','{pt['M']}')")
+                sqlite_cursor.execute ("insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values (%(pat_id)s,'%(stage)s','%(T)s','%(N)s','%(M)s')" % {'pat_id': pks[pt['PAT_ID']], 'stage': pt['STAGE'], 'T': pt['T'], 'N': pt['N'], 'M': pt['M']})
+                for key in pt.keys():
+                        if pt[key] != "":
+                                #sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','HER2','{pt['HER2']}')")
+                                sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': pks[pt['PAT_ID']], 'key':key, 'value': pt[key]})
 
-                
         for (pat_id, drug_name), drug in newpt_meds.items():
-                sqlite_cursor.execute(f"insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values ({pks[pat_id]},'Drug','{drug_name}','{drug['first_order_date']}','{drug['last_order_date']}')")
-                
+                # sqlite_cursor.execute(f"insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values ({pks[pat_id]},'Drug','{drug_name}','{drug['first_order_date']}','{drug['last_order_date']}')")
+                sqlite_cursor.execute("insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values (%(pat_id)s,'Drug','%(drug_name)s','%(first_order_date)s','%(last_order_date)s')" % {'pat_id': pks[pat_id], 'drug_name': drug_name, 'first_order_date': drug['first_order_date'], 'last_order_date': drug['last_order_date']})
+
 
         sqlite.commit()
         sqlite.close()
         today = datetime.today()
         print(today.strftime("%Y/%m/%d %H:%M:%S"))
-        
+
 if __name__ == "__main__":
     sys.exit(main())

@@ -5,38 +5,46 @@
 	    "queries":
 	    {
 		"appointments": [
-
+			"select distinct  pat_id from (select pat_id, pat_Enc_csn_id, effective_dept_id from pat_enc where enc_type_c = 50 and contact_date>trunc(sysdate) and contact_date<= trunc(sysdate)+14) encounters inner join(select department_id from clarity_dep  where serv_area_id = 8 and specialty like '%Onc%') oncdepts on encounters.effective_dept_id = oncdepts.department_id"
 		],
 		"diagnoses":[
+            "USE OMOP",
 		    "drop table if exists ##breast_diag",
-		    "SELECT  person_id, min(condition_start_date) as condition_start_date, max(condition_end_date) as condition_end_date   into ##breast_diag FROM      concept a  LEFT JOIN     condition_occurrence b  ON      a.concept_id = b.condition_concept_id inner join     concept_ancestor c on a.concept_id = descendant_concept_id and ancestor_concept_id      in     ( 4112853 ) group by person_id ",
-		    "create index idx1 on #breast_diag (person_id)"
+		    "SELECT  xtn_patient_epic_mrn as mrn, xtn_epic_patient_id as pat_id, d.person_id, min(condition_start_date) as condition_start_date, max(condition_end_date) as condition_end_date   into ##breast_diag FROM      cdm_phi.concept a  LEFT JOIN     cdm_phi.condition_occurrence b  ON      a.concept_id = b.condition_concept_id inner join     cdm_phi.concept_ancestor c on a.concept_id = descendant_concept_id and ancestor_concept_id      in     ( 4112853 ) INNER JOIN cdm_phi.person d ON b.person_id = d.person_id group by d.person_id, xtn_patient_epic_mrn, xtn_epic_patient_id",
+		    "create index idx1 on ##breast_diag (person_id)"
+		],
+		"apt_temp":[
+			"USE OMOP",
+			"drop table if exists ##pat_ids_temp",
+			"CREATE TABLE ##pat_ids_temp (pat_id char)",
+			"INSERT INTO ##pat_ids_temp (pat_id) VALUES (%s)",
+			"SELECT * FROM ##pat_ids_temp;"
 		],
 		"newpts":[
 		    "drop table if exists ##cohort",
-		    "select  distinct cast('NEW' as varchar(100)) as match_type, person_id,  (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn into ##cohort from ##breast_diag a where condition_start_date>=dateadd(day,-90,getDate());"
+		    "select  distinct cast('NEW' as varchar(100)) as match_type, person_id,  mrn into ##cohort from ##breast_diag a  inner join ##pat_ids_temp b on a.pat_id = b.pat_id where condition_start_date>=dateadd(day,-90,getDate());"
 		],
 		"recurredpts":[
 		    "drop table if exists ##imagingreports",
-		    "select distinct a.* into #imagingreports  from note a inner join  #breast_diag b on a.person_id = b.person_id where note_type_concept_id = 0 and (note_title like 'MRI %' or note_title like 'CT %' or note_title like 'XR %' or NOTE_TITLE like 'PET%CT%' or note_title like 'MR %' or note_title like 'XRAY %' )",
-		    "create index idx1 on #imagingreports  (person_id)",
-		    "insert into #cohort select distinct 'PROGRESSED', person_id, (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn from ( select a.*, dense_rank() over (partition by person_id order by  note_datetime asc) as r2 from #imagingreports a where (note_text like '%progression%' or note_text like '%progression%' or note_text like '%progression%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%metast%' or note_text like '%metast%' or note_text like '%metast%') )a where note_datetime>=dateadd(day,-60,getDate()) and r2=1 "
+		    "select distinct a.* into ##imagingreports  from cdm_phi.note a inner join  ##breast_diag b on a.person_id = b.person_id where note_type_concept_id = 0 and (note_title like 'MRI %' or note_title like 'CT %' or note_title like 'XR %' or NOTE_TITLE like 'PET%CT%' or note_title like 'MR %' or note_title like 'XRAY %' )",
+		    "create index idx1 on ##imagingreports  (person_id)",
+		    "insert into ##cohort select distinct 'PROGRESSED', a.person_id, xtn_patient_epic_mrn as mrn from ( select a.*, dense_rank() over (partition by person_id order by  note_datetime asc) as r2 from ##imagingreports a where (note_text like '%progression%' or note_text like '%progression%' or note_text like '%progression%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%relapse%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%no_response%' or note_text like '%metast%' or note_text like '%metast%' or note_text like '%metast%') )a INNER JOIN cdm_phi.person b ON a.person_id = b.person_id where note_datetime>=dateadd(day,-90,getDate()) and r2=1 "
 		],
 		"notes":[
 		    "drop table if exists ##notetext",
-		    "select a.person_id, note_id, note_date, match_type, note_text into ##notetext from ##cohort a inner join note b on a.person_id = b.person_id",
+		    "select a.person_id, note_id, note_date, match_type, note_text into ##notetext from ##cohort a inner join cdm_phi.note b on a.person_id = b.person_id",
 		    "create index idx1 on ##notetext (person_id)",
 		    "create index idx2 on ##notetext (note_id)"
 		],
 		"meds":[
 		    "drop table if exists ##drugs",
-		    "select a.person_id, concept_code as rxnorm_code, concept_name,min(drug_era_start_date) as first_order_date, max(drug_era_end_date) as last_order_date,match_type into ##drugs from drug_era a inner  join concept b on drug_concept_id = b.concept_id inner join concept_ancestor c on b.concept_id = c.descendant_concept_id and ancestor_concept_id in (21601387,35807188) inner join ##cohort d on a.person_id = d.person_id  group by b.concept_name,a.person_id, a.drug_concept_id,concept_code,match_type,concept_name",
+		    "select a.person_id, concept_code as rxnorm_code, concept_name,min(drug_era_start_date) as first_order_date, max(drug_era_end_date) as last_order_date,match_type into ##drugs from cdm_phi.drug_era a inner  join cdm_phi.concept b on drug_concept_id = b.concept_id inner join cdm_phi.concept_ancestor c on b.concept_id = c.descendant_concept_id and ancestor_concept_id in (21601387,35807188) inner join ##cohort d on a.person_id = d.person_id  group by b.concept_name,a.person_id, a.drug_concept_id,concept_code,match_type,concept_name",
 		    "create index idx1 on ##drugs (person_id)"
 		],
 		"final":{
 		    "notes":"select * from ##notetext",
 		    "meds":"select * from  ##drugs",
-		    "ptmatches":"select match_type, a.person_id,  (select distinct empi from mappings.patient_mappings b where a.person_id = b.person_id) as mrn, cast(birth_datetime as date) as birth_date from ##cohort a inner join person b on a.person_id = b.person_id"
+		    "ptmatches":"select match_type, a.person_id, mrn, cast(birth_datetime as date) as birth_date from ##cohort a inner join cdm_phi.person b on a.person_id = b.person_id"
 		}
 	    }
 	},
@@ -104,11 +112,18 @@
 	"comment":"various connection string related settings for attaching to your SQL server database (currently the only one supported but as built could be made database-agnostic. Keeping jdbc driver as is, and the first part of the connection string. Jar path expects to be pointed at JTDS library (currently 1.3.1)",
 	"user":"",
 	"domain":"",
-	"jdbc_driver":"net.sourceforge.jtds.jdbc.Driver",
-	"jdbc_conn_string":"jdbc:jtds:sqlserver://{server}:{port}/{database};useLOBs=false",
+	"jdbc_driver":"com.microsoft.sqlserver.jdbc.SQLServerDriver",
+	"jdbc_conn_string":"jdbc:sqlserver://{server}:{port};databaseName={database};encrypt=true;TrustServerCertificate=false;integratedSecurity=true;authenticationScheme=JavaKerberos",
 	"jar_path":""
     },
     "comment":"CTRP api key for pulling all trial metadata from CTRP, site specific",
     "ctrp_api_key":"",
-    "JAVA_HOME":""
+    "JAVA_HOME":"",
+	"clarity":{
+		"username":"",
+		"password":"",
+		"host":"",
+		"servicename":"",
+		"port":""
+	}
 }
