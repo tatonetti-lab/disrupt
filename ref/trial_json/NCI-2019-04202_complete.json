@@ -206,7 +206,7 @@
                 "type_code": "PRIMARY"
             },
             {
-                "timeframe": "36 months",
+                "timeframe": "12 months",
                 "name": "OS rate",
                 "description": null,
                 "type_code": "SECONDARY"
@@ -224,6 +224,12 @@
                 "type_code": "SECONDARY"
             },
             {
+                "timeframe": "36 months",
+                "name": "OS rate",
+                "description": null,
+                "type_code": "SECONDARY"
+            },
+            {
                 "timeframe": "24 months",
                 "name": "OS rate",
                 "description": null,
@@ -231,12 +237,6 @@
             },
             {
                 "timeframe": "18 months",
-                "name": "OS rate",
-                "description": null,
-                "type_code": "SECONDARY"
-            },
-            {
-                "timeframe": "12 months",
                 "name": "OS rate",
                 "description": null,
                 "type_code": "SECONDARY"
@@ -295,16 +295,16 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Non Small Cell Lung Cancer NOS",
-                    "Lung Non-Small Cell Carcinoma",
-                    "Non-small cell lung cancer, NOS",
-                    "Non-Small Cell Carcinoma of the Lung",
-                    "Non-Small Cell Cancer of Lung",
-                    "Non-Small Cell Cancer of the Lung",
-                    "Non-Small Cell Lung Carcinoma",
-                    "NSCLC - Non-Small Cell Lung Cancer",
                     "Non-Small Cell Carcinoma of Lung",
-                    "NSCLC"
+                    "Lung Non-Small Cell Carcinoma",
+                    "Non-Small Cell Cancer of Lung",
+                    "NSCLC - Non-Small Cell Lung Cancer",
+                    "Non-Small Cell Carcinoma of the Lung",
+                    "Non-Small Cell Lung Carcinoma",
+                    "Non Small Cell Lung Cancer NOS",
+                    "Non-Small Cell Cancer of the Lung",
+                    "NSCLC",
+                    "Non-small cell lung cancer, NOS"
                 ],
                 "nci_thesaurus_concept_id": "C2926",
                 "name": "Non-Small Cell Lung Cancer",
@@ -313,20 +313,20 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C65151",
-                    "C4878"
+                    "C4878",
+                    "C65151"
                 ]
             },
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Resectable Hepatoma",
                     "Resectable Hepatocellular Carcinoma",
-                    "Hepatocellular Carcinoma, Resectable",
                     "Resectable Carcinoma of the Liver Cell",
+                    "Resectable Liver Cell Carcinoma",
+                    "Resectable Hepatoma",
                     "Resectable Carcinoma of Liver Cell",
-                    "Resectable Liver Cell Carcinoma"
+                    "Hepatocellular Carcinoma, Resectable"
                 ],
                 "nci_thesaurus_concept_id": "C7691",
                 "name": "Resectable Hepatocellular Cancer",
@@ -342,10 +342,133 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Squamous Cell Carcinoma of Head and Neck",
+                    "Tumor of the Head and Neck",
+                    "Neoplasm of the Head and Neck",
+                    "Head and Neck Neoplasm (Excluding Central Nervous System)",
+                    "Neoplasm of Head and Neck",
+                    "Head and Neck Tumor",
+                    "Tumor of Head and Neck"
+                ],
+                "nci_thesaurus_concept_id": "C3077",
+                "name": "Head and Neck Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C27571"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C150604",
+                "name": "Resectable Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C150602",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Squamous Cell Tumor",
+                    "Epidermoid Cell Neoplasm",
+                    "Squamous Cell Neoplasms",
+                    "Epidermoid Cell Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3792",
+                "name": "Squamous Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Carcinoma of Head and Neck",
+                    "Carcinoma of the Head and Neck"
+                ],
+                "nci_thesaurus_concept_id": "C35850",
+                "name": "Head and Neck Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4013"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Squamous Cell Carcinoma of the Head and Neck",
-                    "SCCHN",
                     "HNSCC",
+                    "SCCHN",
+                    "Squamous Cell Carcinoma of Head and Neck",
                     "Head and neck squamous cell carcinoma, NOS"
                 ],
                 "nci_thesaurus_concept_id": "C34447",
@@ -354,63 +477,9 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C35850",
-                    "C2929"
+                    "C2929",
+                    "C35850"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, SQUAMOUS CELL, MALIGNANT",
-                    "Squamous Cell Carcinoma, NOS",
-                    "Squamous Cell Carcinoma, conventional",
-                    "Squamous Carcinoma",
-                    "Malignant Epidermoid Cell Neoplasm",
-                    "Squamous Cell Epithelioma",
-                    "Malignant Squamous Cell Neoplasm",
-                    "Malignant Squamous Cell Tumor",
-                    "Epidermoid Carcinoma",
-                    "Squamous Cell Carcinoma, Not Otherwise Specified",
-                    "Epidermoid carcinoma, NOS",
-                    "Malignant Epidermoid Cell Tumor",
-                    "Squamous Cell Cancer",
-                    "Epidermoid Cell Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C2929",
-                "name": "Squamous Cell Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C3792"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -441,6 +510,109 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [
+                    "Head and neck cancer, NOS",
+                    "Cancer of the Head and Neck",
+                    "Malignant Neoplasm of the Head and Neck",
+                    "Malignant Tumor of Head and Neck",
+                    "Malignant Tumor of the Head and Neck",
+                    "Cancer of Head and Neck",
+                    "Malignant Neoplasm of Head and Neck",
+                    "Head and Neck Cancer",
+                    "Malignant Head and Neck Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4013",
+                "name": "Malignant Head and Neck Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3077"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Squamous Cell Tumor",
+                    "Malignant Squamous Cell Neoplasm",
+                    "Squamous Carcinoma",
+                    "Squamous Cell Carcinoma, conventional",
+                    "Squamous Cell Carcinoma, Not Otherwise Specified",
+                    "Squamous Cell Epithelioma",
+                    "Epidermoid carcinoma, NOS",
+                    "Squamous Cell Carcinoma, NOS",
+                    "SCC",
+                    "Malignant Epidermoid Cell Tumor",
+                    "Squamous Cell Cancer",
+                    "CARCINOMA, SQUAMOUS CELL, MALIGNANT",
+                    "Malignant Epidermoid Cell Neoplasm",
+                    "Epidermoid Cell Cancer",
+                    "Epidermoid Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2929",
+                "name": "Squamous Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C3792"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C27571",
                 "name": "Head and Neck Disorder",
@@ -455,14 +627,14 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
                     "Neoplasm",
-                    "Neoplastic Disease",
+                    "Neoplasms, NOS",
                     "tumor",
-                    "Neoplasm, NOS"
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
                 "nci_thesaurus_concept_id": "C3262",
                 "name": "Other Neoplasm",
@@ -471,177 +643,6 @@
                 ],
                 "parents": [
                     "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Tumor of the Head and Neck",
-                    "Head and Neck Cancer",
-                    "Malignant Neoplasm of Head and Neck",
-                    "Malignant Tumor of Head and Neck",
-                    "Malignant Head and Neck Tumor",
-                    "Malignant Neoplasm of the Head and Neck",
-                    "Head and neck cancer, NOS",
-                    "Cancer of Head and Neck",
-                    "Cancer of the Head and Neck"
-                ],
-                "nci_thesaurus_concept_id": "C4013",
-                "name": "Malignant Head and Neck Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3077",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Epithelioma",
-                    "Epithelioma, malignant",
-                    "Epithelial Neoplasms, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3709",
-                "name": "Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4741"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor of the Head and Neck",
-                    "Head and Neck Neoplasm (Excluding Central Nervous System)",
-                    "Neoplasm of Head and Neck",
-                    "Head and Neck Tumor",
-                    "Tumor of Head and Neck",
-                    "Neoplasm of the Head and Neck"
-                ],
-                "nci_thesaurus_concept_id": "C3077",
-                "name": "Head and Neck Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27571",
-                    "C3263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Squamous Cell Neoplasms",
-                    "Epidermoid Cell Neoplasm",
-                    "Squamous Cell Tumor",
-                    "Epidermoid Cell Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3792",
-                "name": "Squamous Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Carcinoma of Head and Neck",
-                    "Carcinoma of the Head and Neck"
-                ],
-                "nci_thesaurus_concept_id": "C35850",
-                "name": "Head and Neck Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C4013",
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C150604",
-                "name": "Resectable Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C150602"
                 ]
             },
             {
@@ -663,8 +664,8 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
                 "nci_thesaurus_concept_id": "C4741",
                 "name": "Neoplasm by Morphology",
@@ -673,267 +674,6 @@
                 ],
                 "parents": [
                     "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C65151",
-                "name": "Non-Small Cell Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Unspecified Respiratory Problem",
-                    "Respiratory Disorder",
-                    "Disorder of Respiratory System"
-                ],
-                "nci_thesaurus_concept_id": "C26871",
-                "name": "Respiratory System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27669"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Hepatic and Biliary Neoplasms",
-                    "Hepato-Biliary Neoplasm",
-                    "Liver and Biliary Neoplasm",
-                    "Hepato-Biliary Tumor",
-                    "Liver and Biliary System Neoplasm",
-                    "Hepatic, Biliary, and Gallbladder Neoplasms",
-                    "Hepatic and Biliary Tumors",
-                    "Hepatobiliary Tumors",
-                    "Hepatobiliary Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C8614",
-                "name": "Hepatobiliary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3052",
-                    "C3959"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7106",
-                "name": "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7103"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Resectable Hepatic Malignant Neoplasm",
-                    "Resectable Malignant Neoplasm of Liver"
-                ],
-                "nci_thesaurus_concept_id": "C7692",
-                "name": "Resectable Malignant Liver Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C150602",
-                    "C7103",
-                    "C8609"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Disorder of Lung",
-                    "Pulmonary Disease",
-                    "Pulmonary Diseases",
-                    "Pulmonary Disorders",
-                    "Lung Disorders",
-                    "Pulmonary Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C3198",
-                "name": "Lung Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C26871",
-                    "C35742"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Respiratory and Thoracic Disease",
-                    "Respiratory, Thoracic, and Mediastinal Disease",
-                    "Respiratory, Thoracic, and Mediastinal Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C27669",
-                "name": "Respiratory and Thoracic Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27551"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Respiratory Tract Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C3355",
-                "name": "Respiratory System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C26871"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Malignant Gastrointestinal System Neoplasm",
-                    "Gastrointestinal cancer, NOS",
-                    "Gastrointestinal System Cancer",
-                    "Malignant Digestive System Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C4890",
-                "name": "Malignant Gastrointestinal Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C3052"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Thoracic Tumor",
-                    "Neoplasm of Thorax",
-                    "Tumor of Thorax",
-                    "Neoplasm of the Thorax",
-                    "Tumor of the Thorax"
-                ],
-                "nci_thesaurus_concept_id": "C3406",
-                "name": "Thoracic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C35742"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Primary Malignant Neoplasm of Liver"
-                ],
-                "nci_thesaurus_concept_id": "C34803",
-                "name": "Primary Malignant Liver Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8609",
-                    "C7103"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C156909",
-                "name": "Resectable Digestive System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C150604",
-                    "C96963"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Neoplasm of Lung",
-                    "Tumor of the Lung",
-                    "Tumor of Lung",
-                    "Lung Tumor",
-                    "Lung Neoplasms",
-                    "Neoplasm of the Lung"
-                ],
-                "nci_thesaurus_concept_id": "C3200",
-                "name": "Lung Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3406",
-                    "C3355",
-                    "C3198"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Cancer of the Liver",
-                    "Liver Carcinoma",
-                    "Liver/hepatobiliary cancer",
-                    "Cancer of Liver",
-                    "Liver and hepatobiliary cancer, NOS",
-                    "Liver and Intrahepatic Biliary Tract Cancer",
-                    "Cancer of the Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Bile Duct Carcinoma",
-                    "Liver and Intrahepatic Bile Duct Cancer",
-                    "Cancer of Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Biliary Tract Carcinoma",
-                    "Biliary Tract Cancer",
-                    "Primary Liver Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C7927",
-                "name": "Liver Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C34803",
-                    "C7106",
-                    "C96963"
                 ]
             },
             {
@@ -955,84 +695,15 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [
-                    "Gastrointestinal System Disorder",
-                    "Unspecified Gastrointestinal Problem",
-                    "Disorder of Digestive System",
-                    "stomach or intestinal disorder",
-                    "GI Disorder",
-                    "Gastrointestinal Disorder",
-                    "Digestive System Disease",
-                    "Gastrointestinal System Disease",
-                    "Digestive Disease"
-                ],
-                "nci_thesaurus_concept_id": "C2990",
-                "name": "Digestive System Disorder",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C190593",
+                "name": "Malignant Liver Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27551"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Hepatic and Intrahepatic Bile Duct Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7103",
-                "name": "Liver and Intrahepatic Bile Duct Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3196",
-                    "C8614"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Liver Disorder",
-                    "Liver Disease",
-                    "Hepatic Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C3196",
-                "name": "Liver and Intrahepatic Bile Duct Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3959"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "CARCINOMA, HEPATOCELLULAR, MALIGNANT",
-                    "Hepatocellular Carcinoma",
-                    "Carcinoma of the Liver Cells",
-                    "Liver Cell Carcinoma",
-                    "LIHC",
-                    "Carcinoma of Liver Cells",
-                    "HCC",
-                    "Hepatoma",
-                    "Primary Carcinoma of the Liver Cells",
-                    "Primary Carcinoma of Liver Cells",
-                    "Liver Cell Cancer (Hepatocellular Carcinoma)"
-                ],
-                "nci_thesaurus_concept_id": "C3099",
-                "name": "Hepatocellular Cancer",
-                "type": [
-                    "maintype",
-                    "subtype"
-                ],
-                "parents": [
-                    "C2852",
-                    "C7927"
+                    "C7103",
+                    "C8609"
                 ]
             },
             {
@@ -1047,19 +718,137 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C3355"
+                    "C3355",
+                    "C9305"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Malignant Tumor of the Lung",
-                    "Malignant Neoplasm of Lung",
-                    "Malignant Lung Tumor",
+                    "Respiratory Tract Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C3355",
+                "name": "Respiratory System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26871",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of the Thorax",
+                    "Neoplasm of Thorax",
+                    "Thoracic Tumor",
+                    "Neoplasm of the Thorax",
+                    "Tumor of Thorax"
+                ],
+                "nci_thesaurus_concept_id": "C3406",
+                "name": "Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C35742"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of the Digestive System",
+                    "Digestive System Tumor",
+                    "Digestive Neoplasm",
+                    "Gastrointestinal Neoplasm",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the GI System",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Tumor of GI System",
+                    "GI Neoplasm",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the GI System",
+                    "Neoplasm of GI System",
+                    "GI System Tumor",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of Gastrointestinal System",
+                    "GI System Neoplasm",
+                    "Neoplasm of Digestive System",
+                    "Tumor of Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Digestive Tumor",
+                    "GI Tumor",
+                    "Gastrointestinal System Neoplasm",
+                    "Gastrointestinal System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "LIHC",
+                    "CARCINOMA, HEPATOCELLULAR, MALIGNANT",
+                    "Liver Cell Carcinoma",
+                    "Primary Carcinoma of the Liver Cells",
+                    "Hepatoma",
+                    "Carcinoma of Liver Cells",
+                    "Carcinoma of the Liver Cells",
+                    "Liver Cell Cancer (Hepatocellular Carcinoma)",
+                    "Hepatocellular Cancer",
+                    "Primary Carcinoma of Liver Cells",
+                    "HCC"
+                ],
+                "nci_thesaurus_concept_id": "C3099",
+                "name": "Hepatocellular Carcinoma",
+                "type": [
+                    "maintype",
+                    "subtype"
+                ],
+                "parents": [
+                    "C7927",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Respiratory, Thoracic, and Mediastinal Disorder",
+                    "Respiratory and Thoracic Disease",
+                    "Respiratory, Thoracic, and Mediastinal Disease"
+                ],
+                "nci_thesaurus_concept_id": "C27669",
+                "name": "Respiratory and Thoracic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Malignant Neoplasm of the Lung",
-                    "Malignant Tumor of Lung"
+                    "Malignant Tumor of Lung",
+                    "Malignant Tumor of the Lung",
+                    "Malignant Lung Tumor",
+                    "Malignant Neoplasm of Lung"
                 ],
                 "nci_thesaurus_concept_id": "C7377",
                 "name": "Malignant Lung Neoplasm",
@@ -1068,55 +857,53 @@
                 ],
                 "parents": [
                     "C3576",
-                    "C3200",
-                    "C4571"
+                    "C4571",
+                    "C3200"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Lung Carcinoma",
-                    "Cancer of the Lung",
-                    "Carcinoma of the Lung",
-                    "Lung Cancer (all types)",
-                    "Lung cancer, NOS",
-                    "Carcinoma of Lung",
-                    "Cancer of Lung"
+                    "Malignant Liver and Biliary Neoplasm",
+                    "Malignant Liver and Biliary System Neoplasm",
+                    "Malignant Hepato-Biliary Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C4878",
-                "name": "Lung Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C7377"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Thoracic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C35742",
-                "name": "Thoracic Disorder",
+                "nci_thesaurus_concept_id": "C8609",
+                "name": "Malignant Hepatobiliary Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27669"
+                    "C8614",
+                    "C4890"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Liver and Biliary System Disorder",
+                    "Liver Disease",
+                    "Hepatic Disorder",
+                    "Liver Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C3196",
+                "name": "Liver and Intrahepatic Bile Duct Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Liver Disease",
                     "Liver and Biliary Disease",
                     "Liver and Biliary Disorder",
-                    "Liver Disease"
+                    "Liver and Biliary System Disorder"
                 ],
                 "nci_thesaurus_concept_id": "C3959",
                 "name": "Hepatobiliary Disorder",
@@ -1131,84 +918,8 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Tumor of GI System",
-                    "Tumor of Digestive System",
-                    "Digestive Tumor",
-                    "GI Neoplasm",
-                    "Neoplasm of the Gastrointestinal System",
-                    "Digestive System Tumor",
-                    "Gastrointestinal Tumor",
-                    "Neoplasm of the Digestive System",
-                    "Tumor of the Gastrointestinal System",
-                    "Neoplasm of Digestive System",
-                    "Tumor of the Digestive System",
-                    "Gastrointestinal System Tumor",
-                    "Gastrointestinal Neoplasm",
-                    "GI Tumor",
-                    "Tumor of Gastrointestinal System",
-                    "Gastrointestinal System Neoplasm",
-                    "Neoplasm of the GI System",
-                    "GI System Tumor",
-                    "GI System Neoplasm",
-                    "Neoplasm of Gastrointestinal System",
-                    "Tumor of the GI System",
-                    "Digestive Neoplasm",
-                    "Neoplasm of GI System"
-                ],
-                "nci_thesaurus_concept_id": "C3052",
-                "name": "Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Malignant Neoplasm of Thorax",
-                    "Malignant Tumor of Thorax",
-                    "Malignant Neoplasm of the Thorax",
-                    "Malignant Tumor of the Thorax",
-                    "Malignant Thoracic Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3576",
-                "name": "Malignant Thoracic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3406",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Malignant Liver and Biliary System Neoplasm",
-                    "Malignant Liver and Biliary Neoplasm",
-                    "Malignant Hepato-Biliary Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8609",
-                "name": "Malignant Hepatobiliary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4890",
-                    "C8614"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Carcinoma of the Gastrointestinal System",
-                    "Gastrointestinal System Carcinoma"
+                    "Gastrointestinal System Carcinoma",
+                    "Carcinoma of the Gastrointestinal System"
                 ],
                 "nci_thesaurus_concept_id": "C96963",
                 "name": "Digestive System Carcinoma",
@@ -1218,6 +929,127 @@
                 "parents": [
                     "C2916",
                     "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Primary Malignant Neoplasm of Liver"
+                ],
+                "nci_thesaurus_concept_id": "C34803",
+                "name": "Primary Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C190593"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Cancer of Liver",
+                    "Liver and Intrahepatic Biliary Tract Carcinoma",
+                    "Liver and hepatobiliary cancer, NOS",
+                    "Primary Liver Carcinoma",
+                    "Cancer of the Liver",
+                    "Liver Carcinoma",
+                    "Biliary Tract Cancer",
+                    "Cancer of the Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Carcinoma",
+                    "Cancer of Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Cancer",
+                    "Liver/hepatobiliary cancer",
+                    "Liver and Intrahepatic Biliary Tract Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C7927",
+                "name": "Liver Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C34803",
+                    "C96963",
+                    "C7106"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Hepato-Biliary Tumor",
+                    "Hepatic and Biliary Neoplasms",
+                    "Hepatobiliary Tumors",
+                    "Liver and Biliary System Neoplasm",
+                    "Hepatic, Biliary, and Gallbladder Neoplasms",
+                    "Hepatobiliary Tumor",
+                    "Hepatic and Biliary Tumors",
+                    "Liver and Biliary Neoplasm",
+                    "Hepato-Biliary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8614",
+                "name": "Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Hepatic and Intrahepatic Bile Duct Neoplasm",
+                    "Liver Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7103",
+                "name": "Liver and Intrahepatic Bile Duct Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8614",
+                    "C3196"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Malignant Digestive System Neoplasm",
+                    "Gastrointestinal System Cancer",
+                    "Gastrointestinal cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Resectable Malignant Neoplasm of Liver",
+                    "Resectable Hepatic Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7692",
+                "name": "Resectable Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C150602",
+                    "C190593"
                 ]
             },
             {
@@ -1240,6 +1072,123 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Respiratory System",
+                    "Respiratory Disorder",
+                    "Unspecified Respiratory Problem"
+                ],
+                "nci_thesaurus_concept_id": "C26871",
+                "name": "Respiratory System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27669"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156909",
+                "name": "Resectable Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C150604",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
+                    "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7106",
+                "name": "Liver Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7103"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C65151",
+                "name": "Non-Small Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Tumor of Thorax",
+                    "Malignant Neoplasm of Thorax",
+                    "Malignant Thoracic Tumor",
+                    "Malignant Tumor of the Thorax",
+                    "Malignant Neoplasm of the Thorax"
+                ],
+                "nci_thesaurus_concept_id": "C3576",
+                "name": "Malignant Thoracic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3406"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Thoracic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C35742",
+                "name": "Thoracic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27669"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Lung cancer, NOS",
+                    "Lung Carcinoma",
+                    "Cancer of Lung",
+                    "Carcinoma of the Lung",
+                    "Cancer of the Lung",
+                    "Lung Cancer (all types)",
+                    "Carcinoma of Lung"
+                ],
+                "nci_thesaurus_concept_id": "C4878",
+                "name": "Lung Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C7377"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C165293",
                 "name": "Resectable Liver and Intrahepatic Bile Duct Carcinoma",
@@ -1247,9 +1196,75 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C7927",
                     "C156909",
+                    "C7927",
                     "C7692"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Digestive System",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "stomach or intestinal disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Lung",
+                    "Pulmonary Disorders",
+                    "Pulmonary Disorder",
+                    "Lung Disorders",
+                    "Pulmonary Diseases",
+                    "Pulmonary Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3198",
+                "name": "Lung Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26871",
+                    "C35742"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Lung Tumor",
+                    "Neoplasm of the Lung",
+                    "Tumor of the Lung",
+                    "Tumor of Lung",
+                    "Neoplasm of Lung",
+                    "Lung Neoplasms"
+                ],
+                "nci_thesaurus_concept_id": "C3200",
+                "name": "Lung Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3355",
+                    "C3198",
+                    "C3406"
                 ]
             }
         ],
@@ -1278,118 +1293,6 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1708",
-                        "name": "Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C20181"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C141144",
-                        "name": "Immune Checkpoint Modulator",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C162261",
-                        "name": "Platinum Doublet",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C1708"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biologics",
-                            "Immunologic, Immunochemical",
-                            "Biological Products",
-                            "Immunologics",
-                            "Biologicals",
-                            "Biopharmaceuticals"
-                        ],
-                        "nci_thesaurus_concept_id": "C307",
-                        "name": "Biological Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Monoclonal Antibody",
-                            "Monoclonal Antibodies"
-                        ],
-                        "nci_thesaurus_concept_id": "C20401",
-                        "name": "Monoclonal Antibody Therapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C307",
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Antiproliferative Drugs",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Antineoplastic Drugs",
-                            "Anti-Tumor Drugs",
-                            "Antineoplastics",
-                            "Cancer Drug",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Cancer Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Biotherapeutic",
-                            "Anti-cancer Biological Agent",
-                            "Anticancer Biological",
-                            "Antineoplastic Biological"
-                        ],
-                        "nci_thesaurus_concept_id": "C129821",
-                        "name": "Antineoplastic Biological Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C274",
-                            "C307"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
                         "nci_thesaurus_concept_id": "C143250",
                         "name": "Immune Checkpoint Inhibitor",
                         "description": null,
@@ -1397,59 +1300,6 @@
                         "category": "agent category",
                         "parents": [
                             "C141144"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "PD-1 Inhibitor",
-                            "PD-1-targeting Agent",
-                            "Programmed Cell Death Protein 1 Inhibitor",
-                            "Protein PD-1 Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C124946",
-                        "name": "PD1 Inhibitor",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C163758",
-                            "C143250"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biomodulators",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
-                            "Biological Response Modifier",
-                            "Immune Modulators",
-                            "Immunopotentiators",
-                            "Immune Mediators",
-                            "Immunotherapy Agent",
-                            "Immunotherapeutic Agent",
-                            "BRM",
-                            "Immunomodulators",
-                            "Immunomodulating Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
                         ]
                     },
                     {
@@ -1465,9 +1315,131 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Agents",
+                            "Tumor-Specific Treatment Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Drugs",
+                            "Cancer Drug",
+                            "Anti-Tumor Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Monoclonal Antibodies",
+                            "Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immune Mediators",
+                            "Immune Modulators",
+                            "Immunopotentiators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapy Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators",
+                            "BRM",
+                            "Biomodulators",
+                            "Immunomodulators",
+                            "Immunomodulating Agent",
+                            "Biological Response Modifier"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Programmed Cell Death Protein 1 Inhibitor",
+                            "Anti-PD-1 Agent",
+                            "PD-1-targeting Agent",
+                            "PD-1 Inhibitor",
+                            "Protein PD-1 Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C124946",
+                        "name": "PD1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C143250"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1708",
+                        "name": "Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C20181"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Ab",
                             "Anti-cancer Antibody",
-                            "Anticancer Antibody",
-                            "Antineoplastic Ab"
+                            "Anticancer Antibody"
                         ],
                         "nci_thesaurus_concept_id": "C129822",
                         "name": "Antineoplastic Antibody",
@@ -1476,6 +1448,44 @@
                         "category": "agent category",
                         "parents": [
                             "C129821"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Biological Agent",
+                            "Antineoplastic Biological",
+                            "Antineoplastic Biotherapeutic",
+                            "Anticancer Biological"
+                        ],
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
                         ]
                     },
                     {
@@ -1489,45 +1499,51 @@
                         "type": "Biological/Vaccine",
                         "category": "agent",
                         "parents": [
-                            "C128037",
-                            "C129822"
+                            "C129822",
+                            "C128037"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C141144",
+                        "name": "Immune Checkpoint Modulator",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Agent",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Pharmacologic Agent",
-                            "Drug",
-                            "Pharmacological Substance",
-                            "Pharmaceuticals"
+                            "Biopharmaceuticals",
+                            "Immunologic, Immunochemical",
+                            "Immunologics",
+                            "Biological Products",
+                            "Biologicals",
+                            "Biologics"
                         ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1908"
+                            "C1909"
                         ]
                     },
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Molecularly Targeted Therapy Agent",
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent",
-                            "Targeted Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C163758",
-                        "name": "Targeted Therapy Agent",
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C162261",
+                        "name": "Platinum Doublet",
                         "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
+                        "type": "Drug",
+                        "category": "agent",
                         "parents": [
-                            "C274"
+                            "C1708"
                         ]
                     }
                 ],
@@ -1590,6 +1606,7 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 88,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2019-07-23",
         "record_verification_date": "2021-11-01",
@@ -1605,6 +1622,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

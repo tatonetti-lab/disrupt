@@ -12,7 +12,7 @@
         ],
         "dcp_id": null,
         "interventional_model": "Parallel",
-        "lead_org": "Plexxikon Inc",
+        "lead_org": "Opna-IO LLC",
         "eligibility": {
             "unstructured": [
                 {
@@ -119,7 +119,7 @@
                 "min_age_in_years": 18.0
             }
         },
-        "completion_date_type_code": "ANTICIPATED",
+        "completion_date_type_code": "ACTUAL",
         "detail_description": null,
         "official_title": "A Multicenter, Open-Label, Parallel, Phase 1b/2a Study of PLX2853 in Combination With Abiraterone Acetate and Prednisone and Phase 1b/2a Study of PLX2853 in Combination With Olaparib in Subjects With Metastatic Castration-Resistant Prostate Cancer (mCRPC)",
         "_phase_sort_order": 3,
@@ -230,15 +230,15 @@
         "nct_id": "NCT04556617",
         "biomarkers": [],
         "classification_code": null,
-        "current_trial_status_date": "2020-09-21",
+        "current_trial_status_date": "2022-06-30",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Castration-Resistant Prostate Carcinoma",
+                    "CRPC",
                     "Castration-Resistant Prostate Carcinoma",
-                    "CRPC"
+                    "Metastatic Castration-Resistant Prostate Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C130234",
                 "name": "Castration-Resistant Prostate Cancer",
@@ -246,8 +246,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C8946",
-                    "C167255"
+                    "C167255",
+                    "C8946"
                 ]
             },
             {
@@ -270,8 +270,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IVA Prostate Cancer AJCC v8",
                     "Stage IVA Prostate Carcinoma AJCC v8",
+                    "Stage IVA Prostate Cancer AJCC v8",
                     "IVA"
                 ],
                 "nci_thesaurus_concept_id": "C140174",
@@ -287,9 +287,9 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "IVB",
                     "Stage IVB Prostate Carcinoma AJCC v8",
-                    "Stage IVB Prostate Cancer AJCC v8"
+                    "Stage IVB Prostate Cancer AJCC v8",
+                    "IVB"
                 ],
                 "nci_thesaurus_concept_id": "C140175",
                 "name": "Stage IVB Prostate Cancer",
@@ -321,6 +321,41 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Prostate Disease"
                 ],
                 "nci_thesaurus_concept_id": "C26865",
@@ -335,117 +370,41 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Disorder of Male Reproductive System",
-                    "Male Reproductive System Disease"
-                ],
-                "nci_thesaurus_concept_id": "C27019",
-                "name": "Male Reproductive System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4875"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Metastatic Genitourinary Cancer",
-                    "Metastatic Genitourinary Carcinoma",
-                    "Metastatic Urogenital Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C146893",
-                "name": "Metastatic Genitourinary System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3482",
-                    "C164141",
-                    "C157774"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C8511",
-                "name": "Refractory Carcinoma",
+                "nci_thesaurus_concept_id": "C150534",
+                "name": "Refractory Malignant Male Reproductive System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2916",
+                    "C8561",
                     "C120186"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C181196",
-                "name": "Male Reproductive System Carcinoma",
+                "synonyms": [
+                    "Urogenital Disease",
+                    "Genitourinary Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C156660",
+                "name": "Genitourinary System Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8561",
-                    "C164141"
+                    "C27551"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Prostate Carcinoma Metastatic",
-                    "Prostate Cancer Metastatic",
-                    "Metastatic Prostate Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C8946",
-                "name": "Metastatic Prostate Cancer",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4863",
-                    "C146893"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm of the Prostate",
-                    "Neoplasm of Prostate",
                     "Prostate Tumor",
                     "Tumor of the Prostate",
+                    "Neoplasm of the Prostate",
+                    "Neoplasm of Prostate",
                     "Tumor of Prostate"
                 ],
                 "nci_thesaurus_concept_id": "C3343",
@@ -461,6 +420,59 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm of the Reproductive System",
+                    "Reproductive Neoplasm",
+                    "Reproductive System Tumor",
+                    "Neoplasm of Reproductive System",
+                    "Reproductive Tumor",
+                    "Tumor of Reproductive System",
+                    "Tumor of the Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C3674",
+                "name": "Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Male Reproductive System Disease",
+                    "Disorder of Male Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C27019",
+                "name": "Male Reproductive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C7062",
                 "name": "Neoplasm by Special Category",
@@ -469,309 +481,6 @@
                 ],
                 "parents": [
                     "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Refractory Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C7628",
-                "name": "Refractory Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Reproductive System Tumor",
-                    "Neoplasm of Reproductive System",
-                    "Reproductive Tumor",
-                    "Tumor of the Reproductive System",
-                    "Tumor of Reproductive System",
-                    "Neoplasm of the Reproductive System",
-                    "Reproductive Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C3674",
-                "name": "Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C156482",
-                    "C4875"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Tumor of the Male Reproductive System",
-                    "Malignant Male Reproductive System Tumor",
-                    "Male reprod. system cancer, NOS",
-                    "Malignant Neoplasm of the Male Reproductive System",
-                    "Malignant Tumor of Male Reproductive System",
-                    "Malignant Neoplasm of Male Reproductive System",
-                    "Male reproductive system cancer, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C8561",
-                "name": "Malignant Male Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3054",
-                    "C36076"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Epithelioma",
-                    "Epithelioma, malignant",
-                    "Epithelial Neoplasms, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3709",
-                "name": "Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4741"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C164141",
-                "name": "Genitourinary System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C156484",
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C177149",
-                "name": "Refractory Male Reproductive System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C181196",
-                    "C150534",
-                    "C8511"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor of Male Reproductive System",
-                    "Tumor of the Male Reproductive System",
-                    "Neoplasm of Male Reproductive System",
-                    "Neoplasm of the Male Reproductive System",
-                    "Male Reproductive System Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3054",
-                "name": "Male Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3674",
-                    "C27019"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Neoplasm of Prostate",
-                    "Malignant Tumor of the Prostate",
-                    "Malignant Neoplasm of the Prostate",
-                    "Malignant Prostate Tumor",
-                    "Malignant Tumor of Prostate"
-                ],
-                "nci_thesaurus_concept_id": "C7378",
-                "name": "Malignant Prostate Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8561",
-                    "C3343"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Genitourinary Neoplasm",
-                    "Genitourinary System Cancer",
-                    "Genitourinary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C156484",
-                "name": "Malignant Genitourinary System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C156482"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
-                ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C167255",
-                "name": "Refractory Prostate Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4863",
-                    "C177149"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Genitourinary Disorder",
-                    "Urogenital Disease"
-                ],
-                "nci_thesaurus_concept_id": "C156660",
-                "name": "Genitourinary System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27551"
                 ]
             },
             {
@@ -792,70 +501,56 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "resistant cancer",
-                    "Refractory Cancer",
-                    "clinical resistance"
+                    "Malignant Tumor of the Male Reproductive System",
+                    "Malignant Neoplasm of Male Reproductive System",
+                    "Malignant Tumor of Male Reproductive System",
+                    "Male reproductive system cancer, NOS",
+                    "Malignant Male Reproductive System Tumor",
+                    "Male reprod. system cancer, NOS",
+                    "Malignant Neoplasm of the Male Reproductive System"
                 ],
-                "nci_thesaurus_concept_id": "C120186",
-                "name": "Refractory Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C8561",
+                "name": "Malignant Male Reproductive System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C7628"
+                    "C3054",
+                    "C36076"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Cancer"
+                    "Metastatic Urogenital Carcinoma",
+                    "Metastatic Genitourinary Cancer",
+                    "Metastatic Genitourinary Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C36263",
-                "name": "Metastatic Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C146893",
+                "name": "Metastatic Genitourinary System Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C4968",
-                    "C3261"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
+                    "C164141",
+                    "C3482",
+                    "C157774"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C150534",
-                "name": "Refractory Malignant Male Reproductive System Neoplasm",
+                "nci_thesaurus_concept_id": "C177149",
+                "name": "Refractory Male Reproductive System Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8561",
-                    "C120186"
+                    "C181196",
+                    "C150534",
+                    "C8511"
                 ]
             },
             {
@@ -878,6 +573,303 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C36310"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C164141",
+                "name": "Genitourinary System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C156484"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Prostate Cancer Metastatic",
+                    "Prostate Carcinoma Metastatic",
+                    "Metastatic Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C8946",
+                "name": "Metastatic Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C146893"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Genitourinary System Cancer",
+                    "Genitourinary Cancer",
+                    "Malignant Genitourinary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C156484",
+                "name": "Malignant Genitourinary System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Refractory Cancer",
+                    "resistant cancer",
+                    "clinical resistance"
+                ],
+                "nci_thesaurus_concept_id": "C120186",
+                "name": "Refractory Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C7628"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C167255",
+                "name": "Refractory Prostate Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C177149"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Neoplasm of the Prostate",
+                    "Malignant Tumor of the Prostate",
+                    "Malignant Neoplasm of Prostate",
+                    "Malignant Prostate Tumor",
+                    "Malignant Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C7378",
+                "name": "Malignant Prostate Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3343",
+                    "C8561"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4968"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Male Reproductive System",
+                    "Male Reproductive System Tumor",
+                    "Tumor of Male Reproductive System",
+                    "Neoplasm of Male Reproductive System",
+                    "Neoplasm of the Male Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C3054",
+                "name": "Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019",
+                    "C3674"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C181196",
+                "name": "Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C164141",
+                    "C8561"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8511",
+                "name": "Refractory Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C120186"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Refractory Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C7628",
+                "name": "Refractory Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C156482",
                 "name": "Genitourinary System Neoplasm",
@@ -893,29 +885,101 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Genitourinary System Malignant Neoplasm",
+                    "Metastatic Malignant Genitourinary System Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C157774",
+                "name": "Metastatic Genitourinary Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Cancer of the Prostate",
+                    "Other Prostate Carcinoma",
                     "Carcinoma of Prostate",
+                    "Carcinoma of the Prostate",
                     "Prostate cancer, NOS",
                     "Cancer of Prostate",
-                    "Prostate Carcinoma",
-                    "Carcinoma of the Prostate",
-                    "Cancer of the Prostate"
+                    "Prostate Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C4863",
                 "name": "Prostate Cancer",
@@ -929,90 +993,11 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36310",
-                "name": "Secondary Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Carcinoma, metastatic, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3482",
-                "name": "Metastatic Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36310",
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Metastatic Malignant Genitourinary System Neoplasm",
-                    "Metastatic Genitourinary System Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C157774",
-                "name": "Metastatic Genitourinary Tumor",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36263",
-                    "C156484"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Invasive Prostate Carcinoma",
-                    "Infiltrating Prostate Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C48596",
-                "name": "Invasive Prostate Cancer",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9480",
-                    "C4863"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Adenocarcinoma of the Prostate",
                     "PRAD",
-                    "Adenocarcinoma of Prostate"
+                    "Adenocarcinoma of Prostate",
+                    "Adenocarcinoma of the Prostate"
                 ],
                 "nci_thesaurus_concept_id": "C2919",
                 "name": "Prostate Adenocarcinoma",
@@ -1020,24 +1005,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C48596",
-                    "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Prostate Carcinoma by AJCC v8 Stage",
-                    "Tumor Stage (Pathologic)"
-                ],
-                "nci_thesaurus_concept_id": "C140163",
-                "name": "Prostate Cancer by AJCC v8 Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C4863"
+                    "C2852",
+                    "C48596"
                 ]
             },
             {
@@ -1060,8 +1029,38 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "infiltrating cancer",
+                    "Tumor Stage (Pathologic)",
+                    "Prostate Carcinoma by AJCC v8 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C140163",
+                "name": "Prostate Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4863"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8505",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "invasive cancer",
+                    "infiltrating cancer",
                     "Infiltrating Malignant Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C8505",
@@ -1093,6 +1092,23 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
+                    "Infiltrating Prostate Carcinoma",
+                    "Invasive Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C48596",
+                "name": "Invasive Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C9480"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Adenocarcinoma, NOS",
                     "ADENOCARCINOMA, MALIGNANT"
                 ],
@@ -1104,20 +1120,6 @@
                 "parents": [
                     "C2916",
                     "C7132"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C9480",
-                "name": "Invasive Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C8505"
                 ]
             }
         ],
@@ -1131,127 +1133,15 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antihormone Agents",
-                            "Hormone Antagonist"
+                            "Adrenal Drugs"
                         ],
-                        "nci_thesaurus_concept_id": "C547",
-                        "name": "Antihormone Therapy",
+                        "nci_thesaurus_concept_id": "C2364",
+                        "name": "Adrenal Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C147908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Steroid Hormone",
-                            "Synthetic Steroids"
-                        ],
-                        "nci_thesaurus_concept_id": "C1636",
-                        "name": "Therapeutic Steroid Hormone",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C548"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Immunosuppressive Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C574",
-                        "name": "Immunosuppressant",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Drug"
-                        ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Synthetic Hormone"
-                        ],
-                        "nci_thesaurus_concept_id": "C548",
-                        "name": "Therapeutic Hormone",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C147908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Protein Antagonist",
-                            "Anti-cancer Protein Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C129824",
-                        "name": "Antineoplastic Protein Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2189"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C146825",
-                        "name": "BRD4 Inhibitor PLX2853",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C128462"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Corticosteroids"
-                        ],
-                        "nci_thesaurus_concept_id": "C211",
-                        "name": "Therapeutic Corticosteroid",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2364",
-                            "C574"
+                            "C1636"
                         ]
                     },
                     {
@@ -1272,24 +1162,10 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Adrenal Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C2364",
-                        "name": "Adrenal Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1636"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
+                            "Targeted Agent",
                             "Molecularly Targeted Therapy Agent",
                             "Anti-tumor Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent",
-                            "Targeted Agent"
+                            "Targeted Therapeutic Agent"
                         ],
                         "nci_thesaurus_concept_id": "C163758",
                         "name": "Targeted Therapy Agent",
@@ -1302,75 +1178,29 @@
                     },
                     {
                         "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Prednidib",
-                            "Panafcort",
-                            "Prednitone",
-                            "DeCortin",
-                            "Adasone",
-                            "Servisone",
-                            "Predicorten",
-                            "Deltison",
-                            "Dacortin",
-                            "Deltra",
-                            "Ofisolona",
-                            "Econosone",
-                            "Deltacortene",
-                            "Panasol-S",
-                            "Perrigo Prednisone",
-                            "Meprosona-F",
-                            "Promifen",
-                            "Rayos",
-                            "Paracort",
-                            "Prednisone Intensol",
-                            "Decorton",
-                            "Prednicort",
-                            "Decortisyl",
-                            "Cortancyl",
-                            "Prednilonga",
-                            "Predniment",
-                            "Predicor"
-                        ],
-                        "nci_thesaurus_concept_id": "C770",
-                        "name": "Prednisone",
-                        "description": "A synthetic glucocorticoid with anti-inflammatory and immunomodulating properties.  After cell surface receptor attachment and cell entry, prednisone enters the nucleus where it binds to and activates specific nuclear receptors, resulting in an altered gene expression and inhibition of proinflammatory cytokine production.  This agent also decreases the number of circulating lymphocytes, induces cell differentiation, and stimulates apoptosis in sensitive tumor cell populations. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C146825",
+                        "name": "BRD4 Inhibitor PLX2853",
+                        "description": null,
                         "type": "Drug",
                         "category": "agent",
                         "parents": [
-                            "C521"
+                            "C128462"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antiandrogen Agents",
-                            "Anti-Androgen",
-                            "Androgen Antagonists",
-                            "Anti-Androgen Agents",
-                            "Antiandrogens"
-                        ],
-                        "nci_thesaurus_concept_id": "C242",
-                        "name": "Antiandrogen Therapy",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C547"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Antiproliferative Drugs",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
                             "Antineoplastic Drugs",
-                            "Anti-Tumor Drugs",
                             "Antineoplastics",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Anti-Cancer Agents",
                             "Cancer Drug",
+                            "Anti-Tumor Agents",
                             "Tumor-Specific Treatment Agents",
-                            "Anti-Cancer Agents"
+                            "Antiproliferative Drugs"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
@@ -1379,45 +1209,6 @@
                         "category": "agent category",
                         "parents": [
                             "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biomodulators",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
-                            "Biological Response Modifier",
-                            "Immune Modulators",
-                            "Immunopotentiators",
-                            "Immune Mediators",
-                            "Immunotherapy Agent",
-                            "Immunotherapeutic Agent",
-                            "BRM",
-                            "Immunomodulators",
-                            "Immunomodulating Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Lynparza"
-                        ],
-                        "nci_thesaurus_concept_id": "C71721",
-                        "name": "Olaparib",
-                        "description": "A small molecule inhibitor of the nuclear enzyme poly(ADP-ribose) polymerase (PARP) with potential chemosensitizing, radiosensitizing, and antineoplastic activities. Olaparib selectively binds to and inhibits PARP, inhibiting PARP-mediated repair of single strand DNA breaks; PARP inhibition may enhance the cytotoxicity of DNA-damaging agents and may reverse tumor cell chemoresistance and radioresistance. PARP catalyzes post-translational ADP-ribosylation of nuclear proteins and can be activated by single-stranded DNA breaks. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C62554"
                         ]
                     },
                     {
@@ -1438,6 +1229,233 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2189",
+                        "name": "Signal Transduction Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Lynparza"
+                        ],
+                        "nci_thesaurus_concept_id": "C71721",
+                        "name": "Olaparib",
+                        "description": "A small molecule inhibitor of the nuclear enzyme poly(ADP-ribose) polymerase (PARP) with potential chemosensitizing, radiosensitizing, and antineoplastic activities. Olaparib selectively binds to and inhibits PARP, inhibiting PARP-mediated repair of single strand DNA breaks; PARP inhibition may enhance the cytotoxicity of DNA-damaging agents and may reverse tumor cell chemoresistance and radioresistance. PARP catalyzes post-translational ADP-ribosylation of nuclear proteins and can be activated by single-stranded DNA breaks. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C62554"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Steroid Hormone",
+                            "Synthetic Steroids"
+                        ],
+                        "nci_thesaurus_concept_id": "C1636",
+                        "name": "Therapeutic Steroid Hormone",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C548"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Substance",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Pharmacologic Agent",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Hormonal Therapy Agent",
+                            "Hormone Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C147908",
+                        "name": "Hormone Therapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Enzyme Inhibitor Agent",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Poly(ADP-Ribose) Polymerase Inhibitor",
+                            "Poly (ADP-Ribose) Polymerase Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C62554",
+                        "name": "PARP Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Prednitone",
+                            "Prednisone Intensol",
+                            "Deltra",
+                            "Predicorten",
+                            "Cortancyl",
+                            "Rayos",
+                            "Prednilonga",
+                            "Decortisyl",
+                            "Promifen",
+                            "Econosone",
+                            "Prednidib",
+                            "Prednicort",
+                            "Decorton",
+                            "Paracort",
+                            "DeCortin",
+                            "Dacortin",
+                            "Perrigo Prednisone",
+                            "Meprosona-F",
+                            "Ofisolona",
+                            "Adasone",
+                            "Panafcort",
+                            "Deltison",
+                            "Deltacortene",
+                            "Predniment",
+                            "Predicor",
+                            "Panasol-S",
+                            "Servisone"
+                        ],
+                        "nci_thesaurus_concept_id": "C770",
+                        "name": "Prednisone",
+                        "description": "A synthetic glucocorticoid with anti-inflammatory and immunomodulating properties.  After cell surface receptor attachment and cell entry, prednisone enters the nucleus where it binds to and activates specific nuclear receptors, resulting in an altered gene expression and inhibition of proinflammatory cytokine production.  This agent also decreases the number of circulating lymphocytes, induces cell differentiation, and stimulates apoptosis in sensitive tumor cell populations. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C521"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Hormone Antagonist",
+                            "Antihormone Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C547",
+                        "name": "Antihormone Therapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C147908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Synthetic Hormone"
+                        ],
+                        "nci_thesaurus_concept_id": "C548",
+                        "name": "Therapeutic Hormone",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C147908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "BRM",
+                            "Immune Regulators",
+                            "Immunopotentiators",
+                            "Immune Mediators",
+                            "Immunomodulators",
+                            "Immunotherapeutic Agent",
+                            "Immune Modulators",
+                            "Biological Response Modifier",
+                            "Immunotherapy Agent",
+                            "Immunomodulating Agent",
+                            "Biomodulators",
+                            "Immunomodulatory Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Corticosteroids"
+                        ],
+                        "nci_thesaurus_concept_id": "C211",
+                        "name": "Therapeutic Corticosteroid",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2364",
+                            "C574"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
                             "Glucocorticoid"
                         ],
@@ -1452,69 +1470,6 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2189",
-                        "name": "Signal Transduction Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Agent",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Pharmacologic Agent",
-                            "Drug",
-                            "Pharmacological Substance",
-                            "Pharmaceuticals"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Hormone Therapy Agent",
-                            "Hormonal Therapy Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C147908",
-                        "name": "Hormone Therapy",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Poly (ADP-Ribose) Polymerase Inhibitor",
-                            "Poly(ADP-Ribose) Polymerase Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C62554",
-                        "name": "PARP Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C471",
-                            "C163758"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
                             "BET Bromodomain Inhibitor"
                         ],
@@ -1525,6 +1480,53 @@
                         "category": "agent category",
                         "parents": [
                             "C129824"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-Androgen Agents",
+                            "Antiandrogen Agents",
+                            "Antiandrogens",
+                            "Androgen Antagonists",
+                            "Anti-Androgen"
+                        ],
+                        "nci_thesaurus_concept_id": "C242",
+                        "name": "Antiandrogen Therapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C547"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunosuppressive Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C574",
+                        "name": "Immunosuppressant",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Protein Antagonist",
+                            "Anti-cancer Protein Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C129824",
+                        "name": "Antineoplastic Protein Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2189"
                         ]
                     }
                 ],
@@ -1547,10 +1549,18 @@
         ],
         "study_model_code": null,
         "nci_id": "NCI-2020-14028",
-        "why_study_stopped": null,
+        "why_study_stopped": "study terminated due to business realignment",
         "brief_summary": "The purpose of this research study is to evaluate safety, pharmacokinetics, pharmacodynamics\r\n      and preliminary efficacy of the investigational drug PLX2853 in subjects with Metastatic\r\n      Castration-Resistant Prostate Cancer (mCRPC)",
         "brief_title": "PLX2853 in Combination With Abiraterone Acetate and Prednisone and in Combination With Olaparib in Subjects With Metastatic Castration-Resistant Prostate Cancer (mCRPC)",
         "status_history": [
+            {
+                "status_date": "2022-06-30T00:00:00.000002",
+                "status": "ADMINISTRATIVELY_COMPLETE"
+            },
+            {
+                "status_date": "2022-04-04T00:00:00.000001",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
             {
                 "status_date": "2020-09-21T00:00:00",
                 "status": "ACTIVE"
@@ -1559,11 +1569,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 110,
-        "_current_trial_status_sort_order": 0,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 8,
         "start_date": "2020-09-21",
-        "record_verification_date": "2021-08-01",
+        "record_verification_date": "2022-10-01",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Administratively Complete",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -1574,6 +1585,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Prostate"
@@ -1582,7 +1594,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2023-03-30",
+        "completion_date": "2022-05-24",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

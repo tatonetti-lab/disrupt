@@ -26,10 +26,18 @@
             "Gastric Cancer",
             "Breast cancer",
             "Melanoma",
-            "Cholangiocarcinoma"
+            "Cholangiocarcinoma",
+            "Squamous",
+            "NSCLC",
+            "SCCHN",
+            "Urothelial Cancer",
+            "Non small cell",
+            "Docetaxel",
+            "Paclitaxel",
+            "Pemetrexed"
         ],
         "dcp_id": null,
-        "interventional_model": "SEQUENTIAL_ASSIGNMENT",
+        "interventional_model": "Parallel",
         "lead_org": "IDEAYA Biosciences",
         "eligibility": {
             "unstructured": [
@@ -46,141 +54,106 @@
                 {
                     "inclusion_indicator": true,
                     "display_order": 2,
-                    "description": "Have evidence of homozygous loss of MTAP or MTAP deletion at the DNA or protein level in the participant's tumor tissue"
+                    "description": "Have evidence of homozygous loss of MTAP or MTAP deletion"
                 },
                 {
                     "inclusion_indicator": true,
                     "display_order": 3,
-                    "description": "Measurable disease"
+                    "description": "Willing to undergo paired fresh biopsy (pre- and post-treatment) procedure. Exceptions may be made for feasibility and safety concerns"
                 },
                 {
                     "inclusion_indicator": true,
                     "display_order": 4,
-                    "description": "ECOG performance status <= 1 or 2"
+                    "description": "Measurable disease"
                 },
                 {
                     "inclusion_indicator": true,
                     "display_order": 5,
-                    "description": "Adequate organ function"
+                    "description": "ECOG performance status <= 1 or 2 after discussion with medical monitor"
                 },
                 {
                     "inclusion_indicator": true,
                     "display_order": 6,
-                    "description": "Able to swallow and retain orally administered study treatment"
+                    "description": "Adequate organ function"
                 },
                 {
                     "inclusion_indicator": true,
                     "display_order": 7,
+                    "description": "Able to swallow and retain orally administered study treatment"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 8,
+                    "description": "Recovery from acute effects of prior therapy"
+                },
+                {
+                    "inclusion_indicator": true,
+                    "display_order": 9,
                     "description": "Able to comply with contraceptive/barrier requirements"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 8,
-                    "description": "Known symptomatic brain metastases that are not neurologically stable for 3 months"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 9,
-                    "description": "Known primary CNS malignancy"
-                },
-                {
-                    "inclusion_indicator": false,
                     "display_order": 10,
-                    "description": "Current active liver or biliary disease"
+                    "description": "Known symptomatic brain metastases"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 11,
-                    "description": "Active inflammatory gastrointestinal disease, chronic diarrhea, known diverticular disease or previous gastric resection or lap band surgery"
+                    "description": "Known primary CNS malignancy"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 12,
-                    "description": "Impairment of gastrointestinal (GI) function or GI disease that may significantly alter the absorption of IDE397"
+                    "description": "Current active liver or biliary disease"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 13,
-                    "description": "Active, uncontrolled infection including hepatitis B virus, hepatitis C virus, human immunodeficiency virus, or acquired immunodeficiency syndrome related illness"
+                    "description": "Impairment of gastrointestinal (GI) function"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 14,
-                    "description": "Baseline 12 lead ECG that demonstrates clinically relevant abnormalities"
+                    "description": "Active uncontrolled infection"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 15,
-                    "description": "Clinically significant cardiac events 6 months before study entry"
+                    "description": "Clinically significant cardiac abnormalities"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 16,
-                    "description": "Uncontrolled hypertension despite optimal medical therapy"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 17,
                     "description": "Previous treatment with a MAT2A inhibitor and / or PRMT inhibitor"
                 },
                 {
                     "inclusion_indicator": false,
+                    "display_order": 17,
+                    "description": "Systemic anti-cancer therapy or major surgery within 4 weeks prior to study entry"
+                },
+                {
+                    "inclusion_indicator": false,
                     "display_order": 18,
-                    "description": "Major surgery within 4 weeks prior to C1D1"
+                    "description": "Radiation therapy within 2 weeks prior to study entry"
                 },
                 {
                     "inclusion_indicator": false,
                     "display_order": 19,
-                    "description": "Radiation therapy within 4 weeks prior to C1D1"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 20,
-                    "description": "Systemic anti-cancer therapy (non-monoclonal antibody) within 4 weeks prior to study entry or within 28 days prior to study entry for an antibody based agent(s) or 5 half-lives (whichever is shorter)"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 21,
-                    "description": "Have received radioimmunotherapy less than 6 weeks before the first dose of IDE397"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 22,
-                    "description": "Have received treatment with a therapeutic antibody less than 4 weeks before the first dose of IDE397"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 23,
-                    "description": "Have received treatment with an investigational small molecule less than 2 weeks before the first dose of IDE397"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 24,
                     "description": "Prior irradiation to >25% of the bone marrow"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 25,
-                    "description": "Current use or anticipated need for food or drugs that are known strong CYP3A4/5 inhibitors"
+                    "display_order": 20,
+                    "description": "Current use or anticipated need for food or drugs that are known strong CYP3A4/5 inhibitors or inducers"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 26,
-                    "description": "Current use or anticipated need for food or drugs that are known strong CYP3A4/5 inducers"
+                    "display_order": 21,
+                    "description": "Currently receiving another investigational study drug."
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 27,
-                    "description": "Received an investigational product within 28 days prior to first dose of IDE-397 or 5 half-lives (whichever is shorter)"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 28,
-                    "description": "Exposure to more than 4 investigational medicinal products within 12 months prior to C1D1"
-                },
-                {
-                    "inclusion_indicator": false,
-                    "display_order": 29,
+                    "display_order": 22,
                     "description": "Known or suspected hypersensitivity to IDE397/excipients or components"
                 }
             ],
@@ -211,6 +184,24 @@
                 "type_code": "PRIMARY"
             },
             {
+                "timeframe": "21 - 28 days following the first dose of IDE397",
+                "name": "Dose-limiting Toxicities (DLTs) of IDE397 in combination with either docetaxel, paclitaxel, gemcitabine and nab-paclitaxel or pemetrexed",
+                "description": "Incidence of DLTs of IDE397 in a combination setting will be determined",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Approximately 2 years",
+                "name": "Drug interaction between IDE397 and docetaxel or paclitaxel, nab-paclitaxel and gemcitabine and pemetrexed",
+                "description": "Pharmacokinetics of docetaxel or paclitaxel, gemcitabine/nab-paclitaxel and pemetrexed.",
+                "type_code": "SECONDARY"
+            },
+            {
+                "timeframe": "Approximately 2 years",
+                "name": "Efficacy of IDE397 administered as a single agent and in combination with docetaxel, paclitaxel, gemcitabine and nab-paclitaxel and pemetrexed",
+                "description": "Objective response rate and duration of response will be assessed by Blinded Imaging Committee Review using the Response Evaluation Criteria in Solid Tumors (RECIST v1.1)",
+                "type_code": "SECONDARY"
+            },
+            {
                 "timeframe": "Approximately 2 years",
                 "name": "Maximum Tolerated Dose (MTD) and/or Recommended Phase 2 Dose (RP2D) of IDE397",
                 "description": "MTD and RP2D of IDE397 will be determined",
@@ -218,19 +209,31 @@
             },
             {
                 "timeframe": "Approximately 2 years",
-                "name": "Pharmacodynamic effect of IDE397",
-                "description": "Changes in the levels of MAT2A pathway (SAM and MAT2A) and PRMT5 pathway (SDMA) will be determined",
+                "name": "Maximum Tolerated Dose (MTD) and/or Recommended Phase 2 Dose (RP2D) of IDE397 in combination with either docetaxel, paclitaxel, gemcitabine and nab-paclitaxel or pemetrexed",
+                "description": "MTD and RP2D of IDE397 in a combination setting will be determined",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Approximately 2 years",
+                "name": "Objective Response Rate (ORR) and Duration of Response (DoR)",
+                "description": "To evaluate preliminary anti-tumor activity of IDE397 in combination expansion arms",
+                "type_code": "PRIMARY"
+            },
+            {
+                "timeframe": "Approximately 2 years",
+                "name": "Pharmacodynamic effect of IDE397 as a single agent and in combination with either docetaxel, paclitaxel, gemcitabine and nab-paclitaxel and pemetrexed",
+                "description": "Changes in the levels of MAT2A pathway and PRMT5 pathway will be determined",
                 "type_code": "SECONDARY"
             },
             {
                 "timeframe": "Approximately 2 years",
                 "name": "Plasma Pharmacokinetics of IDE397 and metabolite",
-                "description": "Pharmacokinetics of IDE397 and metabolite following single and multiple oral administration will be determined",
+                "description": "Pharmacokinetics of IDE397 and metabolite following single and multiple oral administration as a single agent and in combination with either docetaxel, paclitaxel, gemcitabine and nab-paclitaxel or pemetrexed will be determined",
                 "type_code": "SECONDARY"
             },
             {
                 "timeframe": "Approximately 2 years",
-                "name": "Preliminary anti-tumor activity",
+                "name": "Preliminary anti-tumor activity in IDE397 escalation and combination escalation arms",
                 "description": "Objective response rate and duration of response will be assessed using the Response Evaluation Criteria in Solid Tumors (RECIST v1.1)",
                 "type_code": "SECONDARY"
             }
@@ -243,10 +246,243 @@
             "email": null
         },
         "primary_purpose": "TREATMENT",
-        "number_of_arms": 1,
+        "number_of_arms": 8,
         "_study_protocol_type_sort_order": 0,
         "nct_id": "NCT04794699",
         "biomarkers": [
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "MTAP",
+                    "Methylthioadenosine Phosphorylase Gene"
+                ],
+                "nci_thesaurus_concept_id": "C103994",
+                "name": "MTAP Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C26147",
+                    "C25870",
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C26147"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal, Gene, or Protein Abnormality",
+                    "Cytogenetic or Molecular Genetic Abnormality",
+                    "Genetic Abnormality",
+                    "MOLECULAR_ABNORMALITY",
+                    "Molecular Alteration"
+                ],
+                "nci_thesaurus_concept_id": "C3910",
+                "name": "Molecular Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Absent",
+                    "LOST",
+                    "Loss of Expression",
+                    "Negative",
+                    "Not Expressed"
+                ],
+                "nci_thesaurus_concept_id": "C165233",
+                "name": "Expression Negative",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C35681"
+                ],
+                "parents": [
+                    "C35681"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36327",
+                "name": "Gene Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36391",
+                    "C3910"
+                ],
+                "parents": [
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Gene Deletion Mutation",
+                    "Transcript Ablation"
+                ],
+                "nci_thesaurus_concept_id": "C16606",
+                "name": "Gene Deletion",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C45576",
+                    "C36327",
+                    "C19296",
+                    "C2950",
+                    "C3910",
+                    "C36541",
+                    "C133155",
+                    "C97926",
+                    "C9484"
+                ],
+                "parents": [
+                    "C133155",
+                    "C19296"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Negative"
+                ],
+                "nci_thesaurus_concept_id": "C35681",
+                "name": "Negative Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Partial Monosomy",
+                    "del"
+                ],
+                "nci_thesaurus_concept_id": "C9484",
+                "name": "Chromosomal Deletion",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C2950",
+                    "C3910",
+                    "C36541"
+                ],
+                "parents": [
+                    "C36541"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal Rearrangements",
+                    "Rearrangement",
+                    "Structural Chromosomal Abnormality",
+                    "Structural Chromosome Aberration",
+                    "Structural Chromosome Anomalies"
+                ],
+                "nci_thesaurus_concept_id": "C36541",
+                "name": "Chromosomal Rearrangement",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C2950",
+                    "C3910"
+                ],
+                "parents": [
+                    "C2950"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
@@ -260,13 +496,56 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C2950",
-                    "C3910"
+                    "C3910",
+                    "C2950"
                 ],
                 "parents": [
                     "C2950"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genetic Alteration",
+                    "Genetic Change",
+                    "Mutated",
+                    "Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C45576",
+                "name": "Mutation Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C3910",
+                    "C97926"
+                ],
+                "parents": [
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612"
+                ],
+                "parents": [
+                    "C21281"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -290,195 +569,12 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C97926",
                     "C3910"
                 ],
                 "parents": [
                     "C97926"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Deletion",
-                    "Deletion Abnormality",
-                    "Mutation, Deletion",
-                    "del"
-                ],
-                "nci_thesaurus_concept_id": "C19296",
-                "name": "Deletion Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36541",
-                    "C36391",
-                    "C2950",
-                    "C133155",
-                    "C97926",
-                    "C45576",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C133155",
-                    "C45576"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "VARIANT_TYPE",
-                    "molecular consequence",
-                    "molecular_consequence"
-                ],
-                "nci_thesaurus_concept_id": "C97926",
-                "name": "Molecular Sequence Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3910"
-                ],
-                "parents": [
-                    "C3910"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Chromosomal Rearrangements",
-                    "Rearrangement",
-                    "Structural Chromosomal Abnormality",
-                    "Structural Chromosome Aberration",
-                    "Structural Chromosome Anomalies"
-                ],
-                "nci_thesaurus_concept_id": "C36541",
-                "name": "Chromosomal Rearrangement",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3910",
-                    "C2950"
-                ],
-                "parents": [
-                    "C2950"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Chromosomal, Gene, or Protein Abnormality",
-                    "Cytogenetic or Molecular Genetic Abnormality",
-                    "Genetic Abnormality",
-                    "MOLECULAR_ABNORMALITY",
-                    "Molecular Alteration"
-                ],
-                "nci_thesaurus_concept_id": "C3910",
-                "name": "Molecular Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genetic Alteration",
-                    "Genetic Change",
-                    "Mutated",
-                    "Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C45576",
-                "name": "Mutation Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Negative"
-                ],
-                "nci_thesaurus_concept_id": "C35681",
-                "name": "Negative Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C77140"
-                ],
-                "parents": [
-                    "C77140"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Gene Deletion Mutation",
-                    "Transcript Ablation"
-                ],
-                "nci_thesaurus_concept_id": "C16606",
-                "name": "Gene Deletion",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36541",
-                    "C36391",
-                    "C2950",
-                    "C133155",
-                    "C97926",
-                    "C45576",
-                    "C36327",
-                    "C3910",
-                    "C19296"
-                ],
-                "parents": [
-                    "C19296"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -505,285 +601,20 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C165233",
-                    "C3367",
-                    "C16612",
+                    "C103994",
+                    "C21281",
                     "C26147",
                     "C35681",
-                    "C25870",
-                    "C103994",
+                    "C16612",
                     "C77140",
-                    "C21281"
+                    "C3367",
+                    "C25870",
+                    "C165233"
                 ],
                 "parents": [
                     "C103994",
                     "C165233"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36327",
-                "name": "Gene Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C26147",
-                "name": "Glycosyltransferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C25870"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25870",
-                "name": "Transferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C21281"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Diagnostic Test Result",
-                    "Test Result"
-                ],
-                "nci_thesaurus_concept_id": "C77140",
-                "name": "Clinical Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367"
-                ],
-                "parents": [
-                    "C3367"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "MSAP Gene Deletion",
-                    "MTAP Deletion",
-                    "Methylthioadenosine Phosphorylase Gene Deletion"
-                ],
-                "nci_thesaurus_concept_id": "C177782",
-                "name": "MTAP Gene Deletion",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C36327",
-                    "C2950",
-                    "C26147",
-                    "C3910",
-                    "C19296",
-                    "C133155",
-                    "C25870",
-                    "C45576",
-                    "C97926",
-                    "C103994",
-                    "C16606",
-                    "C36541",
-                    "C36391",
-                    "C21281",
-                    "C180942"
-                ],
-                "parents": [
-                    "C103994",
-                    "C16606",
-                    "C180942"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Absent",
-                    "LOST",
-                    "Loss of Expression",
-                    "Negative",
-                    "Not Expressed"
-                ],
-                "nci_thesaurus_concept_id": "C165233",
-                "name": "Expression Negative",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C35681",
-                    "C3367",
-                    "C77140"
-                ],
-                "parents": [
-                    "C35681"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Observable Entity"
-                ],
-                "nci_thesaurus_concept_id": "C3367",
-                "name": "Finding",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Abnormal Gene Rearrangement",
-                    "Abnormal Rearrangement",
-                    "Gene Rearrangement"
-                ],
-                "nci_thesaurus_concept_id": "C133155",
-                "name": "Gene Rearrangement Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C2950",
-                    "C97926",
-                    "C3910",
-                    "C36541",
-                    "C36327"
-                ],
-                "parents": [
-                    "C36327",
-                    "C36541"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21281",
-                "name": "Enzyme Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "MTAP",
-                    "Methylthioadenosine Phosphorylase Gene"
-                ],
-                "nci_thesaurus_concept_id": "C103994",
-                "name": "MTAP Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281",
-                    "C26147"
-                ],
-                "parents": [
-                    "C26147"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -801,7 +632,8 @@
                     "Chromosome Alterations",
                     "Chromosome Anomalies",
                     "Cytogenetic Aberration",
-                    "Cytogenetic Analysis Abnormality Type"
+                    "Cytogenetic Analysis Abnormality Type",
+                    "Genomic Structural Variation"
                 ],
                 "nci_thesaurus_concept_id": "C2950",
                 "name": "Cytogenetic Abnormality",
@@ -809,12 +641,187 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3910"
                 ],
                 "parents": [
                     "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "MSAP Gene Deletion",
+                    "MTAP Deletion",
+                    "Methylthioadenosine Phosphorylase Gene Deletion"
+                ],
+                "nci_thesaurus_concept_id": "C177782",
+                "name": "MTAP Gene Deletion",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C2950",
+                    "C180942",
+                    "C21281",
+                    "C3910",
+                    "C36391",
+                    "C133155",
+                    "C45576",
+                    "C16606",
+                    "C97926",
+                    "C36541",
+                    "C16612",
+                    "C36327",
+                    "C9484",
+                    "C25870",
+                    "C103994",
+                    "C26147",
+                    "C19296"
+                ],
+                "parents": [
+                    "C103994",
+                    "C16606",
+                    "C180942"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "VARIANT_TYPE",
+                    "molecular consequence",
+                    "molecular_consequence"
+                ],
+                "nci_thesaurus_concept_id": "C97926",
+                "name": "Molecular Sequence Variation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3910"
+                ],
+                "parents": [
+                    "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Abnormal Gene Rearrangement",
+                    "Abnormal Rearrangement",
+                    "Gene Rearrangement"
+                ],
+                "nci_thesaurus_concept_id": "C133155",
+                "name": "Gene Rearrangement Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C36327",
+                    "C2950",
+                    "C3910",
+                    "C36541",
+                    "C97926"
+                ],
+                "parents": [
+                    "C36327",
+                    "C36541"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Deletion",
+                    "Deletion Abnormality",
+                    "Mutation, Deletion",
+                    "del"
+                ],
+                "nci_thesaurus_concept_id": "C19296",
+                "name": "Deletion Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C45576",
+                    "C2950",
+                    "C9484",
+                    "C3910",
+                    "C36541",
+                    "C97926"
+                ],
+                "parents": [
+                    "C45576",
+                    "C9484"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C26147",
+                "name": "Glycosyltransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25870",
+                    "C16612",
+                    "C21281"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
@@ -827,9 +834,8 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -845,10 +851,10 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Advanced Malignant Solid Neoplasm",
-                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Tumor",
                     "Advanced Solid Neoplasm",
-                    "Advanced Solid Tumor"
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Malignant Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C129707",
                 "name": "Advanced Malignant Solid Tumor",
@@ -856,51 +862,9 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C127155",
-                    "C9270"
+                    "C9270",
+                    "C127155"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -919,14 +883,14 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
-                "nci_thesaurus_concept_id": "C9292",
-                "name": "Solid Tumor",
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
                     "C7062"
@@ -936,22 +900,18 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C7062"
                 ]
             },
             {
@@ -960,13 +920,13 @@
                 "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -981,16 +941,17 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Solid Neoplasm"
+                    "Solid Neoplasm",
+                    "Solid Tumour",
+                    "Solid tumor, NOS"
                 ],
-                "nci_thesaurus_concept_id": "C132146",
-                "name": "Malignant Solid Tumor",
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C9292",
-                    "C9305"
+                    "C7062"
                 ]
             },
             {
@@ -1013,25 +974,49 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Malignant Solid Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C9292",
+                    "C9305"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
                 ],
                 "nci_thesaurus_concept_id": "C4968",
                 "name": "Secondary Malignant Neoplasm",
@@ -1039,8 +1024,30 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C36255"
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
                 ]
             },
             {
@@ -1061,16 +1068,92 @@
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "IDE397-001",
-        "active_sites_count": 6,
+        "active_sites_count": 7,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2189",
-                        "name": "Signal Transduction Inhibitor",
+                        "synonyms": [
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Mitotic Inhibitor Agents",
+                            "Mitosis Inhibitor Drugs",
+                            "Mitosis Inhibitors",
+                            "Mitotic Inhibitors",
+                            "Antimitotic Drugs",
+                            "Mitotic Inhibitor Drugs",
+                            "Antimitotics",
+                            "Microtubular Function Inhibitors",
+                            "Mitosis Inhibitor Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C273",
+                        "name": "Antimitotic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Anzatax",
+                            "Bristaxol",
+                            "Asotax",
+                            "Taxol Konzentrat",
+                            "Praxel"
+                        ],
+                        "nci_thesaurus_concept_id": "C1411",
+                        "name": "Paclitaxel",
+                        "description": "A compound extracted from the Pacific yew tree Taxus brevifolia with antineoplastic activity.  Paclitaxel binds to tubulin and inhibits the disassembly of microtubules, thereby resulting in the inhibition of cell division.  This agent also induces apoptosis by binding to and blocking the function of the apoptosis inhibitor protein Bcl-2 (B-cell Leukemia 2). Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C67437",
+                            "C1490"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Protein Antagonist",
+                            "Anti-cancer Protein Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C129824",
+                        "name": "Antineoplastic Protein Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2189"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cytotoxic Chemotherapy Agent",
+                            "Antineoplastic Cytotoxic Agent",
+                            "Cytotoxic Antineoplastic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
@@ -1091,6 +1174,249 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
+                            "Tubulin Binding Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C25974",
+                        "name": "Tubulin Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C273"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antimetabolites"
+                        ],
+                        "nci_thesaurus_concept_id": "C272",
+                        "name": "Antimetabolite",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Agents",
+                            "Tumor-Specific Treatment Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Drugs",
+                            "Cancer Drug",
+                            "Anti-Tumor Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Lipids"
+                        ],
+                        "nci_thesaurus_concept_id": "C616",
+                        "name": "Lipid",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C718"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Taxotere Injection Concentrate",
+                            "Taxotere",
+                            "Docecad"
+                        ],
+                        "nci_thesaurus_concept_id": "C1526",
+                        "name": "Docetaxel",
+                        "description": "A semi-synthetic, second-generation taxane derived from a compound found in the European yew tree Taxus baccata.  Docetaxel displays potent and broad antineoplastic properties; it binds to and stabilizes tubulin, thereby inhibiting microtubule disassembly which results in cell- cycle arrest at the G2/M phase and cell death.  This agent also inhibits pro-angiogenic factors such as vascular endothelial growth factor (VEGF) and displays immunomodulatory and pro-inflammatory properties by inducing various mediators of the inflammatory response.  Docetaxel has been studied for use as a radiation-sensitizing agent. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1490",
+                            "C67437"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2189",
+                        "name": "Signal Transduction Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1557",
+                        "name": "Pyrimidine Antagonist",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Abraxane"
+                        ],
+                        "nci_thesaurus_concept_id": "C2688",
+                        "name": "Nab-paclitaxel",
+                        "description": "A Cremophor EL-free, albumin-stabilized nanoparticle formulation of the natural taxane paclitaxel with antineoplastic activity. Paclitaxel binds to and stabilizes microtubules, preventing their depolymerization and so inhibiting cellular motility, mitosis, and replication. This formulation solubilizes paclitaxel without the use of the solvent Cremophor, thereby permitting the administration of larger doses of paclitaxel while avoiding the toxic effects associated with Cremophor. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C61078"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1913",
+                        "name": "Drug or Chemical by Structure",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxane-Site Binding Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C67437",
+                        "name": "Taxane-Pocket Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C25974"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C66876",
+                        "name": "Gemcitabine",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1557",
+                            "C2150"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2150",
+                        "name": "Ribonucleotide Reductase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Hydrocarbons"
+                        ],
+                        "nci_thesaurus_concept_id": "C552",
+                        "name": "Hydrocarbon",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C718"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C718",
+                        "name": "Organic Chemical",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1913"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C153180",
+                        "name": "MAT2A Inhibitor AG-270",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C129825"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxanes"
+                        ],
+                        "nci_thesaurus_concept_id": "C1490",
+                        "name": "Taxane Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C860"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Anti-cancer Enzyme Inhibitor"
                         ],
                         "nci_thesaurus_concept_id": "C129825",
@@ -1106,87 +1432,28 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Drugs",
-                            "Cancer Drug",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Antiproliferative Agents",
-                            "Tumor-Specific Treatment Agents",
-                            "Antineoplastics",
-                            "Anti-Tumor Drugs",
-                            "Anti-Cancer Agents",
-                            "Antineoplastic Drugs"
+                            "Terpenes"
                         ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
+                        "nci_thesaurus_concept_id": "C860",
+                        "name": "Terpene Compound",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
+                            "C552",
+                            "C616"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Drug",
-                            "Pharmacologic Agent",
-                            "Pharmaceuticals",
-                            "Pharmaceutical Agent",
-                            "Agent",
-                            "Drug Substance",
-                            "Pharmacological Substance"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-cancer Protein Inhibitor",
-                            "Antineoplastic Protein Antagonist"
-                        ],
-                        "nci_thesaurus_concept_id": "C129824",
-                        "name": "Antineoplastic Protein Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2189"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Drug",
-                            "Enzyme Inhibitor Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C153180",
-                        "name": "MAT2A Inhibitor AG-270",
+                        "nci_thesaurus_concept_id": "C61078",
+                        "name": "Paclitaxel Preparation",
                         "description": null,
                         "type": "Drug",
-                        "category": "agent",
+                        "category": "agent category",
                         "parents": [
-                            "C129825"
+                            "C67437"
                         ]
                     }
                 ],
@@ -1196,15 +1463,57 @@
             },
             {
                 "interventions": [],
-                "name": "Dose Escalation Monotherapy",
-                "description": "IDE397 dosed orally, once daily (QD) for each 21-day cycle",
+                "name": "Part 1: Dose Escalation Monotherapy (Solid Tumors)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 2: Monotherapy Dose Expansion (NSCLC, Esophagogastric and Solid Tumors)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 3: Combination Dose Escalation with docetaxel (NSCLC) or paclitaxel (Solid tumors)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 4: Combination Dose Expansion with docetaxel (NSCLC) or paclitaxel (Esophagogastric)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 5: Combination Dose Escalation with gemcitabine and nab-paclitaxel (Pancreatic)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 6: Combination Dose Expansion with gemcitabine and nab-paclitaxel (Pancreatic)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 7: Combination Dose Escalation with pemetrexed (Solid Tumors)",
+                "description": null,
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [],
+                "name": "Part 8: Combination Dose Expansion with pemetrexed (Solid Tumors)",
+                "description": null,
                 "type": "EXPERIMENTAL"
             }
         ],
         "study_model_code": null,
         "nci_id": "NCI-2021-06345",
         "why_study_stopped": null,
-        "brief_summary": "This is a Phase 1, open-label, multicenter, multiple dose, dose escalation study of the\r\n      safety, PK, PD, and anti-tumor activity of IDE397 as a single agent in adult patients with\r\n      selected advanced or metastatic MTAP-deleted advanced solid tumors who are unresponsive to\r\n      standard of care therapy or for whom no curative therapy is available.",
+        "brief_summary": "This is a Phase 1, open-label, multicenter, dose escalation and expansion study of the\r\n      safety, PK, PD, and anti-tumor activity of IDE397 as a single agent and in combination with\r\n      docetaxel, paclitaxel, gemcitabine/nab-paclitaxel and pemetrexed in adult patients with\r\n      selected advanced or metastatic MTAP-deleted advanced solid tumors who are unresponsive to\r\n      standard of care therapy or for whom no curative therapy is available. IDE397 is a small\r\n      molecule inhibitor of methionine adenosyltransferase 2 alpha (MAT2A).",
         "brief_title": "Study of IDE397 in Participants With Solid Tumors Harboring MTAP Deletion",
         "status_history": [
             {
@@ -1214,10 +1523,11 @@
         ],
         "study_population_description": null,
         "sampling_method_code": null,
-        "minimum_target_accrual_number": 40,
+        "minimum_target_accrual_number": 382,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2021-04-14",
-        "record_verification_date": "2021-06-01",
+        "record_verification_date": "2022-12-01",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -1227,9 +1537,10 @@
             "role_investigator": null,
             "role_outcome_assessor": null,
             "role_subject": null,
-            "allocation_code": "NA"
+            "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"
@@ -1238,7 +1549,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2024-12-31",
+        "completion_date": "2024-06-30",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

@@ -147,7 +147,7 @@
                 "min_age_in_years": 18.0
             }
         },
-        "completion_date_type_code": "ANTICIPATED",
+        "completion_date_type_code": "ACTUAL",
         "detail_description": "LN-145/LN-145-S1 is an adoptive cell transfer therapy that utilizes an autologous TIL\r\n      manufacturing process, as originally developed by the NCI, for the treatment of patients with\r\n      recurrent and/or metastatic squamous cell carcinoma of the head and neck. The cell transfer\r\n      therapy used in this study involves patients receiving a NMA lymphocyte depleting preparative\r\n      regimen, followed by infusion of autologous TIL followed by the administration of a regimen\r\n      of IL-2.",
         "official_title": "A Phase 2, Multicenter Study to Evaluate the Efficacy and Safety of Autologous Tumor Infiltrating Lymphocytes (LN-145/LN-145-S1) for the Treatment of Patients With Recurrent and/or Metastatic Squamous Cell Carcinoma of the Head and Neck",
         "_phase_sort_order": 2,
@@ -204,14 +204,14 @@
         "nct_id": "NCT03083873",
         "biomarkers": [],
         "classification_code": null,
-        "current_trial_status_date": "2021-01-11",
+        "current_trial_status_date": "2022-08-08",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IV",
-                    "Stage IV Cutaneous Squamous Cell Carcinoma of the Head and Neck AJCC v8"
+                    "Stage IV Cutaneous Squamous Cell Carcinoma of the Head and Neck AJCC v8",
+                    "Stage IV"
                 ],
                 "nci_thesaurus_concept_id": "C133259",
                 "name": "Stage IV Head and Neck Squamous Cell Cancer",
@@ -226,8 +226,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Recurrent Head and Neck Squamous Cell Carcinoma",
-                    "Recurrent Squamous Cell Carcinoma of the Head and Neck"
+                    "Recurrent Squamous Cell Carcinoma of the Head and Neck",
+                    "Recurrent Head and Neck Squamous Cell Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C133709",
                 "name": "Recurrent Head and Neck Squamous Cell Cancer",
@@ -252,111 +252,65 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C126465",
                     "C4104",
-                    "C34447"
+                    "C34447",
+                    "C126465"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Squamous Cell Carcinoma of Head and Neck",
-                    "Squamous Cell Carcinoma of the Head and Neck",
-                    "SCCHN",
-                    "HNSCC",
-                    "Head and neck squamous cell carcinoma, NOS"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C34447",
-                "name": "Head and Neck Squamous Cell Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C35850",
-                    "C2929"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, SQUAMOUS CELL, MALIGNANT",
-                    "Squamous Cell Carcinoma, NOS",
-                    "Squamous Cell Carcinoma, conventional",
-                    "Squamous Carcinoma",
-                    "Malignant Epidermoid Cell Neoplasm",
-                    "Squamous Cell Epithelioma",
-                    "Malignant Squamous Cell Neoplasm",
-                    "Malignant Squamous Cell Tumor",
-                    "Epidermoid Carcinoma",
-                    "Squamous Cell Carcinoma, Not Otherwise Specified",
-                    "Epidermoid carcinoma, NOS",
-                    "Malignant Epidermoid Cell Tumor",
-                    "Squamous Cell Cancer",
-                    "Epidermoid Cell Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C2929",
-                "name": "Squamous Cell Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C3792"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7624",
-                "name": "Recurrent Head and Neck Carcinoma",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C7619",
-                    "C35850",
-                    "C152077"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
                     "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Squamous Cell Tumor",
+                    "Epidermoid Cell Neoplasm",
+                    "Squamous Cell Neoplasms",
+                    "Epidermoid Cell Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3792",
+                "name": "Squamous Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
                 ]
             },
             {
@@ -369,8 +323,42 @@
                     "stage"
                 ],
                 "parents": [
-                    "C7619",
-                    "C2929"
+                    "C2929",
+                    "C7619"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Relapsed Cancer",
+                    "Relapsed Carcinoma",
+                    "Recurrent Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C7619",
+                "name": "Recurrent Carcinoma",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4813",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Recurrent Head and Neck Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C152077",
+                "name": "Recurrent Malignant Head and Neck Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4013",
+                    "C4813"
                 ]
             },
             {
@@ -390,46 +378,41 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Recurrence",
+                    "Recurrent Cancer",
+                    "Recurrent Malignant Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C4813",
+                "name": "Recurrent Malignant Neoplasm",
                 "type": [
-                    "maintype"
+                    "stage"
                 ],
                 "parents": [
-                    "C2991"
+                    "C4798",
+                    "C9305"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Tumor of the Head and Neck",
-                    "Head and Neck Cancer",
-                    "Malignant Neoplasm of Head and Neck",
-                    "Malignant Tumor of Head and Neck",
-                    "Malignant Head and Neck Tumor",
-                    "Malignant Neoplasm of the Head and Neck",
-                    "Head and neck cancer, NOS",
-                    "Cancer of Head and Neck",
-                    "Cancer of the Head and Neck"
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C4013",
-                "name": "Malignant Head and Neck Neoplasm",
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3077",
-                    "C9305"
+                    "C7062"
                 ]
             },
             {
@@ -453,62 +436,45 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor of the Head and Neck",
-                    "Head and Neck Neoplasm (Excluding Central Nervous System)",
-                    "Neoplasm of Head and Neck",
-                    "Head and Neck Tumor",
-                    "Tumor of Head and Neck",
-                    "Neoplasm of the Head and Neck"
+                    "Malignant Squamous Cell Tumor",
+                    "Malignant Squamous Cell Neoplasm",
+                    "Squamous Carcinoma",
+                    "Squamous Cell Carcinoma, conventional",
+                    "Squamous Cell Carcinoma, Not Otherwise Specified",
+                    "Squamous Cell Epithelioma",
+                    "Epidermoid carcinoma, NOS",
+                    "Squamous Cell Carcinoma, NOS",
+                    "SCC",
+                    "Malignant Epidermoid Cell Tumor",
+                    "Squamous Cell Cancer",
+                    "CARCINOMA, SQUAMOUS CELL, MALIGNANT",
+                    "Malignant Epidermoid Cell Neoplasm",
+                    "Epidermoid Cell Cancer",
+                    "Epidermoid Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C3077",
-                "name": "Head and Neck Neoplasm",
+                "nci_thesaurus_concept_id": "C2929",
+                "name": "Squamous Cell Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27571",
-                    "C3263"
+                    "C2916",
+                    "C3792"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Recurrence",
-                    "Recurrent",
-                    "Recurrent Tumor",
-                    "Neoplasm Recurrence"
-                ],
-                "nci_thesaurus_concept_id": "C4798",
-                "name": "Recurrent Neoplasm",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7624",
+                "name": "Recurrent Head and Neck Carcinoma",
                 "type": [
                     "stage"
                 ],
                 "parents": [
-                    "C7062"
+                    "C152077",
+                    "C7619",
+                    "C35850"
                 ]
             },
             {
@@ -528,15 +494,48 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
+                    "Squamous Cell Carcinoma of the Head and Neck",
+                    "HNSCC",
+                    "SCCHN",
+                    "Squamous Cell Carcinoma of Head and Neck",
+                    "Head and neck squamous cell carcinoma, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C34447",
+                "name": "Head and Neck Squamous Cell Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2929",
+                    "C35850"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
+                    "Epithelial tumor, malignant",
                     "Carcinoma",
                     "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C2916",
                 "name": "Other Carcinoma",
@@ -544,60 +543,8 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Recurrent Head and Neck Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C152077",
-                "name": "Recurrent Malignant Head and Neck Neoplasm",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C4813",
-                    "C4013"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Squamous Cell Neoplasms",
-                    "Epidermoid Cell Neoplasm",
-                    "Squamous Cell Tumor",
-                    "Epidermoid Cell Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3792",
-                "name": "Squamous Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Recurrence",
-                    "Recurrent Cancer",
-                    "Recurrent Malignant Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C4813",
-                "name": "Recurrent Malignant Neoplasm",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
                     "C9305",
-                    "C4798"
+                    "C3709"
                 ]
             },
             {
@@ -613,26 +560,96 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C4013",
-                    "C2916"
+                    "C2916",
+                    "C4013"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Recurrent Cancer",
-                    "Relapsed Carcinoma",
-                    "Relapsed Cancer"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
-                "nci_thesaurus_concept_id": "C7619",
-                "name": "Recurrent Carcinoma",
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Head and neck cancer, NOS",
+                    "Cancer of the Head and Neck",
+                    "Malignant Neoplasm of the Head and Neck",
+                    "Malignant Tumor of Head and Neck",
+                    "Malignant Tumor of the Head and Neck",
+                    "Cancer of Head and Neck",
+                    "Malignant Neoplasm of Head and Neck",
+                    "Head and Neck Cancer",
+                    "Malignant Head and Neck Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4013",
+                "name": "Malignant Head and Neck Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3077"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Head and Neck",
+                    "Neoplasm of the Head and Neck",
+                    "Head and Neck Neoplasm (Excluding Central Nervous System)",
+                    "Neoplasm of Head and Neck",
+                    "Head and Neck Tumor",
+                    "Tumor of Head and Neck"
+                ],
+                "nci_thesaurus_concept_id": "C3077",
+                "name": "Head and Neck Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3263",
+                    "C27571"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm Recurrence",
+                    "Recurrence",
+                    "Recurrent Tumor",
+                    "Recurrent"
+                ],
+                "nci_thesaurus_concept_id": "C4798",
+                "name": "Recurrent Neoplasm",
                 "type": [
                     "stage"
                 ],
                 "parents": [
-                    "C4813",
-                    "C2916"
+                    "C7062"
                 ]
             },
             {
@@ -652,94 +669,50 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
+                "is_lead_disease": false,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "Skin Epithelium Neoplasm",
+                    "Epithelial Skin Tumor",
+                    "Skin Epithelium Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C7342",
+                "name": "Epithelial Skin Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C3372",
+                    "C3709"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Skin Cancer",
-                    "Melanoma and Non-Melanoma Skin Cancer",
-                    "Malignant Neoplasm of the Skin",
-                    "Skin Cancer, Including Melanoma",
-                    "Malignant Tumor of Skin",
-                    "Malignant Tumor of the Skin",
-                    "Skin Neoplasm, Malignant",
-                    "Skin cancer, NOS",
-                    "Malignant Neoplasm of Skin",
-                    "Malignant Skin Tumor"
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
-                "nci_thesaurus_concept_id": "C2920",
-                "name": "Malignant Skin Neoplasm",
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C3372"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C133252",
-                "name": "Cutaneous Squamous Cell Carcinoma of the Head and Neck",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4819",
-                    "C34447"
+                    "C7062"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Epidermoid Carcinoma of the Skin",
-                    "Squamous Cell Skin Carcinoma",
-                    "Skin Squamous Cell Carcinoma",
-                    "Cutaneous Squamous Cell Carcinoma",
-                    "Epidermoid Carcinoma of Skin",
-                    "Epidermoid Skin Carcinoma",
-                    "Squamous Cell Carcinoma of the Skin",
-                    "Squamous cell carcinoma - skin",
-                    "Squamous Cell Carcinoma of Skin"
-                ],
-                "nci_thesaurus_concept_id": "C4819",
-                "name": "Skin Squamous Cell Cancer",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2929",
-                    "C4914"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Skin Cancer, Non-Melanoma",
-                    "nonmelanoma skin cancer",
-                    "Carcinoma of the Skin",
                     "Non-Melanoma Cancer of the Skin",
+                    "Carcinoma of the Skin",
+                    "nonmelanoma skin cancer",
                     "Carcinoma of Skin",
+                    "Skin Carcinoma",
                     "Non-Melanoma Cancer of Skin",
-                    "Skin Carcinoma"
+                    "Skin Cancer, Non-Melanoma"
                 ],
                 "nci_thesaurus_concept_id": "C4914",
                 "name": "Non-Melanoma Skin Cancer",
@@ -747,26 +720,26 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C2920",
                     "C2916",
-                    "C7342"
+                    "C7342",
+                    "C2920"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Metastatic Head and Neck Carcinoma"
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
                 ],
-                "nci_thesaurus_concept_id": "C126465",
-                "name": "Metastatic Head and Neck Cancer",
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3482",
-                    "C35850",
-                    "C170467"
+                    "C36255",
+                    "C9305"
                 ]
             },
             {
@@ -781,42 +754,75 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C2929",
+                    "C3482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor Stage (Pathological)"
+                ],
+                "nci_thesaurus_concept_id": "C133253",
+                "name": "Cutaneous Squamous Cell Carcinoma of the Head and Neck by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C133252"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4968"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Head and Neck Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C126465",
+                "name": "Metastatic Head and Neck Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C170467",
                     "C3482",
-                    "C2929"
+                    "C35850"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Neoplasm of the Skin",
+                    "Tumor of Skin",
+                    "Neoplasm of Skin",
+                    "Skin Neoplasm",
+                    "Skin Neoplasms",
+                    "Tumor of the Skin"
                 ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
+                "nci_thesaurus_concept_id": "C3372",
+                "name": "Skin Tumor",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
+                    "C3263",
+                    "C3371"
                 ]
             },
             {
@@ -839,47 +845,11 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Tumor Stage (Pathological)"
-                ],
-                "nci_thesaurus_concept_id": "C133253",
-                "name": "Cutaneous Squamous Cell Carcinoma of the Head and Neck by AJCC v8 Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C133252"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Skin Neoplasm",
-                    "Neoplasm of the Skin",
-                    "Tumor of the Skin",
-                    "Tumor of Skin",
-                    "Skin Neoplasms",
-                    "Neoplasm of Skin"
-                ],
-                "nci_thesaurus_concept_id": "C3372",
-                "name": "Skin Tumor",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C3371"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
                     "Disorder of Skin",
-                    "Skin Diseases and Manifestations",
-                    "Skin Disorders",
+                    "Dermatologic Disorder",
                     "Cutaneous Disorder",
-                    "Dermatologic Disorder"
+                    "Skin Diseases and Manifestations",
+                    "Skin Disorders"
                 ],
                 "nci_thesaurus_concept_id": "C3371",
                 "name": "Skin Disorder",
@@ -894,55 +864,6 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36310",
-                "name": "Secondary Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Skin Epithelium Neoplasm",
-                    "Epithelial Skin Tumor",
-                    "Skin Epithelium Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C7342",
-                "name": "Epithelial Skin Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C3372"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
                     "Carcinoma, metastatic, NOS"
                 ],
                 "nci_thesaurus_concept_id": "C3482",
@@ -951,8 +872,50 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C36310",
-                    "C36263"
+                    "C36263",
+                    "C36310"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Squamous Cell Carcinoma of the Skin",
+                    "Squamous cell carcinoma - skin",
+                    "Skin Squamous Cell Carcinoma",
+                    "Epidermoid Carcinoma of the Skin",
+                    "Epidermoid Skin Carcinoma",
+                    "Squamous Cell Skin Carcinoma",
+                    "Cutaneous Squamous Cell Carcinoma",
+                    "Squamous Cell Carcinoma of Skin",
+                    "Epidermoid Carcinoma of Skin"
+                ],
+                "nci_thesaurus_concept_id": "C4819",
+                "name": "Skin Squamous Cell Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2929",
+                    "C4914"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
                 ]
             },
             {
@@ -965,148 +928,67 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C4013",
-                    "C36263"
+                    "C36263",
+                    "C4013"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C133252",
+                "name": "Cutaneous Squamous Cell Carcinoma of the Head and Neck",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4819",
+                    "C34447"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Skin Cancer",
+                    "Malignant Tumor of the Skin",
+                    "Skin Cancer, Including Melanoma",
+                    "Malignant Neoplasm of the Skin",
+                    "Skin Neoplasm, Malignant",
+                    "Melanoma and Non-Melanoma Skin Cancer",
+                    "Skin cancer, NOS",
+                    "Malignant Neoplasm of Skin",
+                    "Malignant Skin Tumor",
+                    "Malignant Tumor of Skin"
+                ],
+                "nci_thesaurus_concept_id": "C2920",
+                "name": "Malignant Skin Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3372",
+                    "C9305"
                 ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "C-145-03",
-        "active_sites_count": 5,
+        "active_sites_count": 4,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Agent",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Pharmacologic Agent",
-                            "Drug",
-                            "Pharmacological Substance",
-                            "Pharmaceuticals"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C135634",
+                        "name": "Autologous Tumor Infiltrating Lymphocytes LN-145",
                         "description": null,
                         "type": "Biological/Vaccine",
-                        "category": "agent category",
+                        "category": "agent",
                         "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-cancer Immune Cell",
-                            "Antineoplastic Immune Cells"
-                        ],
-                        "nci_thesaurus_concept_id": "C129826",
-                        "name": "Antineoplastic Immune Cell",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C129821",
-                            "C142078",
-                            "C129820"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "ACT Agent",
-                            "Adoptive Cell Transfer Agent",
-                            "Adoptive Cell-based Agent",
-                            "Adoptive Cellular Therapy Agent",
-                            "Adoptive Cell Therapy Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C142078",
-                        "name": "Adoptive Immunotherapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C307",
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Tumor Infiltrating Lymphocytes",
-                            "Tumor Infiltrating Lymphocytes"
-                        ],
-                        "nci_thesaurus_concept_id": "C28699",
-                        "name": "Tumor Infiltrating Lymphocyte Therapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C28681",
-                            "C129826"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biologics",
-                            "Immunologic, Immunochemical",
-                            "Biological Products",
-                            "Immunologics",
-                            "Biologicals",
-                            "Biopharmaceuticals"
-                        ],
-                        "nci_thesaurus_concept_id": "C307",
-                        "name": "Biological Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Antiproliferative Drugs",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Antineoplastic Drugs",
-                            "Anti-Tumor Drugs",
-                            "Antineoplastics",
-                            "Cancer Drug",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Cancer Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Biotherapeutic",
-                            "Anti-cancer Biological Agent",
-                            "Anticancer Biological",
-                            "Antineoplastic Biological"
-                        ],
-                        "nci_thesaurus_concept_id": "C129821",
-                        "name": "Antineoplastic Biological Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C274",
-                            "C307"
+                            "C28699"
                         ]
                     },
                     {
@@ -1122,26 +1004,100 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Biomodulators",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
-                            "Biological Response Modifier",
-                            "Immune Modulators",
-                            "Immunopotentiators",
-                            "Immune Mediators",
-                            "Immunotherapy Agent",
-                            "Immunotherapeutic Agent",
-                            "BRM",
-                            "Immunomodulators",
-                            "Immunomodulating Agent"
+                            "Anti-cancer Biological Agent",
+                            "Anticancer Biological",
+                            "Antineoplastic Biotherapeutic",
+                            "Antineoplastic Biological"
                         ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
+                        "nci_thesaurus_concept_id": "C129821",
+                        "name": "Antineoplastic Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Cancer Drug",
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
                             "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Adoptive Cell-based Agent",
+                            "ACT Agent",
+                            "Adoptive Cell Therapy Agent",
+                            "Adoptive Cell Transfer Agent",
+                            "Adoptive Cellular Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C142078",
+                        "name": "Adoptive Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunologics",
+                            "Biologics",
+                            "Biological Products",
+                            "Biopharmaceuticals",
+                            "Biologicals",
+                            "Immunologic, Immunochemical"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacologic Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
                         ]
                     },
                     {
@@ -1159,24 +1115,70 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C135634",
-                        "name": "Autologous Tumor Infiltrating Lymphocytes LN-145",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Tumor Infiltrating Lymphocytes",
+                            "Therapeutic Tumor Infiltrating Lymphocytes"
+                        ],
+                        "nci_thesaurus_concept_id": "C28699",
+                        "name": "Tumor Infiltrating Lymphocyte Therapy",
                         "description": null,
                         "type": "Biological/Vaccine",
-                        "category": "agent",
+                        "category": "agent category",
                         "parents": [
-                            "C28699"
+                            "C129826",
+                            "C28681"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antineoplastic BRM",
+                            "Antineoplastic Immune Cells",
+                            "Anti-cancer Immune Cell"
+                        ],
+                        "nci_thesaurus_concept_id": "C129826",
+                        "name": "Antineoplastic Immune Cell",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C142078",
+                            "C129821",
+                            "C129820"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunopotentiators",
+                            "Immune Mediators",
+                            "Immunomodulating Agent",
+                            "BRM",
+                            "Biomodulators",
+                            "Biological Response Modifier",
+                            "Immunomodulators",
+                            "Immunotherapy Agent",
+                            "Immune Modulators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Antineoplastic Biological Response Modifier",
-                            "Anti-cancer Immunotherapeutic",
-                            "Antineoplastic Immunotherapeutic"
+                            "Antineoplastic Immunotherapeutic",
+                            "Antineoplastic BRM",
+                            "Anti-cancer Immunotherapeutic"
                         ],
                         "nci_thesaurus_concept_id": "C129820",
                         "name": "Antineoplastic Immunomodulating Agent",
@@ -1231,6 +1233,10 @@
         "brief_title": "Study of LN-145/LN-145-S1 Autologous Tumor Infiltrating Lymphocytes in the Treatment of Squamous Cell Carcinoma of the Head & Neck",
         "status_history": [
             {
+                "status_date": "2022-08-08T00:00:00.000002",
+                "status": "COMPLETE"
+            },
+            {
                 "status_date": "2021-01-11T00:00:00.000001",
                 "status": "CLOSED_TO_ACCRUAL"
             },
@@ -1242,11 +1248,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 55,
-        "_current_trial_status_sort_order": 7,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 9,
         "start_date": "2017-01-09",
-        "record_verification_date": "2021-01-01",
+        "record_verification_date": "2022-10-01",
         "ctep_id": null,
-        "current_trial_status": "Closed to Accrual",
+        "current_trial_status": "Complete",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -1257,6 +1264,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"
@@ -1265,7 +1273,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2022-06-01",
+        "completion_date": "2022-08-08",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

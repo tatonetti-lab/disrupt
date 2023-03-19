@@ -117,20 +117,22 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C25871",
-                "name": "Phosphotransferase Gene",
+                "nci_thesaurus_concept_id": "C20709",
+                "name": "Nuclear Receptor Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25870",
+                    "C21295",
+                    "C20103",
                     "C16612",
-                    "C21281"
+                    "C20420",
+                    "C54362"
                 ],
                 "parents": [
-                    "C25870"
+                    "C20103",
+                    "C20420"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -138,22 +140,136 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "Proto-Oncogene, Transcription Factor"
+                    "Negative"
                 ],
-                "nci_thesaurus_concept_id": "C20420",
-                "name": "Transcription Factor Gene",
+                "nci_thesaurus_concept_id": "C35681",
+                "name": "Negative Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HR Status"
+                ],
+                "nci_thesaurus_concept_id": "C188928",
+                "name": "Hormone Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367",
+                    "C77140",
+                    "C36292",
+                    "C94299"
+                ],
+                "parents": [
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C94299",
+                "name": "Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C36292",
+                    "C3367"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PgR Status",
+                    "Progesterone Receptor"
+                ],
+                "nci_thesaurus_concept_id": "C16149",
+                "name": "Progesterone Receptor Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C94299",
+                    "C21295",
+                    "C28656",
+                    "C77140",
+                    "C20103",
+                    "C16612",
+                    "C20420",
+                    "C3367",
+                    "C20709",
+                    "C54362",
+                    "C188928",
+                    "C36292"
+                ],
+                "parents": [
+                    "C188928",
+                    "C28656"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C54362",
-                    "C16612"
+                "type": [
+                    "branch"
                 ],
-                "parents": [
-                    "C54362"
-                ],
+                "ancestors": [],
+                "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
             {
@@ -180,23 +296,112 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367",
+                    "C77140",
+                    "C20103",
                     "C16612",
-                    "C21295",
                     "C20420",
                     "C38349",
-                    "C54362",
-                    "C36292",
-                    "C20103",
                     "C94299",
-                    "C77140",
-                    "C20709"
+                    "C54362",
+                    "C188928",
+                    "C20709",
+                    "C21295",
+                    "C36292"
                 ],
                 "parents": [
-                    "C38349",
-                    "C94299"
+                    "C188928",
+                    "C38349"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ER",
+                    "ESR1",
+                    "Estrogen Receptor 1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C38349",
+                "name": "ESR1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C21295",
+                    "C16612",
+                    "C20103",
+                    "C20420",
+                    "C20709",
+                    "C54362"
+                ],
+                "parents": [
+                    "C20709"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "ERBB2 Negative",
+                    "HER-2 Negative",
+                    "HER2 Negative"
+                ],
+                "nci_thesaurus_concept_id": "C68749",
+                "name": "HER2/Neu Negative",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C165233",
+                    "C94299",
+                    "C20719",
+                    "C35681",
+                    "C21295",
+                    "C77140",
+                    "C21281",
+                    "C20103",
+                    "C16612",
+                    "C25871",
+                    "C16152",
+                    "C3367",
+                    "C25872",
+                    "C17756",
+                    "C25870",
+                    "C36292"
+                ],
+                "parents": [
+                    "C16152",
+                    "C165233",
+                    "C17756"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Proto-Oncogene, Transcription Factor"
+                ],
+                "nci_thesaurus_concept_id": "C20420",
+                "name": "Transcription Factor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C54362",
+                    "C16612"
+                ],
+                "parents": [
+                    "C54362"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -206,6 +411,7 @@
                 "synonyms": [
                     "LAB_RESULT",
                     "Lab Findings",
+                    "Lab Value",
                     "Laboratory Finding",
                     "Laboratory Report",
                     "Labs",
@@ -218,13 +424,151 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367",
                     "C77140"
                 ],
                 "parents": [
                     "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Absent",
+                    "LOST",
+                    "Loss of Expression",
+                    "Negative",
+                    "Not Expressed"
+                ],
+                "nci_thesaurus_concept_id": "C165233",
+                "name": "Expression Negative",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C35681"
+                ],
+                "parents": [
+                    "C35681"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C54362",
+                "name": "Transcription Regulation Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Expressed",
+                    "Expression Detected"
+                ],
+                "nci_thesaurus_concept_id": "C177692",
+                "name": "Expression Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C35682",
+                    "C36292"
+                ],
+                "parents": [
+                    "C35682"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "ERBB2 Status",
+                    "Her2/Neu Value"
+                ],
+                "nci_thesaurus_concept_id": "C16152",
+                "name": "HER2/Neu Status",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C94299",
+                    "C20719",
+                    "C21295",
+                    "C77140",
+                    "C21281",
+                    "C20103",
+                    "C16612",
+                    "C25871",
+                    "C3367",
+                    "C25872",
+                    "C17756",
+                    "C25870",
+                    "C36292"
+                ],
+                "parents": [
+                    "C17756",
+                    "C94299"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C21295"
+                ],
+                "parents": [
+                    "C21295"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -238,12 +582,144 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C16612"
                 ],
                 "parents": [
                     "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25872",
+                "name": "Kinase Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25871",
+                    "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25871"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C36292"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "PGR Positive",
+                    "PR Positive",
+                    "PR+",
+                    "Positive"
+                ],
+                "nci_thesaurus_concept_id": "C15496",
+                "name": "Progesterone Receptor Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C177692",
+                    "C94299",
+                    "C21295",
+                    "C28656",
+                    "C77140",
+                    "C20103",
+                    "C16612",
+                    "C101267",
+                    "C20420",
+                    "C38349",
+                    "C3367",
+                    "C35682",
+                    "C20709",
+                    "C54362",
+                    "C188928",
+                    "C36292",
+                    "C16149"
+                ],
+                "parents": [
+                    "C101267",
+                    "C16149",
+                    "C28656"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612"
+                ],
+                "parents": [
+                    "C21281"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PGR",
+                    "PR",
+                    "Progesterone Receptor Gene"
+                ],
+                "nci_thesaurus_concept_id": "C28656",
+                "name": "PGR Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C21295",
+                    "C16612",
+                    "C20103",
+                    "C20420",
+                    "C20709",
+                    "C54362"
+                ],
+                "parents": [
+                    "C20709"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -273,24 +749,24 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C177692",
-                    "C16612",
-                    "C3367",
-                    "C28656",
-                    "C21295",
                     "C16150",
-                    "C20420",
-                    "C38349",
-                    "C54362",
-                    "C35682",
-                    "C36292",
-                    "C20103",
-                    "C94299",
+                    "C3367",
                     "C77140",
+                    "C20103",
+                    "C101267",
+                    "C20420",
+                    "C28656",
+                    "C16612",
+                    "C94299",
+                    "C38349",
+                    "C188928",
+                    "C54362",
                     "C20709",
-                    "C101267"
+                    "C177692",
+                    "C21295",
+                    "C35682",
+                    "C36292"
                 ],
                 "parents": [
                     "C101267",
@@ -303,522 +779,19 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C20709",
-                "name": "Nuclear Receptor Gene",
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C21295",
-                    "C20420",
-                    "C54362",
-                    "C20103"
-                ],
-                "parents": [
-                    "C20103",
-                    "C20420"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Diagnostic Test Result",
-                    "Test Result"
-                ],
-                "nci_thesaurus_concept_id": "C77140",
-                "name": "Clinical Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367"
-                ],
-                "parents": [
-                    "C3367"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "PGR",
-                    "PR",
-                    "Progesterone Receptor Gene"
-                ],
-                "nci_thesaurus_concept_id": "C28656",
-                "name": "PGR Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295",
-                    "C20420",
-                    "C54362",
-                    "C20103",
-                    "C20709"
-                ],
-                "parents": [
-                    "C20709"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25870",
-                "name": "Transferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C21281"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "ER and/or PR +",
-                    "ER and/or PR Positive",
-                    "Estrogen Receptor and/or Progesterone Receptor Positive"
-                ],
-                "nci_thesaurus_concept_id": "C101267",
-                "name": "Hormone Receptor Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C177692",
-                    "C16612",
-                    "C3367",
-                    "C28656",
-                    "C21295",
-                    "C20420",
-                    "C38349",
-                    "C54362",
-                    "C36292",
-                    "C94299",
-                    "C77140",
-                    "C20103",
-                    "C20709",
-                    "C35682"
-                ],
-                "parents": [
-                    "C177692",
-                    "C28656",
-                    "C38349",
-                    "C94299"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Positive",
-                    "positive test result"
-                ],
-                "nci_thesaurus_concept_id": "C35682",
-                "name": "Positive Laboratory Test Result",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C77140"
-                ],
-                "parents": [
-                    "C36292"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "ERBB2 Negative",
-                    "HER-2 Negative",
-                    "HER2 Negative"
-                ],
-                "nci_thesaurus_concept_id": "C68749",
-                "name": "HER2/Neu Negative",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C165233",
-                    "C16612",
-                    "C17756",
-                    "C3367",
-                    "C21295",
-                    "C35681",
-                    "C20719",
-                    "C25870",
-                    "C16152",
-                    "C36292",
-                    "C25872",
-                    "C94299",
-                    "C77140",
-                    "C20103",
                     "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C16152",
-                    "C165233",
-                    "C17756"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Observable Entity"
-                ],
-                "nci_thesaurus_concept_id": "C3367",
-                "name": "Finding",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C94299",
-                "name": "Receptor Status",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C77140"
-                ],
-                "parents": [
-                    "C36292"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20719",
-                "name": "Receptor Tyrosine Kinase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295",
                     "C25870",
-                    "C25872",
-                    "C20103",
-                    "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C20103",
-                    "C25872"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25872",
-                "name": "Kinase Family Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C25871"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20103",
-                "name": "Receptor Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295"
-                ],
-                "parents": [
-                    "C21295"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Negative"
-                ],
-                "nci_thesaurus_concept_id": "C35681",
-                "name": "Negative Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C77140"
-                ],
-                "parents": [
-                    "C77140"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "ER",
-                    "ESR1",
-                    "Estrogen Receptor 1 Gene"
-                ],
-                "nci_thesaurus_concept_id": "C38349",
-                "name": "ESR1 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295",
-                    "C20420",
-                    "C54362",
-                    "C20103",
-                    "C20709"
-                ],
-                "parents": [
-                    "C20709"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "PgR Status",
-                    "Progesterone Receptor"
-                ],
-                "nci_thesaurus_concept_id": "C16149",
-                "name": "Progesterone Receptor Status",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C20420",
-                    "C36292",
-                    "C16612",
-                    "C20709",
-                    "C20103",
-                    "C94299",
-                    "C21295",
-                    "C77140",
-                    "C54362",
-                    "C3367",
-                    "C28656"
-                ],
-                "parents": [
-                    "C28656",
-                    "C94299"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Expressed",
-                    "Expression Detected"
-                ],
-                "nci_thesaurus_concept_id": "C177692",
-                "name": "Expression Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C35682",
-                    "C77140"
-                ],
-                "parents": [
-                    "C35682"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "PGR Positive",
-                    "PR Positive",
-                    "PR+",
-                    "Positive"
-                ],
-                "nci_thesaurus_concept_id": "C15496",
-                "name": "Progesterone Receptor Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C94299",
-                    "C54362",
-                    "C36292",
-                    "C77140",
-                    "C20709",
-                    "C38349",
-                    "C20103",
-                    "C20420",
-                    "C16149",
-                    "C21295",
-                    "C101267",
-                    "C35682",
-                    "C16612",
-                    "C3367",
-                    "C28656",
-                    "C177692"
-                ],
-                "parents": [
-                    "C101267",
-                    "C16149",
-                    "C28656"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21295",
-                "name": "Ligand Binding Protein Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
                     "C16612"
                 ],
                 "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Absent",
-                    "LOST",
-                    "Loss of Expression",
-                    "Negative",
-                    "Not Expressed"
-                ],
-                "nci_thesaurus_concept_id": "C165233",
-                "name": "Expression Negative",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C35681",
-                    "C3367",
-                    "C77140"
-                ],
-                "parents": [
-                    "C35681"
+                    "C25870"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -840,16 +813,15 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C21295",
                     "C20719",
-                    "C25870",
-                    "C25872",
-                    "C20103",
+                    "C21295",
                     "C21281",
-                    "C25871"
+                    "C20103",
+                    "C16612",
+                    "C25871",
+                    "C25872",
+                    "C25870"
                 ],
                 "parents": [
                     "C20719"
@@ -860,18 +832,24 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C54362",
-                "name": "Transcription Regulation Gene",
+                "nci_thesaurus_concept_id": "C20719",
+                "name": "Receptor Tyrosine Kinase Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612"
+                    "C21281",
+                    "C16612",
+                    "C20103",
+                    "C25872",
+                    "C25871",
+                    "C25870",
+                    "C21295"
                 ],
                 "parents": [
-                    "C16612"
+                    "C20103",
+                    "C25872"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -879,34 +857,52 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "ERBB2 Status",
-                    "Her2/Neu Value"
+                    "Observable Entity"
                 ],
-                "nci_thesaurus_concept_id": "C16152",
-                "name": "HER2/Neu Status",
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C101267",
+                "name": "Hormone Receptor Positive",
                 "semantic_types": [
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367",
-                    "C16612",
-                    "C17756",
-                    "C21295",
-                    "C20719",
-                    "C25870",
-                    "C36292",
-                    "C25872",
-                    "C94299",
                     "C77140",
                     "C20103",
-                    "C21281",
-                    "C25871"
+                    "C20420",
+                    "C28656",
+                    "C16612",
+                    "C94299",
+                    "C38349",
+                    "C54362",
+                    "C188928",
+                    "C20709",
+                    "C177692",
+                    "C21295",
+                    "C35682",
+                    "C36292"
                 ],
                 "parents": [
-                    "C17756",
-                    "C94299"
+                    "C177692",
+                    "C188928",
+                    "C28656",
+                    "C38349"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
@@ -934,8 +930,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIIA Breast Cancer AJCC v8"
+                    "Anatomic Stage IIIA Breast Cancer AJCC v8",
+                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139542",
                 "name": "Stage IIIA Breast Cancer",
@@ -950,8 +946,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIIB Breast Cancer AJCC v8",
-                    "Anatomic Stage IIIB Breast Carcinoma AJCC v8"
+                    "Anatomic Stage IIIB Breast Carcinoma AJCC v8",
+                    "Anatomic Stage IIIB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139543",
                 "name": "Stage IIIB Breast Cancer",
@@ -1030,8 +1026,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IIIB Breast Cancer AJCC v8",
-                    "Prognostic Stage IIIB Breast Carcinoma AJCC v8"
+                    "Prognostic Stage IIIB Breast Carcinoma AJCC v8",
+                    "Prognostic Stage IIIB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139584",
                 "name": "Stage IIIB Breast Cancer",
@@ -1078,8 +1074,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Hormone Receptor-Positive Breast Carcinoma",
-                    "Hormone Receptor Positive Breast Adenocarcinoma"
+                    "Hormone Receptor Positive Breast Adenocarcinoma",
+                    "Hormone Receptor-Positive Breast Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C157056",
                 "name": "Hormone Receptor Positive Breast Carcinoma",
@@ -1110,17 +1106,61 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Epithelioma",
-                    "Epithelioma, malignant",
-                    "Epithelial Neoplasms, NOS"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C3709",
-                "name": "Epithelial Neoplasm",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C4741"
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
                 ]
             },
             {
@@ -1141,30 +1181,38 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C4741"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C26709",
+                    "C3263"
                 ]
             },
             {
@@ -1186,36 +1234,25 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
+                    "Malignant Tumor of Breast",
                     "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
                 ],
                 "nci_thesaurus_concept_id": "C9335",
                 "name": "Malignant Breast Neoplasm",
@@ -1223,45 +1260,45 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C9305"
+                    "C9305",
+                    "C2910"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
-                    "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
-                    "Cancer of Breast",
-                    "Breast Carcinoma",
-                    "Cancer of the Breast"
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C4872",
-                "name": "Breast Cancer",
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
                 "type": [
                     "maintype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C9335"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
@@ -1269,18 +1306,18 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -1293,42 +1330,22 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
+                    "Carcinoma of the Breast",
+                    "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
                 ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C26709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
                 "type": [
                     "maintype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C9335",
+                    "C2916"
                 ]
             },
             {
@@ -1349,37 +1366,16 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Disease by Site"
                 ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C2991"
                 ]
             },
             {
@@ -1387,8 +1383,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Adenocarcinoma of the Breast",
-                    "Mammary adenocarcinoma",
-                    "Adenocarcinoma of Breast"
+                    "Adenocarcinoma of Breast",
+                    "Mammary adenocarcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C5214",
                 "name": "Breast Adenocarcinoma",
@@ -1396,24 +1392,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C4872",
-                    "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Glandular Cell Epithelium Neoplasm",
-                    "Glandular Cell Epithelial Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7132",
-                "name": "Glandular Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709"
+                    "C2852",
+                    "C4872"
                 ]
             },
             {
@@ -1437,8 +1417,8 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Breast Cancer by AJCC v8 Prognostic Stage Group",
-                    "Breast Carcinoma by AJCC v8 Prognostic Stage"
+                    "Breast Carcinoma by AJCC v8 Prognostic Stage",
+                    "Breast Cancer by AJCC v8 Prognostic Stage Group"
                 ],
                 "nci_thesaurus_concept_id": "C139554",
                 "name": "Breast Cancer by AJCC v8 Prognostic Stage",
@@ -1448,15 +1428,63 @@
                 "parents": [
                     "C139532"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "OP-1250-001",
-        "active_sites_count": 5,
+        "active_sites_count": 11,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacologic Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C176877",
+                        "name": "Complete Estrogen Receptor Antagonist OP-1250",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C481"
+                        ]
+                    },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
@@ -1485,57 +1513,8 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Drug Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Hormonal Agent",
-                            "Antineoplastic Endocrinal Agent",
-                            "Antineoplastic Hormonal Therapeutic"
-                        ],
-                        "nci_thesaurus_concept_id": "C129818",
-                        "name": "Antineoplastic Hormonal/Endocrine Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C147908",
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C176877",
-                        "name": "Complete Estrogen Receptor Antagonist OP-1250",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C481"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antihormone Agents",
-                            "Hormone Antagonist"
+                            "Hormone Antagonist",
+                            "Antihormone Agents"
                         ],
                         "nci_thesaurus_concept_id": "C547",
                         "name": "Antihormone Therapy",
@@ -1549,36 +1528,13 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anti-Cancer Agents",
-                            "Antineoplastic Drugs",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Antiproliferative Drugs",
-                            "Antineoplastics",
-                            "Tumor-Specific Treatment Agents",
-                            "Cancer Drug",
-                            "Anti-Tumor Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antiestrogen",
                             "Antiestrogenic",
-                            "Estrogen Inhibitor",
                             "Antiestrogen Therapy Agent",
-                            "Anti-Estrogens",
+                            "Antiestrogens",
+                            "Antiestrogen",
                             "Estrogen Antagonist",
-                            "Antiestrogens"
+                            "Estrogen Inhibitor",
+                            "Anti-Estrogens"
                         ],
                         "nci_thesaurus_concept_id": "C481",
                         "name": "Antiestrogen Therapy",
@@ -1588,6 +1544,46 @@
                         "parents": [
                             "C129818",
                             "C547"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Endocrinal Agent",
+                            "Antineoplastic Hormonal Agent",
+                            "Antineoplastic Hormonal Therapeutic"
+                        ],
+                        "nci_thesaurus_concept_id": "C129818",
+                        "name": "Antineoplastic Hormonal/Endocrine Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274",
+                            "C147908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Cancer Drug",
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
                         ]
                     }
                 ],
@@ -1622,6 +1618,7 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 94,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2020-08-13",
         "record_verification_date": "2021-10-01",
@@ -1637,6 +1634,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Breast"

@@ -538,25 +538,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C92944",
-                    "C3107"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Histiocytic and Dendritic Cell Tumors",
-                    "Histiocytic and Dendritic Cell Neoplasms"
-                ],
-                "nci_thesaurus_concept_id": "C9294",
-                "name": "Histiocytic and Dendritic Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27134",
-                    "C7201"
+                    "C3107",
+                    "C92944"
                 ]
             },
             {
@@ -576,19 +559,102 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Histiocytosis X",
-                    "Langerhans Cell Histiocytosis, Not Otherwise Specified",
-                    "Langerhans Cell Granulomatosis",
-                    "Langerhans Cell Histiocytosis, NOS",
-                    "LCH"
+                    "Blood Disorder",
+                    "Hematologic Disorder",
+                    "Hematological Disorder",
+                    "Blood Disease"
                 ],
-                "nci_thesaurus_concept_id": "C3107",
+                "nci_thesaurus_concept_id": "C26323",
+                "name": "Hematologic and Lymphocytic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C35814"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Hematopoietic and Lymphoid System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C35813",
+                "name": "Hematopoietic and Lymphoid System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C35814",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Childhood Tumor",
+                    "Childhood Neoplasm",
+                    "Pediatric Tumor",
+                    "Pediatric Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C6283",
+                "name": "Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C89328",
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Childhood Hematopoietic Neoplasm",
+                    "Childhood Hematopoietic and Lymphoid Cell Neoplasm",
+                    "Pediatric Hematopoietic and Lymphoid Cell Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C9431",
+                "name": "Hematopoietic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C6283",
+                    "C27134"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Childhood Langerhans Cell Histiocytosis"
+                ],
+                "nci_thesaurus_concept_id": "C114483",
                 "name": "Langerhans Cell Histiocytosis",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C150692"
+                    "C9431",
+                    "C3107"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Infrequent Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C7201",
+                "name": "Infrequent Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
                 ]
             },
             {
@@ -607,44 +673,31 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Hematopoietic and Lymphoid System Disease"
-                ],
-                "nci_thesaurus_concept_id": "C35814",
-                "name": "Hematopoietic and Lymphoid System Disorder",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C150692",
+                "name": "Tumors Derived from Langerhans Cells",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27551"
+                    "C9294"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Hematopoietic Neoplasm",
-                    "Hematopoietic Neoplasms Including Lymphomas",
-                    "HEMOLYMPHORETICULAR TUMOR, MALIGNANT",
-                    "Hematopoietic Cancer",
-                    "Hematopoietic and Lymphoid Neoplasm",
-                    "Hematologic Cancer",
-                    "Hematologic Malignancy",
-                    "Hematologic Neoplasm",
-                    "Malignant Hematologic Neoplasm",
-                    "Hematological Neoplasm",
-                    "Hematopoietic malignancy, NOS",
-                    "Hematopoietic Neoplasm"
+                    "Histiocytic and Dendritic Cell Neoplasms",
+                    "Histiocytic and Dendritic Cell Tumors"
                 ],
-                "nci_thesaurus_concept_id": "C27134",
-                "name": "Hematopoietic and Lymphoid Cell Neoplasm",
+                "nci_thesaurus_concept_id": "C9294",
+                "name": "Histiocytic and Dendritic Cell Neoplasm",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
-                    "C26323",
-                    "C35813",
-                    "C4741"
+                    "C7201",
+                    "C27134"
                 ]
             },
             {
@@ -667,47 +720,34 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Infrequent Tumor"
+                    "Langerhans Cell Granulomatosis",
+                    "Langerhans Cell Histiocytosis, Not Otherwise Specified",
+                    "Langerhans Cell Histiocytosis, NOS",
+                    "LCH",
+                    "Histiocytosis X"
                 ],
-                "nci_thesaurus_concept_id": "C7201",
-                "name": "Infrequent Neoplasm",
+                "nci_thesaurus_concept_id": "C3107",
+                "name": "Langerhans Cell Histiocytosis",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C150692"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Hematopoietic and Lymphoid System Tumor"
+                    "Hematopoietic and Lymphoid System Disease"
                 ],
-                "nci_thesaurus_concept_id": "C35813",
-                "name": "Hematopoietic and Lymphoid System Neoplasm",
+                "nci_thesaurus_concept_id": "C35814",
+                "name": "Hematopoietic and Lymphoid System Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C35814"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Childhood Hematopoietic Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C9431",
-                "name": "Hematopoietic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27134",
-                    "C6283"
+                    "C27551"
                 ]
             },
             {
@@ -715,18 +755,18 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -739,34 +779,22 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Blood Disease",
-                    "Blood Disorder",
-                    "Hematological Disorder",
-                    "Hematologic Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C26323",
-                "name": "Hematologic and Lymphocytic Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C35814"
+                    "C2991"
                 ]
             },
             {
@@ -788,88 +816,87 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Childhood Langerhans Cell Histiocytosis"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C114483",
-                "name": "Langerhans Cell Histiocytosis",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3107",
-                    "C9431"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C150692",
-                "name": "Tumors Derived from Langerhans Cells",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9294"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Hematologic Cancer",
+                    "Hematopoietic Cancer",
+                    "Hematological Neoplasm",
+                    "Hematopoietic Neoplasm",
+                    "Malignant Hematologic Neoplasm",
+                    "Hematopoietic malignancy, NOS",
+                    "HEMOLYMPHORETICULAR TUMOR, MALIGNANT",
+                    "Hematopoietic and Lymphoid Neoplasm",
+                    "Hematopoietic Neoplasms Including Lymphomas",
+                    "Hematologic Malignancy",
+                    "Malignant Hematopoietic Neoplasm",
+                    "Hematologic Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C27134",
+                "name": "Hematopoietic and Lymphoid Cell Neoplasm",
                 "type": [
                     "maintype"
                 ],
                 "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Childhood Tumor",
-                    "Pediatric Neoplasm",
-                    "Pediatric Tumor",
-                    "Childhood Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C6283",
-                "name": "Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C89328",
-                    "C7062"
+                    "C35813",
+                    "C26323",
+                    "C4741"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Unspecified Nervous System Problem",
-                    "Neurological Disorder",
-                    "Disorder of Nervous System",
-                    "Neurologic Disorder"
+                    "Disorder of Central Nervous System",
+                    "Central Nervous System Disease"
                 ],
-                "nci_thesaurus_concept_id": "C26835",
-                "name": "Nervous System Disorder",
+                "nci_thesaurus_concept_id": "C2934",
+                "name": "Central Nervous System Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27551"
+                    "C26835"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "CNS Tumor",
+                    "Tumor of the CNS",
+                    "Neoplasm of CNS",
+                    "Central Nervous System Tumor",
+                    "Neoplasm of Central Nervous System",
+                    "Tumor of CNS",
+                    "Neoplasm of the Central Nervous System",
+                    "Central Nervous System Neoplasm",
+                    "CNS Neoplasm",
+                    "Tumor of the Central Nervous System",
+                    "Tumor of Central Nervous System"
+                ],
+                "nci_thesaurus_concept_id": "C9293",
+                "name": "Brain/Spinal Cord Tumor",
+                "type": [
+                    "maintype",
+                    "subtype"
+                ],
+                "parents": [
+                    "C2934",
+                    "C3268"
                 ]
             },
             {
@@ -890,67 +917,36 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Nervous System Neoplasms",
-                    "Neoplasm of Nervous System",
-                    "Nervous System Neoplasm",
-                    "Tumor of Nervous System",
-                    "Nervous System Tumour",
-                    "Tumor of the Nervous System",
-                    "Neoplasm of the Nervous System"
+                    "Neurological Disorder",
+                    "Neurologic Disorder",
+                    "Disorder of Nervous System",
+                    "Unspecified Nervous System Problem"
                 ],
-                "nci_thesaurus_concept_id": "C3268",
-                "name": "Nervous System Tumor",
+                "nci_thesaurus_concept_id": "C26835",
+                "name": "Nervous System Disorder",
                 "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C26835",
-                    "C3263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Neoplasm of CNS",
-                    "CNS Tumor",
-                    "CNS Neoplasm",
-                    "Tumor of CNS",
-                    "Neoplasm of the Central Nervous System",
-                    "Central Nervous System Tumor",
-                    "Central Nervous System Neoplasm",
-                    "Tumor of the Central Nervous System",
-                    "Neoplasm of Central Nervous System",
-                    "Tumor of Central Nervous System",
-                    "Tumor of the CNS"
-                ],
-                "nci_thesaurus_concept_id": "C9293",
-                "name": "Brain/Spinal Cord Tumor",
-                "type": [
-                    "maintype",
                     "subtype"
                 ],
                 "parents": [
-                    "C3268",
-                    "C2934"
+                    "C27551"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
+                    "CNS Hematopoietic Tumor",
+                    "Hematopoietic Neoplasm of Central Nervous System",
+                    "Hematopoietic Neoplasm of CNS",
+                    "Central Nervous System Hematopoietic Neoplasms",
+                    "Hematopoietic Tumor of the Central Nervous System",
+                    "Lymphomas and Hemopoietic Neoplasms of CNS",
                     "Hematopoietic Tumor of Central Nervous System",
                     "Hematopoietic Neoplasm of the CNS",
-                    "Central Nervous System Hematopoietic Neoplasms",
                     "Hematopoietic Neoplasm of the Central Nervous System",
                     "Lymphomas and Hemopoietic Neoplasms of the CNS",
-                    "CNS Hematopoietic Neoplasm",
-                    "Hematopoietic Neoplasm of Central Nervous System",
-                    "Hematopoietic Tumor of the Central Nervous System",
-                    "CNS Hematopoietic Tumor",
-                    "Hematopoietic Neoplasm of CNS",
-                    "Lymphomas and Hemopoietic Neoplasms of CNS",
-                    "Central Nervous System Hematopoietic Tumor"
+                    "Central Nervous System Hematopoietic Tumor",
+                    "CNS Hematopoietic Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C5503",
                 "name": "Central Nervous System Hematopoietic Neoplasm",
@@ -966,211 +962,41 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Central Nervous System Disease",
-                    "Disorder of Central Nervous System"
+                    "Neoplasm of Nervous System",
+                    "Nervous System Neoplasm",
+                    "Tumor of Nervous System",
+                    "Nervous System Tumour",
+                    "Neoplasm of the Nervous System",
+                    "Nervous System Neoplasms",
+                    "Tumor of the Nervous System"
                 ],
-                "nci_thesaurus_concept_id": "C2934",
-                "name": "Central Nervous System Disorder",
+                "nci_thesaurus_concept_id": "C3268",
+                "name": "Nervous System Tumor",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C26835"
+                    "C26835",
+                    "C3263"
                 ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "13-428",
-        "active_sites_count": 12,
+        "active_sites_count": 15,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C718",
-                        "name": "Organic Chemical",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1913"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Indoles"
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C54677",
-                        "name": "Indole Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1915"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Stem Cell Treatment"
-                        ],
-                        "nci_thesaurus_concept_id": "C165194",
-                        "name": "Stem Cell Therapy",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Pharmacological Treatment",
-                            "Drug Therapy",
-                            "Treatment With Medication",
-                            "Pharmacological Treatments"
-                        ],
-                        "nci_thesaurus_concept_id": "C15986",
-                        "name": "Pharmacotherapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Leustatin",
-                            "Leustat",
-                            "Leustatine"
-                        ],
-                        "nci_thesaurus_concept_id": "C1336",
-                        "name": "Cladribine",
-                        "description": "A purine nucleoside antimetabolite analogue. Cladribine triphosphate, a phosphorylated metabolite of cladribine, incorporates into DNA, resulting in single-strand breaks in DNA, depletion of nicotinamide adenine dinucleotide (NAD) and adenosine triphosphate (ATP), and apoptosis.  Because this agent is resistant to adenosine deaminase, an enzyme that inactivates some antineoplastic agents, it is selectively toxic to lymphocytes and monocytes which exhibit little deoxynucleotide deaminase activity. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C798",
-                            "C1556",
-                            "C2157"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Hematopoietic Stem Cell Infusion",
-                            "Hematopoietic Stem Cell Transplantation",
-                            "HSCT",
-                            "HCT"
-                        ],
-                        "nci_thesaurus_concept_id": "C15431",
-                        "name": "Hematopoietic Cell Transplantation",
-                        "description": "A method of replacing the immature blood-forming cells lost due to high-dose chemotherapy, and possibly radiation therapy, used to destroy leukemia cells.  The stem cells are given to the patient after treatment to help the bone marrow recover and continue producing healthy blood cells. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C165194",
-                            "C15388",
-                            "C15342"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Purine Inhibitors"
-                        ],
-                        "nci_thesaurus_concept_id": "C1556",
-                        "name": "Purine Antagonist",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C272"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Corticosteroids"
-                        ],
-                        "nci_thesaurus_concept_id": "C211",
-                        "name": "Therapeutic Corticosteroid",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2364",
-                            "C574"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biomodulators",
-                            "Biological Response Modifier",
-                            "BRM",
-                            "Immunopotentiators",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
-                            "Immune Modulators",
-                            "Immunotherapeutic Agent",
-                            "Immunotherapy Agent",
-                            "Immune Mediators",
-                            "Immunomodulators",
-                            "Immunomodulating Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
@@ -1193,6 +1019,51 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Starasid",
+                            "Erpalfa",
+                            "ARA-cell",
+                            "Udicil",
+                            "Cytarbel",
+                            "Aracytin",
+                            "Cytosar",
+                            "Alexan",
+                            "Arabine",
+                            "Aracytine"
+                        ],
+                        "nci_thesaurus_concept_id": "C408",
+                        "name": "Cytarabine",
+                        "description": "An antimetabolite analogue of cytidine with a modified sugar moiety (arabinose instead of ribose). Cytarabine is converted to the triphosphate form within the cell and then competes with cytidine for incorporation into DNA.  Because the arabinose sugar sterically hinders the rotation of the molecule within DNA, DNA replication ceases, specifically during the S phase of the cell cycle.  This agent also inhibits DNA polymerase, resulting in a decrease in DNA replication and repair. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1557"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Mitotic Inhibitor Agents",
+                            "Mitosis Inhibitor Drugs",
+                            "Mitosis Inhibitors",
+                            "Mitotic Inhibitors",
+                            "Antimitotic Drugs",
+                            "Mitotic Inhibitor Drugs",
+                            "Antimitotics",
+                            "Microtubular Function Inhibitors",
+                            "Mitosis Inhibitor Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C273",
+                        "name": "Antimitotic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
                             "DHFR Inhibitor"
@@ -1207,44 +1078,78 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Leukerin",
-                            "Mercaptopurinum",
-                            "Purinethiol",
-                            "Mercaleukim",
-                            "Mercaptina",
-                            "Alti-Mercaptopurine",
-                            "Puri-Nethol",
-                            "Ismipur",
-                            "Flocofil",
-                            "Purinethol"
+                            "Velban",
+                            "Velbe",
+                            "Exal",
+                            "Velsar"
                         ],
-                        "nci_thesaurus_concept_id": "C195",
-                        "name": "Mercaptopurine",
-                        "description": "A thiopurine-derivative antimetabolite with antineoplastic and immunosuppressive activities.  Produced through the metabolism of mercaptopurine by hypoxanthine-guanine phosphoribosyltransferase (HGPRT), mercaptopurine metabolites 6-thioguanosine-5'-phosphate (6-thioGMP) and 6-thioinosine (T-IMP) inhibit nucleotide interconversions and de novo purine synthesis, thereby blocking the formation of purine nucleotides and inhibiting DNA synthesis.  This agent is also incorporated into DNA in the form of deoxythioguanosine, which results in the disruption of DNA replication. In addition, mercaptopurine is converted to 6-methylmercaptopurine ribonucleoside (MMPR) by 6-thiopurine methyltransferase; MMPRs are also potent inhibitors of de novo purine synthesis. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "nci_thesaurus_concept_id": "C931",
+                        "name": "Vinblastine Sulfate",
+                        "description": "The sulfate salt of vinblastine, a natural alkaloid isolated from the plant Catharanthus roseus (Madagascar periwinkle) with antineoplastic properties.  Vinblastine disrupts microtubule formation and function during mitosis and interferes with glutamic acid metabolism. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
                         "type": "Drug",
                         "category": "agent",
                         "parents": [
-                            "C1556",
-                            "C574"
+                            "C932",
+                            "C67422"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Therapeutic Method",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "Therapy"
+                            "ADA Inhibitor"
                         ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
+                        "nci_thesaurus_concept_id": "C2157",
+                        "name": "Adenosine Deaminase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Therapy",
+                            "Pharmacological Treatment",
+                            "Treatment With Medication",
+                            "Pharmacological Treatments"
+                        ],
+                        "nci_thesaurus_concept_id": "C15986",
+                        "name": "Pharmacotherapy",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C25218"
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Indoles"
+                        ],
+                        "nci_thesaurus_concept_id": "C54677",
+                        "name": "Indole Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1915"
                         ]
                     },
                     {
@@ -1264,28 +1169,58 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Vinca Alkaloids"
+                            "Cytotoxic Chemotherapy Agent",
+                            "Antineoplastic Cytotoxic Agent",
+                            "Cytotoxic Antineoplastic Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C932",
-                        "name": "Vinca Alkaloid Compound",
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C221",
-                            "C1931"
+                            "C274"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1933",
-                        "name": "Ring Compound",
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Grafting Procedure",
+                            "Transplant Procedure",
+                            "Surgery, Transplantation",
+                            "Transplantation Surgery"
+                        ],
+                        "nci_thesaurus_concept_id": "C15342",
+                        "name": "Transplantation",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Tubulin Binding Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C25974",
+                        "name": "Tubulin Binding Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C718"
+                            "C273"
                         ]
                     },
                     {
@@ -1299,36 +1234,139 @@
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C274"
+                            "C186664"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Surgery, Transplantation",
-                            "Transplantation Surgery",
-                            "Grafting Procedure",
-                            "Transplant Procedure"
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Agents",
+                            "Tumor-Specific Treatment Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Drugs",
+                            "Cancer Drug",
+                            "Anti-Tumor Drugs"
                         ],
-                        "nci_thesaurus_concept_id": "C15342",
-                        "name": "Transplantation",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2198",
-                        "name": "Nonnarcotic Analgesic",
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C241"
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "TX",
+                            "Therapeutic Interventions",
+                            "Therapeutic Technique",
+                            "Therapy",
+                            "Therapeutic Method"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Glucocorticoid"
+                        ],
+                        "nci_thesaurus_concept_id": "C521",
+                        "name": "Therapeutic Glucocorticoid",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C211"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "HSCT",
+                            "Hematopoietic Stem Cell Infusion",
+                            "HCT",
+                            "Hematopoietic Stem Cell Transplantation"
+                        ],
+                        "nci_thesaurus_concept_id": "C15431",
+                        "name": "Hematopoietic Cell Transplantation",
+                        "description": "A method of replacing the immature blood-forming cells lost due to high-dose chemotherapy, and possibly radiation therapy, used to destroy leukemia cells.  The stem cells are given to the patient after treatment to help the bone marrow recover and continue producing healthy blood cells. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C165194",
+                            "C15388",
+                            "C15342"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Mercaptopurinum",
+                            "Puri-Nethol",
+                            "Leukerin",
+                            "Purinethiol",
+                            "Mercaleukim",
+                            "Purinethol",
+                            "Flocofil",
+                            "Ismipur",
+                            "Mercaptina",
+                            "Alti-Mercaptopurine"
+                        ],
+                        "nci_thesaurus_concept_id": "C195",
+                        "name": "Mercaptopurine",
+                        "description": "A thiopurine-derivative antimetabolite with antineoplastic and immunosuppressive activities.  Produced through the metabolism of mercaptopurine by hypoxanthine-guanine phosphoribosyltransferase (HGPRT), mercaptopurine metabolites 6-thioguanosine-5'-phosphate (6-thioGMP) and 6-thioinosine (T-IMP) inhibit nucleotide interconversions and de novo purine synthesis, thereby blocking the formation of purine nucleotides and inhibiting DNA synthesis.  This agent is also incorporated into DNA in the form of deoxythioguanosine, which results in the disruption of DNA replication. In addition, mercaptopurine is converted to 6-methylmercaptopurine ribonucleoside (MMPR) by 6-thiopurine methyltransferase; MMPRs are also potent inhibitors of de novo purine synthesis. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C574",
+                            "C1556"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Folic Acid Analog",
+                            "Folic Acid Inhibitors",
+                            "Folate Inhibitors",
+                            "Folate Analog",
+                            "Antifolates",
+                            "Folic Acid Antagonist",
+                            "Folic Acid Antagonists"
+                        ],
+                        "nci_thesaurus_concept_id": "C511",
+                        "name": "Folate Antagonist",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Synthetic Hormone"
+                        ],
+                        "nci_thesaurus_concept_id": "C548",
+                        "name": "Therapeutic Hormone",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C147908"
                         ]
                     },
                     {
@@ -1346,41 +1384,138 @@
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Decorton",
-                            "Deltra",
-                            "Promifen",
-                            "Prednitone",
-                            "Servisone",
-                            "Predicorten",
-                            "Perrigo Prednisone",
-                            "Panasol-S",
-                            "DeCortin",
-                            "Deltison",
-                            "Cortancyl",
-                            "Ofisolona",
-                            "Econosone",
-                            "Predicor",
-                            "Meprosona-F",
-                            "Decortisyl",
-                            "Prednisone Intensol",
-                            "Prednicort",
-                            "Panafcort",
-                            "Predniment",
-                            "Prednilonga",
-                            "Prednidib",
-                            "Dacortin",
-                            "Rayos",
-                            "Paracort",
-                            "Adasone",
-                            "Deltacortene"
+                            "Leustat",
+                            "Leustatine",
+                            "Leustatin"
                         ],
-                        "nci_thesaurus_concept_id": "C770",
-                        "name": "Prednisone",
-                        "description": "A synthetic glucocorticoid with anti-inflammatory and immunomodulating properties.  After cell surface receptor attachment and cell entry, prednisone enters the nucleus where it binds to and activates specific nuclear receptors, resulting in an altered gene expression and inhibition of proinflammatory cytokine production.  This agent also decreases the number of circulating lymphocytes, induces cell differentiation, and stimulates apoptosis in sensitive tumor cell populations. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "nci_thesaurus_concept_id": "C1336",
+                        "name": "Cladribine",
+                        "description": "A purine nucleoside antimetabolite analogue. Cladribine triphosphate, a phosphorylated metabolite of cladribine, incorporates into DNA, resulting in single-strand breaks in DNA, depletion of nicotinamide adenine dinucleotide (NAD) and adenosine triphosphate (ATP), and apoptosis.  Because this agent is resistant to adenosine deaminase, an enzyme that inactivates some antineoplastic agents, it is selectively toxic to lymphocytes and monocytes which exhibit little deoxynucleotide deaminase activity. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
                         "type": "Drug",
                         "category": "agent",
                         "parents": [
-                            "C521"
+                            "C1556",
+                            "C2157",
+                            "C798"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Infusion"
+                        ],
+                        "nci_thesaurus_concept_id": "C15388",
+                        "name": "Infusion Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C78272",
+                        "name": "Agent Affecting Nervous System",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Hormonal Therapy Agent",
+                            "Hormone Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C147908",
+                        "name": "Hormone Therapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Procedure",
+                            "Intervention"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1557",
+                        "name": "Pyrimidine Antagonist",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2198",
+                        "name": "Nonnarcotic Analgesic",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C241"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Procedure",
+                            "Intervention"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C16203"
                         ]
                     },
                     {
@@ -1409,324 +1544,22 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Drug Derived from Natural Products"
+                            "Drug Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C1907",
-                        "name": "Drug, Natural Product",
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Synthetic Hormone"
-                        ],
-                        "nci_thesaurus_concept_id": "C548",
-                        "name": "Therapeutic Hormone",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C147908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C78272",
-                        "name": "Agent Affecting Nervous System",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Novatrex",
-                            "Metrotex",
-                            "Trexeron",
-                            "Brimexate",
-                            "Mexate",
-                            "Fauldexato",
-                            "Rheumatrex",
-                            "Folex",
-                            "Farmitrexat",
-                            "Folex PFS",
-                            "Emtexate",
-                            "Texate",
-                            "Tremetex",
-                            "Mexate-AQ",
-                            "Maxtrex",
-                            "Amethopterin",
-                            "Trixilem",
-                            "Abitrexate",
-                            "Ledertrexate",
-                            "Methotrexate LPF",
-                            "Emthexat",
-                            "Methoblastin",
-                            "Emthexate",
-                            "Lumexon",
-                            "Metex",
-                            "Medsatrexate",
-                            "Lantarel"
-                        ],
-                        "nci_thesaurus_concept_id": "C642",
-                        "name": "Methotrexate",
-                        "description": "An antimetabolite and antifolate agent with antineoplastic and immunosuppressant activities.  Methotrexate binds to and inhibits the enzyme dihydrofolate reductase, resulting in inhibition of purine nucleotide and thymidylate synthesis and, subsequently, inhibition of DNA and RNA syntheses.  Methotrexate also exhibits potent immunosuppressant activity although the mechanism(s) of actions is unclear. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C511",
-                            "C2153"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Alkaloids"
-                        ],
-                        "nci_thesaurus_concept_id": "C221",
-                        "name": "Alkaloid",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C718"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Starasid",
-                            "Udicil",
-                            "Cytarbel",
-                            "Alexan",
-                            "Aracytin",
-                            "ARA-cell",
-                            "Erpalfa",
-                            "Arabine",
-                            "Aracytine",
-                            "Cytosar"
-                        ],
-                        "nci_thesaurus_concept_id": "C408",
-                        "name": "Cytarabine",
-                        "description": "An antimetabolite analogue of cytidine with a modified sugar moiety (arabinose instead of ribose). Cytarabine is converted to the triphosphate form within the cell and then competes with cytidine for incorporation into DNA.  Because the arabinose sugar sterically hinders the rotation of the molecule within DNA, DNA replication ceases, specifically during the S phase of the cell cycle.  This agent also inhibits DNA polymerase, resulting in a decrease in DNA replication and repair. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C1557"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Vinca-Domain Binding Agents",
-                            "Vinca-Site Binding Agents",
-                            "Vinca-Site Binding Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C67422",
-                        "name": "Vinca-Domain Binding Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C25974"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anodynes",
-                            "Analgesics",
-                            "Pain-relief Medication",
-                            "Antinociceptive Agents",
-                            "Analgesic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C241",
-                        "name": "Analgesic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C78272"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Folic Acid Inhibitors",
-                            "Folate Inhibitors",
-                            "Folic Acid Antagonist",
-                            "Folate Analog",
-                            "Antifolates",
-                            "Folic Acid Analog",
-                            "Folic Acid Antagonists"
-                        ],
-                        "nci_thesaurus_concept_id": "C511",
-                        "name": "Folate Antagonist",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C272"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antimitotic Drugs",
-                            "Mitosis Inhibitor Drugs",
-                            "Mitosis Inhibitor Agents",
-                            "Mitotic Inhibitor Agents",
-                            "Mitotic Inhibitors",
-                            "Mitotic Inhibitor Drugs",
-                            "Microtubular Function Inhibitors",
-                            "Mitosis Inhibitors",
-                            "Antimitotics"
-                        ],
-                        "nci_thesaurus_concept_id": "C273",
-                        "name": "Antimitotic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1557",
-                        "name": "Pyrimidine Antagonist",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C272"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Drugs",
-                            "Cancer Drug",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Cancer Agents",
-                            "Anti-Tumor Drugs",
-                            "Antineoplastics",
-                            "Antiproliferative Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Clyclooxygenases Inhibitor",
-                            "Prostaglandin G/H Synthase Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C1323",
-                        "name": "Cyclooxygenase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C471",
-                            "C257"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "ADA Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C2157",
-                        "name": "Adenosine Deaminase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C471"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1931",
-                        "name": "Antineoplastic Plant Product",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274",
-                            "C1907"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C121331",
-                        "name": "Intravenous Immunoglobulin Therapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent",
-                        "parents": [
-                            "C15986"
+                            "C1908"
                         ]
                     },
                     {
@@ -1746,66 +1579,67 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Tubulin Binding Agents"
+                            "Clyclooxygenases Inhibitor",
+                            "Prostaglandin G/H Synthase Inhibitor"
                         ],
-                        "nci_thesaurus_concept_id": "C25974",
-                        "name": "Tubulin Binding Agent",
+                        "nci_thesaurus_concept_id": "C1323",
+                        "name": "Cyclooxygenase Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C273"
+                            "C257",
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Prednitone",
+                            "Decorton",
+                            "Predicor",
+                            "Econosone",
+                            "Ofisolona",
+                            "Meprosona-F",
+                            "DeCortin",
+                            "Prednicort",
+                            "Deltacortene",
+                            "Decortisyl",
+                            "Rayos",
+                            "Perrigo Prednisone",
+                            "Deltison",
+                            "Paracort",
+                            "Adasone",
+                            "Panafcort",
+                            "Deltra",
+                            "Predniment",
+                            "Cortancyl",
+                            "Prednilonga",
+                            "Prednidib",
+                            "Panasol-S",
+                            "Prednisone Intensol",
+                            "Dacortin",
+                            "Promifen",
+                            "Predicorten",
+                            "Servisone"
+                        ],
+                        "nci_thesaurus_concept_id": "C770",
+                        "name": "Prednisone",
+                        "description": "A synthetic glucocorticoid with anti-inflammatory and immunomodulating properties.  After cell surface receptor attachment and cell entry, prednisone enters the nucleus where it binds to and activates specific nuclear receptors, resulting in an altered gene expression and inhibition of proinflammatory cytokine production.  This agent also decreases the number of circulating lymphocytes, induces cell differentiation, and stimulates apoptosis in sensitive tumor cell populations. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C521"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Glucocorticoid"
-                        ],
-                        "nci_thesaurus_concept_id": "C521",
-                        "name": "Therapeutic Glucocorticoid",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C211"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Steroid Hormone",
-                            "Synthetic Steroids"
-                        ],
-                        "nci_thesaurus_concept_id": "C1636",
-                        "name": "Therapeutic Steroid Hormone",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C548"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Radiation Sensitizers",
-                            "Radiation-Sensitizing Drugs",
+                            "Radiation-Sensitizing Agents",
                             "Radiosensitizing Drugs",
+                            "Radiation Sensitizers",
                             "Radiosensitizers",
-                            "Radiation-Sensitizing Agents"
+                            "Radiation-Sensitizing Drugs"
                         ],
                         "nci_thesaurus_concept_id": "C798",
                         "name": "Radiosensitizing Agent",
@@ -1819,68 +1653,17 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Infusion"
+                            "Vinca-Site Binding Agents",
+                            "Vinca-Domain Binding Agents",
+                            "Vinca-Site Binding Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C15388",
-                        "name": "Infusion Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Hormone Therapy Agent",
-                            "Hormonal Therapy Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C147908",
-                        "name": "Hormone Therapy",
+                        "nci_thesaurus_concept_id": "C67422",
+                        "name": "Vinca-Domain Binding Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Exal",
-                            "Velban",
-                            "Velbe",
-                            "Velsar"
-                        ],
-                        "nci_thesaurus_concept_id": "C931",
-                        "name": "Vinblastine Sulfate",
-                        "description": "The sulfate salt of vinblastine, a natural alkaloid isolated from the plant Catharanthus roseus (Madagascar periwinkle) with antineoplastic properties.  Vinblastine disrupts microtubule formation and function during mitosis and interferes with glutamic acid metabolism. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C67422",
-                            "C932"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Pharmaceutical Agent",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Pharmacologic Agent",
-                            "Drug Substance"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
+                            "C25974"
                         ]
                     },
                     {
@@ -1892,6 +1675,91 @@
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Interventions",
+                            "Therapy",
+                            "Therapeutic Technique",
+                            "Therapeutic Method"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Abitrexate",
+                            "Emthexat",
+                            "Brimexate",
+                            "Medsatrexate",
+                            "Lumexon",
+                            "Texate",
+                            "Rheumatrex",
+                            "Methotrexate LPF",
+                            "Lantarel",
+                            "Folex",
+                            "Ledertrexate",
+                            "Tremetex",
+                            "Mexate",
+                            "Emtexate",
+                            "Farmitrexat",
+                            "Trixilem",
+                            "Maxtrex",
+                            "Fauldexato",
+                            "Mexate-AQ",
+                            "Amethopterin",
+                            "Novatrex",
+                            "Metrotex",
+                            "Emthexate",
+                            "Metex",
+                            "Methoblastin",
+                            "Folex PFS",
+                            "Trexeron"
+                        ],
+                        "nci_thesaurus_concept_id": "C642",
+                        "name": "Methotrexate",
+                        "description": "An antimetabolite and antifolate agent with antineoplastic and immunosuppressant activities.  Methotrexate binds to and inhibits the enzyme dihydrofolate reductase, resulting in inhibition of purine nucleotide and thymidylate synthesis and, subsequently, inhibition of DNA and RNA syntheses.  Methotrexate also exhibits potent immunosuppressant activity although the mechanism(s) of actions is unclear. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C2153",
+                            "C511"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C718",
+                        "name": "Organic Chemical",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1913"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Corticosteroids"
+                        ],
+                        "nci_thesaurus_concept_id": "C211",
+                        "name": "Therapeutic Corticosteroid",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2364",
+                            "C574"
+                        ]
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -1911,17 +1779,167 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Inhibitor Drug",
-                            "Enzyme Antagonist"
+                            "Antinociceptive Agents",
+                            "Pain-relief Medication",
+                            "Analgesics",
+                            "Anodynes",
+                            "Analgesic Drugs"
                         ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
+                        "nci_thesaurus_concept_id": "C241",
+                        "name": "Analgesic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C78272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Alkaloids"
+                        ],
+                        "nci_thesaurus_concept_id": "C221",
+                        "name": "Alkaloid",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C718"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1933",
+                        "name": "Ring Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C718"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1931",
+                        "name": "Antineoplastic Plant Product",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1907",
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Vinca Alkaloids"
+                        ],
+                        "nci_thesaurus_concept_id": "C932",
+                        "name": "Vinca Alkaloid Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C221",
+                            "C1931"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immune Mediators",
+                            "Immune Modulators",
+                            "Immunopotentiators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapy Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators",
+                            "BRM",
+                            "Biomodulators",
+                            "Immunomodulators",
+                            "Immunomodulating Agent",
+                            "Biological Response Modifier"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
                             "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Derived from Natural Products"
+                        ],
+                        "nci_thesaurus_concept_id": "C1907",
+                        "name": "Drug, Natural Product",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Purine Inhibitors"
+                        ],
+                        "nci_thesaurus_concept_id": "C1556",
+                        "name": "Purine Antagonist",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Stem Cell Treatment"
+                        ],
+                        "nci_thesaurus_concept_id": "C165194",
+                        "name": "Stem Cell Therapy",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C121331",
+                        "name": "Intravenous Immunoglobulin Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C15986"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Synthetic Steroids",
+                            "Steroid Hormone"
+                        ],
+                        "nci_thesaurus_concept_id": "C1636",
+                        "name": "Therapeutic Steroid Hormone",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C548"
                         ]
                     }
                 ],
@@ -1980,6 +1998,7 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 1400,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2014-07-01",
         "record_verification_date": "2022-02-01",
@@ -1995,6 +2014,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Other Hematopoietic"

@@ -1,7 +1,7 @@
 [
     {
         "other_ids": [],
-        "amendment_date": null,
+        "amendment_date": "2021-08-20",
         "keywords": null,
         "dcp_id": null,
         "interventional_model": "Single Group",
@@ -179,19 +179,42 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -217,37 +240,14 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
                     "Neoplasm",
-                    "Neoplastic Disease",
+                    "Neoplasms, NOS",
                     "tumor",
-                    "Neoplasm, NOS"
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
                 "nci_thesaurus_concept_id": "C3262",
                 "name": "Other Neoplasm",
@@ -268,6 +268,135 @@
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapy",
+                            "Therapeutic Method",
+                            "TX",
+                            "Therapeutic Technique",
+                            "Therapeutic Interventions"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C65939",
+                        "name": "Iohexol",
+                        "description": "An X-ray contrast medium containing iohexol in various concentrations, from 140 to 350 milligrams of iodine per milliliter. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C28500"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C802",
+                        "name": "Reagent",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C45678"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Industrial Additive"
+                        ],
+                        "nci_thesaurus_concept_id": "C45678",
+                        "name": "Industrial Aid",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Computerized Axial Tomography",
+                            "CAT",
+                            "CT",
+                            "CAT Scan",
+                            "Computerized Tomography"
+                        ],
+                        "nci_thesaurus_concept_id": "C17204",
+                        "name": "Computed Tomography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16502"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Imaging",
+                            "Diagnostic Imaging Technique",
+                            "Imaging Procedures",
+                            "Medical Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention",
+                            "Intervention Strategies",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
                             "Image Enhancement Agent"
                         ],
@@ -282,38 +411,31 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16502",
-                        "name": "Diagnostic Imaging",
+                        "synonyms": [
+                            "Diagnostic Test",
+                            "Diagnostic Method",
+                            "Diagnostic Technique"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C18020",
-                            "C17369"
+                            "C25218"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Radiation",
-                            "Cancer Radiotherapy",
-                            "Radiotherapeutics",
-                            "Irradiation",
                             "Radiotherapy",
                             "Irradiate",
                             "RT",
+                            "Irradiation",
+                            "Radiation",
                             "Therapy, Radiation",
+                            "Radiotherapeutics",
+                            "Cancer Radiotherapy",
                             "Irradiated"
                         ],
                         "nci_thesaurus_concept_id": "C15313",
@@ -338,58 +460,39 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C65939",
-                        "name": "Iohexol",
-                        "description": "An X-ray contrast medium containing iohexol in various concentrations, from 140 to 350 milligrams of iodine per milliliter. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C28500"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": []
                     },
                     {
-                        "inclusion_indicator": "TREE",
+                        "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Diagnostic Test",
-                            "Diagnostic Technique",
-                            "Diagnostic Method"
+                            "Cone Beam CT",
+                            "Cone-Beam Computed Tomography"
                         ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
+                        "nci_thesaurus_concept_id": "C71695",
+                        "name": "Halcyon 4.0 cone-beam computed tomography (CBCT) system",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C25218"
+                            "C17204"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
                         "description": null,
-                        "type": "Radiation",
+                        "type": "Procedure/Surgery",
                         "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
+                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -410,36 +513,17 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Imaging Procedures",
-                            "Diagnostic Imaging Technique",
-                            "Medical Imaging",
-                            "Imaging"
+                            "Intervention",
+                            "Intervention Strategies",
+                            "Procedure"
                         ],
-                        "nci_thesaurus_concept_id": "C17369",
-                        "name": "Imaging Technique",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Computerized Axial Tomography",
-                            "CT",
-                            "CAT Scan",
-                            "Computerized Tomography",
-                            "CAT"
-                        ],
-                        "nci_thesaurus_concept_id": "C17204",
-                        "name": "Computed Tomography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16502"
+                            "C16203"
                         ]
                     },
                     {
@@ -459,98 +543,15 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapy",
-                            "Therapeutic Interventions",
-                            "TX",
-                            "Therapeutic Method",
-                            "Therapeutic Technique"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C802",
-                        "name": "Reagent",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C45678"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "nci_thesaurus_concept_id": "C16502",
+                        "name": "Diagnostic Imaging",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Industrial Additive"
-                        ],
-                        "nci_thesaurus_concept_id": "C45678",
-                        "name": "Industrial Aid",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Cone Beam CT"
-                        ],
-                        "nci_thesaurus_concept_id": "C71695",
-                        "name": "Cone-Beam Computed Tomography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C17204"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
+                            "C18020",
+                            "C17369"
                         ]
                     }
                 ],
@@ -573,9 +574,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 15,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2019-12-23",
-        "record_verification_date": "2021-06-02",
+        "record_verification_date": "2022-05-20",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -588,6 +590,7 @@
             "allocation_code": "NA"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

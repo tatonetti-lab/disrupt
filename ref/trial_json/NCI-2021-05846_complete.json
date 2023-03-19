@@ -232,8 +232,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "resistant cancer",
                     "Refractory Cancer",
+                    "resistant cancer",
                     "clinical resistance"
                 ],
                 "nci_thesaurus_concept_id": "C120186",
@@ -280,29 +280,6 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C7062",
                 "name": "Neoplasm by Special Category",
@@ -317,65 +294,9 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
-                ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
                     "Secondary Tumor",
-                    "Tumor, secondary"
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
                 "nci_thesaurus_concept_id": "C36255",
                 "name": "Secondary Neoplasm",
@@ -390,19 +311,60 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -410,6 +372,45 @@
                     "maintype"
                 ],
                 "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
             },
             {
                 "inclusion_indicator": "TREE",
@@ -436,6 +437,21 @@
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-PD-1 Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C128037",
+                        "name": "Anti-PD1 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C124946",
+                            "C20401"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C143250",
                         "name": "Immune Checkpoint Inhibitor",
@@ -449,128 +465,19 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Biologicals",
-                            "Immunologics",
-                            "Biological Products",
-                            "Biopharmaceuticals",
-                            "Immunologic, Immunochemical",
-                            "Biologics"
-                        ],
-                        "nci_thesaurus_concept_id": "C307",
-                        "name": "Biological Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Protein PD-1 Inhibitor",
-                            "PD-1 Inhibitor",
-                            "PD-1-targeting Agent",
-                            "Programmed Cell Death Protein 1 Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C124946",
-                        "name": "PD1 Inhibitor",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C163758",
-                            "C143250"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Pharmacologic Agent",
-                            "Pharmaceuticals",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Drug"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Targeted Agent",
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Molecularly Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C163758",
-                        "name": "Targeted Therapy Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-Cancer Agents",
-                            "Antiproliferative Agents",
-                            "Anti-Tumor Drugs",
-                            "Antineoplastic Drugs",
-                            "Antiproliferative Drugs",
-                            "Anti-Tumor Agents",
-                            "Cancer Drug",
                             "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Agents",
+                            "Tumor-Specific Treatment Agents",
                             "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Tumor-Specific Treatment Agents"
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Drugs",
+                            "Cancer Drug",
+                            "Anti-Tumor Drugs"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Immunotherapeutic Agent",
-                            "BRM",
-                            "Immune Modulators",
-                            "Immunomodulatory Agent",
-                            "Biomodulators",
-                            "Immunomodulators",
-                            "Immunopotentiators",
-                            "Immune Regulators",
-                            "Biological Response Modifier",
-                            "Immunomodulating Agent",
-                            "Immunotherapy Agent",
-                            "Immune Mediators"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
@@ -590,8 +497,119 @@
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C307",
-                            "C308"
+                            "C308",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immune Mediators",
+                            "Immune Modulators",
+                            "Immunopotentiators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapy Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators",
+                            "BRM",
+                            "Biomodulators",
+                            "Immunomodulators",
+                            "Immunomodulating Agent",
+                            "Biological Response Modifier"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Programmed Cell Death Protein 1 Inhibitor",
+                            "Anti-PD-1 Agent",
+                            "PD-1-targeting Agent",
+                            "PD-1 Inhibitor",
+                            "Protein PD-1 Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C124946",
+                        "name": "PD1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C143250"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Molecularly Targeted Therapy Agent",
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug Substance",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
                         ]
                     },
                     {
@@ -623,21 +641,20 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Pharmacologic Agent",
-                            "Pharmaceuticals",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Drug"
+                            "Biopharmaceuticals",
+                            "Immunologic, Immunochemical",
+                            "Immunologics",
+                            "Biological Products",
+                            "Biologicals",
+                            "Biologics"
                         ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1908"
+                            "C1909"
                         ]
                     },
                     {
@@ -650,21 +667,6 @@
                         "category": "agent",
                         "parents": [
                             "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-PD-1 Monoclonal Antibody"
-                        ],
-                        "nci_thesaurus_concept_id": "C128037",
-                        "name": "Anti-PD1 Monoclonal Antibody",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C124946",
-                            "C20401"
                         ]
                     },
                     {
@@ -715,6 +717,7 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 70,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2021-04-13",
         "record_verification_date": "2021-08-01",
@@ -730,6 +733,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

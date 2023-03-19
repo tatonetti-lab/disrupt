@@ -139,34 +139,241 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, HEPATOCELLULAR, MALIGNANT",
-                    "Hepatocellular Carcinoma",
-                    "Carcinoma of the Liver Cells",
-                    "Liver Cell Carcinoma",
                     "LIHC",
-                    "Carcinoma of Liver Cells",
-                    "HCC",
-                    "Hepatoma",
+                    "CARCINOMA, HEPATOCELLULAR, MALIGNANT",
+                    "Liver Cell Carcinoma",
                     "Primary Carcinoma of the Liver Cells",
+                    "Hepatoma",
+                    "Carcinoma of Liver Cells",
+                    "Carcinoma of the Liver Cells",
+                    "Liver Cell Cancer (Hepatocellular Carcinoma)",
+                    "Hepatocellular Cancer",
                     "Primary Carcinoma of Liver Cells",
-                    "Liver Cell Cancer (Hepatocellular Carcinoma)"
+                    "HCC"
                 ],
                 "nci_thesaurus_concept_id": "C3099",
-                "name": "Hepatocellular Cancer",
+                "name": "Hepatocellular Carcinoma",
                 "type": [
                     "maintype",
                     "subtype"
                 ],
                 "parents": [
-                    "C2852",
-                    "C7927"
+                    "C7927",
+                    "C2852"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Hepatic and Intrahepatic Bile Duct Neoplasm"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disorder of Digestive System",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "stomach or intestinal disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Cancer of Liver",
+                    "Liver and Intrahepatic Biliary Tract Carcinoma",
+                    "Liver and hepatobiliary cancer, NOS",
+                    "Primary Liver Carcinoma",
+                    "Cancer of the Liver",
+                    "Liver Carcinoma",
+                    "Biliary Tract Cancer",
+                    "Cancer of the Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Carcinoma",
+                    "Cancer of Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Cancer",
+                    "Liver/hepatobiliary cancer",
+                    "Liver and Intrahepatic Biliary Tract Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C7927",
+                "name": "Liver Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C34803",
+                    "C96963",
+                    "C7106"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Liver and Biliary Neoplasm",
+                    "Malignant Liver and Biliary System Neoplasm",
+                    "Malignant Hepato-Biliary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8609",
+                "name": "Malignant Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8614",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Digestive System",
+                    "Digestive System Tumor",
+                    "Digestive Neoplasm",
+                    "Gastrointestinal Neoplasm",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the GI System",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Tumor of GI System",
+                    "GI Neoplasm",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the GI System",
+                    "Neoplasm of GI System",
+                    "GI System Tumor",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of Gastrointestinal System",
+                    "GI System Neoplasm",
+                    "Neoplasm of Digestive System",
+                    "Tumor of Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Digestive Tumor",
+                    "GI Tumor",
+                    "Gastrointestinal System Neoplasm",
+                    "Gastrointestinal System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Hepato-Biliary Tumor",
+                    "Hepatic and Biliary Neoplasms",
+                    "Hepatobiliary Tumors",
+                    "Liver and Biliary System Neoplasm",
+                    "Hepatic, Biliary, and Gallbladder Neoplasms",
+                    "Hepatobiliary Tumor",
+                    "Hepatic and Biliary Tumors",
+                    "Liver and Biliary Neoplasm",
+                    "Hepato-Biliary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8614",
+                "name": "Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Hepatic and Intrahepatic Bile Duct Neoplasm",
+                    "Liver Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C7103",
                 "name": "Liver and Intrahepatic Bile Duct Neoplasm",
@@ -174,8 +381,66 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C3196",
-                    "C8614"
+                    "C8614",
+                    "C3196"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C190593",
+                "name": "Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7103",
+                    "C8609"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Malignant Digestive System Neoplasm",
+                    "Gastrointestinal System Cancer",
+                    "Gastrointestinal cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
                 ]
             },
             {
@@ -199,121 +464,11 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Gastrointestinal System Disorder",
-                    "Unspecified Gastrointestinal Problem",
-                    "Disorder of Digestive System",
-                    "stomach or intestinal disorder",
-                    "GI Disorder",
-                    "Gastrointestinal Disorder",
-                    "Digestive System Disease",
-                    "Gastrointestinal System Disease",
-                    "Digestive Disease"
-                ],
-                "nci_thesaurus_concept_id": "C2990",
-                "name": "Digestive System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27551"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Hepatic and Biliary Neoplasms",
-                    "Hepato-Biliary Neoplasm",
-                    "Liver and Biliary Neoplasm",
-                    "Hepato-Biliary Tumor",
-                    "Liver and Biliary System Neoplasm",
-                    "Hepatic, Biliary, and Gallbladder Neoplasms",
-                    "Hepatic and Biliary Tumors",
-                    "Hepatobiliary Tumors",
-                    "Hepatobiliary Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C8614",
-                "name": "Hepatobiliary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3052",
-                    "C3959"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
+                    "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
                     "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C7106",
-                "name": "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
+                "name": "Liver Epithelial Neoplasm",
                 "type": [
                     "subtype"
                 ],
@@ -324,188 +479,10 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Gastrointestinal System Neoplasm",
-                    "Gastrointestinal cancer, NOS",
-                    "Gastrointestinal System Cancer",
-                    "Malignant Digestive System Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C4890",
-                "name": "Malignant Gastrointestinal Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C3052"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Primary Malignant Neoplasm of Liver"
-                ],
-                "nci_thesaurus_concept_id": "C34803",
-                "name": "Primary Malignant Liver Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8609",
-                    "C7103"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor of GI System",
-                    "Tumor of Digestive System",
-                    "Digestive Tumor",
-                    "GI Neoplasm",
-                    "Neoplasm of the Gastrointestinal System",
-                    "Digestive System Tumor",
-                    "Gastrointestinal Tumor",
-                    "Neoplasm of the Digestive System",
-                    "Tumor of the Gastrointestinal System",
-                    "Neoplasm of Digestive System",
-                    "Tumor of the Digestive System",
-                    "Gastrointestinal System Tumor",
-                    "Gastrointestinal Neoplasm",
-                    "GI Tumor",
-                    "Tumor of Gastrointestinal System",
-                    "Gastrointestinal System Neoplasm",
-                    "Neoplasm of the GI System",
-                    "GI System Tumor",
-                    "GI System Neoplasm",
-                    "Neoplasm of Gastrointestinal System",
-                    "Tumor of the GI System",
-                    "Digestive Neoplasm",
-                    "Neoplasm of GI System"
-                ],
-                "nci_thesaurus_concept_id": "C3052",
-                "name": "Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Liver and Biliary System Disorder",
-                    "Liver and Biliary Disease",
-                    "Liver and Biliary Disorder",
-                    "Liver Disease"
-                ],
-                "nci_thesaurus_concept_id": "C3959",
-                "name": "Hepatobiliary Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Liver Disorder",
                     "Liver Disease",
-                    "Hepatic Disorder"
+                    "Hepatic Disorder",
+                    "Liver Disorder"
                 ],
                 "nci_thesaurus_concept_id": "C3196",
                 "name": "Liver and Intrahepatic Bile Duct Disorder",
@@ -537,37 +514,96 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Cancer of the Liver",
-                    "Liver Carcinoma",
-                    "Liver/hepatobiliary cancer",
-                    "Cancer of Liver",
-                    "Liver and hepatobiliary cancer, NOS",
-                    "Liver and Intrahepatic Biliary Tract Cancer",
-                    "Cancer of the Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Bile Duct Carcinoma",
-                    "Liver and Intrahepatic Bile Duct Cancer",
-                    "Cancer of Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Biliary Tract Carcinoma",
-                    "Biliary Tract Cancer",
-                    "Primary Liver Carcinoma"
+                    "Primary Malignant Neoplasm of Liver"
                 ],
-                "nci_thesaurus_concept_id": "C7927",
-                "name": "Liver Cancer",
+                "nci_thesaurus_concept_id": "C34803",
+                "name": "Primary Malignant Liver Neoplasm",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
-                    "C34803",
-                    "C7106",
-                    "C96963"
+                    "C190593"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Carcinoma of the Gastrointestinal System",
-                    "Gastrointestinal System Carcinoma"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Liver Disease",
+                    "Liver and Biliary Disease",
+                    "Liver and Biliary Disorder",
+                    "Liver and Biliary System Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C3959",
+                "name": "Hepatobiliary Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Gastrointestinal System Carcinoma",
+                    "Carcinoma of the Gastrointestinal System"
                 ],
                 "nci_thesaurus_concept_id": "C96963",
                 "name": "Digestive System Carcinoma",
@@ -582,35 +618,42 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Liver and Biliary System Neoplasm",
-                    "Malignant Liver and Biliary Neoplasm",
-                    "Malignant Hepato-Biliary Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8609",
-                "name": "Malignant Hepatobiliary Neoplasm",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C4890",
-                    "C8614"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Glandular Cell Epithelium Neoplasm",
-                    "Glandular Cell Epithelial Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7132",
-                "name": "Glandular Cell Neoplasm",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162845",
+                "name": "Unresectable Malignant Digestive System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3709"
+                    "C27359",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C148124",
+                "name": "Unresectable Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C27359"
                 ]
             },
             {
@@ -627,25 +670,6 @@
                 "parents": [
                     "C155903",
                     "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Non-Resectable Malignant Neoplasm of Liver",
-                    "Non-Resectable Malignant Liver Neoplasm",
-                    "Non-Resectable Hepatic Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C35648",
-                "name": "Unresectable Malignant Liver Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8609",
-                    "C7103",
-                    "C162845"
                 ]
             },
             {
@@ -673,23 +697,27 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C96963",
+                    "C162845",
                     "C148124",
-                    "C162845"
+                    "C96963"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C148124",
-                "name": "Unresectable Carcinoma",
+                "synonyms": [
+                    "Non-Resectable Hepatic Malignant Neoplasm",
+                    "Non-Resectable Malignant Neoplasm of Liver",
+                    "Non-Resectable Malignant Liver Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C35648",
+                "name": "Unresectable Malignant Liver Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C27359"
+                    "C190593",
+                    "C162845"
                 ]
             },
             {
@@ -702,23 +730,9 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C129654",
                     "C35648",
-                    "C7927"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C162845",
-                "name": "Unresectable Malignant Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27359",
-                    "C4890"
+                    "C7927",
+                    "C129654"
                 ]
             }
         ],
@@ -735,7 +749,7 @@
                         "nci_thesaurus_concept_id": "C16203",
                         "name": "Clinical or Research Activity",
                         "description": null,
-                        "type": "Procedure/Surgery",
+                        "type": "Other",
                         "category": "other",
                         "parents": [
                             "C43431"
@@ -744,13 +758,76 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Imaging Technique",
                             "Imaging",
                             "Medical Imaging",
-                            "Diagnostic Imaging Technique",
                             "Imaging Procedures"
                         ],
                         "nci_thesaurus_concept_id": "C17369",
                         "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "MRI",
+                            "Magnetic Resonance Imaging Scan",
+                            "Nuclear Magnetic Resonance Imaging",
+                            "NMRI",
+                            "MRI Scan",
+                            "MR Imaging",
+                            "Medical Imaging, Magnetic Resonance / Nuclear Magnetic Resonance",
+                            "NMR Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C16809",
+                        "name": "Magnetic Resonance Imaging",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16502"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Test",
+                            "Diagnostic Technique",
+                            "Diagnostic Method"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
@@ -772,50 +849,14 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Diagnostic Test",
-                            "Diagnostic Technique",
-                            "Diagnostic Method"
-                        ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63474",
+                        "name": "Behavioral, Psychological or Informational Intervention",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C25218"
                         ]
                     },
                     {
@@ -828,6 +869,22 @@
                         "category": "other",
                         "parents": [
                             "C63474"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
                         ]
                     },
                     {
@@ -856,56 +913,13 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63474",
-                        "name": "Behavioral, Psychological or Informational Intervention",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
                         "nci_thesaurus_concept_id": "C16203",
                         "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "NMRI",
-                            "MRI Scan",
-                            "Magnetic Resonance Imaging Scan",
-                            "Nuclear Magnetic Resonance Imaging",
-                            "NMR Imaging",
-                            "MR Imaging",
-                            "MRI",
-                            "Medical Imaging, Magnetic Resonance / Nuclear Magnetic Resonance"
-                        ],
-                        "nci_thesaurus_concept_id": "C16809",
-                        "name": "Magnetic Resonance Imaging",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C16502"
+                            "C43431"
                         ]
                     }
                 ],
@@ -932,9 +946,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 150,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 7,
         "start_date": "2013-01-15",
-        "record_verification_date": "2022-03-24",
+        "record_verification_date": "2022-09-14",
         "ctep_id": null,
         "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
@@ -947,6 +962,7 @@
             "allocation_code": "NA"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Direct",
         "anatomic_sites": [
             "Liver"

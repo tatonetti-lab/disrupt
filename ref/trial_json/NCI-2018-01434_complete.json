@@ -237,8 +237,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIA Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIA Breast Cancer AJCC v8"
+                    "Anatomic Stage IIA Breast Cancer AJCC v8",
+                    "Anatomic Stage IIA Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139539",
                 "name": "Stage IIA Breast Cancer",
@@ -253,8 +253,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIB Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIB Breast Cancer AJCC v8"
+                    "Anatomic Stage IIB Breast Cancer AJCC v8",
+                    "Anatomic Stage IIB Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139540",
                 "name": "Stage IIB Breast Cancer",
@@ -269,8 +269,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIIA Breast Cancer AJCC v8"
+                    "Anatomic Stage IIIA Breast Cancer AJCC v8",
+                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139542",
                 "name": "Stage IIIA Breast Cancer",
@@ -285,8 +285,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage I Breast Carcinoma AJCC v8",
-                    "Prognostic Stage I Breast Cancer AJCC v8"
+                    "Prognostic Stage I Breast Cancer AJCC v8",
+                    "Prognostic Stage I Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139556",
                 "name": "Stage I Breast Cancer",
@@ -317,8 +317,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IB Breast Cancer AJCC v8",
-                    "Prognostic Stage IB Breast Carcinoma AJCC v8"
+                    "Prognostic Stage IB Breast Carcinoma AJCC v8",
+                    "Prognostic Stage IB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139558",
                 "name": "Stage IB Breast Cancer",
@@ -365,8 +365,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IIB Breast Carcinoma AJCC v8",
-                    "Prognostic Stage IIB Breast Cancer AJCC v8"
+                    "Prognostic Stage IIB Breast Cancer AJCC v8",
+                    "Prognostic Stage IIB Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139572",
                 "name": "Stage IIB Breast Cancer",
@@ -397,45 +397,67 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
+                    "Anatomic Stage III Breast Cancer AJCC v8",
+                    "Anatomic Stage III Breast Carcinoma AJCC v8"
                 ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
+                "nci_thesaurus_concept_id": "C139541",
+                "name": "Stage III Breast Cancer",
                 "type": [
-                    "maintype"
+                    "stage"
                 ],
-                "parents": []
+                "parents": [
+                    "C139533"
+                ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
-                    "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C9335",
-                "name": "Malignant Breast Neoplasm",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C9305"
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Breast Disease",
+                    "Breast Diseases"
+                ],
+                "nci_thesaurus_concept_id": "C26709",
+                "name": "Breast Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
                 ]
             },
             {
@@ -457,11 +479,34 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
                     "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
                     "Breast Carcinoma",
                     "Cancer of the Breast"
                 ],
@@ -471,9 +516,54 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C9335"
+                    "C9335",
+                    "C2916"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26709",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -488,61 +578,6 @@
                 ],
                 "parents": [
                     "C139532"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C26709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
                 ]
             },
             {
@@ -566,31 +601,11 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
@@ -602,31 +617,15 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Anatomic Stage III Breast Cancer AJCC v8",
-                    "Anatomic Stage III Breast Carcinoma AJCC v8"
-                ],
-                "nci_thesaurus_concept_id": "C139541",
-                "name": "Stage III Breast Cancer",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C139533"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
                     "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
+                    "Epithelial tumor, malignant",
                     "Carcinoma",
                     "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C2916",
                 "name": "Other Carcinoma",
@@ -634,24 +633,28 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Breast Disease",
-                    "Breast Diseases"
+                    "Malignant Tumor of Breast",
+                    "Malignant Breast Tumor",
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
                 ],
-                "nci_thesaurus_concept_id": "C26709",
-                "name": "Breast Disorder",
+                "nci_thesaurus_concept_id": "C9335",
+                "name": "Malignant Breast Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27551"
+                    "C9305",
+                    "C2910"
                 ]
             },
             {
@@ -672,17 +675,30 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
                     "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Prognostic Stage",
+                    "Breast Cancer by AJCC v8 Prognostic Stage Group"
+                ],
+                "nci_thesaurus_concept_id": "C139554",
+                "name": "Breast Cancer by AJCC v8 Prognostic Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139532"
                 ]
             },
             {
@@ -700,27 +716,11 @@
                 "parents": [
                     "C139554"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Breast Cancer by AJCC v8 Prognostic Stage Group",
-                    "Breast Carcinoma by AJCC v8 Prognostic Stage"
-                ],
-                "nci_thesaurus_concept_id": "C139554",
-                "name": "Breast Cancer by AJCC v8 Prognostic Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C139532"
-                ]
             }
         ],
         "_primary_purpose_sort_order": 1,
         "protocol_id": "15-1783",
-        "active_sites_count": 4,
+        "active_sites_count": 2,
         "lead_org_cancer_center": "Tisch Cancer Institute",
         "arms": [
             {
@@ -728,51 +728,23 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64255",
-                        "name": "Informational Intervention",
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C63474"
+                            "C43431"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63474",
-                        "name": "Behavioral, Psychological or Informational Intervention",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapy",
-                            "Therapeutic Interventions",
                             "TX",
+                            "Therapeutic Interventions",
+                            "Therapeutic Technique",
                             "Therapeutic Method",
-                            "Therapeutic Technique"
+                            "Therapy"
                         ],
                         "nci_thesaurus_concept_id": "C49236",
                         "name": "Therapeutic Procedure",
@@ -784,15 +756,19 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64253",
-                        "name": "Questionnaire Administration",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C64255"
+                            "C16203"
                         ]
                     },
                     {
@@ -804,22 +780,6 @@
                         "type": "Other",
                         "category": "other",
                         "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -850,6 +810,58 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64253",
+                        "name": "Questionnaire Administration",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C64255"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63474",
+                        "name": "Behavioral, Psychological or Informational Intervention",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64255",
+                        "name": "Informational Intervention",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C63474"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C43431",
@@ -858,18 +870,6 @@
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -893,51 +893,23 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64255",
-                        "name": "Informational Intervention",
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C63474"
+                            "C43431"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63474",
-                        "name": "Behavioral, Psychological or Informational Intervention",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapy",
-                            "Therapeutic Interventions",
                             "TX",
+                            "Therapeutic Interventions",
+                            "Therapeutic Technique",
                             "Therapeutic Method",
-                            "Therapeutic Technique"
+                            "Therapy"
                         ],
                         "nci_thesaurus_concept_id": "C49236",
                         "name": "Therapeutic Procedure",
@@ -949,15 +921,19 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64253",
-                        "name": "Questionnaire Administration",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C64255"
+                            "C16203"
                         ]
                     },
                     {
@@ -969,22 +945,6 @@
                         "type": "Other",
                         "category": "other",
                         "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Procedure",
-                            "Intervention Strategies"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -1015,6 +975,58 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64253",
+                        "name": "Questionnaire Administration",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C64255"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63474",
+                        "name": "Behavioral, Psychological or Informational Intervention",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64255",
+                        "name": "Informational Intervention",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C63474"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C43431",
@@ -1023,18 +1035,6 @@
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -1068,9 +1068,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 248,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2018-01-25",
-        "record_verification_date": "2022-02-23",
+        "record_verification_date": "2023-02-08",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -1083,6 +1084,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Direct",
         "anatomic_sites": [
             "Breast"

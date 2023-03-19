@@ -163,14 +163,14 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "DIN 1A",
-                    "Flat Epithelial Atypia of the Breast",
-                    "Flat Ductal Epithelial Atypia of the Breast",
-                    "Flat Ductal Epithelial Atypia",
                     "Flat Epithelial Atypia",
+                    "Flat Ductal Epithelial Atypia of the Breast",
                     "Ductal Intraepithelial Neoplasia, Grade 1A",
+                    "DIN 1A",
+                    "Clinging Carcinoma",
                     "FEA",
-                    "Clinging Carcinoma"
+                    "Flat Epithelial Atypia of the Breast",
+                    "Flat Ductal Epithelial Atypia"
                 ],
                 "nci_thesaurus_concept_id": "C36086",
                 "name": "Breast Flat Ductal Epithelial Atypia",
@@ -178,18 +178,18 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C27269",
-                    "C27942"
+                    "C27942",
+                    "C27269"
                 ]
             },
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "FIBROADENOMA, BENIGN",
-                    "Fibroadenoma of Breast",
                     "Fibroadenoma",
-                    "Fibroadenoma of the Breast"
+                    "FIBROADENOMA, BENIGN",
+                    "Fibroadenoma of the Breast",
+                    "Fibroadenoma of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C3744",
                 "name": "Breast Fibroadenoma",
@@ -204,9 +204,9 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Duct Adenoma",
                     "Duct adenoma, NOS",
-                    "Ductal Papilloma"
+                    "Ductal Papilloma",
+                    "Duct Adenoma"
                 ],
                 "nci_thesaurus_concept_id": "C3785",
                 "name": "Intraductal Papilloma",
@@ -215,6 +215,91 @@
                 ],
                 "parents": [
                     "C7440"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Papillary Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C36031",
+                "name": "Papillary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Benign Neoplasms",
+                    "Neoplasm, benign",
+                    "Benign Tumor",
+                    "Benign Unclassifiable Tumor",
+                    "Tumor, benign"
+                ],
+                "nci_thesaurus_concept_id": "C3677",
+                "name": "Benign Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
                 ]
             },
             {
@@ -237,69 +322,20 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C8429",
-                "name": "Papillary Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C36031"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -307,79 +343,6 @@
                     "maintype"
                 ],
                 "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Benign Epithelial Tumor",
-                    "Epithelial tumor, benign",
-                    "Benign Epithelioma",
-                    "Epithelioma, benign",
-                    "Benign Neoplasm of Epithelium",
-                    "Benign Neoplasm of the Epithelium",
-                    "Benign Tumor of Epithelium",
-                    "Benign Tumor of the Epithelium"
-                ],
-                "nci_thesaurus_concept_id": "C4092",
-                "name": "Benign Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C3677"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Benign Tumor",
-                    "Tumor, benign",
-                    "Neoplasm, benign",
-                    "Benign Neoplasms",
-                    "Benign Unclassifiable Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3677",
-                "name": "Benign Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Papillary Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C36031",
-                "name": "Papillary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
             },
             {
                 "inclusion_indicator": "TREE",
@@ -400,105 +363,56 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
+                "is_lead_disease": true,
                 "synonyms": [
-                    "Ductal Intraepithelial Neoplasia",
-                    "Intraductal Proliferative Lesion",
-                    "Mammary Intraepithelial Neoplasia, Ductal Type",
-                    "DIN",
-                    "Intraductal Proliferative Lesion of the Breast"
+                    "Benign Tumor of the Epithelium",
+                    "Epithelioma, benign",
+                    "Benign Neoplasm of Epithelium",
+                    "Benign Epithelial Tumor",
+                    "Benign Neoplasm of the Epithelium",
+                    "Benign Tumor of Epithelium",
+                    "Benign Epithelioma",
+                    "Epithelial tumor, benign"
                 ],
-                "nci_thesaurus_concept_id": "C27942",
-                "name": "Breast Intraductal Proliferative Lesion",
+                "nci_thesaurus_concept_id": "C4092",
+                "name": "Benign Epithelial Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C36083"
+                    "C3709",
+                    "C3677"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8429",
+                "name": "Papillary Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36031",
+                    "C3709"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Fibroepithelial Tumor",
-                    "Fibroepithelial Neoplasms"
+                    "Epithelial Dysplasia",
+                    "Intraepithelial Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C3743",
-                "name": "Fibroepithelial Neoplasm",
+                "nci_thesaurus_concept_id": "C8366",
+                "name": "Intraepithelial Neoplasia",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C6930"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Premalignant State",
-                    "Premalignant Condition",
-                    "Precancerous State"
-                ],
-                "nci_thesaurus_concept_id": "C3341",
-                "name": "Precancerous Condition",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8278"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Breast Fibroepithelial Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C40405",
-                "name": "Breast Fibroepithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3743",
-                    "C2910"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Cancer Related Condition",
-                    "Oncologic Complications",
-                    "Cancer-Related Problem or Condition",
-                    "problem/condition, cancer related",
-                    "cancer related problem/condition",
-                    "problem/condition, cancer-related"
-                ],
-                "nci_thesaurus_concept_id": "C8278",
-                "name": "Cancer-Related Condition",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
+                    "C3709",
+                    "C3341"
                 ]
             },
             {
@@ -520,6 +434,41 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
+                    "Mixed Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C6930",
+                "name": "Mixed Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26709",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Glandular Cell Epithelium Neoplasm",
                     "Glandular Cell Epithelial Neoplasm"
                 ],
@@ -535,36 +484,61 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C27269",
+                "name": "Glandular Cell Intraepithelial Neoplasia",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C26709"
+                    "C8366",
+                    "C7132"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Mixed Tumor"
+                    "Breast Fibroepithelial Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C6930",
-                "name": "Mixed Neoplasm",
+                "nci_thesaurus_concept_id": "C40405",
+                "name": "Breast Fibroepithelial Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C2910",
+                    "C3743"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Premalignant Condition",
+                    "Premalignant State",
+                    "Precancerous State"
+                ],
+                "nci_thesaurus_concept_id": "C3341",
+                "name": "Precancerous Condition",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8278"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
                 ]
             },
             {
@@ -587,44 +561,70 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Epithelial Dysplasia",
-                    "Intraepithelial Neoplasm"
+                    "Cancer Related Condition",
+                    "problem/condition, cancer related",
+                    "Cancer-Related Problem or Condition",
+                    "problem/condition, cancer-related",
+                    "cancer related problem/condition",
+                    "Oncologic Complications"
                 ],
-                "nci_thesaurus_concept_id": "C8366",
-                "name": "Intraepithelial Neoplasia",
+                "nci_thesaurus_concept_id": "C8278",
+                "name": "Cancer-Related Condition",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3341",
-                    "C3709"
+                    "C2991"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
+                "synonyms": [
+                    "DIN",
+                    "Mammary Intraepithelial Neoplasia, Ductal Type",
+                    "Ductal Intraepithelial Neoplasia",
+                    "Intraductal Proliferative Lesion of the Breast",
+                    "Intraductal Proliferative Lesion"
+                ],
+                "nci_thesaurus_concept_id": "C27942",
+                "name": "Breast Intraductal Proliferative Lesion",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C36083"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C27269",
-                "name": "Glandular Cell Intraepithelial Neoplasia",
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8366",
-                    "C7132"
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Fibroepithelial Neoplasms",
+                    "Fibroepithelial Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3743",
+                "name": "Fibroepithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C6930"
                 ]
             }
         ],
@@ -637,18 +637,14 @@
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Intervention Strategies",
-                            "Procedure"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C43431"
                         ]
                     },
                     {
@@ -665,18 +661,14 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention",
-                            "Intervention Strategies",
-                            "Procedure"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C43431"
                         ]
                     },
                     {
@@ -688,6 +680,76 @@
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Technique",
+                            "Diagnostic Method",
+                            "Diagnostic Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Laboratory Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test",
+                            "Lab Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C74942",
+                        "name": "Anatomic Pathology Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25294"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Cytologic Sampling"
+                        ],
+                        "nci_thesaurus_concept_id": "C38113",
+                        "name": "Cytology Specimen Collection Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16490"
+                        ]
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -706,47 +768,9 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Diagnostic Test",
-                            "Diagnostic Method",
-                            "Diagnostic Technique"
-                        ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Cytologic Technique",
-                            "Cytologic Procedure",
                             "Cytology",
+                            "Cytologic Procedure",
+                            "Cytologic Technique",
                             "Cytological Techniques"
                         ],
                         "nci_thesaurus_concept_id": "C16490",
@@ -760,38 +784,18 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63333",
-                        "name": "Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
+                        "synonyms": [
+                            "Procedure",
+                            "Intervention",
+                            "Intervention Strategies"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C74942",
-                        "name": "Anatomic Pathology Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25294"
+                            "C16203"
                         ]
                     },
                     {
@@ -803,40 +807,36 @@
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C63333",
-                            "C74957"
+                            "C74957",
+                            "C63333"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Laboratory Test",
-                            "Tests",
-                            "Test",
-                            "Lab Tests",
-                            "Lab Test"
+                            "Procedure",
+                            "Intervention",
+                            "Intervention Strategies"
                         ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63333",
+                        "name": "Biomarker Analysis",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
                             "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Cytologic Sampling"
-                        ],
-                        "nci_thesaurus_concept_id": "C38113",
-                        "name": "Cytology Specimen Collection Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16490"
                         ]
                     }
                 ],
@@ -871,9 +871,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 246,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 7,
         "start_date": "2015-09-08",
-        "record_verification_date": "2022-02-01",
+        "record_verification_date": "2023-01-12",
         "ctep_id": null,
         "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
@@ -886,6 +887,7 @@
             "allocation_code": "NA"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Breast"

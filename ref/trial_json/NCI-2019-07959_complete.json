@@ -82,7 +82,7 @@
             }
         },
         "completion_date_type_code": "ANTICIPATED",
-        "detail_description": "Erdafitinib is a selective and potent pan FGFR 1-4 inhibitor with demonstrated clinical\r\n      activity in participants with metastatic urothelial cancer and cholangiocarcinoma identified\r\n      to have alterations in the FGFR pathway. This study targets the underlying altered biology of\r\n      FGFR-driven tumors irrespective of solid tumor histology subtype. The study consists of\r\n      screening phase, treatment phase and the post treatment follow-up phase (from the end of\r\n      treatment visit until the participants has died, withdraws consent, is lost to follow-up, or\r\n      the end of study, whichever comes first). End of study is defined as 4 years from enrollment\r\n      of last participant into study or last follow-up visit of last participant, whichever occurs\r\n      first.",
+        "detail_description": "Erdafitinib is a selective and potent pan FGFR 1-4 inhibitor with demonstrated clinical\r\n      activity in participants with metastatic urothelial cancer and cholangiocarcinoma identified\r\n      to have alterations in the FGFR pathway. This study targets the underlying altered biology of\r\n      FGFR-driven tumors irrespective of solid tumor histology subtype. The study consists of\r\n      screening phase, treatment phase and the post treatment follow-up phase (from the end of\r\n      treatment visit until the participants has died, withdraws consent, is lost to follow-up, or\r\n      the end of study, whichever comes first). End of study is defined as the end of study data\r\n      collection timepoint for the last open cohort. Currently this study is recruiting pediatric\r\n      participants only.",
         "official_title": "A Phase 2 Study of Erdafitinib in Subjects With Advanced Solid Tumors and FGFR Gene Alterations",
         "_phase_sort_order": 2,
         "collaborators": [],
@@ -193,40 +193,66 @@
         "biomarkers": [
             {
                 "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
+                "inclusion_indicator": "TRIAL",
                 "synonyms": [
-                    "FGFR Alteration",
-                    "FGFR Alteration Positive",
-                    "Fibroblast Growth Factor Receptor Alteration",
-                    "Fibroblast Growth Factor Receptor Alteration Positive",
-                    "Fibroblast Growth Factor Receptor Family Alteration",
-                    "Fibroblast Growth Factor Receptor Family Alteration Positive"
+                    "FGF Receptor Gene Family Fusion Positive",
+                    "FGF Receptor Gene Fusion Positive",
+                    "FGFR Gene Family Fusion Positive",
+                    "Fibroblast Growth Factor Receptor Gene Family Fusion Positive",
+                    "Fibroblast Growth Factor Receptor Gene Fusion Positive"
                 ],
-                "nci_thesaurus_concept_id": "C133705",
-                "name": "FGFR Family Alteration Positive",
+                "nci_thesaurus_concept_id": "C132244",
+                "name": "FGFR Gene Fusion Positive",
                 "semantic_types": [
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C19930",
-                    "C3367",
-                    "C20103",
-                    "C16612",
-                    "C25870",
-                    "C25872",
-                    "C77140",
-                    "C25871",
+                    "C103223",
                     "C20719",
-                    "C35682",
-                    "C36292",
                     "C21295",
-                    "C21281"
+                    "C133705",
+                    "C77140",
+                    "C21281",
+                    "C20103",
+                    "C19930",
+                    "C16612",
+                    "C25871",
+                    "C3367",
+                    "C35682",
+                    "C25872",
+                    "C177683",
+                    "C158948",
+                    "C25870",
+                    "C36292"
                 ],
                 "parents": [
-                    "C19930",
-                    "C35682"
+                    "C133705",
+                    "C177683",
+                    "C19930"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C36292"
+                ],
+                "parents": [
+                    "C36292"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -234,19 +260,17 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C25870",
-                "name": "Transferase Gene",
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C21281"
+                    "C16612"
                 ],
                 "parents": [
-                    "C21281"
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -260,108 +284,14 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C25871"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "FGF Receptor Gene Family Mutation",
-                    "FGF Receptor Gene Mutation",
-                    "FGFR Family Gene Mutation",
-                    "FGFR Family Mutation",
-                    "FGFR Mutation",
-                    "Fibroblast Growth Factor Receptor Family Gene Mutation",
-                    "Fibroblast Growth Factor Receptor Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C146713",
-                "name": "FGFR Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C16612",
-                    "C36391",
-                    "C20103",
-                    "C20719",
-                    "C21281",
-                    "C21295",
-                    "C36327",
-                    "C19930",
-                    "C3910",
                     "C25871",
-                    "C97926",
-                    "C141240",
-                    "C25870"
-                ],
-                "parents": [
-                    "C141240",
-                    "C19930",
-                    "C20719"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Fusion Detected",
-                    "Fusion Positive",
-                    "Gene Fusion Detected",
-                    "Gene Fusion Positive"
-                ],
-                "nci_thesaurus_concept_id": "C177683",
-                "name": "Genetic Fusion Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C77140",
-                    "C103223",
-                    "C3367",
-                    "C158948",
-                    "C36292",
-                    "C35682"
-                ],
-                "parents": [
-                    "C103223",
-                    "C158948"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25871",
-                "name": "Phosphotransferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
+                    "C21281",
                     "C25870",
-                    "C16612",
-                    "C21281"
+                    "C16612"
                 ],
                 "parents": [
-                    "C25870"
+                    "C25871"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -379,7 +309,6 @@
                 "type": [
                     "branch"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [],
                 "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
@@ -388,108 +317,18 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C103223",
-                "name": "Genetic Finding",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C77140"
-                ],
-                "parents": [
-                    "C36292"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21281",
-                "name": "Enzyme Gene",
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20719",
-                "name": "Receptor Tyrosine Kinase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295",
-                    "C25870",
-                    "C25872",
-                    "C20103",
                     "C21281",
-                    "C25871"
+                    "C16612"
                 ],
                 "parents": [
-                    "C20103",
-                    "C25872"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "FGF Receptor Gene Family Fusion Positive",
-                    "FGF Receptor Gene Fusion Positive",
-                    "FGFR Gene Family Fusion Positive",
-                    "Fibroblast Growth Factor Receptor Gene Family Fusion Positive",
-                    "Fibroblast Growth Factor Receptor Gene Fusion Positive"
-                ],
-                "nci_thesaurus_concept_id": "C132244",
-                "name": "FGFR Gene Fusion Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C20719",
-                    "C16612",
-                    "C77140",
-                    "C133705",
-                    "C3367",
-                    "C103223",
-                    "C158948",
-                    "C25870",
-                    "C36292",
-                    "C25871",
-                    "C21295",
-                    "C20103",
-                    "C19930",
-                    "C35682",
-                    "C177683",
                     "C21281"
-                ],
-                "parents": [
-                    "C133705",
-                    "C177683",
-                    "C19930"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -511,7 +350,6 @@
                 "type": [
                     "branch"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [],
                 "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
@@ -519,47 +357,20 @@
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "LAB_RESULT",
-                    "Lab Findings",
-                    "Laboratory Finding",
-                    "Laboratory Report",
-                    "Labs",
-                    "Test Result",
-                    "test_result"
-                ],
-                "nci_thesaurus_concept_id": "C36292",
-                "name": "Laboratory Test Result",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C103223",
+                "name": "Genetic Finding",
                 "semantic_types": [
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367",
+                    "C36292",
                     "C77140"
                 ],
                 "parents": [
-                    "C77140"
+                    "C36292"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -567,20 +378,18 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C36327",
-                "name": "Gene Abnormality",
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
                 "semantic_types": [
-                    "Cell or Molecular Dysfunction"
+                    "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
+                    "C16612",
+                    "C21295"
                 ],
                 "parents": [
-                    "C36391"
+                    "C21295"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -602,19 +411,18 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25872",
-                    "C16612",
-                    "C36391",
-                    "C20103",
-                    "C20719",
                     "C21281",
-                    "C36327",
-                    "C21295",
-                    "C3910",
+                    "C20103",
                     "C25871",
                     "C97926",
+                    "C36327",
+                    "C16612",
+                    "C36391",
+                    "C21295",
+                    "C3910",
+                    "C25872",
+                    "C20719",
                     "C25870"
                 ],
                 "parents": [
@@ -626,22 +434,152 @@
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Diagnostic Test Result",
-                    "Test Result"
-                ],
-                "nci_thesaurus_concept_id": "C77140",
-                "name": "Clinical Test Result",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
                 "semantic_types": [
-                    "Finding"
+                    "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20719",
+                "name": "Receptor Tyrosine Kinase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612",
+                    "C20103",
+                    "C25872",
+                    "C25871",
+                    "C25870",
+                    "C21295"
+                ],
+                "parents": [
+                    "C20103",
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "FGF Receptor Gene Family Mutation",
+                    "FGF Receptor Gene Mutation",
+                    "FGFR Family Gene Mutation",
+                    "FGFR Family Mutation",
+                    "FGFR Mutation",
+                    "Fibroblast Growth Factor Receptor Family Gene Mutation",
+                    "Fibroblast Growth Factor Receptor Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C146713",
+                "name": "FGFR Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C20719",
+                    "C21295",
+                    "C21281",
+                    "C16612",
+                    "C20103",
+                    "C19930",
+                    "C25871",
+                    "C36327",
+                    "C3910",
+                    "C25872",
+                    "C36391",
+                    "C141240",
+                    "C25870"
+                ],
+                "parents": [
+                    "C141240",
+                    "C19930",
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal Rearrangement Detected",
+                    "Chromosome Rearrangement Detected",
+                    "Cytogenetic Rearrangement Detected",
+                    "Cytogenetic Rearrangement Positive",
+                    "Cytogenetic Rearrangement Present",
+                    "Rearrangement Positive",
+                    "Rearrangement Present",
+                    "Rearrangement identified"
+                ],
+                "nci_thesaurus_concept_id": "C158948",
+                "name": "Rearrangement Detected",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C36292",
+                    "C35682",
                     "C3367"
                 ],
                 "parents": [
-                    "C3367"
+                    "C35682"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -658,19 +596,75 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25872",
-                    "C16612",
-                    "C20103",
-                    "C20719",
                     "C21281",
-                    "C21295",
+                    "C20103",
                     "C25871",
+                    "C16612",
+                    "C21295",
+                    "C25872",
+                    "C20719",
                     "C25870"
                 ],
                 "parents": [
                     "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Fusion Detected",
+                    "Fusion Positive",
+                    "Gene Fusion Detected",
+                    "Gene Fusion Positive"
+                ],
+                "nci_thesaurus_concept_id": "C177683",
+                "name": "Genetic Fusion Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C103223",
+                    "C77140",
+                    "C3367",
+                    "C35682",
+                    "C158948",
+                    "C36292"
+                ],
+                "parents": [
+                    "C103223",
+                    "C158948"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Lab Value",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -688,32 +682,11 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3910"
                 ],
                 "parents": [
                     "C3910"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20103",
-                "name": "Receptor Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295"
-                ],
-                "parents": [
-                    "C21295"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -737,7 +710,6 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C97926",
                     "C3910"
@@ -751,30 +723,20 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "Chromosomal Rearrangement Detected",
-                    "Chromosome Rearrangement Detected",
-                    "Cytogenetic Rearrangement Detected",
-                    "Cytogenetic Rearrangement Positive",
-                    "Cytogenetic Rearrangement Present",
-                    "Rearrangement Positive",
-                    "Rearrangement Present",
-                    "Rearrangement identified"
+                    "Diagnostic Test Result",
+                    "Test Result"
                 ],
-                "nci_thesaurus_concept_id": "C158948",
-                "name": "Rearrangement Detected",
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
                 "semantic_types": [
-                    "Laboratory or Test Result"
+                    "Finding"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C35682",
-                    "C77140"
+                    "C3367"
                 ],
                 "parents": [
-                    "C35682"
+                    "C3367"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -782,18 +744,19 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C21295",
-                "name": "Ligand Binding Protein Gene",
+                "nci_thesaurus_concept_id": "C36327",
+                "name": "Gene Abnormality",
                 "semantic_types": [
-                    "Gene or Genome"
+                    "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612"
+                    "C97926",
+                    "C36391",
+                    "C3910"
                 ],
                 "parents": [
-                    "C16612"
+                    "C36391"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -801,23 +764,37 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "Positive",
-                    "positive test result"
+                    "FGFR Alteration",
+                    "FGFR Alteration Positive",
+                    "Fibroblast Growth Factor Receptor Alteration",
+                    "Fibroblast Growth Factor Receptor Alteration Positive",
+                    "Fibroblast Growth Factor Receptor Family Alteration",
+                    "Fibroblast Growth Factor Receptor Family Alteration Positive"
                 ],
-                "nci_thesaurus_concept_id": "C35682",
-                "name": "Positive Laboratory Test Result",
+                "nci_thesaurus_concept_id": "C133705",
+                "name": "FGFR Family Alteration Positive",
                 "semantic_types": [
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
+                    "C20719",
+                    "C21295",
+                    "C77140",
+                    "C21281",
+                    "C20103",
+                    "C19930",
+                    "C16612",
+                    "C25871",
                     "C3367",
-                    "C36292",
-                    "C77140"
+                    "C35682",
+                    "C25872",
+                    "C25870",
+                    "C36292"
                 ],
                 "parents": [
-                    "C36292"
+                    "C19930",
+                    "C35682"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
@@ -830,9 +807,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -848,10 +824,10 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Advanced Malignant Solid Neoplasm",
-                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Tumor",
                     "Advanced Solid Neoplasm",
-                    "Advanced Solid Tumor"
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Malignant Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C129707",
                 "name": "Advanced Malignant Solid Tumor",
@@ -859,8 +835,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C127155",
-                    "C9270"
+                    "C9270",
+                    "C127155"
                 ]
             },
             {
@@ -893,96 +869,44 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C127156",
                     "C27359",
-                    "C132146",
-                    "C127156"
+                    "C132146"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Cancer"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
-                "nci_thesaurus_concept_id": "C36263",
-                "name": "Metastatic Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C3261"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
                 "type": [
                     "maintype"
                 ],
-                "parents": [
-                    "C2991"
-                ]
+                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Metastatic Tumor",
                     "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
                 ],
                 "nci_thesaurus_concept_id": "C3261",
                 "name": "Metastatic Neoplasm",
@@ -997,24 +921,48 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Advanced Cancer"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C9270",
-                "name": "Advanced Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C36263"
+                    "C2991"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Neoplasm",
                     "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
+                    "Solid tumor, NOS"
                 ],
                 "nci_thesaurus_concept_id": "C9292",
                 "name": "Solid Tumor",
@@ -1045,43 +993,16 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
+                    "Advanced Cancer"
                 ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C9270",
+                "name": "Advanced Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C36255"
+                    "C36263"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -1094,6 +1015,77 @@
                 ],
                 "parents": [
                     "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Unresectable Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127156",
+                "name": "Unresectable Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292"
                 ]
             },
             {
@@ -1116,8 +1108,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Locally Advanced Cancer",
-                    "Locally advanced",
                     "regional cancer",
+                    "Locally advanced",
                     "Locally Metastatic Malignant Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C8524",
@@ -1128,75 +1120,15 @@
                 "parents": [
                     "C36263"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Unresectable Solid Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C127156",
-                "name": "Unresectable Solid Tumor",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9292"
-                ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "CR108661",
-        "active_sites_count": 8,
+        "active_sites_count": 4,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2189",
-                        "name": "Signal Transduction Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastics",
-                            "Anti-Cancer Agents",
-                            "Antiproliferative Drugs",
-                            "Anti-Tumor Drugs",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Cancer Drug",
-                            "Antineoplastic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
@@ -1212,36 +1144,32 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Drug Substance",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
+                            "Antineoplastic Protein Antagonist",
+                            "Anti-cancer Protein Inhibitor"
                         ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
+                        "nci_thesaurus_concept_id": "C129824",
+                        "name": "Antineoplastic Protein Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1908"
+                            "C2189"
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Balversa"
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C103273",
-                        "name": "Erdafitinib",
-                        "description": "An orally bioavailable, pan fibroblast growth factor receptor (FGFR) inhibitor with potential antineoplastic activity. Upon oral administration, JNJ-42756493 binds to and inhibits FGFR, which may result in the inhibition of FGFR-related signal transduction pathways and thus the inhibition of tumor cell proliferation and tumor cell death in FGFR-overexpressing tumor cells. FGFR, upregulated in many tumor cell types, is a receptor tyrosine kinase essential to tumor cell proliferation, differentiation and survival.  Check for active clinical trials or closed clinical trials using this agent.Health professional",
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
                         "type": "Drug",
-                        "category": "agent",
+                        "category": "agent category",
                         "parents": [
-                            "C1967",
-                            "C129825"
+                            "C1909"
                         ]
                     },
                     {
@@ -1262,12 +1190,49 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Inhibitor Drug"
+                            "Agent",
+                            "Drug",
+                            "Pharmaceutical Agent",
+                            "Pharmacologic Agent",
+                            "Drug Substance",
+                            "Pharmacological Substance",
+                            "Pharmaceuticals"
                         ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Agents",
+                            "Antineoplastics",
+                            "Cancer Drug",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Cancer Agents",
+                            "Anti-Tumor Drugs",
+                            "Anti-Tumor Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Antiproliferative Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
@@ -1278,9 +1243,9 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Protein Tyrosine Kinase Inhibitors",
+                            "TK Inhibitors",
                             "PTK Inhibitors",
-                            "TK Inhibitors"
+                            "Protein Tyrosine Kinase Inhibitors"
                         ],
                         "nci_thesaurus_concept_id": "C1967",
                         "name": "Tyrosine Kinase Inhibitor",
@@ -1293,17 +1258,29 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-cancer Protein Inhibitor",
-                            "Antineoplastic Protein Antagonist"
-                        ],
-                        "nci_thesaurus_concept_id": "C129824",
-                        "name": "Antineoplastic Protein Inhibitor",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2189",
+                        "name": "Signal Transduction Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C2189"
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Balversa"
+                        ],
+                        "nci_thesaurus_concept_id": "C103273",
+                        "name": "Erdafitinib",
+                        "description": "An orally bioavailable, pan fibroblast growth factor receptor (FGFR) inhibitor with potential antineoplastic activity. Upon oral administration, JNJ-42756493 binds to and inhibits FGFR, which may result in the inhibition of FGFR-related signal transduction pathways and thus the inhibition of tumor cell proliferation and tumor cell death in FGFR-overexpressing tumor cells. FGFR, upregulated in many tumor cell types, is a receptor tyrosine kinase essential to tumor cell proliferation, differentiation and survival.  Check for active clinical trials or closed clinical trials using this agent.Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C129825",
+                            "C1967"
                         ]
                     }
                 ],
@@ -1314,7 +1291,7 @@
             {
                 "interventions": [],
                 "name": "Erdafitinib",
-                "description": "Participants with fibroblast growth factor receptor (FGFR) mutations and FGFR gene fusions will receive a dose of erdafitinib oral tablets until disease progression, intolerable toxicity, withdrawal of consent, or decision by the investigator to discontinue treatment.",
+                "description": "Participants with fibroblast growth factor receptor (FGFR) mutations and FGFR gene fusions will receive a dose of erdafitinib oral tablets until disease progression, intolerable toxicity, withdrawal of consent, decision by the investigator to discontinue treatment, or the end of study data collection timepoint has been achieved for a cohort.",
                 "type": "EXPERIMENTAL"
             }
         ],
@@ -1336,9 +1313,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 336,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2019-11-20",
-        "record_verification_date": "2022-03-01",
+        "record_verification_date": "2023-02-01",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -1350,7 +1328,8 @@
             "role_subject": null,
             "allocation_code": "NA"
         },
-        "acronym": null,
+        "acronym": "RAGNAR",
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

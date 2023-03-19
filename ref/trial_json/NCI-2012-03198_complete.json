@@ -291,11 +291,11 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Stage IIA Breast Cancer AJCC v7",
+                    "Stage IIA Breast Cancer AJCC v6",
                     "Stage IIA Breast Cancer AJCC v6 and v7",
                     "Breast Cancer Stage IIA",
-                    "Breast Carcinoma Stage IIA",
-                    "Stage IIA Breast Cancer AJCC v6",
-                    "Stage IIA Breast Carcinoma"
+                    "Stage IIA Breast Carcinoma",
+                    "Breast Carcinoma Stage IIA"
                 ],
                 "nci_thesaurus_concept_id": "C5454",
                 "name": "Stage IIA Breast Cancer",
@@ -310,11 +310,11 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Breast Carcinoma Stage IIB",
-                    "Stage IIB Breast Carcinoma",
-                    "Stage IIB Breast Cancer AJCC v6",
-                    "Stage IIB Breast Cancer AJCC v6 and v7",
                     "Breast Cancer Stage IIB",
+                    "Stage IIB Breast Cancer AJCC v6 and v7",
+                    "Stage IIB Breast Carcinoma",
+                    "Breast Carcinoma Stage IIB",
+                    "Stage IIB Breast Cancer AJCC v6",
                     "Stage IIB Breast Cancer AJCC v7"
                 ],
                 "nci_thesaurus_concept_id": "C5455",
@@ -330,13 +330,13 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage II Breast Carcinoma",
-                    "Stage II Breast Cancer AJCC v7",
-                    "Carcinoma of Breast Stage II",
                     "Stage II Breast Cancer AJCC v6 and v7",
-                    "Stage II Breast Cancer AJCC v6",
+                    "Stage II Breast Cancer AJCC v7",
                     "Carcinoma of the Breast Stage II",
-                    "Breast Cancer Stage II"
+                    "Carcinoma of Breast Stage II",
+                    "Stage II Breast Cancer AJCC v6",
+                    "Breast Cancer Stage II",
+                    "Stage II Breast Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C7768",
                 "name": "Stage II Breast Cancer",
@@ -344,18 +344,18 @@
                     "stage"
                 ],
                 "parents": [
-                    "C91230",
-                    "C90513"
+                    "C90513",
+                    "C91230"
                 ]
             },
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Breast Cancer Stage IIIA",
+                    "Breast Carcinoma Stage IIIA",
                     "Stage IIIA Breast Carcinoma",
                     "Stage IIIA Breast Cancer AJCC v7",
-                    "Breast Carcinoma Stage IIIA"
+                    "Breast Cancer Stage IIIA"
                 ],
                 "nci_thesaurus_concept_id": "C7770",
                 "name": "Stage IIIA Breast Cancer",
@@ -385,15 +385,48 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26709",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -408,24 +441,30 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
+                    "Stage I Breast Cancer AJCC v7"
                 ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
+                "nci_thesaurus_concept_id": "C88375",
+                "name": "Stage I Breast Cancer",
                 "type": [
-                    "maintype"
+                    "stage"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
+                    "C91230"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
                 ]
             },
             {
@@ -449,11 +488,11 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
                     "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
                     "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
                     "Breast Carcinoma",
                     "Cancer of the Breast"
                 ],
@@ -463,140 +502,32 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C9335"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
+                    "C9335",
+                    "C2916"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Stage I Breast Cancer AJCC v7"
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C88375",
-                "name": "Stage I Breast Cancer",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C91230"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Breast Carcinoma by AJCC v7 Stage"
-                ],
-                "nci_thesaurus_concept_id": "C91230",
-                "name": "Breast Cancer by AJCC v7 Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C4872"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
-                    "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
-                ],
-                "nci_thesaurus_concept_id": "C9335",
-                "name": "Malignant Breast Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2910",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
                 "type": [
                     "maintype"
                 ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
-                ],
                 "parents": [
-                    "C2991"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
@@ -618,15 +549,73 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
+                    "Malignant Tumor of Breast",
+                    "Malignant Breast Tumor",
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C9335",
+                "name": "Malignant Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C2910"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Neoplasm",
-                    "Neoplastic Disease",
+                    "Neoplasms, NOS",
                     "tumor",
-                    "Neoplasm, NOS"
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
                 "nci_thesaurus_concept_id": "C3262",
                 "name": "Other Neoplasm",
@@ -641,30 +630,26 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C26709"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
+                "is_lead_disease": true,
                 "synonyms": [
-                    "Breast Carcinoma by AJCC v6 Stage"
+                    "Breast Carcinoma by AJCC v7 Stage"
                 ],
-                "nci_thesaurus_concept_id": "C90513",
-                "name": "Breast Cancer by AJCC v6 Stage",
+                "nci_thesaurus_concept_id": "C91230",
+                "name": "Breast Cancer by AJCC v7 Stage",
                 "type": [
                     "stage"
                 ],
@@ -686,6 +671,21 @@
                 "parents": [
                     "C91230"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v6 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C90513",
+                "name": "Breast Cancer by AJCC v6 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
             }
         ],
         "_primary_purpose_sort_order": 0,
@@ -696,33 +696,11 @@
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Cancer Radiotherapy",
-                            "Radiotherapy",
-                            "Irradiate",
-                            "Radiation",
-                            "Radiotherapeutics",
-                            "RT",
-                            "Irradiated",
-                            "Irradiation",
-                            "Therapy, Radiation"
-                        ],
-                        "nci_thesaurus_concept_id": "C15313",
-                        "name": "Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
                             "Intensity Modulated RT",
-                            "Intensity-Modulated Radiotherapy",
-                            "IMRT"
+                            "IMRT",
+                            "Intensity-Modulated Radiotherapy"
                         ],
                         "nci_thesaurus_concept_id": "C16135",
                         "name": "Intensity-Modulated Radiation Therapy",
@@ -734,6 +712,19 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64263",
+                        "name": "Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C74957",
+                            "C63333"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C16203",
@@ -743,80 +734,6 @@
                         "category": "other",
                         "parents": [
                             "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C74957",
-                        "name": "Mixed Category Laboratory Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25294"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Lab Tests",
-                            "Lab Test",
-                            "Test",
-                            "Laboratory Test",
-                            "Tests"
-                        ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
                         ]
                     },
                     {
@@ -832,100 +749,11 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Supportive Therapy",
-                            "Symptom Management",
-                            "Therapy, Supportive"
-                        ],
-                        "nci_thesaurus_concept_id": "C15747",
-                        "name": "Supportive Care",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64263",
-                        "name": "Laboratory Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C63333",
-                            "C74957"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Quality of Life Assessment"
-                        ],
-                        "nci_thesaurus_concept_id": "C15584",
-                        "name": "Quality-of-Life Assessment",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C15747"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "3D-CRT",
+                            "Conformal Therapy",
                             "Radiation Conformal Therapy",
-                            "Conformal Therapy"
+                            "3D-CRT"
                         ],
                         "nci_thesaurus_concept_id": "C16035",
                         "name": "3-Dimensional Conformal Radiation Therapy",
@@ -942,17 +770,72 @@
                         "nci_thesaurus_concept_id": "C43431",
                         "name": "Activity",
                         "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
                         "type": "Radiation",
                         "category": "other",
                         "parents": []
-                    }
-                ],
-                "name": "Group IA (standard IMRT or 3D-CRT)",
-                "description": "Lumpectomy patients undergo whole breast radiation therapy using IMRT or 3D-CRT QD 5 days a week for 5 weeks followed by a radiation therapy boost to the lumpectomy cavity QD 5 days a week for 1-1/2 weeks.",
-                "type": "EXPERIMENTAL"
-            },
-            {
-                "interventions": [
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Laboratory Test",
+                            "Lab Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
@@ -968,17 +851,23 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
+                            "Therapy, Radiation",
+                            "Radiotherapeutics",
+                            "Irradiated",
+                            "Irradiation",
+                            "Irradiate",
+                            "Radiation",
+                            "RT",
+                            "Cancer Radiotherapy",
+                            "Radiotherapy"
                         ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "nci_thesaurus_concept_id": "C15313",
+                        "name": "Radiation Therapy",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C49236"
                         ]
                     },
                     {
@@ -996,19 +885,85 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Lab Tests",
-                            "Lab Test",
-                            "Test",
-                            "Laboratory Test",
-                            "Tests"
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
                         ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Symptom Management",
+                            "Therapy, Supportive",
+                            "Supportive Therapy"
+                        ],
+                        "nci_thesaurus_concept_id": "C15747",
+                        "name": "Supportive Care",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
                             "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Quality of Life Assessment"
+                        ],
+                        "nci_thesaurus_concept_id": "C15584",
+                        "name": "Quality-of-Life Assessment",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C15747"
+                        ]
+                    }
+                ],
+                "name": "Group IA (standard IMRT or 3D-CRT)",
+                "description": "Lumpectomy patients undergo whole breast radiation therapy using IMRT or 3D-CRT QD 5 days a week for 5 weeks followed by a radiation therapy boost to the lumpectomy cavity QD 5 days a week for 1-1/2 weeks.",
+                "type": "EXPERIMENTAL"
+            },
+            {
+                "interventions": [
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64263",
+                        "name": "Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C74957",
+                            "C63333"
                         ]
                     },
                     {
@@ -1025,10 +980,78 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Supportive Therapy",
+                            "Laboratory Test",
+                            "Lab Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C74957",
+                        "name": "Mixed Category Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25294"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Symptom Management",
-                            "Therapy, Supportive"
+                            "Therapy, Supportive",
+                            "Supportive Therapy"
                         ],
                         "nci_thesaurus_concept_id": "C15747",
                         "name": "Supportive Care",
@@ -1042,11 +1065,11 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
                             "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
                         ],
                         "nci_thesaurus_concept_id": "C49236",
                         "name": "Therapeutic Procedure",
@@ -1056,29 +1079,6 @@
                         "parents": [
                             "C25218"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64263",
-                        "name": "Laboratory Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C63333",
-                            "C74957"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -1102,33 +1102,11 @@
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Cancer Radiotherapy",
-                            "Radiotherapy",
-                            "Irradiate",
-                            "Radiation",
-                            "Radiotherapeutics",
-                            "RT",
-                            "Irradiated",
-                            "Irradiation",
-                            "Therapy, Radiation"
-                        ],
-                        "nci_thesaurus_concept_id": "C15313",
-                        "name": "Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
                             "Intensity Modulated RT",
-                            "Intensity-Modulated Radiotherapy",
-                            "IMRT"
+                            "IMRT",
+                            "Intensity-Modulated Radiotherapy"
                         ],
                         "nci_thesaurus_concept_id": "C16135",
                         "name": "Intensity-Modulated Radiation Therapy",
@@ -1137,6 +1115,19 @@
                         "category": "other",
                         "parents": [
                             "C16035"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64263",
+                        "name": "Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C74957",
+                            "C63333"
                         ]
                     },
                     {
@@ -1153,15 +1144,99 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63333",
+                        "name": "Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Procedure",
+                            "Conformal Therapy",
+                            "Radiation Conformal Therapy",
+                            "3D-CRT"
+                        ],
+                        "nci_thesaurus_concept_id": "C16035",
+                        "name": "3-Dimensional Conformal Radiation Therapy",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C15313"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Laboratory Test",
+                            "Lab Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Intervention Strategies",
-                            "Intervention"
+                            "Intervention",
+                            "Procedure"
                         ],
                         "nci_thesaurus_concept_id": "C25218",
                         "name": "Intervention or Procedure",
                         "description": null,
-                        "type": "Radiation",
+                        "type": "Other",
                         "category": "other",
                         "parents": [
                             "C16203"
@@ -1182,17 +1257,23 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
+                            "Therapy, Radiation",
+                            "Radiotherapeutics",
+                            "Irradiated",
+                            "Irradiation",
+                            "Irradiate",
+                            "Radiation",
+                            "RT",
+                            "Cancer Radiotherapy",
+                            "Radiotherapy"
                         ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "nci_thesaurus_concept_id": "C15313",
+                        "name": "Radiation Therapy",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C49236"
                         ]
                     },
                     {
@@ -1210,39 +1291,25 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Lab Tests",
-                            "Lab Test",
-                            "Test",
-                            "Laboratory Test",
-                            "Tests"
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
                         ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63333",
-                        "name": "Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
+                            "C16203"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Supportive Therapy",
                             "Symptom Management",
-                            "Therapy, Supportive"
+                            "Therapy, Supportive",
+                            "Supportive Therapy"
                         ],
                         "nci_thesaurus_concept_id": "C15747",
                         "name": "Supportive Care",
@@ -1256,11 +1323,11 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
                             "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
                         ],
                         "nci_thesaurus_concept_id": "C49236",
                         "name": "Therapeutic Procedure",
@@ -1270,47 +1337,6 @@
                         "parents": [
                             "C25218"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64263",
-                        "name": "Laboratory Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C63333",
-                            "C74957"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -1325,32 +1351,6 @@
                         "parents": [
                             "C15747"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "3D-CRT",
-                            "Radiation Conformal Therapy",
-                            "Conformal Therapy"
-                        ],
-                        "nci_thesaurus_concept_id": "C16035",
-                        "name": "3-Dimensional Conformal Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15313"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": []
                     }
                 ],
                 "name": "Group IIA (comprehensive IMRT or 3D-CRT)",
@@ -1360,33 +1360,11 @@
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Cancer Radiotherapy",
-                            "Radiotherapy",
-                            "Irradiate",
-                            "Radiation",
-                            "Radiotherapeutics",
-                            "RT",
-                            "Irradiated",
-                            "Irradiation",
-                            "Therapy, Radiation"
-                        ],
-                        "nci_thesaurus_concept_id": "C15313",
-                        "name": "Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
                             "Intensity Modulated RT",
-                            "Intensity-Modulated Radiotherapy",
-                            "IMRT"
+                            "IMRT",
+                            "Intensity-Modulated Radiotherapy"
                         ],
                         "nci_thesaurus_concept_id": "C16135",
                         "name": "Intensity-Modulated Radiation Therapy",
@@ -1395,6 +1373,19 @@
                         "category": "other",
                         "parents": [
                             "C16035"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64263",
+                        "name": "Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C74957",
+                            "C63333"
                         ]
                     },
                     {
@@ -1411,15 +1402,99 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63333",
+                        "name": "Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Procedure",
+                            "Conformal Therapy",
+                            "Radiation Conformal Therapy",
+                            "3D-CRT"
+                        ],
+                        "nci_thesaurus_concept_id": "C16035",
+                        "name": "3-Dimensional Conformal Radiation Therapy",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C15313"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Laboratory Test",
+                            "Lab Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test"
+                        ],
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Intervention Strategies",
-                            "Intervention"
+                            "Intervention",
+                            "Procedure"
                         ],
                         "nci_thesaurus_concept_id": "C25218",
                         "name": "Intervention or Procedure",
                         "description": null,
-                        "type": "Radiation",
+                        "type": "Other",
                         "category": "other",
                         "parents": [
                             "C16203"
@@ -1440,17 +1515,23 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Procedure",
-                            "Intervention Strategies",
-                            "Intervention"
+                            "Therapy, Radiation",
+                            "Radiotherapeutics",
+                            "Irradiated",
+                            "Irradiation",
+                            "Irradiate",
+                            "Radiation",
+                            "RT",
+                            "Cancer Radiotherapy",
+                            "Radiotherapy"
                         ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
+                        "nci_thesaurus_concept_id": "C15313",
+                        "name": "Radiation Therapy",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C49236"
                         ]
                     },
                     {
@@ -1468,39 +1549,25 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Lab Tests",
-                            "Lab Test",
-                            "Test",
-                            "Laboratory Test",
-                            "Tests"
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
                         ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63333",
-                        "name": "Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
+                            "C16203"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Supportive Therapy",
                             "Symptom Management",
-                            "Therapy, Supportive"
+                            "Therapy, Supportive",
+                            "Supportive Therapy"
                         ],
                         "nci_thesaurus_concept_id": "C15747",
                         "name": "Supportive Care",
@@ -1514,11 +1581,11 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
                             "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
+                            "TX",
+                            "Therapy",
+                            "Therapeutic Method",
+                            "Therapeutic Interventions"
                         ],
                         "nci_thesaurus_concept_id": "C49236",
                         "name": "Therapeutic Procedure",
@@ -1528,47 +1595,6 @@
                         "parents": [
                             "C25218"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "Therapy",
-                            "Therapeutic Technique",
-                            "Therapeutic Interventions",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64263",
-                        "name": "Laboratory Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C63333",
-                            "C74957"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -1583,32 +1609,6 @@
                         "parents": [
                             "C15747"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "3D-CRT",
-                            "Radiation Conformal Therapy",
-                            "Conformal Therapy"
-                        ],
-                        "nci_thesaurus_concept_id": "C16035",
-                        "name": "3-Dimensional Conformal Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15313"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": []
                     }
                 ],
                 "name": "Group IIB (comprehensive IMRT or 3D-CRT)",
@@ -1642,9 +1642,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 1636,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 7,
         "start_date": "2013-08-22",
-        "record_verification_date": "2021-07-31",
+        "record_verification_date": "2022-07-31",
         "ctep_id": "NSABP-B-51",
         "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
@@ -1657,6 +1658,9 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [
+            "NCTN"
+        ],
         "nci_funded": "Direct",
         "anatomic_sites": [
             "Breast"
@@ -1665,7 +1669,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": "Eleftherios (Terry) Paul Mamounas",
         "study_source": "National",
-        "completion_date": "2022-07-31",
+        "completion_date": "2023-07-31",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

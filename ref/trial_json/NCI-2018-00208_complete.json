@@ -269,30 +269,126 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "HLA-A*0201 Positive"
+                    "Observable Entity"
                 ],
-                "nci_thesaurus_concept_id": "C129450",
-                "name": "HLA Class I Histocompatibility Antigen, A-0201 Alpha Chain Positive",
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Class I MHC",
+                    "MHC Class I"
+                ],
+                "nci_thesaurus_concept_id": "C16617",
+                "name": "MHC Class I Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16812",
+                    "C16612",
+                    "C25790"
+                ],
+                "parents": [
+                    "C16812"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Expressed",
+                    "Expression Detected"
+                ],
+                "nci_thesaurus_concept_id": "C177692",
+                "name": "Expression Positive",
                 "semantic_types": [
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16617",
-                    "C28585",
-                    "C3367",
                     "C77140",
-                    "C16612",
-                    "C16812",
-                    "C36292",
-                    "C25790",
-                    "C177692",
-                    "C35682"
+                    "C3367",
+                    "C35682",
+                    "C36292"
                 ],
                 "parents": [
-                    "C177692",
-                    "C28585"
+                    "C35682"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C36292"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25790",
+                "name": "Immunoprotein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -310,9 +406,128 @@
                 "type": [
                     "branch"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [],
                 "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "HLA-A*0201 Positive",
+                    "HLA-A*02:01 Positive Cells Present"
+                ],
+                "nci_thesaurus_concept_id": "C69178",
+                "name": "HLA-A*0201 Positive Cells Present",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25790",
+                    "C3367",
+                    "C28585",
+                    "C16812",
+                    "C69408",
+                    "C35682",
+                    "C36292",
+                    "C16617",
+                    "C16612",
+                    "C129450",
+                    "C77140",
+                    "C177692"
+                ],
+                "parents": [
+                    "C129450",
+                    "C28585",
+                    "C69408"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HLA-A*02 Positive",
+                    "HLA-A*02 Positive Cells Present",
+                    "HLA-A*2 Positive",
+                    "HLA-A02 Allele Positive",
+                    "HLA-A02 Positive",
+                    "HLA-A2 Positive"
+                ],
+                "nci_thesaurus_concept_id": "C69408",
+                "name": "HLA-A2 Positive Cells Present",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C28585",
+                    "C16612",
+                    "C36292",
+                    "C25790",
+                    "C16812",
+                    "C16617",
+                    "C77140",
+                    "C3367",
+                    "C35682",
+                    "C177692"
+                ],
+                "parents": [
+                    "C177692",
+                    "C28585"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HLA Complex Gene"
+                ],
+                "nci_thesaurus_concept_id": "C16812",
+                "name": "Major Histocompatibility Complex Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C25790"
+                ],
+                "parents": [
+                    "C25790"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HLA-A*0201 Positive"
+                ],
+                "nci_thesaurus_concept_id": "C129450",
+                "name": "HLA Class I Histocompatibility Antigen, A-0201 Alpha Chain Positive",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25790",
+                    "C3367",
+                    "C28585",
+                    "C16812",
+                    "C16617",
+                    "C35682",
+                    "C36292",
+                    "C16612",
+                    "C77140",
+                    "C177692"
+                ],
+                "parents": [
+                    "C177692",
+                    "C28585"
+                ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
             {
@@ -321,6 +536,7 @@
                 "synonyms": [
                     "LAB_RESULT",
                     "Lab Findings",
+                    "Lab Value",
                     "Laboratory Finding",
                     "Laboratory Report",
                     "Labs",
@@ -333,7 +549,6 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367",
                     "C77140"
@@ -358,258 +573,31 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25790",
-                    "C16612",
                     "C16812",
+                    "C16612",
+                    "C25790",
                     "C16617"
                 ],
                 "parents": [
                     "C16617"
                 ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Expressed",
-                    "Expression Detected"
-                ],
-                "nci_thesaurus_concept_id": "C177692",
-                "name": "Expression Positive",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C35682",
-                    "C77140"
-                ],
-                "parents": [
-                    "C35682"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25790",
-                "name": "Immunoprotein Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "HLA Complex Gene"
-                ],
-                "nci_thesaurus_concept_id": "C16812",
-                "name": "Major Histocompatibility Complex Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C25790"
-                ],
-                "parents": [
-                    "C25790"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "HLA-A*0201 Positive",
-                    "HLA-A*02:01 Positive Cells Present"
-                ],
-                "nci_thesaurus_concept_id": "C69178",
-                "name": "HLA-A*0201 Positive Cells Present",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16617",
-                    "C28585",
-                    "C77140",
-                    "C3367",
-                    "C16612",
-                    "C16812",
-                    "C36292",
-                    "C129450",
-                    "C25790",
-                    "C177692",
-                    "C35682",
-                    "C69408"
-                ],
-                "parents": [
-                    "C129450",
-                    "C28585",
-                    "C69408"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Diagnostic Test Result",
-                    "Test Result"
-                ],
-                "nci_thesaurus_concept_id": "C77140",
-                "name": "Clinical Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367"
-                ],
-                "parents": [
-                    "C3367"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Positive",
-                    "positive test result"
-                ],
-                "nci_thesaurus_concept_id": "C35682",
-                "name": "Positive Laboratory Test Result",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C77140"
-                ],
-                "parents": [
-                    "C36292"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Class I MHC",
-                    "MHC Class I"
-                ],
-                "nci_thesaurus_concept_id": "C16617",
-                "name": "MHC Class I Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25790",
-                    "C16612",
-                    "C16812"
-                ],
-                "parents": [
-                    "C16812"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "HLA-A*02 Positive",
-                    "HLA-A*02 Positive Cells Present",
-                    "HLA-A*2 Positive",
-                    "HLA-A02 Allele Positive",
-                    "HLA-A02 Positive",
-                    "HLA-A2 Positive"
-                ],
-                "nci_thesaurus_concept_id": "C69408",
-                "name": "HLA-A2 Positive Cells Present",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C3367",
-                    "C177692",
-                    "C25790",
-                    "C16617",
-                    "C28585",
-                    "C77140",
-                    "C35682",
-                    "C36292",
-                    "C16812"
-                ],
-                "parents": [
-                    "C177692",
-                    "C28585"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Observable Entity"
-                ],
-                "nci_thesaurus_concept_id": "C3367",
-                "name": "Finding",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
         ],
         "classification_code": null,
-        "current_trial_status_date": "2017-09-26",
+        "current_trial_status_date": "2023-02-03",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Recurrent Malignant Solid Neoplasm",
-                    "Recurrent Solid Neoplasm",
-                    "Relapsed Solid Tumor",
                     "Recurrent Solid Tumor",
                     "Relapsed Malignant Solid Neoplasm",
-                    "Relapsed Solid Neoplasm"
+                    "Recurrent Malignant Solid Neoplasm",
+                    "Relapsed Solid Neoplasm",
+                    "Relapsed Solid Tumor",
+                    "Recurrent Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C127153",
                 "name": "Recurrent Malignant Solid Tumor",
@@ -626,9 +614,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -644,10 +631,10 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Advanced Malignant Solid Neoplasm",
-                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Tumor",
                     "Advanced Solid Neoplasm",
-                    "Advanced Solid Tumor"
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Malignant Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C129707",
                 "name": "Advanced Malignant Solid Tumor",
@@ -655,8 +642,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C127155",
-                    "C9270"
+                    "C9270",
+                    "C127155"
                 ]
             },
             {
@@ -671,33 +658,17 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C120186",
-                    "C132146"
+                    "C132146",
+                    "C120186"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C36263",
-                "name": "Metastatic Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C3261"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
                     "Secondary Tumor",
-                    "Tumor, secondary"
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
                 "nci_thesaurus_concept_id": "C36255",
                 "name": "Secondary Neoplasm",
@@ -712,14 +683,44 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
+                    "Solid Neoplasm",
+                    "Solid Tumour",
+                    "Solid tumor, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Neoplasm",
-                    "Neoplastic Disease",
+                    "Neoplasms, NOS",
                     "tumor",
-                    "Neoplasm, NOS"
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
                 "nci_thesaurus_concept_id": "C3262",
                 "name": "Other Neoplasm",
@@ -734,18 +735,71 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
                 ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
                 "type": [
                     "subtype"
                 ],
@@ -757,12 +811,18 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
@@ -789,106 +849,16 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
+                    "Metastatic Cancer"
                 ],
-                "nci_thesaurus_concept_id": "C9292",
-                "name": "Solid Tumor",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Solid Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C132146",
-                "name": "Malignant Solid Tumor",
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9292",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Recurrence",
-                    "Recurrent Cancer",
-                    "Recurrent Malignant Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C4813",
-                "name": "Recurrent Malignant Neoplasm",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C9305",
-                    "C4798"
+                    "C4968",
+                    "C3261"
                 ]
             },
             {
@@ -910,8 +880,8 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "resistant cancer",
                     "Refractory Cancer",
+                    "resistant cancer",
                     "clinical resistance"
                 ],
                 "nci_thesaurus_concept_id": "C120186",
@@ -929,9 +899,27 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Recurrence",
-                    "Recurrent",
+                    "Recurrent Cancer",
+                    "Recurrent Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C4813",
+                "name": "Recurrent Malignant Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4798",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm Recurrence",
+                    "Recurrence",
                     "Recurrent Tumor",
-                    "Neoplasm Recurrence"
+                    "Recurrent"
                 ],
                 "nci_thesaurus_concept_id": "C4798",
                 "name": "Recurrent Neoplasm",
@@ -953,13 +941,256 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2114",
-                        "name": "Mustard Agent",
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Cyclostine",
+                            "Fosfaseron",
+                            "Cycloblastin",
+                            "CYCLO-cell",
+                            "Cycloblastine",
+                            "Cyclostin",
+                            "Ledoxina",
+                            "Carloxan",
+                            "Genoxal",
+                            "Cicloxal",
+                            "Cytophosphan",
+                            "Genuxal"
+                        ],
+                        "nci_thesaurus_concept_id": "C405",
+                        "name": "Cyclophosphamide",
+                        "description": "A synthetic alkylating agent chemically related to the nitrogen mustards with antineoplastic and immunosuppressive activities.  In the liver, cyclophosphamide is converted to the active metabolites aldophosphamide and phosphoramide mustard, which bind to DNA, thereby inhibiting DNA replication and initiating cell death. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C697",
+                            "C574"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cell-based Gene Therapy Agent",
+                            "Genetically-altered Immune Cell",
+                            "Genetically-modified Immune Cell"
+                        ],
+                        "nci_thesaurus_concept_id": "C154231",
+                        "name": "Genetically-engineered Immune Cell",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1962",
+                            "C142078"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Chemotherapy Alkylating Agents",
+                            "Chemotherapy Alkylators"
+                        ],
+                        "nci_thesaurus_concept_id": "C1590",
+                        "name": "Antineoplastic Alkylating Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1590"
+                            "C2842"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cytokines"
+                        ],
+                        "nci_thesaurus_concept_id": "C1283",
+                        "name": "Recombinant Cytokine",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64263",
+                        "name": "Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C74957",
+                            "C63333"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Interleukins"
+                        ],
+                        "nci_thesaurus_concept_id": "C593",
+                        "name": "Recombinant Interleukin",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1283"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C63333",
+                        "name": "Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Cancer Drug",
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C74957",
+                        "name": "Mixed Category Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25294"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64900",
+                        "name": "Diagnostic Laboratory Biomarker Analysis",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C64263"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C697",
+                        "name": "Nitrogen Mustard Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2114"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Tumor-Specific Treatment Agents",
+                            "Anti-Tumor Agents",
+                            "Cancer Drug",
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunopotentiators",
+                            "Immune Mediators",
+                            "Immunomodulating Agent",
+                            "BRM",
+                            "Biomodulators",
+                            "Biological Response Modifier",
+                            "Immunomodulators",
+                            "Immunotherapy Agent",
+                            "Immune Modulators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antimetabolites"
+                        ],
+                        "nci_thesaurus_concept_id": "C272",
+                        "name": "Antimetabolite",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
                         ]
                     },
                     {
@@ -982,334 +1213,12 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C74957",
-                        "name": "Mixed Category Laboratory Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25294"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Interleukin-2",
-                            "Mitogenic Factor",
-                            "Interleukin II",
-                            "Lymphocyte Mitogenic Factor",
-                            "T-Cell Growth Factor",
-                            "Thymocyte Stimulating Factor"
-                        ],
-                        "nci_thesaurus_concept_id": "C587",
-                        "name": "Recombinant Interleukin-2",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C593"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastics",
-                            "Anti-Cancer Agents",
-                            "Antiproliferative Drugs",
-                            "Anti-Tumor Drugs",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Cancer Drug",
-                            "Antineoplastic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Proleukin"
-                        ],
-                        "nci_thesaurus_concept_id": "C1498",
-                        "name": "Aldesleukin",
-                        "description": "A recombinant analog of the endogenous cytokine interleukin-2 (IL-2) with immunoregulatory and antineoplastic activities. Aldesleukin binds to and activates the IL-2 receptor, followed by heterodimerization of the cytoplasmic domains of the IL-2R beta and gamma(c) chains; activation of the tyrosine kinase Jak3; and phosphorylation of tyrosine residues on the IL-2R beta chain, resulting in an activated receptor complex. Various cytoplasmic signaling molecules are recruited to the activated receptor complex and become substrates for regulatory enzymes that are associated with the receptor complex. This agent enhances lymphocyte mitogenesis; stimulates long-term growth of human IL-2 dependent cell lines; enhances lymphocyte cytotoxicity; induces lymphokine-activated killer (LAK) cell and natural killer (NK) cell activities; and induces expression of interferon-gamma. Aldesleukin may induce T cell-mediated tumor regression in some tumor types. Check for active clinical trials or closed cli",
-                        "type": "Biological/Vaccine",
-                        "category": "agent",
-                        "parents": [
-                            "C587"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64900",
-                        "name": "Diagnostic Laboratory Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C64263"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastics",
-                            "Anti-Cancer Agents",
-                            "Antiproliferative Drugs",
-                            "Anti-Tumor Drugs",
-                            "Tumor-Specific Treatment Agents",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Cancer Drug",
-                            "Antineoplastic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "TCR T-cells",
-                            "TCR T Cells",
-                            "T-cell Receptor-engineered T Cells",
-                            "TCR-modified T Cells",
-                            "TCR-engineered T-cells",
-                            "T-cell Receptor-engineered T-lymphocytes"
-                        ],
-                        "nci_thesaurus_concept_id": "C138180",
-                        "name": "T-cell Receptor-engineered T-cells",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C154231"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Gene Therapy Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1962",
-                        "name": "Gene Therapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C307"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Immunotherapeutic",
-                            "Anti-cancer Immunotherapeutic",
-                            "Antineoplastic Biological Response Modifier",
-                            "Antineoplastic BRM"
-                        ],
-                        "nci_thesaurus_concept_id": "C129820",
-                        "name": "Antineoplastic Immunomodulating Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C274",
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Genetically-altered Immune Cell",
-                            "Genetically-modified Immune Cell",
-                            "Cell-based Gene Therapy Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C154231",
-                        "name": "Genetically-engineered Immune Cell",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1962",
-                            "C142078"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Drug Substance",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C63333",
-                        "name": "Biomarker Analysis",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Lab Tests",
-                            "Laboratory Test",
-                            "Tests",
-                            "Lab Test",
-                            "Test"
-                        ],
-                        "nci_thesaurus_concept_id": "C25294",
-                        "name": "Laboratory Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Immunosuppressive Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C574",
-                        "name": "Immunosuppressant",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C697",
-                        "name": "Nitrogen Mustard Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2114"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Interleukins"
-                        ],
-                        "nci_thesaurus_concept_id": "C593",
-                        "name": "Recombinant Interleukin",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1283"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Immune Mediators",
-                            "Immunomodulatory Agent",
-                            "Biological Response Modifier",
-                            "BRM",
-                            "Immune Modulators",
-                            "Biomodulators",
-                            "Immunotherapeutic Agent",
-                            "Immunotherapy Agent",
-                            "Immunomodulators",
-                            "Immunomodulating Agent",
-                            "Immune Regulators",
-                            "Immunopotentiators"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biologicals",
-                            "Biological Products",
-                            "Biologics",
                             "Immunologics",
+                            "Biologics",
+                            "Biological Products",
                             "Biopharmaceuticals",
+                            "Biologicals",
                             "Immunologic, Immunochemical"
                         ],
                         "nci_thesaurus_concept_id": "C307",
@@ -1319,20 +1228,6 @@
                         "category": "agent category",
                         "parents": [
                             "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C146779",
-                        "name": "Autologous TCR-engineered T-cells IMA201",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent",
-                        "parents": [
-                            "C129826",
-                            "C28681",
-                            "C138180"
                         ]
                     },
                     {
@@ -1352,93 +1247,30 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2842",
-                        "name": "DNA Binding Agent",
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
                         "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Cycloblastine",
-                            "Cyclostine",
-                            "Cyclostin",
-                            "CYCLO-cell",
-                            "Fosfaseron",
-                            "Genoxal",
-                            "Ledoxina",
-                            "Genuxal",
-                            "Cytophosphan",
-                            "Cicloxal",
-                            "Cycloblastin",
-                            "Carloxan"
-                        ],
-                        "nci_thesaurus_concept_id": "C405",
-                        "name": "Cyclophosphamide",
-                        "description": "A synthetic alkylating agent chemically related to the nitrogen mustards with antineoplastic and immunosuppressive activities.  In the liver, cyclophosphamide is converted to the active metabolites aldophosphamide and phosphoramide mustard, which bind to DNA, thereby inhibiting DNA replication and initiating cell death. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C574",
-                            "C697"
-                        ]
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antimetabolites"
+                            "Interleukin-2",
+                            "Mitogenic Factor",
+                            "Interleukin II",
+                            "Lymphocyte Mitogenic Factor",
+                            "Thymocyte Stimulating Factor",
+                            "T-Cell Growth Factor"
                         ],
-                        "nci_thesaurus_concept_id": "C272",
-                        "name": "Antimetabolite",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Immune Mediators",
-                            "Immunomodulatory Agent",
-                            "Biological Response Modifier",
-                            "BRM",
-                            "Immune Modulators",
-                            "Biomodulators",
-                            "Immunotherapeutic Agent",
-                            "Immunotherapy Agent",
-                            "Immunomodulators",
-                            "Immunomodulating Agent",
-                            "Immune Regulators",
-                            "Immunopotentiators"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
+                        "nci_thesaurus_concept_id": "C587",
+                        "name": "Recombinant Interleukin-2",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Chemotherapy Alkylating Agents",
-                            "Chemotherapy Alkylators"
-                        ],
-                        "nci_thesaurus_concept_id": "C1590",
-                        "name": "Antineoplastic Alkylating Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2842"
+                            "C593"
                         ]
                     },
                     {
@@ -1453,53 +1285,71 @@
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C129821",
                             "C142078",
+                            "C129821",
                             "C129820"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64263",
-                        "name": "Laboratory Biomarker Analysis",
+                        "synonyms": [
+                            "Antineoplastic Cytotoxic Agent",
+                            "Cytotoxic Chemotherapy Agent",
+                            "Cytotoxic Antineoplastic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
                         "description": null,
-                        "type": "Other",
-                        "category": "other",
+                        "type": "Drug",
+                        "category": "agent category",
                         "parents": [
-                            "C63333",
-                            "C74957"
+                            "C274"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "ACT Agent",
-                            "Adoptive Cellular Therapy Agent",
-                            "Adoptive Cell Transfer Agent",
-                            "Adoptive Cell Therapy Agent",
-                            "Adoptive Cell-based Agent"
+                            "Procedure",
+                            "Intervention",
+                            "Intervention Strategies"
                         ],
-                        "nci_thesaurus_concept_id": "C142078",
-                        "name": "Adoptive Immunotherapy",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Biological Response Modifier",
+                            "Antineoplastic Immunotherapeutic",
+                            "Antineoplastic BRM",
+                            "Anti-cancer Immunotherapeutic"
+                        ],
+                        "nci_thesaurus_concept_id": "C129820",
+                        "name": "Antineoplastic Immunomodulating Agent",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C307",
+                            "C274",
                             "C308"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
+                            "Pharmacologic Agent",
                             "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
                             "Agent",
                             "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
+                            "Drug"
                         ],
                         "nci_thesaurus_concept_id": "C1909",
                         "name": "Pharmacologic Substance",
@@ -1511,16 +1361,89 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1094",
-                        "name": "Fludarabine",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
                         "description": null,
                         "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunosuppressive Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C574",
+                        "name": "Immunosuppressant",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacologic Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Proleukin"
+                        ],
+                        "nci_thesaurus_concept_id": "C1498",
+                        "name": "Aldesleukin",
+                        "description": "A recombinant analog of the endogenous cytokine interleukin-2 (IL-2) with immunoregulatory and antineoplastic activities. Aldesleukin binds to and activates the IL-2 receptor, followed by heterodimerization of the cytoplasmic domains of the IL-2R beta and gamma(c) chains; activation of the tyrosine kinase Jak3; and phosphorylation of tyrosine residues on the IL-2R beta chain, resulting in an activated receptor complex. Various cytoplasmic signaling molecules are recruited to the activated receptor complex and become substrates for regulatory enzymes that are associated with the receptor complex. This agent enhances lymphocyte mitogenesis; stimulates long-term growth of human IL-2 dependent cell lines; enhances lymphocyte cytotoxicity; induces lymphokine-activated killer (LAK) cell and natural killer (NK) cell activities; and induces expression of interferon-gamma. Aldesleukin may induce T cell-mediated tumor regression in some tumor types. Check for active clinical trials or closed cli",
+                        "type": "Biological/Vaccine",
                         "category": "agent",
                         "parents": [
-                            "C2150",
-                            "C1556"
+                            "C587"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2842",
+                        "name": "DNA Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
                         ]
                     },
                     {
@@ -1540,16 +1463,77 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Cytokines"
+                            "Laboratory Test",
+                            "Tests",
+                            "Lab Tests",
+                            "Test",
+                            "Lab Test"
                         ],
-                        "nci_thesaurus_concept_id": "C1283",
-                        "name": "Recombinant Cytokine",
+                        "nci_thesaurus_concept_id": "C25294",
+                        "name": "Laboratory Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2114",
+                        "name": "Mustard Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1590"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C146779",
+                        "name": "Autologous TCR-engineered T-cells IMA201",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C28681",
+                            "C129826",
+                            "C138180"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1094",
+                        "name": "Fludarabine",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1556",
+                            "C2150"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "TCR-engineered T-cells",
+                            "TCR T-cells",
+                            "TCR-modified T Cells",
+                            "T-cell Receptor-engineered T Cells",
+                            "TCR T Cells",
+                            "T-cell Receptor-engineered T-lymphocytes"
+                        ],
+                        "nci_thesaurus_concept_id": "C138180",
+                        "name": "T-cell Receptor-engineered T-cells",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C307",
-                            "C308"
+                            "C154231"
                         ]
                     },
                     {
@@ -1566,40 +1550,60 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
+                        "synonyms": [
+                            "Adoptive Cell-based Agent",
+                            "ACT Agent",
+                            "Adoptive Cell Therapy Agent",
+                            "Adoptive Cell Transfer Agent",
+                            "Adoptive Cellular Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C142078",
+                        "name": "Adoptive Immunotherapy",
                         "description": null,
-                        "type": "Other",
-                        "category": "other",
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
                         "parents": [
-                            "C43431"
+                            "C308",
+                            "C307"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
+                        "synonyms": [
+                            "Immunopotentiators",
+                            "Immune Mediators",
+                            "Immunomodulating Agent",
+                            "BRM",
+                            "Biomodulators",
+                            "Biological Response Modifier",
+                            "Immunomodulators",
+                            "Immunotherapy Agent",
+                            "Immune Modulators",
+                            "Immunomodulatory Agent",
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
                         "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Inhibitor Drug"
+                            "Gene Therapy Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
+                        "nci_thesaurus_concept_id": "C1962",
+                        "name": "Gene Therapy",
                         "description": null,
-                        "type": "Drug",
+                        "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
+                            "C307"
                         ]
                     }
                 ],
@@ -1621,6 +1625,10 @@
         "brief_title": "TCR-engineered T Cells in Solid Tumors (ACTengine IMA201-101)",
         "status_history": [
             {
+                "status_date": "2023-02-03T00:00:00.000001",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
                 "status_date": "2017-09-26T00:00:00",
                 "status": "ACTIVE"
             }
@@ -1628,11 +1636,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 22,
-        "_current_trial_status_sort_order": 0,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
         "start_date": "2018-12-19",
-        "record_verification_date": "2021-09-01",
+        "record_verification_date": "2023-02-01",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -1643,6 +1652,7 @@
             "allocation_code": "NA"
         },
         "acronym": "ACTengine",
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

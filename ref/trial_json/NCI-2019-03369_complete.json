@@ -61,7 +61,7 @@
                 {
                     "inclusion_indicator": true,
                     "display_order": 9,
-                    "description": "Nonsterilized male subjects who are sexually active with a female partner of childbearing potential must use a male condom with spermicide from Day 1 through 6 months after receipt of the final dose of investigational product."
+                    "description": "Nonsterilized male subjects who are sexually active with a female partner of childbearing potential must use a male condom with spermicide from Day 1 through 3 months after receipt of the final dose of investigational product."
                 },
                 {
                     "inclusion_indicator": false,
@@ -291,18 +291,18 @@
         "nct_id": "NCT03946800",
         "biomarkers": [],
         "classification_code": null,
-        "current_trial_status_date": "2020-05-08",
+        "current_trial_status_date": "2022-11-30",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Recurrent Malignant Solid Neoplasm",
-                    "Recurrent Solid Neoplasm",
-                    "Relapsed Solid Tumor",
                     "Recurrent Solid Tumor",
                     "Relapsed Malignant Solid Neoplasm",
-                    "Relapsed Solid Neoplasm"
+                    "Recurrent Malignant Solid Neoplasm",
+                    "Relapsed Solid Neoplasm",
+                    "Relapsed Solid Tumor",
+                    "Recurrent Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C127153",
                 "name": "Recurrent Malignant Solid Tumor",
@@ -319,9 +319,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -337,10 +336,10 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Advanced Malignant Solid Neoplasm",
-                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Solid Tumor",
                     "Advanced Solid Neoplasm",
-                    "Advanced Solid Tumor"
+                    "Advanced Non-Hematologic Malignancy",
+                    "Advanced Malignant Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C129707",
                 "name": "Advanced Malignant Solid Tumor",
@@ -348,8 +347,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C127155",
-                    "C9270"
+                    "C9270",
+                    "C127155"
                 ]
             },
             {
@@ -364,48 +363,37 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C120186",
-                    "C132146"
+                    "C132146",
+                    "C120186"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
+                    "Malignant Solid Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C9292",
-                "name": "Solid Tumor",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C132146",
+                "name": "Malignant Solid Tumor",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C9292",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
                 ]
             },
             {
@@ -428,78 +416,6 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
                     "Advanced Cancer"
                 ],
                 "nci_thesaurus_concept_id": "C9270",
@@ -515,15 +431,80 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Solid Neoplasm"
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
-                "nci_thesaurus_concept_id": "C132146",
-                "name": "Malignant Solid Tumor",
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9292",
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
                     "C9305"
                 ]
             },
@@ -531,9 +512,10 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Tumor",
                     "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
                 ],
                 "nci_thesaurus_concept_id": "C3261",
                 "name": "Metastatic Neoplasm",
@@ -548,37 +530,52 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Solid Neoplasm",
+                    "Solid Tumour",
+                    "Solid tumor, NOS"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
                 "type": [
                     "maintype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Recurrence",
-                    "Recurrent",
-                    "Recurrent Tumor",
-                    "Neoplasm Recurrence"
+                    "Refractory Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C4798",
-                "name": "Recurrent Neoplasm",
+                "nci_thesaurus_concept_id": "C7628",
+                "name": "Refractory Neoplasm",
                 "type": [
-                    "stage"
+                    "subtype"
                 ],
                 "parents": [
                     "C7062"
@@ -598,16 +595,34 @@
                     "stage"
                 ],
                 "parents": [
-                    "C9305",
-                    "C4798"
+                    "C4798",
+                    "C9305"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "resistant cancer",
+                    "Neoplasm Recurrence",
+                    "Recurrence",
+                    "Recurrent Tumor",
+                    "Recurrent"
+                ],
+                "nci_thesaurus_concept_id": "C4798",
+                "name": "Recurrent Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Refractory Cancer",
+                    "resistant cancer",
                     "clinical resistance"
                 ],
                 "nci_thesaurus_concept_id": "C120186",
@@ -619,112 +634,82 @@
                     "C9305",
                     "C7628"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Refractory Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C7628",
-                "name": "Refractory Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "D8510C00001",
-        "active_sites_count": 8,
+        "active_sites_count": 1,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Molecularly Targeted Therapy Agent",
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent",
-                            "Targeted Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C163758",
-                        "name": "Targeted Therapy Agent",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C128057",
-                        "name": "Anti-PD-L1 Monoclonal Antibody",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C156893",
-                            "C20401"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Biomodulators",
-                            "Biological Response Modifier",
-                            "BRM",
-                            "Immunopotentiators",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
-                            "Immune Modulators",
-                            "Immunotherapeutic Agent",
-                            "Immunotherapy Agent",
-                            "Immune Mediators",
-                            "Immunomodulators",
-                            "Immunomodulating Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C308",
-                        "name": "Immunotherapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C160867",
-                        "name": "Lipid Nanoparticle Encapsulated mRNAs Encoding Human IL-12A/IL-12B MEDI-1191",
-                        "description": null,
+                        "synonyms": [
+                            "Imfinzi"
+                        ],
+                        "nci_thesaurus_concept_id": "C103194",
+                        "name": "Durvalumab",
+                        "description": "A monoclonal antibody directed against B7H1 (B7 homolog 1; programmed cell death ligand 1) with potential immunostimulating activity. Upon intravenous administration, MEDI4736 binds to the cell surface antigen B7H1, thereby blocking B7H1 signaling. This may activate the immune system to exert a cytotoxic T-lymphocyte (CTL) response against B7H1-expressing tumor cells. B7H1, a member of the B7 protein superfamily and a negative regulator of cytokine synthesis, is overexpressed on certain tumor cell types. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
                         "type": "Biological/Vaccine",
                         "category": "agent",
                         "parents": [
-                            "C1962",
-                            "C129820",
-                            "C61199"
+                            "C128057"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C143250",
+                        "name": "Immune Checkpoint Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C141144"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C141144",
+                        "name": "Immune Checkpoint Modulator",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antineoplastic Drugs",
-                            "Cancer Drug",
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Agents",
+                            "Monoclonal Antibodies",
+                            "Monoclonal Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C308",
+                            "C307"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Tumor-Specific Treatment Agents",
+                            "Antineoplastic Drugs",
                             "Anti-Cancer Agents",
-                            "Anti-Tumor Drugs",
+                            "Antiproliferative Agents",
+                            "Anti-Tumor Agents",
+                            "Antiproliferative Drugs",
                             "Antineoplastics",
-                            "Antiproliferative Drugs"
+                            "Anti-Tumor Drugs",
+                            "Cancer Drug",
+                            "Tumor-Specific Treatment Agents"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
@@ -750,8 +735,38 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antineoplastic Immunotherapeutic",
+                            "Anti-CD274 Agent",
+                            "CD274-targeting Agent",
+                            "Anti-PD-L1 Agent",
+                            "PD-L1-targeting Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C191689",
+                        "name": "PD-L1 Inhibitor",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C156893"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C128057",
+                        "name": "Anti-PD-L1 Monoclonal Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C191689",
+                            "C20401"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
                             "Antineoplastic Biological Response Modifier",
+                            "Antineoplastic Immunotherapeutic",
                             "Antineoplastic BRM",
                             "Anti-cancer Immunotherapeutic"
                         ],
@@ -767,71 +782,30 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Biopharmaceuticals",
-                            "Biologics",
-                            "Biological Products",
-                            "Immunologics",
-                            "Biologicals",
-                            "Immunologic, Immunochemical"
+                            "PD-1 Ligand-targeting Agent",
+                            "PD-1 Ligands Inhibitor"
                         ],
-                        "nci_thesaurus_concept_id": "C307",
-                        "name": "Biological Agent",
+                        "nci_thesaurus_concept_id": "C156893",
+                        "name": "PD-1 Ligand Inhibitor",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C143250",
-                        "name": "Immune Checkpoint Inhibitor",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C141144"
+                            "C143250",
+                            "C163758"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Monoclonal Antibody",
-                            "Monoclonal Antibodies"
-                        ],
-                        "nci_thesaurus_concept_id": "C20401",
-                        "name": "Monoclonal Antibody Therapy",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C307",
-                            "C308"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Pharmaceutical Agent",
+                            "Pharmacologic Agent",
+                            "Pharmaceuticals",
+                            "Drug Substance",
                             "Agent",
                             "Pharmacological Substance",
                             "Drug",
-                            "Pharmaceuticals",
-                            "Pharmacologic Agent",
-                            "Drug Substance"
+                            "Pharmaceutical Agent"
                         ],
                         "nci_thesaurus_concept_id": "C1909",
                         "name": "Pharmacologic Substance",
@@ -858,44 +832,87 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C141144",
-                        "name": "Immune Checkpoint Modulator",
+                        "synonyms": [
+                            "Immunotherapeutic Agent",
+                            "Immune Regulators",
+                            "Immunomodulators",
+                            "Immune Mediators",
+                            "Immunotherapy Agent",
+                            "Immune Modulators",
+                            "Immunomodulating Agent",
+                            "BRM",
+                            "Immunomodulatory Agent",
+                            "Biomodulators",
+                            "Immunopotentiators",
+                            "Biological Response Modifier"
+                        ],
+                        "nci_thesaurus_concept_id": "C308",
+                        "name": "Immunotherapy",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C308"
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C160867",
+                        "name": "Lipid Nanoparticle Encapsulated mRNAs Encoding Human IL-12A/IL-12B MEDI-1191",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent",
+                        "parents": [
+                            "C61199",
+                            "C1962",
+                            "C129820"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "PD-1 Ligands Inhibitor",
-                            "PD-1 Ligand-targeting Agent"
+                            "Molecularly Targeted Therapy Agent",
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent"
                         ],
-                        "nci_thesaurus_concept_id": "C156893",
-                        "name": "PD-1 Ligand Inhibitor",
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C163758",
-                            "C143250"
+                            "C274"
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Imfinzi"
-                        ],
-                        "nci_thesaurus_concept_id": "C103194",
-                        "name": "Durvalumab",
-                        "description": "A monoclonal antibody directed against B7H1 (B7 homolog 1; programmed cell death ligand 1) with potential immunostimulating activity. Upon intravenous administration, MEDI4736 binds to the cell surface antigen B7H1, thereby blocking B7H1 signaling. This may activate the immune system to exert a cytotoxic T-lymphocyte (CTL) response against B7H1-expressing tumor cells. B7H1, a member of the B7 protein superfamily and a negative regulator of cytokine synthesis, is overexpressed on certain tumor cell types. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
                         "type": "Biological/Vaccine",
-                        "category": "agent",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Immunologics",
+                            "Biologics",
+                            "Biopharmaceuticals",
+                            "Biologicals",
+                            "Biological Products",
+                            "Immunologic, Immunochemical"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
                         "parents": [
-                            "C128057"
+                            "C1909"
                         ]
                     }
                 ],
@@ -923,6 +940,10 @@
         "brief_title": "A Study of MEDI1191 in Sequential and Concurrent Combination With Durvalumab in Subjects With Advanced Solid Tumors",
         "status_history": [
             {
+                "status_date": "2022-11-30T00:00:00.000003",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
                 "status_date": "2020-05-08T00:00:00.000002",
                 "status": "ACTIVE"
             },
@@ -937,12 +958,13 @@
         ],
         "study_population_description": null,
         "sampling_method_code": null,
-        "minimum_target_accrual_number": 87,
-        "_current_trial_status_sort_order": 0,
+        "minimum_target_accrual_number": 102,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
         "start_date": "2019-05-08",
-        "record_verification_date": "2022-03-01",
+        "record_verification_date": "2023-02-01",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -953,6 +975,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"
@@ -961,7 +984,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2027-01-15",
+        "completion_date": "2023-08-28",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

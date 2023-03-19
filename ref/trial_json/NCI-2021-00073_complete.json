@@ -159,11 +159,11 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
                     "Tumor of the Breast",
-                    "Breast Tumor"
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C2910",
                 "name": "Breast Neoplasm",
@@ -171,8 +171,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C26709"
+                    "C26709",
+                    "C3263"
                 ]
             },
             {
@@ -180,20 +180,20 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Invasive Ductal Breast Carcinoma",
-                    "Invasive Ductal Carcinoma of Breast",
-                    "Invasive Ductal Carcinoma, No Specific Type",
-                    "IBC NST",
-                    "Infiltrating Ductal Carcinoma of Breast",
-                    "Invasive Ductal Carcinoma, Not Otherwise Specified",
+                    "Infiltrating Ductal Carcinoma",
                     "Invasive Ductal Adenocarcinoma",
+                    "Infiltrating Ductal Breast Carcinoma",
+                    "Invasive Ductal Carcinoma, Not Otherwise Specified",
+                    "Invasive Breast Carcinoma of No Special Type",
+                    "IBC NST",
                     "Invasive Ductal Carcinoma of the Breast",
                     "Invasive Ductal Carcinoma, NST",
-                    "Infiltrating Ductal Carcinoma",
-                    "Infiltrating Ductal Breast Carcinoma",
-                    "Infiltrating Ductal Carcinoma of the Breast",
-                    "Invasive Ductal Carcinoma",
                     "Infiltrating Ductal Adenocarcinoma",
-                    "Invasive Breast Carcinoma of No Special Type"
+                    "Invasive Ductal Carcinoma, No Specific Type",
+                    "Infiltrating Ductal Carcinoma of the Breast",
+                    "Infiltrating Ductal Carcinoma of Breast",
+                    "Invasive Ductal Carcinoma",
+                    "Invasive Ductal Carcinoma of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C4194",
                 "name": "Invasive Ductal Carcinoma, NOS",
@@ -209,14 +209,14 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Invasive Carcinoma of Breast",
-                    "Invasive Carcinoma of the Breast",
                     "Infiltrating Breast Carcinoma",
+                    "Infiltrating Carcinoma of Breast",
                     "Invasive Mammary Carcinoma",
                     "Infiltrating Carcinoma of the Breast",
                     "Invasive Breast Carcinoma",
+                    "Invasive Carcinoma of the Breast",
                     "infiltrating breast cancer",
-                    "Infiltrating Carcinoma of Breast"
+                    "Invasive Carcinoma of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C9245",
                 "name": "Invasive Breast Cancer",
@@ -232,48 +232,16 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Disease by Site"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
                     "C2991"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -294,6 +262,28 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [],
                 "nci_thesaurus_concept_id": "C3263",
                 "name": "Neoplasm by Site",
@@ -308,32 +298,138 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Disease by Site"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C3262"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "infiltrating cancer",
-                    "invasive cancer",
-                    "Infiltrating Malignant Neoplasm"
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
                 ],
-                "nci_thesaurus_concept_id": "C8505",
-                "name": "Invasive Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305"
+                    "C2916",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma of the Breast",
+                    "Adenocarcinoma of Breast",
+                    "Mammary adenocarcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C5214",
+                "name": "Breast Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2852",
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma of the Breast",
+                    "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9335",
+                    "C2916"
                 ]
             },
             {
@@ -357,95 +453,20 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Adenocarcinoma, NOS",
-                    "ADENOCARCINOMA, MALIGNANT"
+                    "Malignant Tumor of Breast",
+                    "Malignant Breast Tumor",
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
                 ],
-                "nci_thesaurus_concept_id": "C2852",
-                "name": "Adenocarcinoma",
+                "nci_thesaurus_concept_id": "C9335",
+                "name": "Malignant Breast Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C7132"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C9480",
-                "name": "Invasive Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C8505"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Adenocarcinoma of the Breast",
-                    "Mammary adenocarcinoma",
-                    "Adenocarcinoma of Breast"
-                ],
-                "nci_thesaurus_concept_id": "C5214",
-                "name": "Breast Adenocarcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4872",
-                    "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
-                    "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
-                    "Cancer of Breast",
-                    "Breast Carcinoma",
-                    "Cancer of the Breast"
-                ],
-                "nci_thesaurus_concept_id": "C4872",
-                "name": "Breast Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C9335"
+                    "C9305",
+                    "C2910"
                 ]
             },
             {
@@ -464,37 +485,15 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
-                    "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
-                ],
-                "nci_thesaurus_concept_id": "C9335",
-                "name": "Malignant Breast Neoplasm",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Glandular Cell Epithelium Neoplasm",
-                    "Glandular Cell Epithelial Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7132",
-                "name": "Glandular Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709"
+                    "C8505",
+                    "C2916"
                 ]
             },
             {
@@ -503,13 +502,13 @@
                 "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -526,10 +525,10 @@
                 "synonyms": [
                     "Ductal Carcinoma of the Breast",
                     "Ductal Carcinoma of Breast",
-                    "Duct Carcinoma",
-                    "Ductal Carcinoma",
                     "Ductal Adenocarcinoma",
+                    "Duct Carcinoma",
                     "Duct Adenocarcinoma",
+                    "Ductal Carcinoma",
                     "Breast Ductal Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C4017",
@@ -545,16 +544,17 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "invasive cancer",
+                    "infiltrating cancer",
+                    "Infiltrating Malignant Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C8505",
+                "name": "Invasive Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C9305"
                 ]
             }
         ],
@@ -565,6 +565,27 @@
         "arms": [
             {
                 "interventions": [
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Nuclear Magnetic Resonance Imaging",
+                            "MR Imaging",
+                            "NMRI",
+                            "MRI",
+                            "Magnetic Resonance Imaging Scan",
+                            "NMR Imaging",
+                            "MRI Scan",
+                            "Medical Imaging, Magnetic Resonance / Nuclear Magnetic Resonance"
+                        ],
+                        "nci_thesaurus_concept_id": "C16809",
+                        "name": "Magnetic Resonance Imaging",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16502"
+                        ]
+                    },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
@@ -582,62 +603,47 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Modifier"
+                            "Metal Chelator",
+                            "Chelators",
+                            "Metal Chelating Agent",
+                            "Metal Chelant"
                         ],
-                        "nci_thesaurus_concept_id": "C1932",
-                        "name": "Chemical Modifier",
+                        "nci_thesaurus_concept_id": "C360",
+                        "name": "Chelating Agent",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Contrast",
-                            "Contrast Drugs",
-                            "Contrast Medium"
-                        ],
-                        "nci_thesaurus_concept_id": "C390",
-                        "name": "Contrast Agent",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C1966"
+                            "C1932"
                         ]
                     },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Gadolinium Coordination Complex",
-                            "Gadolinium-Chelant Complex",
-                            "Gadolinium-based Contrast Agent"
+                            "Fine Needle Biopsy",
+                            "Aspirate, Fine Needle",
+                            "FNA",
+                            "Fine Needle Aspiration"
                         ],
-                        "nci_thesaurus_concept_id": "C62358",
-                        "name": "Gadolinium-Chelate",
-                        "description": "A coordination complex consisting of a gadolinium ion bound to a hexadentate organic chelating agent such as diethylenetriaminepentaacetic acid. Chelates of gadolinium are frequently utilized as magnetic resonance imaging (MRI) contrast agents and can be used to track nanoparticle-mediated drug delivery. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Other",
+                        "nci_thesaurus_concept_id": "C15361",
+                        "name": "Fine-Needle Aspiration",
+                        "description": null,
+                        "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C390",
-                            "C360"
+                            "C15190"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Industrial Additive"
-                        ],
-                        "nci_thesaurus_concept_id": "C45678",
-                        "name": "Industrial Aid",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
-                        "type": "Other",
+                        "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C1908"
+                            "C43431"
                         ]
                     },
                     {
@@ -664,40 +670,119 @@
                         "parents": []
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "MRI",
-                            "MR Imaging",
-                            "Magnetic Resonance Imaging Scan",
-                            "NMRI",
-                            "Nuclear Magnetic Resonance Imaging",
-                            "MRI Scan",
-                            "NMR Imaging",
-                            "Medical Imaging, Magnetic Resonance / Nuclear Magnetic Resonance"
-                        ],
-                        "nci_thesaurus_concept_id": "C16809",
-                        "name": "Magnetic Resonance Imaging",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16502"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Diagnostic Technique",
-                            "Diagnostic Method",
-                            "Diagnostic Test"
+                            "Imaging",
+                            "Diagnostic Imaging Technique",
+                            "Imaging Procedures",
+                            "Medical Imaging"
                         ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
                             "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention",
+                            "Intervention Strategies",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C802",
+                        "name": "Reagent",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C45678"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Modifier"
+                        ],
+                        "nci_thesaurus_concept_id": "C1932",
+                        "name": "Chemical Modifier",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Contrast Drugs",
+                            "Contrast",
+                            "Contrast Medium"
+                        ],
+                        "nci_thesaurus_concept_id": "C390",
+                        "name": "Contrast Agent",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1966"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Gadolinium-based Contrast Agent",
+                            "Gadolinium Coordination Complex",
+                            "Gadolinium-Chelant Complex"
+                        ],
+                        "nci_thesaurus_concept_id": "C62358",
+                        "name": "Gadolinium-Chelate",
+                        "description": "A coordination complex consisting of a gadolinium ion bound to a hexadentate organic chelating agent such as diethylenetriaminepentaacetic acid. Chelates of gadolinium are frequently utilized as magnetic resonance imaging (MRI) contrast agents and can be used to track nanoparticle-mediated drug delivery. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C360",
+                            "C390"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Industrial Additive"
+                        ],
+                        "nci_thesaurus_concept_id": "C45678",
+                        "name": "Industrial Aid",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C1908"
                         ]
                     },
                     {
@@ -717,8 +802,24 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Aspiration Biopsy",
-                            "Puncture Biopsy"
+                            "Diagnostic Test",
+                            "Diagnostic Method",
+                            "Diagnostic Technique"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Puncture Biopsy",
+                            "Aspiration Biopsy"
                         ],
                         "nci_thesaurus_concept_id": "C15190",
                         "name": "Needle Biopsy",
@@ -727,107 +828,6 @@
                         "category": "other",
                         "parents": [
                             "C15189"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C802",
-                        "name": "Reagent",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C45678"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Fine Needle Biopsy",
-                            "Aspirate, Fine Needle",
-                            "FNA",
-                            "Fine Needle Aspiration"
-                        ],
-                        "nci_thesaurus_concept_id": "C15361",
-                        "name": "Fine-Needle Aspiration",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C15190"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Metal Chelant",
-                            "Chelators",
-                            "Metal Chelating Agent",
-                            "Metal Chelator"
-                        ],
-                        "nci_thesaurus_concept_id": "C360",
-                        "name": "Chelating Agent",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C1932"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Medical Imaging",
-                            "Diagnostic Imaging Technique",
-                            "Imaging",
-                            "Imaging Procedures"
-                        ],
-                        "nci_thesaurus_concept_id": "C17369",
-                        "name": "Imaging Technique",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
                         ]
                     }
                 ],
@@ -857,10 +857,11 @@
         ],
         "study_population_description": null,
         "sampling_method_code": null,
-        "minimum_target_accrual_number": 41,
+        "minimum_target_accrual_number": 72,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2018-12-11",
-        "record_verification_date": "2022-01-03",
+        "record_verification_date": "2023-02-06",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -873,6 +874,7 @@
             "allocation_code": "NA"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Breast"

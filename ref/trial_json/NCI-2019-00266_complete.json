@@ -161,7 +161,7 @@
         "nct_id": "NCT04001829",
         "biomarkers": [],
         "classification_code": null,
-        "current_trial_status_date": "2019-06-27",
+        "current_trial_status_date": "2022-04-07",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
@@ -231,8 +231,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIA Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIA Breast Cancer AJCC v8"
+                    "Anatomic Stage IIA Breast Cancer AJCC v8",
+                    "Anatomic Stage IIA Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139539",
                 "name": "Stage IIA Breast Cancer",
@@ -247,8 +247,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIB Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIB Breast Cancer AJCC v8"
+                    "Anatomic Stage IIB Breast Cancer AJCC v8",
+                    "Anatomic Stage IIB Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139540",
                 "name": "Stage IIB Breast Cancer",
@@ -279,8 +279,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8",
-                    "Anatomic Stage IIIA Breast Cancer AJCC v8"
+                    "Anatomic Stage IIIA Breast Cancer AJCC v8",
+                    "Anatomic Stage IIIA Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139542",
                 "name": "Stage IIIA Breast Cancer",
@@ -295,8 +295,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Anatomic Stage IIIB Breast Cancer AJCC v8",
-                    "Anatomic Stage IIIB Breast Carcinoma AJCC v8"
+                    "Anatomic Stage IIIB Breast Carcinoma AJCC v8",
+                    "Anatomic Stage IIIB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139543",
                 "name": "Stage IIIB Breast Cancer",
@@ -327,8 +327,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage I Breast Carcinoma AJCC v8",
-                    "Prognostic Stage I Breast Cancer AJCC v8"
+                    "Prognostic Stage I Breast Cancer AJCC v8",
+                    "Prognostic Stage I Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139556",
                 "name": "Stage I Breast Cancer",
@@ -359,8 +359,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IB Breast Cancer AJCC v8",
-                    "Prognostic Stage IB Breast Carcinoma AJCC v8"
+                    "Prognostic Stage IB Breast Carcinoma AJCC v8",
+                    "Prognostic Stage IB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139558",
                 "name": "Stage IB Breast Cancer",
@@ -407,8 +407,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IIB Breast Carcinoma AJCC v8",
-                    "Prognostic Stage IIB Breast Cancer AJCC v8"
+                    "Prognostic Stage IIB Breast Cancer AJCC v8",
+                    "Prognostic Stage IIB Breast Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139572",
                 "name": "Stage IIB Breast Cancer",
@@ -455,8 +455,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prognostic Stage IIIB Breast Cancer AJCC v8",
-                    "Prognostic Stage IIIB Breast Carcinoma AJCC v8"
+                    "Prognostic Stage IIIB Breast Carcinoma AJCC v8",
+                    "Prognostic Stage IIIB Breast Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C139584",
                 "name": "Stage IIIB Breast Cancer",
@@ -487,14 +487,14 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Invasive Carcinoma of Breast",
-                    "Invasive Carcinoma of the Breast",
                     "Infiltrating Breast Carcinoma",
+                    "Infiltrating Carcinoma of Breast",
                     "Invasive Mammary Carcinoma",
                     "Infiltrating Carcinoma of the Breast",
                     "Invasive Breast Carcinoma",
+                    "Invasive Carcinoma of the Breast",
                     "infiltrating breast cancer",
-                    "Infiltrating Carcinoma of Breast"
+                    "Invasive Carcinoma of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C9245",
                 "name": "Invasive Breast Cancer",
@@ -510,11 +510,27 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Tumor of Breast",
                     "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
                 ],
                 "nci_thesaurus_concept_id": "C9335",
                 "name": "Malignant Breast Neoplasm",
@@ -522,53 +538,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
+                    "C9305",
+                    "C2910"
                 ]
             },
             {
@@ -591,17 +562,35 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "infiltrating cancer",
-                    "invasive cancer",
-                    "Infiltrating Malignant Neoplasm"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C8505",
-                "name": "Invasive Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305"
+                    "C3262"
                 ]
             },
             {
@@ -624,30 +613,16 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C9480",
-                "name": "Invasive Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C8505"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
                     "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
+                    "Epithelial tumor, malignant",
                     "Carcinoma",
                     "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C2916",
                 "name": "Other Carcinoma",
@@ -655,8 +630,8 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
@@ -664,18 +639,18 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -688,55 +663,17 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
-                    "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
-                    "Cancer of Breast",
-                    "Breast Carcinoma",
-                    "Cancer of the Breast"
+                    "invasive cancer",
+                    "infiltrating cancer",
+                    "Infiltrating Malignant Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C4872",
-                "name": "Breast Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C9335"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
+                "nci_thesaurus_concept_id": "C8505",
+                "name": "Invasive Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C26709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
+                    "C9305"
                 ]
             },
             {
@@ -758,60 +695,92 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C26709",
+                    "C3263"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8505",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Carcinoma of the Breast",
+                    "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
+                ],
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9335",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
                     "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Breast Carcinoma by AJCC v8 Stage"
-                ],
-                "nci_thesaurus_concept_id": "C139532",
-                "name": "Breast Cancer by AJCC v8 Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C4872"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Breast Cancer by AJCC v8 Prognostic Stage Group",
-                    "Breast Carcinoma by AJCC v8 Prognostic Stage"
-                ],
-                "nci_thesaurus_concept_id": "C139554",
-                "name": "Breast Cancer by AJCC v8 Prognostic Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C139532"
                 ]
             },
             {
@@ -828,11 +797,42 @@
                 "parents": [
                     "C139532"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Prognostic Stage",
+                    "Breast Cancer by AJCC v8 Prognostic Stage Group"
+                ],
+                "nci_thesaurus_concept_id": "C139554",
+                "name": "Breast Cancer by AJCC v8 Prognostic Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C139532"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v8 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C139532",
+                "name": "Breast Cancer by AJCC v8 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
             }
         ],
         "_primary_purpose_sort_order": 1,
         "protocol_id": "EAZ171",
-        "active_sites_count": 429,
+        "active_sites_count": 2,
         "lead_org_cancer_center": null,
         "arms": [
             {
@@ -840,16 +840,246 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antineoplastics",
+                            "Therapy, Supportive",
+                            "Symptom Management",
+                            "Supportive Therapy"
+                        ],
+                        "nci_thesaurus_concept_id": "C15747",
+                        "name": "Supportive Care",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1913",
+                        "name": "Drug or Chemical by Structure",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Interventions",
+                            "Therapy",
+                            "Therapeutic Technique",
+                            "Therapeutic Method",
+                            "TX"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antimitotic Drugs",
+                            "Mitotic Inhibitor Agents",
+                            "Antimitotics",
+                            "Mitosis Inhibitor Agents",
+                            "Mitotic Inhibitors",
+                            "Mitosis Inhibitor Drugs",
+                            "Mitotic Inhibitor Drugs",
+                            "Mitosis Inhibitors",
+                            "Microtubular Function Inhibitors"
+                        ],
+                        "nci_thesaurus_concept_id": "C273",
+                        "name": "Antimitotic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Terpenes"
+                        ],
+                        "nci_thesaurus_concept_id": "C860",
+                        "name": "Terpene Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C552",
+                            "C616"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxanes"
+                        ],
+                        "nci_thesaurus_concept_id": "C1490",
+                        "name": "Taxane Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C860"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C718",
+                        "name": "Organic Chemical",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1913"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmaceutical Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmacological Substance",
+                            "Agent",
+                            "Drug",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxane-Site Binding Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C67437",
+                        "name": "Taxane-Pocket Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C25974"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cytotoxic Antineoplastic Agent",
+                            "Cytotoxic Chemotherapy Agent",
+                            "Antineoplastic Cytotoxic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Anzatax",
+                            "Asotax",
+                            "Praxel",
+                            "Bristaxol",
+                            "Taxol Konzentrat"
+                        ],
+                        "nci_thesaurus_concept_id": "C1411",
+                        "name": "Paclitaxel",
+                        "description": "A compound extracted from the Pacific yew tree Taxus brevifolia with antineoplastic activity.  Paclitaxel binds to tubulin and inhibits the disassembly of microtubules, thereby resulting in the inhibition of cell division.  This agent also induces apoptosis by binding to and blocking the function of the apoptosis inhibitor protein Bcl-2 (B-cell Leukemia 2). Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C67437",
+                            "C1490"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Quality of Life Assessment"
+                        ],
+                        "nci_thesaurus_concept_id": "C15584",
+                        "name": "Quality-of-Life Assessment",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C15747"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
                             "Anti-Cancer Agents",
                             "Antiproliferative Drugs",
-                            "Anti-Tumor Drugs",
-                            "Tumor-Specific Treatment Agents",
                             "Anti-Tumor Agents",
+                            "Antineoplastic Drugs",
+                            "Tumor-Specific Treatment Agents",
+                            "Antineoplastics",
                             "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Cancer Drug",
-                            "Antineoplastic Drugs"
+                            "Cancer Drug"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
@@ -887,43 +1117,15 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Symptom Management",
-                            "Therapy, Supportive",
-                            "Supportive Therapy"
+                            "Lipids"
                         ],
-                        "nci_thesaurus_concept_id": "C15747",
-                        "name": "Supportive Care",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C718",
-                        "name": "Organic Chemical",
+                        "nci_thesaurus_concept_id": "C616",
+                        "name": "Lipid",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1913"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Taxanes"
-                        ],
-                        "nci_thesaurus_concept_id": "C1490",
-                        "name": "Taxane Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C860"
+                            "C718"
                         ]
                     },
                     {
@@ -942,62 +1144,16 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Mitotic Inhibitors",
-                            "Mitosis Inhibitor Drugs",
-                            "Antimitotic Drugs",
-                            "Mitosis Inhibitor Agents",
-                            "Microtubular Function Inhibitors",
-                            "Mitotic Inhibitor Drugs",
-                            "Mitosis Inhibitors",
-                            "Mitotic Inhibitor Agents",
-                            "Antimitotics"
+                            "Tubulin Binding Agents"
                         ],
-                        "nci_thesaurus_concept_id": "C273",
-                        "name": "Antimitotic Agent",
+                        "nci_thesaurus_concept_id": "C25974",
+                        "name": "Tubulin Binding Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1913",
-                        "name": "Drug or Chemical by Structure",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
+                            "C273"
                         ]
                     },
                     {
@@ -1013,153 +1169,13 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Praxel",
-                            "Anzatax",
-                            "Asotax",
-                            "Bristaxol",
-                            "Taxol Konzentrat"
-                        ],
-                        "nci_thesaurus_concept_id": "C1411",
-                        "name": "Paclitaxel",
-                        "description": "A compound extracted from the Pacific yew tree Taxus brevifolia with antineoplastic activity.  Paclitaxel binds to tubulin and inhibits the disassembly of microtubules, thereby resulting in the inhibition of cell division.  This agent also induces apoptosis by binding to and blocking the function of the apoptosis inhibitor protein Bcl-2 (B-cell Leukemia 2). Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C1490",
-                            "C67437"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Quality of Life Assessment"
-                        ],
-                        "nci_thesaurus_concept_id": "C15584",
-                        "name": "Quality-of-Life Assessment",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C15747"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Taxane-Site Binding Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C67437",
-                        "name": "Taxane-Pocket Binding Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C25974"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Terpenes"
-                        ],
-                        "nci_thesaurus_concept_id": "C860",
-                        "name": "Terpene Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C552",
-                            "C616"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "TX",
-                            "Therapeutic Interventions",
-                            "Therapy",
-                            "Therapeutic Technique"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Tubulin Binding Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C25974",
-                        "name": "Tubulin Binding Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C273"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Drug Substance",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Lipids"
-                        ],
-                        "nci_thesaurus_concept_id": "C616",
-                        "name": "Lipid",
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
-                        "parents": [
-                            "C718"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
                         "parents": []
                     }
                 ],
@@ -1172,16 +1188,244 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Antineoplastics",
+                            "Therapy, Supportive",
+                            "Symptom Management",
+                            "Supportive Therapy"
+                        ],
+                        "nci_thesaurus_concept_id": "C15747",
+                        "name": "Supportive Care",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1913",
+                        "name": "Drug or Chemical by Structure",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Interventions",
+                            "Therapy",
+                            "Therapeutic Technique",
+                            "Therapeutic Method",
+                            "TX"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antimitotic Drugs",
+                            "Mitotic Inhibitor Agents",
+                            "Antimitotics",
+                            "Mitosis Inhibitor Agents",
+                            "Mitotic Inhibitors",
+                            "Mitosis Inhibitor Drugs",
+                            "Mitotic Inhibitor Drugs",
+                            "Mitosis Inhibitors",
+                            "Microtubular Function Inhibitors"
+                        ],
+                        "nci_thesaurus_concept_id": "C273",
+                        "name": "Antimitotic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Terpenes"
+                        ],
+                        "nci_thesaurus_concept_id": "C860",
+                        "name": "Terpene Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C552",
+                            "C616"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxanes"
+                        ],
+                        "nci_thesaurus_concept_id": "C1490",
+                        "name": "Taxane Compound",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C860"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C718",
+                        "name": "Organic Chemical",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1913"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Docecad",
+                            "Taxotere",
+                            "Taxotere Injection Concentrate"
+                        ],
+                        "nci_thesaurus_concept_id": "C1526",
+                        "name": "Docetaxel",
+                        "description": "A semi-synthetic, second-generation taxane derived from a compound found in the European yew tree Taxus baccata.  Docetaxel displays potent and broad antineoplastic properties; it binds to and stabilizes tubulin, thereby inhibiting microtubule disassembly which results in cell- cycle arrest at the G2/M phase and cell death.  This agent also inhibits pro-angiogenic factors such as vascular endothelial growth factor (VEGF) and displays immunomodulatory and pro-inflammatory properties by inducing various mediators of the inflammatory response.  Docetaxel has been studied for use as a radiation-sensitizing agent. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1490",
+                            "C67437"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmaceutical Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmacological Substance",
+                            "Agent",
+                            "Drug",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Taxane-Site Binding Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C67437",
+                        "name": "Taxane-Pocket Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C25974"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cytotoxic Antineoplastic Agent",
+                            "Cytotoxic Chemotherapy Agent",
+                            "Antineoplastic Cytotoxic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Intervention Strategies",
+                            "Intervention",
+                            "Procedure"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Quality of Life Assessment"
+                        ],
+                        "nci_thesaurus_concept_id": "C15584",
+                        "name": "Quality-of-Life Assessment",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C15747"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-Tumor Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
                             "Anti-Cancer Agents",
                             "Antiproliferative Drugs",
-                            "Anti-Tumor Drugs",
-                            "Tumor-Specific Treatment Agents",
                             "Anti-Tumor Agents",
+                            "Antineoplastic Drugs",
+                            "Tumor-Specific Treatment Agents",
+                            "Antineoplastics",
                             "Antiproliferative Agents",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Cancer Drug",
-                            "Antineoplastic Drugs"
+                            "Cancer Drug"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
@@ -1219,60 +1463,15 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Symptom Management",
-                            "Therapy, Supportive",
-                            "Supportive Therapy"
+                            "Lipids"
                         ],
-                        "nci_thesaurus_concept_id": "C15747",
-                        "name": "Supportive Care",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Docecad",
-                            "Taxotere Injection Concentrate",
-                            "Taxotere"
-                        ],
-                        "nci_thesaurus_concept_id": "C1526",
-                        "name": "Docetaxel",
-                        "description": "A semi-synthetic, second-generation taxane derived from a compound found in the European yew tree Taxus baccata.  Docetaxel displays potent and broad antineoplastic properties; it binds to and stabilizes tubulin, thereby inhibiting microtubule disassembly which results in cell- cycle arrest at the G2/M phase and cell death.  This agent also inhibits pro-angiogenic factors such as vascular endothelial growth factor (VEGF) and displays immunomodulatory and pro-inflammatory properties by inducing various mediators of the inflammatory response.  Docetaxel has been studied for use as a radiation-sensitizing agent. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C67437",
-                            "C1490"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C718",
-                        "name": "Organic Chemical",
+                        "nci_thesaurus_concept_id": "C616",
+                        "name": "Lipid",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1913"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Taxanes"
-                        ],
-                        "nci_thesaurus_concept_id": "C1490",
-                        "name": "Taxane Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C860"
+                            "C718"
                         ]
                     },
                     {
@@ -1291,62 +1490,16 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Mitotic Inhibitors",
-                            "Mitosis Inhibitor Drugs",
-                            "Antimitotic Drugs",
-                            "Mitosis Inhibitor Agents",
-                            "Microtubular Function Inhibitors",
-                            "Mitotic Inhibitor Drugs",
-                            "Mitosis Inhibitors",
-                            "Mitotic Inhibitor Agents",
-                            "Antimitotics"
+                            "Tubulin Binding Agents"
                         ],
-                        "nci_thesaurus_concept_id": "C273",
-                        "name": "Antimitotic Agent",
+                        "nci_thesaurus_concept_id": "C25974",
+                        "name": "Tubulin Binding Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1913",
-                        "name": "Drug or Chemical by Structure",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
+                            "C273"
                         ]
                     },
                     {
@@ -1362,134 +1515,13 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Quality of Life Assessment"
-                        ],
-                        "nci_thesaurus_concept_id": "C15584",
-                        "name": "Quality-of-Life Assessment",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C15747"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Taxane-Site Binding Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C67437",
-                        "name": "Taxane-Pocket Binding Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C25974"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Terpenes"
-                        ],
-                        "nci_thesaurus_concept_id": "C860",
-                        "name": "Terpene Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C552",
-                            "C616"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Method",
-                            "TX",
-                            "Therapeutic Interventions",
-                            "Therapy",
-                            "Therapeutic Technique"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Tubulin Binding Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C25974",
-                        "name": "Tubulin Binding Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C273"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Drug",
-                            "Pharmaceuticals",
-                            "Drug Substance",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Pharmacologic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Lipids"
-                        ],
-                        "nci_thesaurus_concept_id": "C616",
-                        "name": "Lipid",
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
-                        "parents": [
-                            "C718"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
                         "parents": []
                     }
                 ],
@@ -1504,6 +1536,10 @@
         "brief_summary": "This phase II trial studies how well docetaxel or paclitaxel work in reducing chemotherapy-induced peripheral neuropathy in African American patients with stages I-III breast cancer. Drugs used in chemotherapy, such as docetaxel and paclitaxel, work in different ways to stop the growth of tumor cells, either by killing the cells, by stopping them from dividing, or by stopping them from spreading. It is not yet known whether giving docetaxel or paclitaxel may work better than other methods in reducing chemotherapy-induced peripheral neuropathy in patients with breast cancer.",
         "brief_title": "Docetaxel or Paclitaxel in Reducing Chemotherapy-Induced Peripheral Neuropathy in African American Patients with Stage I-III Breast Cancer",
         "status_history": [
+            {
+                "status_date": "2022-04-07T00:00:00.000003",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
             {
                 "status_date": "2019-06-27T00:00:00.000002",
                 "status": "ACTIVE"
@@ -1520,11 +1556,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 240,
-        "_current_trial_status_sort_order": 0,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
         "start_date": "2019-06-27",
-        "record_verification_date": "2021-05-18",
+        "record_verification_date": "2022-04-08",
         "ctep_id": "EAZ171",
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -1535,6 +1572,9 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [
+            "NCORP"
+        ],
         "nci_funded": "Direct",
         "anatomic_sites": [
             "Breast"

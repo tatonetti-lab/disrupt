@@ -37,3 +37,20 @@ con.execute(''' create table trial_stage (fk_id integer, stage text) ''')
 con.execute(''' create table trial_receptor (fk_id integer, receptor_type text, receptor_value text ) ''')
 
 con.execute(''' create table trial_treatment (fk_id integer, treatment_type text, treatment_name text ) ''')
+
+con.execute(''' create table staging_rank (stage_name varchar(100), ranking integer) ''')
+ 
+con.execute(''' insert into staging_rank values  ('Stage 0',1) ''')
+con.execute(''' insert into staging_rank values  ('Stage I',2) ''')
+con.execute(''' insert into staging_rank values  ('Stage IA',3) ''')
+con.execute(''' insert into staging_rank values  ('Stage IB',4) ''')
+con.execute(''' insert into staging_rank values  ('Stage II',5) ''')
+con.execute(''' insert into staging_rank values  ('Stage IIA',6) ''')
+con.execute(''' insert into staging_rank values  ('Stage IIB',7) ''')
+con.execute(''' insert into staging_rank values  ('Stage III',8) ''')
+con.execute(''' insert into staging_rank values  ('Stage IIIA',9) ''')
+con.execute(''' insert into staging_rank values  ('Stage IIIB',10) ''')
+con.execute(''' insert into staging_rank values  ('Stage IIIC',11) ''')
+con.execute(''' insert into staging_rank values  ('Stage IV',12) ''')
+
+con.commit()

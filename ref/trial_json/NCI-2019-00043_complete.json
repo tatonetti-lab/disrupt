@@ -131,7 +131,7 @@
         "nct_id": "NCT03034096",
         "biomarkers": [],
         "classification_code": null,
-        "current_trial_status_date": "2017-01-01",
+        "current_trial_status_date": "2022-10-13",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
@@ -139,13 +139,13 @@
                 "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -160,14 +160,14 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
                     "Neoplasm",
-                    "Neoplastic Disease",
+                    "Neoplasms, NOS",
                     "tumor",
-                    "Neoplasm, NOS"
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
                 "nci_thesaurus_concept_id": "C3262",
                 "name": "Other Neoplasm",
@@ -196,18 +196,18 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -219,21 +219,64 @@
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "967670-3",
-        "active_sites_count": 2,
+        "active_sites_count": 0,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C78272",
-                        "name": "Agent Affecting Nervous System",
+                        "synonyms": [
+                            "Anesthestic Drugs",
+                            "Anesthetics",
+                            "Anesthetic Drugs",
+                            "Anaesthetic Agent",
+                            "Anesthetic",
+                            "Anaesthetics"
+                        ],
+                        "nci_thesaurus_concept_id": "C245",
+                        "name": "Anesthetic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
+                            "C78272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Aerrane",
+                            "Isoflo",
+                            "Forane"
+                        ],
+                        "nci_thesaurus_concept_id": "C65978",
+                        "name": "Isoflurane",
+                        "description": "A fluorinated ether with general anesthetic and muscle relaxant activities. Although the exact mechanism of action has not been established, inhaled isoflurane, appears to act on the lipid matrix of the neuronal cell membrane, which results in disruption of neuronal transmission. This agent enhances the release of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA), thereby increasing the activity of the inhibitory neurotransmitter on synaptic transmission. Isoflurane may inhibit glutamatergic excitatory transmission by increasing glutamate re-uptake and it may potentiate glycine receptor activity, which decreases motor function. In addition, isoflurane may alter certain pro- and anti-inflammatory cytokines, including interleukin-6 and -10 (IL-6, IL-10), possibly through the activation of the nuclear factor kappa B (NF-KB) pathway, which may affect immune responses during surgery. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Hea",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C245"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Drug",
+                            "Drug Substance",
+                            "Pharmacological Substance",
+                            "Pharmaceuticals",
+                            "Agent",
+                            "Pharmaceutical Agent",
+                            "Pharmacologic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
                         ]
                     },
                     {
@@ -267,45 +310,6 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anesthetic",
-                            "Anaesthetic Agent",
-                            "Anesthestic Drugs",
-                            "Anaesthetics",
-                            "Anesthetics",
-                            "Anesthetic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C245",
-                        "name": "Anesthetic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C78272"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Pharmaceuticals",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Drug Substance",
-                            "Pharmaceutical Agent",
-                            "Drug",
-                            "Pharmacologic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
                             "Minor Tranquilizer"
                         ],
                         "nci_thesaurus_concept_id": "C29756",
@@ -316,16 +320,6 @@
                         "parents": [
                             "C78272"
                         ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -342,19 +336,25 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Forane",
-                            "Isoflo",
-                            "Aerrane"
-                        ],
-                        "nci_thesaurus_concept_id": "C65978",
-                        "name": "Isoflurane",
-                        "description": "A fluorinated ether with general anesthetic and muscle relaxant activities. Although the exact mechanism of action has not been established, inhaled isoflurane, appears to act on the lipid matrix of the neuronal cell membrane, which results in disruption of neuronal transmission. This agent enhances the release of the inhibitory neurotransmitter gamma-aminobutyric acid (GABA), thereby increasing the activity of the inhibitory neurotransmitter on synaptic transmission. Isoflurane may inhibit glutamatergic excitatory transmission by increasing glutamate re-uptake and it may potentiate glycine receptor activity, which decreases motor function. In addition, isoflurane may alter certain pro- and anti-inflammatory cytokines, including interleukin-6 and -10 (IL-6, IL-10), possibly through the activation of the nuclear factor kappa B (NF-KB) pathway, which may affect immune responses during surgery. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Hea",
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
                         "type": "Drug",
-                        "category": "agent",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C78272",
+                        "name": "Agent Affecting Nervous System",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
                         "parents": [
-                            "C245"
+                            "C1909"
                         ]
                     }
                 ],
@@ -382,6 +382,10 @@
         "brief_title": "General Anesthetics in CAncer REsection Surgery (GA-CARES) Trial",
         "status_history": [
             {
+                "status_date": "2022-10-13T00:00:00.000001",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
                 "status_date": "2017-01-01T00:00:00",
                 "status": "ACTIVE"
             }
@@ -389,11 +393,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 1800,
-        "_current_trial_status_sort_order": 0,
-        "start_date": "2017-01-01",
-        "record_verification_date": "2021-11-01",
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
+        "start_date": "2017-01-31",
+        "record_verification_date": "2022-10-01",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -404,6 +409,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": "GA-CARES",
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"
@@ -412,7 +418,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Externally Peer Reviewed",
-        "completion_date": "2023-12-01",
+        "completion_date": "2024-12-01",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

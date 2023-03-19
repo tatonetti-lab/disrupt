@@ -285,6 +285,29 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
+                    "Positive",
+                    "positive test result"
+                ],
+                "nci_thesaurus_concept_id": "C35682",
+                "name": "Positive Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C77140",
+                    "C3367",
+                    "C36292"
+                ],
+                "parents": [
+                    "C36292"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
                     "Diagnostic Test Result",
                     "Test Result"
                 ],
@@ -294,12 +317,57 @@
                     "Finding"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3367"
                 ],
                 "parents": [
                     "C3367"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Observable Entity"
+                ],
+                "nci_thesaurus_concept_id": "C3367",
+                "name": "Finding",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Lab Value",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -322,99 +390,28 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C3367",
                     "C36292",
-                    "C35682",
-                    "C77140"
+                    "C77140",
+                    "C3367",
+                    "C35682"
                 ],
                 "parents": [
                     "C35682"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "LAB_RESULT",
-                    "Lab Findings",
-                    "Laboratory Finding",
-                    "Laboratory Report",
-                    "Labs",
-                    "Test Result",
-                    "test_result"
-                ],
-                "nci_thesaurus_concept_id": "C36292",
-                "name": "Laboratory Test Result",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C77140"
-                ],
-                "parents": [
-                    "C77140"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Positive",
-                    "positive test result"
-                ],
-                "nci_thesaurus_concept_id": "C35682",
-                "name": "Positive Laboratory Test Result",
-                "semantic_types": [
-                    "Laboratory or Test Result"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3367",
-                    "C36292",
-                    "C77140"
-                ],
-                "parents": [
-                    "C36292"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Observable Entity"
-                ],
-                "nci_thesaurus_concept_id": "C3367",
-                "name": "Finding",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
             }
         ],
         "classification_code": null,
-        "current_trial_status_date": "2020-04-15",
+        "current_trial_status_date": "2022-03-02",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "COVID-19 Symptomatic Laboratory-Confirmed",
-                    "Symptomatic SARS-CoV-2 Infection Laboratory-Confirmed"
+                    "Symptomatic SARS-CoV-2 Infection Laboratory-Confirmed",
+                    "Symptomatic",
+                    "COVID-19 Symptomatic Laboratory-Confirmed"
                 ],
                 "nci_thesaurus_concept_id": "C171549",
                 "name": "Symptomatic COVID-19 Infection Laboratory-Confirmed",
@@ -429,18 +426,29 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Non-Neoplastic Disease",
-                    "NON-NEOPLASTIC",
-                    "Non-neoplastic condition, NOS",
-                    "Non-neoplastic disorder, NOS"
+                    "SARS-CoV2 Disease",
+                    "SARS-CoV-2 Disease",
+                    "SARS-2 Infection",
+                    "SARS-CoV-2 Infection",
+                    "Acute COVID-19",
+                    "SARS Coronavirus 2 Infection",
+                    "Severe Acute Respiratory Syndrome Coronavirus 2 Infection",
+                    "COVID-19 Virus Infection",
+                    "Acute COVID-19 case",
+                    "COVID-19 Infection",
+                    "Human Coronavirus 2019 Infection",
+                    "HCoV-19 Infection",
+                    "SARS-CoV2 Infection",
+                    "SARS2 Infection",
+                    "2019-nCoV Infection"
                 ],
-                "nci_thesaurus_concept_id": "C53529",
-                "name": "Non-Neoplastic Disorder",
+                "nci_thesaurus_concept_id": "C171133",
+                "name": "COVID-19",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C181757"
                 ]
             },
             {
@@ -460,27 +468,36 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Inflammatory Disease",
-                    "Inflammatory_Disease"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
-                "nci_thesaurus_concept_id": "C93210",
-                "name": "Inflammatory Disorder",
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
-                "parents": [
-                    "C53547"
-                ]
+                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Infection",
                     "Infectious Disease",
-                    "Infectious Diseases and Manifestations",
+                    "Infection",
                     "Clinical Infection",
                     "Unspecified Infection",
+                    "Infectious Diseases and Manifestations",
                     "ID",
                     "Infectious"
                 ],
@@ -491,6 +508,41 @@
                 ],
                 "parents": [
                     "C93210"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Other viral infection",
+                    "Viral Disorder",
+                    "Viral Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3439",
+                "name": "Viral Infection",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C26726"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Non-Neoplastic Disease",
+                    "Non-neoplastic disorder, NOS",
+                    "NON-NEOPLASTIC",
+                    "Non-neoplastic condition, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C53529",
+                "name": "Non-Neoplastic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
                 ]
             },
             {
@@ -512,74 +564,22 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "COVID-19 Infection",
-                    "SARS-CoV2 Infection",
-                    "Human Coronavirus 2019 Infection",
-                    "SARS-2 Infection",
-                    "SARS-CoV2 Disease",
-                    "Severe Acute Respiratory Syndrome Coronavirus 2 Infection",
-                    "SARS-CoV-2 Disease",
-                    "HCoV-19 Infection",
-                    "SARS-CoV-2 Infection",
-                    "SARS2 Infection",
-                    "SARS Coronavirus 2 Infection",
-                    "2019-nCoV Infection",
-                    "COVID-19 Virus Infection"
+                    "Inflammatory Disease",
+                    "Inflammatory_Disease"
                 ],
-                "nci_thesaurus_concept_id": "C171133",
-                "name": "COVID-19",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C181757"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Viral Disease",
-                    "Viral Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C3439",
-                "name": "Viral Infection",
+                "nci_thesaurus_concept_id": "C93210",
+                "name": "Inflammatory Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C26726"
+                    "C53547"
                 ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "AAAS9881",
-        "active_sites_count": 1,
+        "active_sites_count": 0,
         "lead_org_cancer_center": "Herbert Irving Comprehensive Cancer Center",
         "arms": [
             {
@@ -587,15 +587,50 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Anti-cancer Antibody",
+                            "Antineoplastic Ab",
+                            "Anticancer Antibody"
+                        ],
+                        "nci_thesaurus_concept_id": "C129822",
+                        "name": "Antineoplastic Antibody",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C129821"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Biologicals",
+                            "Biological Products",
+                            "Immunologic, Immunochemical",
+                            "Biopharmaceuticals",
+                            "Biologics",
+                            "Immunologics"
+                        ],
+                        "nci_thesaurus_concept_id": "C307",
+                        "name": "Biological Agent",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Cancer Drug",
+                            "Anti-Tumor Drugs",
+                            "Antiproliferative Agents",
+                            "Antiproliferative Drugs",
                             "Anti-Cancer Agents",
                             "Anti-Tumor Agents",
                             "Antineoplastics",
-                            "Antiproliferative Agents",
                             "Antineoplastic Drugs",
-                            "Anti-Tumor Drugs",
-                            "Cancer Drug",
-                            "Antiproliferative Drugs",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
                             "Tumor-Specific Treatment Agents"
                         ],
                         "nci_thesaurus_concept_id": "C274",
@@ -610,45 +645,26 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Biological Products",
-                            "Immunologics",
-                            "Immunologic, Immunochemical",
-                            "Biologicals",
-                            "Biologics",
-                            "Biopharmaceuticals"
+                            "Monoclonal Antibodies",
+                            "Monoclonal Antibody"
                         ],
-                        "nci_thesaurus_concept_id": "C307",
-                        "name": "Biological Agent",
+                        "nci_thesaurus_concept_id": "C20401",
+                        "name": "Monoclonal Antibody Therapy",
                         "description": null,
                         "type": "Biological/Vaccine",
                         "category": "agent category",
                         "parents": [
-                            "C1909"
+                            "C308",
+                            "C307"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anticancer Antibody",
-                            "Anti-cancer Antibody",
-                            "Antineoplastic Ab"
-                        ],
-                        "nci_thesaurus_concept_id": "C129822",
-                        "name": "Antineoplastic Antibody",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": [
-                            "C129821"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-cancer Biological Agent",
+                            "Anticancer Biological",
                             "Antineoplastic Biological",
-                            "Antineoplastic Biotherapeutic",
-                            "Anticancer Biological"
+                            "Anti-cancer Biological Agent",
+                            "Antineoplastic Biotherapeutic"
                         ],
                         "nci_thesaurus_concept_id": "C129821",
                         "name": "Antineoplastic Biological Agent",
@@ -662,37 +678,14 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C124227",
-                        "name": "Anti-IL-8 Monoclonal Antibody BMS-986253",
-                        "description": null,
-                        "type": "Biological/Vaccine",
-                        "category": "agent",
-                        "parents": [
-                            "C20401",
-                            "C129822"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Pharmacological Substance",
-                            "Drug Substance",
                             "Pharmaceuticals",
-                            "Pharmacologic Agent",
-                            "Drug",
                             "Agent",
-                            "Pharmaceutical Agent"
+                            "Drug Substance",
+                            "Drug",
+                            "Pharmacologic Agent",
+                            "Pharmaceutical Agent",
+                            "Pharmacological Substance"
                         ],
                         "nci_thesaurus_concept_id": "C1909",
                         "name": "Pharmacologic Substance",
@@ -705,19 +698,29 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Biological/Vaccine",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Immunomodulating Agent",
+                            "Biological Response Modifier",
+                            "Biomodulators",
                             "Immunotherapy Agent",
-                            "Immunomodulatory Agent",
-                            "Immune Regulators",
+                            "Immune Mediators",
+                            "Immunomodulators",
+                            "Immunopotentiators",
                             "Immune Modulators",
                             "BRM",
                             "Immunotherapeutic Agent",
-                            "Immunopotentiators",
-                            "Immune Mediators",
-                            "Biomodulators",
-                            "Biological Response Modifier",
-                            "Immunomodulators"
+                            "Immunomodulating Agent",
+                            "Immune Regulators",
+                            "Immunomodulatory Agent"
                         ],
                         "nci_thesaurus_concept_id": "C308",
                         "name": "Immunotherapy",
@@ -729,19 +732,16 @@
                         ]
                     },
                     {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Monoclonal Antibody",
-                            "Monoclonal Antibodies"
-                        ],
-                        "nci_thesaurus_concept_id": "C20401",
-                        "name": "Monoclonal Antibody Therapy",
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C124227",
+                        "name": "Anti-IL-8 Monoclonal Antibody BMS-986253",
                         "description": null,
                         "type": "Biological/Vaccine",
-                        "category": "agent category",
+                        "category": "agent",
                         "parents": [
-                            "C307",
-                            "C308"
+                            "C129822",
+                            "C20401"
                         ]
                     }
                 ],
@@ -751,28 +751,6 @@
             },
             {
                 "interventions": [
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [],
@@ -787,17 +765,14 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Healthcare",
-                            "Health Care Activity"
-                        ],
-                        "nci_thesaurus_concept_id": "C16205",
-                        "name": "Healthcare Activity",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C16203"
+                            "C43431"
                         ]
                     },
                     {
@@ -813,6 +788,31 @@
                         "parents": [
                             "C16205"
                         ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Health Care Activity",
+                            "Healthcare"
+                        ],
+                        "nci_thesaurus_concept_id": "C16205",
+                        "name": "Healthcare Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
                     }
                 ],
                 "name": "Arm II (standard of care)",
@@ -827,6 +827,10 @@
         "brief_title": "Anti-IL-8 (BMS-986253) for Hospitalized Patients with COVID-19",
         "status_history": [
             {
+                "status_date": "2022-03-02T00:00:00.000001",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
                 "status_date": "2020-04-15T00:00:00",
                 "status": "ACTIVE"
             }
@@ -834,11 +838,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 138,
-        "_current_trial_status_sort_order": 0,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
         "start_date": "2020-04-15",
-        "record_verification_date": "2021-10-07",
+        "record_verification_date": "2022-04-29",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -849,6 +854,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

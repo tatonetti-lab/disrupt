@@ -248,25 +248,6 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
                     "STK",
                     "Serine/Threonine Kinase Gene",
                     "Serine/Threonine-Protein Kinase Gene"
@@ -277,13 +258,12 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C25870",
+                    "C25871",
                     "C25872",
                     "C21281",
-                    "C25871"
+                    "C16612",
+                    "C25870"
                 ],
                 "parents": [
                     "C25872"
@@ -292,44 +272,20 @@
             },
             {
                 "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
+                "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "BRAF Codon 485 Mutation",
-                    "BRAF L485 Mutation",
-                    "BRAF L485X",
-                    "BRAF Leu485Xxx",
-                    "BRAF NP_004324.2:p.Leu485Xxx",
-                    "BRAF p.L485X",
-                    "BRAF p.Leu485Xxx",
-                    "NP_004324.2:p.L485X",
-                    "NP_004324.2:p.Leu485Xxx",
-                    "Serine/Threonine-Protein Kinase B-raf L485X",
-                    "Serine/Threonine-Protein Kinase B-raf Leu485Xxx"
+                    "Genes"
                 ],
-                "nci_thesaurus_concept_id": "C177447",
-                "name": "BRAF NP_004324.2:p.L485X",
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
                 "semantic_types": [
-                    "Cell or Molecular Dysfunction"
+                    "Gene or Genome"
                 ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C25873",
-                    "C3910",
-                    "C16612",
-                    "C97926",
-                    "C25870",
-                    "C97928",
-                    "C25871",
-                    "C18363",
-                    "C21281",
-                    "C98307"
+                "type": [
+                    "branch"
                 ],
-                "parents": [
-                    "C18363",
-                    "C98307"
-                ],
+                "ancestors": [],
+                "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
             {
@@ -347,409 +303,13 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
                     "C25873",
-                    "C25870",
+                    "C25871",
                     "C25872",
                     "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C25873"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "RAF1",
-                    "v-RAF-1 Murine Leukemia Viral Oncogene Homolog 1Gene"
-                ],
-                "nci_thesaurus_concept_id": "C18338",
-                "name": "RAF1 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
                     "C16612",
-                    "C25870",
-                    "C25872",
-                    "C25871",
-                    "C25873",
-                    "C21281"
-                ],
-                "parents": [
-                    "C25873"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "VARIANT_TYPE",
-                    "molecular consequence",
-                    "molecular_consequence"
-                ],
-                "nci_thesaurus_concept_id": "C97926",
-                "name": "Molecular Sequence Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3910"
-                ],
-                "parents": [
-                    "C3910"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Chromosomal, Gene, or Protein Abnormality",
-                    "Cytogenetic or Molecular Genetic Abnormality",
-                    "Genetic Abnormality",
-                    "MOLECULAR_ABNORMALITY",
-                    "Molecular Alteration"
-                ],
-                "nci_thesaurus_concept_id": "C3910",
-                "name": "Molecular Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "AA_MUTATION",
-                    "Gene Product Sequence Variant",
-                    "amino acid change",
-                    "amino_acid_change"
-                ],
-                "nci_thesaurus_concept_id": "C97928",
-                "name": "Gene Product Sequence Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C97926"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Anomaly",
-                    "DNA Sequence Variation",
-                    "Genetic Abnormality",
-                    "Genetic Alteration",
-                    "Genetic Anomaly",
-                    "Molecular Abnormality",
-                    "Molecular Anomaly",
-                    "Molecular Genetic Abnormality",
-                    "Molecular Genetic Anomaly"
-                ],
-                "nci_thesaurus_concept_id": "C36391",
-                "name": "Molecular Genetic Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C97926"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Non-Codon 600 B-RAF Mutation",
-                    "Non-Codon 600 B-RAF1 Mutation",
-                    "Non-Codon 600 BRAF Gene Mutation",
-                    "Non-Codon 600 BRAF Mutation",
-                    "Non-Codon 600 BRAF1 Mutation",
-                    "Non-V600 BRAF Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C173449",
-                "name": "Non-V600 BRAF Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C25873",
-                    "C97927",
-                    "C3910",
-                    "C97926",
-                    "C16612",
-                    "C36391",
-                    "C25870",
-                    "C21281",
-                    "C25871",
-                    "C18338",
-                    "C18354",
-                    "C136425",
-                    "C18363",
-                    "C36327",
-                    "C40430"
-                ],
-                "parents": [
-                    "C18363",
-                    "C40430"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25871",
-                "name": "Phosphotransferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
                     "C25870"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "MAPKK1 Gene Mutation",
-                    "MEK1 Gene Mutation",
-                    "MKK1 Gene Mutation",
-                    "Mitogen-Activated Protein Kinase Kinase 1 Gene Mutation",
-                    "PRKMK1 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C147062",
-                "name": "MAP2K1 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C21222",
-                    "C36391",
-                    "C25871",
-                    "C136422",
-                    "C97926",
-                    "C21281",
-                    "C16612",
-                    "C25872",
-                    "C20921",
-                    "C25870",
-                    "C97927",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C136422",
-                    "C21222",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25872",
-                "name": "Kinase Family Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C25871"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "MAP2K2",
-                    "Mitogen-Activated Protein Kinase Kinase 2 Gene"
-                ],
-                "nci_thesaurus_concept_id": "C106606",
-                "name": "MAP2K2 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25871",
-                    "C21281",
-                    "C16612",
-                    "C25872",
-                    "C20921",
-                    "C25870"
-                ],
-                "parents": [
-                    "C20921",
-                    "C25872"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36327",
-                "name": "Gene Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21281",
-                "name": "Enzyme Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "BRAF Codon 469 Mutation",
-                    "BRAF G469 Mutation",
-                    "BRAF G469X",
-                    "BRAF Gly469Xxx",
-                    "BRAF NP_004324.2:p.Gly469Xxx",
-                    "BRAF p.G469X",
-                    "BRAF p.Gly469Xxx",
-                    "NP_004324.2:p.G469X",
-                    "NP_004324.2:p.Gly469Xxx",
-                    "Serine/Threonine-Protein Kinase B-raf G469X",
-                    "Serine/Threonine-Protein Kinase B-raf Gly469Xxx"
-                ],
-                "nci_thesaurus_concept_id": "C177443",
-                "name": "BRAF NP_004324.2:p.G469X",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C25873",
-                    "C3910",
-                    "C16612",
-                    "C97926",
-                    "C25870",
-                    "C97928",
-                    "C25871",
-                    "C18363",
-                    "C21281",
-                    "C98307"
-                ],
-                "parents": [
-                    "C18363",
-                    "C98307"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "A-Raf Proto-Oncogene, Serine/Threonine Kinase Gene",
-                    "ARAF"
-                ],
-                "nci_thesaurus_concept_id": "C18354",
-                "name": "ARAF Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C25870",
-                    "C25872",
-                    "C25871",
-                    "C25873",
-                    "C21281"
                 ],
                 "parents": [
                     "C25873"
@@ -771,18 +331,67 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25871",
-                    "C21281",
-                    "C16612",
                     "C25872",
+                    "C25870",
+                    "C16612",
+                    "C25871",
                     "C20921",
-                    "C25870"
+                    "C21281"
                 ],
                 "parents": [
                     "C20921",
                     "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "AA_MUTATION",
+                    "Gene Product Sequence Variant",
+                    "amino acid change",
+                    "amino_acid_change"
+                ],
+                "nci_thesaurus_concept_id": "C97928",
+                "name": "Gene Product Sequence Variation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C3910"
+                ],
+                "parents": [
+                    "C97926"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GENETIC_SEQ",
+                    "Gene Mutant",
+                    "Gene Mutation",
+                    "Gene Variation",
+                    "alternative"
+                ],
+                "nci_thesaurus_concept_id": "C97927",
+                "name": "Gene Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3910",
+                    "C97926",
+                    "C36391"
+                ],
+                "parents": [
+                    "C36391"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -799,12 +408,169 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C16612"
                 ],
                 "parents": [
                     "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "MAPKK2 Gene Mutation",
+                    "MEK2 Gene Mutation",
+                    "MKK2 Gene Mutation",
+                    "Mitogen-Activated Protein Kinase Kinase 2 Gene Mutation",
+                    "PRKMK2 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C153256",
+                "name": "MAP2K2 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25872",
+                    "C97927",
+                    "C25870",
+                    "C36391",
+                    "C16612",
+                    "C106606",
+                    "C25871",
+                    "C3910",
+                    "C20921",
+                    "C136422",
+                    "C21281",
+                    "C97926",
+                    "C36327"
+                ],
+                "parents": [
+                    "C106606",
+                    "C136422",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "VARIANT_TYPE",
+                    "molecular consequence",
+                    "molecular_consequence"
+                ],
+                "nci_thesaurus_concept_id": "C97926",
+                "name": "Molecular Sequence Variation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3910"
+                ],
+                "parents": [
+                    "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "A-Raf Proto-Oncogene, Serine/Threonine Kinase Gene",
+                    "ARAF"
+                ],
+                "nci_thesaurus_concept_id": "C18354",
+                "name": "ARAF Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C21281",
+                    "C16612",
+                    "C25871",
+                    "C25873",
+                    "C25872",
+                    "C25870"
+                ],
+                "parents": [
+                    "C25873"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Mutant RAF",
+                    "Mutant RAF Family Gene",
+                    "RAF Family Mutation",
+                    "RAF Mutation",
+                    "Rapidly Accelerated Fibrosarcoma Family Gene Mutation",
+                    "Rapidly Accelerated Fibrosarcoma Family Kinase Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C136425",
+                "name": "RAF Family Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C18354",
+                    "C21281",
+                    "C25871",
+                    "C97926",
+                    "C18363",
+                    "C36327",
+                    "C16612",
+                    "C36391",
+                    "C3910",
+                    "C25873",
+                    "C18338",
+                    "C25872",
+                    "C25870"
+                ],
+                "parents": [
+                    "C18338",
+                    "C18354",
+                    "C18363",
+                    "C36327"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Serine/Threonine-Protein Kinase B-raf Protein Variant"
+                ],
+                "nci_thesaurus_concept_id": "C98307",
+                "name": "BRAF Protein Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C25871",
+                    "C3910",
+                    "C25873",
+                    "C97926",
+                    "C97928",
+                    "C21281",
+                    "C25872",
+                    "C25870",
+                    "C18363"
+                ],
+                "parents": [
+                    "C18363",
+                    "C97928"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -824,97 +590,27 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C18363",
-                    "C36391",
-                    "C25870",
-                    "C16612",
                     "C18354",
-                    "C97927",
-                    "C18338",
-                    "C97926",
-                    "C3910",
-                    "C25872",
+                    "C21281",
                     "C25871",
-                    "C136425",
-                    "C25873",
+                    "C97926",
+                    "C18363",
                     "C36327",
-                    "C21281"
+                    "C16612",
+                    "C136425",
+                    "C36391",
+                    "C3910",
+                    "C25873",
+                    "C18338",
+                    "C97927",
+                    "C25870",
+                    "C25872"
                 ],
                 "parents": [
                     "C136425",
                     "C18363",
                     "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "MAP2K Family Gene Mutation",
-                    "MAPKK Family Gene Mutation",
-                    "MEK Family Mutation",
-                    "MEK Mutation",
-                    "Mitogen-Activated Protein Kinase Kinase Family Gene Mutation",
-                    "Mutant MEK",
-                    "Mutant MEK Family Gene"
-                ],
-                "nci_thesaurus_concept_id": "C136422",
-                "name": "MEK Family Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C97926",
-                    "C36391",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36327"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Mutant RAF",
-                    "Mutant RAF Family Gene",
-                    "RAF Family Mutation",
-                    "RAF Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C136425",
-                "name": "RAF Family Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C18363",
-                    "C36391",
-                    "C25870",
-                    "C16612",
-                    "C18354",
-                    "C18338",
-                    "C97926",
-                    "C3910",
-                    "C25872",
-                    "C25871",
-                    "C25873",
-                    "C36327",
-                    "C21281"
-                ],
-                "parents": [
-                    "C18338",
-                    "C18354",
-                    "C18363",
-                    "C36327"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -940,23 +636,130 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C25872",
-                    "C25873",
-                    "C3910",
-                    "C16612",
-                    "C97926",
-                    "C25870",
-                    "C97928",
-                    "C25871",
                     "C18363",
+                    "C25870",
+                    "C98307",
+                    "C16612",
+                    "C97928",
                     "C21281",
-                    "C98307"
+                    "C25871",
+                    "C97926",
+                    "C25873",
+                    "C3910"
                 ],
                 "parents": [
                     "C18363",
                     "C98307"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25872",
+                "name": "Kinase Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25871",
+                    "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25871"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "BRAF Codon 469 Mutation",
+                    "BRAF G469 Mutation",
+                    "BRAF G469X",
+                    "BRAF Gly469Xxx",
+                    "BRAF NP_004324.2:p.Gly469Xxx",
+                    "BRAF p.G469X",
+                    "BRAF p.Gly469Xxx",
+                    "NP_004324.2:p.G469X",
+                    "NP_004324.2:p.Gly469Xxx",
+                    "Serine/Threonine-Protein Kinase B-raf G469X",
+                    "Serine/Threonine-Protein Kinase B-raf Gly469Xxx"
+                ],
+                "nci_thesaurus_concept_id": "C177443",
+                "name": "BRAF NP_004324.2:p.G469X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25872",
+                    "C18363",
+                    "C25870",
+                    "C98307",
+                    "C16612",
+                    "C97928",
+                    "C21281",
+                    "C25871",
+                    "C97926",
+                    "C25873",
+                    "C3910"
+                ],
+                "parents": [
+                    "C18363",
+                    "C98307"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "RAF1",
+                    "v-RAF-1 Murine Leukemia Viral Oncogene Homolog 1Gene"
+                ],
+                "nci_thesaurus_concept_id": "C18338",
+                "name": "RAF1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C21281",
+                    "C16612",
+                    "C25871",
+                    "C25873",
+                    "C25872",
+                    "C25870"
+                ],
+                "parents": [
+                    "C25873"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -970,44 +773,12 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C21281"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Serine/Threonine-Protein Kinase B-raf Protein Variant"
-                ],
-                "nci_thesaurus_concept_id": "C98307",
-                "name": "BRAF Protein Variant",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C25873",
-                    "C3910",
-                    "C18363",
-                    "C25870",
-                    "C97926",
-                    "C25872",
-                    "C25871",
                     "C21281",
-                    "C97928"
+                    "C16612"
                 ],
                 "parents": [
-                    "C18363",
-                    "C97928"
+                    "C21281"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1015,37 +786,117 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TRIAL",
                 "synonyms": [
-                    "MAPKK2 Gene Mutation",
-                    "MEK2 Gene Mutation",
-                    "MKK2 Gene Mutation",
-                    "Mitogen-Activated Protein Kinase Kinase 2 Gene Mutation",
-                    "PRKMK2 Gene Mutation"
+                    "Non-Codon 600 B-RAF Mutation",
+                    "Non-Codon 600 B-RAF1 Mutation",
+                    "Non-Codon 600 BRAF Gene Mutation",
+                    "Non-Codon 600 BRAF Mutation",
+                    "Non-Codon 600 BRAF1 Mutation",
+                    "Non-V600 BRAF Mutation"
                 ],
-                "nci_thesaurus_concept_id": "C153256",
-                "name": "MAP2K2 Gene Mutation",
+                "nci_thesaurus_concept_id": "C173449",
+                "name": "Non-V600 BRAF Gene Mutation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C36391",
-                    "C25871",
-                    "C136422",
-                    "C97926",
-                    "C106606",
-                    "C21281",
-                    "C16612",
                     "C25872",
-                    "C20921",
-                    "C25870",
                     "C97927",
-                    "C36327",
+                    "C25870",
+                    "C18354",
+                    "C36391",
+                    "C16612",
+                    "C25871",
+                    "C136425",
+                    "C3910",
+                    "C18363",
+                    "C25873",
+                    "C21281",
+                    "C18338",
+                    "C97926",
+                    "C40430",
+                    "C36327"
+                ],
+                "parents": [
+                    "C18363",
+                    "C40430"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36327",
+                "name": "Gene Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36391",
                     "C3910"
                 ],
                 "parents": [
-                    "C106606",
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "MAPKK1 Gene Mutation",
+                    "MEK1 Gene Mutation",
+                    "MKK1 Gene Mutation",
+                    "Mitogen-Activated Protein Kinase Kinase 1 Gene Mutation",
+                    "PRKMK1 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C147062",
+                "name": "MAP2K1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25872",
+                    "C97927",
+                    "C25870",
+                    "C36391",
+                    "C21222",
+                    "C16612",
+                    "C25871",
+                    "C3910",
+                    "C20921",
                     "C136422",
+                    "C21281",
+                    "C97926",
+                    "C36327"
+                ],
+                "parents": [
+                    "C136422",
+                    "C21222",
                     "C97927"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
@@ -1054,41 +905,163 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "GENETIC_SEQ",
-                    "Gene Mutant",
-                    "Gene Mutation",
-                    "Gene Variation",
-                    "alternative"
+                    "Anomaly",
+                    "DNA Sequence Variation",
+                    "Genetic Abnormality",
+                    "Genetic Alteration",
+                    "Genetic Anomaly",
+                    "Molecular Abnormality",
+                    "Molecular Anomaly",
+                    "Molecular Genetic Abnormality",
+                    "Molecular Genetic Anomaly"
                 ],
-                "nci_thesaurus_concept_id": "C97927",
-                "name": "Gene Variant",
+                "nci_thesaurus_concept_id": "C36391",
+                "name": "Molecular Genetic Variation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C36391",
                     "C97926",
                     "C3910"
                 ],
                 "parents": [
-                    "C36391"
+                    "C97926"
                 ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "BRAF Codon 485 Mutation",
+                    "BRAF L485 Mutation",
+                    "BRAF L485X",
+                    "BRAF Leu485Xxx",
+                    "BRAF NP_004324.2:p.Leu485Xxx",
+                    "BRAF p.L485X",
+                    "BRAF p.Leu485Xxx",
+                    "NP_004324.2:p.L485X",
+                    "NP_004324.2:p.Leu485Xxx",
+                    "Serine/Threonine-Protein Kinase B-raf L485X",
+                    "Serine/Threonine-Protein Kinase B-raf Leu485Xxx"
+                ],
+                "nci_thesaurus_concept_id": "C177447",
+                "name": "BRAF NP_004324.2:p.L485X",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25872",
+                    "C18363",
+                    "C25870",
+                    "C98307",
+                    "C16612",
+                    "C97928",
+                    "C21281",
+                    "C25871",
+                    "C97926",
+                    "C25873",
+                    "C3910"
+                ],
+                "parents": [
+                    "C18363",
+                    "C98307"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "MAP2K Family Gene Mutation",
+                    "MAPKK Family Gene Mutation",
+                    "MEK Family Mutation",
+                    "MEK Mutation",
+                    "Mitogen-Activated Protein Kinase Kinase Family Gene Mutation",
+                    "Mutant MEK",
+                    "Mutant MEK Family Gene"
+                ],
+                "nci_thesaurus_concept_id": "C136422",
+                "name": "MEK Family Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36391",
+                    "C36327",
+                    "C3910"
+                ],
+                "parents": [
+                    "C36327"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "MAP2K2",
+                    "Mitogen-Activated Protein Kinase Kinase 2 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C106606",
+                "name": "MAP2K2 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C25872",
+                    "C25870",
+                    "C16612",
+                    "C25871",
+                    "C20921",
+                    "C21281"
+                ],
+                "parents": [
+                    "C20921",
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal, Gene, or Protein Abnormality",
+                    "Cytogenetic or Molecular Genetic Abnormality",
+                    "Genetic Abnormality",
+                    "MOLECULAR_ABNORMALITY",
+                    "Molecular Alteration"
+                ],
+                "nci_thesaurus_concept_id": "C3910",
+                "name": "Molecular Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
         ],
         "classification_code": null,
-        "current_trial_status_date": "2020-11-03",
+        "current_trial_status_date": "2022-12-20",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -1154,8 +1127,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IIIB Colorectal Cancer AJCC v8",
-                    "Stage IIIB Colorectal Carcinoma AJCC v8"
+                    "Stage IIIB Colorectal Carcinoma AJCC v8",
+                    "Stage IIIB Colorectal Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C134193",
                 "name": "Stage IIIB Colorectal (Colon or Rectal) Cancer",
@@ -1186,8 +1159,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IV Colorectal Cancer AJCC v8",
-                    "Stage IV Colorectal Carcinoma AJCC v8"
+                    "Stage IV Colorectal Carcinoma AJCC v8",
+                    "Stage IV Colorectal Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C134195",
                 "name": "Stage IV Colorectal (Colon or Rectal) Cancer",
@@ -1218,8 +1191,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IVB Colorectal Cancer AJCC v8",
-                    "Stage IVB Colorectal Carcinoma AJCC v8"
+                    "Stage IVB Colorectal Carcinoma AJCC v8",
+                    "Stage IVB Colorectal Cancer AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C134197",
                 "name": "Stage IVB Colorectal (Colon or Rectal) Cancer",
@@ -1256,8 +1229,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C133839",
                     "C162780",
+                    "C133839",
                     "C2955"
                 ]
             },
@@ -1271,99 +1244,17 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C153358",
-                    "C156096"
+                    "C156096",
+                    "C153358"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
-                ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, secondary",
                     "Secondary Tumor",
-                    "Tumor, secondary"
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
                 ],
                 "nci_thesaurus_concept_id": "C36255",
                 "name": "Secondary Neoplasm",
@@ -1373,6 +1264,100 @@
                 "parents": [
                     "C7062"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Solid Neoplasm",
+                    "Solid Tumour",
+                    "Solid tumor, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -1394,6 +1379,47 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Metastatic Cancer"
                 ],
                 "nci_thesaurus_concept_id": "C36263",
@@ -1408,10 +1434,13 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
@@ -1421,87 +1450,20 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C9292",
-                "name": "Solid Tumor",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Colorectal cancer, NOS",
-                    "Carcinoma of Large Intestine",
-                    "Cancer of Large Bowel",
-                    "CRC",
-                    "Colorectal Cancer",
-                    "Cancer of Large Intestine",
-                    "Carcinoma of Large Bowel",
-                    "Carcinoma of the Large Bowel",
-                    "Large Bowel Cancer",
-                    "Large Intestine Cancer",
-                    "Large Intestine Carcinoma",
-                    "Carcinoma of the Large Intestine",
-                    "Large Bowel Carcinoma",
-                    "Cancer of the Large Bowel",
-                    "Cancer of the Large Intestine",
-                    "Colorectal Carcinoma"
+                    "Locally Advanced Cancer",
+                    "regional cancer",
+                    "Locally advanced",
+                    "Locally Metastatic Malignant Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C2955",
-                "name": "Colorectal (Colon or Rectal) Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C4978",
-                    "C96963"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C153358",
-                "name": "Locally Advanced Digestive System Carcinoma",
+                "nci_thesaurus_concept_id": "C8524",
+                "name": "Locally Advanced Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C133839",
-                    "C179181",
-                    "C148130"
+                    "C36263"
                 ]
             },
             {
@@ -1515,75 +1477,6 @@
                 ],
                 "parents": [
                     "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Intestinal Tumors",
-                    "Tumor of Intestines",
-                    "Intestinal Tumor",
-                    "Tumor of the Intestines",
-                    "Intestinal Neoplasms",
-                    "Neoplasm of Intestines",
-                    "Neoplasm of the Intestines"
-                ],
-                "nci_thesaurus_concept_id": "C3141",
-                "name": "Intestinal Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3052",
-                    "C26801"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C162780",
-                "name": "Metastatic Malignant Colorectal Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4978",
-                    "C162255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C179181",
-                "name": "Locally Advanced Malignant Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8524",
-                    "C162255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Malignant Gastrointestinal System Neoplasm",
-                    "Gastrointestinal cancer, NOS",
-                    "Gastrointestinal System Cancer",
-                    "Malignant Digestive System Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C4890",
-                "name": "Malignant Gastrointestinal Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C3052"
                 ]
             },
             {
@@ -1607,24 +1500,43 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Large Intestine Tumor",
-                    "Neoplasm of Large Bowel",
-                    "Colorectal Tumor",
-                    "Neoplasm of the Large Bowel",
-                    "Tumor of Large Bowel",
-                    "Large Intestinal Neoplasm",
-                    "Large Bowel Neoplasm",
-                    "Large Intestine Neoplasm",
-                    "Large Bowel Tumor",
-                    "Tumor of the Large Bowel"
+                    "Malignant Neoplasm of the Large Bowel",
+                    "Malignant Neoplasm of the Large Intestine",
+                    "Malignant Tumor of the Large Bowel",
+                    "Malignant Tumor of the Large Intestine",
+                    "Malignant Tumor of Large Intestine",
+                    "Malignant Large Bowel Neoplasm",
+                    "Malignant Neoplasm of Large Bowel",
+                    "Malignant Neoplasm of Large Intestine",
+                    "Malignant Tumor of Large Bowel",
+                    "Malignant Colorectal Tumor",
+                    "Malignant Large Intestine Neoplasm",
+                    "Malignant Large Intestine Tumor",
+                    "Malignant Large Bowel Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C2956",
-                "name": "Colorectal Neoplasm",
+                "nci_thesaurus_concept_id": "C4978",
+                "name": "Malignant Colorectal Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3141"
+                    "C4572",
+                    "C2956"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C153358",
+                "name": "Locally Advanced Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C148130",
+                    "C179181",
+                    "C133839"
                 ]
             },
             {
@@ -1644,15 +1556,91 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
+                    "Tumor of the Digestive System",
+                    "Digestive System Tumor",
+                    "Digestive Neoplasm",
+                    "Gastrointestinal Neoplasm",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the GI System",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Tumor of GI System",
+                    "GI Neoplasm",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the GI System",
+                    "Neoplasm of GI System",
+                    "GI System Tumor",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of Gastrointestinal System",
+                    "GI System Neoplasm",
+                    "Neoplasm of Digestive System",
+                    "Tumor of Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Digestive Tumor",
+                    "GI Tumor",
+                    "Gastrointestinal System Neoplasm",
+                    "Gastrointestinal System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Large Intestine Neoplasm",
+                    "Large Intestine Tumor",
+                    "Neoplasm of Large Bowel",
+                    "Tumor of the Large Bowel",
+                    "Large Bowel Tumor",
+                    "Neoplasm of the Large Bowel",
+                    "Large Bowel Neoplasm",
+                    "Large Intestinal Neoplasm",
+                    "Colorectal Tumor",
+                    "Tumor of Large Bowel"
+                ],
+                "nci_thesaurus_concept_id": "C2956",
+                "name": "Colorectal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3141"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162780",
+                "name": "Metastatic Malignant Colorectal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4978",
+                    "C162255"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
+                    "Epithelial tumor, malignant",
                     "Carcinoma",
                     "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C2916",
                 "name": "Other Carcinoma",
@@ -1660,63 +1648,8 @@
                     "maintype"
                 ],
                 "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Locally Advanced Cancer",
-                    "Locally advanced",
-                    "regional cancer",
-                    "Locally Metastatic Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8524",
-                "name": "Locally Advanced Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C162255",
-                "name": "Metastatic Malignant Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4890",
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Gastrointestinal System Disorder",
-                    "Unspecified Gastrointestinal Problem",
-                    "Disorder of Digestive System",
-                    "stomach or intestinal disorder",
-                    "GI Disorder",
-                    "Gastrointestinal Disorder",
-                    "Digestive System Disease",
-                    "Gastrointestinal System Disease",
-                    "Digestive Disease"
-                ],
-                "nci_thesaurus_concept_id": "C2990",
-                "name": "Digestive System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27551"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
@@ -1737,27 +1670,25 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C179181",
+                "name": "Locally Advanced Malignant Digestive System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C8524",
+                    "C162255"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Metastatic Gastrointestinal Carcinoma",
-                    "Metastatic Gastrointestinal System Cancer",
                     "Metastatic Digestive System Carcinoma",
-                    "Metastatic Gastrointestinal System Carcinoma"
+                    "Metastatic Gastrointestinal System Carcinoma",
+                    "Metastatic Gastrointestinal Carcinoma",
+                    "Metastatic Gastrointestinal System Cancer"
                 ],
                 "nci_thesaurus_concept_id": "C133839",
                 "name": "Metastatic Digestive System Cancer",
@@ -1765,8 +1696,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C162255",
                     "C3482",
+                    "C162255",
                     "C96963"
                 ]
             },
@@ -1774,21 +1705,140 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Intestinal Neoplasms, Malignant",
-                    "Intestinal Tumors, Malignant",
-                    "Malignant Intestinal Tumor",
-                    "Malignant Intestine Tumor",
-                    "Malignant Neoplasm of Intestine",
-                    "Cancer of the Intestine",
-                    "Malignant Neoplasm of the Intestine",
-                    "Intestinal Cancer",
-                    "Cancer of Intestine",
-                    "Malignant Intestinal Neoplasms",
-                    "Malignant Tumor of Intestine",
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Disorder of Digestive System",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "stomach or intestinal disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27551"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Malignant Digestive System Neoplasm",
+                    "Gastrointestinal System Cancer",
+                    "Gastrointestinal cancer, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Large Intestine Carcinoma",
+                    "Carcinoma of the Large Intestine",
+                    "Colorectal Carcinoma",
+                    "Cancer of Large Intestine",
+                    "Carcinoma of the Large Bowel",
+                    "Large Bowel Carcinoma",
+                    "Cancer of the Large Intestine",
+                    "Carcinoma of Large Intestine",
+                    "Cancer of the Large Bowel",
+                    "CRC",
+                    "Colorectal Cancer",
+                    "Large Bowel Cancer",
+                    "Cancer of Large Bowel",
+                    "Carcinoma of Large Bowel",
+                    "Colorectal cancer, NOS",
+                    "Large Intestine Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C2955",
+                "name": "Colorectal (Colon or Rectal) Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C4978",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Gastrointestinal System Carcinoma",
+                    "Carcinoma of the Gastrointestinal System"
+                ],
+                "nci_thesaurus_concept_id": "C96963",
+                "name": "Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4968"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
                     "Bowel Cancer",
-                    "Malignant Tumor of the Intestine",
+                    "Cancer of Intestine",
+                    "Intestinal Neoplasms, Malignant",
+                    "Malignant Intestinal Tumor",
+                    "Intestinal Cancer",
                     "Malignant Intestinal Tumors",
-                    "Malignant Intestine Neoplasm"
+                    "Malignant Intestinal Neoplasms",
+                    "Malignant Neoplasm of Intestine",
+                    "Malignant Neoplasm of the Intestine",
+                    "Malignant Intestine Neoplasm",
+                    "Malignant Tumor of Intestine",
+                    "Intestinal Tumors, Malignant",
+                    "Malignant Tumor of the Intestine",
+                    "Malignant Intestine Tumor",
+                    "Cancer of the Intestine"
                 ],
                 "nci_thesaurus_concept_id": "C4572",
                 "name": "Malignant Intestinal Neoplasm",
@@ -1796,8 +1846,38 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C4890",
-                    "C3141"
+                    "C3141",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C162255",
+                "name": "Metastatic Malignant Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C36310"
                 ]
             },
             {
@@ -1818,138 +1898,83 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Malignant Tumor of Large Bowel",
-                    "Malignant Colorectal Tumor",
-                    "Malignant Neoplasm of the Large Intestine",
-                    "Malignant Neoplasm of the Large Bowel",
-                    "Malignant Tumor of the Large Intestine",
-                    "Malignant Neoplasm of Large Intestine",
-                    "Malignant Large Intestine Tumor",
-                    "Malignant Tumor of Large Intestine",
-                    "Malignant Large Intestine Neoplasm",
-                    "Malignant Tumor of the Large Bowel",
-                    "Malignant Neoplasm of Large Bowel",
-                    "Malignant Large Bowel Tumor",
-                    "Malignant Large Bowel Neoplasm"
+                    "Intestinal Tumor",
+                    "Tumor of the Intestines",
+                    "Intestinal Tumors",
+                    "Neoplasm of Intestines",
+                    "Intestinal Neoplasms",
+                    "Neoplasm of the Intestines",
+                    "Tumor of Intestines"
                 ],
-                "nci_thesaurus_concept_id": "C4978",
-                "name": "Malignant Colorectal Neoplasm",
+                "nci_thesaurus_concept_id": "C3141",
+                "name": "Intestinal Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2956",
-                    "C4572"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Carcinoma of the Gastrointestinal System",
-                    "Gastrointestinal System Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C96963",
-                "name": "Digestive System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C4890"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Tumor of GI System",
-                    "Tumor of Digestive System",
-                    "Digestive Tumor",
-                    "GI Neoplasm",
-                    "Neoplasm of the Gastrointestinal System",
-                    "Digestive System Tumor",
-                    "Gastrointestinal Tumor",
-                    "Neoplasm of the Digestive System",
-                    "Tumor of the Gastrointestinal System",
-                    "Neoplasm of Digestive System",
-                    "Tumor of the Digestive System",
-                    "Gastrointestinal System Tumor",
-                    "Gastrointestinal Neoplasm",
-                    "GI Tumor",
-                    "Tumor of Gastrointestinal System",
-                    "Gastrointestinal System Neoplasm",
-                    "Neoplasm of the GI System",
-                    "GI System Tumor",
-                    "GI System Neoplasm",
-                    "Neoplasm of Gastrointestinal System",
-                    "Tumor of the GI System",
-                    "Digestive Neoplasm",
-                    "Neoplasm of GI System"
-                ],
-                "nci_thesaurus_concept_id": "C3052",
-                "name": "Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36310",
-                "name": "Secondary Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C2916"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Carcinoma, metastatic, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3482",
-                "name": "Metastatic Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36310",
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
+                    "C26801",
+                    "C3052"
                 ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "BVD-523-ABC",
-        "active_sites_count": 13,
+        "active_sites_count": 6,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Pharmacologic Agent",
+                            "Drug Substance",
+                            "Pharmaceuticals",
+                            "Pharmaceutical Agent",
+                            "Agent",
+                            "Pharmacological Substance",
+                            "Drug"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Antagonist",
+                            "Enzyme Inhibitor Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antineoplastic Protein Antagonist",
+                            "Anti-cancer Protein Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C129824",
+                        "name": "Antineoplastic Protein Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C2189"
+                        ]
+                    },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
@@ -1960,6 +1985,108 @@
                         "category": "agent category",
                         "parents": [
                             "C1404"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C69145",
+                        "name": "Mitogen-Activated Protein Kinase Kinase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C163758",
+                            "C1404"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C104744",
+                        "name": "Ulixertinib",
+                        "description": "An orally available inhibitor of extracellular signal-regulated kinase (ERK) 1 and 2, with potential antineoplastic activity. Upon oral administration, BVD-523 inhibits both ERK 1 and 2, thereby preventing the activation of ERK-mediated signal transduction pathways. This results in the inhibition of ERK-dependent tumor cell proliferation and survival. The mitogen-activated protein kinase (MAPK)/ERK pathway is often upregulated in a variety of tumor cell types and plays a key role in tumor cell proliferation, differentiation and survival. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C129825",
+                            "C61074"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C155322",
+                        "name": "BRAF Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C2336"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1404",
+                        "name": "Protein Kinase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Targeted Agent",
+                            "Molecularly Targeted Therapy Agent",
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2189",
+                        "name": "Signal Transduction Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2336",
+                        "name": "Raf Kinase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C163758",
+                            "C61074"
                         ]
                     },
                     {
@@ -1979,173 +2106,20 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2189",
-                        "name": "Signal Transduction Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Molecularly Targeted Therapy Agent",
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent",
-                            "Targeted Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C163758",
-                        "name": "Targeted Therapy Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antineoplastic Protein Antagonist",
-                            "Anti-cancer Protein Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C129824",
-                        "name": "Antineoplastic Protein Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2189"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C69145",
-                        "name": "Mitogen-Activated Protein Kinase Kinase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C1404",
-                            "C163758"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Agent",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Pharmacologic Agent",
-                            "Drug",
-                            "Pharmacological Substance",
-                            "Pharmaceuticals"
-                        ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1404",
-                        "name": "Protein Kinase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C471"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2336",
-                        "name": "Raf Kinase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C163758",
-                            "C61074"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-Tumor Agents",
                             "Antiproliferative Agents",
-                            "Antiproliferative Drugs",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Antineoplastic Drugs",
                             "Anti-Tumor Drugs",
-                            "Antineoplastics",
-                            "Cancer Drug",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
                             "Tumor-Specific Treatment Agents",
-                            "Anti-Cancer Agents"
+                            "Anti-Tumor Agents",
+                            "Cancer Drug",
+                            "Antineoplastics",
+                            "Anti-Cancer Agents",
+                            "Antineoplastic Drugs",
+                            "Antiproliferative Drugs"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C104744",
-                        "name": "Ulixertinib",
-                        "description": "An orally available inhibitor of extracellular signal-regulated kinase (ERK) 1 and 2, with potential antineoplastic activity. Upon oral administration, BVD-523 inhibits both ERK 1 and 2, thereby preventing the activation of ERK-mediated signal transduction pathways. This results in the inhibition of ERK-dependent tumor cell proliferation and survival. The mitogen-activated protein kinase (MAPK)/ERK pathway is often upregulated in a variety of tumor cell types and plays a key role in tumor cell proliferation, differentiation and survival. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C129825",
-                            "C61074"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C155322",
-                        "name": "BRAF Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C2336"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Drug"
-                        ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
@@ -2184,6 +2158,10 @@
         "brief_title": "Study of Ulixertinib for Patients With Advanced Malignancies Harboring MEK or Atypical BRAF Alterations",
         "status_history": [
             {
+                "status_date": "2022-12-20T00:00:00.000001",
+                "status": "CLOSED_TO_ACCRUAL"
+            },
+            {
                 "status_date": "2020-11-03T00:00:00",
                 "status": "ACTIVE"
             }
@@ -2191,11 +2169,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 528,
-        "_current_trial_status_sort_order": 0,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 7,
         "start_date": "2020-11-03",
-        "record_verification_date": "2022-02-01",
+        "record_verification_date": "2022-12-01",
         "ctep_id": null,
-        "current_trial_status": "Active",
+        "current_trial_status": "Closed to Accrual",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -2206,6 +2185,7 @@
             "allocation_code": "Non-Randomized Trial"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"

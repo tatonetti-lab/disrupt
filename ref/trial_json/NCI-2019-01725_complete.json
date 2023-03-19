@@ -16,7 +16,7 @@
                 {
                     "inclusion_indicator": true,
                     "display_order": 0,
-                    "description": "Male and female participants at least 18 years of age at the time of signing the informed consent form (ICF); a legally minor participant from Japan needs written parental consent."
+                    "description": "Male and female participants at least 18 years of age at the time of signing the informed consent form (ICF)."
                 },
                 {
                     "inclusion_indicator": true,
@@ -46,7 +46,7 @@
                 {
                     "inclusion_indicator": false,
                     "display_order": 6,
-                    "description": "Received prior anticancer systemic therapy for unresectable and/or metastatic disease (not including adjuvant/neo-adjuvant treatment completed at least 6 months prior to enrollment, and participants that have received treatment for locally advanced disease with trans-arterial chemoembolization or selective internal radiation therapy, if clear evidence of radiological progression is observed before enrollment)."
+                    "description": "Received prior anticancer systemic therapy for unresectable and/or metastatic disease (not including adjuvant/neo-adjuvant treatment completed at least 6 months prior to enrollment, and participants that have received treatment for locally advanced disease with trans-arterial chemoembolization or selective internal radiation therapy, if clear evidence of radiological progression is observed before enrollment, or enrolled as of Amendment 6 (or Amendment 5-JP2) and the participant received 1 cycle of gemcitabine plus cisplatin [the start of study drug {Cycle 1 Day 1} must be at least 14 days and \u2264 4 weeks {28 days} from the last dose of gemcitabine plus cisplatin])."
                 },
                 {
                     "inclusion_indicator": false,
@@ -223,76 +223,6 @@
         "biomarkers": [
             {
                 "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "BEK Gene Rearrangement",
-                    "CD332 Gene Rearrangement",
-                    "ECT1 Gene Rearrangement",
-                    "FGFR-2 Gene Rearrangement",
-                    "Fibroblast Growth Factor Receptor 2 Gene Rearrangement",
-                    "K-SAM Gene Rearrangement",
-                    "KGFR Gene Rearrangement",
-                    "Keratinocyte Growth Factor Receptor Gene Rearrangement",
-                    "Positive"
-                ],
-                "nci_thesaurus_concept_id": "C153241",
-                "name": "FGFR2 Gene Rearrangement",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36541",
-                    "C16612",
-                    "C25870",
-                    "C36391",
-                    "C25871",
-                    "C21295",
-                    "C97926",
-                    "C19931",
-                    "C2950",
-                    "C156028",
-                    "C3910",
-                    "C20103",
-                    "C36327",
-                    "C21281",
-                    "C25872",
-                    "C20719",
-                    "C153240",
-                    "C19930",
-                    "C133155"
-                ],
-                "parents": [
-                    "C153240",
-                    "C19930",
-                    "C19931",
-                    "C20719"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20103",
-                "name": "Receptor Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21295"
-                ],
-                "parents": [
-                    "C21295"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
                     "Aberrant Chromosome",
@@ -305,7 +235,8 @@
                     "Chromosome Alterations",
                     "Chromosome Anomalies",
                     "Cytogenetic Aberration",
-                    "Cytogenetic Analysis Abnormality Type"
+                    "Cytogenetic Analysis Abnormality Type",
+                    "Genomic Structural Variation"
                 ],
                 "nci_thesaurus_concept_id": "C2950",
                 "name": "Cytogenetic Abnormality",
@@ -313,7 +244,6 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C3910"
                 ],
@@ -325,29 +255,187 @@
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Abnormal Gene Rearrangement",
-                    "Abnormal Rearrangement",
-                    "Gene Rearrangement"
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21295",
+                "name": "Ligand Binding Protein Gene",
+                "semantic_types": [
+                    "Gene or Genome"
                 ],
-                "nci_thesaurus_concept_id": "C133155",
-                "name": "Gene Rearrangement Abnormality",
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20719",
+                "name": "Receptor Tyrosine Kinase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612",
+                    "C20103",
+                    "C25872",
+                    "C25871",
+                    "C25870",
+                    "C21295"
+                ],
+                "parents": [
+                    "C20103",
+                    "C25872"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "VARIANT_TYPE",
+                    "molecular consequence",
+                    "molecular_consequence"
+                ],
+                "nci_thesaurus_concept_id": "C97926",
+                "name": "Molecular Sequence Variation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C36391",
-                    "C2950",
-                    "C97926",
-                    "C3910",
-                    "C36541",
-                    "C36327"
+                    "C3910"
                 ],
                 "parents": [
+                    "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36327",
+                "name": "Gene Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36391",
+                    "C3910"
+                ],
+                "parents": [
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal, Gene, or Protein Abnormality",
+                    "Cytogenetic or Molecular Genetic Abnormality",
+                    "Genetic Abnormality",
+                    "MOLECULAR_ABNORMALITY",
+                    "Molecular Alteration"
+                ],
+                "nci_thesaurus_concept_id": "C3910",
+                "name": "Molecular Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "FGF Receptor Gene Family Rearrangement",
+                    "FGF Receptor Gene Rearrangement",
+                    "FGFR Family Gene Rearrangement",
+                    "FGFR Family Rearrangement",
+                    "Fibroblast Growth Factor Receptor Family Gene Rearrangement",
+                    "Fibroblast Growth Factor Receptor Gene Rearrangement"
+                ],
+                "nci_thesaurus_concept_id": "C153240",
+                "name": "FGFR Gene Rearrangement",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C20719",
+                    "C25872",
+                    "C25870",
+                    "C133155",
                     "C36327",
-                    "C36541"
+                    "C21281",
+                    "C36391",
+                    "C16612",
+                    "C20103",
+                    "C3910",
+                    "C19930",
+                    "C21295",
+                    "C156028",
+                    "C2950",
+                    "C25871",
+                    "C36541",
+                    "C97926"
+                ],
+                "parents": [
+                    "C156028",
+                    "C19930",
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25870",
+                "name": "Transferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612"
+                ],
+                "parents": [
+                    "C21281"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -371,127 +459,12 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C97926",
                     "C3910"
                 ],
                 "parents": [
                     "C97926"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "FGF Receptor Family Gene",
-                    "FGFR Family Gene"
-                ],
-                "nci_thesaurus_concept_id": "C19930",
-                "name": "Fibroblast Growth Factor Receptor Family Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C16612",
-                    "C20103",
-                    "C20719",
-                    "C21281",
-                    "C21295",
-                    "C25871",
-                    "C25870"
-                ],
-                "parents": [
-                    "C20719"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21295",
-                "name": "Ligand Binding Protein Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Chromosomal, Gene, or Protein Abnormality",
-                    "Cytogenetic or Molecular Genetic Abnormality",
-                    "Genetic Abnormality",
-                    "MOLECULAR_ABNORMALITY",
-                    "Molecular Alteration"
-                ],
-                "nci_thesaurus_concept_id": "C3910",
-                "name": "Molecular Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25871",
-                "name": "Phosphotransferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C25870"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25872",
-                "name": "Kinase Family Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25870",
-                    "C16612",
-                    "C21281",
-                    "C25871"
-                ],
-                "parents": [
-                    "C25871"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -511,13 +484,146 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C3910",
-                    "C2950"
+                    "C2950",
+                    "C3910"
                 ],
                 "parents": [
                     "C2950"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20103",
+                "name": "Receptor Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C21295"
+                ],
+                "parents": [
+                    "C21295"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25871",
+                "name": "Phosphotransferase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25870"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "BEK Gene Rearrangement",
+                    "CD332 Gene Rearrangement",
+                    "ECT1 Gene Rearrangement",
+                    "FGFR-2 Gene Rearrangement",
+                    "Fibroblast Growth Factor Receptor 2 Gene Rearrangement",
+                    "K-SAM Gene Rearrangement",
+                    "KGFR Gene Rearrangement",
+                    "Keratinocyte Growth Factor Receptor Gene Rearrangement",
+                    "Positive"
+                ],
+                "nci_thesaurus_concept_id": "C153241",
+                "name": "FGFR2 Gene Rearrangement",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C20103",
+                    "C36541",
+                    "C19931",
+                    "C20719",
+                    "C153240",
+                    "C25871",
+                    "C19930",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C16612",
+                    "C36391",
+                    "C156028",
+                    "C25872",
+                    "C25870",
+                    "C21295",
+                    "C21281",
+                    "C133155",
+                    "C2950"
+                ],
+                "parents": [
+                    "C153240",
+                    "C19930",
+                    "C19931",
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Abnormal Gene Rearrangement",
+                    "Abnormal Rearrangement",
+                    "Gene Rearrangement"
+                ],
+                "nci_thesaurus_concept_id": "C133155",
+                "name": "Gene Rearrangement Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C36327",
+                    "C2950",
+                    "C3910",
+                    "C36541",
+                    "C97926"
+                ],
+                "parents": [
+                    "C36327",
+                    "C36541"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -541,94 +647,26 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C16612",
-                    "C36327",
                     "C21281",
-                    "C2950",
-                    "C3910",
-                    "C21295",
-                    "C20719",
-                    "C25870",
-                    "C97926",
-                    "C25872",
-                    "C20103",
-                    "C25871",
+                    "C133155",
                     "C36391",
-                    "C133155",
-                    "C36541"
-                ],
-                "parents": [
-                    "C133155",
-                    "C20719"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "FGF Receptor Gene Family Rearrangement",
-                    "FGF Receptor Gene Rearrangement",
-                    "FGFR Family Gene Rearrangement",
-                    "FGFR Family Rearrangement",
-                    "Fibroblast Growth Factor Receptor Family Gene Rearrangement",
-                    "Fibroblast Growth Factor Receptor Gene Rearrangement"
-                ],
-                "nci_thesaurus_concept_id": "C153240",
-                "name": "FGFR Gene Rearrangement",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C25872",
-                    "C20719",
                     "C3910",
-                    "C16612",
-                    "C97926",
                     "C36541",
-                    "C133155",
-                    "C25870",
-                    "C36391",
-                    "C25871",
-                    "C21295",
-                    "C2950",
                     "C20103",
-                    "C19930",
-                    "C156028",
+                    "C2950",
+                    "C25872",
+                    "C25871",
+                    "C25870",
+                    "C97926",
+                    "C21295",
                     "C36327",
-                    "C21281"
-                ],
-                "parents": [
-                    "C156028",
-                    "C19930",
                     "C20719"
                 ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "VARIANT_TYPE",
-                    "molecular consequence",
-                    "molecular_consequence"
-                ],
-                "nci_thesaurus_concept_id": "C97926",
-                "name": "Molecular Sequence Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3910"
-                ],
                 "parents": [
-                    "C3910"
+                    "C133155",
+                    "C20719"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -647,16 +685,15 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C25872",
-                    "C16612",
-                    "C20103",
-                    "C20719",
                     "C21281",
-                    "C21295",
-                    "C19930",
+                    "C20103",
                     "C25871",
+                    "C19930",
+                    "C16612",
+                    "C21295",
+                    "C25872",
+                    "C20719",
                     "C25870"
                 ],
                 "parents": [
@@ -667,106 +704,50 @@
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21281",
-                "name": "Enzyme Gene",
+                "synonyms": [
+                    "FGF Receptor Family Gene",
+                    "FGFR Family Gene"
+                ],
+                "nci_thesaurus_concept_id": "C19930",
+                "name": "Fibroblast Growth Factor Receptor Family Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20719",
-                "name": "Receptor Tyrosine Kinase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
+                    "C21281",
+                    "C20103",
+                    "C25871",
                     "C16612",
                     "C21295",
-                    "C25870",
                     "C25872",
-                    "C20103",
+                    "C20719",
+                    "C25870"
+                ],
+                "parents": [
+                    "C20719"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C25872",
+                "name": "Kinase Family Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C25871",
                     "C21281",
+                    "C25870",
+                    "C16612"
+                ],
+                "parents": [
                     "C25871"
                 ],
-                "parents": [
-                    "C20103",
-                    "C25872"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C25870",
-                "name": "Transferase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C21281"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36327",
-                "name": "Gene Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
         ],
@@ -777,8 +758,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Stage IV Intrahepatic Cholangiocarcinoma AJCC v8",
-                    "IV"
+                    "IV",
+                    "Stage IV Intrahepatic Cholangiocarcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C134764",
                 "name": "Stage IV Intrahepatic Bile Duct Cancer (Cholangiocarcinoma)",
@@ -786,8 +767,8 @@
                     "stage"
                 ],
                 "parents": [
-                    "C134619",
-                    "C134755"
+                    "C134755",
+                    "C134619"
                 ]
             },
             {
@@ -800,17 +781,17 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C4124",
                     "C142869",
-                    "C4436",
-                    "C4124"
+                    "C4436"
                 ]
             },
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Non-Resectable Cholangiocarcinoma",
-                    "Non-Resectable Cholangiocellular Carcinoma"
+                    "Non-Resectable Cholangiocellular Carcinoma",
+                    "Non-Resectable Cholangiocarcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C27324",
                 "name": "Unresectable Cholangiocarcinoma",
@@ -818,9 +799,9 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C129654",
                     "C171322",
-                    "C4436",
-                    "C129654"
+                    "C4436"
                 ]
             },
             {
@@ -839,104 +820,42 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Biliary Disorder",
-                    "Biliary Disease"
-                ],
-                "nci_thesaurus_concept_id": "C2899",
-                "name": "Biliary System Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3959"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Stage IV Intrahepatic Bile Duct Carcinoma AJCC v8",
-                    "Stage IV Intrahepatic Bile Duct Cancer AJCC v8"
-                ],
-                "nci_thesaurus_concept_id": "C134619",
-                "name": "Stage IV Intrahepatic Bile Duct Cancer",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C134755",
+                "name": "Intrahepatic Cholangiocarcinoma by AJCC v8 Stage",
                 "type": [
                     "stage"
                 ],
                 "parents": [
                     "C134604",
-                    "C7121"
+                    "C35417"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Malignant Liver and Biliary Neoplasm",
+                    "Malignant Liver and Biliary System Neoplasm",
+                    "Malignant Hepato-Biliary Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7106",
-                "name": "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
+                "nci_thesaurus_concept_id": "C8609",
+                "name": "Malignant Hepatobiliary Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7103"
+                    "C8614",
+                    "C4890"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Liver Disorder",
                     "Liver Disease",
-                    "Hepatic Disorder"
+                    "Hepatic Disorder",
+                    "Liver Disorder"
                 ],
                 "nci_thesaurus_concept_id": "C3196",
                 "name": "Liver and Intrahepatic Bile Duct Disorder",
@@ -951,65 +870,40 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Hepatic and Intrahepatic Bile Duct Neoplasm"
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C7103",
-                "name": "Liver and Intrahepatic Bile Duct Neoplasm",
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
                 "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3196",
-                    "C8614"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Gastrointestinal System Neoplasm",
-                    "Gastrointestinal cancer, NOS",
-                    "Gastrointestinal System Cancer",
-                    "Malignant Digestive System Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C4890",
-                "name": "Malignant Gastrointestinal Neoplasm",
-                "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
                     "C9305",
-                    "C3052"
+                    "C3709"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Adenocarcinoma, NOS",
-                    "ADENOCARCINOMA, MALIGNANT"
+                    "Stage IV Intrahepatic Bile Duct Cancer AJCC v8",
+                    "Stage IV Intrahepatic Bile Duct Carcinoma AJCC v8"
                 ],
-                "nci_thesaurus_concept_id": "C2852",
-                "name": "Adenocarcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C7132"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C134755",
-                "name": "Intrahepatic Cholangiocarcinoma by AJCC v8 Stage",
+                "nci_thesaurus_concept_id": "C134619",
+                "name": "Stage IV Intrahepatic Bile Duct Cancer",
                 "type": [
                     "stage"
                 ],
                 "parents": [
-                    "C35417",
+                    "C7121",
                     "C134604"
                 ]
             },
@@ -1017,15 +911,60 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Disease by Site"
+                    "Intrahepatic Carcinoma of the Bile Duct",
+                    "iCCA",
+                    "Intrahepatic Cholangiocarcinoma",
+                    "Intrahepatic Cholangiocellular Carcinoma",
+                    "Intrahepatic Carcinoma of Bile Duct",
+                    "iCC",
+                    "Intrahepatic Bile Duct Carcinoma",
+                    "CHOLANGIOCARCINOMA, INTRAHEPATIC, MALIGNANT"
                 ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
+                "nci_thesaurus_concept_id": "C35417",
+                "name": "Intrahepatic Bile Duct Cancer (Cholangiocarcinoma)",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
+                    "C4436",
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
                     "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Primary Malignant Neoplasm of Liver"
+                ],
+                "nci_thesaurus_concept_id": "C34803",
+                "name": "Primary Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C190593"
                 ]
             },
             {
@@ -1048,15 +987,90 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
+                    "Stage IV Liver Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C7121",
+                "name": "Stage IV Liver Cancer",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7927"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Hepatic and Intrahepatic Bile Duct Neoplasm",
+                    "Liver Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7103",
+                "name": "Liver and Intrahepatic Bile Duct Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8614",
+                    "C3196"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C190593",
+                "name": "Malignant Liver Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7103",
+                    "C8609"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Biliary Disease",
+                    "Biliary Disorder"
+                ],
+                "nci_thesaurus_concept_id": "C2899",
+                "name": "Biliary System Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -1065,6 +1079,215 @@
                 ],
                 "parents": [
                     "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Bile Duct Carcinoma",
+                    "Bile Duct Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C27814",
+                "name": "Bile Duct Cancer (including Cholangiocarcinoma)",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C156781",
+                    "C2898"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Digestive System",
+                    "Digestive System Tumor",
+                    "Digestive Neoplasm",
+                    "Gastrointestinal Neoplasm",
+                    "Gastrointestinal Tumor",
+                    "Neoplasm of the GI System",
+                    "Neoplasm of the Gastrointestinal System",
+                    "Tumor of GI System",
+                    "GI Neoplasm",
+                    "Neoplasm of the Digestive System",
+                    "Tumor of the GI System",
+                    "Neoplasm of GI System",
+                    "GI System Tumor",
+                    "Neoplasm of Gastrointestinal System",
+                    "Tumor of Gastrointestinal System",
+                    "GI System Neoplasm",
+                    "Neoplasm of Digestive System",
+                    "Tumor of Digestive System",
+                    "Tumor of the Gastrointestinal System",
+                    "Digestive Tumor",
+                    "GI Tumor",
+                    "Gastrointestinal System Neoplasm",
+                    "Gastrointestinal System Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C3052",
+                "name": "Digestive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2990",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Hepato-Biliary Tumor",
+                    "Hepatic and Biliary Neoplasms",
+                    "Hepatobiliary Tumors",
+                    "Liver and Biliary System Neoplasm",
+                    "Hepatic, Biliary, and Gallbladder Neoplasms",
+                    "Hepatobiliary Tumor",
+                    "Hepatic and Biliary Tumors",
+                    "Liver and Biliary Neoplasm",
+                    "Hepato-Biliary Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8614",
+                "name": "Hepatobiliary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3959",
+                    "C3052"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Gastrointestinal System Carcinoma",
+                    "Carcinoma of the Gastrointestinal System"
+                ],
+                "nci_thesaurus_concept_id": "C96963",
+                "name": "Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2916",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C156781",
+                "name": "Biliary Tract Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2899",
+                    "C8609",
+                    "C166418"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Cancer of Liver",
+                    "Liver and Intrahepatic Biliary Tract Carcinoma",
+                    "Liver and hepatobiliary cancer, NOS",
+                    "Primary Liver Carcinoma",
+                    "Cancer of the Liver",
+                    "Liver Carcinoma",
+                    "Biliary Tract Cancer",
+                    "Cancer of the Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Carcinoma",
+                    "Cancer of Liver and Intrahepatic Biliary Tract",
+                    "Liver and Intrahepatic Bile Duct Cancer",
+                    "Liver/hepatobiliary cancer",
+                    "Liver and Intrahepatic Biliary Tract Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C7927",
+                "name": "Liver Cancer",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C34803",
+                    "C96963",
+                    "C7106"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Liver and Intrahepatic Bile Duct Epithelial Neoplasm",
+                    "Epithelial Hepatic and Intrahepatic Bile Duct Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7106",
+                "name": "Liver Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7103"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)",
+                    "Cholangiocellular Carcinoma",
+                    "CHOLANGIOCARCINOMA, MALIGNANT",
+                    "CC",
+                    "Cholangiocarcinoma",
+                    "cholangiosarcoma",
+                    "Cholangiocar.- intra/extrahepatic"
+                ],
+                "nci_thesaurus_concept_id": "C4436",
+                "name": "Intrahepatic Bile Duct Cancer (Cholangiocarcinoma)",
+                "type": [
+                    "maintype",
+                    "subtype"
+                ],
+                "parents": [
+                    "C27813"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Glandular Cell Epithelium Neoplasm",
+                    "Glandular Cell Epithelial Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C7132",
+                "name": "Glandular Cell Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709"
                 ]
             },
             {
@@ -1088,101 +1311,38 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Carcinoma of the Gastrointestinal System",
-                    "Gastrointestinal System Carcinoma"
+                    "Disorder of Digestive System",
+                    "Gastrointestinal System Disease",
+                    "Digestive Disease",
+                    "GI Disorder",
+                    "Gastrointestinal Disorder",
+                    "Digestive System Disease",
+                    "Gastrointestinal System Disorder",
+                    "Unspecified Gastrointestinal Problem",
+                    "stomach or intestinal disorder"
                 ],
-                "nci_thesaurus_concept_id": "C96963",
-                "name": "Digestive System Carcinoma",
+                "nci_thesaurus_concept_id": "C2990",
+                "name": "Digestive System Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2916",
-                    "C4890"
+                    "C27551"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Stage IV Liver Carcinoma"
+                    "Intrahepatic Bile Duct Carcinoma by AJCC v8 Stage",
+                    "Intrahepatic Bile Duct Cancer Tumor Stage (Pathologic)"
                 ],
-                "nci_thesaurus_concept_id": "C7121",
-                "name": "Stage IV Liver Cancer",
+                "nci_thesaurus_concept_id": "C134604",
+                "name": "Intrahepatic Bile Duct Cancer by AJCC v8 Stage",
                 "type": [
                     "stage"
                 ],
                 "parents": [
-                    "C7927"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Liver and Biliary System Neoplasm",
-                    "Malignant Liver and Biliary Neoplasm",
-                    "Malignant Hepato-Biliary Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8609",
-                "name": "Malignant Hepatobiliary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4890",
-                    "C8614"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Cancer of the Liver",
-                    "Liver Carcinoma",
-                    "Liver/hepatobiliary cancer",
-                    "Cancer of Liver",
-                    "Liver and hepatobiliary cancer, NOS",
-                    "Liver and Intrahepatic Biliary Tract Cancer",
-                    "Cancer of the Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Bile Duct Carcinoma",
-                    "Liver and Intrahepatic Bile Duct Cancer",
-                    "Cancer of Liver and Intrahepatic Biliary Tract",
-                    "Liver and Intrahepatic Biliary Tract Carcinoma",
-                    "Biliary Tract Cancer",
-                    "Primary Liver Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C7927",
-                "name": "Liver Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C34803",
-                    "C7106",
-                    "C96963"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Intrahepatic Bile Duct Carcinoma",
-                    "Intrahepatic Carcinoma of the Bile Duct",
-                    "iCC",
-                    "Intrahepatic Cholangiocellular Carcinoma",
-                    "Intrahepatic Carcinoma of Bile Duct",
-                    "Intrahepatic Cholangiocarcinoma",
-                    "iCCA",
-                    "CHOLANGIOCARCINOMA, INTRAHEPATIC, MALIGNANT"
-                ],
-                "nci_thesaurus_concept_id": "C35417",
-                "name": "Intrahepatic Bile Duct Cancer (Cholangiocarcinoma)",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4436",
                     "C7927"
                 ]
             },
@@ -1203,101 +1363,52 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
+                    "Liver Disease",
+                    "Liver and Biliary Disease",
+                    "Liver and Biliary Disorder",
+                    "Liver and Biliary System Disorder"
                 ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Gastrointestinal System Disorder",
-                    "Unspecified Gastrointestinal Problem",
-                    "Disorder of Digestive System",
-                    "stomach or intestinal disorder",
-                    "GI Disorder",
-                    "Gastrointestinal Disorder",
-                    "Digestive System Disease",
-                    "Gastrointestinal System Disease",
-                    "Digestive Disease"
-                ],
-                "nci_thesaurus_concept_id": "C2990",
-                "name": "Digestive System Disorder",
+                "nci_thesaurus_concept_id": "C3959",
+                "name": "Hepatobiliary Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27551"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C156781",
-                "name": "Biliary Tract Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C8609",
-                    "C2899",
-                    "C166418"
+                    "C2990"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Intrahepatic Bile Duct Cancer Tumor Stage (Pathologic)",
-                    "Intrahepatic Bile Duct Carcinoma by AJCC v8 Stage"
+                    "Intrahepatic and Extrahepatic Bile Duct Tumor",
+                    "Intrahepatic and Extrahepatic Bile Duct Neoplasm",
+                    "Bile Duct Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C134604",
-                "name": "Intrahepatic Bile Duct Cancer by AJCC v8 Stage",
+                "nci_thesaurus_concept_id": "C2898",
+                "name": "Bile Duct Neoplasm",
                 "type": [
-                    "stage"
+                    "subtype"
                 ],
                 "parents": [
-                    "C7927"
+                    "C96716",
+                    "C8614"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Cholangiocar.- intra/extrahepatic",
-                    "Cholangiocarcinoma",
-                    "Cholangiocarcinoma, intrahepatic and extrahepatic bile ducts (adenocarcinoma)",
-                    "cholangiosarcoma",
-                    "CC",
-                    "CHOLANGIOCARCINOMA, MALIGNANT",
-                    "Cholangiocellular Carcinoma"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C4436",
-                "name": "Intrahepatic Bile Duct Cancer (Cholangiocarcinoma)",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
-                    "maintype",
                     "subtype"
                 ],
                 "parents": [
-                    "C27813"
+                    "C3262"
                 ]
             },
             {
@@ -1321,185 +1432,85 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Liver and Biliary System Disorder",
-                    "Liver and Biliary Disease",
-                    "Liver and Biliary Disorder",
-                    "Liver Disease"
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
-                "nci_thesaurus_concept_id": "C3959",
-                "name": "Hepatobiliary Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor of GI System",
-                    "Tumor of Digestive System",
-                    "Digestive Tumor",
-                    "GI Neoplasm",
-                    "Neoplasm of the Gastrointestinal System",
-                    "Digestive System Tumor",
-                    "Gastrointestinal Tumor",
-                    "Neoplasm of the Digestive System",
-                    "Tumor of the Gastrointestinal System",
-                    "Neoplasm of Digestive System",
-                    "Tumor of the Digestive System",
-                    "Gastrointestinal System Tumor",
-                    "Gastrointestinal Neoplasm",
-                    "GI Tumor",
-                    "Tumor of Gastrointestinal System",
-                    "Gastrointestinal System Neoplasm",
-                    "Neoplasm of the GI System",
-                    "GI System Tumor",
-                    "GI System Neoplasm",
-                    "Neoplasm of Gastrointestinal System",
-                    "Tumor of the GI System",
-                    "Digestive Neoplasm",
-                    "Neoplasm of GI System"
-                ],
-                "nci_thesaurus_concept_id": "C3052",
-                "name": "Digestive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3263",
-                    "C2990"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Bile Duct Tumor",
-                    "Intrahepatic and Extrahepatic Bile Duct Tumor",
-                    "Intrahepatic and Extrahepatic Bile Duct Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C2898",
-                "name": "Bile Duct Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C96716",
-                    "C8614"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Hepatic and Biliary Neoplasms",
-                    "Hepato-Biliary Neoplasm",
-                    "Liver and Biliary Neoplasm",
-                    "Hepato-Biliary Tumor",
-                    "Liver and Biliary System Neoplasm",
-                    "Hepatic, Biliary, and Gallbladder Neoplasms",
-                    "Hepatic and Biliary Tumors",
-                    "Hepatobiliary Tumors",
-                    "Hepatobiliary Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C8614",
-                "name": "Hepatobiliary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3052",
-                    "C3959"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Glandular Cell Epithelium Neoplasm",
-                    "Glandular Cell Epithelial Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C7132",
-                "name": "Glandular Cell Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Bile Duct Cancer",
-                    "Bile Duct Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C27814",
-                "name": "Bile Duct Cancer (including Cholangiocarcinoma)",
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
                 "type": [
                     "maintype"
                 ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
                 "parents": [
-                    "C2898",
-                    "C156781"
+                    "C2916",
+                    "C7132"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Primary Malignant Neoplasm of Liver"
+                    "Malignant Gastrointestinal System Neoplasm",
+                    "Malignant Digestive System Neoplasm",
+                    "Gastrointestinal System Cancer",
+                    "Gastrointestinal cancer, NOS"
                 ],
-                "nci_thesaurus_concept_id": "C34803",
-                "name": "Primary Malignant Liver Neoplasm",
+                "nci_thesaurus_concept_id": "C4890",
+                "name": "Malignant Gastrointestinal Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8609",
-                    "C7103"
+                    "C9305",
+                    "C3052"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C171322",
+                "name": "Unresectable Bile Duct Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C176042",
+                    "C27814"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Metastatic Tumor",
                     "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
                 ],
                 "nci_thesaurus_concept_id": "C3261",
                 "name": "Metastatic Neoplasm",
@@ -1513,114 +1524,15 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [
-                    "Carcinoma, metastatic, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3482",
-                "name": "Metastatic Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36310",
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C171322",
-                "name": "Unresectable Bile Duct Carcinoma",
+                "nci_thesaurus_concept_id": "C36310",
+                "name": "Secondary Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C27814",
-                    "C176042"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Metastatic Gastrointestinal Carcinoma",
-                    "Metastatic Gastrointestinal System Cancer",
-                    "Metastatic Digestive System Carcinoma",
-                    "Metastatic Gastrointestinal System Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C133839",
-                "name": "Metastatic Digestive System Cancer",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C162255",
-                    "C3482",
-                    "C96963"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Adenocarcinoma, metastatic, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C4124",
-                "name": "Metastatic Adenocarcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3482",
-                    "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C162751",
-                "name": "Metastatic Biliary Tract Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C156781",
-                    "C170458"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Metastatic Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C36263",
-                "name": "Metastatic Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4968",
-                    "C3261"
+                    "C2916",
+                    "C4968"
                 ]
             },
             {
@@ -1635,53 +1547,6 @@
                 "parents": [
                     "C133839",
                     "C166418"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Metastatic Bile Duct Cancer",
-                    "Metastatic Biliary Tract Cancer",
-                    "Metastatic Biliary Tract Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C142869",
-                "name": "Metastatic Bile Duct Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C162751",
-                    "C27814"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C155903",
-                "name": "Unresectable Digestive System Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C96963",
-                    "C148124",
-                    "C162845"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C176042",
-                "name": "Unresectable Biliary Tract Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C155903",
-                    "C156781"
                 ]
             },
             {
@@ -1704,6 +1569,36 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [],
+                "nci_thesaurus_concept_id": "C162751",
+                "name": "Metastatic Biliary Tract Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C170458",
+                    "C156781"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Adenocarcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C4124",
+                "name": "Metastatic Adenocarcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C2852"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
                 "nci_thesaurus_concept_id": "C162845",
                 "name": "Unresectable Malignant Digestive System Neoplasm",
                 "type": [
@@ -1717,15 +1612,32 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36310",
-                "name": "Secondary Carcinoma",
+                "synonyms": [
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C4968",
-                    "C2916"
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C176042",
+                "name": "Unresectable Biliary Tract Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C155903",
+                    "C156781"
                 ]
             },
             {
@@ -1738,8 +1650,90 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C4890",
-                    "C36263"
+                    "C36263",
+                    "C4890"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C36263",
+                "name": "Metastatic Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4968",
+                    "C3261"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Bile Duct Cancer",
+                    "Metastatic Biliary Tract Cancer",
+                    "Metastatic Biliary Tract Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C142869",
+                "name": "Metastatic Bile Duct Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27814",
+                    "C162751"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C155903",
+                "name": "Unresectable Digestive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C162845",
+                    "C148124",
+                    "C96963"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Carcinoma, metastatic, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3482",
+                "name": "Metastatic Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36263",
+                    "C36310"
                 ]
             },
             {
@@ -1760,23 +1754,6 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C36255"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
                     "Unresectable Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C27359",
@@ -1787,25 +1764,49 @@
                 "parents": [
                     "C9305"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Metastatic Digestive System Carcinoma",
+                    "Metastatic Gastrointestinal System Carcinoma",
+                    "Metastatic Gastrointestinal Carcinoma",
+                    "Metastatic Gastrointestinal System Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C133839",
+                "name": "Metastatic Digestive System Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3482",
+                    "C162255",
+                    "C96963"
+                ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "INCB 54828-302",
-        "active_sites_count": 10,
+        "active_sites_count": 9,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2163",
-                        "name": "DNA Adduct Forming Agent",
+                        "synonyms": [
+                            "Cytotoxic Chemotherapy Agent",
+                            "Cytotoxic Antineoplastic Agent",
+                            "Antineoplastic Cytotoxic Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C186664",
+                        "name": "Cytotoxic Chemotherapeutic Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C2842"
+                            "C274"
                         ]
                     },
                     {
@@ -1822,81 +1823,14 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Platinum-Based Chemotherapy",
-                            "Platinum Agents"
-                        ],
-                        "nci_thesaurus_concept_id": "C1450",
-                        "name": "Platinum Compound",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C2163",
-                            "C1590",
-                            "C798"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Targeted Agent",
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Molecularly Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent"
-                        ],
-                        "nci_thesaurus_concept_id": "C163758",
-                        "name": "Targeted Therapy Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Anti-cancer Enzyme Inhibitor"
-                        ],
-                        "nci_thesaurus_concept_id": "C129825",
-                        "name": "Antineoplastic Enzyme Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C129824",
-                            "C471"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Protein Tyrosine Kinase Inhibitors",
-                            "PTK Inhibitors",
-                            "TK Inhibitors"
-                        ],
-                        "nci_thesaurus_concept_id": "C1967",
-                        "name": "Tyrosine Kinase Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1404"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C155727",
-                        "name": "FGFR Inhibitor",
+                        "nci_thesaurus_concept_id": "C2163",
+                        "name": "DNA Adduct Forming Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C164035",
-                            "C1967",
-                            "C129825"
+                            "C2842"
                         ]
                     },
                     {
@@ -1915,6 +1849,37 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C155727",
+                        "name": "FGFR Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C129825",
+                            "C164035",
+                            "C1967"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-tumor Targeted Therapy Agent",
+                            "Targeted Agent",
+                            "Targeted Therapeutic Agent",
+                            "Molecularly Targeted Therapy Agent"
+                        ],
+                        "nci_thesaurus_concept_id": "C163758",
+                        "name": "Targeted Therapy Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C274"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C66876",
@@ -1923,62 +1888,36 @@
                         "type": "Drug",
                         "category": "agent",
                         "parents": [
-                            "C2150",
-                            "C1557"
+                            "C1557",
+                            "C2150"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Enzyme Inhibitor Drug",
+                            "Enzyme Inhibitor Agent",
+                            "Enzyme Antagonist"
+                        ],
+                        "nci_thesaurus_concept_id": "C471",
+                        "name": "Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2150",
-                        "name": "Ribonucleotide Reductase Inhibitor",
+                        "nci_thesaurus_concept_id": "C1404",
+                        "name": "Protein Kinase Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
                             "C471"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Antimetabolites"
-                        ],
-                        "nci_thesaurus_concept_id": "C272",
-                        "name": "Antimetabolite",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Radiation Sensitizers",
-                            "Radiation-Sensitizing Agents",
-                            "Radiation-Sensitizing Drugs",
-                            "Radiosensitizing Drugs",
-                            "Radiosensitizers"
-                        ],
-                        "nci_thesaurus_concept_id": "C798",
-                        "name": "Radiosensitizing Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C274"
                         ]
                     },
                     {
@@ -1994,41 +1933,82 @@
                         ]
                     },
                     {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Cisplatyl",
+                            "Plastistil",
+                            "Lederplatin",
+                            "Metaplatin",
+                            "Citoplatino",
+                            "Citosin",
+                            "Platamine",
+                            "Platinol- AQ",
+                            "Briplatin",
+                            "Platinex",
+                            "Platinol-AQ",
+                            "Platosin",
+                            "Platiblastin-S",
+                            "Platiblastin",
+                            "Neoplatin",
+                            "Platinol-AQ VHA Plus",
+                            "Platiran",
+                            "Placis",
+                            "Blastolem",
+                            "Abiplatin",
+                            "Platinol",
+                            "Platistin"
+                        ],
+                        "nci_thesaurus_concept_id": "C376",
+                        "name": "Cisplatin",
+                        "description": "An inorganic platinum agent (cis-diamminedichloroplatinum) with antineoplastic activity.  Cisplatin forms highly reactive, charged, platinum complexes which bind to nucleophilic groups such as GC-rich sites in DNA, inducing intrastrand and interstrand DNA cross-links, as well as DNA-protein cross-links. These cross-links result in apoptosis and cell growth inhibition. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "type": "Drug",
+                        "category": "agent",
+                        "parents": [
+                            "C1450"
+                        ]
+                    },
+                    {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1557",
-                        "name": "Pyrimidine Antagonist",
+                        "synonyms": [
+                            "PTK Inhibitors",
+                            "TK Inhibitors",
+                            "Protein Tyrosine Kinase Inhibitors"
+                        ],
+                        "nci_thesaurus_concept_id": "C1967",
+                        "name": "Tyrosine Kinase Inhibitor",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C272"
+                            "C1404"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C2842",
-                        "name": "DNA Binding Agent",
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Radiation-Sensitizing Agents",
+                            "Radiation-Sensitizing Drugs",
+                            "Radiosensitizers",
+                            "Radiation Sensitizers",
+                            "Radiosensitizing Drugs"
+                        ],
+                        "nci_thesaurus_concept_id": "C798",
+                        "name": "Radiosensitizing Agent",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
                             "C274"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Pemazyre"
-                        ],
-                        "nci_thesaurus_concept_id": "C121553",
-                        "name": "Pemigatinib",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent",
-                        "parents": [
-                            "C155727"
                         ]
                     },
                     {
@@ -2049,87 +2029,86 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Pharmacologic Agent",
-                            "Pharmaceuticals",
-                            "Agent",
-                            "Pharmacological Substance",
-                            "Pharmaceutical Agent",
-                            "Drug Substance",
-                            "Drug"
+                            "Platinum-Based Chemotherapy",
+                            "Platinum Agents"
                         ],
-                        "nci_thesaurus_concept_id": "C1909",
-                        "name": "Pharmacologic Substance",
+                        "nci_thesaurus_concept_id": "C1450",
+                        "name": "Platinum Compound",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C1908"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Enzyme Antagonist",
-                            "Enzyme Inhibitor Agent",
-                            "Enzyme Inhibitor Drug"
-                        ],
-                        "nci_thesaurus_concept_id": "C471",
-                        "name": "Enzyme Inhibitor",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
+                            "C798",
+                            "C1590",
+                            "C2163"
                         ]
                     },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [
-                            "Citoplatino",
-                            "Platiblastin",
-                            "Blastolem",
-                            "Platosin",
-                            "Platinol-AQ VHA Plus",
-                            "Lederplatin",
-                            "Platinex",
-                            "Neoplatin",
-                            "Placis",
-                            "Platinol-AQ",
-                            "Cisplatyl",
-                            "Abiplatin",
-                            "Platinol",
-                            "Citosin",
-                            "Platamine",
-                            "Plastistil",
-                            "Metaplatin",
-                            "Platinol- AQ",
-                            "Platiran",
-                            "Platiblastin-S",
-                            "Briplatin",
-                            "Platistin"
+                            "Pemazyre"
                         ],
-                        "nci_thesaurus_concept_id": "C376",
-                        "name": "Cisplatin",
-                        "description": "An inorganic platinum agent (cis-diamminedichloroplatinum) with antineoplastic activity.  Cisplatin forms highly reactive, charged, platinum complexes which bind to nucleophilic groups such as GC-rich sites in DNA, inducing intrastrand and interstrand DNA cross-links, as well as DNA-protein cross-links. These cross-links result in apoptosis and cell growth inhibition. Check for active clinical trials or closed clinical trials using this agent. (NCI Thesaurus)Health professional",
+                        "nci_thesaurus_concept_id": "C121553",
+                        "name": "Pemigatinib",
+                        "description": null,
                         "type": "Drug",
                         "category": "agent",
                         "parents": [
-                            "C1450"
+                            "C155727"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2842",
+                        "name": "DNA Binding Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-cancer Enzyme Inhibitor"
+                        ],
+                        "nci_thesaurus_concept_id": "C129825",
+                        "name": "Antineoplastic Enzyme Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C129824",
+                            "C471"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C2150",
+                        "name": "Ribonucleotide Reductase Inhibitor",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C471"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
                             "Anti-Cancer Agents",
+                            "Anti-Tumor Agents",
+                            "Tumor-Specific Treatment Agents",
+                            "Antineoplastics",
                             "Antiproliferative Agents",
                             "Anti-Tumor Drugs",
-                            "Antineoplastic Drugs",
-                            "Antiproliferative Drugs",
-                            "Anti-Tumor Agents",
-                            "Cancer Drug",
-                            "Antineoplastics",
                             "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Tumor-Specific Treatment Agents"
+                            "Antineoplastic Drugs",
+                            "Cancer Drug",
+                            "Antiproliferative Drugs"
                         ],
                         "nci_thesaurus_concept_id": "C274",
                         "name": "Antineoplastic Agent",
@@ -2142,14 +2121,48 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1404",
-                        "name": "Protein Kinase Inhibitor",
+                        "synonyms": [
+                            "Agent",
+                            "Drug Substance",
+                            "Pharmacologic Agent",
+                            "Pharmacological Substance",
+                            "Drug",
+                            "Pharmaceutical Agent",
+                            "Pharmaceuticals"
+                        ],
+                        "nci_thesaurus_concept_id": "C1909",
+                        "name": "Pharmacologic Substance",
                         "description": null,
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C471"
+                            "C1908"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1557",
+                        "name": "Pyrimidine Antagonist",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C272"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Antimetabolites"
+                        ],
+                        "nci_thesaurus_concept_id": "C272",
+                        "name": "Antimetabolite",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C186664"
                         ]
                     }
                 ],
@@ -2184,9 +2197,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 434,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2019-06-03",
-        "record_verification_date": "2022-02-01",
+        "record_verification_date": "2022-11-01",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -2199,6 +2213,7 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": "FIGHT-302",
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Liver"
@@ -2207,7 +2222,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2028-02-18",
+        "completion_date": "2028-07-27",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }

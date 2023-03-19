@@ -1,4 +1,7 @@
 """
+
+to-do: take only HIGHEST stage per patient, adjust possibly progressed to limit to ones since most recent appointment, CT/MRI/PET (check Briane's notes). Re-examine Ruby data fo tigure out why bad stages
+
 screener.py
 
 VERSION: 0.1
@@ -106,7 +109,9 @@ def breast_note_parse(sql,cursor):
         count=0
         staging_matches = defaultdict(lambda: defaultdict(set))
         for pat_id,note_id, date_of_service,match_type,note_text in results:
-
+                if count % 1000 == 0:
+                        print(count)
+                        print(today.strftime("%Y/%m/%d %H:%M:%S"))
                 count=count+1
                 m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
                 #print("match type 1 - non-pretty staging")
@@ -251,6 +256,17 @@ def breast_note_parse(sql,cursor):
                                         staging_matches[(pat_id, note_id)]['G'].add(g_match)
                                 if oncotype_match != '':
                                         staging_matches[(pat_id, note_id)]['ONCO'].add(oncotype_match)
+
+        pat_top_note = defaultdict(lambda: defaultdict(set))                                        
+        for pat_id, note_id in staging_matches:
+                if not pat_top_note[pat_id] or note_id > pat_top_note[pat_id]:
+                        pat_top_note[pat_id] = note_id
+        to_delete = []
+        for pat_id, note_id in staging_matches:
+                if note_id != pat_top_note[pat_id]:
+                       to_delete.append((pat_id,note_id))
+        for pat_id, note_id in to_delete:
+                del(staging_matches[(pat_id,note_id)])
         return staging_matches
 
 def breast_process(staging_matches):
@@ -323,6 +339,7 @@ def breast_process(staging_matches):
                                         "STAGE":STAGE
                                 }
                         )
+        
         return newpts
 
 def bladder_note_parse(sql,cursor):

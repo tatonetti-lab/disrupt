@@ -41,6 +41,8 @@ TODO For Version 0.2:
         - receptor_status
         - prior_therapies
 
+to do - add post-processing to eg breast to exclude stage III if also has stage IV
+
 """
 import os
 import csv

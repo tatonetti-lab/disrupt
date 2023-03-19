@@ -1,7 +1,7 @@
 [
     {
         "other_ids": [],
-        "amendment_date": "2021-10-08",
+        "amendment_date": "2022-02-09",
         "keywords": null,
         "dcp_id": "ECOG-ACRIN-EA1151",
         "interventional_model": "Parallel",
@@ -61,31 +61,26 @@
                 {
                     "inclusion_indicator": true,
                     "display_order": 11,
-                    "description": "Breast density will be determined by prior mammography reports, when available, or by radiologist review of prior imaging\r\n* NOTE: If the latter method is used, a signed, dated attestation by the radiologist indicating the resulting determination must be kept as a record and made available for monitoring/auditing\r\n* All other risk factors used to determine patient eligibility for annual or biennial screening will be determined by subject self-report"
-                },
-                {
-                    "inclusion_indicator": true,
-                    "display_order": 12,
                     "description": "Breast density will be determined by prior mammography reports, when available, or by radiologist review of prior imaging; \r\n* NOTE: If the latter method is used, a signed, dated attestation by the radiologist indicating the resulting determination must be kept as a record and made available for monitoring/auditing\r\n* All other risk factors used to determine patient eligibility for annual or biennial screening will be determined by subject self-report"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 13,
+                    "display_order": 12,
                     "description": "Patients must not have new symptoms or signs of benign or malignant breast disease (e.g., bloody or clear nipple discharge, breast lump) based on physician physical exam or self breast exam that have not been previously worked up with imaging; patients with physiologic nipple discharge or breast pain are eligible as long as other criteria are met"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 14,
+                    "display_order": 13,
                     "description": "Patients must not have had a screening mammogram within the last 11 months prior to date of randomization"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 15,
+                    "display_order": 14,
                     "description": "Patients must not have previous personal history of breast cancer including ductal carcinoma in situ"
                 },
                 {
                     "inclusion_indicator": false,
-                    "display_order": 16,
+                    "display_order": 15,
                     "description": "Patients must not currently have breast enhancements (e.g., implants or radiopaque injections)"
                 }
             ],
@@ -240,24 +235,24 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Lobular Carcinoma in situ",
-                    "Lobular Ca in situ of the Breast",
                     "LCIS",
-                    "Non-Invasive Lobular Carcinoma of Breast",
-                    "Lobular carcinoma in situ, NOS",
                     "LCIS, NOS",
-                    "Lobular Carcinoma In Situ of the Breast",
-                    "Lobular Carcinoma In Situ of the Breast (LCIS)",
-                    "Non-Invasive Lobular Carcinoma of the Breast",
+                    "Breast Lobular Carcinoma In Situ",
+                    "Non-Invasive Lobular Breast Carcinoma",
+                    "Lobular Carcinoma in situ",
+                    "Lobular Breast Carcinoma In Situ",
                     "Non-Infiltrating Lobular Carcinoma of Breast",
+                    "Lobular Carcinoma In Situ of the Breast",
+                    "Non-Infiltrating Lobular Carcinoma",
+                    "Non-Invasive Lobular Carcinoma of the Breast",
+                    "Non-Invasive Lobular Carcinoma of Breast",
                     "Lobular Carcinoma in situ of Breast",
                     "Lobular Ca in situ of Breast",
-                    "Non-Invasive Lobular Breast Carcinoma",
-                    "Non-Infiltrating Lobular Carcinoma",
-                    "Breast Lobular Carcinoma In Situ",
-                    "Lobular Breast Carcinoma In Situ",
+                    "Non-Infiltrating Lobular Breast Carcinoma",
+                    "Lobular carcinoma in situ, NOS",
                     "Non-Infiltrating Lobular Carcinoma of the Breast",
-                    "Non-Infiltrating Lobular Breast Carcinoma"
+                    "Lobular Carcinoma In Situ of the Breast (LCIS)",
+                    "Lobular Ca in situ of the Breast"
                 ],
                 "nci_thesaurus_concept_id": "C4018",
                 "name": "Lobular Carcinoma In Situ (LCIS)",
@@ -267,9 +262,9 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C6877",
                     "C3771",
                     "C3641",
-                    "C6877",
                     "C27939"
                 ]
             },
@@ -277,10 +272,10 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Familial Cancer of Breast",
-                    "Familial Cancer of the Breast",
                     "Hereditary Breast Carcinoma",
-                    "Familial Breast Carcinoma"
+                    "Familial Breast Carcinoma",
+                    "Familial Cancer of the Breast",
+                    "Familial Cancer of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C4503",
                 "name": "Hereditary Breast Cancer",
@@ -296,12 +291,12 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "ALH",
+                    "Atypical Breast Lobular Hyperplasia",
                     "Atypical Lobular Hyperplasia of Breast",
                     "Breast Atypical Lobular Hyperplasia",
+                    "atypical lobular hyperplasia",
                     "Atypical Lobular Hyperplasia of the Breast",
-                    "Atypical Breast Lobular Hyperplasia",
-                    "atypical lobular hyperplasia"
+                    "ALH"
                 ],
                 "nci_thesaurus_concept_id": "C4730",
                 "name": "Atypical Lobular Breast Hyperplasia",
@@ -323,22 +318,22 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C3341",
-                    "C3113"
+                    "C3113",
+                    "C3341"
                 ]
             },
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "atypical ductal hyperplasia",
-                    "Atypical Ductal Hyperplasia of the Breast",
                     "Atypical Breast Ductal Hyperplasia",
-                    "Atypical Ductal Hyperplasia of Breast",
-                    "DIN 1B",
+                    "atypical ductal hyperplasia",
+                    "ADH",
                     "Ductal Intraepithelial Neoplasia, Grade 1B",
+                    "DIN 1B",
+                    "Atypical Ductal Hyperplasia of the Breast",
                     "Breast Atypical Ductal Hyperplasia",
-                    "ADH"
+                    "Atypical Ductal Hyperplasia of Breast"
                 ],
                 "nci_thesaurus_concept_id": "C8436",
                 "name": "Atypical Ductal Breast Hyperplasia",
@@ -346,8 +341,8 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C5195",
                     "C9492",
+                    "C5195",
                     "C27269",
                     "C27942"
                 ]
@@ -356,23 +351,35 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
                 ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Lobular Adenocarcinoma",
+                    "Lobular Carcinoma of Breast",
+                    "Lobular Carcinoma of the Breast",
+                    "Breast Lobular Carcinoma",
+                    "Lobular Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C3771",
+                "name": "Lobular Breast Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C5214"
                 ]
             },
             {
@@ -388,79 +395,6 @@
                 ],
                 "parents": [
                     "C4872"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "LIN",
-                    "Breast LN",
-                    "Breast Lobular Neoplasia",
-                    "Lobular Intraepithelial Neoplasia",
-                    "LN"
-                ],
-                "nci_thesaurus_concept_id": "C27939",
-                "name": "Lobular Neoplasia",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2910"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7348",
-                "name": "High Grade Intraepithelial Neoplasia",
-                "type": [
-                    "grade"
-                ],
-                "parents": [
-                    "C8366"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Mammary Carcinoma",
-                    "Carcinoma of Breast",
-                    "Carcinoma of the Breast",
-                    "Breast cancer, NOS",
-                    "Cancer of Breast",
-                    "Breast Carcinoma",
-                    "Cancer of the Breast"
-                ],
-                "nci_thesaurus_concept_id": "C4872",
-                "name": "Breast Cancer",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C9335"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Lobular Carcinoma of the Breast",
-                    "Lobular Adenocarcinoma",
-                    "Breast Lobular Carcinoma",
-                    "Lobular Carcinoma of Breast",
-                    "Lobular Carcinoma"
-                ],
-                "nci_thesaurus_concept_id": "C3771",
-                "name": "Lobular Breast Carcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C5214"
                 ]
             },
             {
@@ -484,92 +418,71 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Premalignant State",
-                    "Premalignant Condition",
-                    "Precancerous State"
+                    "Breast Disease",
+                    "Breast Diseases"
                 ],
-                "nci_thesaurus_concept_id": "C3341",
-                "name": "Precancerous Condition",
+                "nci_thesaurus_concept_id": "C26709",
+                "name": "Breast Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8278"
+                    "C27551"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "CARCINOMA, IN SITU, MALIGNANT",
-                    "Epithelial Tumor, In situ, Malignant",
-                    "Preinvasive",
-                    "CIS",
-                    "Non-invasive Carcinoma",
-                    "Preinvasive Cancer",
-                    "Intraepithelial Carcinoma",
-                    "stage 0 disease"
+                    "Breast Cancer in situ",
+                    "Stage 0 Carcinoma of the Breast",
+                    "Stage 0 Breast Cancer",
+                    "Stage 0 Breast Carcinoma",
+                    "Non-Infiltrating Carcinoma of Breast",
+                    "Breast Carcinoma in situ",
+                    "Carcinoma in situ of Breast",
+                    "In situ Breast Cancer",
+                    "Non-Infiltrating Breast Carcinoma",
+                    "Non-Invasive Carcinoma of Breast",
+                    "Stage 0 Carcinoma of Breast",
+                    "Non-Invasive Carcinoma of the Breast",
+                    "Carcinoma in situ of the Breast",
+                    "Breast Cancer Stage 0",
+                    "Non-Invasive Breast Carcinoma",
+                    "Stage 0 Breast Cancer AJCC v6",
+                    "Non-Infiltrating Carcinoma of the Breast",
+                    "Stage 0 Breast Cancer AJCC v7",
+                    "stage 0 breast carcinoma in situ"
                 ],
-                "nci_thesaurus_concept_id": "C2917",
-                "name": "Carcinoma In Situ",
+                "nci_thesaurus_concept_id": "C3641",
+                "name": "Stage 0 Breast Cancer AJCC v6 and v7",
                 "type": [
                     "stage",
-                    "grade",
-                    "subtype"
+                    "grade"
                 ],
                 "parents": [
-                    "C2916",
-                    "C3341"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
+                    "C91230",
+                    "C2917",
+                    "C90513"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
                 "type": [
                     "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Disease by Site"
-                ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
-                "type": [
-                    "subtype"
                 ],
                 "parents": [
                     "C2991"
@@ -579,61 +492,18 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Cancer Related Condition",
-                    "Oncologic Complications",
-                    "Cancer-Related Problem or Condition",
-                    "problem/condition, cancer related",
-                    "cancer related problem/condition",
-                    "problem/condition, cancer-related"
+                    "Adenocarcinoma of the Breast",
+                    "Adenocarcinoma of Breast",
+                    "Mammary adenocarcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C8278",
-                "name": "Cancer-Related Condition",
+                "nci_thesaurus_concept_id": "C5214",
+                "name": "Breast Adenocarcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Epithelioma",
-                    "Epithelioma, malignant",
-                    "Epithelial Neoplasms, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3709",
-                "name": "Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4741"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
+                    "C2852",
+                    "C4872"
                 ]
             },
             {
@@ -650,6 +520,91 @@
                 ],
                 "parents": [
                     "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C9305",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Premalignant Condition",
+                    "Premalignant State",
+                    "Precancerous State"
+                ],
+                "nci_thesaurus_concept_id": "C3341",
+                "name": "Precancerous Condition",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8278"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "LIN",
+                    "Lobular Intraepithelial Neoplasia",
+                    "Breast LN",
+                    "Breast Lobular Neoplasia",
+                    "LN"
+                ],
+                "nci_thesaurus_concept_id": "C27939",
+                "name": "Lobular Neoplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2910"
                 ]
             },
             {
@@ -674,127 +629,30 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasm of Breast",
-                    "Neoplasm of the Breast",
-                    "Tumor of Breast",
-                    "Tumor of the Breast",
-                    "Breast Tumor"
+                    "Carcinoma of the Breast",
+                    "Cancer of Breast",
+                    "Carcinoma of Breast",
+                    "Breast cancer, NOS",
+                    "Mammary Carcinoma",
+                    "Breast Carcinoma",
+                    "Cancer of the Breast"
                 ],
-                "nci_thesaurus_concept_id": "C2910",
-                "name": "Breast Neoplasm",
+                "nci_thesaurus_concept_id": "C4872",
+                "name": "Breast Cancer",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C3263",
-                    "C26709"
+                    "C9335",
+                    "C2916"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Adenocarcinoma of the Breast",
-                    "Mammary adenocarcinoma",
-                    "Adenocarcinoma of Breast"
-                ],
-                "nci_thesaurus_concept_id": "C5214",
-                "name": "Breast Adenocarcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4872",
-                    "C2852"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Breast Carcinoma in situ",
-                    "Breast Cancer in situ",
-                    "Stage 0 Carcinoma of the Breast",
-                    "In situ Breast Cancer",
-                    "Non-Invasive Breast Carcinoma",
-                    "stage 0 breast carcinoma in situ",
-                    "Stage 0 Breast Cancer AJCC v7",
-                    "Carcinoma in situ of Breast",
-                    "Stage 0 Breast Cancer AJCC v6",
-                    "Stage 0 Carcinoma of Breast",
-                    "Carcinoma in situ of the Breast",
-                    "Non-Infiltrating Carcinoma of Breast",
-                    "Stage 0 Breast Cancer AJCC v6 and v7",
-                    "Non-Infiltrating Carcinoma of the Breast",
-                    "Non-Invasive Carcinoma of Breast",
-                    "Stage 0 Breast Carcinoma",
-                    "Breast Cancer Stage 0",
-                    "Non-Infiltrating Breast Carcinoma",
-                    "Non-Invasive Carcinoma of the Breast"
-                ],
-                "nci_thesaurus_concept_id": "C3641",
-                "name": "Stage 0 Breast Cancer",
-                "type": [
-                    "stage",
-                    "grade"
-                ],
-                "parents": [
-                    "C2917",
-                    "C91230",
-                    "C90513"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Breast Carcinoma by AJCC v7 Stage"
-                ],
-                "nci_thesaurus_concept_id": "C91230",
-                "name": "Breast Cancer by AJCC v7 Stage",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C4872"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7662",
-                "name": "High Grade Glandular Intraepithelial Neoplasia",
-                "type": [
-                    "grade"
-                ],
-                "parents": [
-                    "C7348",
-                    "C27269"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Breast Disease",
-                    "Breast Diseases"
-                ],
-                "nci_thesaurus_concept_id": "C26709",
-                "name": "Breast Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27551"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Adenocarcinoma in situ, NOS",
-                    "AIS"
+                    "AIS",
+                    "Adenocarcinoma in situ, NOS"
                 ],
                 "nci_thesaurus_concept_id": "C4123",
                 "name": "Adenocarcinoma In Situ",
@@ -821,19 +679,97 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C3341",
-                    "C3709"
+                    "C3709",
+                    "C3341"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Tumor of the Breast",
-                    "Malignant Neoplasm of the Breast",
-                    "Malignant Neoplasm of Breast",
+                    "Cancer Related Condition",
+                    "problem/condition, cancer related",
+                    "Cancer-Related Problem or Condition",
+                    "problem/condition, cancer-related",
+                    "cancer related problem/condition",
+                    "Oncologic Complications"
+                ],
+                "nci_thesaurus_concept_id": "C8278",
+                "name": "Cancer-Related Condition",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7662",
+                "name": "High Grade Glandular Intraepithelial Neoplasia",
+                "type": [
+                    "grade"
+                ],
+                "parents": [
+                    "C27269",
+                    "C7348"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7348",
+                "name": "High Grade Intraepithelial Neoplasia",
+                "type": [
+                    "grade"
+                ],
+                "parents": [
+                    "C8366"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C27269",
+                "name": "Glandular Cell Intraepithelial Neoplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8366",
+                    "C7132"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Epithelioma",
+                    "Epithelioma, malignant",
+                    "Epithelial Neoplasms, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C3709",
+                "name": "Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4741"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Tumor of Breast",
                     "Malignant Breast Tumor",
-                    "Malignant Tumor of Breast"
+                    "Malignant Tumor of the Breast",
+                    "Malignant Neoplasm of Breast",
+                    "Malignant Neoplasm of the Breast"
                 ],
                 "nci_thesaurus_concept_id": "C9335",
                 "name": "Malignant Breast Neoplasm",
@@ -841,27 +777,68 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C9305"
+                    "C9305",
+                    "C2910"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Tumor of the Breast",
+                    "Tumor of Breast",
+                    "Breast Tumor",
+                    "Neoplasm of the Breast",
+                    "Neoplasm of Breast"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C2910",
+                "name": "Breast Neoplasm",
                 "type": [
-                    "maintype"
+                    "subtype"
+                ],
+                "parents": [
+                    "C26709",
+                    "C3263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Breast Carcinoma by AJCC v7 Stage"
+                ],
+                "nci_thesaurus_concept_id": "C91230",
+                "name": "Breast Cancer by AJCC v7 Stage",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4872"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Disease by Site"
+                ],
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
+                "type": [
+                    "subtype"
                 ],
                 "parents": [
                     "C2991"
@@ -883,31 +860,239 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C27269",
-                "name": "Glandular Cell Intraepithelial Neoplasia",
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8366",
-                    "C7132"
+                    "C7062"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
+                    "CARCINOMA, IN SITU, MALIGNANT",
+                    "Preinvasive",
+                    "CIS",
+                    "Intraepithelial Carcinoma",
+                    "Epithelial Tumor, In situ, Malignant",
+                    "Non-invasive Carcinoma",
+                    "stage 0 disease",
+                    "Preinvasive Cancer"
                 ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
+                "nci_thesaurus_concept_id": "C2917",
+                "name": "Carcinoma In Situ",
+                "type": [
+                    "stage",
+                    "grade",
+                    "subtype"
+                ],
+                "parents": [
+                    "C3341",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Intracystic papillary adenoma",
+                    "Breast Papilloma",
+                    "Intraductal Papilloma, Not Otherwise Specified",
+                    "Ductal Breast Papilloma",
+                    "Duct Papilloma of Breast",
+                    "Breast Intracystic Papilloma",
+                    "Intraductal Breast Papilloma",
+                    "Intraductal Papilloma of the Breast",
+                    "Intraductal Papilloma of Breast",
+                    "Intracystic Papilloma",
+                    "Intraductal Papilloma, NOS",
+                    "Duct Papilloma of the Breast",
+                    "Papilloma of the Breast",
+                    "Papilloma of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C3863",
+                "name": "Breast Intraductal Papilloma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C4505",
+                    "C3785",
+                    "C36090"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Benign Neoplasms",
+                    "Neoplasm, benign",
+                    "Benign Tumor",
+                    "Benign Unclassifiable Tumor",
+                    "Tumor, benign"
+                ],
+                "nci_thesaurus_concept_id": "C3677",
+                "name": "Benign Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Epithelial Hyperplasia of the Breast",
+                    "Ductal Hyperplasia of the Breast",
+                    "Ductal Hyperplasia of Breast",
+                    "Epithelial Hyperplasia of Breast",
+                    "Breast Epithelial Hyperplasia",
+                    "Ductal Breast Hyperplasia"
+                ],
+                "nci_thesaurus_concept_id": "C9492",
+                "name": "Breast Ductal Hyperplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4804",
+                    "C26458"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Duct adenoma, NOS",
+                    "Ductal Papilloma",
+                    "Duct Adenoma"
+                ],
+                "nci_thesaurus_concept_id": "C3785",
+                "name": "Intraductal Papilloma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7440"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Benign Tumor of the Epithelium",
+                    "Epithelioma, benign",
+                    "Benign Neoplasm of Epithelium",
+                    "Benign Epithelial Tumor",
+                    "Benign Neoplasm of the Epithelium",
+                    "Benign Tumor of Epithelium",
+                    "Benign Epithelioma",
+                    "Epithelial tumor, benign"
+                ],
+                "nci_thesaurus_concept_id": "C4092",
+                "name": "Benign Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3709",
+                    "C3677"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Papillary Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C36031",
+                "name": "Papillary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C8429",
+                "name": "Papillary Epithelial Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36031",
+                    "C3709"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Benign Neoplasm of the Breast",
+                    "Benign Breast Tumor",
+                    "Benign Tumor of the Breast",
+                    "Benign Neoplasm of Breast",
+                    "Benign Tumor of Breast"
+                ],
+                "nci_thesaurus_concept_id": "C4505",
+                "name": "Benign Breast Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3677",
+                    "C2910"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Intraductal Papillary Breast Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C36090",
+                "name": "Breast Intraductal Papillary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36083",
+                    "C5206"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Ductal Hyperplasia"
+                ],
+                "nci_thesaurus_concept_id": "C26458",
+                "name": "Intraductal Hyperplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3113"
                 ]
             },
             {
@@ -915,8 +1100,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Atypical Hyperplasia of the Breast",
-                    "Atypical Breast Hyperplasia",
-                    "Atypical Hyperplasia of Breast"
+                    "Atypical Hyperplasia of Breast",
+                    "Atypical Breast Hyperplasia"
                 ],
                 "nci_thesaurus_concept_id": "C5195",
                 "name": "Breast Atypical Hyperplasia",
@@ -940,8 +1125,98 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C2910",
-                    "C3113"
+                    "C3113",
+                    "C2910"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Papillary Neoplasm of the Breast",
+                    "Papillary Breast Neoplasm",
+                    "Papillary Tumor of Breast",
+                    "Papillary Neoplasm of Breast",
+                    "Papillary Tumor of the Breast",
+                    "Papillary Breast Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C5206",
+                "name": "Breast Papillary Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C8429",
+                    "C2910"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Non-Neoplastic Disease",
+                    "Non-neoplastic disorder, NOS",
+                    "NON-NEOPLASTIC",
+                    "Non-neoplastic condition, NOS"
+                ],
+                "nci_thesaurus_concept_id": "C53529",
+                "name": "Non-Neoplastic Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Hyperplastic"
+                ],
+                "nci_thesaurus_concept_id": "C3113",
+                "name": "Hyperplasia",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C53547"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "DIN",
+                    "Mammary Intraepithelial Neoplasia, Ductal Type",
+                    "Ductal Intraepithelial Neoplasia",
+                    "Intraductal Proliferative Lesion of the Breast",
+                    "Intraductal Proliferative Lesion"
+                ],
+                "nci_thesaurus_concept_id": "C27942",
+                "name": "Breast Intraductal Proliferative Lesion",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36083"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Familial Malignant Neoplasm",
+                    "Hereditary Cancer",
+                    "Familial Cancer"
+                ],
+                "nci_thesaurus_concept_id": "C9479",
+                "name": "Hereditary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
                 ]
             },
             {
@@ -965,36 +1240,6 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Intraductal Breast Papilloma",
-                    "Breast Papilloma",
-                    "Papilloma of the Breast",
-                    "Intraductal Papilloma of the Breast",
-                    "Breast Intracystic Papilloma",
-                    "Intraductal Papilloma, Not Otherwise Specified",
-                    "Duct Papilloma of Breast",
-                    "Ductal Breast Papilloma",
-                    "Intraductal Papilloma of Breast",
-                    "Duct Papilloma of the Breast",
-                    "Intraductal Papilloma, NOS",
-                    "Papilloma of Breast",
-                    "Intracystic Papilloma",
-                    "Intracystic papillary adenoma"
-                ],
-                "nci_thesaurus_concept_id": "C3863",
-                "name": "Breast Intraductal Papilloma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4505",
-                    "C3785",
-                    "C36090"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
                     "Non-Neoplastic Disease by Special Category"
                 ],
                 "nci_thesaurus_concept_id": "C53547",
@@ -1004,239 +1249,6 @@
                 ],
                 "parents": [
                     "C53529"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Benign Epithelial Tumor",
-                    "Epithelial tumor, benign",
-                    "Benign Epithelioma",
-                    "Epithelioma, benign",
-                    "Benign Neoplasm of Epithelium",
-                    "Benign Neoplasm of the Epithelium",
-                    "Benign Tumor of Epithelium",
-                    "Benign Tumor of the Epithelium"
-                ],
-                "nci_thesaurus_concept_id": "C4092",
-                "name": "Benign Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C3677"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Ductal Hyperplasia"
-                ],
-                "nci_thesaurus_concept_id": "C26458",
-                "name": "Intraductal Hyperplasia",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3113"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Papillary Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C36031",
-                "name": "Papillary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Hyperplastic"
-                ],
-                "nci_thesaurus_concept_id": "C3113",
-                "name": "Hyperplasia",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C53547"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Non-Neoplastic Disease",
-                    "NON-NEOPLASTIC",
-                    "Non-neoplastic condition, NOS",
-                    "Non-neoplastic disorder, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C53529",
-                "name": "Non-Neoplastic Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Duct Adenoma",
-                    "Duct adenoma, NOS",
-                    "Ductal Papilloma"
-                ],
-                "nci_thesaurus_concept_id": "C3785",
-                "name": "Intraductal Papilloma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7440"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Ductal Intraepithelial Neoplasia",
-                    "Intraductal Proliferative Lesion",
-                    "Mammary Intraepithelial Neoplasia, Ductal Type",
-                    "DIN",
-                    "Intraductal Proliferative Lesion of the Breast"
-                ],
-                "nci_thesaurus_concept_id": "C27942",
-                "name": "Breast Intraductal Proliferative Lesion",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36083"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Intraductal Papillary Breast Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C36090",
-                "name": "Breast Intraductal Papillary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C5206",
-                    "C36083"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Papillary Neoplasm of the Breast",
-                    "Papillary Tumor of Breast",
-                    "Papillary Breast Tumor",
-                    "Papillary Neoplasm of Breast",
-                    "Papillary Tumor of the Breast",
-                    "Papillary Breast Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C5206",
-                "name": "Breast Papillary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2910",
-                    "C8429"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Ductal Hyperplasia of the Breast",
-                    "Epithelial Hyperplasia of the Breast",
-                    "Ductal Hyperplasia of Breast",
-                    "Epithelial Hyperplasia of Breast",
-                    "Ductal Breast Hyperplasia",
-                    "Breast Epithelial Hyperplasia"
-                ],
-                "nci_thesaurus_concept_id": "C9492",
-                "name": "Breast Ductal Hyperplasia",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C4804",
-                    "C26458"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Benign Breast Tumor",
-                    "Benign Neoplasm of Breast",
-                    "Benign Neoplasm of the Breast",
-                    "Benign Tumor of Breast",
-                    "Benign Tumor of the Breast"
-                ],
-                "nci_thesaurus_concept_id": "C4505",
-                "name": "Benign Breast Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3677",
-                    "C2910"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C8429",
-                "name": "Papillary Epithelial Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C36031"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Benign Tumor",
-                    "Tumor, benign",
-                    "Neoplasm, benign",
-                    "Benign Neoplasms",
-                    "Benign Unclassifiable Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3677",
-                "name": "Benign Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
                 ]
             },
             {
@@ -1253,23 +1265,6 @@
                 "parents": [
                     "C2910"
                 ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Familial Cancer",
-                    "Hereditary Cancer",
-                    "Familial Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C9479",
-                "name": "Hereditary Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305"
-                ]
             }
         ],
         "_primary_purpose_sort_order": 2,
@@ -1281,21 +1276,67 @@
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Conventional X-Ray",
-                            "Medical Imaging, X-Ray",
-                            "X-Ray",
-                            "X-Ray Imaging",
-                            "Diagnostic Radiology"
-                        ],
-                        "nci_thesaurus_concept_id": "C38101",
-                        "name": "Radiography",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C16502"
+                            "C43431"
                         ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16502",
+                        "name": "Diagnostic Imaging",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C18020",
+                            "C17369"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16818",
+                        "name": "Mammography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C38101"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Imaging",
+                            "Diagnostic Imaging Technique",
+                            "Imaging Procedures",
+                            "Medical Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -1315,25 +1356,20 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16502",
-                        "name": "Diagnostic Imaging",
+                        "synonyms": [
+                            "X-Ray",
+                            "X-Ray Imaging",
+                            "Medical Imaging, X-Ray",
+                            "Diagnostic Radiology",
+                            "Conventional X-Ray"
+                        ],
+                        "nci_thesaurus_concept_id": "C38101",
+                        "name": "Radiography",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C18020",
-                            "C17369"
+                            "C16502"
                         ]
                     },
                     {
@@ -1362,47 +1398,6 @@
                         "category": "other",
                         "parents": [
                             "C16818"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16818",
-                        "name": "Mammography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C38101"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Diagnostic Imaging Technique",
-                            "Imaging Procedures",
-                            "Medical Imaging",
-                            "Imaging"
-                        ],
-                        "nci_thesaurus_concept_id": "C17369",
-                        "name": "Imaging Technique",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
                         ]
                     }
                 ],
@@ -1414,20 +1409,95 @@
                 "interventions": [
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Conventional X-Ray",
-                            "Medical Imaging, X-Ray",
-                            "X-Ray",
-                            "X-Ray Imaging",
-                            "Diagnostic Radiology"
-                        ],
-                        "nci_thesaurus_concept_id": "C38101",
-                        "name": "Radiography",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C16502"
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16502",
+                        "name": "Diagnostic Imaging",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C18020",
+                            "C17369"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16818",
+                        "name": "Mammography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C38101"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Imaging",
+                            "Diagnostic Imaging Technique",
+                            "Imaging Procedures",
+                            "Medical Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "DBT",
+                            "Digital Tomosynthesis of the Breast",
+                            "Digital Breast Tomosynthesis"
+                        ],
+                        "nci_thesaurus_concept_id": "C70761",
+                        "name": "Digital Tomosynthesis Mammography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C126695",
+                            "C18467"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C18467",
+                        "name": "Digital Mammography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16818"
                         ]
                     },
                     {
@@ -1448,94 +1518,20 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16502",
-                        "name": "Diagnostic Imaging",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C18020",
-                            "C17369"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Diagnostic Test",
-                            "Diagnostic Method",
-                            "Diagnostic Technique"
+                            "X-Ray",
+                            "X-Ray Imaging",
+                            "Medical Imaging, X-Ray",
+                            "Diagnostic Radiology",
+                            "Conventional X-Ray"
                         ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
+                        "nci_thesaurus_concept_id": "C38101",
+                        "name": "Radiography",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
                         "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Digital Tomosynthesis of the Breast",
-                            "Digital Breast Tomosynthesis",
-                            "DBT"
-                        ],
-                        "nci_thesaurus_concept_id": "C70761",
-                        "name": "Digital Tomosynthesis Mammography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C18467",
-                            "C126695"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16818",
-                        "name": "Mammography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C38101"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C18467",
-                        "name": "Digital Mammography",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16818"
+                            "C16502"
                         ]
                     },
                     {
@@ -1555,13 +1551,12 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Diagnostic Imaging Technique",
-                            "Imaging Procedures",
-                            "Medical Imaging",
-                            "Imaging"
+                            "Diagnostic Test",
+                            "Diagnostic Method",
+                            "Diagnostic Technique"
                         ],
-                        "nci_thesaurus_concept_id": "C17369",
-                        "name": "Imaging Technique",
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
@@ -1597,9 +1592,10 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 128905,
+        "prior_therapy": [],
         "_current_trial_status_sort_order": 0,
         "start_date": "2017-07-06",
-        "record_verification_date": "2021-12-22",
+        "record_verification_date": "2022-08-26",
         "ctep_id": "EA1151",
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -1612,13 +1608,16 @@
             "allocation_code": "Randomized Controlled Trial"
         },
         "acronym": null,
+        "nci_programs": [
+            "NCORP"
+        ],
         "nci_funded": "Direct",
         "anatomic_sites": [
             "Breast"
         ],
         "ccr_id": null,
         "start_date_type_code": "ACTUAL",
-        "principal_investigator": "Etta D. Pisano",
+        "principal_investigator": "Etta D Pisano",
         "study_source": "National",
         "completion_date": null,
         "study_subtype_code": null,

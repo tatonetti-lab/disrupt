@@ -1,7 +1,7 @@
 [
     {
         "other_ids": [],
-        "amendment_date": null,
+        "amendment_date": "2022-07-12",
         "keywords": null,
         "dcp_id": null,
         "interventional_model": "Single Group",
@@ -16,7 +16,7 @@
                 {
                     "inclusion_indicator": true,
                     "display_order": 2,
-                    "description": "Disease confined to the prostate confirmed by pelvic and/or bone imaging if indicated per the National Comprehensive Cancer Network (NCCN) guidelines"
+                    "description": "Disease confined to the prostate confirmed by pelvic and/or bone computed tomography (CT) or magnetic resonance imaging (MRI) imaging, with or without contrast, if indicated per the National Comprehensive Cancer Network (NCCN) guidelines"
                 },
                 {
                     "inclusion_indicator": true,
@@ -51,7 +51,7 @@
                 {
                     "inclusion_indicator": false,
                     "display_order": 9,
-                    "description": "Patients with a prostate size > 100 cc based on computed tomography (CT), magnetic resonance imaging (MRI), or ultrasound measurements"
+                    "description": "Patients with a prostate size > 100 cc based on CT, MRI, or ultrasound measurements"
                 },
                 {
                     "inclusion_indicator": false,
@@ -98,7 +98,7 @@
             }
         },
         "completion_date_type_code": null,
-        "detail_description": "PRIMARY OBJECTIVE:\r\nI. To evaluate whether using a rectal spacer prior to initiating radiation therapy can increase the proportion of patients meeting the institutional goal of volume of the rectum receiving at least 100% of the prescribed dose (V100rectum) < 0.75 cc after brachytherapy implant.\r\n\r\nSECONDARY OBJECTIVES:\r\nI. To assess prostate tumor coverage and implant quality using radiation dose covering 90% of the prostate (D90prostate) and volume of the prostate receiving at least 150% of the prescribed dose (V150postate) at the time of post-implant dosimetry (PID).\r\nII. To assess quality of life (QOL) changes using International Prostate Symptom Score (IPSS), Sexual Health Index in Men (SHIM), and Expanded Prostate Cancer Index Composite (EPIC) bowel domain scores for patients undergoing this treatment paradigm.\r\nIII. To assess anatomic distortions (such as pubic arch interference and difficulty using the brachytherapy template) using physician reporting.\r\nIV. To assess radiographic distortions (including poor ultrasound quality) using physician reporting.\r\nV. To assess V100rectum for the stereotactic body radiotherapy (SBRT) portion of radiation therapy (RT).\r\n\r\nOUTLINE:\r\nPatients undergo hydrogel rectal spacer placement on day 1. Two-seven days after hydrogel placement, patients undergo computed tomography (CT) simulation of radiation treatment planning. Seven-ten days after CT simulation, patients undergo SBRT in 5 fractions over 1 week. One month after completing SBRT, patients undergo brachytherapy. One month after brachytherapy, patients undergo post-implant dosimetry scan.\r\n\r\nAfter completion of study treatment, patients are followed up at 3, 6, 12, 18, and 24 months.",
+        "detail_description": "PRIMARY OBJECTIVE:\r\nI. To evaluate whether using a rectal spacer prior to initiating radiation therapy can increase the proportion of patients meeting the institutional goal of volume of the rectum receiving at least 100% of the prescribed dose (V100rectum) < 0.75 cc after brachytherapy implant.\r\n\r\nSECONDARY OBJECTIVES:\r\nI. To assess prostate tumor coverage and implant quality using radiation dose covering 90% of the prostate (D90prostate) and volume of the prostate receiving at least 150% of the prescribed dose (V150postate) at the time of post-implant dosimetry (PID).\r\nII. To assess quality of life (QOL) changes using International Prostate Symptom Score (IPSS), Sexual Health Index in Men (SHIM), and Expanded Prostate Cancer Index Composite (EPIC) bowel domain scores for patients undergoing this treatment paradigm.\r\nIII. To assess anatomic distortions (such as pubic arch interference and difficulty using the brachytherapy template) using physician reporting.\r\nIV. To assess radiographic distortions (including poor ultrasound quality) using physician reporting.\r\nV. To assess V100rectum for the stereotactic body radiotherapy (SBRT) portion of radiation therapy (RT).\r\n\r\nOUTLINE:\r\nPatients undergo hydrogel rectal spacer placement on day 1. Within 1 week after hydrogel placement, patients undergo computed tomography (CT) simulation of radiation treatment planning. Within 1 week after CT simulation, patients undergo SBRT in 5 fractions. Within 2 weeks after completing SBRT, patients undergo brachytherapy. Within one month after brachytherapy, patients undergo post-implant dosimetry scan.\r\n\r\nAfter completion of study treatment, patients are followed up at 3, 6, 12, 18, and 24 months.",
         "official_title": "A Non-Randomized Phase II Study of the Reduction in Rectal V100 with the Use of Rectal Spacer Hydrogel in the Management of Intermediate Risk Prostate Cancer Treated with Combined Modality Radiation Therapy",
         "_phase_sort_order": 2,
         "collaborators": [
@@ -172,116 +172,6 @@
         "biomarkers": [
             {
                 "eligibility_criterion": "exclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C21281",
-                "name": "Enzyme Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "exclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Exclusion"
-            },
-            {
-                "eligibility_criterion": "exclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "exclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Exclusion"
-            },
-            {
-                "eligibility_criterion": "exclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Diagnostic Test Result",
-                    "Test Result"
-                ],
-                "nci_thesaurus_concept_id": "C77140",
-                "name": "Clinical Test Result",
-                "semantic_types": [
-                    "Finding"
-                ],
-                "type": [],
-                "eligibility_criteria": "exclusion",
-                "ancestors": [
-                    "C3367"
-                ],
-                "parents": [
-                    "C3367"
-                ],
-                "assay_purpose": "Eligibility Criterion - Exclusion"
-            },
-            {
-                "eligibility_criterion": "exclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Hydrolase Family Gene"
-                ],
-                "nci_thesaurus_concept_id": "C25804",
-                "name": "Hydrolase Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "exclusion",
-                "ancestors": [
-                    "C16612",
-                    "C21281"
-                ],
-                "parents": [
-                    "C21281"
-                ],
-                "assay_purpose": "Eligibility Criterion - Exclusion"
-            },
-            {
-                "eligibility_criterion": "exclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "KLK3",
-                    "Kallikrein 3, (Prostate Specific Antigen) Gene",
-                    "PSA"
-                ],
-                "nci_thesaurus_concept_id": "C26585",
-                "name": "KLK3 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "exclusion",
-                "ancestors": [
-                    "C26003",
-                    "C21281",
-                    "C25804",
-                    "C16612"
-                ],
-                "parents": [
-                    "C26003"
-                ],
-                "assay_purpose": "Eligibility Criterion - Exclusion"
-            },
-            {
-                "eligibility_criterion": "exclusion",
                 "inclusion_indicator": "TRIAL",
                 "synonyms": [
                     "PSA Level Greater than 20"
@@ -292,17 +182,16 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "exclusion",
                 "ancestors": [
+                    "C25804",
+                    "C21281",
+                    "C26585",
+                    "C36292",
                     "C16612",
                     "C77140",
                     "C3367",
-                    "C36292",
-                    "C21281",
                     "C138961",
-                    "C26585",
-                    "C26003",
-                    "C25804"
+                    "C26003"
                 ],
                 "parents": [
                     "C138961",
@@ -320,16 +209,15 @@
                     "Laboratory or Test Result"
                 ],
                 "type": [],
-                "eligibility_criteria": "exclusion",
                 "ancestors": [
+                    "C21281",
+                    "C36292",
                     "C16612",
+                    "C26585",
                     "C77140",
                     "C3367",
-                    "C36292",
-                    "C26585",
                     "C25804",
-                    "C26003",
-                    "C21281"
+                    "C26003"
                 ],
                 "parents": [
                     "C26585",
@@ -350,14 +238,80 @@
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "exclusion",
                 "ancestors": [
+                    "C25804",
                     "C16612",
-                    "C21281",
-                    "C25804"
+                    "C21281"
                 ],
                 "parents": [
                     "C25804"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "LAB_RESULT",
+                    "Lab Findings",
+                    "Lab Value",
+                    "Laboratory Finding",
+                    "Laboratory Report",
+                    "Labs",
+                    "Test Result",
+                    "test_result"
+                ],
+                "nci_thesaurus_concept_id": "C36292",
+                "name": "Laboratory Test Result",
+                "semantic_types": [
+                    "Laboratory or Test Result"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367",
+                    "C77140"
+                ],
+                "parents": [
+                    "C77140"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Hydrolase Family Gene"
+                ],
+                "nci_thesaurus_concept_id": "C25804",
+                "name": "Hydrolase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612"
+                ],
+                "parents": [
+                    "C21281"
                 ],
                 "assay_purpose": "Eligibility Criterion - Exclusion"
             },
@@ -375,7 +329,6 @@
                 "type": [
                     "branch"
                 ],
-                "eligibility_criteria": "exclusion",
                 "ancestors": [],
                 "parents": [],
                 "assay_purpose": "Eligibility Criterion - Exclusion"
@@ -384,27 +337,65 @@
                 "eligibility_criterion": "exclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "LAB_RESULT",
-                    "Lab Findings",
-                    "Laboratory Finding",
-                    "Laboratory Report",
-                    "Labs",
-                    "Test Result",
-                    "test_result"
+                    "KLK3",
+                    "Kallikrein 3, (Prostate Specific Antigen) Gene",
+                    "PSA"
                 ],
-                "nci_thesaurus_concept_id": "C36292",
-                "name": "Laboratory Test Result",
+                "nci_thesaurus_concept_id": "C26585",
+                "name": "KLK3 Gene",
                 "semantic_types": [
-                    "Laboratory or Test Result"
+                    "Gene or Genome"
                 ],
-                "type": [],
-                "eligibility_criteria": "exclusion",
+                "type": [
+                    "reference_gene"
+                ],
                 "ancestors": [
-                    "C3367",
-                    "C77140"
+                    "C25804",
+                    "C16612",
+                    "C21281",
+                    "C26003"
                 ],
                 "parents": [
-                    "C77140"
+                    "C26003"
+                ],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genes"
+                ],
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Exclusion"
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Diagnostic Test Result",
+                    "Test Result"
+                ],
+                "nci_thesaurus_concept_id": "C77140",
+                "name": "Clinical Test Result",
+                "semantic_types": [
+                    "Finding"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3367"
+                ],
+                "parents": [
+                    "C3367"
                 ],
                 "assay_purpose": "Eligibility Criterion - Exclusion"
             }
@@ -433,8 +424,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Stage IIA Prostate Carcinoma AJCC v8",
-                    "IIA",
-                    "Stage IIA Prostate Cancer AJCC v8"
+                    "Stage IIA Prostate Cancer AJCC v8",
+                    "IIA"
                 ],
                 "nci_thesaurus_concept_id": "C140166",
                 "name": "Stage IIA Prostate Cancer",
@@ -449,8 +440,8 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Stage IIB Prostate Cancer AJCC v8",
                     "IIB",
+                    "Stage IIB Prostate Cancer AJCC v8",
                     "Stage IIB Prostate Carcinoma AJCC v8"
                 ],
                 "nci_thesaurus_concept_id": "C140167",
@@ -466,9 +457,9 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "IIC",
                     "Stage IIC Prostate Carcinoma AJCC v8",
-                    "Stage IIC Prostate Cancer AJCC v8"
+                    "Stage IIC Prostate Cancer AJCC v8",
+                    "IIC"
                 ],
                 "nci_thesaurus_concept_id": "C140168",
                 "name": "Stage IIC Prostate Cancer",
@@ -483,9 +474,9 @@
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Adenocarcinoma of the Prostate",
                     "PRAD",
-                    "Adenocarcinoma of Prostate"
+                    "Adenocarcinoma of Prostate",
+                    "Adenocarcinoma of the Prostate"
                 ],
                 "nci_thesaurus_concept_id": "C2919",
                 "name": "Prostate Adenocarcinoma",
@@ -493,59 +484,82 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C48596",
-                    "C2852"
+                    "C2852",
+                    "C48596"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Invasive Prostate Carcinoma",
-                    "Infiltrating Prostate Carcinoma"
+                    "Genitourinary System Cancer",
+                    "Genitourinary Cancer",
+                    "Malignant Genitourinary Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C48596",
-                "name": "Invasive Prostate Cancer",
+                "nci_thesaurus_concept_id": "C156484",
+                "name": "Malignant Genitourinary System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9480",
-                    "C4863"
+                    "C9305",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36076",
+                "name": "Malignant Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C156484",
+                    "C3674"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Reproductive System Tumor",
-                    "Neoplasm of Reproductive System",
-                    "Reproductive Tumor",
-                    "Tumor of the Reproductive System",
-                    "Tumor of Reproductive System",
-                    "Neoplasm of the Reproductive System",
-                    "Reproductive Neoplasm"
+                    "Male Reproductive System Disease",
+                    "Disorder of Male Reproductive System"
                 ],
-                "nci_thesaurus_concept_id": "C3674",
-                "name": "Reproductive System Neoplasm",
+                "nci_thesaurus_concept_id": "C27019",
+                "name": "Male Reproductive System Disorder",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C156482",
                     "C4875"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C3263",
+                "name": "Neoplasm by Site",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
                 "synonyms": [
+                    "Cancer of the Prostate",
+                    "Other Prostate Carcinoma",
                     "Carcinoma of Prostate",
+                    "Carcinoma of the Prostate",
                     "Prostate cancer, NOS",
                     "Cancer of Prostate",
-                    "Prostate Carcinoma",
-                    "Carcinoma of the Prostate",
-                    "Cancer of the Prostate"
+                    "Prostate Carcinoma"
                 ],
                 "nci_thesaurus_concept_id": "C4863",
                 "name": "Prostate Cancer",
@@ -560,36 +574,124 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C9480",
-                "name": "Invasive Carcinoma",
+                "synonyms": [
+                    "Adenocarcinoma, NOS",
+                    "ADENOCARCINOMA, MALIGNANT"
+                ],
+                "nci_thesaurus_concept_id": "C2852",
+                "name": "Adenocarcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
                     "C2916",
-                    "C8505"
+                    "C7132"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Malignant Neoplasm of Prostate",
-                    "Malignant Tumor of the Prostate",
-                    "Malignant Neoplasm of the Prostate",
-                    "Malignant Prostate Tumor",
-                    "Malignant Tumor of Prostate"
+                    "Prostate Tumor",
+                    "Tumor of the Prostate",
+                    "Neoplasm of the Prostate",
+                    "Neoplasm of Prostate",
+                    "Tumor of Prostate"
                 ],
-                "nci_thesaurus_concept_id": "C7378",
-                "name": "Malignant Prostate Neoplasm",
+                "nci_thesaurus_concept_id": "C3343",
+                "name": "Prostate Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8561",
-                    "C3343"
+                    "C3054",
+                    "C26865"
                 ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
+                ],
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm, malignant",
+                    "Cancer",
+                    "Tumor, malignant, NOS",
+                    "Malignancy",
+                    "Unclassified tumor, malignant",
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
+                ],
+                "nci_thesaurus_concept_id": "C9305",
+                "name": "Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C7062"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Prostate Disease"
+                ],
+                "nci_thesaurus_concept_id": "C26865",
+                "name": "Prostate Disorder",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "disease term",
+                    "Diseases",
+                    "Disease",
+                    "Diseases and Disorders",
+                    "disease_term",
+                    "Diagnosis",
+                    "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
+                    "Disorders",
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
+                ],
+                "nci_thesaurus_concept_id": "C2991",
+                "name": "Other Disease",
+                "type": [
+                    "maintype"
+                ],
+                "parents": []
             },
             {
                 "inclusion_indicator": "TREE",
@@ -611,29 +713,125 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Disease by Site"
+                    "Malignant Epithelial Neoplasm",
+                    "Epithelial tumor, malignant",
+                    "Carcinoma",
+                    "Carcinoma, NOS",
+                    "Malignant Epithelioma",
+                    "Epithelioma Malignant",
+                    "CARCINOMA, MALIGNANT",
+                    "Malignant Epithelial Tumor",
+                    "Epithelial Carcinoma"
                 ],
-                "nci_thesaurus_concept_id": "C27551",
-                "name": "Disorder by Site",
+                "nci_thesaurus_concept_id": "C2916",
+                "name": "Other Carcinoma",
                 "type": [
-                    "subtype"
+                    "maintype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C9305",
+                    "C3709"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C156482",
-                "name": "Genitourinary System Neoplasm",
+                "nci_thesaurus_concept_id": "C9480",
+                "name": "Invasive Carcinoma",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C156660",
-                    "C3263"
+                    "C8505",
+                    "C2916"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Neoplasm of the Reproductive System",
+                    "Reproductive Neoplasm",
+                    "Reproductive System Tumor",
+                    "Neoplasm of Reproductive System",
+                    "Reproductive Tumor",
+                    "Tumor of Reproductive System",
+                    "Tumor of the Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C3674",
+                "name": "Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4875",
+                    "C156482"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C181196",
+                "name": "Male Reproductive System Carcinoma",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C164141",
+                    "C8561"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor_Morphology",
+                    "Tumor Morphology"
+                ],
+                "nci_thesaurus_concept_id": "C4741",
+                "name": "Neoplasm by Morphology",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3262"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Malignant Tumor of the Male Reproductive System",
+                    "Malignant Neoplasm of Male Reproductive System",
+                    "Malignant Tumor of Male Reproductive System",
+                    "Male reproductive system cancer, NOS",
+                    "Malignant Male Reproductive System Tumor",
+                    "Male reprod. system cancer, NOS",
+                    "Malignant Neoplasm of the Male Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C8561",
+                "name": "Malignant Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C3054",
+                    "C36076"
                 ]
             },
             {
@@ -646,8 +844,62 @@
                     "subtype"
                 ],
                 "parents": [
-                    "C156484",
-                    "C2916"
+                    "C2916",
+                    "C156484"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Infiltrating Prostate Carcinoma",
+                    "Invasive Prostate Carcinoma"
+                ],
+                "nci_thesaurus_concept_id": "C48596",
+                "name": "Invasive Prostate Cancer",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C4863",
+                    "C9480"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "Tumor of the Male Reproductive System",
+                    "Male Reproductive System Tumor",
+                    "Tumor of Male Reproductive System",
+                    "Neoplasm of Male Reproductive System",
+                    "Neoplasm of the Male Reproductive System"
+                ],
+                "nci_thesaurus_concept_id": "C3054",
+                "name": "Male Reproductive System Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C27019",
+                    "C3674"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": true,
+                "synonyms": [
+                    "invasive cancer",
+                    "infiltrating cancer",
+                    "Infiltrating Malignant Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C8505",
+                "name": "Invasive Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C9305"
                 ]
             },
             {
@@ -671,145 +923,22 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C3263",
-                "name": "Neoplasm by Site",
+                "nci_thesaurus_concept_id": "C156482",
+                "name": "Genitourinary System Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C156660",
+                    "C3263"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Tumor Morphology",
-                    "Tumor_Morphology"
-                ],
-                "nci_thesaurus_concept_id": "C4741",
-                "name": "Neoplasm by Morphology",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "CARCINOMA, MALIGNANT",
-                    "Malignant Epithelial Tumor",
-                    "Malignant Epithelial Neoplasm",
-                    "Epithelial Carcinoma",
-                    "Malignant Epithelioma",
-                    "Carcinoma",
-                    "Carcinoma, NOS",
-                    "Epithelial tumor, malignant",
-                    "Epithelioma Malignant"
-                ],
-                "nci_thesaurus_concept_id": "C2916",
-                "name": "Other Carcinoma",
-                "type": [
-                    "maintype"
-                ],
-                "parents": [
-                    "C3709",
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm of the Prostate",
-                    "Neoplasm of Prostate",
-                    "Prostate Tumor",
-                    "Tumor of the Prostate",
-                    "Tumor of Prostate"
-                ],
-                "nci_thesaurus_concept_id": "C3343",
-                "name": "Prostate Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3054",
-                    "C26865"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Tumor of the Male Reproductive System",
-                    "Malignant Male Reproductive System Tumor",
-                    "Male reprod. system cancer, NOS",
-                    "Malignant Neoplasm of the Male Reproductive System",
-                    "Malignant Tumor of Male Reproductive System",
-                    "Malignant Neoplasm of Male Reproductive System",
-                    "Male reproductive system cancer, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C8561",
-                "name": "Malignant Male Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3054",
-                    "C36076"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C36076",
-                "name": "Malignant Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C156484",
-                    "C3674"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3262"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Prostate Disease"
-                ],
-                "nci_thesaurus_concept_id": "C26865",
-                "name": "Prostate Disorder",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C27019"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Genitourinary Disorder",
-                    "Urogenital Disease"
+                    "Urogenital Disease",
+                    "Genitourinary Disorder"
                 ],
                 "nci_thesaurus_concept_id": "C156660",
                 "name": "Genitourinary System Disorder",
@@ -823,136 +952,36 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C181196",
-                "name": "Male Reproductive System Carcinoma",
+                "synonyms": [
+                    "Malignant Neoplasm of the Prostate",
+                    "Malignant Tumor of the Prostate",
+                    "Malignant Neoplasm of Prostate",
+                    "Malignant Prostate Tumor",
+                    "Malignant Tumor of Prostate"
+                ],
+                "nci_thesaurus_concept_id": "C7378",
+                "name": "Malignant Prostate Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C8561",
-                    "C164141"
+                    "C3343",
+                    "C8561"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Disorder of Male Reproductive System",
-                    "Male Reproductive System Disease"
+                    "Disease by Site"
                 ],
-                "nci_thesaurus_concept_id": "C27019",
-                "name": "Male Reproductive System Disorder",
+                "nci_thesaurus_concept_id": "C27551",
+                "name": "Disorder by Site",
                 "type": [
                     "subtype"
-                ],
-                "parents": [
-                    "C4875"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "infiltrating cancer",
-                    "invasive cancer",
-                    "Infiltrating Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8505",
-                "name": "Invasive Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Malignant Genitourinary Neoplasm",
-                    "Genitourinary System Cancer",
-                    "Genitourinary Cancer"
-                ],
-                "nci_thesaurus_concept_id": "C156484",
-                "name": "Malignant Genitourinary System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C9305",
-                    "C156482"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
-                ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
-                "type": [
-                    "maintype"
                 ],
                 "parents": [
                     "C2991"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "disease term",
-                    "Disease",
-                    "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
-                    "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
-                    "Disease or Disorder, Non-Neoplastic",
-                    "Disorders",
-                    "Disorder"
-                ],
-                "nci_thesaurus_concept_id": "C2991",
-                "name": "Other Disease",
-                "type": [
-                    "maintype"
-                ],
-                "parents": []
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Neoplasm, malignant",
-                    "Cancer",
-                    "Malignant Growth",
-                    "Tumor, malignant, NOS",
-                    "Malignant Tumor",
-                    "Malignancy",
-                    "CA",
-                    "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
-                ],
-                "nci_thesaurus_concept_id": "C9305",
-                "name": "Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
                 ]
             },
             {
@@ -974,47 +1003,10 @@
             },
             {
                 "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Tumor of Male Reproductive System",
-                    "Tumor of the Male Reproductive System",
-                    "Neoplasm of Male Reproductive System",
-                    "Neoplasm of the Male Reproductive System",
-                    "Male Reproductive System Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C3054",
-                "name": "Male Reproductive System Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C3674",
-                    "C27019"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": true,
-                "synonyms": [
-                    "Adenocarcinoma, NOS",
-                    "ADENOCARCINOMA, MALIGNANT"
-                ],
-                "nci_thesaurus_concept_id": "C2852",
-                "name": "Adenocarcinoma",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C2916",
-                    "C7132"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Prostate Carcinoma by AJCC v8 Stage",
-                    "Tumor Stage (Pathologic)"
+                    "Tumor Stage (Pathologic)",
+                    "Prostate Carcinoma by AJCC v8 Stage"
                 ],
                 "nci_thesaurus_concept_id": "C140163",
                 "name": "Prostate Cancer by AJCC v8 Stage",
@@ -1034,114 +1026,52 @@
             {
                 "interventions": [
                     {
-                        "inclusion_indicator": "TRIAL",
+                        "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Computerized Axial Tomography",
-                            "CAT Scan",
-                            "CAT",
-                            "CT",
-                            "Computerized Tomography"
+                            "Radiation",
+                            "Radiotherapy",
+                            "Irradiated",
+                            "Cancer Radiotherapy",
+                            "Radiotherapeutics",
+                            "Irradiation",
+                            "Therapy, Radiation",
+                            "Irradiate",
+                            "RT"
                         ],
-                        "nci_thesaurus_concept_id": "C17204",
-                        "name": "Computed Tomography",
+                        "nci_thesaurus_concept_id": "C15313",
+                        "name": "Radiation Therapy",
                         "description": null,
-                        "type": "Procedure/Surgery",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C16502"
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Radiation Surgery"
+                        ],
+                        "nci_thesaurus_concept_id": "C15696",
+                        "name": "Radiosurgery",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C15313",
+                            "C64982",
+                            "C49165"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64255",
-                        "name": "Informational Intervention",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C63474"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Surgical Procedures",
-                            "Operation",
-                            "Surgical Interventions",
-                            "Surgery"
-                        ],
-                        "nci_thesaurus_concept_id": "C15329",
-                        "name": "Surgical Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "SBRT",
-                            "SABR",
-                            "Stereotactic Ablative Body Radiation Therapy"
-                        ],
-                        "nci_thesaurus_concept_id": "C118286",
-                        "name": "Stereotactic Body Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15696"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Technique",
-                            "Therapeutic Method",
-                            "Therapeutic Interventions",
-                            "Therapy",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Medical Imaging",
-                            "Diagnostic Imaging Technique",
-                            "Imaging Procedures",
-                            "Imaging"
-                        ],
-                        "nci_thesaurus_concept_id": "C17369",
-                        "name": "Imaging Technique",
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
                         "description": null,
                         "type": "Procedure/Surgery",
                         "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
+                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TRIAL",
@@ -1160,16 +1090,6 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
                         "nci_thesaurus_concept_id": "C16502",
                         "name": "Diagnostic Imaging",
                         "description": null,
@@ -1183,224 +1103,18 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
+                            "Surgical Interventions",
+                            "Surgical Procedures",
+                            "Operation",
+                            "Surgery"
                         ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64253",
-                        "name": "Questionnaire Administration",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C64255"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C64982",
-                        "name": "Therapeutic Surgical Procedure",
+                        "nci_thesaurus_concept_id": "C15329",
+                        "name": "Surgical Procedure",
                         "description": null,
                         "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15329",
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Radiation Surgery"
-                        ],
-                        "nci_thesaurus_concept_id": "C15696",
-                        "name": "Radiosurgery",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15313",
-                            "C49165",
-                            "C64982"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Therapeutic Technique",
-                            "Therapeutic Method",
-                            "Therapeutic Interventions",
-                            "Therapy",
-                            "TX"
-                        ],
-                        "nci_thesaurus_concept_id": "C49236",
-                        "name": "Therapeutic Procedure",
-                        "description": null,
-                        "type": "Other",
                         "category": "other",
                         "parents": [
                             "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Intervention Strategies",
-                            "Procedure",
-                            "Intervention"
-                        ],
-                        "nci_thesaurus_concept_id": "C25218",
-                        "name": "Intervention or Procedure",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C16203"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Diagnostic Method",
-                            "Diagnostic Test",
-                            "Diagnostic Technique"
-                        ],
-                        "nci_thesaurus_concept_id": "C18020",
-                        "name": "Diagnostic Procedure",
-                        "description": null,
-                        "type": "Procedure/Surgery",
-                        "category": "other",
-                        "parents": [
-                            "C25218"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [
-                            "Internal Radiation Brachytherapy",
-                            "Brachytherapy",
-                            "Internal Radiation",
-                            "Radiation Brachytherapy"
-                        ],
-                        "nci_thesaurus_concept_id": "C15195",
-                        "name": "Internal Radiation Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15313",
-                            "C15687"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C49165",
-                        "name": "Surgical Procedure by Method",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C15329"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
-                            "Localized Therapy"
-                        ],
-                        "nci_thesaurus_concept_id": "C15687",
-                        "name": "Local Therapy",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": [
-                            "C49236"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C43431",
-                        "name": "Activity",
-                        "description": null,
-                        "type": "Radiation",
-                        "category": "other",
-                        "parents": []
-                    },
-                    {
-                        "inclusion_indicator": "TRIAL",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C53590",
-                        "name": "Medical Device Usage and Evaluation",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C54343"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C16203",
-                        "name": "Clinical or Research Activity",
-                        "description": null,
-                        "type": "Other",
-                        "category": "other",
-                        "parents": [
-                            "C43431"
                         ]
                     },
                     {
@@ -1418,35 +1132,45 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [],
-                        "nci_thesaurus_concept_id": "C49235",
-                        "name": "Administrative Activity",
+                        "nci_thesaurus_concept_id": "C49165",
+                        "name": "Surgical Procedure by Method",
                         "description": null,
-                        "type": "Other",
+                        "type": "Radiation",
                         "category": "other",
                         "parents": [
-                            "C43431"
+                            "C15329"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Radiotherapeutics",
-                            "Irradiation",
-                            "Irradiate",
-                            "Cancer Radiotherapy",
-                            "Radiation",
-                            "Radiotherapy",
-                            "Therapy, Radiation",
-                            "RT",
-                            "Irradiated"
+                            "Procedure",
+                            "Intervention Strategies",
+                            "Intervention"
                         ],
-                        "nci_thesaurus_concept_id": "C15313",
-                        "name": "Radiation Therapy",
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
                         "description": null,
-                        "type": "Radiation",
+                        "type": "Other",
                         "category": "other",
                         "parents": [
-                            "C49236"
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Procedure",
+                            "Intervention Strategies",
+                            "Intervention"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
                         ]
                     },
                     {
@@ -1467,19 +1191,287 @@
                     },
                     {
                         "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "Therapy",
+                            "Therapeutic Interventions",
+                            "Therapeutic Method",
+                            "TX"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64253",
+                        "name": "Questionnaire Administration",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C64255"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Therapeutic Technique",
+                            "Therapy",
+                            "Therapeutic Interventions",
+                            "Therapeutic Method",
+                            "TX"
+                        ],
+                        "nci_thesaurus_concept_id": "C49236",
+                        "name": "Therapeutic Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Test",
+                            "Diagnostic Method",
+                            "Diagnostic Technique"
+                        ],
+                        "nci_thesaurus_concept_id": "C18020",
+                        "name": "Diagnostic Procedure",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Computerized Axial Tomography",
+                            "CAT",
+                            "CT",
+                            "Computerized Tomography",
+                            "CAT Scan"
+                        ],
+                        "nci_thesaurus_concept_id": "C17204",
+                        "name": "Computed Tomography",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C16502"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C53590",
+                        "name": "Medical Device Usage and Evaluation",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C54343"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Procedure",
+                            "Intervention Strategies",
+                            "Intervention"
+                        ],
+                        "nci_thesaurus_concept_id": "C25218",
+                        "name": "Intervention or Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C16203"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C49235",
+                        "name": "Administrative Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Internal Radiation Brachytherapy",
+                            "Radiation Brachytherapy",
+                            "Brachytherapy",
+                            "Internal Radiation"
+                        ],
+                        "nci_thesaurus_concept_id": "C15195",
+                        "name": "Internal Radiation Therapy",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C15687",
+                            "C15313"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TRIAL",
+                        "synonyms": [
+                            "Stereotactic Ablative Body Radiation Therapy",
+                            "SBRT",
+                            "SABR"
+                        ],
+                        "nci_thesaurus_concept_id": "C118286",
+                        "name": "Stereotactic Body Radiation Therapy",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C15696"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64982",
+                        "name": "Therapeutic Surgical Procedure",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C49236",
+                            "C15329"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Localized Therapy"
+                        ],
+                        "nci_thesaurus_concept_id": "C15687",
+                        "name": "Local Therapy",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C49236"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C64255",
+                        "name": "Informational Intervention",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": [
+                            "C63474"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
                         "synonyms": [],
                         "nci_thesaurus_concept_id": "C54343",
-                        "name": "Medical Product Usage and Evaluation",
+                        "name": "Medical Product or Procedure Usage and Evaluation",
                         "description": null,
                         "type": "Other",
                         "category": "other",
                         "parents": [
                             "C49235"
                         ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Diagnostic Imaging Technique",
+                            "Imaging",
+                            "Imaging Procedures",
+                            "Medical Imaging"
+                        ],
+                        "nci_thesaurus_concept_id": "C17369",
+                        "name": "Imaging Technique",
+                        "description": null,
+                        "type": "Procedure/Surgery",
+                        "category": "other",
+                        "parents": [
+                            "C25218"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C43431",
+                        "name": "Activity",
+                        "description": null,
+                        "type": "Other",
+                        "category": "other",
+                        "parents": []
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C16203",
+                        "name": "Clinical or Research Activity",
+                        "description": null,
+                        "type": "Radiation",
+                        "category": "other",
+                        "parents": [
+                            "C43431"
+                        ]
                     }
                 ],
                 "name": "Supportive care (rectal spacer gel, SBRT, brachytherapy)",
-                "description": "Patients undergo hydrogel rectal spacer placement on day 1. Two-seven days after hydrogel placement, patients undergo CT simulation of radiation treatment planning. Seven-ten days after CT simulation, patients undergo SBRT in 5 fractions over 1 week. One month after completing SBRT, patients undergo brachytherapy. One month after brachytherapy, patients undergo post-implant dosimetry scan.",
+                "description": "Patients undergo hydrogel rectal spacer placement on day 1. Within 1 week after hydrogel placement, patients undergo computed tomography (CT) simulation of radiation treatment planning. Within 1 week after CT simulation, patients undergo SBRT in 5 fractions. Within 2 weeks after completing SBRT, patients undergo brachytherapy. Within one month after brachytherapy, patients undergo post-implant dosimetry scan.",
                 "type": "EXPERIMENTAL"
             }
         ],
@@ -1497,9 +1489,202 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 57,
+        "prior_therapy": [
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Pelvic Irradiation",
+                    "Pelvic Radiotherapy"
+                ],
+                "nci_thesaurus_concept_id": "C191808",
+                "name": "Pelvic Radiation Therapy",
+                "ancestor_ids": [
+                    "C15313",
+                    "C16203",
+                    "C25218",
+                    "C43431",
+                    "C49236"
+                ],
+                "parents": [
+                    "C15313"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C17173",
+                "name": "Surgery",
+                "ancestor_ids": [
+                    "C16833",
+                    "C17153",
+                    "C19160",
+                    "C20181",
+                    "C45427"
+                ],
+                "parents": [
+                    "C17153"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C20181",
+                "name": "Conceptual Entity",
+                "ancestor_ids": [],
+                "parents": []
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C16833",
+                "name": "Medicine",
+                "ancestor_ids": [
+                    "C19160",
+                    "C20181",
+                    "C45427"
+                ],
+                "parents": [
+                    "C45427"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C19160",
+                "name": "Occupation or Discipline",
+                "ancestor_ids": [
+                    "C20181"
+                ],
+                "parents": [
+                    "C20181"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C16203",
+                "name": "Clinical or Research Activity",
+                "ancestor_ids": [
+                    "C43431"
+                ],
+                "parents": [
+                    "C43431"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C43431",
+                "name": "Activity",
+                "ancestor_ids": [],
+                "parents": []
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C45427",
+                "name": "Medical Science",
+                "ancestor_ids": [
+                    "C19160",
+                    "C20181"
+                ],
+                "parents": [
+                    "C19160"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Intervention",
+                    "Intervention Strategies",
+                    "Procedure"
+                ],
+                "nci_thesaurus_concept_id": "C25218",
+                "name": "Intervention or Procedure",
+                "ancestor_ids": [
+                    "C16203",
+                    "C43431"
+                ],
+                "parents": [
+                    "C16203"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Therapeutic Interventions",
+                    "Therapeutic Method",
+                    "Therapeutic Technique",
+                    "Therapy"
+                ],
+                "nci_thesaurus_concept_id": "C49236",
+                "name": "Therapeutic Procedure",
+                "ancestor_ids": [
+                    "C16203",
+                    "C25218",
+                    "C43431"
+                ],
+                "parents": [
+                    "C25218"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Specialty"
+                ],
+                "nci_thesaurus_concept_id": "C17153",
+                "name": "Medical Specialty",
+                "ancestor_ids": [
+                    "C16833",
+                    "C19160",
+                    "C20181",
+                    "C45427"
+                ],
+                "parents": [
+                    "C16833"
+                ]
+            },
+            {
+                "eligibility_criterion": "exclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Cancer Radiotherapy",
+                    "Irradiate",
+                    "Irradiated",
+                    "Irradiation",
+                    "Radiation",
+                    "Radiotherapeutics",
+                    "Radiotherapy",
+                    "Therapy, Radiation"
+                ],
+                "nci_thesaurus_concept_id": "C15313",
+                "name": "Radiation Therapy",
+                "ancestor_ids": [
+                    "C16203",
+                    "C25218",
+                    "C43431",
+                    "C49236"
+                ],
+                "parents": [
+                    "C49236"
+                ]
+            }
+        ],
         "_current_trial_status_sort_order": 0,
         "start_date": "2021-08-03",
-        "record_verification_date": "2022-02-23",
+        "record_verification_date": "2023-02-24",
         "ctep_id": null,
         "current_trial_status": "Active",
         "study_model_other_text": null,
@@ -1512,6 +1697,7 @@
             "allocation_code": "NA"
         },
         "acronym": null,
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Prostate"

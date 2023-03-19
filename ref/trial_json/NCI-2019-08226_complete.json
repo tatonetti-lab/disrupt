@@ -141,7 +141,7 @@
                 "min_age_in_years": 18.0
             }
         },
-        "completion_date_type_code": "ANTICIPATED",
+        "completion_date_type_code": "ACTUAL",
         "detail_description": null,
         "official_title": "A Phase 2 Multicenter, Open-label Study of Rucaparib as Treatment for Solid Tumors Associated With Deleterious Mutations in Homologous Recombination Repair Genes",
         "_phase_sort_order": 2,
@@ -211,49 +211,523 @@
         "biomarkers": [
             {
                 "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
+                "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "Deleterious BROVCA1 Gene Mutation",
-                    "Deleterious Breast Cancer Type 1 Susceptibility Gene Mutation"
+                    "Genes"
                 ],
-                "nci_thesaurus_concept_id": "C128814",
-                "name": "Deleterious BRCA1 Gene Mutation",
+                "nci_thesaurus_concept_id": "C16612",
+                "name": "Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "VARIANT_TYPE",
+                    "molecular consequence",
+                    "molecular_consequence"
+                ],
+                "nci_thesaurus_concept_id": "C97926",
+                "name": "Molecular Sequence Variation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C45576",
-                    "C18297",
-                    "C141233",
-                    "C141248",
-                    "C179406",
-                    "C131783",
-                    "C159207",
-                    "C36391",
-                    "C133695",
-                    "C18120",
-                    "C19676",
-                    "C93102",
-                    "C36327",
+                    "C3910"
+                ],
+                "parents": [
+                    "C3910"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "GENETIC_SEQ",
+                    "Gene Mutant",
+                    "Gene Mutation",
+                    "Gene Variation",
+                    "alternative"
+                ],
+                "nci_thesaurus_concept_id": "C97927",
+                "name": "Gene Variant",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
                     "C3910",
-                    "C159204",
+                    "C97926",
+                    "C36391"
+                ],
+                "parents": [
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious BROVCA4 Gene Mutation",
+                    "Deleterious R51H3 Gene Mutatio",
+                    "Deleterious RAD51 Homolog D Gene Mutation",
+                    "Deleterious RAD51 Paralog D Gene Mutation",
+                    "Deleterious RAD51-Like 3 Gene Mutation",
+                    "Deleterious RAD51L3 Gene Mutation",
+                    "Deleterious TRAD Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131782",
+                "name": "Deleterious RAD51D Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C116930",
                     "C153246",
                     "C97927",
+                    "C36391",
                     "C16612",
-                    "C19635",
+                    "C131481",
+                    "C45576",
+                    "C93102",
+                    "C3910",
+                    "C141248",
+                    "C19676",
+                    "C131783",
+                    "C133695",
+                    "C97926",
+                    "C20813",
+                    "C36327"
+                ],
+                "parents": [
+                    "C116930",
+                    "C131481",
+                    "C141248",
+                    "C153246",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious FA Gene Mutation",
+                    "Deleterious FA-H Gene Mutation",
+                    "Deleterious FA1 Gene Mutation",
+                    "Deleterious FAA Gene Mutation",
+                    "Deleterious FACA Gene Mutation",
+                    "Deleterious FAH Gene Mutation",
+                    "Deleterious FANCH Gene Mutation",
+                    "Deleterious Fanconi Anemia Complementation Group A Gene Mutation",
+                    "Deleterious Fanconi Anemia, Complementation Group A Gene Mutation",
+                    "Deleterious Fanconi Anemia, Complementation Group H Gene Mutation",
+                    "Deleterious Fanconi Anemia, Type 1 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C150149",
+                "name": "Deleterious FANCA Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C45576",
+                    "C36327",
+                    "C159207",
+                    "C3910",
+                    "C131794",
+                    "C97926",
+                    "C97927",
+                    "C19676",
+                    "C85995",
+                    "C131783",
+                    "C36391",
+                    "C93102",
+                    "C159204"
+                ],
+                "parents": [
+                    "C131794",
+                    "C159207",
+                    "C19676",
+                    "C85995",
+                    "C93102"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "RAD51 Paralog D Gene",
+                    "RAD51D"
+                ],
+                "nci_thesaurus_concept_id": "C116930",
+                "name": "RAD51D Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C20813",
+                    "C19676"
+                ],
+                "parents": [
+                    "C20813"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "AT-V1 Gene Mutation",
+                    "AT-V2 Gene Mutation",
+                    "ATV Gene Mutation",
+                    "NBS Gene Mutation",
+                    "NBS1 Gene Mutation",
+                    "Nibrin Gene Mutation",
+                    "Nijmegen Breakage Syndrome 1 Gene Mutation",
+                    "P95 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131806",
+                "name": "NBN Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C16612",
+                    "C153246",
+                    "C97927",
+                    "C21178",
+                    "C19676",
+                    "C133695",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C131783"
+                ],
+                "parents": [
+                    "C133695",
+                    "C153246",
+                    "C19676",
+                    "C21178",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HHR Gene Mutation",
+                    "HRR Gene Mutation",
+                    "Homologous Recombination Pathway Gene Mutation",
+                    "Recombination Repair Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C133695",
+                "name": "Homologous Recombination Repair Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C36391",
+                    "C3910",
+                    "C19676",
+                    "C97926",
+                    "C36327",
+                    "C131783"
+                ],
+                "parents": [
+                    "C131783",
+                    "C153246",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Deleterious BRCA Family Mutation",
+                    "Deleterious BRCA Gene Family Mutation",
+                    "Deleterious BRCA Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C141233",
+                "name": "Deleterious BRCA Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C93102",
+                    "C16612",
+                    "C153246",
                     "C17965",
+                    "C45576",
+                    "C179406",
+                    "C159207",
+                    "C19676",
+                    "C18120",
+                    "C36327",
+                    "C18297",
+                    "C3910",
+                    "C97926",
+                    "C131783"
+                ],
+                "parents": [
+                    "C179406",
+                    "C17965",
+                    "C18120",
+                    "C19676",
+                    "C93102"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C26057",
+                "name": "Helicase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C25804",
+                    "C16612"
+                ],
+                "parents": [
+                    "C25804"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA Family Gene Mutation",
+                    "BRCA Family Mutation",
+                    "BRCA Gene Family Mutation",
+                    "BRCA Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C179406",
+                "name": "BRCA Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C36391",
+                    "C3910",
+                    "C17965",
+                    "C159207",
+                    "C19676",
+                    "C97926",
+                    "C18120",
+                    "C36327",
+                    "C18297",
+                    "C131783"
+                ],
+                "parents": [
+                    "C131783",
+                    "C17965",
+                    "C18120",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "PALB2",
+                    "Partner and Localizer of BRCA2 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C84945",
+                "name": "PALB2 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C19676",
+                    "C16612",
+                    "C159207"
+                ],
+                "parents": [
+                    "C159207"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Genetic Alteration",
+                    "Genetic Change",
+                    "Mutated",
+                    "Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C45576",
+                "name": "Mutation Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C3910",
                     "C97926"
                 ],
                 "parents": [
-                    "C141233",
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious R51H2 Gene Mutation",
+                    "Deleterious RAD51 Paralog B Gene Mutation",
+                    "Deleterious RAD51L1 Gene Mutation",
+                    "Deleterious REC2 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C134504",
+                "name": "Deleterious RAD51B Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97927",
+                    "C20813",
+                    "C131783",
+                    "C16612",
+                    "C90145",
+                    "C36327",
+                    "C97926",
+                    "C45576",
+                    "C36391",
+                    "C93102",
+                    "C3910",
+                    "C153246",
+                    "C133695",
+                    "C132005",
+                    "C141248",
+                    "C19676"
+                ],
+                "parents": [
+                    "C132005",
                     "C141248",
                     "C153246",
+                    "C19676",
+                    "C90145"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "FA Gene Mutation",
+                    "FA-H Gene Mutation",
+                    "FA1 Gene Mutation",
+                    "FAA Gene Mutation",
+                    "FACA Gene Mutation",
+                    "FAH Gene Mutation",
+                    "FANCH Gene Mutation",
+                    "Fanconi Anemia Complementation Group A Gene Mutation",
+                    "Fanconi Anemia, Complementation Group A Gene Mutation",
+                    "Fanconi Anemia, Complementation Group H Gene Mutation",
+                    "Fanconi Anemia, Type 1 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131794",
+                "name": "FANCA Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C85995",
+                    "C97926",
                     "C159207",
-                    "C17965",
-                    "C19635",
-                    "C19676"
+                    "C159204",
+                    "C16612",
+                    "C36327",
+                    "C3910",
+                    "C97927",
+                    "C36391",
+                    "C19676",
+                    "C131783"
+                ],
+                "parents": [
+                    "C159204",
+                    "C159207",
+                    "C19676",
+                    "C85995",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious BARD-1 Gene Mutation",
+                    "Deleterious BRCA1 Associated RING Domain 1 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131776",
+                "name": "Deleterious BARD1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C131789",
+                    "C20462",
+                    "C97926",
+                    "C16612",
+                    "C45576",
+                    "C36391",
+                    "C93102",
+                    "C20715",
+                    "C3910",
+                    "C97927"
+                ],
+                "parents": [
+                    "C131789",
+                    "C20715",
+                    "C93102"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -272,25 +746,97 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C19676",
-                    "C36391",
-                    "C159204",
-                    "C159207",
-                    "C131783",
-                    "C84945",
-                    "C97926",
-                    "C16612",
                     "C97927",
+                    "C3910",
+                    "C97926",
                     "C36327",
-                    "C3910"
+                    "C36391",
+                    "C159207",
+                    "C159204",
+                    "C84945",
+                    "C19676",
+                    "C16612",
+                    "C131783"
                 ],
                 "parents": [
                     "C159204",
                     "C159207",
                     "C19676",
                     "C84945",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "FA Complementation Group A Gene",
+                    "FANCA"
+                ],
+                "nci_thesaurus_concept_id": "C85995",
+                "name": "FANCA Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C19676",
+                    "C159207",
+                    "C16612"
+                ],
+                "parents": [
+                    "C159207"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA1",
+                    "BRCA1 Mutation",
+                    "BROVCA1 Gene Mutation",
+                    "Breast Cancer 1 Gene Mutation",
+                    "Breast Cancer 1, Early Onset Gene Mutation",
+                    "Breast Cancer Type 1 Susceptibility Gene Mutation",
+                    "Mutation of the BRCA1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C19635",
+                "name": "BRCA1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C36391",
+                    "C97927",
+                    "C3910",
+                    "C17965",
+                    "C179406",
+                    "C159207",
+                    "C19676",
+                    "C97926",
+                    "C159204",
+                    "C18120",
+                    "C36327",
+                    "C18297",
+                    "C131783",
+                    "C133695"
+                ],
+                "parents": [
+                    "C133695",
+                    "C153246",
+                    "C159204",
+                    "C159207",
+                    "C179406",
+                    "C17965",
+                    "C19676",
                     "C97927"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
@@ -315,7 +861,6 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C97926",
                     "C3910"
@@ -328,660 +873,20 @@
             {
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "FANC Gene",
-                    "Fanconi Anemia Complementation Group Gene"
-                ],
-                "nci_thesaurus_concept_id": "C159207",
-                "name": "FA Complementation Group Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA2 Mutation",
-                    "BRCC2 Gene Mutation",
-                    "BROVCA2 Gene Mutation",
-                    "Breast Cancer 2 Gene Mutation",
-                    "Breast Cancer 2, Early Onset Gene Mutation",
-                    "Breast Cancer Type 2 Susceptibility Gene Mutation",
-                    "FANCD1 Gene Mutation",
-                    "Mutation of the BRCA2 Gene",
-                    "XRCC11 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C19636",
-                "name": "BRCA2 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C18297",
-                    "C16612",
-                    "C36391",
-                    "C36327",
-                    "C179406",
-                    "C3910",
-                    "C174175",
-                    "C131783",
-                    "C159204",
-                    "C17965",
-                    "C153246",
-                    "C97926",
-                    "C97927",
-                    "C159207",
-                    "C18120",
-                    "C19676"
-                ],
-                "parents": [
-                    "C159204",
-                    "C159207",
-                    "C174175",
-                    "C179406",
-                    "C18120",
-                    "C18297",
-                    "C19676",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious BARD-1 Gene Mutation",
-                    "Deleterious BRCA1 Associated RING Domain 1 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131776",
-                "name": "Deleterious BARD1 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C3910",
-                    "C45576",
-                    "C97926",
-                    "C20715",
-                    "C93102",
-                    "C97927",
-                    "C20462",
-                    "C36391",
-                    "C131789"
-                ],
-                "parents": [
-                    "C131789",
-                    "C20715",
-                    "C93102"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BROVCA3 Gene Mutation",
-                    "FANCO Gene Mutation",
-                    "RAD51 Homolog C Gene Mutation",
-                    "RAD51 Paralog C Gene Mutation",
-                    "RAD51L2 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131480",
-                "name": "RAD51C Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C19676",
-                    "C36391",
-                    "C159204",
-                    "C20814",
-                    "C159207",
-                    "C131783",
-                    "C97926",
-                    "C20813",
-                    "C133695",
-                    "C16612",
-                    "C97927",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C133695",
-                    "C153246",
-                    "C159204",
-                    "C159207",
-                    "C19676",
-                    "C20814",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA1",
-                    "BRCA1, DNA Repair Associated Gene",
-                    "Breast Cancer 1, Early Onset Gene"
-                ],
-                "nci_thesaurus_concept_id": "C17965",
-                "name": "BRCA1 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C159207",
-                    "C19676",
-                    "C153246",
-                    "C16612"
-                ],
-                "parents": [
-                    "C153246",
-                    "C159207"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C19676",
-                "name": "DNA Repair Gene",
+                "nci_thesaurus_concept_id": "C20813",
+                "name": "RAD51 Family Gene",
                 "semantic_types": [
                     "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious FANCN Gene Mutation",
-                    "Deleterious Fanconi Anemia, Complementation Group N Gene Mutation",
-                    "Deleterious PNCA3 Gene Mutation",
-                    "Deleterious Partner and Localizer of BRCA2 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131775",
-                "name": "Deleterious PALB2 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
                     "C16612",
-                    "C101641",
-                    "C131783",
-                    "C36327",
-                    "C84945",
-                    "C3910",
-                    "C45576",
-                    "C97926",
-                    "C159204",
-                    "C93102",
-                    "C97927",
-                    "C159207",
-                    "C36391",
-                    "C19676"
-                ],
-                "parents": [
-                    "C101641",
-                    "C159207",
-                    "C19676",
-                    "C84945",
-                    "C93102"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "VARIANT_TYPE",
-                    "molecular consequence",
-                    "molecular_consequence"
-                ],
-                "nci_thesaurus_concept_id": "C97926",
-                "name": "Molecular Sequence Variation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C3910"
-                ],
-                "parents": [
-                    "C3910"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA Family Gene Mutation",
-                    "BRCA Family Mutation",
-                    "BRCA Gene Family Mutation",
-                    "BRCA Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C179406",
-                "name": "BRCA Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C18297",
-                    "C16612",
-                    "C36391",
-                    "C36327",
-                    "C3910",
-                    "C131783",
-                    "C17965",
-                    "C153246",
-                    "C159207",
-                    "C97926",
-                    "C18120",
-                    "C19676"
-                ],
-                "parents": [
-                    "C131783",
-                    "C17965",
-                    "C18120",
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA1 Interacting Protein C-Terminal Helicase 1 Gene",
-                    "BRIP1"
-                ],
-                "nci_thesaurus_concept_id": "C63526",
-                "name": "BRIP1 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C159207",
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Deleterious BRCA Family Mutation",
-                    "Deleterious BRCA Gene Family Mutation",
-                    "Deleterious BRCA Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C141233",
-                "name": "Deleterious BRCA Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C45576",
-                    "C18297",
-                    "C16612",
-                    "C36391",
-                    "C36327",
-                    "C179406",
-                    "C3910",
-                    "C131783",
-                    "C17965",
-                    "C153246",
-                    "C97926",
-                    "C159207",
-                    "C18120",
-                    "C19676",
-                    "C93102"
-                ],
-                "parents": [
-                    "C179406",
-                    "C17965",
-                    "C18120",
-                    "C19676",
-                    "C93102"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious BROVCA4 Gene Mutation",
-                    "Deleterious R51H3 Gene Mutatio",
-                    "Deleterious RAD51 Homolog D Gene Mutation",
-                    "Deleterious RAD51 Paralog D Gene Mutation",
-                    "Deleterious RAD51-Like 3 Gene Mutation",
-                    "Deleterious RAD51L3 Gene Mutation",
-                    "Deleterious TRAD Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131782",
-                "name": "Deleterious RAD51D Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C131783",
-                    "C36327",
-                    "C133695",
-                    "C141248",
-                    "C3910",
-                    "C153246",
-                    "C45576",
-                    "C97926",
-                    "C93102",
-                    "C97927",
-                    "C116930",
-                    "C131481",
-                    "C36391",
-                    "C19676",
-                    "C20813"
-                ],
-                "parents": [
-                    "C116930",
-                    "C131481",
-                    "C141248",
                     "C153246",
                     "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BACH1 Gene Mutation",
-                    "BRCA1 Interacting Protein C-Terminal Helicase 1 Gene Mutation",
-                    "FANCJ Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C132002",
-                "name": "BRIP1 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C36391",
-                    "C159204",
-                    "C159207",
-                    "C131783",
-                    "C97926",
-                    "C3910",
-                    "C16612",
-                    "C97927",
-                    "C36327",
-                    "C63526"
-                ],
-                "parents": [
-                    "C159204",
-                    "C159207",
-                    "C19676",
-                    "C63526",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "NBN",
-                    "Nibrin Gene"
-                ],
-                "nci_thesaurus_concept_id": "C21178",
-                "name": "NBN Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C19676",
-                    "C16612"
                 ],
                 "parents": [
                     "C153246"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Chromosomal, Gene, or Protein Abnormality",
-                    "Cytogenetic or Molecular Genetic Abnormality",
-                    "Genetic Abnormality",
-                    "MOLECULAR_ABNORMALITY",
-                    "Molecular Alteration"
-                ],
-                "nci_thesaurus_concept_id": "C3910",
-                "name": "Molecular Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genetic Alteration",
-                    "Genetic Change",
-                    "Mutated",
-                    "Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C45576",
-                "name": "Mutation Abnormality",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BARD1",
-                    "BRCA1 Associated RING Domain 1 Gene"
-                ],
-                "nci_thesaurus_concept_id": "C20715",
-                "name": "BARD1 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C20462",
-                    "C16612"
-                ],
-                "parents": [
-                    "C20462"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "FA Complementation Group A Gene",
-                    "FANCA"
-                ],
-                "nci_thesaurus_concept_id": "C85995",
-                "name": "FANCA Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C159207",
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA2 and FANC gene mutations",
-                    "FA Complementation Group Gene Mutation",
-                    "FANC Family Gene Mutation",
-                    "FANC Gene Mutation",
-                    "Fanconi Anemia Complementation Family Gene Mutation",
-                    "Fanconi Anemia Group Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C159204",
-                "name": "Fanconi Anemia Complementation Group Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C36391",
-                    "C36327",
-                    "C3910",
-                    "C131783",
-                    "C159207",
-                    "C97926",
-                    "C19676"
-                ],
-                "parents": [
-                    "C131783",
-                    "C159207",
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Genes"
-                ],
-                "nci_thesaurus_concept_id": "C16612",
-                "name": "Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "branch"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [],
-                "parents": [],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "RAD51",
-                    "RAD51 Recombinase Gene"
-                ],
-                "nci_thesaurus_concept_id": "C104711",
-                "name": "RAD51 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C159207",
-                    "C19676",
-                    "C20813",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207",
-                    "C20813"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1001,12 +906,11 @@
                 "type": [
                     "reference_gene"
                 ],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
+                    "C16612",
                     "C153246",
-                    "C19676",
                     "C20813",
-                    "C16612"
+                    "C19676"
                 ],
                 "parents": [
                     "C20813"
@@ -1017,67 +921,27 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "DNA Repair Gene Mutation",
-                    "DNA Repair Mutation Positive"
+                    "RAD51",
+                    "RAD51 Recombinase Gene"
                 ],
-                "nci_thesaurus_concept_id": "C131783",
-                "name": "DNA Repair Mutation",
+                "nci_thesaurus_concept_id": "C104711",
+                "name": "RAD51 Gene",
                 "semantic_types": [
-                    "Cell or Molecular Dysfunction"
+                    "Gene or Genome"
                 ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
+                "type": [
+                    "reference_gene"
+                ],
                 "ancestors": [
+                    "C20813",
                     "C16612",
-                    "C36391",
-                    "C36327",
-                    "C3910",
-                    "C97926",
+                    "C159207",
+                    "C153246",
                     "C19676"
                 ],
                 "parents": [
-                    "C19676",
-                    "C36327"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious BACH1 Gene Mutation",
-                    "Deleterious BRCA1 Interacting Protein C-Terminal Helicase 1 Gene Mutation",
-                    "Deleterious FANCJ Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131774",
-                "name": "Deleterious BRIP1 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C131783",
-                    "C36327",
-                    "C3910",
-                    "C45576",
-                    "C97926",
-                    "C132002",
-                    "C159204",
-                    "C93102",
-                    "C97927",
                     "C159207",
-                    "C36391",
-                    "C63526",
-                    "C19676"
-                ],
-                "parents": [
-                    "C132002",
-                    "C159207",
-                    "C19676",
-                    "C63526",
-                    "C93102"
+                    "C20813"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1085,20 +949,17 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [],
-                "nci_thesaurus_concept_id": "C36327",
-                "name": "Gene Abnormality",
+                "nci_thesaurus_concept_id": "C20462",
+                "name": "Apoptosis Regulation Gene",
                 "semantic_types": [
-                    "Cell or Molecular Dysfunction"
+                    "Gene or Genome"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
+                    "C16612"
                 ],
                 "parents": [
-                    "C36391"
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1106,38 +967,127 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "R51H2 Gene Mutation",
-                    "RAD51 Paralog B Gene Mutation",
-                    "RAD51L1 Gene Mutation",
-                    "REC2 Gene Mutation"
+                    "Deleterious HHR Gene Mutation",
+                    "Deleterious Homologous Recombination Pathway Mutation",
+                    "Deleterious Recombination Repair Gene Mutation"
                 ],
-                "nci_thesaurus_concept_id": "C132005",
-                "name": "RAD51B Gene Mutation",
+                "nci_thesaurus_concept_id": "C141248",
+                "name": "Deleterious Homologous Recombination Pathway Gene Mutation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C153246",
-                    "C19676",
                     "C36391",
-                    "C131783",
-                    "C97926",
-                    "C90145",
-                    "C20813",
-                    "C133695",
+                    "C93102",
+                    "C153246",
                     "C16612",
-                    "C97927",
+                    "C45576",
+                    "C19676",
+                    "C133695",
+                    "C3910",
                     "C36327",
-                    "C3910"
+                    "C97926",
+                    "C131783"
                 ],
                 "parents": [
                     "C133695",
                     "C153246",
                     "C19676",
-                    "C90145",
+                    "C93102"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA2",
+                    "BRCA2 Mutation",
+                    "BRCC2 Gene Mutation",
+                    "BROVCA2 Gene Mutation",
+                    "Breast Cancer 2 Gene Mutation",
+                    "Breast Cancer 2, Early Onset Gene Mutation",
+                    "Breast Cancer Type 2 Susceptibility Gene Mutation",
+                    "FANCD1 Gene Mutation",
+                    "Mutation of the BRCA2 Gene",
+                    "XRCC11 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C19636",
+                "name": "BRCA2 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C36391",
+                    "C97927",
+                    "C17965",
+                    "C3910",
+                    "C179406",
+                    "C159207",
+                    "C174175",
+                    "C19676",
+                    "C97926",
+                    "C159204",
+                    "C18120",
+                    "C36327",
+                    "C18297",
+                    "C131783"
+                ],
+                "parents": [
+                    "C159204",
+                    "C159207",
+                    "C174175",
+                    "C179406",
+                    "C18120",
+                    "C18297",
+                    "C19676",
                     "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BARD1",
+                    "BRCA1 Associated RING Domain 1 Gene"
+                ],
+                "nci_thesaurus_concept_id": "C20715",
+                "name": "BARD1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C20462"
+                ],
+                "parents": [
+                    "C20462"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C19676",
+                "name": "DNA Repair Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1160,20 +1110,639 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C18297",
                     "C16612",
-                    "C36391",
-                    "C36327",
                     "C3910",
-                    "C131783",
+                    "C36391",
+                    "C19676",
                     "C97926",
-                    "C19676"
+                    "C36327",
+                    "C18297",
+                    "C131783"
                 ],
                 "parents": [
                     "C131783",
                     "C18297",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious BRCC5 Gene Mutation",
+                    "Deleterious FANCR Gene Mutation",
+                    "Deleterious HRAD51 Gene Mutation",
+                    "Deleterious HsRad51 Gene Mutation",
+                    "Deleterious RAD51 Homolog (S. cerevisiae) Gene Mutation",
+                    "Deleterious RAD51 Recombinase Gene Mutation",
+                    "Deleterious RAD51, S. cerevisiae, Homolog of A Gene Mutation",
+                    "Deleterious RAD51A Gene Mutation",
+                    "Deleterious RECA Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C156011",
+                "name": "Deleterious RAD51 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C45576",
+                    "C16612",
+                    "C159207",
+                    "C36391",
+                    "C3910",
+                    "C131795",
+                    "C97927",
+                    "C97926",
+                    "C159204",
+                    "C153246",
+                    "C20813",
+                    "C131783",
+                    "C104711",
+                    "C19676",
+                    "C133695",
+                    "C36327",
+                    "C93102"
+                ],
+                "parents": [
+                    "C104711",
+                    "C131795",
+                    "C153246",
+                    "C159207",
+                    "C19676",
+                    "C93102"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BACH1 Gene Mutation",
+                    "BRCA1 Interacting Protein C-Terminal Helicase 1 Gene Mutation",
+                    "FANCJ Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C132002",
+                "name": "BRIP1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C21281",
+                    "C16612",
+                    "C63526",
+                    "C97927",
+                    "C159207",
+                    "C97926",
+                    "C19676",
+                    "C25804",
+                    "C3910",
+                    "C36327",
+                    "C159204",
+                    "C26057",
+                    "C131783"
+                ],
+                "parents": [
+                    "C159204",
+                    "C159207",
+                    "C19676",
+                    "C63526",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BARD-1 Gene Mutation",
+                    "BRCA1 Associated RING Domain 1 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131789",
+                "name": "BARD1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C16612",
+                    "C20715",
+                    "C97927",
+                    "C20462",
+                    "C3910",
+                    "C97926"
+                ],
+                "parents": [
+                    "C20715",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCC5 Gene Mutation",
+                    "FANCR Gene Mutation",
+                    "HRAD51 Gene Mutation",
+                    "HsRad51 Gene Mutation",
+                    "RAD51 Homolog (S. cerevisiae) Gene Mutation",
+                    "RAD51 Recombinase Gene Mutation",
+                    "RAD51, S. cerevisiae, Homolog of A Gene Mutation",
+                    "RAD51A Gene Mutation",
+                    "RECA Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131795",
+                "name": "RAD51 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C20813",
+                    "C36391",
+                    "C104711",
+                    "C97927",
+                    "C97926",
+                    "C16612",
+                    "C159204",
+                    "C36327",
+                    "C159207",
+                    "C153246",
+                    "C131783",
+                    "C133695",
+                    "C3910",
+                    "C19676"
+                ],
+                "parents": [
+                    "C104711",
+                    "C133695",
+                    "C153246",
+                    "C159204",
+                    "C159207",
+                    "C19676",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA2",
+                    "BRCA2, DNA Repair Associated Gene",
+                    "Breast Cancer 2, Early Onset Gene"
+                ],
+                "nci_thesaurus_concept_id": "C18120",
+                "name": "BRCA2 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C18297",
+                    "C159207",
+                    "C19676"
+                ],
+                "parents": [
+                    "C159207",
+                    "C18297"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious BROVCA1 Gene Mutation",
+                    "Deleterious Breast Cancer Type 1 Susceptibility Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C128814",
+                "name": "Deleterious BRCA1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C17965",
+                    "C179406",
+                    "C97927",
+                    "C141233",
+                    "C18120",
+                    "C18297",
+                    "C159204",
+                    "C131783",
+                    "C19676",
+                    "C133695",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C36391",
+                    "C16612",
+                    "C141248",
+                    "C45576",
+                    "C19635",
+                    "C93102",
+                    "C153246",
+                    "C159207"
+                ],
+                "parents": [
+                    "C141233",
+                    "C141248",
+                    "C153246",
+                    "C159207",
+                    "C17965",
+                    "C19635",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA1",
+                    "BRCA1, DNA Repair Associated Gene",
+                    "Breast Cancer 1, Early Onset Gene"
+                ],
+                "nci_thesaurus_concept_id": "C17965",
+                "name": "BRCA1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C159207",
+                    "C19676"
+                ],
+                "parents": [
+                    "C153246",
+                    "C159207"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "FANC Gene",
+                    "Fanconi Anemia Complementation Group Gene"
+                ],
+                "nci_thesaurus_concept_id": "C159207",
+                "name": "FA Complementation Group Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C19676",
+                    "C16612"
+                ],
+                "parents": [
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Deleterious",
+                    "Driver Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C93102",
+                "name": "Deleterious Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C3910",
+                    "C97926",
+                    "C36391",
+                    "C45576"
+                ],
+                "parents": [
+                    "C45576"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "NBN",
+                    "Nibrin Gene"
+                ],
+                "nci_thesaurus_concept_id": "C21178",
+                "name": "NBN Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C19676"
+                ],
+                "parents": [
+                    "C153246"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C21281",
+                "name": "Enzyme Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612"
+                ],
+                "parents": [
+                    "C16612"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA2 and FANC gene mutations",
+                    "FA Complementation Group Gene Mutation",
+                    "FANC Family Gene Mutation",
+                    "FANC Gene Mutation",
+                    "Fanconi Anemia Complementation Family Gene Mutation",
+                    "Fanconi Anemia Group Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C159204",
+                "name": "Fanconi Anemia Complementation Group Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C36391",
+                    "C3910",
+                    "C159207",
+                    "C19676",
+                    "C97926",
+                    "C36327",
+                    "C131783"
+                ],
+                "parents": [
+                    "C131783",
+                    "C159207",
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "HHR Gene",
+                    "HRR Gene",
+                    "Recombination Repair Gene"
+                ],
+                "nci_thesaurus_concept_id": "C153246",
+                "name": "Homologous Recombination Repair Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C19676"
+                ],
+                "parents": [
+                    "C19676"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BROVCA4 Gene Mutation",
+                    "R51H3 Gene Mutation",
+                    "RAD51 Homolog D Gene Mutation",
+                    "RAD51 Paralog D Gene Mutation",
+                    "RAD51-Like 3 Gene Mutation",
+                    "RAD51L3 Gene Mutation",
+                    "TRAD Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131481",
+                "name": "RAD51D Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C16612",
+                    "C153246",
+                    "C20813",
+                    "C116930",
+                    "C97927",
+                    "C19676",
+                    "C133695",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C131783"
+                ],
+                "parents": [
+                    "C116930",
+                    "C133695",
+                    "C153246",
+                    "C19676",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious BACH1 Gene Mutation",
+                    "Deleterious BRCA1 Interacting Protein C-Terminal Helicase 1 Gene Mutation",
+                    "Deleterious FANCJ Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131774",
+                "name": "Deleterious BRIP1 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97927",
+                    "C132002",
+                    "C131783",
+                    "C36391",
+                    "C16612",
+                    "C45576",
+                    "C159207",
+                    "C93102",
+                    "C3910",
+                    "C25804",
+                    "C159204",
+                    "C21281",
+                    "C19676",
+                    "C26057",
+                    "C63526",
+                    "C97926",
+                    "C36327"
+                ],
+                "parents": [
+                    "C132002",
+                    "C159207",
+                    "C19676",
+                    "C63526",
+                    "C93102"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "DNA Repair Gene Mutation",
+                    "DNA Repair Mutation Positive"
+                ],
+                "nci_thesaurus_concept_id": "C131783",
+                "name": "DNA Repair Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36327",
+                    "C16612",
+                    "C36391",
+                    "C3910",
+                    "C19676"
+                ],
+                "parents": [
+                    "C19676",
+                    "C36327"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C36327",
+                "name": "Gene Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97926",
+                    "C36391",
+                    "C3910"
+                ],
+                "parents": [
+                    "C36391"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "RAD51 Paralog C Gene",
+                    "RAD51C"
+                ],
+                "nci_thesaurus_concept_id": "C20814",
+                "name": "RAD51C Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C16612",
+                    "C153246",
+                    "C20813",
+                    "C159207",
+                    "C19676"
+                ],
+                "parents": [
+                    "C159207",
+                    "C20813"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Chromosomal, Gene, or Protein Abnormality",
+                    "Cytogenetic or Molecular Genetic Abnormality",
+                    "Genetic Abnormality",
+                    "MOLECULAR_ABNORMALITY",
+                    "Molecular Alteration"
+                ],
+                "nci_thesaurus_concept_id": "C3910",
+                "name": "Molecular Abnormality",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [
+                    "branch"
+                ],
+                "ancestors": [],
+                "parents": [],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "X-Ray Cross Complementing Family Gene",
+                    "X-Ray Cross Complementing Gene Family",
+                    "X-Ray Cross Complementing Group Gene",
+                    "XRCC",
+                    "XRCC Family Gene",
+                    "XRCC Gene",
+                    "XRCC Gene Family",
+                    "XRCC Group"
+                ],
+                "nci_thesaurus_concept_id": "C18297",
+                "name": "X-Ray Cross Complementing Group",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C16612",
+                    "C19676"
+                ],
+                "parents": [
                     "C19676"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
@@ -1192,28 +1761,27 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C45576",
-                    "C18297",
-                    "C141233",
-                    "C179406",
-                    "C131783",
-                    "C159207",
-                    "C19636",
-                    "C36391",
-                    "C174175",
-                    "C18120",
-                    "C19676",
-                    "C93102",
-                    "C36327",
-                    "C3910",
-                    "C159204",
-                    "C153246",
-                    "C97927",
-                    "C16612",
                     "C17965",
-                    "C97926"
+                    "C179406",
+                    "C97927",
+                    "C141233",
+                    "C18120",
+                    "C18297",
+                    "C174175",
+                    "C159204",
+                    "C131783",
+                    "C19676",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C36391",
+                    "C16612",
+                    "C45576",
+                    "C93102",
+                    "C153246",
+                    "C159207",
+                    "C19636"
                 ],
                 "parents": [
                     "C141233",
@@ -1244,23 +1812,22 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C131783",
-                    "C36327",
-                    "C133695",
-                    "C141248",
-                    "C3910",
-                    "C45576",
                     "C97926",
-                    "C21178",
-                    "C36391",
                     "C93102",
+                    "C21178",
+                    "C141248",
+                    "C153246",
+                    "C133695",
                     "C131806",
+                    "C16612",
+                    "C45576",
+                    "C36327",
+                    "C3910",
                     "C97927",
+                    "C36391",
                     "C19676",
-                    "C153246"
+                    "C131783"
                 ],
                 "parents": [
                     "C131806",
@@ -1268,205 +1835,6 @@
                     "C153246",
                     "C19676",
                     "C21178"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious BRCC5 Gene Mutation",
-                    "Deleterious FANCR Gene Mutation",
-                    "Deleterious HRAD51 Gene Mutation",
-                    "Deleterious HsRad51 Gene Mutation",
-                    "Deleterious RAD51 Homolog (S. cerevisiae) Gene Mutation",
-                    "Deleterious RAD51 Recombinase Gene Mutation",
-                    "Deleterious RAD51, S. cerevisiae, Homolog of A Gene Mutation",
-                    "Deleterious RAD51A Gene Mutation",
-                    "Deleterious RECA Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C156011",
-                "name": "Deleterious RAD51 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C16612",
-                    "C131795",
-                    "C36391",
-                    "C97927",
-                    "C159204",
-                    "C19676",
-                    "C159207",
-                    "C20813",
-                    "C45576",
-                    "C133695",
-                    "C97926",
-                    "C3910",
-                    "C131783",
-                    "C104711",
-                    "C93102",
-                    "C36327"
-                ],
-                "parents": [
-                    "C104711",
-                    "C131795",
-                    "C153246",
-                    "C159207",
-                    "C19676",
-                    "C93102"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Deleterious",
-                    "Driver Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C93102",
-                "name": "Deleterious Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C45576",
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C45576"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "HHR Gene Mutation",
-                    "HRR Gene Mutation",
-                    "Homologous Recombination Pathway Gene Mutation",
-                    "Recombination Repair Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C133695",
-                "name": "Homologous Recombination Repair Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C36391",
-                    "C36327",
-                    "C3910",
-                    "C131783",
-                    "C153246",
-                    "C97926",
-                    "C19676"
-                ],
-                "parents": [
-                    "C131783",
-                    "C153246",
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCC5 Gene Mutation",
-                    "FANCR Gene Mutation",
-                    "HRAD51 Gene Mutation",
-                    "HsRad51 Gene Mutation",
-                    "RAD51 Homolog (S. cerevisiae) Gene Mutation",
-                    "RAD51 Recombinase Gene Mutation",
-                    "RAD51, S. cerevisiae, Homolog of A Gene Mutation",
-                    "RAD51A Gene Mutation",
-                    "RECA Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131795",
-                "name": "RAD51 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C19676",
-                    "C36391",
-                    "C159204",
-                    "C159207",
-                    "C131783",
-                    "C97926",
-                    "C104711",
-                    "C20813",
-                    "C133695",
-                    "C16612",
-                    "C97927",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C104711",
-                    "C133695",
-                    "C153246",
-                    "C159204",
-                    "C159207",
-                    "C19676",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "HHR Gene",
-                    "HRR Gene",
-                    "Recombination Repair Gene"
-                ],
-                "nci_thesaurus_concept_id": "C153246",
-                "name": "Homologous Recombination Repair Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20462",
-                "name": "Apoptosis Regulation Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612"
-                ],
-                "parents": [
-                    "C16612"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             },
@@ -1486,26 +1854,25 @@
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C16612",
-                    "C131783",
-                    "C36327",
-                    "C131480",
-                    "C133695",
-                    "C141248",
-                    "C3910",
-                    "C153246",
-                    "C45576",
-                    "C97926",
-                    "C93102",
-                    "C159204",
                     "C97927",
-                    "C159207",
-                    "C20814",
+                    "C153246",
                     "C36391",
+                    "C131480",
+                    "C16612",
+                    "C45576",
+                    "C159207",
+                    "C93102",
+                    "C3910",
+                    "C141248",
+                    "C20814",
+                    "C159204",
                     "C19676",
-                    "C20813"
+                    "C131783",
+                    "C133695",
+                    "C97926",
+                    "C20813",
+                    "C36327"
                 ],
                 "parents": [
                     "C131480",
@@ -1521,537 +1888,187 @@
                 "eligibility_criterion": "inclusion",
                 "inclusion_indicator": "TREE",
                 "synonyms": [
-                    "RAD51 Paralog D Gene",
-                    "RAD51D"
+                    "R51H2 Gene Mutation",
+                    "RAD51 Paralog B Gene Mutation",
+                    "RAD51L1 Gene Mutation",
+                    "REC2 Gene Mutation"
                 ],
-                "nci_thesaurus_concept_id": "C116930",
-                "name": "RAD51D Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C153246",
-                    "C16612",
-                    "C20813"
-                ],
-                "parents": [
-                    "C20813"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "PALB2",
-                    "Partner and Localizer of BRCA2 Gene"
-                ],
-                "nci_thesaurus_concept_id": "C84945",
-                "name": "PALB2 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C159207",
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "X-Ray Cross Complementing Family Gene",
-                    "X-Ray Cross Complementing Gene Family",
-                    "X-Ray Cross Complementing Group Gene",
-                    "XRCC",
-                    "XRCC Family Gene",
-                    "XRCC Gene",
-                    "XRCC Gene Family",
-                    "XRCC Group"
-                ],
-                "nci_thesaurus_concept_id": "C18297",
-                "name": "X-Ray Cross Complementing Group",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C19676"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA1 Mutation",
-                    "BROVCA1 Gene Mutation",
-                    "Breast Cancer 1 Gene Mutation",
-                    "Breast Cancer 1, Early Onset Gene Mutation",
-                    "Breast Cancer Type 1 Susceptibility Gene Mutation",
-                    "Mutation of the BRCA1 Gene"
-                ],
-                "nci_thesaurus_concept_id": "C19635",
-                "name": "BRCA1 Gene Mutation",
+                "nci_thesaurus_concept_id": "C132005",
+                "name": "RAD51B Gene Mutation",
                 "semantic_types": [
                     "Cell or Molecular Dysfunction"
                 ],
                 "type": [],
-                "eligibility_criteria": "inclusion",
                 "ancestors": [
-                    "C18297",
-                    "C16612",
-                    "C36391",
-                    "C133695",
-                    "C36327",
-                    "C179406",
-                    "C3910",
-                    "C131783",
-                    "C159204",
-                    "C17965",
-                    "C153246",
-                    "C97926",
-                    "C97927",
-                    "C159207",
-                    "C18120",
-                    "C19676"
-                ],
-                "parents": [
-                    "C133695",
-                    "C153246",
-                    "C159204",
-                    "C159207",
-                    "C179406",
-                    "C17965",
-                    "C19676",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "AT-V1 Gene Mutation",
-                    "AT-V2 Gene Mutation",
-                    "ATV Gene Mutation",
-                    "NBS Gene Mutation",
-                    "NBS1 Gene Mutation",
-                    "Nibrin Gene Mutation",
-                    "Nijmegen Breakage Syndrome 1 Gene Mutation",
-                    "P95 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131806",
-                "name": "NBN Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C19676",
-                    "C36391",
-                    "C131783",
-                    "C97926",
-                    "C21178",
-                    "C133695",
-                    "C16612",
-                    "C97927",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C133695",
-                    "C153246",
-                    "C19676",
-                    "C21178",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious FA Gene Mutation",
-                    "Deleterious FA-H Gene Mutation",
-                    "Deleterious FA1 Gene Mutation",
-                    "Deleterious FAA Gene Mutation",
-                    "Deleterious FACA Gene Mutation",
-                    "Deleterious FAH Gene Mutation",
-                    "Deleterious FANCH Gene Mutation",
-                    "Deleterious Fanconi Anemia Complementation Group A Gene Mutation",
-                    "Deleterious Fanconi Anemia, Complementation Group A Gene Mutation",
-                    "Deleterious Fanconi Anemia, Complementation Group H Gene Mutation",
-                    "Deleterious Fanconi Anemia, Type 1 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C150149",
-                "name": "Deleterious FANCA Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C93102",
-                    "C97927",
-                    "C16612",
-                    "C45576",
-                    "C131794",
-                    "C97926",
-                    "C3910",
-                    "C19676",
-                    "C36391",
-                    "C159207",
-                    "C131783",
-                    "C85995",
-                    "C36327",
-                    "C159204"
-                ],
-                "parents": [
-                    "C131794",
-                    "C159207",
-                    "C19676",
-                    "C85995",
-                    "C93102"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "GENETIC_SEQ",
-                    "Gene Mutant",
-                    "Gene Mutation",
-                    "Gene Variation",
-                    "alternative"
-                ],
-                "nci_thesaurus_concept_id": "C97927",
-                "name": "Gene Variant",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C97926",
-                    "C3910"
-                ],
-                "parents": [
-                    "C36391"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BARD-1 Gene Mutation",
-                    "BRCA1 Associated RING Domain 1 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131789",
-                "name": "BARD1 Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C36391",
-                    "C20462",
-                    "C97926",
-                    "C20715",
-                    "C16612",
-                    "C97927",
-                    "C3910"
-                ],
-                "parents": [
-                    "C20715",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BRCA2",
-                    "BRCA2, DNA Repair Associated Gene",
-                    "Breast Cancer 2, Early Onset Gene"
-                ],
-                "nci_thesaurus_concept_id": "C18120",
-                "name": "BRCA2 Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C18297",
-                    "C19676",
-                    "C159207",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207",
-                    "C18297"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C20813",
-                "name": "RAD51 Family Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
-                    "C19676",
-                    "C16612"
-                ],
-                "parents": [
-                    "C153246"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "FA Gene Mutation",
-                    "FA-H Gene Mutation",
-                    "FA1 Gene Mutation",
-                    "FAA Gene Mutation",
-                    "FACA Gene Mutation",
-                    "FAH Gene Mutation",
-                    "FANCH Gene Mutation",
-                    "Fanconi Anemia Complementation Group A Gene Mutation",
-                    "Fanconi Anemia, Complementation Group A Gene Mutation",
-                    "Fanconi Anemia, Complementation Group H Gene Mutation",
-                    "Fanconi Anemia, Type 1 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131794",
-                "name": "FANCA Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C19676",
-                    "C36391",
-                    "C159204",
-                    "C159207",
-                    "C85995",
-                    "C131783",
-                    "C97926",
-                    "C16612",
-                    "C97927",
-                    "C36327",
-                    "C3910"
-                ],
-                "parents": [
-                    "C159204",
-                    "C159207",
-                    "C19676",
-                    "C85995",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TRIAL",
-                "synonyms": [
-                    "Deleterious R51H2 Gene Mutation",
-                    "Deleterious RAD51 Paralog B Gene Mutation",
-                    "Deleterious RAD51L1 Gene Mutation",
-                    "Deleterious REC2 Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C134504",
-                "name": "Deleterious RAD51B Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
                     "C36391",
                     "C16612",
-                    "C132005",
-                    "C141248",
-                    "C97927",
-                    "C19676",
-                    "C133695",
-                    "C45576",
-                    "C97926",
+                    "C153246",
                     "C20813",
-                    "C3910",
+                    "C97927",
+                    "C19676",
                     "C90145",
-                    "C131783",
+                    "C133695",
+                    "C3910",
+                    "C36327",
+                    "C97926",
+                    "C131783"
+                ],
+                "parents": [
+                    "C133695",
+                    "C153246",
+                    "C19676",
+                    "C90145",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BRCA1 Interacting Protein C-Terminal Helicase 1 Gene",
+                    "BRIP1"
+                ],
+                "nci_thesaurus_concept_id": "C63526",
+                "name": "BRIP1 Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [
+                    "reference_gene"
+                ],
+                "ancestors": [
+                    "C21281",
+                    "C16612",
+                    "C159207",
+                    "C19676",
+                    "C25804",
+                    "C26057"
+                ],
+                "parents": [
+                    "C159207",
+                    "C26057"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "Hydrolase Family Gene"
+                ],
+                "nci_thesaurus_concept_id": "C25804",
+                "name": "Hydrolase Gene",
+                "semantic_types": [
+                    "Gene or Genome"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C21281",
+                    "C16612"
+                ],
+                "parents": [
+                    "C21281"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TREE",
+                "synonyms": [
+                    "BROVCA3 Gene Mutation",
+                    "FANCO Gene Mutation",
+                    "RAD51 Homolog C Gene Mutation",
+                    "RAD51 Paralog C Gene Mutation",
+                    "RAD51L2 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131480",
+                "name": "RAD51C Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C36391",
+                    "C16612",
+                    "C153246",
+                    "C20814",
+                    "C20813",
+                    "C97927",
+                    "C159207",
+                    "C97926",
+                    "C19676",
+                    "C133695",
+                    "C3910",
+                    "C36327",
+                    "C159204",
+                    "C131783"
+                ],
+                "parents": [
+                    "C133695",
+                    "C153246",
+                    "C159204",
+                    "C159207",
+                    "C19676",
+                    "C20814",
+                    "C97927"
+                ],
+                "assay_purpose": "Eligibility Criterion - Inclusion"
+            },
+            {
+                "eligibility_criterion": "inclusion",
+                "inclusion_indicator": "TRIAL",
+                "synonyms": [
+                    "Deleterious FANCN Gene Mutation",
+                    "Deleterious Fanconi Anemia, Complementation Group N Gene Mutation",
+                    "Deleterious PNCA3 Gene Mutation",
+                    "Deleterious Partner and Localizer of BRCA2 Gene Mutation"
+                ],
+                "nci_thesaurus_concept_id": "C131775",
+                "name": "Deleterious PALB2 Gene Mutation",
+                "semantic_types": [
+                    "Cell or Molecular Dysfunction"
+                ],
+                "type": [],
+                "ancestors": [
+                    "C97927",
+                    "C36391",
+                    "C16612",
+                    "C45576",
+                    "C84945",
+                    "C101641",
+                    "C159207",
                     "C93102",
+                    "C3910",
+                    "C159204",
+                    "C19676",
+                    "C131783",
+                    "C97926",
                     "C36327"
                 ],
                 "parents": [
-                    "C132005",
-                    "C141248",
-                    "C153246",
-                    "C19676",
-                    "C90145"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "BROVCA4 Gene Mutation",
-                    "R51H3 Gene Mutation",
-                    "RAD51 Homolog D Gene Mutation",
-                    "RAD51 Paralog D Gene Mutation",
-                    "RAD51-Like 3 Gene Mutation",
-                    "RAD51L3 Gene Mutation",
-                    "TRAD Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C131481",
-                "name": "RAD51D Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C16612",
-                    "C36391",
-                    "C133695",
-                    "C36327",
-                    "C3910",
-                    "C116930",
-                    "C131783",
-                    "C153246",
-                    "C97926",
-                    "C97927",
-                    "C19676",
-                    "C20813"
-                ],
-                "parents": [
-                    "C116930",
-                    "C133695",
-                    "C153246",
-                    "C19676",
-                    "C97927"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "RAD51 Paralog C Gene",
-                    "RAD51C"
-                ],
-                "nci_thesaurus_concept_id": "C20814",
-                "name": "RAD51C Gene",
-                "semantic_types": [
-                    "Gene or Genome"
-                ],
-                "type": [
-                    "reference_gene"
-                ],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C153246",
+                    "C101641",
                     "C159207",
                     "C19676",
-                    "C20813",
-                    "C16612"
-                ],
-                "parents": [
-                    "C159207",
-                    "C20813"
-                ],
-                "assay_purpose": "Eligibility Criterion - Inclusion"
-            },
-            {
-                "eligibility_criterion": "inclusion",
-                "inclusion_indicator": "TREE",
-                "synonyms": [
-                    "Deleterious HHR Gene Mutation",
-                    "Deleterious Homologous Recombination Pathway Mutation",
-                    "Deleterious Recombination Repair Gene Mutation"
-                ],
-                "nci_thesaurus_concept_id": "C141248",
-                "name": "Deleterious Homologous Recombination Pathway Gene Mutation",
-                "semantic_types": [
-                    "Cell or Molecular Dysfunction"
-                ],
-                "type": [],
-                "eligibility_criteria": "inclusion",
-                "ancestors": [
-                    "C45576",
-                    "C16612",
-                    "C36391",
-                    "C133695",
-                    "C36327",
-                    "C3910",
-                    "C131783",
-                    "C153246",
-                    "C97926",
-                    "C19676",
-                    "C93102"
-                ],
-                "parents": [
-                    "C133695",
-                    "C153246",
-                    "C19676",
+                    "C84945",
                     "C93102"
                 ],
                 "assay_purpose": "Eligibility Criterion - Inclusion"
             }
         ],
         "classification_code": null,
-        "current_trial_status_date": "2022-03-24",
+        "current_trial_status_date": "2022-07-15",
         "diseases": [
             {
                 "inclusion_indicator": "TRIAL",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Recurrent Malignant Solid Neoplasm",
-                    "Recurrent Solid Neoplasm",
-                    "Relapsed Solid Tumor",
                     "Recurrent Solid Tumor",
                     "Relapsed Malignant Solid Neoplasm",
-                    "Relapsed Solid Neoplasm"
+                    "Recurrent Malignant Solid Neoplasm",
+                    "Relapsed Solid Neoplasm",
+                    "Relapsed Solid Tumor",
+                    "Recurrent Solid Neoplasm"
                 ],
                 "nci_thesaurus_concept_id": "C127153",
                 "name": "Recurrent Malignant Solid Tumor",
@@ -2068,9 +2085,8 @@
                 "is_lead_disease": false,
                 "synonyms": [
                     "Metastatic Solid Neoplasm",
-                    "Metastatic Solid Tumor",
-                    "Metastatic Tumor",
-                    "Metastatic Malignant Solid Neoplasm"
+                    "Metastatic Malignant Solid Neoplasm",
+                    "Metastatic Solid Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C127155",
                 "name": "Metastatic Malignant Solid Tumor",
@@ -2112,9 +2128,9 @@
                     "subtype"
                 ],
                 "parents": [
+                    "C127156",
                     "C27359",
-                    "C132146",
-                    "C127156"
+                    "C132146"
                 ]
             },
             {
@@ -2122,18 +2138,18 @@
                 "is_lead_disease": true,
                 "synonyms": [
                     "disease term",
+                    "Diseases",
                     "Disease",
                     "Diseases and Disorders",
-                    "disease type",
-                    "Disease or Disorder",
-                    "Diagnosis",
                     "disease_term",
-                    "condition",
-                    "disease_type",
-                    "Diseases",
+                    "Diagnosis",
                     "Disease or Disorder, Non-Neoplastic",
+                    "disease type",
                     "Disorders",
-                    "Disorder"
+                    "Disease or Disorder",
+                    "Disorder",
+                    "condition",
+                    "disease_type"
                 ],
                 "nci_thesaurus_concept_id": "C2991",
                 "name": "Other Disease",
@@ -2145,36 +2161,33 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [],
-                "nci_thesaurus_concept_id": "C7062",
-                "name": "Neoplasm by Special Category",
+                "synonyms": [
+                    "Unresectable Solid Neoplasm"
+                ],
+                "nci_thesaurus_concept_id": "C127156",
+                "name": "Unresectable Solid Tumor",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C3262"
+                    "C9292"
                 ]
             },
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Neoplasms, NOS",
-                    "Neoplasia",
-                    "Tumor, NOS",
-                    "Neoplastic Growth",
-                    "Neoplasm",
-                    "Neoplastic Disease",
-                    "tumor",
-                    "Neoplasm, NOS"
+                    "Solid Neoplasm",
+                    "Solid Tumour",
+                    "Solid tumor, NOS"
                 ],
-                "nci_thesaurus_concept_id": "C3262",
-                "name": "Other Neoplasm",
+                "nci_thesaurus_concept_id": "C9292",
+                "name": "Solid Tumor",
                 "type": [
                     "maintype"
                 ],
                 "parents": [
-                    "C2991"
+                    "C7062"
                 ]
             },
             {
@@ -2195,18 +2208,14 @@
             {
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
-                "synonyms": [
-                    "Solid Tumour",
-                    "Solid tumor, NOS",
-                    "Solid Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C9292",
-                "name": "Solid Tumor",
+                "synonyms": [],
+                "nci_thesaurus_concept_id": "C7062",
+                "name": "Neoplasm by Special Category",
                 "type": [
-                    "maintype"
+                    "subtype"
                 ],
                 "parents": [
-                    "C7062"
+                    "C3262"
                 ]
             },
             {
@@ -2215,13 +2224,13 @@
                 "synonyms": [
                     "Neoplasm, malignant",
                     "Cancer",
-                    "Malignant Growth",
                     "Tumor, malignant, NOS",
-                    "Malignant Tumor",
                     "Malignancy",
-                    "CA",
                     "Unclassified tumor, malignant",
-                    "Malignant Neoplastic Disease"
+                    "Malignant Neoplastic Disease",
+                    "Malignant Growth",
+                    "CA",
+                    "Malignant Tumor"
                 ],
                 "nci_thesaurus_concept_id": "C9305",
                 "name": "Malignant Neoplasm",
@@ -2252,83 +2261,37 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": true,
                 "synonyms": [
-                    "Unresectable Solid Neoplasm"
+                    "Neoplasm",
+                    "Neoplasms, NOS",
+                    "tumor",
+                    "Neoplastic Growth",
+                    "Tumor, NOS",
+                    "Neoplasia",
+                    "Neoplasm, NOS",
+                    "Neoplastic Disease"
                 ],
-                "nci_thesaurus_concept_id": "C127156",
-                "name": "Unresectable Solid Tumor",
+                "nci_thesaurus_concept_id": "C3262",
+                "name": "Other Neoplasm",
+                "type": [
+                    "maintype"
+                ],
+                "parents": [
+                    "C2991"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Tumor, metastatic",
+                    "Metastatic Tumor",
+                    "Neoplasm, metastatic",
+                    "Metastatic"
+                ],
+                "nci_thesaurus_concept_id": "C3261",
+                "name": "Metastatic Neoplasm",
                 "type": [
                     "subtype"
-                ],
-                "parents": [
-                    "C9292"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Neoplasm, secondary",
-                    "Secondary Tumor",
-                    "Tumor, secondary"
-                ],
-                "nci_thesaurus_concept_id": "C36255",
-                "name": "Secondary Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C7062"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Recurrence",
-                    "Recurrent Cancer",
-                    "Recurrent Malignant Tumor"
-                ],
-                "nci_thesaurus_concept_id": "C4813",
-                "name": "Recurrent Malignant Neoplasm",
-                "type": [
-                    "stage"
-                ],
-                "parents": [
-                    "C9305",
-                    "C4798"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Locally Advanced Cancer",
-                    "Locally advanced",
-                    "regional cancer",
-                    "Locally Metastatic Malignant Neoplasm"
-                ],
-                "nci_thesaurus_concept_id": "C8524",
-                "name": "Locally Advanced Malignant Neoplasm",
-                "type": [
-                    "subtype"
-                ],
-                "parents": [
-                    "C36263"
-                ]
-            },
-            {
-                "inclusion_indicator": "TREE",
-                "is_lead_disease": false,
-                "synonyms": [
-                    "Recurrence",
-                    "Recurrent",
-                    "Recurrent Tumor",
-                    "Neoplasm Recurrence"
-                ],
-                "nci_thesaurus_concept_id": "C4798",
-                "name": "Recurrent Neoplasm",
-                "type": [
-                    "stage"
                 ],
                 "parents": [
                     "C7062"
@@ -2354,12 +2317,47 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Metastatic Tumor",
-                    "Tumor, metastatic",
-                    "Neoplasm, metastatic"
+                    "Recurrence",
+                    "Recurrent Cancer",
+                    "Recurrent Malignant Tumor"
                 ],
-                "nci_thesaurus_concept_id": "C3261",
-                "name": "Metastatic Neoplasm",
+                "nci_thesaurus_concept_id": "C4813",
+                "name": "Recurrent Malignant Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C4798",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Secondary Cancer",
+                    "Secondary Malignancy"
+                ],
+                "nci_thesaurus_concept_id": "C4968",
+                "name": "Secondary Malignant Neoplasm",
+                "type": [
+                    "subtype"
+                ],
+                "parents": [
+                    "C36255",
+                    "C9305"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Secondary Tumor",
+                    "Tumor, secondary",
+                    "Neoplasm, secondary"
+                ],
+                "nci_thesaurus_concept_id": "C36255",
+                "name": "Secondary Neoplasm",
                 "type": [
                     "subtype"
                 ],
@@ -2371,37 +2369,46 @@
                 "inclusion_indicator": "TREE",
                 "is_lead_disease": false,
                 "synonyms": [
-                    "Secondary Malignancy",
-                    "Secondary Cancer"
+                    "Locally Advanced Cancer",
+                    "regional cancer",
+                    "Locally advanced",
+                    "Locally Metastatic Malignant Neoplasm"
                 ],
-                "nci_thesaurus_concept_id": "C4968",
-                "name": "Secondary Malignant Neoplasm",
+                "nci_thesaurus_concept_id": "C8524",
+                "name": "Locally Advanced Malignant Neoplasm",
                 "type": [
                     "subtype"
                 ],
                 "parents": [
-                    "C9305",
-                    "C36255"
+                    "C36263"
+                ]
+            },
+            {
+                "inclusion_indicator": "TREE",
+                "is_lead_disease": false,
+                "synonyms": [
+                    "Neoplasm Recurrence",
+                    "Recurrence",
+                    "Recurrent Tumor",
+                    "Recurrent"
+                ],
+                "nci_thesaurus_concept_id": "C4798",
+                "name": "Recurrent Neoplasm",
+                "type": [
+                    "stage"
+                ],
+                "parents": [
+                    "C7062"
                 ]
             }
         ],
         "_primary_purpose_sort_order": 0,
         "protocol_id": "CO-338-100",
-        "active_sites_count": 7,
+        "active_sites_count": 2,
         "lead_org_cancer_center": null,
         "arms": [
             {
                 "interventions": [
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [],
-                        "nci_thesaurus_concept_id": "C1908",
-                        "name": "Drug, Food, Chemical or Biomedical Material",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": []
-                    },
                     {
                         "inclusion_indicator": "TRIAL",
                         "synonyms": [],
@@ -2417,36 +2424,13 @@
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anti-Tumor Agents",
-                            "Antiproliferative Drugs",
-                            "Cancer Drug",
-                            "Chemotherapeutic Agents, Neoplastic Disease",
-                            "Antiproliferative Agents",
-                            "Tumor-Specific Treatment Agents",
-                            "Antineoplastics",
-                            "Anti-Tumor Drugs",
-                            "Anti-Cancer Agents",
-                            "Antineoplastic Drugs"
-                        ],
-                        "nci_thesaurus_concept_id": "C274",
-                        "name": "Antineoplastic Agent",
-                        "description": null,
-                        "type": "Drug",
-                        "category": "agent category",
-                        "parents": [
-                            "C1909"
-                        ]
-                    },
-                    {
-                        "inclusion_indicator": "TREE",
-                        "synonyms": [
                             "Drug",
-                            "Pharmacologic Agent",
-                            "Pharmaceuticals",
                             "Pharmaceutical Agent",
-                            "Agent",
+                            "Pharmacological Substance",
                             "Drug Substance",
-                            "Pharmacological Substance"
+                            "Agent",
+                            "Pharmacologic Agent",
+                            "Pharmaceuticals"
                         ],
                         "nci_thesaurus_concept_id": "C1909",
                         "name": "Pharmacologic Substance",
@@ -2461,8 +2445,8 @@
                         "inclusion_indicator": "TREE",
                         "synonyms": [
                             "Enzyme Antagonist",
-                            "Enzyme Inhibitor Drug",
-                            "Enzyme Inhibitor Agent"
+                            "Enzyme Inhibitor Agent",
+                            "Enzyme Inhibitor Drug"
                         ],
                         "nci_thesaurus_concept_id": "C471",
                         "name": "Enzyme Inhibitor",
@@ -2472,6 +2456,16 @@
                         "parents": [
                             "C1909"
                         ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [],
+                        "nci_thesaurus_concept_id": "C1908",
+                        "name": "Drug, Food, Chemical or Biomedical Material",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": []
                     },
                     {
                         "inclusion_indicator": "TREE",
@@ -2485,17 +2479,17 @@
                         "type": "Drug",
                         "category": "agent category",
                         "parents": [
-                            "C471",
-                            "C163758"
+                            "C163758",
+                            "C471"
                         ]
                     },
                     {
                         "inclusion_indicator": "TREE",
                         "synonyms": [
-                            "Anti-tumor Targeted Therapy Agent",
-                            "Targeted Therapeutic Agent",
+                            "Targeted Agent",
                             "Molecularly Targeted Therapy Agent",
-                            "Targeted Agent"
+                            "Targeted Therapeutic Agent",
+                            "Anti-tumor Targeted Therapy Agent"
                         ],
                         "nci_thesaurus_concept_id": "C163758",
                         "name": "Targeted Therapy Agent",
@@ -2504,6 +2498,29 @@
                         "category": "agent category",
                         "parents": [
                             "C274"
+                        ]
+                    },
+                    {
+                        "inclusion_indicator": "TREE",
+                        "synonyms": [
+                            "Anti-Cancer Agents",
+                            "Antineoplastics",
+                            "Antiproliferative Agents",
+                            "Chemotherapeutic Agents, Neoplastic Disease",
+                            "Cancer Drug",
+                            "Antiproliferative Drugs",
+                            "Anti-Tumor Drugs",
+                            "Tumor-Specific Treatment Agents",
+                            "Antineoplastic Drugs",
+                            "Anti-Tumor Agents"
+                        ],
+                        "nci_thesaurus_concept_id": "C274",
+                        "name": "Antineoplastic Agent",
+                        "description": null,
+                        "type": "Drug",
+                        "category": "agent category",
+                        "parents": [
+                            "C1909"
                         ]
                     }
                 ],
@@ -2520,10 +2537,14 @@
         ],
         "study_model_code": null,
         "nci_id": "NCI-2019-08226",
-        "why_study_stopped": null,
+        "why_study_stopped": "The study was terminated due to a change in development priorities.",
         "brief_summary": "A Phase 2, open-label, single-arm trial to evaluate the response of rucaparib in patients\r\n      with various solid tumors and with deleterious mutations in Homologous Recombination Repair\r\n      (HRR) genes.",
         "brief_title": "A Study to Evaluate Rucaparib in Patients With Solid Tumors and With Deleterious Mutations in HRR Genes",
         "status_history": [
+            {
+                "status_date": "2022-07-15T00:00:00.000003",
+                "status": "ADMINISTRATIVELY_COMPLETE"
+            },
             {
                 "status_date": "2022-03-24T00:00:00.000002",
                 "status": "CLOSED_TO_ACCRUAL"
@@ -2540,11 +2561,12 @@
         "study_population_description": null,
         "sampling_method_code": null,
         "minimum_target_accrual_number": 220,
-        "_current_trial_status_sort_order": 7,
+        "prior_therapy": [],
+        "_current_trial_status_sort_order": 8,
         "start_date": "2019-11-21",
-        "record_verification_date": "2021-12-01",
+        "record_verification_date": "2022-08-01",
         "ctep_id": null,
-        "current_trial_status": "Closed to Accrual",
+        "current_trial_status": "Administratively Complete",
         "study_model_other_text": null,
         "masking": {
             "role_caregiver": null,
@@ -2555,6 +2577,7 @@
             "allocation_code": "NA"
         },
         "acronym": "LODESTAR",
+        "nci_programs": [],
         "nci_funded": "Indirect",
         "anatomic_sites": [
             "Multiple"
@@ -2563,7 +2586,7 @@
         "start_date_type_code": "ACTUAL",
         "principal_investigator": null,
         "study_source": "Industrial",
-        "completion_date": "2022-06-01",
+        "completion_date": "2022-07-15",
         "study_subtype_code": null,
         "study_protocol_type": "Interventional"
     }
