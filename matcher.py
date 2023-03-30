@@ -38,6 +38,8 @@ today = datetime.today().strftime("%Y-%m-%d")
 
 #TO-DO: add filter on disease subquery's date of screening in the overall where clause (otherwise we return everything every time) DONE
 
+#TO-DO: ensure ALL receptor statuses match.
+
 sql = """select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,receptor_match,treatment_match
  from
  (
@@ -61,13 +63,24 @@ sql = """select disease.nci_number,date_screened, new_or_progressed,disease.mrn,
  ) stage on disease.pt_pk = stage.pt_pk and disease.trial_pk = stage.trial_pk
  inner join
  (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.receptor_value) as receptor_match, count(distinct c.receptor_type) as num_matches
+select * from
+ (
+ select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial = 1 then patient_receptor else null end) as receptor_match,
+ sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
+ sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
+ sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
+ from
+ (
+    select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
+    (select count(q.receptor_value) from trial_receptor q where c.receptor_type = q.receptor_type and d.pk_id = q.fk_id) as cnt_types_for_this_trial, b.receptor_value as patient_receptor,
+    c.receptor_value as trial_receptor
  from
  patient a left join
  patient_receptor b on a.pk_id = b.fk_id left join
  trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
  trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
+) group by nci_number, mrn, trial_pk,pt_pk
+) q where pr_match>0 and er_match>0 and her2_match>0
  ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
  left join
  (
@@ -92,13 +105,24 @@ select disease.nci_number,date_screened, new_or_progressed, disease.mrn, cancer_
  ) disease
  inner join
  (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.receptor_value) as receptor_match, count(distinct c.receptor_type) as num_matches
+select * from
+ (
+ select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial then patient_receptor else null end) as receptor_match,
+ sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
+ sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
+ sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
+ from
+ (
+    select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
+    (select count(q.receptor_value) from trial_receptor q where c.receptor_type = q.receptor_type and d.pk_id = q.fk_id) as cnt_types_for_this_trial, b.receptor_value as patient_receptor,
+    c.receptor_value as trial_receptor
  from
  patient a left join
  patient_receptor b on a.pk_id = b.fk_id left join
  trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
  trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
+) group by nci_number, mrn, trial_pk,pt_pk
+) q where pr_match>0 and er_match>0 and her2_match>0
  ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
  left join
  (
@@ -166,7 +190,8 @@ select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_t
  group by  nci_number, mrn,a.pk_id, d.pk_id
  ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk 
  where not exists (select 1 from trial_receptor q where disease.trial_pk = q.fk_id)
-and not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id) and disease.date_screened >= '%s'""" % (today,today,today,today)
+and not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id) and disease.date_screened >= '%s' """ % (today,today,today,today)
+
 
 cursor = sqlite.cursor()
 

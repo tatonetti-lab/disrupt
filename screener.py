@@ -111,6 +111,7 @@ def breast_note_parse(sql,cursor):
         for pat_id,note_id, date_of_service,match_type,note_text in results:
                 if count % 1000 == 0:
                         print(count)
+                        today = datetime.today()
                         print(today.strftime("%Y/%m/%d %H:%M:%S"))
                 count=count+1
                 m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
