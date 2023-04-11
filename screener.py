@@ -83,6 +83,7 @@ import json
 import argparse
 import sqlparse
 import os
+import tqdm
 
 sqlite = sqlite3.connect('disrupt.db')
 
@@ -108,11 +109,8 @@ def breast_note_parse(sql,cursor):
         results = cursor.fetchall()
         count=0
         staging_matches = defaultdict(lambda: defaultdict(set))
-        for pat_id,note_id, date_of_service,match_type,note_text in results:
-                if count % 1000 == 0:
-                        print(count)
-                        today = datetime.today()
-                        print(today.strftime("%Y/%m/%d %H:%M:%S"))
+        for pat_id,note_id, date_of_service,match_type,note_text in tqdm.tqdm(results):
+
                 count=count+1
                 m = re.findall('[a-zA-Z0-9]*([Tt][Xx0-4]([a-dA-D]|is|IS)*) *(p|c)*([Nn][Xx0-3][a-dA-D]{0,1})* *(p|c)*([Mm][0-1xX])*([a-zA-Z0-9]*)',str(note_text))
                 #print("match type 1 - non-pretty staging")
@@ -143,7 +141,9 @@ def breast_note_parse(sql,cursor):
 
 
                                         found = True
-                m = re.findall('([/ \(](HER2|ER|PR)[ \-+]([PpNn]\w*)*)',str(note_text))
+
+                m = re.findall('[/ \(]((HER2|ER|PR)[ \-+](\w*))',str(note_text))
+                #m = re.findall('([/ \(](HER2|ER|PR)[ \-+]([PpNn]\w*)*)',str(note_text))
                 #print("match type 2 - non-pretty receptors")
                 if m is not None:
                         found = True
@@ -151,32 +151,32 @@ def breast_note_parse(sql,cursor):
                                 #print(match)
                                 #print(note_id)
                                 if match[1] == 'HER2' and not 'Neu' in match[0]:
-                                        if 'neg' in match[0].lower():
+                                        if 'neg' in match[2].lower():
                                                 her2 = 'HER2-'
-                                        elif 'pos' in match[0].lower():
+                                        elif 'pos' in match[2].lower():
                                                 her2 = 'HER2+'
                                         elif '+' in match[0].lower():
                                                 her2 = 'HER2+'
-                                        elif '-' in match[0].lower():
+                                        elif '-' in match[0].lower() and match[2] =='':
                                                 her2 = 'HER2-'
                                 elif match[1] == 'ER':
-                                        if 'neg' in match[0].lower():
+                                        if 'neg' in match[2].lower():
                                                 er = 'ER-'
-                                        elif 'pos' in match[0].lower():
+                                        elif 'pos' in match[2].lower():
                                                 er = 'ER+'
                                         elif '+' in match[0].lower():
                                                 er = 'ER+'
-                                        elif '-' in match[0].lower():
+                                        elif '-' in match[0].lower() and match[2] == '':
                                                 er = 'ER-'
 
                                 elif match[1] == 'PR':
-                                        if 'neg' in match[0].lower():
+                                        if 'neg' in match[2].lower():
                                                 pr = 'PR-'
-                                        elif 'pos' in match[0].lower():
+                                        elif 'pos' in match[2].lower():
                                                 pr = 'PR+'
                                         elif '+' in match[0].lower():
                                                 pr = 'PR+'
-                                        elif '-' in match[0].lower():
+                                        elif '-' in match[0].lower() and match[2] =='':
                                                 pr = 'PR-'
                                 if(her2 != ''):
                                         staging_matches[(pat_id, note_id)]['HER2'].add(her2)
