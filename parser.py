@@ -361,10 +361,7 @@ def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_s
 
 if __name__ == '__main__':
 
-    parser= argparse.ArgumentParser()
-    parser.add_argument("--config",type=str,required=True,help="Please specify a path to the config file")
-    args = parser.parse_args()
-    config = json.loads(open(args.config).read())
+    config = json.loads(open('./config.json').read())
     
     load_trials(config['ctrp_api_key'])
 
