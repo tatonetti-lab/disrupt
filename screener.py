@@ -830,7 +830,7 @@ def main():
         today = datetime.today()
         print(today.strftime("%Y/%m/%d %H:%M:%S"))
 
-        cursor.execute(config['diseases'][disease]['queries']['final']['meds'])
+        #cursor.execute(config['diseases'][disease]['queries']['final']['meds'])
 
         results = cursor.fetchall()
 
@@ -851,6 +851,7 @@ def main():
         print("processing results into sqlite")
         if results is not None:
                 for match_type, pat_id, mrn, dob in results:
+                #for  pat_id, mrn, dob in results:
                         #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
                         sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':disease.title(),'pat_id': pat_id, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
                         pks[pat_id] = sqlite_cursor.lastrowid
@@ -864,10 +865,10 @@ def main():
                                         #sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','HER2','{pt['HER2']}')")
                                         sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': pks[pt['PAT_ID']], 'key':key, 'value': pt[key]})
 
-        if newpt_meds is not None:
-                for (pat_id, drug_name), drug in newpt_meds.items():
-                        # sqlite_cursor.execute(f"insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values ({pks[pat_id]},'Drug','{drug_name}','{drug['first_order_date']}','{drug['last_order_date']}')")
-                        sqlite_cursor.execute("insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values (%(pat_id)s,'Drug','%(drug_name)s','%(first_order_date)s','%(last_order_date)s')" % {'pat_id': pks[pat_id], 'drug_name': drug_name, 'first_order_date': drug['first_order_date'], 'last_order_date': drug['last_order_date']})
+        #if newpt_meds is not None:
+        #        for (pat_id, drug_name), drug in newpt_meds.items():
+        #                # sqlite_cursor.execute(f"insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values ({pks[pat_id]},'Drug','{drug_name}','{drug['first_order_date']}','{drug['last_order_date']}')")
+        #                sqlite_cursor.execute("insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values (%(pat_id)s,'Drug','%(drug_name)s','%(first_order_date)s','%(last_order_date)s')" % {'pat_id': pks[pat_id], 'drug_name': drug_name, 'first_order_date': drug['first_order_date'], 'last_order_date': drug['last_order_date']})
 
 
         sqlite.commit()
