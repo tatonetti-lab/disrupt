@@ -40,7 +40,7 @@ today = datetime.today().strftime("%Y-%m-%d")
 
 #TO-DO: ensure ALL receptor statuses match.
 
-sql = """select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,receptor_match,treatment_match
+sql = """select distinct * from (select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,receptor_match,treatment_match
  from
  (
   select nci_number, mrn,a.pk_id as pt_pk, c.pk_id as trial_pk, a.cancer_type,date_screened, new_or_progressed
@@ -68,7 +68,10 @@ select * from
  select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial = 1 then patient_receptor else null end) as receptor_match,
  sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
  sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
- sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
+ sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match,
+ sum(case when receptor_type = 'PR' then 1 else 0 end) as pr_req,
+ sum(case when receptor_type = 'ER' then 1 else 0 end) as er_req,
+ sum(case when receptor_type = 'HER2' then 1 else 0 end) as her2_req
  from
  (
     select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
@@ -80,7 +83,7 @@ select * from
  trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
  trial d on c.fk_id = d.pk_id
 ) group by nci_number, mrn, trial_pk,pt_pk
-) q where pr_match>0 and er_match>0 and her2_match>0
+) q where (pr_req = 0 or pr_match>0) and (er_req = 0 or er_match>0) and (her2_req=0 or her2_match>0)
  ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
  left join
  (
@@ -93,7 +96,7 @@ select * from
  group by  nci_number, mrn,a.pk_id, d.pk_id
  ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
  where disease.date_screened >= '%s'
-union
+union all
 select disease.nci_number,date_screened, new_or_progressed, disease.mrn, cancer_type, 'ALL STAGES ALLOWED' as stage_match,receptor_match, treatment_match as treatment_match
  from
  (
@@ -110,7 +113,10 @@ select * from
  select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial=1 then patient_receptor else null end) as receptor_match,
  sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
  sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
- sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
+ sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match,
+ sum(case when receptor_type = 'PR' then 1 else 0 end) as pr_req,
+ sum(case when receptor_type = 'ER' then 1 else 0 end) as er_req,
+ sum(case when receptor_type = 'HER2' then 1 else 0 end) as her2_req
  from
  (
     select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
@@ -122,7 +128,7 @@ select * from
  trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
  trial d on c.fk_id = d.pk_id
 ) group by nci_number, mrn, trial_pk,pt_pk
-) q where pr_match>0 and er_match>0 and her2_match>0
+) q where (pr_req = 0 or pr_match>0) and (er_req = 0 or er_match>0) and (her2_req=0 or her2_match>0)
  ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
  left join
  (
@@ -136,7 +142,7 @@ select * from
  ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
  where not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id)
  and disease.date_screened >= '%s'
- union
+ union all
  select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,'ALL RECEPTORS ALLOWED' as receptor_match,treatment_match
  from
  (
@@ -169,7 +175,7 @@ select * from
  group by  nci_number, mrn,a.pk_id, d.pk_id
  ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
   where not exists (select 1 from trial_receptor q where disease.trial_pk = q.fk_id) and  disease.date_screened > '%s'
-union
+union all
 select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, 'ALL STAGES ALLOWED' as staging_match,'ALL RECEPTORS ALLOWED' as receptor_match,treatment_match
  from
  (
@@ -190,7 +196,7 @@ select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_t
  group by  nci_number, mrn,a.pk_id, d.pk_id
  ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk 
  where not exists (select 1 from trial_receptor q where disease.trial_pk = q.fk_id)
-and not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id) and disease.date_screened >= '%s' """ % (today,today,today,today)
+and not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id) and disease.date_screened >= '%s' ) q""" % (today,today,today,today)
 
 
 cursor = sqlite.cursor()
@@ -208,6 +214,7 @@ writer =csv.writer(outfile)
 writer.writerow(['NCI_NUMBER','DATE_SCREENED','NEW_OR_PROGRESSED','MRN','CANCER_TYPE','STAGE_MATCH','RECEPTOR_MATCH','TREATMENT_MATCH'])
 
 for nci_number,date_screened,new_or_progressed,mrn,cancer_type,stage_match,receptor_match,treatment_match in results:
-    writer.writerow([nci_number,date_screened,new_or_progressed,mrn,cancer_type,stage_match,receptor_match,treatment_match])
+    url = 'https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/v?' +nci_number
+    writer.writerow([url,date_screened,new_or_progressed,mrn,cancer_type,stage_match,receptor_match,treatment_match])
 
 outfile.close()
