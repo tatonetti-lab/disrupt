@@ -524,16 +524,22 @@ pks = dict()
 sqlite_cursor = sqlite.cursor()
 
 print("processing results into sqlite")
+index = 1
 if df_f is not None:
-        for ind in df_f.index:
-                #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
-                sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease': df_f['Cancer Type'][ind],'pat_id': ind, 'mrn': df_f['MRN'][ind], 'dob': '1/1/1975', 'match_type': df_f['MATCH TYPE'][ind], 'now': datetime.now()})
-                #pks[ind] = sqlite_cursor.lastrowid
-                sqlite_cursor.execute ("insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values (%(pat_id)s,'%(stage)s','%(T)s','%(N)s','%(M)s')" % {'pat_id': ind, 'stage': df_f['Overall stage'][ind], 'T': df_f['T'][ind], 'N': df_f['N'][ind], 'M': df_f['M'][ind]})
-                sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': ind, 'key': 'ER', 'value': df_f['ER'][ind]})
-                sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': ind, 'key': 'PR', 'value': df_f['PR'][ind]}) 
-                sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': ind, 'key': 'HER2', 'value': df_f['Her2'][ind]})
-    
+    for _, row in df_f.iterrows():
+        #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
+        sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'pat_id': index, 'mrn': row['MRN'], 'dob': '1/1/1975', 'disease': row['Cancer Type'],'match_type': row['MATCH TYPE'], 'now': datetime.now()})
+        #pks[ind] = sqlite_cursor.lastrowid
+        #print(f"pat_id: {index} , mrn: {row['MRN']} , dob: 1/1/1975, disease: {row['Cancer Type']} ,match_type: {row['MATCH TYPE']}, now: {datetime.now()} ")
+        sqlite_cursor.execute ("insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values (%(pat_id)s,'%(stage)s','%(T)s','%(N)s','%(M)s')" % {'pat_id': index, 'stage': row['Overall stage'], 'T': row['T'], 'N': row['N'], 'M': row['M']})
+        #print(f"pat_id: {index}, 'stage': {row['Overall stage']} , 'T': {row['T']} , 'N': {row['N']} , 'M': {row['M']} ")
+        sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': index, 'key': 'ER', 'value': row['ER']})
+        #print(f"pat_id: {index}, key: ER, value: {row['ER']}")
+        sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': index, 'key': 'PR', 'value': row['PR']}) 
+        #print(f"pat_id: {index}, key: PR, value: {row['PR']}")
+        sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': index, 'key': 'HER2', 'value': row['Her2']})
+        #print(f"pat_id: {index}, key: HER2, value: {row['Her2']}")
+        index+=1    
     
 sqlite.commit()
 sqlite.close()
