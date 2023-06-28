@@ -22,192 +22,184 @@ STEPS
 
 """
 
-import sqlite3
-import csv
 import os
 from datetime import datetime
+import sqlite3
+import csv
+import pandas as pd
+import numpy as np
 
 sqlite = sqlite3.connect('disrupt.db')
 
 sqlite_cursor = sqlite.cursor()
 
-today = datetime.today().strftime("%Y-%m-%d")
-
-
-#NOTE: currently the drug join is left because we found no matches there
-
-#TO-DO: add filter on disease subquery's date of screening in the overall where clause (otherwise we return everything every time) DONE
-
-#TO-DO: ensure ALL receptor statuses match.
-
-sql = """select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,receptor_match,treatment_match
- from
- (
-  select nci_number, mrn,a.pk_id as pt_pk, c.pk_id as trial_pk, a.cancer_type,date_screened, new_or_progressed
- from
- patient a left join
- trial_cancer_type b on a.cancer_type = b.cancer_type left join
- trial c on b.fk_id = c.pk_id
- ) disease
- inner join
- (
- select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.stage) as stage_match, count(distinct c.stage) as num_matches
- from
- patient a left join
- patient_staging b on a.pk_id = b.fk_id left join
- trial_stage c on  b.stage = c.stage left join
- trial d on c.fk_id = d.pk_id left join
- staging_rank e on b.stage = e.stage_name
- where ranking = (select max(ranking) from staging_rank q inner join patient_staging qq on q.stage_name = qq.stage where qq.fk_id = b.fk_id)
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) stage on disease.pt_pk = stage.pt_pk and disease.trial_pk = stage.trial_pk
- inner join
- (
-select * from
- (
- select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial = 1 then patient_receptor else null end) as receptor_match,
- sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
- sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
- sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
- from
- (
-    select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
-    (select count(q.receptor_value) from trial_receptor q where c.receptor_type = q.receptor_type and d.pk_id = q.fk_id) as cnt_types_for_this_trial, b.receptor_value as patient_receptor,
-    c.receptor_value as trial_receptor
- from
- patient a left join
- patient_receptor b on a.pk_id = b.fk_id left join
- trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
- trial d on c.fk_id = d.pk_id
-) group by nci_number, mrn, trial_pk,pt_pk
-) q where pr_match>0 and er_match>0 and her2_match>0
- ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
- left join
- (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.treatment_name) as treatment_match, count(distinct c.treatment_name) as num_matches
- from
- patient a left join
- patient_treatment b on a.pk_id = b.fk_id left join
- trial_treatment c on  b.treatment_name = c.treatment_name and b.treatment_type = c.treatment_type left join
- trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
- where disease.date_screened >= '%s'
-union
-select disease.nci_number,date_screened, new_or_progressed, disease.mrn, cancer_type, 'ALL STAGES ALLOWED' as stage_match,receptor_match, treatment_match as treatment_match
- from
- (
-  select nci_number, mrn,a.pk_id as pt_pk, c.pk_id as trial_pk, a.cancer_type,date_screened, new_or_progressed
- from
- patient a left join
- trial_cancer_type b on a.cancer_type = b.cancer_type left join
- trial c on b.fk_id = c.pk_id
- ) disease
- inner join
- (
-select * from
- (
- select nci_number, mrn, trial_pk, pt_pk,group_concat(distinct case when patient_receptor = trial_receptor and cnt_types_for_this_trial=1 then patient_receptor else null end) as receptor_match,
- sum(case when receptor_type = 'PR' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as pr_match,
- sum(case when receptor_type = 'ER' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as er_match,
- sum(case when receptor_type = 'HER2' and (cnt_types_for_this_trial in (0,2) or (trial_receptor = patient_receptor)) then 1 else 0 end) as her2_match
- from
- (
-    select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, c.receptor_type, c.receptor_value,
-    (select count(q.receptor_value) from trial_receptor q where c.receptor_type = q.receptor_type and d.pk_id = q.fk_id) as cnt_types_for_this_trial, b.receptor_value as patient_receptor,
-    c.receptor_value as trial_receptor
- from
- patient a left join
- patient_receptor b on a.pk_id = b.fk_id left join
- trial_receptor c on  b.receptor_type = c.receptor_type and b.receptor_value = c.receptor_value left join
- trial d on c.fk_id = d.pk_id
-) group by nci_number, mrn, trial_pk,pt_pk
-) q where pr_match>0 and er_match>0 and her2_match>0
- ) receptor on disease.pt_pk = receptor.pt_pk and disease.trial_pk = receptor.trial_pk
- left join
- (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.treatment_name) as treatment_match, count(distinct c.treatment_name) as num_matches
- from
- patient a left join
- patient_treatment b on a.pk_id = b.fk_id left join
- trial_treatment c on  b.treatment_name = c.treatment_name and b.treatment_type = c.treatment_type left join
- trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
- where not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id)
- and disease.date_screened >= '%s'
- union
- select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, stage_match,'ALL RECEPTORS ALLOWED' as receptor_match,treatment_match
- from
- (
-  select nci_number, mrn,a.pk_id as pt_pk, c.pk_id as trial_pk, a.cancer_type,date_screened,new_or_progressed
- from
- patient a left join
- trial_cancer_type b on a.cancer_type = b.cancer_type left join
- trial c on b.fk_id = c.pk_id
- ) disease
- inner join
- (
- select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.stage) as stage_match, count(distinct c.stage) as num_matches
- from
- patient a left join
- patient_staging b on a.pk_id = b.fk_id left join
- trial_stage c on  b.stage = c.stage left join
- trial d on c.fk_id = d.pk_id left join
- staging_rank e on b.stage = e.stage_name
- where ranking = (select max(ranking) from staging_rank q inner join patient_staging qq on q.stage_name = qq.stage where qq.fk_id = b.fk_id)
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) stage on disease.pt_pk = stage.pt_pk and disease.trial_pk = stage.trial_pk
- left join
- (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.treatment_name) as treatment_match, count(distinct c.treatment_name) as num_matches
- from
- patient a left join
- patient_treatment b on a.pk_id = b.fk_id left join
- trial_treatment c on  b.treatment_name = c.treatment_name and b.treatment_type = c.treatment_type left join
- trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk
-  where not exists (select 1 from trial_receptor q where disease.trial_pk = q.fk_id) and  disease.date_screened > '%s'
-union
-select disease.nci_number,date_screened, new_or_progressed,disease.mrn, cancer_type, 'ALL STAGES ALLOWED' as staging_match,'ALL RECEPTORS ALLOWED' as receptor_match,treatment_match
- from
- (
-  select nci_number, mrn,a.pk_id as pt_pk, c.pk_id as trial_pk, a.cancer_type,date_screened,new_or_progressed
- from
- patient a left join
- trial_cancer_type b on a.cancer_type = b.cancer_type left join
- trial c on b.fk_id = c.pk_id
- ) disease
- left join
- (
-   select nci_number, mrn,a.pk_id as pt_pk, d.pk_id as trial_pk, group_concat(distinct c.treatment_name) as treatment_match, count(distinct c.treatment_name) as num_matches
- from
- patient a left join
- patient_treatment b on a.pk_id = b.fk_id left join
- trial_treatment c on  b.treatment_name = c.treatment_name and b.treatment_type = c.treatment_type left join
- trial d on c.fk_id = d.pk_id
- group by  nci_number, mrn,a.pk_id, d.pk_id
- ) tx on disease.pt_pk = tx.pt_pk and disease.trial_pk = tx.trial_pk 
- where not exists (select 1 from trial_receptor q where disease.trial_pk = q.fk_id)
-and not exists (select 1 from trial_stage q where disease.trial_pk = q.fk_id) and disease.date_screened >= '%s' """ % (today,today,today,today)
-
-
 cursor = sqlite.cursor()
 
-print(sql)
+def trialres():
+    sql = """SELECT trial.nci_number, trial_cancer_type.cancer_type, trial_stage.stage, trial_receptor.receptor_type, trial_receptor.receptor_value
+    FROM trial
+    left JOIN trial_cancer_type ON trial.pk_id = trial_cancer_type.fk_id 
+    left JOIN trial_stage ON trial.pk_id = trial_stage.fk_id 
+    left JOIN trial_receptor ON trial.pk_id = trial_receptor.fk_id"""
 
-cursor.execute(sql)
-results = cursor.fetchall()
-today = datetime.today()
-print(today.strftime("%Y/%m/%d %H:%M:%S"))
 
-outfile = open("matches/matches_" + today.strftime("%Y-%m-%d") + ".txt", 'w')
-writer =csv.writer(outfile)
 
-writer.writerow(['NCI_NUMBER','DATE_SCREENED','NEW_OR_PROGRESSED','MRN','CANCER_TYPE','STAGE_MATCH','RECEPTOR_MATCH','TREATMENT_MATCH'])
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    today = datetime.today()
+    print(today.strftime("%Y/%m/%d %H:%M:%S"))
 
-for nci_number,date_screened,new_or_progressed,mrn,cancer_type,stage_match,receptor_match,treatment_match in results:
-    writer.writerow([nci_number,date_screened,new_or_progressed,mrn,cancer_type,stage_match,receptor_match,treatment_match])
 
-outfile.close()
+    df = pd.DataFrame({'NCI_NUMBER': pd.Series(dtype='str'),
+                       'CANCER_TYPE': pd.Series(dtype='str'),
+                       'STAGE': pd.Series(dtype='str'),
+                       'RECEPTOR_VALUE': pd.Series(dtype='str')})
+    i = 0
+    for nci_number,cancer_type,stage,receptor_type,receptor_value in results:
+        df.loc[i, ['NCI_NUMBER', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']] = nci_number,cancer_type,stage,receptor_value
+        i+=1
+
+    df1 = df.replace(np.nan,'',regex=True)
+    df1.head(10)
+
+
+    # group by col1 and aggregate the other columns
+    grouped = df1.groupby('NCI_NUMBER').agg({'CANCER_TYPE': lambda x: ','.join(set(x)),
+                                      'STAGE': lambda x: ','.join(set(map(str, set(x)))),
+                                      'RECEPTOR_VALUE': lambda x: ','.join(set(map(str, set(x))))})
+
+    # reset the index to make col1 a regular column
+    df2 = grouped.reset_index()
+
+    # rename the columns
+    df2.columns = ['NCI_NUMBER', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']
+
+
+    # Print the final DataFrame
+    #df2.to_excel('trialsresult_v1.xlsx')
+    
+
+
+    
+    
+def patres():
+    sql = """SELECT patient.mrn, patient.dob, patient.cancer_type, patient.new_or_progressed, patient.date_screened, patient_staging.stage, patient_receptor.receptor_type, patient_receptor.receptor_value
+    FROM patient
+    left JOIN patient_staging ON patient.pk_id = patient_staging.fk_id 
+    left JOIN patient_receptor ON patient_staging.fk_id = patient_receptor.fk_id"""
+
+
+    cursor.execute(sql)
+    results = cursor.fetchall()
+    today = datetime.today()
+    print(today.strftime("%Y/%m/%d %H:%M:%S"))
+
+
+    p_df = pd.DataFrame({'MRN': pd.Series(dtype='str'),
+                       'CANCER_TYPE': pd.Series(dtype='str'),
+                       'STAGE': pd.Series(dtype='str'),
+                       'RECEPTOR_VALUE': pd.Series(dtype='str')})
+    i = 0
+    for mrn,dob,cancer_type,new_or_progressed,date_screened,stage,receptor_type,receptor_value in results:
+        p_df.loc[i, ['MRN', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']] = mrn,cancer_type,stage,receptor_value
+        i+=1
+
+    p_df1 = p_df.replace(np.nan,'',regex=True)
+    p_df1.head(10)
+
+
+    # group by col1 and aggregate the other columns
+    grouped = p_df1.groupby('MRN').agg({'CANCER_TYPE': lambda x: ','.join(set(x)),
+                                      'STAGE': lambda x: ','.join(set(map(str, set(x)))),
+                                      'RECEPTOR_VALUE': lambda x: ','.join(set(map(str, set(x))))})
+
+    # reset the index to make col1 a regular column
+    p_df2 = grouped.reset_index()
+
+    # rename the columns
+    p_df2.columns = ['MRN', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']
+
+    #p_df2.to_excel('patientsresult_v1.xlsx')
+
+
+    
+def match():
+    final_data = []
+
+    for index_p, row_p in p_df2.iterrows():
+        p_mrn = row_p['MRN']
+        p_cancer_type = row_p['CANCER_TYPE']
+        p_stage = row_p['STAGE']
+        p_receptor_value = row_p['RECEPTOR_VALUE']
+        print(f" Patient  MRN: {p_mrn} CANCER_TYPE: {p_cancer_type} STAGE: {p_stage} RECEPTOR_VALUE: {p_receptor_value}")
+        # Extract individual receptor values from p_df2
+        p_receptors = p_receptor_value.split(',')
+        p_erpos = 'ER+' if 'ER+' in p_receptors else ''
+        p_erneg = 'ER-' if 'ER-' in p_receptors else ''
+        p_prpos = 'PR+' if 'PR+' in p_receptors else ''
+        p_prneg = 'PR-' if 'PR-' in p_receptors else ''
+        p_her2pos = 'HER2+' if 'HER2+' in p_receptors else ''
+        p_her2neg = 'HER2-' if 'HER2-' in p_receptors else ''
+        print(f" Patient  ER+: {p_erpos} ER-: {p_erneg} PR+: {p_prpos} PR-: {p_prneg} Her2+: {p_her2pos} Her2-: {p_her2neg}")
+        id = 0
+        for index_d, row_d in df2.iterrows():
+            nci_number = row_d['NCI_NUMBER']
+            df_cancer_type = row_d['CANCER_TYPE']
+            df_stage = row_d['STAGE']
+            df_receptor_value = row_d['RECEPTOR_VALUE']
+            print(f" Trial  NCI_NUMBER: {nci_number} CANCER_TYPE: {df_cancer_type} STAGE: {df_stage} RECEPTOR_VALUE: {df_receptor_value}")
+            # Extract individual receptor values from df2
+            df_receptors = df_receptor_value.split(',')
+            df_erpos = 'ER+' if 'ER+' in df_receptors else ''
+            df_erneg = 'ER-' if 'ER-' in df_receptors else ''
+            df_prpos = 'PR+' if 'PR+' in df_receptors else ''
+            df_prneg = 'PR-' if 'PR-' in df_receptors else ''
+            df_her2pos = 'HER2+' if 'HER2+' in df_receptors else ''
+            df_her2neg = 'HER2-' if 'HER2-' in df_receptors else ''
+            print(f" Trial  ER+: {df_erpos} ER-: {df_erneg} PR+: {df_prpos} PR-: {df_prneg} Her2+: {df_her2pos} Her2-: {df_her2neg}")
+            # Check if the cancer type and stage match
+            if (p_cancer_type == df_cancer_type or df_cancer_type == ''):
+                # Check if the stage matches
+                df_stages = df_stage.split(',')
+                if 'Stage I' in df_stages:
+                    stage1 = 'Stage I'
+                    print(stage1)
+                if 'Stage II' in df_stages:
+                    stage2 = 'Stage II'
+                    print(stage2)
+                if 'Stage III' in df_stages:
+                    stage3 = 'Stage III'
+                    print(stage3)
+                print(f'Patient stage: {p_stage.strip()} Trial stages: {df_stages}')
+                if ((any(p_stage.strip() == stage.strip() for stage in df_stages)) or 
+                    (stage1 == 'Stage I' and p_stage.strip() in ['Stage I', 'Stage IA','Stage 1A', 'Stage IB','Stage 1B']) or
+                    (stage2 == 'Stage II' and p_stage.strip() in ['Stage II', 'Stage IIA', 'Stage IIB']) or
+                    (stage3 == 'Stage III' and p_stage.strip() in ['Stage III', 'Stage IIIA', 'Stage IIIB', 'Stage IIIC'])):
+                    print(f"Cancer and Stage matched for {p_mrn} and {nci_number}")
+                    # Check if the receptor values match
+                    if (((df_erpos == '' and df_erneg == '') or p_erpos.strip() == df_erpos.strip() or p_erneg.strip() == df_erneg.strip()) and
+                        ((df_prpos == '' and df_prneg == '') or p_prpos.strip() == df_prpos.strip() or p_prneg.strip() == df_prneg.strip()) and
+                        ((df_her2pos == '' and df_her2neg == '') or p_her2pos.strip() == df_her2pos.strip() or p_her2neg.strip() == df_her2neg.strip())):
+
+                        # Create the matched row and append it to the final_data list
+                        matched_row = [nci_number, p_mrn, p_cancer_type, p_stage, p_receptor_value]
+                        final_data.append(matched_row)
+                        id+=1
+                        print(f"Matches {id}")
+
+    # Create the final dataframe
+    final = pd.DataFrame(final_data, columns=['NCI_NUMBER', 'MRN', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE'])
+
+    # Write the final dataframe to a CSV file
+    final.to_csv('matches.csv', index=False)
+
+
+
+
+if __name__ == '__main__':
+    
+    trialres()
+    
+    patres()
+    
+    match()
