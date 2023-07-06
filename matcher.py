@@ -35,6 +35,9 @@ sqlite_cursor = sqlite.cursor()
 
 cursor = sqlite.cursor()
 
+p_df2 = pd.DataFrame()
+df2 = pd.DataFrame()
+
 def trialres():
     sql = """SELECT trial.nci_number, trial_cancer_type.cancer_type, trial_stage.stage, trial_receptor.receptor_type, trial_receptor.receptor_value
     FROM trial
