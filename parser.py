@@ -207,6 +207,9 @@ def parse_trials():
     trial2her2_status = defaultdict(set)
     her2_statuses = defaultdict(int)
 
+    trial2genes_status = defaultdict(set)
+    gene_statuses = defaultdict(int)
+    
     for fn in files_in:
         trial_id = fn.split('_')[0]
         # print(f"Trial: {trial_id}")
@@ -215,6 +218,8 @@ def parse_trials():
         if biomarkers is None:
             continue
 
+        
+        
         for biomarker in biomarkers:
             inclusion_indicator = biomarker['inclusion_indicator']
 
@@ -265,12 +270,17 @@ def parse_trials():
                 if her2_status is not None:
                     trial2her2_status[trial_id].add(her2_status)
                     her2_statuses[her2_status] += 1
+            elif "Gene or Genome" in biomarker['semantic_types'] and "reference_gene" in biomarker['type']:
+                synonyms = biomarker['synonyms']
+                trial2genes_status[trial_id]|=set(synonyms)
+                for synonym in synonyms:
+                    gene_statuses[synonym]+=1
             else:
                 # this is a recpetor we currently aren't including
                 pass
 
 
-    for receptor_statuses in [pr_statuses, er_statuses, her2_statuses]:
+    for receptor_statuses in [pr_statuses, er_statuses, her2_statuses,gene_statuses]:
         for status, count in receptor_statuses.items():
             print(f"\tReceptor Status: {status}, Count: {count}")
 
@@ -312,9 +322,9 @@ def parse_trials():
     for drug, count in prior_drugs_count.items():
         print(f"\tPrior drug: {drug}, Count: {count}")
 
-    return trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs
+    return trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, gene_statuses
 
-def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs):
+def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, genes_statuses):
 
     # Connect to the database and insert the trial information
     con = sqlite3.connect('disrupt.db')
@@ -343,13 +353,14 @@ def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_s
             cursor.execute(f"insert into trial_stage (fk_id, stage) values ({fk_id}, '{stage}')")
 
     print("Inserting trial receptor status data...")
-    for receptor, trial2status in [('ER', trial2er_status), ('PR', trial2pr_status), ('HER2', trial2her2_status)]:
+    for receptor, trial2status in [('ER', trial2er_status), ('PR', trial2pr_status), ('HER2', trial2her2_status),('Gene',trial2genes_status)]:
         print(f" {receptor}...")
         for trial_id, statuses in trial2status.items():
             fk_id = trials2primarykeys[trial_id]
             for status in statuses:
                 cursor.execute(f"insert into trial_receptor (fk_id, receptor_type, receptor_value) values ({fk_id}, '{receptor}', '{status}')")
 
+                
     print("Insert trial treatments...")
     for trial_id, prior_drugs in trial2prior_drugs.items():
         fk_id = trials2primarykeys[trial_id]
