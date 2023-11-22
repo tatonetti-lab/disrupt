@@ -28,15 +28,8 @@ import sqlite3
 import csv
 import pandas as pd
 import numpy as np
+import time
 
-sqlite = sqlite3.connect('disrupt.db')
-
-sqlite_cursor = sqlite.cursor()
-
-cursor = sqlite.cursor()
-
-p_df2 = pd.DataFrame()
-df2 = pd.DataFrame()
 
 def trialres():
     sql = """SELECT trial.nci_number, trial_cancer_type.cancer_type, trial_stage.stage, trial_receptor.receptor_type, trial_receptor.receptor_value
@@ -77,14 +70,13 @@ def trialres():
     # rename the columns
     df2.columns = ['NCI_NUMBER', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']
 
-
+    
     # Print the final DataFrame
-    #df2.to_excel('trialsresult_v1.xlsx')
+    df2.to_excel('trialsresult_v1.xlsx')
     
+    return df2
 
 
-    
-    
 def patres():
     sql = """SELECT patient.mrn, patient.dob, patient.cancer_type, patient.new_or_progressed, patient.date_screened, patient_staging.stage, patient_receptor.receptor_type, patient_receptor.receptor_value
     FROM patient
@@ -122,11 +114,13 @@ def patres():
     # rename the columns
     p_df2.columns = ['MRN', 'CANCER_TYPE', 'STAGE', 'RECEPTOR_VALUE']
 
-    #p_df2.to_excel('patientsresult_v1.xlsx')
-
+    p_df2.to_excel('patientsresult_v1.xlsx')
+    
+    return p_df2
+    
 
     
-def match():
+def match(df2, p_df2):
     final_data = []
 
     for index_p, row_p in p_df2.iterrows():
@@ -164,6 +158,7 @@ def match():
             if (p_cancer_type == df_cancer_type or df_cancer_type == ''):
                 # Check if the stage matches
                 df_stages = df_stage.split(',')
+                stage1 = stage2 = stage3 = ''
                 if 'Stage I' in df_stages:
                     stage1 = 'Stage I'
                     print(stage1)
@@ -201,8 +196,20 @@ def match():
 
 if __name__ == '__main__':
     
-    trialres()
+    #Database connection
+    sqlite = sqlite3.connect('disrupt.db')
+    sqlite_cursor = sqlite.cursor()
+    cursor = sqlite.cursor()
     
-    patres()
+    #Creating Dataframes
+    p_df2 = pd.DataFrame()
+    df2 = pd.DataFrame()
     
-    match()
+    #Initiating Dataframes
+    df2 = trialres()
+    p_df2 = patres()
+    
+    match(df2,p_df2)
+    print(p_df2)
+    print(df2)
+
