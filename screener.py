@@ -633,7 +633,7 @@ if __name__ == '__main__':
     if df_f is not None:
         for _, row in df_f.iterrows():
             #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
-            sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'pat_id': index, 'mrn': row['MRN'], 'dob': '1/1/1975', 'disease': row['Cancer Type'],'match_type': row['MATCH TYPE'], 'now': datetime.now()})
+            sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'pat_id': index, 'mrn': row['MRN'], 'dob': row['BIRTHDATE'], 'disease': row['Cancer Type'],'match_type': row['MATCH TYPE'], 'now': datetime.now()})
             #pks[ind] = sqlite_cursor.lastrowid
             print(f"pat_id: {index} , mrn: {row['MRN']} , dob: {row['BIRTHDATE']}, disease: {row['Cancer Type']} ,match_type: {row['MATCH TYPE']}, now: {datetime.now()} ")
             sqlite_cursor.execute ("insert into patient_staging (fk_id, stage, stage_t, stage_n, stage_m) values (%(pat_id)s,'%(stage)s','%(T)s','%(N)s','%(M)s')" % {'pat_id': index, 'stage': row['Overall stage'], 'T': row['T'], 'N': row['N'], 'M': row['M']})
