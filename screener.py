@@ -99,7 +99,89 @@ liver_t = ['T0','T1a','T1b','T1','T2','T3','T4','TX']
 liver_n = ['N0','N1','NX']
 liver_m = ['M0','M1']
 
+def lung_note_parse(sql,cursor):
+        print(' starting pull of notes matching pattern from temp table')
+        print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
+        print(";")
+        print("")
+        cursor.execute(sql)
+        results = cursor.fetchall()
+        count=0
+        staging_matches = defaultdict(lambda: defaultdict(set))
+        for mrn,pat_id,note_id,note_text,diagnosis,stage,mets,dx_dt,pd_l1 in tqdm.tqdm(results):
+                if(stage is not None):
+                        count=count+1
+                        if "IV" in stage or "metastatic" in stage:
+                                staging_matches[(pat_id,note_id)]['STAGE'].add("Stage IV")
+                        elif "III" in stage:
+                                staging_matches[(pat_id,note_id)]['STAGE'].add("Stage III")
+                        elif "II" in stage:
+                                staging_matches[(pat_id,note_id)]['STAGE'].add("Stage II")
+                        elif "I" in stage:
+                                staging_matches[(pat_id,note_id)]['STAGE'].add("Stage I")
+                        elif "0" in stage:
+                                staging_matches[(pat_id,note_id)]['STAGE'].add("Stage 0")
+                                
+                        if diagnosis is not None:
+                                staging_matches[(pat_id, note_id)]['DIAGNOSIS'].add(diagnosis)
+                        if mets is not None:
+                                staging_matches[(pat_id, note_id)]['METS'].add(mets)
+                        if dx_dt is not None:
+                                staging_matches[(pat_id, note_id)]['DX_DT'].add(dx_dt)
+                        if pd_l1 is not None:
+                                staging_matches[(pat_id, note_id)]['PD_L1'].add(pd_l1)
+        return staging_matches
 
+#technically ANYTHING other than small-cell can count as "non small cell"
+
+def lung_process(staging_matches):
+        newpts = list()
+        for (pat_id, note_id),matches in staging_matches.items():
+                for k in ('STAGE', 'DIAGNOSIS', 'METS', 'DX_DT', 'PD_L1'):
+                        print(len(matches[k]));
+                        if len(matches[k]) == 0:
+                                matches[k] = set([""])
+                        match_iterator = itertools.product(*[matches[k] for k in ('STAGE','DIAGNOSIS','METS','DX_DT','PD_L1')])
+                for (STAGE,DIAGNOSIS, METS, DX_DT, PD_L1) in match_iterator:
+                        if "neuroendocrine" in DIAGNOSIS:
+                                DX_FIXED = "Lung Neuro Endocrine"
+                        elif "adenocarcinoma" in DIAGNOSIS:
+                                DX_FIXED = "Adenocarcinoma"
+                        elif "squamous" in DIAGNOSIS:
+                                DX_FIXED = "Squamous Cell Carcinoma"
+                        elif "Small cell" in DIAGNOSIS:
+                                DX_FIXED = "Small Cell Carcinoma"
+                        elif "Large cell" in DIAGNOSIS:
+                                DX_FIXED = "Large Cell Carcinoma"
+                        elif "NSCLC" in DIAGNOSIS:
+                                DX_FIXED = "Small Cell Carcinoma"
+                        else:
+                                DX_FIXED = DIAGNOSIS
+
+                        if "%" in PD_L1:
+                                if "<1%" in PD_L1 or "0%" in PD_L1:
+                                        PD_L1_fixed = "PD-L1-"
+                                else:
+                                        PD_L1_fixed = "PD-L1+"
+                        else:
+                                PD_L1_fixed = "PD-L1-"
+                        newpts.append(
+                                {
+                                        "PAT_ID":pat_id,
+                                        "NOTE_ID":note_id,
+                                        "STAGE":STAGE,
+                                        "DIAGNOSIS":DX_FIXED,
+                                        "METS":METS,
+                                        "DX_DT":DX_DT,
+                                        "PD_L1":PD_L1_fixed,
+                                        "T":"",
+                                        "N":"",
+                                        "M":""
+                                }
+                        )
+        return newpts
+
+                        
 def breast_note_parse(sql,cursor):
         print(' starting pull of notes matching pattern from temp table')
         print(sqlparse.format(sql,reindent=True,keyword_case='upper' ))
@@ -823,6 +905,9 @@ def main():
         elif disease == 'bladder':
                 staging_matches = bladder_note_parse(sql,cursor)
                 newpts = bladder_process(staging_matches)
+        elif disease == 'lung':
+                staging_matches = lung_note_parse(sql,cursor)
+                newpts = lung_process(staging_matches)
         else:
                 print("UNKNOWN DISEASE SELECTION! WILL DIE SOON!")
                 
@@ -843,17 +928,33 @@ def main():
                         "match_type":match_type
                 }
 
+        sql = config['diseases'][disease]['queries']['final']['genes']
+        cursor.execute(sql)
+        results = cursor.fetchall()
+
+        newpt_genes = dict()
+        for pat_id, hugo_gene in results:
+                newpt_genes[(pat_id,hugo_gene)] = {
+                        "gene":hugo_gene
+                }
+                
         sql = config['diseases'][disease]['queries']['final']['ptmatches']
         cursor.execute(sql)
         results = cursor.fetchall()
         pks = dict()
+
+        
         sqlite_cursor = sqlite.cursor()
         print("processing results into sqlite")
         if results is not None:
                 for match_type, pat_id, mrn, dob in results:
+                        my_disease = 'LungBad'
+                        for item in newpts:
+                                if(item['PAT_ID'] == pat_id):
+                                        my_disease = item['DIAGNOSIS']
                 #for  pat_id, mrn, dob in results:
                         #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
-                        sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':disease.title(),'pat_id': pat_id, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
+                        sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':my_disease,'pat_id': pat_id, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
                         pks[pat_id] = sqlite_cursor.lastrowid
 
         if newpts is not None:
@@ -865,6 +966,11 @@ def main():
                                         #sqlite_cursor.execute (f"insert into patient_receptor values ('{pks[pt['PAT_ID']]}','HER2','{pt['HER2']}')")
                                         sqlite_cursor.execute ("insert into patient_receptor values ('%(pat_id)s','%(key)s','%(value)s')" % {'pat_id': pks[pt['PAT_ID']], 'key':key, 'value': pt[key]})
 
+        if newpt_genes is not None:
+                for pt in newpt_genes:
+                        print(pt)
+                        sqlite_cursor.execute("insert into patient_genes (fk_id, hugo_gene) values ('%(pat_id)s','%(gene)s')" % {'pat_id':pks[pt[0]],'gene':pt[1]})
+                        
         #if newpt_meds is not None:
         #        for (pat_id, drug_name), drug in newpt_meds.items():
         #                # sqlite_cursor.execute(f"insert into patient_treatment (fk_id, treatment_type, treatment_name, treatment_start_date, treatment_end_date) values ({pks[pat_id]},'Drug','{drug_name}','{drug['first_order_date']}','{drug['last_order_date']}')")

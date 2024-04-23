@@ -138,7 +138,7 @@ def load_trials(ctrp_api_key):
 
 def parse_trials():
 
-    VALID_SITES = ["Breast",] # "Prostate", "Liver"
+    VALID_SITES = ["Breast","Lung","Multiple"] # "Prostate", "Liver"
 
     # get the json files that were successfully downloaded
     files_in = [fn for fn in os.listdir('./ref/trial_json') if fn.split('_')[1].split('.')[0] == 'complete']
@@ -151,20 +151,151 @@ def parse_trials():
 
     print(f"Extracting anatomic sites for each trial.")
 
+    LUNG_ADENO = [
+        "Metastatic Lung Adenocarcinoma",
+        "Recurrent Lung Adenocarcinoma",
+        "Stage IIIA Lung Cancer",
+        "Stage IIIB Lung Cancer",
+        "Stage IIIC Lung Cancer",
+        "Stage III Lung Cancer",
+        "Stage IVA Lung Cancer",
+        "Stage IVB Lung Cancer",
+        "Stage IV Lung Cancer",
+        "Stage IA2 Lung Cancer",
+        "Stage IA3 Lung Cancer"
+        ]
+
+    LUNG_LARGE = [
+        "Advanced Lung Non-Small Cell Carcinoma",
+        "Locally Advanced Lung Non-Small Cell Carcinoma",
+        "Locally Advanced Non-Squamous Non-Small Cell Lung Cancer",
+        "Metastatic Lung Non-Small Cell Carcinoma",
+        "Metastatic Lung Non-Squamous Non-Small Cell Carcinoma",
+        "Non-Small Cell Lung Cancer",
+        "Recurrent Lung Non-Squamous Non-Small Cell Carcinoma",
+        "Recurrent Non-Small Cell Lung Cancer",
+        "Refractory Non-Small Cell Lung Cancer",
+        "Unresectable Lung Non-Small Cell Carcinoma",
+        "Unresectable Lung Non-Squamous Non-Small Cell Carcinoma"
+        ]
+
+    LUNG_NEURO = [
+        "Metastatic Lung Neuroendocrine Neoplasm",
+        "Unresectable Lung Neuroendocrine Neoplasm",
+        "Recurrent Lung Neuroendocrine Neoplasm",
+        "Locally Advanced Lung Neuroendocrine Neoplasm",
+        "Advanced Lung Neuroendocrine Tumor",
+        "Unresectable Lung Neuroendocrine Tumor",
+        "Lung Neuroendocrine Tumor G1",
+        "Lung Neuroendocrine Tumor G2"
+    ]
+    
+    LUNG_MESO = [
+        "Metastatic Pleural Malignant Mesothelioma"
+        ]
+
+    LUNG_SMALL = [
+        "Advanced Lung Small Cell Carcinoma",
+        "Metastatic Lung Small Cell Carcinoma",
+        "Refractory Lung Small Cell Carcinoma",
+        "Small Cell Lung Cancer",
+        "Unresectable Lung Small Cell Carcinoma",
+        "Platinum-Sensitive Small Cell Lung Carcinoma",
+        "Limited Stage Small Cell Lung Cancer",
+        "Extensive Stage Small Cell Lung Cancer",
+        "Recurrent Small Cell Lung Cancer",
+        "Non-Squamous Non-Small Cell Lung Cancer"
+    ]
+
+    LUNG_SQUAM=[
+        "Advanced Non-Small Cell Squamous Lung Cancer",
+        "Metastatic Lung Non-Small Cell Squamous Carcinoma",
+        "Unresectable Lung Non-Small Cell Squamous Carcinoma"
+    ]
+
+    LUNG_ALL = LUNG_ADENO
+    LUNG_ALL = LUNG_ALL + LUNG_LARGE
+    LUNG_ALL = LUNG_ALL + LUNG_NEURO
+    LUNG_ALL = LUNG_ALL + LUNG_MESO
+    LUNG_ALL = LUNG_ALL + LUNG_SMALL
+    LUNG_ALL = LUNG_ALL + LUNG_SQUAM
+    LUNG_ALL = LUNG_ALL + [
+        "Advanced Malignant Solid Tumor",
+        "Locally Advanced Malignant Solid Tumor",
+        "Malignant Solid Tumor",
+        "Metastatic Malignant Solid Tumor",
+        "Recurrent Malignant Solid Tumor",
+        "Refractory Malignant Solid Tumor",
+        "Unresectable Malignant Solid Tumor"
+    ]
+
+    print(LUNG_ALL)
+
+    
     for fn in files_in:
         trial_id = fn.split('_')[0]
         data = json.loads(open(os.path.join('ref', 'trial_json', fn)).read())[0]
         anatomic_site = data.get('anatomic_sites')
-        for site in anatomic_site:
-            anatomic_sites[site] += 1
-            site2trials[site].add(trial_id)
-            trials2anatomicsites[trial_id].add(site)
+        if anatomic_site[0] == 'Multiple' or "Lung" in anatomic_site:
+            diseases = data.get('diseases')
+
+            for disease in diseases:
+                if disease['inclusion_indicator'] == 'TRIAL':
+                    name = disease['name']
+                    if(name in LUNG_ADENO):
+                        anatomic_sites["Adenocarcinoma"]+=1
+                        site2trials["Adenocarcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Adenocarcinoma")
+                    elif (name in LUNG_LARGE):
+                        anatomic_sites["Large Cell Carcinoma"]+=1
+                        site2trials["Large Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Large Cell Carcinoma")
+                    elif (name in LUNG_MESO):
+                        anatomic_sites["Mesothelioma"]+=1
+                        site2trials["Mesothelioma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Mesothelioma")
+                    elif (name in LUNG_SMALL):
+                        anatomic_sites["Small Cell Carcinoma"]+=1
+                        site2trials["Small Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Small Cell Carcinoma")
+                    elif (name in LUNG_SQUAM):
+                        anatomic_sites["Squamous Cell Carcinoma"]+=1
+                        site2trials["Squamous Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Squamous Cell Carcinoma")
+                    elif (name in LUNG_NEURO):
+                        anatomic_sites["Lung Neuro Endocrine"]+=1
+                        site2trials["Lung Neuro Endocrine"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Lung Neuro Endocrine")        
+                    elif (name in LUNG_ALL):
+                        anatomic_sites["Adenocarcinoma"]+=1
+                        site2trials["Adenocarcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Adenocarcinoma")
+                        anatomic_sites["Large Cell Carcinoma"]+=1
+                        site2trials["Large Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Large Cell Carcinoma")
+                        anatomic_sites["Mesothelioma"]+=1
+                        site2trials["Mesothelioma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Mesothelioma")
+                        anatomic_sites["Small Cell Carcinoma"]+=1
+                        site2trials["Small Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Small Cell Carcinoma")
+                        anatomic_sites["Squamous Cell Carcinoma"]+=1
+                        site2trials["Squamous Cell Carcinoma"].add(trial_id)
+                        trials2anatomicsites[trial_id].add("Squamous Cell Carcinoma")
+                        
+        else:
+            for site in anatomic_site:
+                anatomic_sites[site] += 1
+                site2trials[site].add(trial_id)
+                trials2anatomicsites[trial_id].add(site)
 
     for site, count in anatomic_sites.items():
         print(f"\tSite: {site}, Count: {count}")
 
     print(f"Extracting stage inclusion criteria for each trial.")
 
+    print(trials2anatomicsites)
+    
     trials2stages = defaultdict(set)
     stages = defaultdict(int)
 
@@ -180,7 +311,7 @@ def parse_trials():
             if inclusion_indicator != 'TRIAL':
                 continue
 
-            if 'stage' in type and d.get('name').lower().find('breast') != -1:
+            if 'stage' in type and ( d.get('name').lower().find('breast') != -1 or d.get("name").lower().find('lung')):
                 stage = None
                 if d.get('name').split()[0] == 'Stage':
                     stage = ' '.join(d.get('name').split()[:2])
@@ -209,6 +340,9 @@ def parse_trials():
 
     trial2genes_status = defaultdict(set)
     gene_statuses = defaultdict(int)
+
+    trial2pdl1_status = defaultdict(set)
+    pdl1_status = defaultdict(int)
     
     for fn in files_in:
         trial_id = fn.split('_')[0]
@@ -223,6 +357,14 @@ def parse_trials():
         for biomarker in biomarkers:
             inclusion_indicator = biomarker['inclusion_indicator']
 
+            if biomarker['name'].find('Lack of Expression of PD-L1') != -1:
+                trial2pdl1_status[trial_id].add("PD-L1-")
+                pdl1_status["PD-L1-"] +=1
+
+            if biomarker['name'].find('PD-L1 Positive') != -1:
+                trial2pdl1_status[trial_id].add("PD-L1+")
+                pdl1_status["PD-L1+"] +=1
+            
             if biomarker['name'].find('Progesteron') != -1:
                 pr_status = None
                 if biomarker['name'] == 'Progesterone Receptor Positive':
@@ -322,9 +464,9 @@ def parse_trials():
     for drug, count in prior_drugs_count.items():
         print(f"\tPrior drug: {drug}, Count: {count}")
 
-    return trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, gene_statuses
+    return trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, gene_statuses,trial2pdl1_status
 
-def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, genes_statuses):
+def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_status, trial2her2_status, trial2prior_drugs, trial2genes_status, genes_statuses,trial2pdl1_status):
 
     # Connect to the database and insert the trial information
     con = sqlite3.connect('disrupt.db')
@@ -336,16 +478,23 @@ def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_s
     for trial_id in trials2anatomicsites.keys():
         cursor.execute(f"insert into trial (nci_number, date_parsed) values ('{trial_id}', '{date_parsed}')")
         trials2primarykeys[trial_id] = cursor.lastrowid
-        #print(f"trial_id: {trial_id}, lastrowid: {cursor.lastrowid}")
+        print(f"trial_id: {trial_id}, lastrowid: {cursor.lastrowid}")
 
     print("Inserting trial cancer types into disrupt.db...")
+    print(trials2anatomicsites)
     for trial_id, cancer_types in trials2anatomicsites.items():
         fk_id = trials2primarykeys[trial_id]
         for cancer_type in cancer_types:
-            if not cancer_type in ('Breast','Liver','Prostate'):
-                continue
             cursor.execute(f"insert into trial_cancer_type (fk_id, cancer_type) values ({fk_id}, '{cancer_type}')")
 
+    print(trial2pdl1_status)
+    for trial_id in trial2pdl1_status.keys():
+        fk_id = trials2primarykeys[trial_id]
+        pdl1_list = trial2pdl1_status[trial_id]
+        pdl1 = next(iter(pdl1_list))
+        print(pdl1)
+        cursor.execute(f"insert into trial_receptor (fk_id, receptor_type,receptor_value) values ({fk_id},'PD_L1','{pdl1}')")
+            
     print("Inserting trial staging data into drsrupt.db...")
     for trial_id, stages in trials2stages.items():
         fk_id = trials2primarykeys[trial_id]
