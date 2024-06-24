@@ -149,6 +149,8 @@ def lung_process(staging_matches):
                                 DX_FIXED = "Adenocarcinoma"
                         elif "squamous" in DIAGNOSIS:
                                 DX_FIXED = "Squamous Cell Carcinoma"
+                        elif "NOS" in DIAGNOSIS:
+                                DX_FIXED = "Non Small NOS"
                         elif "Small cell" in DIAGNOSIS:
                                 DX_FIXED = "Small Cell Carcinoma"
                         elif "Large cell" in DIAGNOSIS:
