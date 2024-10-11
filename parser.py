@@ -349,11 +349,6 @@ def parse_trials():
             inclusion_indicator = biomarker['inclusion_indicator']
             eligibility_criterion = biomarker['eligibility_criterion']
 
-            print('inclusion indicator: ' + inclusion_indicator)
-            print('eligibility criterion: ' + eligibility_criterion)
-            print('semantic types: ' , biomarker['semantic_types'])
-            print('biomarker type: ' , biomarker['type'])
-            print('name: ' + biomarker['name'])
             
             if biomarker['name'].find('Lack of Expression of PD-L1') != -1:
                 trial2pdl1_status[trial_id].add("PD-L1-")
