@@ -949,14 +949,14 @@ def main():
         sqlite_cursor = sqlite.cursor()
         print("processing results into sqlite")
         if results is not None:
-                for match_type, pat_id, mrn, dob in results:
+                for match_type, pat_id, mrn, dob, pat_name in results:
                         my_disease = 'LungBad'
                         for item in newpts:
                                 if(item['PAT_ID'] == pat_id):
                                         my_disease = item['DIAGNOSIS']
                 #for  pat_id, mrn, dob in results:
                         #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
-                        sqlite_cursor.execute("insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':my_disease,'pat_id': pat_id, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
+                        sqlite_cursor.execute("insert into patient (pat_id,pat_name, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(pat_name)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':my_disease,'pat_id': pat_id,'pat_name':pat_name, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
                         pks[pat_id] = sqlite_cursor.lastrowid
 
         if newpts is not None:

@@ -213,8 +213,9 @@ if(disease == 'Breast' or disease == 'breast'):
 elif (disease == 'Lung' or disease == 'lung'):
     sql = """
 
+
 select 
-pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
+pt_number, type, therapy_type, mrn,pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
 advanced_second_line, title,
 trial_keyword1, trial_keyword_2, group_concat(patient_gene,',') as pt_genes, pt_stage, trial_stages, date_screened
  from
@@ -228,7 +229,7 @@ select * from
 (
 select 
 '1' as type,therapy_type,date_screened,
-mrn,a.nci_number, a.nct_number ,
+mrn,pat_name,a.nci_number, a.nct_number ,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
 title ,  keyword1 as trial_keyword1, keyword2 as trial_keyword_2, hugo_gene as patient_gene,
 (select stage from patient_staging q inner join staging_rank qq on stage=stage_name where q.fk_id = e.pk_id order by ranking desc limit 1) as pt_stage,
@@ -246,7 +247,7 @@ union
 select * from
 (
 select distinct case when therapy_type like '%antibody%' then 2 else 3 end as type, therapy_type,date_screened,
-mrn,
+mrn,pat_name,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
 title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
@@ -271,7 +272,7 @@ union
 select * from
 (
 select distinct case when therapy_type like '%immuno%' then 2  when therapy_type like '%antibody%' then 3 else 4 end as type, therapy_type,date_screened,
-mrn,
+mrn,pat_name,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
 title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
@@ -295,7 +296,7 @@ union
 select * from
 (
 select distinct case when therapy_type like '%immuno%' then 1  when therapy_type like '%antibody%' then 2 else 3 end as type, therapy_type,date_screened,
-mrn,
+mrn,pat_name,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
 title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
@@ -317,12 +318,13 @@ trial_stages is null or trial_stages = pt_stage  or trial_stages like '%' || pt_
 ) q 
 )q
 
-where date_screened >='2024-09-01'
-group by 
+where date_screened >='2024-10-17'
+group by pat_name,
 pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
 advanced_second_line, title,
 trial_keyword1, trial_keyword_2, pt_stage, trial_stages,date_screened
 ORDER BY 1, CAST(TYPE as integer), nci_number
+
 """
 
 cursor = sqlite.cursor()
@@ -341,57 +343,59 @@ writer =csv.writer(outfile)
 #pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened
 
 
-writer.writerow(['pt_number', 'type', 'therapy_type', 'mrn', 'nci_number', 'nct_number', 'early_stage_resectable', 'early_stage_unresectable', 'advanced_first_line','advanced_second_line', 'title', 'trial_keyword1', 'trial_keyword_2', 'pt_genes', 'pt_stage', 'trial_stages', 'date_screened'])
+writer.writerow(['pt_number', 'type', 'therapy_type', 'mrn','patient_name', 'nci_number', 'nct_number', 'early_stage_resectable', 'early_stage_unresectable', 'advanced_first_line','advanced_second_line', 'title', 'trial_keyword1', 'trial_keyword_2', 'pt_genes', 'pt_stage', 'trial_stages', 'date_screened'])
 
-for pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened in results:
+for pt_number, type, therapy_type, mrn,pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened in results:
     url = 'https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/v?' +nci_number
-    writer.writerow([pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened])
+    writer.writerow([pt_number, type, therapy_type, mrn, pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened])
 
 outfile.close()
 
-mrns = dict()
+#all of below has been moved to pretty
 
-with open("matches/matches_" + today.strftime("%Y-%m-%d") + ".txt", newline='') as csvfile:
-    reader = csv.DictReader(csvfile)
-    for row in reader:
-        if(row['mrn'] in mrns):
-            mrns[row['mrn']].append(row)
-        else:
-            mrns[row['mrn']] = [row]
+#mrns = dict()
 
-for mrn in mrns:
-    doc = docx.Document()
-    thistype = -1
-    p = doc.add_paragraph()
-    run = p.add_run("MRN: " + mrn)
-    p = doc.add_paragraph()
-    run = p.add_run("PT Stage: " + mrns[mrn][0]['pt_stage'])
-    p = doc.add_paragraph()
-    run = p.add_run("PT Genes: " + mrns[mrn][0]['pt_genes'])    
-    
-    for row in mrns[mrn]:
-        if(row['type'] != thistype):
-            p = doc.add_paragraph()
-            thistype = row['type']
-            if(row['type'] == '1'):
-                run = p.add_run("Tier " + row['type'] + " matches, targeted therapy")    
-            elif (row['type'] == '2'):
-                run = p.add_run("Tier " + row['type'] + " matches, immunotherapy")
-            elif (row['type'] == '3'):
-                run = p.add_run("Tier " + row['type'] + " matches, antibody/drug conjugate")
-            elif (row['type'] == '4'):
-                run = p.add_run("Tier " + row['type'] + " matches, all others")
-                
-            
-        p = doc.add_paragraph()
-        #run = p.add_run("Study Number: " + row['nct_number'])           
-        table = doc.add_table(rows=2, cols=3)
-        r = table.rows[0].cells
-        r[0].text = "Study Number: " + row['nct_number']
-        r[1].text = "Study Name: " + row['title']
-        r[2].text = "Therapy Type: " + row['type']
-        r = table.rows[1].cells
-        if(row['type'] == '1'):
-            r[2].text = "Basis of Match(genes): " + row['trial_keyword1'] + ' ' + row['trial_keyword_2']
-        
-    doc.save(mrn + ".docx")
+#with open("matches/matches_" + today.strftime("%Y-%m-%d") + ".txt", newline='') as csvfile:
+#    reader = csv.DictReader(csvfile)
+#    for row in reader:
+#        if(row['mrn'] in mrns):
+#            mrns[row['mrn']].append(row)
+#        else:
+#            mrns[row['mrn']] = [row]
+
+#for mrn in mrns:
+#    doc = docx.Document()
+#    thistype = -1
+#    p = doc.add_paragraph()
+#    run = p.add_run("MRN: " + mrn)
+#    p = doc.add_paragraph()
+#    run = p.add_run("PT Stage: " + mrns[mrn][0]['pt_stage'])
+#    p = doc.add_paragraph()
+#    run = p.add_run("PT Genes: " + mrns[mrn][0]['pt_genes'])    
+#    
+#    for row in mrns[mrn]:
+#        if(row['type'] != thistype):
+#            p = doc.add_paragraph()
+#            thistype = row['type']
+#            if(row['type'] == '1'):
+#                run = p.add_run("Tier " + row['type'] + " matches, targeted therapy")    
+#            elif (row['type'] == '2'):
+#                run = p.add_run("Tier " + row['type'] + " matches, immunotherapy")
+#            elif (row['type'] == '3'):
+#                run = p.add_run("Tier " + row['type'] + " matches, antibody/drug conjugate")
+#            elif (row['type'] == '4'):
+#                run = p.add_run("Tier " + row['type'] + " matches, all others")
+#                
+#            
+#        p = doc.add_paragraph()
+#        #run = p.add_run("Study Number: " + row['nct_number'])           
+#        table = doc.add_table(rows=2, cols=3)
+#        r = table.rows[0].cells
+#        r[0].text = "Study Number: " + row['nct_number']
+#        r[1].text = "Study Name: " + row['title']
+#        r[2].text = "Therapy Type: " + row['type']
+#        r = table.rows[1].cells
+#        if(row['type'] == '1'):
+#            r[2].text = "Basis of Match(genes): " + row['trial_keyword1'] + ' ' + row['trial_keyword_2']
+#        
+#    doc.save(mrn + ".docx")

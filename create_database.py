@@ -26,7 +26,7 @@ con.execute(''' drop table if exists trial_manual_classification ''')
 
 con.execute(''' drop table if exists trial_manual_matchcriteria ''')
 
-con.execute(''' create table patient (pk_id integer primary key, pat_id text, mrn text, dob text, cancer_type text,  new_or_progressed text, date_screened text) ''')
+con.execute(''' create table patient (pk_id integer primary key, pat_id text,pat_name text, mrn text, dob text, cancer_type text,  new_or_progressed text, date_screened text) ''')
 
 con.execute(''' create table patient_genes (fk_id integer, hugo_gene text) ''')
 
