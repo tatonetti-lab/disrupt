@@ -11,6 +11,8 @@ from datetime import datetime
 
 import docx.shared
 
+from report_intro_text import add_intro_text
+
 today = datetime.today().strftime("%Y-%m-%d")
 
 mrns = dict()
@@ -45,6 +47,7 @@ with open("matches/matches_" + today + ".txt", newline='') as csvfile:
         else:
             mrns[row['mrn']] = {
                 "mrn": row['mrn'],
+                "pt_name": row["patient_name"],
                 "pt_stage": row['pt_stage'],
                 "pt_genes": set( pt_genes ),
                 "studies": [temp_row]
@@ -61,23 +64,31 @@ for pt in mrns:
     # mrn stage 
     p = doc.add_paragraph()
 
-    mrn_title = p.add_run("MRN")
+    pt_name = p.add_run(pt['pt_name'])
+    pt_name.font.size = Pt(16)
 
+    pt_name.add_break()
+
+    mrn_title = p.add_run("MRN: ")
     mrn_title.bold = True
-    mrn_title.add_tab()
+    #mrn_title.add_tab()
     mrn_num = p.add_run(pt['mrn'])
-    mrn_num.font.size = Pt(16)
+    mrn_num.font.size = Pt(14)
 
     mrn_num.add_break()
 
-    stage_title = p.add_run("STAGE ")
+    stage_title = p.add_run("Stage: ")
     stage_title.bold = True
-    stage = p.add_run(pt['pt_stage'])
-    stage.font.size = Pt(14)
+
+    if pt['pt_stage'] != '':
+        stage = p.add_run(pt['pt_stage'])
+        stage.font.size = Pt(14)
+    else:
+        p.add_run("N/A")
 
     # gene
     p = doc.add_paragraph()
-    gene_title = p.add_run("RELEVANT BIOMARKERS")
+    gene_title = p.add_run("Relevant Biomarkers:")
     gene_title.bold = True
     gene_title.add_break()
 
@@ -86,6 +97,11 @@ for pt in mrns:
         genes.font.size = docx.shared.Pt(16)
         genes.add_break()
 
+    
+    doc = add_intro_text(doc)
+
+    p_studies_title = doc.add_paragraph()
+    p_studies_title.add_run("POTENTIAL TRIAL MATCHES").bold = True
     
     # iterate through studies
     for row in pt['studies']:
