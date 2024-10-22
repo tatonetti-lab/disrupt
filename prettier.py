@@ -260,4 +260,4 @@ for pt in mrns:
     
    
         
-    doc.save(pt['mrn'] + "_matchlist.docx")
+    doc.save("matches/" + pt['mrn'] + "_matchlist.docx")
