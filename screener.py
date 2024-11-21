@@ -108,7 +108,7 @@ def lung_note_parse(sql,cursor):
         results = cursor.fetchall()
         count=0
         staging_matches = defaultdict(lambda: defaultdict(set))
-        for mrn,pat_id,note_id,note_text,diagnosis,stage,mets,dx_dt,pd_l1 in tqdm.tqdm(results):
+        for mrn,pat_id,note_id,note_text,diagnosis,stage,mets,dx_dt,pd_l1,disease_setting in tqdm.tqdm(results):
                 if(stage is not None):
                         count=count+1
                         if "IV" in stage or "metastatic" in stage:
@@ -130,6 +130,8 @@ def lung_note_parse(sql,cursor):
                                 staging_matches[(pat_id, note_id)]['DX_DT'].add(dx_dt)
                         if pd_l1 is not None:
                                 staging_matches[(pat_id, note_id)]['PD_L1'].add(pd_l1)
+                        if disease_setting is not None:
+                                staging_matches[(pat_id, note_id)]['DISEASE_SETTING'].add(disease_setting)
         return staging_matches
 
 #technically ANYTHING other than small-cell can count as "non small cell"
@@ -137,12 +139,12 @@ def lung_note_parse(sql,cursor):
 def lung_process(staging_matches):
         newpts = list()
         for (pat_id, note_id),matches in staging_matches.items():
-                for k in ('STAGE', 'DIAGNOSIS', 'METS', 'DX_DT', 'PD_L1'):
+                for k in ('STAGE', 'DIAGNOSIS', 'METS', 'DX_DT', 'PD_L1','DISEASE_SETTING'):
                         print(len(matches[k]));
                         if len(matches[k]) == 0:
                                 matches[k] = set([""])
-                        match_iterator = itertools.product(*[matches[k] for k in ('STAGE','DIAGNOSIS','METS','DX_DT','PD_L1')])
-                for (STAGE,DIAGNOSIS, METS, DX_DT, PD_L1) in match_iterator:
+                        match_iterator = itertools.product(*[matches[k] for k in ('STAGE','DIAGNOSIS','METS','DX_DT','PD_L1','DISEASE_SETTING')])
+                for (STAGE,DIAGNOSIS, METS, DX_DT, PD_L1, DISEASE_SETTING) in match_iterator:
                         if "neuroendocrine" in DIAGNOSIS:
                                 DX_FIXED = "Lung Neuro Endocrine"
                         elif "adenocarcinoma" in DIAGNOSIS:
@@ -176,6 +178,7 @@ def lung_process(staging_matches):
                                         "METS":METS,
                                         "DX_DT":DX_DT,
                                         "PD_L1":PD_L1_fixed,
+                                        "DISEASE_SETTING":DISEASE_SETTING,
                                         "T":"",
                                         "N":"",
                                         "M":""
@@ -949,14 +952,14 @@ def main():
         sqlite_cursor = sqlite.cursor()
         print("processing results into sqlite")
         if results is not None:
-                for match_type, pat_id, mrn, dob, pat_name in results:
+                for match_type, pat_id, mrn, dob, pat_name,language in results:
                         my_disease = 'LungBad'
                         for item in newpts:
                                 if(item['PAT_ID'] == pat_id):
                                         my_disease = item['DIAGNOSIS']
                 #for  pat_id, mrn, dob in results:
                         #sqlite_cursor.execute(f"insert into patient (pat_id, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('{pat_id}','{mrn}','{dob}','Breast','{match_type}','{datetime.now()}')")
-                        sqlite_cursor.execute("insert into patient (pat_id,pat_name, mrn, dob, cancer_type, new_or_progressed, date_screened) values ('%(pat_id)s','%(pat_name)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s')" % {'disease':my_disease,'pat_id': pat_id,'pat_name':pat_name, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now()})
+                        sqlite_cursor.execute("insert into patient (pat_id,pat_name, mrn, dob, cancer_type, new_or_progressed, date_screened, language) values ('%(pat_id)s','%(pat_name)s','%(mrn)s','%(dob)s','%(disease)s','%(match_type)s','%(now)s','%(language)s')" % {'disease':my_disease,'pat_id': pat_id,'pat_name':pat_name, 'mrn': mrn, 'dob': dob, 'match_type': match_type, 'now': datetime.now(), 'language': language})
                         pks[pat_id] = sqlite_cursor.lastrowid
 
         if newpts is not None:

@@ -216,7 +216,7 @@ elif (disease == 'Lung' or disease == 'lung'):
 
 select 
 pt_number, type, therapy_type, mrn,pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
-advanced_second_line, title,
+advanced_second_line, title,spanish_title, english_description, spanish_description,disease_setting,
 trial_keyword1, trial_keyword_2, group_concat(patient_gene,',') as pt_genes, pt_stage, trial_stages, date_screened
  from
 (
@@ -225,46 +225,66 @@ select
 dense_rank () over(order by mrn) as pt_number,
 q.* from
 (
+
 select * from
 (
 select 
 '1' as type,therapy_type,date_screened,
-mrn,pat_name,a.nci_number, a.nct_number ,
+mrn,a.nci_number, a.nct_number ,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
-title ,  keyword1 as trial_keyword1, keyword2 as trial_keyword_2, hugo_gene as patient_gene,
+title , spanish_title,
+english_description, spanish_description, keyword1 as trial_keyword1, keyword2 as trial_keyword_2, hugo_gene as patient_gene,
 (select stage from patient_staging q inner join staging_rank qq on stage=stage_name where q.fk_id = e.pk_id order by ranking desc limit 1) as pt_stage,
-(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages
+(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages,disease_setting,pat_name
 from
 trial a inner join
 trial_manual_classification b on a.nci_number = b.nci_number inner join
 trial_manual_matchcriteria c on a.nct_number = c.nci_number inner join
 patient_genes d on d.hugo_gene like '%' || keyword1 || '%' and (keyword2 is null or d.hugo_gene like '%' || keyword2 || '%') inner join
-patient e on d.fk_id = e.pk_id 
-where therapy_type like '%Targeted%'
-) q where trial_stages is null or trial_stages = pt_stage  or trial_stages like '%' || pt_stage || ',%' or
-( pt_stage in ('Stage III','Stage IV') and (advanced_first_line = 'Y' or advanced_second_line = 'Y') )
+patient e on d.fk_id = e.pk_id left join
+trial_patient_descriptions f on a.nci_number = f.nci_number left join
+(select receptor_value as disease_setting, fk_id from patient_receptor where receptor_type = 'DISEASE_SETTING') g on e.pk_id = 
+g.fk_id
+where therapy_type like '%Targeted%' and
+(
+        disease_setting is null or
+        (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
+        (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
+        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
+)
+) q
+
 union
+
 select * from
 (
 select distinct case when therapy_type like '%antibody%' then 2 else 3 end as type, therapy_type,date_screened,
-mrn,pat_name,
+mrn,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
-title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
+title, spanish_title, english_description, spanish_description, 'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
 (select group_concat(distinct hugo_gene) from patient_genes q where d.pk_id = q.fk_id) as patient_gene,
 (select stage from patient_staging q inner join staging_rank qq on stage=stage_name where q.fk_id = d.pk_id order by ranking desc limit 1) as pt_stage,
-(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages
+(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages, disease_setting,pat_name
 from
 trial a inner join
 trial_manual_classification b on a.nci_number = b.nci_number  join 
-patient d
+patient d left join
+trial_patient_descriptions f on a.nci_number = f.nci_number left join
+(select receptor_value as disease_setting, fk_id from patient_receptor where receptor_type = 'DISEASE_SETTING') g on d.pk_id = 
+g.fk_id
 where
 therapy_type not like '%Targeted%'
 ) where (patient_gene like '%EGFR%' or patient_gene like '%ALK%' or patient_gene like '%ROS1%' or  patient_gene like '%RET%' or  patient_gene like '%HER2%' 
-or patient_gene like '%ERBB2%' or patient_gene like '%NTRK%' ) and 
+or patient_gene like '%ERBB2%' or patient_gene like '%NTRK%' ) 
+and
 (
-trial_stages is null or trial_stages = pt_stage  or trial_stages like '%' || pt_stage || ',%' or
-( pt_stage in ('Stage III','Stage IV') and (advanced_first_line = 'Y' or advanced_second_line = 'Y') )
+        disease_setting is null or
+        (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
+        (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
+        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
 )
 
 union
@@ -272,57 +292,71 @@ union
 select * from
 (
 select distinct case when therapy_type like '%immuno%' then 2  when therapy_type like '%antibody%' then 3 else 4 end as type, therapy_type,date_screened,
-mrn,pat_name,
+mrn,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
-title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
+title,  spanish_title, english_description, spanish_description,'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
 (select group_concat(distinct hugo_gene) from patient_genes q where d.pk_id = q.fk_id) as patient_gene,
 (select stage from patient_staging q inner join staging_rank qq on stage=stage_name where q.fk_id = d.pk_id order by ranking desc limit 1) as pt_stage,
-(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages
+(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages,disease_setting,pat_name
 from
 trial a inner join
 trial_manual_classification b on a.nci_number = b.nci_number  join 
-patient d
+patient d left join
+trial_patient_descriptions f on a.nci_number = f.nci_number left join
+(select receptor_value as disease_setting, fk_id from patient_receptor where receptor_type = 'DISEASE_SETTING') g on d.pk_id = 
+g.fk_id
 where
 therapy_type not like '%Targeted%'
 ) where not (patient_gene like '%EGFR%' or patient_gene like '%ALK%' or patient_gene like '%ROS1%' or  patient_gene like '%RET%' or  patient_gene like '%HER2%' 
-or patient_gene like '%ERBB2%' or patient_gene like '%NTRK%' )  and 
+or patient_gene like '%ERBB2%' or patient_gene like '%NTRK%' )  
+and
 (
-trial_stages is null or trial_stages = pt_stage  or trial_stages like '%' || pt_stage || ',%' or
-( pt_stage in ('Stage III','Stage IV') and (advanced_first_line = 'Y' or advanced_second_line = 'Y') )
+        disease_setting is null or
+        (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
+        (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
+        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
 )
+
+
 union
 
 select * from
 (
 select distinct case when therapy_type like '%immuno%' then 1  when therapy_type like '%antibody%' then 2 else 3 end as type, therapy_type,date_screened,
-mrn,pat_name,
+mrn,
 a.nci_number, a.nct_number,
 early_stage_resectable, early_stage_unresectable, advanced_first_line, advanced_second_line,
-title,  'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
+title, spanish_title, english_description, spanish_description, 'N/A' as trial_keyword1, 'N/A' as trial_keyword_2, 
 (select group_concat(distinct hugo_gene) from patient_genes q where d.pk_id = q.fk_id) as patient_gene,
 (select stage from patient_staging q inner join staging_rank qq on stage=stage_name where q.fk_id = d.pk_id order by ranking desc limit 1) as pt_stage,
-(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages
+(select group_concat(stage) from trial_stage q where a.pk_id = q.fk_id) as trial_stages,disease_setting,pat_name
 from
 trial a inner join
 trial_manual_classification b on a.nci_number = b.nci_number  join 
-patient d
+patient d left join
+trial_patient_descriptions f on a.nci_number = f.nci_number left join
+(select receptor_value as disease_setting, fk_id from patient_receptor where receptor_type = 'DISEASE_SETTING') g on d.pk_id = 
+g.fk_id
 where
 therapy_type not like '%Targeted%'
-) where patient_gene is null  and 
+) where patient_gene is null  and
 (
-trial_stages is null or trial_stages = pt_stage  or trial_stages like '%' || pt_stage || ',%' or
-( pt_stage in ('Stage III','Stage IV') and (advanced_first_line = 'Y' or advanced_second_line = 'Y') )
+        disease_setting is null or
+        (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
+        (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
+        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
 )
+
 
 ) q 
 )q
-
-where date_screened >='2024-10-17'
-group by pat_name,
+group by 
 pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
 advanced_second_line, title,
-trial_keyword1, trial_keyword_2, pt_stage, trial_stages,date_screened
+trial_keyword1, trial_keyword_2, pt_stage, trial_stages,date_screened,spanish_title, english_description, spanish_description,disease_setting,pat_name
 ORDER BY 1, CAST(TYPE as integer), nci_number
 
 """
@@ -343,11 +377,11 @@ writer =csv.writer(outfile)
 #pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened
 
 
-writer.writerow(['pt_number', 'type', 'therapy_type', 'mrn','patient_name', 'nci_number', 'nct_number', 'early_stage_resectable', 'early_stage_unresectable', 'advanced_first_line','advanced_second_line', 'title', 'trial_keyword1', 'trial_keyword_2', 'pt_genes', 'pt_stage', 'trial_stages', 'date_screened'])
+writer.writerow(['pt_number', 'type', 'therapy_type', 'mrn','patient_name', 'nci_number', 'nct_number', 'early_stage_resectable', 'early_stage_unresectable', 'advanced_first_line','advanced_second_line', 'title','spanish title','english description','spanish description', 'trial_keyword1', 'trial_keyword_2', 'pt_genes', 'pt_stage', 'trial_stages', 'date_screened','disease setting'])
 
-for pt_number, type, therapy_type, mrn,pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened in results:
+for pt_number, type, therapy_type, mrn,pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, spanish_title, english_description, spanish_description,disease_setting,trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened in results:
     url = 'https://www.cancer.gov/about-cancer/treatment/clinical-trials/search/v?' +nci_number
-    writer.writerow([pt_number, type, therapy_type, mrn, pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened])
+    writer.writerow([pt_number, type, therapy_type, mrn, pat_name, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,advanced_second_line, title,spanish_title,english_description, spanish_description, trial_keyword1, trial_keyword_2, pt_genes, pt_stage, trial_stages, date_screened,disease_setting])
 
 outfile.close()
 
