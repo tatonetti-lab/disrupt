@@ -50,6 +50,7 @@ with open("matches/matches_" + today + ".txt", newline='') as csvfile:
                 "pt_name": row["patient_name"],
                 "pt_stage": row['pt_stage'],
                 "pt_genes": set( pt_genes ),
+                "disease_setting": row["disease setting"],
                 "studies": [temp_row]
             }
 
@@ -86,6 +87,16 @@ for pt in mrns:
         if pt['pt_stage'] != '':
             stage = p.add_run(pt['pt_stage'])
             stage.font.size = Pt(14)
+            stage.add_break()
+        else:
+            p.add_run("N/A").add_break()
+        
+
+        dis_set_title = p.add_run("Disease Setting: ")
+        dis_set_title.bold = True
+        if pt['disease_setting'] != '':
+            dis_set = p.add_run(pt['disease_setting'])
+            dis_set.font.size = Pt(14)
         else:
             p.add_run("N/A")
 
