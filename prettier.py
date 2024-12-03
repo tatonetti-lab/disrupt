@@ -18,6 +18,7 @@ today = datetime.today().strftime("%Y-%m-%d")
 mrns = dict()
 
 
+# func to add bg color to table cells
 def set_bg_color(cell, color):
     """
     set background shading for Header Rows
@@ -29,7 +30,8 @@ def set_bg_color(cell, color):
     tblCellProperties.append(clShading)
     return cell
 
-
+# open matchlist and format with mrn as key and value as pt and trial info
+# pt[studies] is an array of all trials 
 with open("matches/matches_" + today + ".txt", newline='') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
@@ -39,23 +41,25 @@ with open("matches/matches_" + today + ".txt", newline='') as csvfile:
 
         pt_genes = [i.strip() for i in temp_row.pop('pt_genes').split(",")]
 
-
-
         if(row['mrn'] in mrns):
-            mrns[row['mrn']]['pt_genes'].update( pt_genes )
             mrns[row['mrn']]['studies'].append( temp_row )
         else:
             mrns[row['mrn']] = {
                 "mrn": row['mrn'],
                 "pt_name": row["patient_name"],
                 "pt_stage": row['pt_stage'],
-                "pt_genes": set( pt_genes ),
+                "pt_genes": set(),
                 "disease_setting": row["disease setting"],
                 "studies": [temp_row]
             }
 
-mrns = list(mrns.values())
-#print(mrns)
+        if pt_genes != ['']: 
+            mrns[row['mrn']]['pt_genes'].update( pt_genes ) # only update if not empty
+
+
+
+mrns = list(mrns.values()) # create values into a list
+# mrn = [{ mrn, pt name, stage, disease, [genes], [trials]}, ...]
 
 doc_types = ['DR', "PT_ENGLISH", "PT_SPANISH"]
 
@@ -65,7 +69,7 @@ for pt in mrns:
 
         thistype = -1
 
-        # mrn stage 
+        # title: mrn name stage disease setting genes
         p = doc.add_paragraph()
 
         pt_name = p.add_run(pt['pt_name'])
@@ -75,7 +79,7 @@ for pt in mrns:
 
         mrn_title = p.add_run("MRN: ")
         mrn_title.bold = True
-        #mrn_title.add_tab()
+
         mrn_num = p.add_run(pt['mrn'])
         mrn_num.font.size = Pt(14)
 
@@ -110,6 +114,10 @@ for pt in mrns:
             genes = p.add_run(gene)
             genes.font.size = docx.shared.Pt(16)
             genes.add_break()
+        
+        
+        if len(pt['pt_genes']) == 0:
+            p.add_run("N/A").add_break()
 
         
         doc = add_intro_text(doc, doc_type)
@@ -120,11 +128,10 @@ for pt in mrns:
         # iterate through studies
         for row in pt['studies']:
 
-            if (doc_type == "PT_SPANISH"):
-                if (row['spanish title'] == ""):
-                    continue
+            #if (doc_type == "PT_SPANISH"):
+            #    if (row['spanish title'] == ""):
+            #        continue
 
-            #type
             """
             if(row['type'] != thistype):
                 p_type = doc.add_paragraph()
@@ -139,16 +146,17 @@ for pt in mrns:
                 elif (row['type'] == '4'):
                     run = p_type.add_run("Tier " + row['type'] + ": All Others")
             """
+            
+            # TABLE
 
-            # row for description not included in doc version
+            # row for description not included in dr version
             table_rows = 4
-
             if doc_type == "DR":
                 table_rows=3
 
             table = doc.add_table(rows=table_rows, cols=3)
 
-            # table header (nct and therapy type / resectable stuff)
+            # row 1: (nct and therapy type / resectable stuff)
             r = table.rows[0].cells
             
             r[0].text = ""
@@ -189,21 +197,21 @@ for pt in mrns:
             set_bg_color(r[1], 'cce0eb')
             set_bg_color(r[2], 'cce0eb')
 
-            # row 2 title of study
+            # row 2: title of study
             
             r = table.rows[1].cells
             r[0].text = "" 
-            if doc_type == "PT_SPANISH":       
+            if doc_type == "PT_SPANISH" and row['spanish title'] != "":    
                 r[0].paragraphs[0].add_run(row['spanish title']).italic = True
             else:
                 r[0].paragraphs[0].add_run(row['title']).italic = True
+
             r[0].merge(r[1])
             r[0].merge(r[2])
 
             # row 3: match reason and trial disease stages
 
             r = table.rows[2].cells
-
 
             r[0].text = ""
             reason = r[0].paragraphs[0].add_run('REASON FOR MATCH: ')
@@ -258,10 +266,6 @@ for pt in mrns:
                 set_bg_color(r[0], 'f7f7f7')
                 set_bg_color(r[1], 'f7f7f7')
                 set_bg_color(r[2], 'f7f7f7')
-
-
-
-
 
             doc.add_paragraph()
 
