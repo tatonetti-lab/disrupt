@@ -14,7 +14,7 @@ import docx.shared
 from report_intro_text import add_intro_text
 
 today = datetime.today().strftime("%Y-%m-%d")
-
+#today = "2024-11-21"
 mrns = dict()
 
 
@@ -61,9 +61,34 @@ with open("matches/matches_" + today + ".txt", newline='') as csvfile:
 mrns = list(mrns.values()) # create values into a list
 # mrn = [{ mrn, pt name, stage, disease, [genes], [trials]}, ...]
 
+
+pt_stats = {}
+
 doc_types = ['DR', "PT_ENGLISH", "PT_SPANISH"]
 
 for pt in mrns:
+
+    pt_stats[pt['mrn']] = {
+        "name": pt['pt_name'],
+        "Excellent": 0,
+        "Good": 0,
+        "Possible": 0,
+        "Other": 0
+    }
+
+    stat_curr = pt_stats[pt['mrn']]
+
+    for row in pt['studies']:
+        if row['type'] == "1":
+            stat_curr["Excellent"]+=1
+        elif row['type'] == "2":
+            stat_curr["Good"]+=1
+        elif row['type'] == "3":
+            stat_curr["Possible"]+=1
+        else:
+            stat_curr["Other"]+=1
+
+
     for doc_type in doc_types:
         doc = docx.Document()
 
@@ -230,12 +255,16 @@ for pt in mrns:
 
             if row['type'] == "1":
                 r[0].paragraphs[0].add_run("Excellent")
+              
             elif row['type'] == "2":
                 r[0].paragraphs[0].add_run("Good")
+                
             elif row['type'] == "3":
                 r[0].paragraphs[0].add_run("Possible")
+                
             else:
                 r[0].paragraphs[0].add_run("Other")
+                
 
             r[0].paragraphs[0].add_run().add_break()
 
@@ -313,3 +342,23 @@ for pt in mrns:
     
             
         doc.save("matches/" + pt['mrn'] + "_matchlist_" + doc_type + ".docx")
+
+
+new_file = open("matches/pt_match_stats.csv", 'w', newline='')
+csv_write = csv.writer(new_file, delimiter=",")
+
+csv_write.writerow(["Count of Matches per Patient"])
+csv_write.writerow([])
+
+i = 0
+for pt in pt_stats:
+    csv_write.writerow([pt + ": " + pt_stats[pt]["name"]])
+    csv_write.writerow(["TOTAL", pt_stats[pt]["Excellent"] + pt_stats[pt]["Good"] + pt_stats[pt]["Possible"] + pt_stats[pt]["Other"]])
+    csv_write.writerow(["Excellent", pt_stats[pt]["Excellent"]])
+    csv_write.writerow(["Good", pt_stats[pt]["Good"]])
+    csv_write.writerow(["Possible", pt_stats[pt]["Possible"]])
+    csv_write.writerow(["Other", pt_stats[pt]["Other"]])
+    csv_write.writerow([])
+
+new_file.close()
+   
