@@ -953,7 +953,7 @@ def main():
         print("processing results into sqlite")
         if results is not None:
                 for match_type, pat_id, mrn, dob, pat_name,language in results:
-                        my_disease = 'LungBad'
+                        my_disease = 'NSCLC'
                         for item in newpts:
                                 if(item['PAT_ID'] == pat_id):
                                         my_disease = item['DIAGNOSIS']

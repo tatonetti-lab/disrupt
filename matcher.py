@@ -250,8 +250,8 @@ where therapy_type like '%Targeted%' and
         disease_setting is null or
         (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
         (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
-        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
-        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
+        (disease_setting = 'metastatic, first line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic, later line' and advanced_second_line = 'Y')
 )
 ) q
 
@@ -283,8 +283,8 @@ and
         disease_setting is null or
         (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
         (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
-        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
-        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
+        (disease_setting = 'metastatic, first line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic, later line' and advanced_second_line = 'Y')
 )
 
 union
@@ -315,8 +315,8 @@ and
         disease_setting is null or
         (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
         (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
-        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
-        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
+        (disease_setting = 'metastatic, first line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic, later line' and advanced_second_line = 'Y')
 )
 
 
@@ -346,13 +346,14 @@ therapy_type not like '%Targeted%'
         disease_setting is null or
         (disease_setting in ('localized','locally advanced resectable') and early_stage_resectable = 'Y') or
         (disease_setting = 'locally advanced unresectable' and early_stage_unresectable = 'Y') or
-        (disease_setting = 'metastatic 1st line' and advanced_first_line = 'Y' ) or 
-        (disease_setting = 'metastatic later line' and advanced_second_line = 'Y')
+        (disease_setting = 'metastatic, first line' and advanced_first_line = 'Y' ) or 
+        (disease_setting = 'metastatic, later line' and advanced_second_line = 'Y')
 )
 
 
 ) q 
 )q
+where date_screened>='2024-12-20'
 group by 
 pt_number, type, therapy_type, mrn, nci_number, nct_number, early_stage_resectable, early_stage_unresectable, advanced_first_line,
 advanced_second_line, title,
