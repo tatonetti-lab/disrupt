@@ -240,7 +240,8 @@ from
 trial a inner join
 trial_manual_classification b on a.nci_number = b.nci_number inner join
 trial_manual_matchcriteria c on a.nct_number = c.nci_number inner join
-patient_genes d on d.hugo_gene like '%' || keyword1 || '%' and (keyword2 is null or d.hugo_gene like '%' || keyword2 || '%') inner join
+(select fk_id, hugo_gene from patient_genes union select distinct fk_id, hugo_symbol from patient_receptor a inner join genes b on receptor_value like '%' || hugo_symbol || '%' where
+receptor_type = 'MOLECULAR') d on d.hugo_gene like '%' || keyword1 || '%' and (keyword2 is null or d.hugo_gene like '%' || keyword2 || '%') inner join
 patient e on d.fk_id = e.pk_id left join
 trial_patient_descriptions f on a.nci_number = f.nci_number left join
 (select receptor_value as disease_setting, fk_id from patient_receptor where receptor_type = 'DISEASE_SETTING') g on e.pk_id = 

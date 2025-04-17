@@ -108,7 +108,7 @@ def lung_note_parse(sql,cursor):
         results = cursor.fetchall()
         count=0
         staging_matches = defaultdict(lambda: defaultdict(set))
-        for mrn,pat_id,note_id,note_text,diagnosis,stage,mets,dx_dt,pd_l1,disease_setting in tqdm.tqdm(results):
+        for mrn,pat_id,note_id,note_text,diagnosis,stage,mets,dx_dt,pd_l1,disease_setting,molecular in tqdm.tqdm(results):
                 if(stage is not None):
                         count=count+1
                         if "IV" in stage or "metastatic" in stage:
@@ -132,6 +132,8 @@ def lung_note_parse(sql,cursor):
                                 staging_matches[(pat_id, note_id)]['PD_L1'].add(pd_l1)
                         if disease_setting is not None:
                                 staging_matches[(pat_id, note_id)]['DISEASE_SETTING'].add(disease_setting)
+                        if molecular is not None:
+                                staging_matches[(pat_id, note_id)]['MOLECULAR'].add(molecular)                                
         return staging_matches
 
 #technically ANYTHING other than small-cell can count as "non small cell"
@@ -139,12 +141,12 @@ def lung_note_parse(sql,cursor):
 def lung_process(staging_matches):
         newpts = list()
         for (pat_id, note_id),matches in staging_matches.items():
-                for k in ('STAGE', 'DIAGNOSIS', 'METS', 'DX_DT', 'PD_L1','DISEASE_SETTING'):
+                for k in ('STAGE', 'DIAGNOSIS', 'METS', 'DX_DT', 'PD_L1','DISEASE_SETTING','MOLECULAR'):
                         print(len(matches[k]));
                         if len(matches[k]) == 0:
                                 matches[k] = set([""])
-                        match_iterator = itertools.product(*[matches[k] for k in ('STAGE','DIAGNOSIS','METS','DX_DT','PD_L1','DISEASE_SETTING')])
-                for (STAGE,DIAGNOSIS, METS, DX_DT, PD_L1, DISEASE_SETTING) in match_iterator:
+                        match_iterator = itertools.product(*[matches[k] for k in ('STAGE','DIAGNOSIS','METS','DX_DT','PD_L1','DISEASE_SETTING','MOLECULAR')])
+                for (STAGE,DIAGNOSIS, METS, DX_DT, PD_L1, DISEASE_SETTING,MOLECULAR) in match_iterator:
                         if "neuroendocrine" in DIAGNOSIS:
                                 DX_FIXED = "Lung Neuro Endocrine"
                         elif "adenocarcinoma" in DIAGNOSIS:
@@ -179,6 +181,7 @@ def lung_process(staging_matches):
                                         "DX_DT":DX_DT,
                                         "PD_L1":PD_L1_fixed,
                                         "DISEASE_SETTING":DISEASE_SETTING,
+                                        "MOLECULAR":MOLECULAR,
                                         "T":"",
                                         "N":"",
                                         "M":""
