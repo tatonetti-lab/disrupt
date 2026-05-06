@@ -5,7 +5,7 @@ import docx.document
 
 def add_intro_text(doc : docx.document.Document, doc_type ):
 
-    if doc_type == "PT_SPANISH":
+    if doc_type == "spanish":
         p_header = doc.add_paragraph()
         title = p_header.add_run("DISRUPT : NOTIFICACIÓN AL PACIENTE DE LOS RESULTADOS DE LA CONEXIÓN A ENSAYOS CLINICOS")
         title.bold = True

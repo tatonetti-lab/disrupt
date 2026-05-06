@@ -70,7 +70,7 @@ add a switch as to whether to re-populate the tables or not.
 
 """
 
-import pyodbc
+#import pyodbc
 from getpass import getpass
 import jaydebeapi
 import sys

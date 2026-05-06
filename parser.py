@@ -473,7 +473,8 @@ def insert_data(trials2anatomicsites, trials2stages, trial2er_status, trial2pr_s
 
         nct_number = nct_numbers[trial_id]
         title = titles[trial_id]
-        cursor.execute(f"insert into trial (nci_number, date_parsed,title, nct_number) values ('{trial_id}', '{date_parsed}','{title}','{nct_number}')")
+        print(trial_id, date_parsed, title, nct_number)
+        cursor.execute("insert into trial (nci_number, date_parsed,title, nct_number) values (?,?,?,?)", (trial_id, date_parsed,title,nct_number))
         trials2primarykeys[trial_id] = cursor.lastrowid
         print(f"trial_id: {trial_id}, lastrowid: {cursor.lastrowid}")
 
